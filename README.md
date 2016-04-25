@@ -1,2 +1,2 @@
 # OKI
-SFV OKI LOL
+LOL U C http://toolassisted.github.io/OKI/
