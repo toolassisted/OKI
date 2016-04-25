@@ -12,6 +12,52 @@
     margin-bottom: 500px;
   }
 
+  path {
+    stroke-width: 1px;
+    stroke: #333;
+    fill: #ddd;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .GRID line {
+    vector-effect: non-scaling-stroke;
+  }
+
+  .REPLAY line {
+    vector-effect: non-scaling-stroke;
+  }
+
+  .UNOC { display: none; }
+
+  .fred { fill: #c00 !important; }
+
+  .gray { stroke: #333; }
+  .red { stroke: #f00; }
+  .green { stroke: #0f0; }
+  .blue { stroke: #00f; }
+  .cyan { stroke: #0ff; }
+  .yellow { stroke: #ff0; }
+
+  .p1gray { stroke: #333; }
+  .p1red { stroke: #f00; }
+  .p1green { stroke: #0f0; }
+  .p1blue { stroke: #00f; }
+  .p1hit { stroke: #c6f; }
+  .p1cyan { stroke: #0ff; }
+  .p1yellow { stroke: #ff0; }
+
+  .p2gray { stroke: #333; }
+  .p2red { stroke: #f66; }
+  .p2green { stroke: #6f6; }
+  .p2blue { stroke: #66f; }
+  .p2hit { stroke: #c6f; }
+  .p2cyan { stroke: #6ff; }
+
+  .hitbox { color: #f99; }
+  .hit { color: #969; }
+  .first { color: #cfc; background-color: #363;}
+  .iasa1 { color: #999;}
+
   #REPLAYS {
     text-align: center;
     /*display: inline-block;*/
@@ -75,6 +121,86 @@
     background-color: #060;
   }
 
+  #LINKS div.COL {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  #LINKS div.COL div {
+    text-align: left;
+    padding: 10px;
+  }
+
+  #LINKS button {
+    background-color: #ccc;
+    padding: 10px 10px;
+  }
+
+  svg {
+    border: 1px solid #333;
+    margin-top: 10px;
+  }
+
+  .REPLAY rect {
+    stroke-width: 1px;
+    /*stroke: #333;*/
+    fill: none;
+    /*opacity: 0.8;*/
+    mix-blend-mode: screen;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .REPLAY rect.clip {
+    fill: #330;
+  }
+
+  .REPLAY text {
+    text-anchor: middle;
+    fill: #999;
+    font: 8px sans-serif;
+  }
+
+  .rects text {
+    text-anchor: middle;
+    fill: #999;
+    font: 10px sans-serif;
+  }
+
+  .axis {
+    font: 10px sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  .axis text {
+    fill: #ddd;
+  }
+
+  .axis .domain {
+    fill: none;
+    stroke: #000;
+    stroke-opacity: .3;
+    stroke-width: 10px;
+    stroke-linecap: round;
+  }
+
+  .axis .halo {
+    fill: none;
+    stroke: #ddd;
+    stroke-width: 8px;
+    stroke-linecap: round;
+  }
+
+  .slider .handle {
+    fill: #fff;
+    fill-opacity: .75;
+    stroke: #000;
+    stroke-opacity: .5;
+    stroke-width: 1.25px;
+    cursor: crosshair;
+  }
+
   #OKI > span:nth-child(even) {
     color: #ccc;
   }
@@ -99,6 +225,7 @@
     color: #ccc;
   }
   .UCLICK:hover {
+    color: #fff;
     background-color: #990;
     cursor: pointer;
   }
@@ -130,14 +257,14 @@ var CHARS = [
 
 var KDMOVE = null;
 var OKIMOVE = null;
-
+var FRAMEKILL = 1;
 function SETOKI(d) {
   return "Move " + d["Move"];
 }
 function SETKD(d) {
   return "KD Adv. " + d["KD Adv."] + "<br />" + "KDR Adv. " + d["KDR Adv."] + "<br />" + "KDRB Adv. " + d["KDRB Adv."];
 }
-function UCOKI(fk=0) {
+function UCOKI(fk) {
   var OKI = d3.select("#OKI");
   var oki = "";
   oki += "\n<span>     " + "0........" + "1........." + "2........." + "3........." + "4........." + "5........." + "6........." + "7........." + "8........." + "9........." + "10........" + "11........" + "</span>";
@@ -153,13 +280,16 @@ function UCOKI(fk=0) {
     if (!isNaN(OKIMOVE["Active"]) && OKIMOVE["Active"] != "") { active += +OKIMOVE["Active"]; }
     if (!isNaN(OKIMOVE["Startup"]) && OKIMOVE["Startup"] != "") { startup += +OKIMOVE["Startup"]; }
     if (!isNaN(OKIMOVE["Recovery"]) && OKIMOVE["Recovery"] != "") { recovery += +OKIMOVE["Recovery"] + 1; }
-    if (fk-1>0) oki += Array(fk).join("-");
+    if (fk>0) FRAMEKILL = fk;
+    if (FRAMEKILL-1>0) {
+      oki += Array(FRAMEKILL).join("-");
+    }
     oki +=  "<span class='STARTUP'>" + Array(startup).join("s") + "</span>"
     + "<span class='ACTIVE'>" + Array(active).join("a") + "</span>" 
     + "<span class='RECOVERY'>" + Array(recovery).join("r") + "</span>";
   }
   oki += "</span>";
-  oki += "\n<span class='FK'>     ";
+  oki += "\n<span class='FK'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
   for (var i=1;i<=119;i++) {
     oki += "<span class='UCLICK' onclick='UCOKI("+i+")'>" + (i%10) + "</span>";
   }
@@ -188,7 +318,7 @@ d3.tsv("ALX.txt",function(rows){
               KDTABLE.selectAll(".UC").classed("UC",false);
               d3.select(p).classed("UC",true);
               KDMOVE = pd;
-              UCOKI();
+              UCOKI(0);
             });            
 
   FRAMETABLE.append("tr").selectAll("th").data(keys).enter().append("th").text(function(d){return d;});
@@ -202,10 +332,8 @@ d3.tsv("ALX.txt",function(rows){
               //OKI.selectAll("div").data([pd]).html(SETOKI).enter().append("div").html(SETOKI);
               FRAMETABLE.selectAll(".UC").classed("UC",false);
               d3.select(p).classed("UC",true);
-              UCOKI();
+              UCOKI(0);
             });
-
-
 
 });
 
