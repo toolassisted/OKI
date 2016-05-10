@@ -326,7 +326,7 @@ function UCKD(kd, hash) {
   adv += "<span class='ADVPLUS'> +" + (kd-1) + " U HIT " + kd + "</span>";
   ADV.html(adv);
   HASHKD = kd;
-  if (hash) UCHASH();
+  if (hash == undefined) UCHASH();
 }
 function UCKDBR(kd, hash) {
   var ADV = d3.select("#ADVKDBR");
@@ -338,7 +338,7 @@ function UCKDBR(kd, hash) {
   adv += "<span class='ADVPLUS'> +" + (kd-1) + " U HIT " + kd + "</span>";
   ADV.html(adv);
   HASHKDBR = kd;
-  if (hash) UCHASH();
+  if (hash == undefined) UCHASH();
 }
 function UCKDR(kd, hash) {
   var ADV = d3.select("#ADVKDR");
@@ -350,7 +350,7 @@ function UCKDR(kd, hash) {
   adv += "<span class='ADVPLUS'> +" + (kd-1) + " U HIT " + kd + "</span>";
   ADV.html(adv);  
   HASHKDR = kd;
-  if (hash) UCHASH();
+  if (hash == undefined) UCHASH();
 }
 function UCFK() {
   var ADV = d3.select("#FK");
@@ -401,7 +401,7 @@ function UCOKI(kd, hash) {
   }
   adv += "<span class='ADVPLUS'> +" + (FRAMEKILL-1) + " U HIT " + (FRAMEKILL + HASHSTARTUP - 1) + "</span>";
   ADV.html(adv);
-  if (hash) UCHASH();
+  if (hash == undefined) UCHASH();
 }
 
 
