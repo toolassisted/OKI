@@ -456,9 +456,9 @@ function UCGILLEY(rows){
               d3.select(p).classed("UC",true);              
               
               if (OKIMOVE != null) {
-                if (!isNaN(OKIMOVE["Active"]) && OKIMOVE["Active"] != "") { HASHACTIVE = +OKIMOVE["Active"]; }
-                if (!isNaN(OKIMOVE["Startup"]) && OKIMOVE["Startup"] != "") { HASHSTARTUP = +OKIMOVE["Startup"]; }
-                if (!isNaN(OKIMOVE["Recovery"]) && OKIMOVE["Recovery"] != "") { HASHRECOVERY = +OKIMOVE["Recovery"]; }
+                if (!isNaN(OKIMOVE["Active"]) && OKIMOVE["Active"] != "") { HASHACTIVE = +OKIMOVE["Active"]; }  else { HASHACTIVE = 0; }
+                if (!isNaN(OKIMOVE["Startup"]) && OKIMOVE["Startup"] != "") { HASHSTARTUP = +OKIMOVE["Startup"]; } else { HASHSTARTUP = 0; }
+                if (!isNaN(OKIMOVE["Recovery"]) && OKIMOVE["Recovery"] != "") { HASHRECOVERY = +OKIMOVE["Recovery"]; } else { HASHRECOVERY = 0; }
               }
               UCOKI(0);
             });
