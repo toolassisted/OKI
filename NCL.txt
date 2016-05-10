@@ -46,11 +46,11 @@ soul offering	qcf,qcf+P
 health	1000																		
 stun	1000																		
 taunt	61																		
-jump	47 (4+39+4)								47										
-jump forward	46 (3+39+4)								46										
-jump backward	47 (4+39+4)								47										
-dash forward	17								17										
-dash backward	22								22										
+jump	47 (4+39+4)	43	1	4					47										
+jump forward	46 (3+39+4)	42	1	4					46										
+jump backward	47 (4+39+4)	43	1	4					47										
+dash forward	17		17						17										
+dash backward	22		22						22										
 																			
 VTRIGGER																			
 stand LP		3	2	9	3	1	40	70				H	SP						
