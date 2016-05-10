@@ -57,8 +57,8 @@ heavy hammer	qcf,qcf+P	5			KD	-25	100*50*200	0*0*0		-	20*20*20	H*H*H	-	KD	120*50
 health																			
 stun																			
 taunt	61																		
-jump	47(4+39+4)	43	1						47										
-jump forward	46(3+39+4)	42	1						46										
-jump backward	47(4+39+4)	43	1						47										
-dash forward	19								19										
-dash backward	24								24										
+jump	47(4+39+4)	43	1	4					47										
+jump forward	46(3+39+4)	42	1	4					46										
+jump backward	47(4+39+4)	43	1	4					47										
+dash forward	19	19							19										
+dash backward	24	24							24										

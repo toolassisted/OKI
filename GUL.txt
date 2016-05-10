@@ -55,8 +55,8 @@ sonic tempest	b,f,b,f+p during VT	6			KD	5	360	0		??	4x16	107?	364	0	H	-	107?	48
 health																						
 stun																						
 taunt	61																					
-jump	46 (4+38+4)									46												
-jump forward	45 (3+38+4)									45												
-jump backwards	46( 4+38+4)									46												
-dash forward	18									18												
-dash backwards	25									25												
+jump	46 (4+38+4)	41	1	4						46												
+jump forward	45 (3+38+4)	40	1	4						45												
+jump backwards	46( 4+38+4)	41	1	4						46												
+dash forward	18	18								18												
+dash backwards	25	25								25												
