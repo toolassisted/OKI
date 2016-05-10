@@ -55,11 +55,11 @@ kanzuki-ryu hadorokushiki hasha no kata	qcf,qcf+P	5	?	38	KD	-18	340	0		9*10*10*1
 health	900																			
 stun	950																			
 taunt	61																			
-jump	46 (4+38+4)								46											
-jump forward	45 (3+38+4)								45											
-jump backward	46 (4+38+4)								46											
-dash forward	16								16											
-dash backward	21								21											
+jump	46 (4+38+4)	41	1						46											
+jump forward	45 (3+38+4)	40	1						45											
+jump backward	46 (4+38+4)	41	1						46											
+dash forward	16	16							16											
+dash backward	21	21							21											
 TENKO TENKO EX DASH RESSENHA EX																	71	12	17
 TENKO TENKO RESSENHA EX CORNER																	79	20	25
 TENKO OROCHI																	91	31	36
