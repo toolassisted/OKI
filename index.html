@@ -262,10 +262,10 @@
 <script>
 var KDMOVE = null;
 var OKIMOVE = null;
-var FRAMEKILL = 18;
-var HASHKD = 79;
-var HASHKDBR = 25;
-var HASHKDR = 20;
+var FRAMEKILL = 19;
+var HASHKD = 79+1;
+var HASHKDBR = 25+1;
+var HASHKDR = 20+1;
 var HASHCHAR = "KRN";
 var HASHSTARTUP = 5;
 var HASHACTIVE = 4;
@@ -273,9 +273,9 @@ var HASHRECOVERY = 10;
 function MECHASH() {
   var h = window.location.hash.substr(1).split("/");
   if (h.length >= 1 && CHARS.indexOf(h[0].toUpperCase()) != -1) HASHCHAR = h[0];
-  if (h.length >= 2 && !isNaN(h[1]) && h[1] != "") HASHKD = +(h[1].trim());
-  if (h.length >= 3 && !isNaN(h[2]) && h[2] != "") HASHKDBR = +(h[2].trim());
-  if (h.length >= 4 && !isNaN(h[3]) && h[3] != "") HASHKDR = +(h[3].trim());
+  if (h.length >= 2 && !isNaN(h[1]) && h[1] != "") HASHKD = +(h[1].trim())+1;
+  if (h.length >= 3 && !isNaN(h[2]) && h[2] != "") HASHKDBR = +(h[2].trim())+1;
+  if (h.length >= 4 && !isNaN(h[3]) && h[3] != "") HASHKDR = +(h[3].trim())+1;
   if (h.length >= 5 && !isNaN(h[4]) && h[4] != "") FRAMEKILL = +(h[4].trim())+1;
   if (h.length >= 6 && !isNaN(h[5]) && h[5] != "") HASHSTARTUP = +(h[5].trim());
   if (h.length >= 7 && !isNaN(h[6]) && h[6] != "") HASHACTIVE = +(h[6].trim());
@@ -283,7 +283,7 @@ function MECHASH() {
 }
 
 function UCHASH() {
-  var h = "#" + HASHCHAR + "/" + HASHKD + "/" + HASHKDBR + "/" + HASHKDR + "/" + (FRAMEKILL-1) + "/" + HASHSTARTUP + "/" + HASHACTIVE + "/" + HASHRECOVERY;
+  var h = "#" + (HASHCHAR) + "/" + (+HASHKD-1) + "/" + (+HASHKDBR-1) + "/" + (+HASHKDR-1) + "/" + (FRAMEKILL-1) + "/" + HASHSTARTUP + "/" + HASHACTIVE + "/" + HASHRECOVERY;
   if (h != window.location.hash) window.location.hash = h;
 }
 
@@ -431,17 +431,17 @@ function UCGILLEY(rows){
               KDTABLE.selectAll(".UC").classed("UC",false);
               d3.select(p).classed("UC",true);
               //UCOKI(0);
-              UCKD(pd["KD Adv."]);
+              UCKD(+pd["KD Adv."]+1);
               if (!isNaN(pd["KDR Adv."]) && pd["KDR Adv."] != "") {
-                UCKDR(+pd["KDR Adv."]);
+                UCKDR(+pd["KDR Adv."]+1);
                 if (!isNaN(pd["KDRB Adv."]) && pd["KDRB Adv."] != "") {
-                  UCKDBR(+pd["KDRB Adv."]);
+                  UCKDBR(+pd["KDRB Adv."]+1);
                 } else {
-                  UCKDBR(+pd["KDR Adv."]);
+                  UCKDBR(+pd["KDR Adv."]+1);
                 }
               } else {
-                UCKDR(pd["KD Adv."]);
-                UCKDBR(pd["KD Adv."]);
+                UCKDR(+pd["KD Adv."]+1);
+                UCKDBR(+pd["KD Adv."]+1);
               }
               UCHASH();
             });
