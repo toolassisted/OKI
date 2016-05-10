@@ -22,7 +22,7 @@ hajotsui	LP+LK	5	2	18	KD	-	120	170		-	-	T	-	KD	120	170	63	4	4
 arakuma inashi	b+LP+LK	5	2	18	KD	-	140	200		-	-	T	-	KD	140	200	59	0	0	
 kanzuki-ryu guren no kata	HP+HK								56	-	-	-	-	-	-	-				
 guren ken	qcf+P	12			-3	-6	40*40	40*40		4*8	10*10	H	CA	-2	48*40	48*40				
-guren hosho	qcf+P > P	11			KD	-9	81	90		15	23	H	CA	KD	81	90	78	20	24	
+guren hosho	qcf+P > P	11			KD	-9	81	90		15	23	H	CA	KD	81	90	78	19	24	
 guren senha	qcf+P > u+P	17			4	-6	30*70	50*100		8*12	8*18	H*M	-	4	36*70	60*100				
 guren chochu	qcf+P > d+P	16			2	1	50	50		12	13	H	CA	4	60	60				
 guren hochu	qcf+P > d+P > d+P	24			KD	-11	60	50		12	15	H	CA	KD	54	45	90	26	31	
