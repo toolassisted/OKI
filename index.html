@@ -276,14 +276,14 @@ function MECHASH() {
   if (h.length >= 2 && !isNaN(h[1]) && h[1] != "") HASHKD = +(h[1].trim());
   if (h.length >= 3 && !isNaN(h[2]) && h[2] != "") HASHKDBR = +(h[2].trim());
   if (h.length >= 4 && !isNaN(h[3]) && h[3] != "") HASHKDR = +(h[3].trim());
-  if (h.length >= 5 && !isNaN(h[4]) && h[4] != "") FRAMEKILL = +(h[4].trim());
+  if (h.length >= 5 && !isNaN(h[4]) && h[4] != "") FRAMEKILL = +(h[4].trim())+1;
   if (h.length >= 6 && !isNaN(h[5]) && h[5] != "") HASHSTARTUP = +(h[5].trim());
   if (h.length >= 7 && !isNaN(h[6]) && h[6] != "") HASHACTIVE = +(h[6].trim());
   if (h.length >= 8 && !isNaN(h[7]) && h[7] != "") HASHRECOVERY = +(h[7].trim());
 }
 
 function UCHASH() {
-  var h = "#" + HASHCHAR + "/" + HASHKD + "/" + HASHKDBR + "/" + HASHKDR + "/" + FRAMEKILL + "/" + HASHSTARTUP + "/" + HASHACTIVE + "/" + HASHRECOVERY;
+  var h = "#" + HASHCHAR + "/" + HASHKD + "/" + HASHKDBR + "/" + HASHKDR + "/" + (FRAMEKILL-1) + "/" + HASHSTARTUP + "/" + HASHACTIVE + "/" + HASHRECOVERY;
   if (h != window.location.hash) window.location.hash = h;
 }
 
