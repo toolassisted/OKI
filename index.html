@@ -236,20 +236,111 @@
 <div id="KD"></div>
 <div>
 <pre id="OKI">
-
-<span>     0........1.........2.........3.........4.........5.........6.........7.........8.........9.........10........11........</span>
-<span>     12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789</span>
-<span>KD</span>
-<span>KDRB</span>
-<span>KDR</span>
-<span>OKI</span>
-<span class="FK">     12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789</span>
-<span>     0........1.........2.........3.........4.........5.........6.........7.........8.........9.........10........11........</span>
+<span>     </span><span id="TOP10"  >0........1.........2.........3.........4.........5.........6.........7.........8.........9.........10........11........</span>
+<span>     </span><span id="TOP1"   >12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789</span>
+<span>KD   </span><span id="ADVKD"  ></span>
+<span>KDBR </span><span id="ADVKDBR"></span>
+<span>KDR  </span><span id="ADVKDR" ></span>
+<span>OKI  </span><span id="ADVOKI" ></span>
+<span>     </span><span id="FK"     >12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789</span>
+<span>     </span><span id="FK10"   >0........1.........2.........3.........4.........5.........6.........7.........8.........9.........10........11........</span>
 </pre>
 </div>
 <div id="FRAMES"></div>
 <script src="d3.min.js"></script>
 <script>
+
+
+function UCTOP1() {
+  var ADV = d3.select("#TOP1");
+  var adv = ""
+  for (var i=1;i<=119;i++) {
+    adv += "<span class='UCLICK' onclick='UCKD("+i+")'>" + (i%10) + "</span>";
+  }
+  ADV.html(adv);
+}
+function UCKD(kd) {
+  var ADV = d3.select("#ADVKD");
+  var adv = ""
+  for (var i=1;i<=119;i++) {
+    var text = i<kd ? "+" : i>=kd+10 ? "-" : ((i-kd+1)%10);
+    adv += "<span class='UCLICK" + (i<kd?"":" WAKEUP") + "' onclick='UCKD("+i+")'>" + text + "</span>";
+  }
+  adv += "<span class='ADVPLUS'> +" + (kd-1) + " U HIT " + kd + "</span>";
+  ADV.html(adv);
+}
+function UCKDBR(kd) {
+  var ADV = d3.select("#ADVKDBR");
+  var adv = ""
+  for (var i=1;i<=119;i++) {
+    var text = i<kd ? "+" : i>=kd+10 ? "-" : ((i-kd+1)%10);
+    adv += "<span class='UCLICK" + (i<kd?"":" WAKEUP") + "' onclick='UCKDBR("+i+");UCKDR("+(i-5)+")'>" + text + "</span>";
+  }
+  adv += "<span class='ADVPLUS'> +" + (kd-1) + " U HIT " + kd + "</span>";
+  ADV.html(adv);}
+function UCKDR(kd) {
+  var ADV = d3.select("#ADVKDR");
+  var adv = ""
+  for (var i=1;i<=119;i++) {
+    var text = i<kd ? "+" : i>=kd+10 ? "-" : ((i-kd+1)%10);
+    adv += "<span class='UCLICK" + (i<kd?"":" WAKEUP") + "' onclick='UCKDR("+i+");UCKDBR("+(i+5)+");'>" + text + "</span>";
+  }
+  adv += "<span class='ADVPLUS'> +" + (kd-1) + " U HIT " + kd + "</span>";
+  ADV.html(adv);
+}
+function UCOKI(kd) {
+
+  var active = 0;
+  var startup = 0;
+  var recovery = 0;
+
+  if (OKIMOVE != null) {
+    if (!isNaN(OKIMOVE["Active"]) && OKIMOVE["Active"] != "") { active = +OKIMOVE["Active"]; }
+    if (!isNaN(OKIMOVE["Startup"]) && OKIMOVE["Startup"] != "") { startup = +OKIMOVE["Startup"] - 1 ; }
+    if (!isNaN(OKIMOVE["Recovery"]) && OKIMOVE["Recovery"] != "") { recovery = +OKIMOVE["Recovery"] ; }
+  }
+
+  if (kd>0) FRAMEKILL = kd;
+  var fk = FRAMEKILL;
+
+  var ADV = d3.select("#ADVOKI");
+  var adv = ""
+  var text = "";
+  var spanclass = "";
+  for (var i=1;i<=119;i++) {
+
+    if (i<FRAMEKILL) {
+      text = "+";
+      spanclass = "";
+    } else {
+      if (i <= FRAMEKILL+startup-1) {
+        text = "s";
+        spanclass = "STARTUP";
+      }
+      else if (i <= FRAMEKILL+startup+active-1) {
+        text = "A";
+        spanclass = "ACTIVE";
+      }
+      else if (i <= FRAMEKILL+startup+active+recovery-1) {
+        text = "r";
+        spanclass = "RECOVERY";
+      } else {
+        text = "-";
+        spanclass = "WAKEUP";
+      }
+    }
+
+    adv += "<span class='UCLICK " + spanclass + "' onclick='UCOKI("+i+")'>" + text + "</span>";
+  }
+  adv += "<span class='ADVPLUS'> +" + (FRAMEKILL-1) + " U START " + (FRAMEKILL) + "</span>";
+  ADV.html(adv);
+}
+UCTOP1();
+UCKD(110);
+UCKDBR(5);
+UCKDR(5);
+UCOKI(120);
+
 var CHARS = [
 ["ALX","BLR", "BLR2", "BRD", "BRD2", "CMY", "CNL", "CNL2", "DSM", "FAN", "KEN", "KRN"],
 ["LAR", "NCL", "NCL2", "NSH", "RMK", "RSD", "RYU", "RYU2", "VEG", "VEG2", "ZGF"],
@@ -258,47 +349,7 @@ var CHARS = [
 var KDMOVE = null;
 var OKIMOVE = null;
 var FRAMEKILL = 1;
-function SETOKI(d) {
-  return "Move " + d["Move"];
-}
-function SETKD(d) {
-  return "KD Adv. " + d["KD Adv."] + "<br />" + "KDR Adv. " + d["KDR Adv."] + "<br />" + "KDRB Adv. " + d["KDRB Adv."];
-}
-function UCOKI(fk) {
-  var OKI = d3.select("#OKI");
-  var oki = "";
-  oki += "\n<span>     " + "0........" + "1........." + "2........." + "3........." + "4........." + "5........." + "6........." + "7........." + "8........." + "9........." + "10........" + "11........" + "</span>";
-  oki += "\n<span>     " + "123456789" + "0123456789" + "0123456789" + "0123456789" + "0123456789" + "0123456789" + "0123456789" + "0123456789" + "0123456789" + "0123456789" + "0123456789" + "0123456789" + "</span>";
-  oki += "\n<span>KD   " + Array(1+ +KDMOVE["KD Adv."]).join("+") + "<span class='WAKEUP'>1234567890</span>" + "</span>";
-  oki += "\n<span>KDRB " + Array(1+ +KDMOVE["KDRB Adv."]).join("+") + "<span class='WAKEUP'>1234567890</span>" + "</span>";
-  oki += "\n<span>KDR  " + Array(1+ +KDMOVE["KDR Adv."]).join("+") + "<span class='WAKEUP'>1234567890</span>" + "</span>";
-  oki += "\n<span>OKI  ";
-  if (OKIMOVE != null) {
-    var active = 1;
-    var startup = 0;
-    var recovery = 1;
-    if (!isNaN(OKIMOVE["Active"]) && OKIMOVE["Active"] != "") { active += +OKIMOVE["Active"]; }
-    if (!isNaN(OKIMOVE["Startup"]) && OKIMOVE["Startup"] != "") { startup += +OKIMOVE["Startup"]; }
-    if (!isNaN(OKIMOVE["Recovery"]) && OKIMOVE["Recovery"] != "") { recovery += +OKIMOVE["Recovery"] + 1; }
-    if (fk>0) FRAMEKILL = fk;
-    if (FRAMEKILL-1>0) {
-      oki += Array(FRAMEKILL).join("-");
-    }
-    oki +=  "<span class='STARTUP'>" + Array(startup).join("s") + "</span>"
-    + "<span class='ACTIVE'>" + Array(active).join("a") + "</span>" 
-    + "<span class='RECOVERY'>" + Array(recovery).join("r") + "</span>";
-  }
-  oki += "</span>";
-  oki += "\n<span class='FK'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-  for (var i=1;i<=119;i++) {
-    oki += "<span class='UCLICK' onclick='UCOKI("+i+")'>" + (i%10) + "</span>";
-  }
-  oki += "</span>";  
-  //oki += "\n<span>     " + "123456789" + "0123456789" + "0123456789" + "0123456789" + "0123456789" + "0123456789" + "0123456789" + "0123456789" + "0123456789" + "0123456789" + "0123456789" + "0123456789" + "</span>";
-  oki += "\n<span>     " + "0........" + "1........." + "2........." + "3........." + "4........." + "5........." + "6........." + "7........." + "8........." + "9........." + "10........" + "11........" + "</span>";
 
-  OKI.html(oki);
-}
 d3.tsv("ALX.txt",function(rows){
 
   var KD = d3.select("#KD");
@@ -314,11 +365,22 @@ d3.tsv("ALX.txt",function(rows){
             .on("click",function(d){
               var p = this.parentNode;
               var pd = d3.select(p).datum();
-              //KD.selectAll("div").data([pd]).html(SETKD).enter().append("div").html(SETKD);
+              KDMOVE = pd;
               KDTABLE.selectAll(".UC").classed("UC",false);
               d3.select(p).classed("UC",true);
-              KDMOVE = pd;
-              UCOKI(0);
+              //UCOKI(0);
+              UCKD(pd["KD Adv."]);
+              if (!isNaN(pd["KDR Adv."]) && pd["KDR Adv."] != "") {
+                UCKDR(+pd["KDR Adv."]);
+                if (!isNaN(pd["KDRB Adv."]) && pd["KDRB Adv."] != "") {
+                  UCKDBR(+pd["KDRB Adv."]);
+                } else {
+                  UCKDBR(+pd["KDR Adv."]);
+                }
+              } else {
+                UCKDR(pd["KD Adv."]);
+                UCKDBR(pd["KD Adv."]);
+              }
             });            
 
   FRAMETABLE.append("tr").selectAll("th").data(keys).enter().append("th").text(function(d){return d;});
@@ -328,8 +390,6 @@ d3.tsv("ALX.txt",function(rows){
               var p = this.parentNode;
               var pd = d3.select(p).datum();
               OKIMOVE = pd;
-              //console.log(d,p,pd);
-              //OKI.selectAll("div").data([pd]).html(SETOKI).enter().append("div").html(SETOKI);
               FRAMETABLE.selectAll(".UC").classed("UC",false);
               d3.select(p).classed("UC",true);
               UCOKI(0);
