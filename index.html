@@ -230,26 +230,82 @@
     cursor: pointer;
   }
 
+  button.CHAR {
+    padding: 5px;
+    margin: 3px;
+    /*width: 8%;*/
+    background-color: #999;
+  }
+
+  button.SEL {
+    background-color: #ffc;
+  }
 </style>
 </head>
 <body>
+<div id="CHARS"></div>
 <div id="KD"></div>
 <div>
 <pre id="OKI">
-<span>     </span><span id="TOP10"  >0........1.........2.........3.........4.........5.........6.........7.........8.........9.........10........11........</span>
-<span>     </span><span id="TOP1"   >12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789</span>
-<span>KD   </span><span id="ADVKD"  ></span>
-<span>KDBR </span><span id="ADVKDBR"></span>
-<span>KDR  </span><span id="ADVKDR" ></span>
-<span>OKI  </span><span id="ADVOKI" ></span>
-<span>     </span><span id="FK"     >12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789</span>
-<span>     </span><span id="FK10"   >0........1.........2.........3.........4.........5.........6.........7.........8.........9.........10........11........</span>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="TOP10"   >0........1.........2.........3.........4.........5.........6.........7.........8.........9.........10........11........</span>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="TOP1"    >12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789</span>
+<span          >KD&nbsp;&nbsp;&nbsp;</span><span id="ADVKD"   ></span>
+<span                    >KDBR&nbsp;</span><span id="ADVKDBR" ></span>
+<span               >KDR&nbsp;&nbsp;</span><span id="ADVKDR"  ></span>
+<span               >OKI&nbsp;&nbsp;</span><span id="ADVOKI"  ></span>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="FK"      >12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789</span>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="FK10"    >0........1.........2.........3.........4.........5.........6.........7.........8.........9.........10........11........</span>
 </pre>
 </div>
 <div id="FRAMES"></div>
 <script src="d3.min.js"></script>
 <script>
+var KDMOVE = null;
+var OKIMOVE = null;
+var FRAMEKILL = 18;
+var HASHKD = 79;
+var HASHKDBR = 25;
+var HASHKDR = 20;
+var HASHCHAR = "KRN";
+var HASHSTARTUP = 5;
+var HASHACTIVE = 2;
+var HASHRECOVERY = 10;
+function MECHASH() {
+  var h = window.location.hash.substr(1).split("/");
+  if (h.length >= 1 && CHARS.indexOf(h[0].toUpperCase()) != -1) HASHCHAR = h[0];
+  if (h.length >= 2 && !isNaN(h[1]) && h[1] != "") HASHKD = +(h[1].trim());
+  if (h.length >= 3 && !isNaN(h[2]) && h[2] != "") HASHKDBR = +(h[2].trim());
+  if (h.length >= 4 && !isNaN(h[3]) && h[3] != "") HASHKDR = +(h[3].trim());
+  if (h.length >= 5 && !isNaN(h[4]) && h[4] != "") FRAMEKILL = +(h[4].trim());
+  if (h.length >= 6 && !isNaN(h[5]) && h[5] != "") HASHSTARTUP = +(h[5].trim());
+  if (h.length >= 7 && !isNaN(h[6]) && h[6] != "") HASHACTIVE = +(h[6].trim());
+  if (h.length >= 8 && !isNaN(h[7]) && h[7] != "") HASHRECOVERY = +(h[7].trim());
+}
 
+function UCHASH() {
+  var h = "#" + HASHCHAR + "/" + HASHKD + "/" + HASHKDBR + "/" + HASHKDR + "/" + FRAMEKILL + "/" + HASHSTARTUP + "/" + HASHACTIVE + "/" + HASHRECOVERY;
+  if (h != window.location.hash) window.location.hash = h;
+}
+
+var CHARS = [
+["ALX", //"BLR", "BLR2", "BRD", "BRD2", "CMY", "CNL", "CNL2", "DSM", "FAN", "GUL", "KEN", 
+"KRN",//"LAR", "NCL", "NCL2", "NSH", "RMK", "RSD", "RYU", "RYU2", "VEG", "VEG2", "ZGF",
+]
+];
+
+  var CDIV = d3.select("#CHARS");
+  CDIV.selectAll("div").data(CHARS).enter().append("div")
+      .attr("class", function(d,i) {return "ROW"; })
+      .selectAll("button").data(function(d){return d;}).enter().append("button").attr("class","CHAR")
+      .on("click",function(d,i){
+        var p = d3.select(this.parentNode.parentNode).datum();
+        d3.selectAll(".CHAR").classed("SEL",false);
+        d3.select(this).classed("SEL",true);
+        
+        HASHCHAR = d;
+        d3.tsv(HASHCHAR+".txt", UCGILLEY);
+      })
+      .text(function(d,i){return d;});
 
 function UCTOP1() {
   var ADV = d3.select("#TOP1");
@@ -259,7 +315,8 @@ function UCTOP1() {
   }
   ADV.html(adv);
 }
-function UCKD(kd) {
+
+function UCKD(kd, hash) {
   var ADV = d3.select("#ADVKD");
   var adv = ""
   for (var i=1;i<=119;i++) {
@@ -268,37 +325,47 @@ function UCKD(kd) {
   }
   adv += "<span class='ADVPLUS'> +" + (kd-1) + " U HIT " + kd + "</span>";
   ADV.html(adv);
+  HASHKD = kd;
+  if (hash) UCHASH();
 }
-function UCKDBR(kd) {
+function UCKDBR(kd, hash) {
   var ADV = d3.select("#ADVKDBR");
   var adv = ""
   for (var i=1;i<=119;i++) {
     var text = i<kd ? "+" : i>=kd+10 ? "-" : ((i-kd+1)%10);
-    adv += "<span class='UCLICK" + (i<kd?"":" WAKEUP") + "' onclick='UCKDBR("+i+");UCKDR("+(i-5)+")'>" + text + "</span>";
+    adv += "<span class='UCLICK" + (i<kd?"":" WAKEUP") + "' onclick='UCKDBR("+i+",false);UCKDR("+(i-5)+")'>" + text + "</span>";
   }
   adv += "<span class='ADVPLUS'> +" + (kd-1) + " U HIT " + kd + "</span>";
-  ADV.html(adv);}
-function UCKDR(kd) {
+  ADV.html(adv);
+  HASHKDBR = kd;
+  if (hash) UCHASH();
+}
+function UCKDR(kd, hash) {
   var ADV = d3.select("#ADVKDR");
   var adv = ""
   for (var i=1;i<=119;i++) {
     var text = i<kd ? "+" : i>=kd+10 ? "-" : ((i-kd+1)%10);
-    adv += "<span class='UCLICK" + (i<kd?"":" WAKEUP") + "' onclick='UCKDR("+i+");UCKDBR("+(i+5)+");'>" + text + "</span>";
+    adv += "<span class='UCLICK" + (i<kd?"":" WAKEUP") + "' onclick='UCKDR("+i+",false);UCKDBR("+(i+5)+");'>" + text + "</span>";
   }
   adv += "<span class='ADVPLUS'> +" + (kd-1) + " U HIT " + kd + "</span>";
+  ADV.html(adv);  
+  HASHKDR = kd;
+  if (hash) UCHASH();
+}
+function UCFK() {
+  var ADV = d3.select("#FK");
+  var adv = ""
+  for (var i=1;i<=119;i++) {
+    adv += "<span class='UCLICK' onclick='UCOKI("+i+")'>" + (i%10) + "</span>";
+  }
   ADV.html(adv);
 }
-function UCOKI(kd) {
+function UCOKI(kd, hash) {
 
-  var active = 0;
-  var startup = 0;
-  var recovery = 0;
+  var active = HASHACTIVE;
+  var startup = HASHSTARTUP-1;
+  var recovery = HASHRECOVERY;
 
-  if (OKIMOVE != null) {
-    if (!isNaN(OKIMOVE["Active"]) && OKIMOVE["Active"] != "") { active = +OKIMOVE["Active"]; }
-    if (!isNaN(OKIMOVE["Startup"]) && OKIMOVE["Startup"] != "") { startup = +OKIMOVE["Startup"] - 1 ; }
-    if (!isNaN(OKIMOVE["Recovery"]) && OKIMOVE["Recovery"] != "") { recovery = +OKIMOVE["Recovery"] ; }
-  }
 
   if (kd>0) FRAMEKILL = kd;
   var fk = FRAMEKILL;
@@ -332,36 +399,29 @@ function UCOKI(kd) {
 
     adv += "<span class='UCLICK " + spanclass + "' onclick='UCOKI("+i+")'>" + text + "</span>";
   }
-  adv += "<span class='ADVPLUS'> +" + (FRAMEKILL-1) + " U START " + (FRAMEKILL) + "</span>";
+  adv += "<span class='ADVPLUS'> +" + (FRAMEKILL-1) + " U HIT " + (FRAMEKILL + HASHSTARTUP - 1) + "</span>";
   ADV.html(adv);
+  if (hash) UCHASH();
 }
-UCTOP1();
-UCKD(110);
-UCKDBR(5);
-UCKDR(5);
-UCOKI(120);
 
-var CHARS = [
-["ALX","BLR", "BLR2", "BRD", "BRD2", "CMY", "CNL", "CNL2", "DSM", "FAN", "KEN", "KRN"],
-["LAR", "NCL", "NCL2", "NSH", "RMK", "RSD", "RYU", "RYU2", "VEG", "VEG2", "ZGF"],
-];
 
-var KDMOVE = null;
-var OKIMOVE = null;
-var FRAMEKILL = 1;
-
-d3.tsv("ALX.txt",function(rows){
+function UCGILLEY(rows){
 
   var KD = d3.select("#KD");
   var FRAMES = d3.select("#FRAMES");
+
+  KD.selectAll("*").remove();
+  FRAMES.selectAll("*").remove();
+
   var FRAMETABLE = FRAMES.append("div").append("table").classed("FRAMES",true);
   var KDTABLE = KD.append("div").append("table").classed("FRAMES",true);
 
   var keys = d3.keys(rows[0]);
-
-  KDTABLE.append("tr").selectAll("th").data(keys).enter().append("th").text(function(d){return d;});
-  KDTABLE.selectAll("tr").data(rows.filter(function(d){return !isNaN(d["KD Adv."]) && d["KD Adv."] != "";})).enter().append("tr")
-            .selectAll("td").data(function(d){return d3.entries(d);}).enter().append("td").text(function(d){return d.value;})
+  
+  KDTABLE.append("thead").append("tr").selectAll("th").data(["KD ADV","KDR ADV","KDBR ADV"].concat(keys)).enter().append("th").text(function(d){return d;});
+  KDTABLE.append("tbody").selectAll("tr").data(rows.filter(function(d){return !isNaN(d["KD Adv."]) && d["KD Adv."] != "";})).enter().append("tr")
+            .selectAll("td").data(function(d){ return [{key:"KD",value:"+"+d["KD Adv."]},{key:"KDR",value:"+"+d["KDR Adv."]},{key:"KDBR",value:"+"+d["KDRB Adv."]}].concat(d3.entries(d));})
+            .enter().append("td").text(function(d){return d.value;})
             .on("click",function(d){
               var p = this.parentNode;
               var pd = d3.select(p).datum();
@@ -381,21 +441,42 @@ d3.tsv("ALX.txt",function(rows){
                 UCKDR(pd["KD Adv."]);
                 UCKDBR(pd["KD Adv."]);
               }
-            });            
-
-  FRAMETABLE.append("tr").selectAll("th").data(keys).enter().append("th").text(function(d){return d;});
-  FRAMETABLE.selectAll("tr").data(rows).enter().append("tr")
+              UCHASH();
+            });
+  
+  FRAMETABLE.append("thead").append("tr").selectAll("th").data(keys).enter().append("th").text(function(d){return d;});
+  FRAMETABLE.append("tbody").selectAll("tr").data(rows).enter().append("tr")
             .selectAll("td").data(function(d){return d3.entries(d);}).enter().append("td").text(function(d){return d.value;})
             .on("click",function(d){
               var p = this.parentNode;
               var pd = d3.select(p).datum();
               OKIMOVE = pd;
               FRAMETABLE.selectAll(".UC").classed("UC",false);
-              d3.select(p).classed("UC",true);
+              d3.select(p).classed("UC",true);              
+              
+              if (OKIMOVE != null) {
+                if (!isNaN(OKIMOVE["Active"]) && OKIMOVE["Active"] != "") { HASHACTIVE = +OKIMOVE["Active"]; }
+                if (!isNaN(OKIMOVE["Startup"]) && OKIMOVE["Startup"] != "") { HASHSTARTUP = +OKIMOVE["Startup"]; }
+                if (!isNaN(OKIMOVE["Recovery"]) && OKIMOVE["Recovery"] != "") { HASHRECOVERY = +OKIMOVE["Recovery"]; }
+              }
               UCOKI(0);
             });
 
-});
+}
+
+
+MECHASH();
+
+UCTOP1();
+UCKD(HASHKD, false);
+UCKDBR(HASHKDBR, false);
+UCKDR(HASHKDR, false);
+UCOKI(FRAMEKILL, false);
+UCFK();
+UCHASH();
+
+
+d3.tsv(HASHCHAR+".txt", UCGILLEY);
 
 </script>
 
