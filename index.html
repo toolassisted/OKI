@@ -457,7 +457,7 @@ function UCGILLEY(rows){
               
               if (OKIMOVE != null) {
                 if (!isNaN(OKIMOVE["Active"]) && OKIMOVE["Active"] != "") { HASHACTIVE = +OKIMOVE["Active"]; }  else { HASHACTIVE = 0; }
-                if (!isNaN(OKIMOVE["Startup"]) && OKIMOVE["Startup"] != "") { HASHSTARTUP = +OKIMOVE["Startup"]; } else { HASHSTARTUP = 0; }
+                if (!isNaN(OKIMOVE["Startup"]) && OKIMOVE["Startup"] != "") { HASHSTARTUP = +OKIMOVE["Startup"]; } else { HASHSTARTUP = 1; }
                 if (!isNaN(OKIMOVE["Recovery"]) && OKIMOVE["Recovery"] != "") { HASHRECOVERY = +OKIMOVE["Recovery"]; } else { HASHRECOVERY = 0; }
               }
               UCOKI(0);
