@@ -272,7 +272,7 @@ var HASHACTIVE = 4;
 var HASHRECOVERY = 10;
 function MECHASH() {
   var h = window.location.hash.substr(1).split("/");
-  if (h.length >= 1 && CHARS.indexOf(h[0].toUpperCase()) != -1) HASHCHAR = h[0];
+  if (h.length >= 1 && CHARS[0].indexOf(h[0].toUpperCase()) != -1) HASHCHAR = h[0];
   if (h.length >= 2 && !isNaN(h[1]) && h[1] != "") HASHKD = +(h[1].trim())+1;
   if (h.length >= 3 && !isNaN(h[2]) && h[2] != "") HASHKDBR = +(h[2].trim())+1;
   if (h.length >= 4 && !isNaN(h[3]) && h[3] != "") HASHKDR = +(h[3].trim())+1;
