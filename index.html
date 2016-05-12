@@ -121,7 +121,7 @@
     background-color: #060;
   }
   table.FRAMES td.UC {
-    background-color: #060;
+    background-color: #030;
   }
 
   #LINKS div.COL {
@@ -461,7 +461,7 @@ function UCGILLEY(rows){
             .classed("UC",function(d){return +d["Startup"]==HASHSTARTUP && +d["Active"]==HASHACTIVE && +d["Recovery"]==HASHRECOVERY; })
             .selectAll("td").data(function(d){return [{key:"TOTAL",value:d["Total "]}].concat(d3.entries(d)).concat([{key:"U C",value:"U C"}]);})
             .enter().append("td").text(function(d){return d.value;})
-            .classed("UC",function(d){return d.key=="TOTAL" && +d.value==FRAMEKILL-1; })
+            .classed("UC",function(d){return d.key=="TOTAL" && FRAMEKILL>1 && +d.value==FRAMEKILL-1; })
             .on("click",function(d){
               var p = this.parentNode;
               var pd = d3.select(p).datum();
