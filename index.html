@@ -472,7 +472,7 @@ function UCGILLEY(rows){
                 console.log(pd);
 
                 FRAMETABLE.select("thead").insert("tr",":first-child")
-                .selectAll("td").data( [{key:"TOTAL",value:d["Total "]}].concat(d3.entries(pd)).concat([{key:"U NO C",value:"U NO C"}]) )
+                .selectAll("td").data( [{key:"TOTAL",value:pd["Total "]}].concat(d3.entries(pd)).concat([{key:"U NO C",value:"U NO C"}]) )
                 .enter().append("td").text(function(dd){ console.log(dd); return dd.value;})
                 .on("click",function(dd){
                   var pp = this.parentNode;
