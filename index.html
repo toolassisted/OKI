@@ -452,17 +452,36 @@ function UCGILLEY(rows){
               UCHASH();
             });
   
-  FRAMETABLE.append("thead").append("tr").selectAll("th").data(["Total"].concat(keys)).enter().append("th").text(function(d){return d;});
+  FRAMETABLE.append("thead").append("tr").selectAll("th").data(["Total"].concat(keys).concat([""])).enter().append("th").text(function(d){return d;});
   FRAMETABLE.append("tbody").selectAll("tr").data(rows).enter().append("tr")
-            .selectAll("td").data(function(d){return [{key:"TOTAL",value:d["Total "]}].concat(d3.entries(d));})
+            .selectAll("td").data(function(d){return [{key:"TOTAL",value:d["Total "]}].concat(d3.entries(d)).concat([{key:"U C",value:"U C"}]);})
             .enter().append("td").text(function(d){return d.value;})
             .on("click",function(d){
               var p = this.parentNode;
               var pd = d3.select(p).datum();
-              OKIMOVE = pd;
+              
+
+              if (d.key == "U C") {
+
+                console.log(pd);
+
+                FRAMETABLE.select("thead").insert("tr",":first-child")
+                .selectAll("td").data( [{key:"TOTAL",value:d["Total "]}].concat(d3.entries(pd)).concat([{key:"U NO C",value:"U NO C"}]) )
+                .enter().append("td").text(function(dd){ console.log(dd); return dd.value;})
+                .on("click",function(dd){
+                  var pp = this.parentNode;
+                  if (dd.key == "U NO C") {
+                    d3.select(pp).remove();
+                  }
+                });
+                
+                return;
+              }
+
               FRAMETABLE.selectAll(".UC").classed("UC",false);
               d3.select(p).classed("UC",true);              
               
+              OKIMOVE = pd;
               if (OKIMOVE != null) {
                 if (!isNaN(OKIMOVE["Active"]) && OKIMOVE["Active"] != "") { HASHACTIVE = +OKIMOVE["Active"]; }  else { HASHACTIVE = 0; }
                 if (!isNaN(OKIMOVE["Startup"]) && OKIMOVE["Startup"] != "") { HASHSTARTUP = +OKIMOVE["Startup"]; } else { HASHSTARTUP = 1; }
