@@ -1,25 +1,25 @@
-Move	Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	 Damage	Stun	Total 	Hitstop	Chip	Attack Level	Cancel Ability	CH hit adv.	CH Damage	CH Stun	KD Adv.	KDR Adv.	KDRB Adv.	Note
-stand LP		4	2	7	4	2	30	70		8	0	H	CH,SP,V	6	36	84				
-stand MP		5	3	12	4	1	60	100		12	10	H	SP,V	6	72	120				
-stand HP		7	4	20	2	-2	90	150		15	15	H	SP,V	3	108	180				hits on 8th frame on ground
-stand LK		4	3	8	4	3	40	70		8	0	H	SP,V	6	48	84				
-stand MK		7	3	15	2	0	60	100		12	10	H	V	4	72	120				
-stand HK		10	2	23	0	-4	90	150		15	15	H	V	6	108	180				
-crouch LP		3	2	8	3	2	20	70		8	0	H	CH,SP,V	5	24	84				
-crouch MP		5	4	10	6	2	60	100		12	10	H	SP,V	8	72	120				
-crouch HP		7	4	22	-3	-7	90	150		15	15	H	SP,V	KD 105	84	180				
-crouch LK		4	2	8	2	0	30	70		8	0	L	SP,V	4	36	84				
-crouch MK		6	2	13	-1	-4	50	100		12	8	L	SP,V	1	60	120				
-crouch HK		9	3	21	KD	-14	100	150		15	17	L	V	KD	120	180	67	18	23	
+Move	Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	Damage	Stun	Total 	Hitstop	Chip	Attack Level	Cancel Ability	CH hit adv.	CH Damage	CH Stun	KD Adv.	KDR Adv.	KDRB Adv.	Note
+stand LP		4	2	7	4	2	30	70	12	8	0	H	CH,SP,V	6	36	84				
+stand MP		5	3	12	4	1	60	100	19	12	10	H	SP,V	6	72	120				
+stand HP		7	4	20	2	-2	90	150	29	15	15	H	SP,V	3	108	180				hits on 8th frame on ground
+stand LK		4	3	8	4	3	40	70	14	8	0	H	SP,V	6	48	84				
+stand MK		7	3	15	2	0	60	100	24	12	10	H	V	4	72	120				
+stand HK		10	2	23	0	-4	90	150	34	15	15	H	V	6	108	180				
+crouch LP		3	2	8	3	2	20	70	12	8	0	H	CH,SP,V	5	24	84				
+crouch MP		5	4	10	6	2	60	100	18	12	10	H	SP,V	8	72	120				
+crouch HP		7	4	22	-3	-7	90	150	32	15	15	H	SP,V	KD 105	84	180				
+crouch LK		4	2	8	2	0	30	70	13	8	0	L	SP,V	4	36	84				
+crouch MK		6	2	13	-1	-4	50	100	21	12	8	L	SP,V	1	60	120				
+crouch HK		9	3	21	KD	-14	100	150	34	15	17	L	V	KD	120	180	67	18	23	
 jump LP		3	5	-	-	-	40	70		8	0	M	-	-	48	84				
 jump MP		5	6	-	-	-	70	100		12	12	M	-	-	84	120				
 jump HP		7	5	-	-	-	90	150		15	15	M	-	-	108	180				
 jump LK		4	6	-	-	-	40	70		8	0	M	-	-	48	84				
 jump MK		6	6	-	-	-	60	100		12	10	M	-	-	72	120				
 jump HK		9	4	-	-	-	90	150		15	15	M	-	-	108	180				
-tsumujigari	f+MK	22	2	22	0	-4	60	100		12	10	M	-	2	72	120				
-hajotsui	LP+LK	5	2	18	KD	-	120	170		-	-	T	-	KD	120	170	63	4	4	
-arakuma inashi	b+LP+LK	5	2	18	KD	-	140	200		-	-	T	-	KD	140	200	59	0	0	
+tsumujigari	f+MK	22	2	22	0	-4	60	100	44	12	10	M	-	2	72	120				
+hajotsui	LP+LK	5	2	18	KD	-	120	170	24	-	-	T	-	KD	120	170	63	4	4	
+arakuma inashi	b+LP+LK	5	2	18	KD	-	140	200	24	-	-	T	-	KD	140	200	59	0	0	
 kanzuki-ryu guren no kata	HP+HK								56	-	-	-	-	-	-	-				
 guren ken	qcf+P	12			-3	-6	40*40	40*40		4*8	10*10	H	CA	-2	48*40	48*40				
 guren hosho	qcf+P > P	11			KD	-9	81	90		15	23	H	CA	KD	81	90	78	19	24	
@@ -60,10 +60,10 @@ jump forward	45 (3+38+4)	41	1	4					45
 jump backward	46 (4+38+4)	42	1	4					46											
 dash forward	16		16						16											
 dash backward	21		21						21											
-TENKO TENKO EX DASH RESSENHA EX																	71	12	17
-TENKO TENKO RESSENHA EX CORNER																	79	20	25
-TENKO OROCHI																	91	31	36
-TENKO VSKILL																	92	33	38
-VREVERSAL																	94	35	40
-TENKO KICK																	101	42	47
-TENKO TENKO																	103	44	49
+TENKO TENKO EX DASH RESSENHA EX																	71	12	17	
+TENKO TENKO RESSENHA EX CORNER																	79	20	25	
+TENKO OROCHI																	91	31	36	
+TENKO VSKILL																	92	33	38	
+VREVERSAL																	94	35	40	
+TENKO KICK																	101	42	47	
+TENKO TENKO																	103	44	49	

@@ -120,6 +120,9 @@
   table.FRAMES tr.UC {
     background-color: #060;
   }
+  table.FRAMES td.UC {
+    background-color: #060;
+  }
 
   #LINKS div.COL {
     display: inline-block;
@@ -304,7 +307,7 @@ var CHARS = [
   var CDIV = d3.select("#CHARS");
   CDIV.selectAll("div").data(CHARS).enter().append("div")
       .attr("class", function(d,i) {return "ROW"; })
-      .selectAll("button").data(function(d){return d;}).enter().append("button").attr("class","CHAR")
+      .selectAll("button").data(function(d){return d;}).enter().append("button").attr("class", function(d){ return "CHAR CHAR"+d;})
       .on("click",function(d,i){
         var p = d3.select(this.parentNode.parentNode).datum();
         d3.selectAll(".CHAR").classed("SEL",false);
@@ -428,6 +431,7 @@ function UCGILLEY(rows){
   
   KDTABLE.append("thead").append("tr").selectAll("th").data(["KD ADV","KDR ADV","KDBR ADV"].concat(keys)).enter().append("th").text(function(d){return d;});
   KDTABLE.append("tbody").selectAll("tr").data(rows.filter(function(d){return !isNaN(d["KD Adv."]) && d["KD Adv."] != "";})).enter().append("tr")
+            .classed("UC",function(d){return +d["KDRB Adv."]==HASHKDBR-1 || +d["KDR Adv."]==HASHKDR-1 || +d["KD Adv."]==HASHKD-1; })
             .selectAll("td").data(function(d){ return [{key:"KD",value:"+"+d["KD Adv."]},{key:"KDR",value:"+"+d["KDR Adv."]},{key:"KDBR",value:"+"+d["KDRB Adv."]}].concat(d3.entries(d));})
             .enter().append("td").text(function(d){return d.value;})
             .on("click",function(d){
@@ -452,10 +456,12 @@ function UCGILLEY(rows){
               UCHASH();
             });
   
-  FRAMETABLE.append("thead").append("tr").selectAll("th").data(["Total"].concat(keys).concat([""])).enter().append("th").text(function(d){return d;});
+  FRAMETABLE.append("thead").append("tr").selectAll("th").data(["TOTAL"].concat(keys).concat([""])).enter().append("th").text(function(d){return d;});
   FRAMETABLE.append("tbody").selectAll("tr").data(rows).enter().append("tr")
+            .classed("UC",function(d){return +d["Startup"]==HASHSTARTUP && +d["Active"]==HASHACTIVE && +d["Recovery"]==HASHRECOVERY; })
             .selectAll("td").data(function(d){return [{key:"TOTAL",value:d["Total "]}].concat(d3.entries(d)).concat([{key:"U C",value:"U C"}]);})
             .enter().append("td").text(function(d){return d.value;})
+            .classed("UC",function(d){return d.key=="TOTAL" && +d.value==FRAMEKILL-1; })
             .on("click",function(d){
               var p = this.parentNode;
               var pd = d3.select(p).datum();
@@ -474,7 +480,7 @@ function UCGILLEY(rows){
                     d3.select(pp).remove();
                   }
                 });
-                
+
                 return;
               }
 
@@ -505,6 +511,7 @@ UCHASH();
 
 
 d3.tsv(HASHCHAR+".txt", UCGILLEY);
+d3.selectAll(".CHAR"+HASHCHAR).classed("SEL",true);
 
 </script>
 
