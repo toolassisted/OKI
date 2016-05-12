@@ -431,7 +431,7 @@ function UCGILLEY(rows){
   
   KDTABLE.append("thead").append("tr").selectAll("th").data(["KD ADV","KDR ADV","KDBR ADV"].concat(keys)).enter().append("th").text(function(d){return d;});
   KDTABLE.append("tbody").selectAll("tr").data(rows.filter(function(d){return !isNaN(d["KD Adv."]) && d["KD Adv."] != "";})).enter().append("tr")
-            .classed("UC",function(d){return +d["KDRB Adv."]==HASHKDBR-1 || +d["KDR Adv."]==HASHKDR-1 || +d["KD Adv."]==HASHKD-1; })
+            .classed("UC",function(d){return +d["KDRB Adv."]==HASHKDBR-1 && +d["KDR Adv."]==HASHKDR-1 && +d["KD Adv."]==HASHKD-1; })
             .selectAll("td").data(function(d){ return [{key:"KD",value:"+"+d["KD Adv."]},{key:"KDR",value:"+"+d["KDR Adv."]},{key:"KDBR",value:"+"+d["KDRB Adv."]}].concat(d3.entries(d));})
             .enter().append("td").text(function(d){return d.value;})
             .on("click",function(d){
