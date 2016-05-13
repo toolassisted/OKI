@@ -250,6 +250,45 @@
   button.SEL {
     background-color: #ffc;
   }
+
+  #OKI {    
+    cursor: pointer;
+  }
+
+
+  .UCY1 {    
+    background-color: #033;
+  }
+
+  .UCY2 {    
+    background-color: #033;
+  }
+
+  .UCY3 {    
+    background-color: #220;
+  }
+
+  .UCY4 {    
+    background-color: #220;
+  }
+
+  .UCY5 {    
+    background-color: #220;
+  }
+
+  .UCY6 {    
+    background-color: #220;
+  }
+
+  .UCY7 {    
+    background-color: #220;
+  }
+
+
+  .UCOKI {
+    background-color: #020;
+  }
+
 </style>
 </head>
 <body>
@@ -257,43 +296,89 @@
 <div id="KD"></div>
 <div>
 <pre id="OKI">
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="TOP10"   class="GRID">0........1.........2.........3.........4.........5.........6.........7.........8.........9.........10........11........</span>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="TOP1"    class="GRID">12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789</span>
-<span          >KD&nbsp;&nbsp;&nbsp;</span><span id="ADVKD"   class="GRID"></span>
-<span                    >KDBR&nbsp;</span><span id="ADVKDBR" class="GRID"></span>
-<span               >KDR&nbsp;&nbsp;</span><span id="ADVKDR"  class="GRID"></span>
-<span               >OKI&nbsp;&nbsp;</span><span id="ADVOKI"  class="GRID"></span>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="FK"      class="GRID">12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789</span>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="FK10"    class="GRID">0........1.........2.........3.........4.........5.........6.........7.........8.........9.........10........11........</span>
+<span class="UCPOINT"      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="TOP10"   class="GRID">0........1.........2.........3.........4.........5.........6.........7.........8.........9.........10........11........</span>
+<span class="UCPOINT"      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="TOP1"    class="GRID">12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789</span>
+<span class="UCPOINT"                          >KDBR&nbsp;</span><span id="ADVKDBR" class="GRID"></span>
+<span class="UCPOINT"                     >KDR&nbsp;&nbsp;</span><span id="ADVKDR"  class="GRID"></span>
+<span class="UCPOINT"                >KD&nbsp;&nbsp;&nbsp;</span><span id="ADVKD"   class="GRID"></span>
+<span class="UCPOINT" onclick="MECOKI(1)"      >OKI1&nbsp;</span><span id="ADVOKI1" class="GRID"></span>
+<span class="UCPOINT" onclick="MECOKI(2)"      >OKI2&nbsp;</span><span id="ADVOKI2" class="GRID"></span>
+<span class="UCPOINT" onclick="MECOKI(3)"      >OKI3&nbsp;</span><span id="ADVOKI3" class="GRID"></span>
+<span class="UCPOINT" onclick="MECOKI(4)"      >OKI4&nbsp;</span><span id="ADVOKI4" class="GRID"></span>
+<span class="UCPOINT" onclick="MECOKI(5)"      >OKI5&nbsp;</span><span id="ADVOKI5" class="GRID"></span>
+<span class="UCPOINT" onclick="MECOKI(6)"      >OKI6&nbsp;</span><span id="ADVOKI6" class="GRID"></span>
+<span class="UCPOINT" onclick="MECOKI(7)"      >OKI7&nbsp;</span><span id="ADVOKI7" class="GRID"></span>
+<span class="UCPOINT"      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="FK"      class="GRID">12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789</span>
+<span class="UCPOINT"      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="FK10"    class="GRID">0........1.........2.........3.........4.........5.........6.........7.........8.........9.........10........11........</span>
 </pre>
 </div>
+<div id="KILLS"></div>
 <div id="FRAMES"></div>
 <script src="d3.min.js"></script>
 <script>
+var CHARPLUS = "&middot;";
+var CHARMINUS = "&middot;";
+var MEOKI = 1;
 var KDMOVE = null;
 var OKIMOVE = null;
 var FRAMEKILL = 19;
-var HASHKD = 79+1;
-var HASHKDBR = 25+1;
-var HASHKDR = 20+1;
-var HASHCHAR = "KRN";
+var HASHKD = 91+1;
+var HASHKDBR = 37+1;
+var HASHKDR = 32+1;
+var HASHCHAR = "GUL";
 var HASHSTARTUP = 5;
 var HASHACTIVE = 4;
 var HASHRECOVERY = 10;
+var HASHLIST = [];
+var OKILIST = [{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
+              ,{FRAMEKILL:30,STARTUP:7,ACTIVE:3,RECOVERY:18,MOVE:"stand HP"}
+              ,{FRAMEKILL:84,STARTUP:7,ACTIVE:3,RECOVERY:18,MOVE:"stand HP"}
+              ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
+              ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
+              ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
+              ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
+              ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}]
+
 function MECHASH() {
   var h = window.location.hash.substr(1).split("/");
   if (h.length >= 1 && CHARS[0].indexOf(h[0].toUpperCase()) != -1) HASHCHAR = h[0];
   if (h.length >= 2 && !isNaN(h[1]) && h[1] != "") HASHKD = +(h[1].trim())+1;
   if (h.length >= 3 && !isNaN(h[2]) && h[2] != "") HASHKDBR = +(h[2].trim())+1;
   if (h.length >= 4 && !isNaN(h[3]) && h[3] != "") HASHKDR = +(h[3].trim())+1;
-  if (h.length >= 5 && !isNaN(h[4]) && h[4] != "") FRAMEKILL = +(h[4].trim())+1;
-  if (h.length >= 6 && !isNaN(h[5]) && h[5] != "") HASHSTARTUP = +(h[5].trim());
-  if (h.length >= 7 && !isNaN(h[6]) && h[6] != "") HASHACTIVE = +(h[6].trim());
-  if (h.length >= 8 && !isNaN(h[7]) && h[7] != "") HASHRECOVERY = +(h[7].trim());
+
+  if (h.length >= 5 && !isNaN(h[4]) && h[4] != "" && h[4].indexOf(",") == -1) {
+    for (var i=1;i<=2;i++) {
+      OKILIST[i].FRAMEKILL = +(h[4].trim())+1;
+      if (h.length >= 6 && !isNaN(h[5]) && h[5] != "") OKILIST[i].STARTUP = +(h[5].trim());
+      if (h.length >= 7 && !isNaN(h[6]) && h[6] != "") OKILIST[i].ACTIVE = +(h[6].trim());
+      if (h.length >= 8 && !isNaN(h[7]) && h[7] != "") OKILIST[i].RECOVERY = +(h[7].trim());
+      OKILIST[i].MOVE = "";
+    }
+  } else {
+    for (var i=1;i<=7;i++) {
+      if (h.length >= i+4) {
+        var hh = h[i+3].split(",");
+        if (hh.length >= 1 && !isNaN(hh[0]) && hh[0] != "") OKILIST[i].FRAMEKILL = +(hh[0].trim());
+        if (hh.length >= 2 && !isNaN(hh[1]) && hh[1] != "") OKILIST[i].STARTUP = +(hh[1].trim());
+        if (hh.length >= 3 && !isNaN(hh[2]) && hh[2] != "") OKILIST[i].ACTIVE = +(hh[2].trim());
+        if (hh.length >= 4 && !isNaN(hh[3]) && hh[3] != "") OKILIST[i].RECOVERY = +(hh[3].trim());
+        if (hh.length >= 5 && hh[4] != "") OKILIST[i].MOVE = (hh[4].replace(/[^A-Za-z0-9 -]/g,"").trim());
+      }
+    }
+  }
+
 }
 
 function UCHASH() {
-  var h = "#" + (HASHCHAR) + "/" + (+HASHKD-1) + "/" + (+HASHKDBR-1) + "/" + (+HASHKDR-1) + "/" + (FRAMEKILL-1) + "/" + HASHSTARTUP + "/" + HASHACTIVE + "/" + HASHRECOVERY;
+
+  var h = "#" + (HASHCHAR) + "/" + (+HASHKD-1) + "/" + (+HASHKDBR-1) + "/" + (+HASHKDR-1)
+        //+ "/" + (FRAMEKILL-1) + "/" + HASHSTARTUP + "/" + HASHACTIVE + "/" + HASHRECOVERY
+        ;
+
+  for (var i=1;i<=5;i++) {
+    h += "/" + OKILIST[i].FRAMEKILL + "," + OKILIST[i].STARTUP + "," + OKILIST[i].ACTIVE + "," + OKILIST[i].RECOVERY + "," + OKILIST[i].MOVE;
+  }
+
   if (h != window.location.hash) window.location.hash = h;
 }
 
@@ -322,19 +407,20 @@ function UCTOP1() {
   var ADV = d3.select("#TOP1");
   var adv = ""
   for (var i=1;i<=119;i++) {
-    adv += "<span class='UCLICK' onclick='UCKD("+i+")'>" + (i%10) + "</span>";
+    adv += "<span class='UCLICK' onclick='UCOKI("+i+")'>" + (i%10) + "</span>";
   }
   ADV.html(adv);
 }
 
 function UCKD(kd, hash) {
+  var OKI12GAP = OKILIST[2].FRAMEKILL - (OKILIST[1].FRAMEKILL + OKILIST[1].STARTUP + OKILIST[1].ACTIVE + OKILIST[1].RECOVERY);
   var ADV = d3.select("#ADVKD");
   var adv = ""
   for (var i=1;i<=119;i++) {
-    var text = i<kd ? "+" : i>=kd+10 ? "-" : ((i-kd+1)%10);
+    var text = i<kd ? CHARPLUS : i>=kd+10 ? CHARMINUS : ((i-kd+1)%10);
     adv += "<span class='UCLICK" + (i<kd||i>=kd+10?"":" WAKEUP") + "' onclick='UCKD("+i+")'>" + text + "</span>";
   }
-  adv += "<span class='ADVPLUS'> +" + (kd-1) + " U HIT " + kd + "</span>";
+  adv += "<span class='ADVPLUS'> " + "+" + ((kd-1) + "     ").slice(0,3) + " U HIT " + (kd + "     ").slice(0,3) + " &middot; " + ("     " + (OKI12GAP)).slice(-3) + "F OKI1-OKI2</span>";
   ADV.html(adv);
   HASHKD = kd;
   if (hash == undefined) UCHASH();
@@ -343,10 +429,10 @@ function UCKDBR(kd, hash) {
   var ADV = d3.select("#ADVKDBR");
   var adv = ""
   for (var i=1;i<=119;i++) {
-    var text = i<kd ? "+" : i>=kd+10 ? "-" : ((i-kd+1)%10);
+    var text = i<kd ? CHARPLUS : i>=kd+10 ? CHARMINUS : ((i-kd+1)%10);
     adv += "<span class='UCLICK" + (i<kd||i>=kd+10?"":" WAKEUP") + "' onclick='UCKDBR("+i+",false);UCKDR("+(i-5)+")'>" + text + "</span>";
   }
-  adv += "<span class='ADVPLUS'> +" + (kd-1) + " U HIT " + kd + "</span>";
+  adv += "<span class='ADVPLUS'> " + "+" + ((kd-1) + "     ").slice(0,3) + " U HIT " + (kd + "     ").slice(0,3) + "</span>";
   ADV.html(adv);
   HASHKDBR = kd;
   if (hash == undefined) UCHASH();
@@ -355,10 +441,10 @@ function UCKDR(kd, hash) {
   var ADV = d3.select("#ADVKDR");
   var adv = ""
   for (var i=1;i<=119;i++) {
-    var text = i<kd ? "+" : i>=kd+10 ? "-" : ((i-kd+1)%10);
+    var text = i<kd ? CHARPLUS : i>=kd+10 ? CHARMINUS : ((i-kd+1)%10);
     adv += "<span class='UCLICK" + (i<kd||i>=kd+10?"":" WAKEUP") + "' onclick='UCKDR("+i+",false);UCKDBR("+(i+5)+");'>" + text + "</span>";
   }
-  adv += "<span class='ADVPLUS'> +" + (kd-1) + " U HIT " + kd + "</span>";
+  adv += "<span class='ADVPLUS'> " + "+" + ((kd-1) + "     ").slice(0,3) + " U HIT " + (kd + "     ").slice(0,3) + "</span>";
   ADV.html(adv);  
   HASHKDR = kd;
   if (hash == undefined) UCHASH();
@@ -373,22 +459,34 @@ function UCFK() {
 }
 function UCOKI(kd, hash) {
 
-  var active = HASHACTIVE;
-  var startup = HASHSTARTUP-1;
-  var recovery = HASHRECOVERY;
+  var active = OKILIST[MEOKI].ACTIVE;
+  var startup = OKILIST[MEOKI].STARTUP-1;
+  var recovery = OKILIST[MEOKI].RECOVERY;
+  var move = OKILIST[MEOKI].MOVE;
+  var total = startup+active+recovery;
+  if (total < 0) total = 0;
 
-
-  if (kd>0) FRAMEKILL = kd;
+  if (kd>0) {
+    FRAMEKILL = kd;
+    var end = FRAMEKILL+startup+active+recovery-1;
+    d3.selectAll(".UCY"+MEOKI).classed("UCY"+MEOKI, false);
+    for (var i=FRAMEKILL;i<=(end>119?119:end);i++) {
+      d3.selectAll(".GRID > span:nth-child("+i+")").classed("UCY"+MEOKI, true);
+    }
+  } else {
+    FRAMEKILL = OKILIST[MEOKI].FRAMEKILL;
+  }
   var fk = FRAMEKILL;
+  OKILIST[MEOKI].FRAMEKILL = FRAMEKILL;
 
-  var ADV = d3.select("#ADVOKI");
+  var ADV = d3.select("#ADVOKI"+MEOKI);
   var adv = ""
   var text = "";
   var spanclass = "";
   for (var i=1;i<=119;i++) {
 
     if (i<FRAMEKILL) {
-      text = "+";
+      text = CHARPLUS;
       spanclass = "";
     } else {
       if (i <= FRAMEKILL+startup-1) {
@@ -403,18 +501,23 @@ function UCOKI(kd, hash) {
         text = "r";
         spanclass = "RECOVERY";
       } else {
-        text = "-";
+        text = CHARMINUS;
         spanclass = "";
       }
     }
 
-    adv += "<span class='UCLICK " + spanclass + "' onclick='UCOKI("+i+")'>" + text + "</span>";
+    adv += "<span class='UCLICK " + spanclass + "' onclick='MECOKI("+MEOKI+");UCOKI("+i+")'>" + text + "</span>";
   }
-  adv += "<span class='ADVPLUS'> +" + (FRAMEKILL-1) + " U HIT " + (FRAMEKILL + HASHSTARTUP - 1) + "</span>";
+  adv += "<span class='ADVPLUS' onclick='MECOKI("+MEOKI+")'> " + "+" + ((FRAMEKILL-1) + "     ").slice(0,3) + " U HIT " + ((FRAMEKILL + startup) + "     ").slice(0,3) + " &middot; " + ("     " + (total)).slice(-3) + "F " + move + "</span>";
   ADV.html(adv);
   if (hash == undefined) UCHASH();
 }
 
+function MECOKI(oki) {
+  MEOKI = oki;
+  d3.selectAll(".UCOKI").classed("UCOKI",false);
+  d3.select("#ADVOKI"+oki).classed("UCOKI",true);
+}
 
 function UCGILLEY(rows){
 
@@ -492,6 +595,13 @@ function UCGILLEY(rows){
                 if (!isNaN(OKIMOVE["Active"]) && OKIMOVE["Active"] != "") { HASHACTIVE = +OKIMOVE["Active"]; }  else { HASHACTIVE = 0; }
                 if (!isNaN(OKIMOVE["Startup"]) && OKIMOVE["Startup"] != "") { HASHSTARTUP = +OKIMOVE["Startup"]; } else { HASHSTARTUP = 1; }
                 if (!isNaN(OKIMOVE["Recovery"]) && OKIMOVE["Recovery"] != "") { HASHRECOVERY = +OKIMOVE["Recovery"]; } else { HASHRECOVERY = 0; }
+
+                if (!isNaN(OKIMOVE["Active"]) && OKIMOVE["Active"] != "") { OKILIST[MEOKI].ACTIVE = +OKIMOVE["Active"]; }  else { OKILIST[MEOKI].ACTIVE = 0; }
+                if (!isNaN(OKIMOVE["Startup"]) && OKIMOVE["Startup"] != "") { OKILIST[MEOKI].STARTUP = +OKIMOVE["Startup"]; } else { OKILIST[MEOKI].STARTUP = 1; }
+                if (!isNaN(OKIMOVE["Recovery"]) && OKIMOVE["Recovery"] != "") { OKILIST[MEOKI].RECOVERY = +OKIMOVE["Recovery"]; } else { OKILIST[MEOKI].RECOVERY = 0; }
+
+                OKILIST[MEOKI].MOVE = OKIMOVE["Move"];
+
               }
               UCOKI(0);
             });
@@ -505,7 +615,19 @@ UCTOP1();
 UCKD(HASHKD, false);
 UCKDBR(HASHKDBR, false);
 UCKDR(HASHKDR, false);
-UCOKI(FRAMEKILL, false);
+UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+MECOKI(2);
+UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+MECOKI(3);
+UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+MECOKI(4);
+UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+MECOKI(5);
+UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+MECOKI(6);
+UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+MECOKI(7);
+UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
 UCFK();
 UCHASH();
 
