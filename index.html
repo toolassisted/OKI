@@ -576,7 +576,7 @@ function UCGILLEY(rows){
               var pd = d3.select(p).datum();
               
 
-              if (d.key == "U C" || d.key == "TOTAL") {
+              if (d.key == "U C") {
 
                 console.log(pd);
 
@@ -585,7 +585,7 @@ function UCGILLEY(rows){
                 .enter().append("td").text(function(dd){ console.log(dd); return dd.value;})
                 .on("click",function(dd){
                   var pp = this.parentNode;
-                  if (dd.key == "U NO C" || dd.key == "TOTAL") {
+                  if (dd.key == "U NO C") {
                     d3.select(pp).remove();
                   }
                 });
