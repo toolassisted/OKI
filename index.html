@@ -568,7 +568,7 @@ function UCGILLEY(rows){
   FRAMETABLE.append("thead").append("tr").selectAll("th").data(["TOTAL"].concat(keys).concat([""])).enter().append("th").text(function(d){return d;});
   FRAMETABLE.append("tbody").selectAll("tr").data(rows).enter().append("tr")
             .classed("UC",function(d){return +d["Startup"]==HASHSTARTUP && +d["Active"]==HASHACTIVE && +d["Recovery"]==HASHRECOVERY; })
-            .selectAll("td").data(function(d){return [{key:"TOTAL",value:d["Total "]}].concat(d3.entries(d)).concat([{key:"U C",value:"U C"}]);})
+            .selectAll("td").data(function(d){return [{key:"TOTAL",value:d["Total "] || d["Total"]}].concat(d3.entries(d)).concat([{key:"U C",value:"U C"}]);})
             .enter().append("td").text(function(d){return d.value;})
             .classed("UC",function(d){return d.key=="TOTAL" && FRAMEKILL>1 && +d.value==FRAMEKILL-1; })
             .on("click",function(d){
@@ -581,7 +581,7 @@ function UCGILLEY(rows){
                 console.log(pd);
 
                 FRAMETABLE.select("thead").insert("tr",":first-child")
-                .selectAll("td").data( [{key:"TOTAL",value:pd["Total "]}].concat(d3.entries(pd)).concat([{key:"U NO C",value:"U NO C"}]) )
+                .selectAll("td").data( [{key:"TOTAL",value:pd["Total "] || pd["Total"]}].concat(d3.entries(pd)).concat([{key:"U NO C",value:"U NO C"}]) )
                 .enter().append("td").text(function(dd){ console.log(dd); return dd.value;})
                 .on("click",function(dd){
                   var pp = this.parentNode;
