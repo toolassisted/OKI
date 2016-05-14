@@ -436,7 +436,7 @@ var CHARS = [
           return;
         } else if (d == "FRAME KILL") {
 
-          TOTALSDIV.select("*").remove();
+          TOTALSDIV.selectAll("*").remove();
 
           for (var total=1;total<60;total++) {
             TOTALSDIV.append("div").text("\nFRAME KILL " + total).classed("FRAMEKILL",true);
@@ -444,7 +444,7 @@ var CHARS = [
           }
 
           TOTALSDIV.node().scrollIntoView();
-          
+
           return;
         }
 
@@ -722,6 +722,8 @@ function UCGILLEY(rows){
                     if (ta < tb) return  1;
                     return 0;
                   });
+
+  TOTALSDIV.selectAll("*").remove();
 
 }
 
