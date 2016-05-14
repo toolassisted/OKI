@@ -3,8 +3,8 @@ stand LP		5	4	7	5	3	40	70	15	8	0	H	SP,V	7	48	84
 stand MP		6	2	13	3	1	70	100	20	12	12	H	V	5	84	120				
 stand HP (hold)		13(37)	4	23	1 (KD)	-3 (1)	100(130)	150		15(18)	17 (22)	H	V	27	120(156)	180				
 stand HP		13	4	23	1 (KD)	-3 (1)	100(130)	150	38	15(18)	17 (22)	H	V	27	120(156)	180				
-stand HP HOLD		37	4	23	1 (KD)	-3 (1)	100(130)	150	63	15(18)	17 (22)	H	V	27	120(156)	180	94	33	38	HIT ACTIVE 1
-stand HP HOLD		37	4	23	1 (KD)	-3 (1)	100(130)	150	63	15(18)	17 (22)	H	V	27	120(156)	180	95	34	39	HIT ACTIVE 2
+stand HP HOLD		37	4	23	1 (KD)	-3 (1)	100(130)	150	63	15(18)	17 (22)	H	V	27	120(156)	180	94	33	38	KD HIT ACTIVE 1
+stand HP HOLD		37	4	23	1 (KD)	-3 (1)	100(130)	150	63	15(18)	17 (22)	H	V	27	120(156)	180	95	34	39	KD HIT ACTIVE 2
 stand LK		5	2	12	2	0	30	70	18	8	0	H	SP,V	4	36	84				
 stand MK		9	3	17	0	-3	70	100	28	12	12	H	V	2	84	120				
 stand HK		11	4	22	1	-2	90	150	36	15	15	H	V	KD 109	108	180				
@@ -26,7 +26,7 @@ flying body press	d+HP during jump	7	7	-	-		100	150		15	17	M	-	-	120	180		-	-
 atomic drop	LP+LK	5	2	18	KD	-	130	170	24	-	-	T	-	KD	130	170	64	15	15	
 captured	b+LP+LK	5	2	18	KD	-	130	170	24	-	-	T	-	KD	130	170	74	25	25	
 cyclone lariat	HP+HK	27			KD		20x9	20x8*90		3x8*17		H	-	KD	24*20x8	24*20x7*90				
-cyclone lariat	HP+HK	19	19	16	KD		20x9	20x8*90	53	3x8*17		H	-	KD	24*20x8	24*20x7*90				
+cyclone lariat	HP+HK	19	19	16	KD		20x9	20x8*90	53	3x8*17		H	-	KD	24*20x8	24*20x7*90	103	44	49	
 VT cyclone lariat	HP+HK	9	19	16	KD		20x9	20x8*90	43	3x8*17		H	-	KD	24*20x8	24*20x7*90				
 cyclone lariat HOLD	HP+HK				KD		20x9	20x8*90		3x8*17		H	-	KD	24*20x8	24*20x7*90	130	71	76	
 iron muscle	MP+MK (hold)			25	2	-2	50	100	25	12	8	H	-	4	60	120		-	-	
@@ -37,8 +37,8 @@ screw pile driver MP	360+MP	5	2	52	KD	-	200	250	58	-	-	T	-	KD	200	250	76	27	27
 screw pile driver HP	360+HP	5	2	52	KD	-	240	250	58	-	-	T	-	KD	240	250	76	27	27	
 screw pile driver EX	360+PP	5	2	52	KD	-	240	300	58	-	-	T	-	KD	240	300	76	27	27	
 double lariat	PPP	9	6(5)4(8)3	31	KD	-35	100	200		17	25	H	-	KD	120	200				
-double lariat	PPP	9	26	31	KD	-35	100	200	65	17	25	H	-	KD	120	200	76	17	22	HIT ACTIVE 1
-double lariat	PPP	9	26	31	KD	-35	100	200		17	25	H	-	KD	120	200	79	20	25	HIT ACTIVE 4
+double lariat	PPP	9	26	31	KD	-35	100	200	65	17	25	H	-	KD	120	200	76	17	22	KD HIT ACTIVE 1
+double lariat	PPP	9	26	31	KD	-35	100	200		17	25	H	-	KD	120	200	79	20	25	KD HIT ACTIVE 4
 siberian express LK	hcb+LK	17	2	52	KD	-	170	200		-	-	T	-	KD	170	200	73	24	24	
 siberian express MK	hcb+MK	23	2	52	KD	-	200	200		-	-	T	-	KD	200	200	73	24	24	
 siberian express HK	hcb+HK	30	2	52	KD	-	220	200		-	-	T	-	KD	220	200	73	24	24	
