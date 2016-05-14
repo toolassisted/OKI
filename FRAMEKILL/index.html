@@ -372,7 +372,7 @@ function MECHASH() {
         if (hh.length >= 2 && !isNaN(hh[1]) && hh[1] != "") OKILIST[i].STARTUP = +(hh[1].trim());
         if (hh.length >= 3 && !isNaN(hh[2]) && hh[2] != "") OKILIST[i].ACTIVE = +(hh[2].trim());
         if (hh.length >= 4 && !isNaN(hh[3]) && hh[3] != "") OKILIST[i].RECOVERY = +(hh[3].trim());
-        if (hh.length >= 5 && hh[4] != "") OKILIST[i].MOVE = (hh[4].trim().replace("+"," ").replace(/[^A-Za-z0-9 -]/g,"").trim());
+        if (hh.length >= 5 && hh[4] != "") OKILIST[i].MOVE = (hh[4].trim().replace(/\+/g," ").replace(/[^A-Za-z0-9 -]/g,"").trim());
       }
     }
   }
