@@ -401,8 +401,8 @@ function UCHASH() {
 
 var CHARS = [
 ["ALX", "BLR", //"BLR2", "BRD", "BRD2", 
-"CMY", //"CNL", "CNL2", "DSM", "FAN", 
-"GUL", "KEN", "KRN", //"LAR", 
+"CMY", //"CNL", "CNL2", "DSM", 
+"FAN", "GUL", "KEN", "KRN", //"LAR", 
 "NCL", //"NCL2", "NSH", "RMK", 
 "RSD", //"RYU", "RYU2", 
 "VEG", //"VEG2",
@@ -665,7 +665,14 @@ function UCGILLEY(rows){
                 if (!isNaN(OKIMOVE["Startup"]) && OKIMOVE["Startup"] != "") { HASHSTARTUP = +OKIMOVE["Startup"]; } else { HASHSTARTUP = 1; }
                 if (!isNaN(OKIMOVE["Recovery"]) && OKIMOVE["Recovery"] != "") { HASHRECOVERY = +OKIMOVE["Recovery"]; } else { HASHRECOVERY = 0; }
 
-                if (!isNaN(OKIMOVE["Active"]) && OKIMOVE["Active"] != "") { OKILIST[MEOKI].ACTIVE = +OKIMOVE["Active"]; }  else { OKILIST[MEOKI].ACTIVE = 0; }
+
+                if (!isNaN(OKIMOVE["Active"]) && OKIMOVE["Active"] != "") {
+                  OKILIST[MEOKI].ACTIVE = +OKIMOVE["Active"];
+                } else { 
+                  OKILIST[MEOKI].ACTIVE = OKIMOVE["Active"].split(/[()]/)
+                  .map(function(x){return parseInt(x)||0;})
+                  .reduce(function(a,b){return a+b});  
+                }
                 if (!isNaN(OKIMOVE["Startup"]) && OKIMOVE["Startup"] != "") { OKILIST[MEOKI].STARTUP = +OKIMOVE["Startup"]; } else { OKILIST[MEOKI].STARTUP = 1; }
                 if (!isNaN(OKIMOVE["Recovery"]) && OKIMOVE["Recovery"] != "") { OKILIST[MEOKI].RECOVERY = +OKIMOVE["Recovery"]; } else { OKILIST[MEOKI].RECOVERY = 0; }
 
@@ -709,7 +716,14 @@ function UCGILLEY(rows){
               
               OKIMOVE = pd;
               if (OKIMOVE != null) {
-                if (!isNaN(OKIMOVE["Active"]) && OKIMOVE["Active"] != "") { OKILIST[MEOKI].ACTIVE = +OKIMOVE["Active"]; }  else { OKILIST[MEOKI].ACTIVE = 0; }
+
+                if (!isNaN(OKIMOVE["Active"]) && OKIMOVE["Active"] != "") {
+                  OKILIST[MEOKI].ACTIVE = +OKIMOVE["Active"];
+                } else { 
+                  OKILIST[MEOKI].ACTIVE = OKIMOVE["Active"].split(/[()]/)
+                  .map(function(x){return parseInt(x)||0;})
+                  .reduce(function(a,b){return a+b});  
+                }
                 if (!isNaN(OKIMOVE["Startup"]) && OKIMOVE["Startup"] != "") { OKILIST[MEOKI].STARTUP = +OKIMOVE["Startup"]; } else { OKILIST[MEOKI].STARTUP = 1; }
                 if (!isNaN(OKIMOVE["Recovery"]) && OKIMOVE["Recovery"] != "") { OKILIST[MEOKI].RECOVERY = +OKIMOVE["Recovery"]; } else { OKILIST[MEOKI].RECOVERY = 0; }
 
