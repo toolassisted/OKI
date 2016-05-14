@@ -289,6 +289,10 @@
     background-color: #020;
   }
 
+  button.CHARRESET {
+    margin-left: 100px;
+  }
+
 </style>
 </head>
 <body>
@@ -337,7 +341,7 @@ var OKILIST = [{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
               ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
               ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
               ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
-              ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}]
+              ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}];
 
 function MECHASH() {
   var h = window.location.hash.substr(1).split("/");
@@ -389,6 +393,7 @@ var CHARS = [
 "NCL", //"NCL2", "NSH", "RMK", 
 "RSD", //"RYU", "RYU2", 
 "VEG", //"VEG2", "ZGF",
+"RESET OKI"
 ]
 ];
 
@@ -397,6 +402,27 @@ var CHARS = [
       .attr("class", function(d,i) {return "ROW"; })
       .selectAll("button").data(function(d){return d;}).enter().append("button").attr("class", function(d){ return "CHAR CHAR"+d;})
       .on("click",function(d,i){
+        if (d == "RESET OKI") {
+          OKILIST = [{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
+                        ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
+                        ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
+                        ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
+                        ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
+                        ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
+                        ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
+                        ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}];
+
+          MECOKI(7); UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+          MECOKI(6); UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+          MECOKI(5); UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+          MECOKI(4); UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+          MECOKI(3); UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+          MECOKI(2); UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+          MECOKI(1); UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+          UCHASH();
+          return;
+        }
+
         var p = d3.select(this.parentNode.parentNode).datum();
         d3.selectAll(".CHAR").classed("SEL",false);
         d3.select(this).classed("SEL",true);
@@ -624,6 +650,7 @@ UCTOP1();
 UCKD(HASHKD, false);
 UCKDBR(HASHKDBR, false);
 UCKDR(HASHKDR, false);
+MECOKI(1);
 UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
 MECOKI(2);
 UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
