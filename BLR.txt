@@ -50,23 +50,25 @@ aurora spin edge MP	qcb+MP	15	6	18	KD	-6	100		16	200	25	H	CA	KD	120	240	92	33	38
 aurora spin edge HP	qcb+HP	12	7	15	KD	-	100		16	200	-	H	CA	KD	120	240	-	-	-
 aurora spin edge EX	qcb+PP	12	7(12)4	21	KD	-3	50*100		16*16	100*100	13*25	H*H	-	KD	120*100	120*100	86	27	32
 switch claw	qcf+P							23	-			-	-	-	-	-			
-bloody rain	qcf,qcf+P or qcb,qcb+P	9	8	29	KD	-22	330		-	0	5	H	-	KD	334	0	80		
+bloody rain	qcf,qcf+P or qcb,qcb+P	9	8	29	KD	-22	330		-	0	5	H	-	KD	334	0	80	40	40
+																			
+																			
 health	1000																		
 stun	950																		
 taunt	61																		
-jump	47(4+39+4)	43	1	4				47											
-jump forward	46(3+39+4)	42	1	4				46											
-jump backward	47(4+39+4)	43	1	4				47											
+jump	46(4+39+4)	43	1	4				43											
+jump forward	46(3+39+4)	42	1	4				42											
+jump backward	46(4+39+4)	43	1	4				43											
 dash forward	17		17					17											
 dash backward	21		21					21											
 																			
 no claw normals...																			
-stand LP		3	2	6	5	3	30	10	8	70	0	H	SP,V	7	36	84	-	-	-
-stand MP		6	3	13	3	1	60	21	12	100	10	H	V	5	72	120	-	-	-
-stand HP		9	2	21	4	-1	90	31	15	150	15	H	SP,V	6	108	180	-	-	-
-crouch LP		4	2	7	4	2	30	12	8	70	0	H	CH,SP,V	6	36	84	-	-	-
-crouch MP		5	3	12	4	2	60	19	12	100	10	H	SP,V	6	72	120	-	-	-
-crouch HP		9	4	15	1	-2	80	27	15	150	13	H	SP,V	3	96	180	-	-	-
-jump LP		3	5	-	-	-	40	-	8	70	0	M	-	-	48	84	-	-	-
-jump MP		4	5	-	-	-	70	-	12	100	10	M	-	-	84	120	-	-	-
-jump HP		7	4	-	-	-	90	-	15	150	15	M	-	-	108	180	-	-	-
+NC stand LP		3	2	6	5	3	30	10	8	70	0	H	SP,V	7	36	84	-	-	-
+NC stand MP		6	3	13	3	1	60	21	12	100	10	H	V	5	72	120	-	-	-
+NC stand HP		9	2	21	4	-1	90	31	15	150	15	H	SP,V	6	108	180	-	-	-
+NC crouch LP		4	2	7	4	2	30	12	8	70	0	H	CH,SP,V	6	36	84	-	-	-
+NC crouch MP		5	3	12	4	2	60	19	12	100	10	H	SP,V	6	72	120	-	-	-
+NC crouch HP		9	4	15	1	-2	80	27	15	150	13	H	SP,V	3	96	180	-	-	-
+NC jump LP		3	5	-	-	-	40	-	8	70	0	M	-	-	48	84	-	-	-
+NC jump MP		4	5	-	-	-	70	-	12	100	10	M	-	-	84	120	-	-	-
+NC jump HP		7	4	-	-	-	90	-	15	150	15	M	-	-	108	180	-	-	-
