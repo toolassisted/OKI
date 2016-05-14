@@ -379,7 +379,7 @@ function UCHASH() {
     h += "/" + OKILIST[i].FRAMEKILL + "," + OKILIST[i].STARTUP + "," + OKILIST[i].ACTIVE + "," + OKILIST[i].RECOVERY + "," + OKILIST[i].MOVE.trim().replace(/\s+/g,"+");
   }
 
-  if (h != window.location.hash) window.location.hash = h;
+  if (h != window.location.hash) { window.location.hash = h; }
 }
 
 var CHARS = [
