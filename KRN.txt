@@ -54,14 +54,16 @@ ressenha EX	qcb+PP	5	2(6)2(5)2	35	KD	-41	30*40*70	50*50*100		3*3*14	8	H	-	KD	36*
 senha kusabi	qcb+P > d+K	15	8	22	KD	-12	90	100		12	15	H*M*L	-	KD	108	120	66	17	22		
 senha resshu	qcb+P > u+K	23	2	22	KD	-	120	150		-	-	H*M*H	-	KD	120	150	28	28	28		
 kanzuki-ryu hadorokushiki hasha no kata	qcf,qcf+P	5	?	38	KD	-18	340	0		9*10*10*14	15*15*15	H	-	KD	344	0	2	2	2		
+																					
 health	900																				
 stun	950																				
 taunt	61			61					61												
-jump	46 (4+38+4)	42	1	4					46												20160514
-jump forward	45 (3+38+4)	41	1	4					45												20160514
-jump backward	46 (4+38+4)	42	1	4					46												20160514
+jump	46 (4+38+4)	42	1	4					46											EARLY WHIFF 47	20160514
+jump forward	45 (3+38+4)	41	1	4					45											EARLY WHIFF 48	20160514
+jump backward	46 (4+38+4)	42	1	4					46											EARLY WHIFF 49	20160514
 dash forward	16		16						16												20160514
 dash backward	21		21						21												20160514
+																					
 TENKO TENKO EX DASH RESSENHA EX																	71	12	17		20160514
 TENKO TENKO RESSENHA EX CORNER																	79	20	25		20160514
 TENKO OROCHI																	91	31	36		20160514
