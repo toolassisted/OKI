@@ -22,20 +22,20 @@ Senpukuga	d+PPP > K	10	2(3)2	14	5	2	30*40	50*50	30	8*8		H*H	V	7	36*48	60*60	-
 Simonshu	LP+LK	5	2	18	KD		60*70	0*200	24	-		T	-	KD	60*70	0*200	73	14	14	
 Kyoshitsugeki	b+LP+LK	5	2	18	KD		10*120	0*170	24	-		T	-	KD	10*120	0*170	72	13	13	
 Dokunomu	HP+HK	-							49	-		-	-				-			
-Nishodoku	MP+MK	22			-		??	??	40	-		-	-				-			
+Nishodoku	MP+MK	22	19		-		??	??	40	-		-	-				-			
 Nikaiho	f+PPP	-							35								-			
-Nishikyu LP	d,u+LP	13	-	48	-7	-11	20*20	50*50	60	8*8		H*H	CA	-7	24*20	60*50	-			
-Nishikyu MP	d,u+MP	13	-	48	-7	-11	20*20	50*50	60	8*8		H*H	CA	-7	24*20	60*50	-			
-Nishikyu HP	d,u+HP	13	-	48	-7	-11	20*20	50*50	60	8*8		H*H	CA	-7	24*20	60*50	-			
-Nishikyu EX	d,u+PP	13	-	40	2	-2	40*40	50*50	52	8*8		H*H	-	2	48*40	60*50	-			
+Nishikyu LP	d,u+LP	13	48		-7	-11	20*20	50*50	60	8*8		H*H	CA	-7	24*20	60*50	-			
+Nishikyu MP	d,u+MP	13	48		-7	-11	20*20	50*50	60	8*8		H*H	CA	-7	24*20	60*50	-			
+Nishikyu HP	d,u+HP	13	48		-7	-11	20*20	50*50	60	8*8		H*H	CA	-7	24*20	60*50	-			
+Nishikyu EX	d,u+PP	13	40		2	-2	40*40	50*50	52	8*8		H*H	-	2	48*40	60*50	-			
 Sotoja LP	b,f+LP	16	8	25	KD	-11	30*30	100*100	48	8*6		H*H	CA	KD	36*30	120*100	91	32	37	
 Sotoja MP	b,f+MP	20	8	23	KD	-9	30*40	100*100	50	8*6		H*H	CA	KD	36*40	120*100	91	32	37	
 Sotoja HP	b,f+HP	21	8	24	KD	-10	40*40	100*100	52	8*6		H*H	CA	KD	48*40	120*100	90	31	36	
 Sotoja EX	b,f+PP	14	8	19	KD	-3	50*50	100*100	40	8*8		H*H	-	KD	60*40	120*100	94	35	40	
 Ryobenda LK	b,f+LK	14	3	30	KD	-9	30*30	100*100	45	6*6		H*H	CA	KD	36*30	120*100	91	32	37	
-Ryobenda MK	b,f+MK	19	-	28	1	-8	40	100	46	8		H	CA	3	48	120	-			
-Ryobenda HK	b,f+HK	23	-	30	-1	-10	40	100	52	8		H	CA	1	48	120	-			
-Ryobenda EX	b,f+KK	15	2	33	KD	2	30*30*20*20	100*100*22*22	49	8		H*H*H*H	-	KD	36*30*20*20	120*100*22*22	84	24	79	
+Ryobenda MK	b,f+MK	19	28		1	-8	40	100	46	8		H	CA	3	48	120	-			POISON 60F
+Ryobenda HK	b,f+HK	23	30		-1	-10	40	100	52	8		H	CA	1	48	120	-			POISON 100F
+Ryobenda EX	b,f+KK	15	2	32	KD	2	30*30*20*20	100*100*22*22	48	8		H*H*H*H	-	KD	36*30*20*20	120*100*22*22	84	24	79	POISON 220F
 Nikankyaku LK	f,d,df+LK	-	-	29	-	-	-	-	29	-		-	-	-	-	-	-			
 Nikankyaku MK	f,d,df+MK	-	-	30	-	-	-	-	30	-		-	-	-	-	-	-			
 Nikankyaku HK	f,d,df+HK	-	-	31	-	-	-	-	31	-		-	-	-	-	-	-			
