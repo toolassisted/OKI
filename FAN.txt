@@ -35,7 +35,7 @@ Sotoja EX	b,f+PP	14	8	19	KD	-3	50*50	100*100	40	8*8		H*H	-	KD	60*40	120*100	94	3
 Ryobenda LK	b,f+LK	14	3	30	KD	-9	30*30	100*100	45	6*6		H*H	CA	KD	36*30	120*100	91	32	37	
 Ryobenda MK	b,f+MK	19	28		1	-8	40	100	46	8		H	CA	3	48	120	-			POISON 60F
 Ryobenda HK	b,f+HK	23	30		-1	-10	40	100	52	8		H	CA	1	48	120	-			POISON 100F
-Ryobenda EX	b,f+KK	15	2	32	KD	2	30*30*20*20	100*100*22*22	48	8		H*H*H*H	-	KD	36*30*20*20	120*100*22*22	84	24	79	POISON 220F
+Ryobenda EX	b,f+KK	15	2	32	KD	2	30*30*20*20	100*100*22*22	48	8		H*H*H*H	-	KD	36*30*20*20	120*100*22*22	84	24	79	START 17F POISON 220F
 Nikankyaku LK	f,d,df+LK	-	-	29	-	-	-	-	29	-		-	-	-	-	-	-			
 Nikankyaku MK	f,d,df+MK	-	-	30	-	-	-	-	30	-		-	-	-	-	-	-			
 Nikankyaku HK	f,d,df+HK	-	-	31	-	-	-	-	31	-		-	-	-	-	-	-			
