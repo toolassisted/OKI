@@ -81,7 +81,7 @@
     overflow: auto;
   }
 
-  #FRAMES, #KD {
+  #FRAMES, #KD, #TOTALS {
     white-space: nowrap;
     /*height: 500px;*/
     /*overflow-x: hidden;*/
@@ -289,6 +289,14 @@
     background-color: #020;
   }
 
+  #FRAMEKILLS {
+    line-height: 1.5em;
+  }
+
+  .FRAMEKILL {
+    color: #999;
+  }
+
   button.CHARRESET {
     margin-left: 100px;
   }
@@ -318,6 +326,11 @@
 </div>
 <div id="KILLS"></div>
 <div id="FRAMES"></div>
+<br />
+<div id="TOTALS"></div>
+<pre>
+<div id="FRAMEKILLS"></div>
+</pre>
 <script src="d3.min.js"></script>
 <script>
 var CHARPLUS = "&middot;";
@@ -393,7 +406,7 @@ var CHARS = [
 "NCL", //"NCL2", "NSH", "RMK", 
 "RSD", //"RYU", "RYU2", 
 "VEG", //"VEG2", "ZGF",
-"RESET OKI"
+"RESET OKI", "FRAME KILL"
 ]
 ];
 
@@ -420,6 +433,18 @@ var CHARS = [
           MECOKI(2); UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
           MECOKI(1); UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
           UCHASH();
+          return;
+        } else if (d == "FRAME KILL") {
+
+          TOTALSDIV.select("*").remove();
+
+          for (var total=1;total<60;total++) {
+            TOTALSDIV.append("div").text("\nFRAME KILL " + total).classed("FRAMEKILL",true);
+            UCTOTALROW("FRAME KILL " + total + " ",0,0,total);
+          }
+
+          TOTALSDIV.node().scrollIntoView();
+          
           return;
         }
 
@@ -558,12 +583,16 @@ function UCGILLEY(rows){
 
   var KD = d3.select("#KD");
   var FRAMES = d3.select("#FRAMES");
+  var TOTALS = d3.select("#TOTALS");
 
   KD.selectAll("*").remove();
   FRAMES.selectAll("*").remove();
+  TOTALS.selectAll("*").remove();
 
   var FRAMETABLE = FRAMES.append("div").append("table").classed("FRAMES",true);
   var KDTABLE = KD.append("div").append("table").classed("FRAMES",true);
+  var TOTALSTABLE = TOTALS.append("div").append("table").classed("FRAMES",true);
+
 
   var keys = d3.keys(rows[0]);
   
@@ -641,6 +670,78 @@ function UCGILLEY(rows){
               UCOKI(0);
             });
 
+
+  var totalrows = rows.filter(function(d){ var t=d["Total "]||d["Total"]; return !isNaN(t) && t != "";});
+
+  TOTALSTABLE.append("thead").append("tr").selectAll("th").data(["TOTAL"].concat(keys)).enter().append("th").text(function(d){return d;});
+  TOTALSTABLE.append("tbody").selectAll("tr").data(totalrows).enter().append("tr")            
+            .selectAll("td").data(function(d){ return [{key:"TOTAL",value:d["Total "] || d["Total"]}].concat(d3.entries(d));})
+            .enter().append("td").text(function(d){return d.value;})
+            .on("click",function(d){
+              var p = this.parentNode;
+              var pd = d3.select(p).datum();
+              
+
+              if (d.key == "U C") {
+
+                console.log(pd);
+
+                TOTALSTABLE.select("thead").insert("tr",":first-child")
+                .selectAll("td").data( [{key:"TOTAL",value:pd["Total "] || pd["Total"]}].concat(d3.entries(pd)).concat([{key:"U NO C",value:"U NO C"}]) )
+                .enter().append("td").text(function(dd){ console.log(dd); return dd.value;})
+                .on("click",function(dd){
+                  var pp = this.parentNode;
+                  if (dd.key == "U NO C") {
+                    d3.select(pp).remove();
+                  }
+                });
+
+                return;
+              }
+
+              TOTALSTABLE.selectAll(".UC").classed("UC",false);
+              d3.select(p).classed("UC",true);              
+              
+              OKIMOVE = pd;
+              if (OKIMOVE != null) {
+                if (!isNaN(OKIMOVE["Active"]) && OKIMOVE["Active"] != "") { OKILIST[MEOKI].ACTIVE = +OKIMOVE["Active"]; }  else { OKILIST[MEOKI].ACTIVE = 0; }
+                if (!isNaN(OKIMOVE["Startup"]) && OKIMOVE["Startup"] != "") { OKILIST[MEOKI].STARTUP = +OKIMOVE["Startup"]; } else { OKILIST[MEOKI].STARTUP = 1; }
+                if (!isNaN(OKIMOVE["Recovery"]) && OKIMOVE["Recovery"] != "") { OKILIST[MEOKI].RECOVERY = +OKIMOVE["Recovery"]; } else { OKILIST[MEOKI].RECOVERY = 0; }
+
+                OKILIST[MEOKI].MOVE = OKIMOVE["Move"];
+
+              }
+              UCOKI(0);
+            });            
+
+  TOTALROWS = totalrows
+                  .sort(function(a,b){
+                    var ta=+(a["Total "]||a["Total"]);
+                    var tb=+(b["Total "]||b["Total"]);
+                    if (ta > tb) return -1;
+                    if (ta < tb) return  1;
+                    return 0;
+                  });
+
+}
+
+var TOTALSDIV = d3.select("#FRAMEKILLS");
+var TOTALROWS = [];
+
+function UCTOTALROW(pre,start,run,total) {
+  TOTALROWS.forEach(function(row,i){
+    if (i<start) return;
+    var rowtotal = +(row["Total "]||row["Total"]);
+    if (rowtotal+run>total) return;
+    var loops = Math.floor((total-run)/rowtotal);
+    for (var loop=loops;loop>=1;loop--) {
+      if (rowtotal*loop+run==total) {
+        TOTALSDIV.append("div").text(pre + (", " + rowtotal + "F " + row["Move"]).repeat(loop));
+      } else if (rowtotal*loop+run<total) {
+        UCTOTALROW(pre + (", " + rowtotal + "F " + row["Move"]).repeat(loop),i+1,rowtotal*loop+run,total);
+      }
+    }
+  });
 }
 
 
