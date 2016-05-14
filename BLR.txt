@@ -57,9 +57,9 @@ bloody rain	qcf,qcf+P or qcb,qcb+P	9	8	29	KD	-22	330		-	0	5	H	-	KD	334	0	80	40	4
 																				
 health	1000																			
 stun	950																			
-taunt	61																			
-jump	47(4+39+4)	43	1	4				47												
-jump forward	46(3+39+4)	42	1	4				46												
+taunt	61			61																
+jump	47(4+39+4)	43	1	4				47												8LK EARLY WHIFF 45F
+jump forward	46(3+39+4)	42	1	4				46												9LK EARLY WHIFF 44F
 jump backward	47(4+39+4)	43	1	4				47												
 dash forward	17		17					17												
 dash backward	21		21					21												
