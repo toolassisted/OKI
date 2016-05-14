@@ -416,6 +416,8 @@ var CHARS = [
       })
       .text(function(d,i){return d;});
 
+
+
 function UCTOP1() {
   var ADV = d3.select("#TOP1");
   var adv = ""
@@ -563,23 +565,38 @@ function UCGILLEY(rows){
             .on("click",function(d){
               var p = this.parentNode;
               var pd = d3.select(p).datum();
-              KDMOVE = pd;
-              KDTABLE.selectAll(".UC").classed("UC",false);
-              d3.select(p).classed("UC",true);
-              //UCOKI(0);
-              UCKD(+pd["KD Adv."]+1);
-              if (!isNaN(pd["KDR Adv."]) && pd["KDR Adv."] != "") {
-                UCKDR(+pd["KDR Adv."]+1);
-                if (!isNaN(pd["KDRB Adv."]) && pd["KDRB Adv."] != "") {
-                  UCKDBR(+pd["KDRB Adv."]+1);
-                } else {
-                  UCKDBR(+pd["KDR Adv."]+1);
-                }
-              } else {
-                UCKDR(+pd["KD Adv."]+1);
-                UCKDBR(+pd["KD Adv."]+1);
+              
+
+              if (d.key == "U C") {
+
+                console.log(pd);
+
+                TOTALSTABLE.select("thead").insert("tr",":first-child")
+                .selectAll("td").data( [{key:"TOTAL",value:pd["Total "] || pd["Total"]}].concat(d3.entries(pd)).concat([{key:"U NO C",value:"U NO C"}]) )
+                .enter().append("td").text(function(dd){ console.log(dd); return dd.value;})
+                .on("click",function(dd){
+                  var pp = this.parentNode;
+                  if (dd.key == "U NO C") {
+                    d3.select(pp).remove();
+                  }
+                });
+
+                return;
               }
-              UCHASH();
+
+              TOTALSTABLE.selectAll(".UC").classed("UC",false);
+              d3.select(p).classed("UC",true);              
+              
+              OKIMOVE = pd;
+              if (OKIMOVE != null) {
+                if (!isNaN(OKIMOVE["Active"]) && OKIMOVE["Active"] != "") { OKILIST[MEOKI].ACTIVE = +OKIMOVE["Active"]; }  else { OKILIST[MEOKI].ACTIVE = 0; }
+                if (!isNaN(OKIMOVE["Startup"]) && OKIMOVE["Startup"] != "") { OKILIST[MEOKI].STARTUP = +OKIMOVE["Startup"]; } else { OKILIST[MEOKI].STARTUP = 1; }
+                if (!isNaN(OKIMOVE["Recovery"]) && OKIMOVE["Recovery"] != "") { OKILIST[MEOKI].RECOVERY = +OKIMOVE["Recovery"]; } else { OKILIST[MEOKI].RECOVERY = 0; }
+
+                OKILIST[MEOKI].MOVE = OKIMOVE["Move"];
+
+              }
+              UCOKI(0);
             });
 
   KDTABLE.append("thead").append("tr").selectAll("th").data(["KD ADV","KDR ADV","KDBR ADV"].concat(keys)).enter().append("th").text(function(d){return d;});
