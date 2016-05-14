@@ -1,1 +1,736 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SFV FRAME KILL LOL</title>
+<style>
 
+  body {
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+    margin-bottom: 500px;
+  }
+
+  path {
+    stroke-width: 1px;
+    stroke: #333;
+    fill: #ddd;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .GRID line {
+    vector-effect: non-scaling-stroke;
+  }
+
+  .REPLAY line {
+    vector-effect: non-scaling-stroke;
+  }
+
+  .UNOC { display: none; }
+
+  .fred { fill: #c00 !important; }
+
+  .gray { stroke: #333; }
+  .red { stroke: #f00; }
+  .green { stroke: #0f0; }
+  .blue { stroke: #00f; }
+  .cyan { stroke: #0ff; }
+  .yellow { stroke: #ff0; }
+
+  .p1gray { stroke: #333; }
+  .p1red { stroke: #f00; }
+  .p1green { stroke: #0f0; }
+  .p1blue { stroke: #00f; }
+  .p1hit { stroke: #c6f; }
+  .p1cyan { stroke: #0ff; }
+  .p1yellow { stroke: #ff0; }
+
+  .p2gray { stroke: #333; }
+  .p2red { stroke: #f66; }
+  .p2green { stroke: #6f6; }
+  .p2blue { stroke: #66f; }
+  .p2hit { stroke: #c6f; }
+  .p2cyan { stroke: #6ff; }
+
+  .hitbox { color: #f99; }
+  .hit { color: #969; }
+  .first { color: #cfc; background-color: #363;}
+  .iasa1 { color: #999;}
+
+  #REPLAYS {
+    text-align: center;
+    /*display: inline-block;*/
+  }
+
+  #REPLAYS  !svg + div {
+    /*display: inline-block;*/
+  }
+
+  #REPLAYS div {
+    height: 500px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: inline-block;
+    padding-right: 2em;
+  }
+
+  #LINKS {
+    /*height: 500px;*/
+    white-space: nowrap;
+    overflow: auto;
+  }
+
+  #FRAMES, #KD, #TOTALS {
+    white-space: nowrap;
+    /*height: 500px;*/
+    /*overflow-x: hidden;*/
+    /*overflow-y: auto;*/
+    /*display: inline-block;*/
+    /*padding-right: 2em;*/
+  }
+
+  #FRAMES div {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  table.FRAMES {
+    table-layout: fixed;
+    font: 10px sans-serif;
+    text-align: center;
+    color: #ccc;
+  }
+
+  table.FRAMES tr:nth-child(even) {
+    background-color: #333; 
+  }
+
+  table.FRAMES tr:nth-child(odd) {
+    background-color: #111; 
+  }
+  table.FRAMES td {
+    white-space: nowrap;
+  }
+
+  table.FRAMES tr:hover {
+    background-color: #030;
+  }
+
+  table.FRAMES tr.UC {
+    background-color: #060;
+  }
+  table.FRAMES td.UC {
+    background-color: #030;
+  }
+
+  #LINKS div.COL {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  #LINKS div.COL div {
+    text-align: left;
+    padding: 10px;
+  }
+
+  #LINKS button {
+    background-color: #ccc;
+    padding: 10px 10px;
+  }
+
+  svg {
+    border: 1px solid #333;
+    margin-top: 10px;
+  }
+
+  .REPLAY rect {
+    stroke-width: 1px;
+    /*stroke: #333;*/
+    fill: none;
+    /*opacity: 0.8;*/
+    mix-blend-mode: screen;
+    vector-effect: non-scaling-stroke;
+  }
+
+  .REPLAY rect.clip {
+    fill: #330;
+  }
+
+  .REPLAY text {
+    text-anchor: middle;
+    fill: #999;
+    font: 8px sans-serif;
+  }
+
+  .rects text {
+    text-anchor: middle;
+    fill: #999;
+    font: 10px sans-serif;
+  }
+
+  .axis {
+    font: 10px sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  .axis text {
+    fill: #ddd;
+  }
+
+  .axis .domain {
+    fill: none;
+    stroke: #000;
+    stroke-opacity: .3;
+    stroke-width: 10px;
+    stroke-linecap: round;
+  }
+
+  .axis .halo {
+    fill: none;
+    stroke: #ddd;
+    stroke-width: 8px;
+    stroke-linecap: round;
+  }
+
+  .slider .handle {
+    fill: #fff;
+    fill-opacity: .75;
+    stroke: #000;
+    stroke-opacity: .5;
+    stroke-width: 1.25px;
+    cursor: crosshair;
+  }
+
+  #OKI > span.GRID {
+    color: #ccc;
+  }
+
+  .GRID > span:nth-child(10n) {
+    color: #eee;
+  }
+
+
+  .GRID > span.ACTIVE {
+    color: #fcc;
+  }
+
+  .GRID > span.STARTUP {
+    color: #aaa;
+  }
+
+  .GRID > span.RECOVERY {
+    color: #aaa;
+  }
+
+  .GRID > span.WAKEUP {
+    color: #cfc;
+  }
+
+  .GRID > span.FK {
+    color: #ccc;
+  }
+
+
+  .UCLICK:hover {
+    color: #fff;
+    background-color: #990;
+    cursor: pointer;
+  }
+
+  button.CHAR {
+    padding: 5px;
+    margin: 3px;
+    /*width: 8%;*/
+    background-color: #999;
+  }
+
+  button.SEL {
+    background-color: #ffc;
+  }
+
+  #OKI {    
+    cursor: pointer;
+  }
+
+
+  .UCY1 {    
+    background-color: #033;
+  }
+
+  .UCY2 {    
+    background-color: #033;
+  }
+
+  .UCY3 {    
+    background-color: #220;
+  }
+
+  .UCY4 {    
+    background-color: #220;
+  }
+
+  .UCY5 {    
+    background-color: #220;
+  }
+
+  .UCY6 {    
+    background-color: #220;
+  }
+
+  .UCY7 {    
+    background-color: #220;
+  }
+
+
+  .UCOKI {
+    background-color: #020;
+  }
+
+  #FRAMEKILLS{
+    line-height: 1.5em;
+  }
+
+  .FRAMEKILL {
+    color: #999;
+  }
+</style>
+</head>
+<body>
+<div id="CHARS"></div>
+<div id="KD"></div>
+<div>
+<pre id="OKI">
+<span class="UCPOINT"      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="TOP10"   class="GRID">0........1.........2.........3.........4.........5.........6.........7.........8.........9.........10........11........</span>
+<span class="UCPOINT"      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="TOP1"    class="GRID">12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789</span>
+<span class="UCPOINT"                          >KDBR&nbsp;</span><span id="ADVKDBR" class="GRID"></span>
+<span class="UCPOINT"                     >KDR&nbsp;&nbsp;</span><span id="ADVKDR"  class="GRID"></span>
+<span class="UCPOINT"                >KD&nbsp;&nbsp;&nbsp;</span><span id="ADVKD"   class="GRID"></span>
+<span class="UCPOINT" onclick="MECOKI(1)"      >OKI1&nbsp;</span><span id="ADVOKI1" class="GRID"></span>
+<span class="UCPOINT" onclick="MECOKI(2)"      >OKI2&nbsp;</span><span id="ADVOKI2" class="GRID"></span>
+<span class="UCPOINT" onclick="MECOKI(3)"      >OKI3&nbsp;</span><span id="ADVOKI3" class="GRID"></span>
+<span class="UCPOINT" onclick="MECOKI(4)"      >OKI4&nbsp;</span><span id="ADVOKI4" class="GRID"></span>
+<span class="UCPOINT" onclick="MECOKI(5)"      >OKI5&nbsp;</span><span id="ADVOKI5" class="GRID"></span>
+<span class="UCPOINT" onclick="MECOKI(6)"      >OKI6&nbsp;</span><span id="ADVOKI6" class="GRID"></span>
+<span class="UCPOINT" onclick="MECOKI(7)"      >OKI7&nbsp;</span><span id="ADVOKI7" class="GRID"></span>
+<span class="UCPOINT"      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="FK"      class="GRID">12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789</span>
+<span class="UCPOINT"      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span id="FK10"    class="GRID">0........1.........2.........3.........4.........5.........6.........7.........8.........9.........10........11........</span>
+</pre>
+</div>
+<div id="TOTALS"></div>
+<pre>
+<div id="FRAMEKILLS"></div>
+</pre>
+<div id="FRAMES"></div>
+<script src="../d3.min.js"></script>
+<script>
+var CHARPLUS = "&middot;";
+var CHARMINUS = "&middot;";
+var MEOKI = 1;
+var KDMOVE = null;
+var OKIMOVE = null;
+var FRAMEKILL = 19;
+var HASHKD = 91+1;
+var HASHKDBR = 37+1;
+var HASHKDR = 32+1;
+var HASHCHAR = "GUL";
+var HASHSTARTUP = 5;
+var HASHACTIVE = 4;
+var HASHRECOVERY = 10;
+var HASHLIST = [];
+var OKILIST = [{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
+              ,{FRAMEKILL:30,STARTUP:7,ACTIVE:3,RECOVERY:18,MOVE:"stand HP"}
+              ,{FRAMEKILL:84,STARTUP:7,ACTIVE:3,RECOVERY:18,MOVE:"stand HP"}
+              ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
+              ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
+              ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
+              ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
+              ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}]
+
+function MECHASH() {
+  var h = window.location.hash.substr(1).split("/");
+  if (h.length >= 1 && CHARS[0].indexOf(h[0].toUpperCase()) != -1) HASHCHAR = h[0];
+  if (h.length >= 2 && !isNaN(h[1]) && h[1] != "") HASHKD = +(h[1].trim())+1;
+  if (h.length >= 3 && !isNaN(h[2]) && h[2] != "") HASHKDBR = +(h[2].trim())+1;
+  if (h.length >= 4 && !isNaN(h[3]) && h[3] != "") HASHKDR = +(h[3].trim())+1;
+
+  if (h.length >= 5 && !isNaN(h[4]) && h[4] != "" && h[4].indexOf(",") == -1) {
+    for (var i=1;i<=2;i++) {
+      OKILIST[i].FRAMEKILL = +(h[4].trim())+1;
+      if (h.length >= 6 && !isNaN(h[5]) && h[5] != "") OKILIST[i].STARTUP = +(h[5].trim());
+      if (h.length >= 7 && !isNaN(h[6]) && h[6] != "") OKILIST[i].ACTIVE = +(h[6].trim());
+      if (h.length >= 8 && !isNaN(h[7]) && h[7] != "") OKILIST[i].RECOVERY = +(h[7].trim());
+      OKILIST[i].MOVE = "";
+    }
+  } else {
+    for (var i=1;i<=7;i++) {
+      if (h.length >= i+4) {
+        var hh = h[i+3].split(",");
+        if (hh.length >= 1 && !isNaN(hh[0]) && hh[0] != "") OKILIST[i].FRAMEKILL = +(hh[0].trim());
+        if (hh.length >= 2 && !isNaN(hh[1]) && hh[1] != "") OKILIST[i].STARTUP = +(hh[1].trim());
+        if (hh.length >= 3 && !isNaN(hh[2]) && hh[2] != "") OKILIST[i].ACTIVE = +(hh[2].trim());
+        if (hh.length >= 4 && !isNaN(hh[3]) && hh[3] != "") OKILIST[i].RECOVERY = +(hh[3].trim());
+        if (hh.length >= 5 && hh[4] != "") OKILIST[i].MOVE = (hh[4].trim().replace("+"," ").replace(/[^A-Za-z0-9 -]/g,"").trim());
+      }
+    }
+  }
+
+}
+
+function UCHASH() {
+
+  var h = "#" + (HASHCHAR) + "/" + (+HASHKD-1) + "/" + (+HASHKDBR-1) + "/" + (+HASHKDR-1)
+        //+ "/" + (FRAMEKILL-1) + "/" + HASHSTARTUP + "/" + HASHACTIVE + "/" + HASHRECOVERY
+        ;
+
+  for (var i=1;i<=7;i++) {
+    h += "/" + OKILIST[i].FRAMEKILL + "," + OKILIST[i].STARTUP + "," + OKILIST[i].ACTIVE + "," + OKILIST[i].RECOVERY + "," + OKILIST[i].MOVE.trim().replace(/\s+/g,"+");
+  }
+
+  if (h != window.location.hash) window.location.hash = h;
+}
+
+var CHARS = [
+["ALX", "BLR", //"BLR2", "BRD", "BRD2", 
+"CMY", //"CNL", "CNL2", "DSM", "FAN", 
+"GUL", "KEN", "KRN", //"LAR", 
+"NCL", //"NCL2", "NSH", "RMK", 
+"RSD", //"RYU", "RYU2", 
+"VEG", //"VEG2", "ZGF",
+]
+];
+
+  var CDIV = d3.select("#CHARS");
+  CDIV.selectAll("div").data(CHARS).enter().append("div")
+      .attr("class", function(d,i) {return "ROW"; })
+      .selectAll("button").data(function(d){return d;}).enter().append("button").attr("class", function(d){ return "CHAR CHAR"+d;})
+      .on("click",function(d,i){
+        var p = d3.select(this.parentNode.parentNode).datum();
+        d3.selectAll(".CHAR").classed("SEL",false);
+        d3.select(this).classed("SEL",true);
+        
+        HASHCHAR = d;
+        d3.tsv("../"+HASHCHAR+".txt", UCGILLEY);
+      })
+      .text(function(d,i){return d;});
+
+function UCTOP1() {
+  var ADV = d3.select("#TOP1");
+  var adv = ""
+  for (var i=1;i<=119;i++) {
+    adv += "<span class='UCLICK' onclick='UCOKI("+i+")'>" + (i%10) + "</span>";
+  }
+  ADV.html(adv);
+}
+
+function UCKD(kd, hash) {
+  var ADV = d3.select("#ADVKD");
+  var adv = ""
+  for (var i=1;i<=119;i++) {
+    var text = i<kd ? CHARPLUS : i>=kd+10 ? CHARMINUS : ((i-kd+1)%10);
+    adv += "<span class='UCLICK" + (i<kd||i>=kd+10?"":" WAKEUP") + "' onclick='UCKD("+i+")'>" + text + "</span>";
+  }
+  adv += "<span class='ADVPLUS'> " + "+" + ((kd-1) + "     ").slice(0,3) + " U HIT " + (kd + "     ").slice(0,3) + " &middot; <span id='OKI12GAP'>0</span>F OKI1-OKI2</span>";
+  ADV.html(adv);
+  HASHKD = kd;
+  if (hash == undefined) UCHASH();  
+  var OKI12GAP = OKILIST[2].FRAMEKILL - (OKILIST[1].FRAMEKILL + OKILIST[1].STARTUP + OKILIST[1].ACTIVE + OKILIST[1].RECOVERY-1);
+  d3.select("#OKI12GAP").text(("     " + OKI12GAP).slice(-3));
+}
+function UCKDBR(kd, hash) {
+  var ADV = d3.select("#ADVKDBR");
+  var adv = ""
+  for (var i=1;i<=119;i++) {
+    var text = i<kd ? CHARPLUS : i>=kd+10 ? CHARMINUS : ((i-kd+1)%10);
+    adv += "<span class='UCLICK" + (i<kd||i>=kd+10?"":" WAKEUP") + "' onclick='UCKDBR("+i+",false);UCKDR("+(i-5)+")'>" + text + "</span>";
+  }
+  adv += "<span class='ADVPLUS'> " + "+" + ((kd-1) + "     ").slice(0,3) + " U HIT " + (kd + "     ").slice(0,3) + "</span>";
+  ADV.html(adv);
+  HASHKDBR = kd;
+  if (hash == undefined) UCHASH();
+}
+function UCKDR(kd, hash) {
+  var ADV = d3.select("#ADVKDR");
+  var adv = ""
+  for (var i=1;i<=119;i++) {
+    var text = i<kd ? CHARPLUS : i>=kd+10 ? CHARMINUS : ((i-kd+1)%10);
+    adv += "<span class='UCLICK" + (i<kd||i>=kd+10?"":" WAKEUP") + "' onclick='UCKDR("+i+",false);UCKDBR("+(i+5)+");'>" + text + "</span>";
+  }
+  adv += "<span class='ADVPLUS'> " + "+" + ((kd-1) + "     ").slice(0,3) + " U HIT " + (kd + "     ").slice(0,3) + "</span>";
+  ADV.html(adv);  
+  HASHKDR = kd;
+  if (hash == undefined) UCHASH();
+}
+function UCFK() {
+  var ADV = d3.select("#FK");
+  var adv = ""
+  for (var i=1;i<=119;i++) {
+    adv += "<span class='UCLICK' onclick='UCOKI("+i+")'>" + (i%10) + "</span>";
+  }
+  ADV.html(adv);
+}
+function UCOKI(kd, hash) {
+
+  var active = OKILIST[MEOKI].ACTIVE;
+  var startup = OKILIST[MEOKI].STARTUP-1;
+  var recovery = OKILIST[MEOKI].RECOVERY;
+  var move = OKILIST[MEOKI].MOVE;
+  var total = startup+active+recovery;
+  if (total < 0) total = 0;
+
+  if (kd>0) {
+    FRAMEKILL = kd;
+    var end = FRAMEKILL+startup+active+recovery-1;
+    d3.selectAll(".UCY"+MEOKI).classed("UCY"+MEOKI, false);
+    for (var i=FRAMEKILL;i<=(end>119?119:end);i++) {
+      d3.selectAll(".GRID > span:nth-child("+i+")").classed("UCY"+MEOKI, true);
+    }
+  } else {
+    FRAMEKILL = OKILIST[MEOKI].FRAMEKILL;
+  }
+  var fk = FRAMEKILL;
+  OKILIST[MEOKI].FRAMEKILL = FRAMEKILL;
+
+  var ADV = d3.select("#ADVOKI"+MEOKI);
+  var adv = ""
+  var text = "";
+  var spanclass = "";
+  for (var i=1;i<=119;i++) {
+
+    if (i<FRAMEKILL) {
+      text = CHARPLUS;
+      spanclass = "";
+    } else {
+      if (i <= FRAMEKILL+startup-1) {
+        text = "s";
+        spanclass = "STARTUP";
+      }
+      else if (i <= FRAMEKILL+startup+active-1) {
+        text = "A";
+        spanclass = "ACTIVE";
+      }
+      else if (i <= FRAMEKILL+startup+active+recovery-1) {
+        text = "r";
+        spanclass = "RECOVERY";
+      } else {
+        text = CHARMINUS;
+        spanclass = "";
+      }
+    }
+
+    adv += "<span class='UCLICK " + spanclass + "' onclick='MECOKI("+MEOKI+");UCOKI("+i+")'>" + text + "</span>";
+  }
+  adv += "<span class='ADVPLUS' onclick='MECOKI("+MEOKI+")'> " + "+" + ((FRAMEKILL-1) + "     ").slice(0,3) + " U HIT " + ((FRAMEKILL + startup) + "     ").slice(0,3) + " &middot; " + ("     " + (total)).slice(-3) + "F " + move + "</span>";
+  ADV.html(adv);
+  if (hash == undefined) UCHASH();
+
+  if (MEOKI<=2) {
+    var OKI12GAP = OKILIST[2].FRAMEKILL - (OKILIST[1].FRAMEKILL + OKILIST[1].STARTUP + OKILIST[1].ACTIVE + OKILIST[1].RECOVERY-1);
+    d3.select("#OKI12GAP").text(("     " + OKI12GAP).slice(-3));
+  }
+}
+
+function MECOKI(oki) {
+  MEOKI = oki;
+  d3.selectAll(".UCOKI").classed("UCOKI",false);
+  d3.select("#ADVOKI"+oki).classed("UCOKI",true);
+}
+
+function UCGILLEY(rows){
+
+  var KD = d3.select("#KD");
+  var FRAMES = d3.select("#FRAMES");
+  var TOTALS = d3.select("#TOTALS");
+
+  KD.selectAll("*").remove();
+  FRAMES.selectAll("*").remove();
+  TOTALS.selectAll("*").remove();
+
+  var FRAMETABLE = FRAMES.append("div").append("table").classed("FRAMES",true);
+  var KDTABLE = KD.append("div").append("table").classed("FRAMES",true);
+  var TOTALSTABLE = TOTALS.append("div").append("table").classed("FRAMES",true);
+
+  var keys = d3.keys(rows[0]);
+  
+  var totalrows = rows.filter(function(d){ var t=d["Total "]||d["Total"]; return !isNaN(t) && t != "";});
+
+  TOTALSTABLE.append("thead").append("tr").selectAll("th").data(["TOTAL"].concat(keys)).enter().append("th").text(function(d){return d;});
+  TOTALSTABLE.append("tbody").selectAll("tr").data(totalrows).enter().append("tr")            
+            .selectAll("td").data(function(d){ return [{key:"TOTAL",value:d["Total "] || d["Total"]}].concat(d3.entries(d));})
+            .enter().append("td").text(function(d){return d.value;})
+            .on("click",function(d){
+              var p = this.parentNode;
+              var pd = d3.select(p).datum();
+              KDMOVE = pd;
+              KDTABLE.selectAll(".UC").classed("UC",false);
+              d3.select(p).classed("UC",true);
+              //UCOKI(0);
+              UCKD(+pd["KD Adv."]+1);
+              if (!isNaN(pd["KDR Adv."]) && pd["KDR Adv."] != "") {
+                UCKDR(+pd["KDR Adv."]+1);
+                if (!isNaN(pd["KDRB Adv."]) && pd["KDRB Adv."] != "") {
+                  UCKDBR(+pd["KDRB Adv."]+1);
+                } else {
+                  UCKDBR(+pd["KDR Adv."]+1);
+                }
+              } else {
+                UCKDR(+pd["KD Adv."]+1);
+                UCKDBR(+pd["KD Adv."]+1);
+              }
+              UCHASH();
+            });
+
+  KDTABLE.append("thead").append("tr").selectAll("th").data(["KD ADV","KDR ADV","KDBR ADV"].concat(keys)).enter().append("th").text(function(d){return d;});
+  KDTABLE.append("tbody").selectAll("tr").data(rows.filter(function(d){return !isNaN(d["KD Adv."]) && d["KD Adv."] != "";})).enter().append("tr")
+            .classed("UC",function(d){return +d["KDRB Adv."]==HASHKDBR-1 && +d["KDR Adv."]==HASHKDR-1 && +d["KD Adv."]==HASHKD-1; })
+            .selectAll("td").data(function(d){ return [{key:"KD",value:"+"+d["KD Adv."]},{key:"KDR",value:"+"+d["KDR Adv."]},{key:"KDBR",value:"+"+d["KDRB Adv."]}].concat(d3.entries(d));})
+            .enter().append("td").text(function(d){return d.value;})
+            .on("click",function(d){
+              var p = this.parentNode;
+              var pd = d3.select(p).datum();
+              KDMOVE = pd;
+              KDTABLE.selectAll(".UC").classed("UC",false);
+              d3.select(p).classed("UC",true);
+              //UCOKI(0);
+              UCKD(+pd["KD Adv."]+1);
+              if (!isNaN(pd["KDR Adv."]) && pd["KDR Adv."] != "") {
+                UCKDR(+pd["KDR Adv."]+1);
+                if (!isNaN(pd["KDRB Adv."]) && pd["KDRB Adv."] != "") {
+                  UCKDBR(+pd["KDRB Adv."]+1);
+                } else {
+                  UCKDBR(+pd["KDR Adv."]+1);
+                }
+              } else {
+                UCKDR(+pd["KD Adv."]+1);
+                UCKDBR(+pd["KD Adv."]+1);
+              }
+              UCHASH();
+            });
+  
+  FRAMETABLE.append("thead").append("tr").selectAll("th").data(["TOTAL"].concat(keys).concat([""])).enter().append("th").text(function(d){return d;});
+  FRAMETABLE.append("tbody").selectAll("tr").data(rows).enter().append("tr")
+            .classed("UC",function(d){return +d["Startup"]==HASHSTARTUP && +d["Active"]==HASHACTIVE && +d["Recovery"]==HASHRECOVERY; })
+            .selectAll("td").data(function(d){return [{key:"TOTAL",value:d["Total "] || d["Total"]}].concat(d3.entries(d)).concat([{key:"U C",value:"U C"}]);})
+            .enter().append("td").text(function(d){return d.value;})
+            .classed("UC",function(d){return d.key=="TOTAL" && FRAMEKILL>1 && +d.value==FRAMEKILL-1; })
+            .on("click",function(d){
+              var p = this.parentNode;
+              var pd = d3.select(p).datum();
+              
+
+              if (d.key == "U C") {
+
+                console.log(pd);
+
+                FRAMETABLE.select("thead").insert("tr",":first-child")
+                .selectAll("td").data( [{key:"TOTAL",value:pd["Total "] || pd["Total"]}].concat(d3.entries(pd)).concat([{key:"U NO C",value:"U NO C"}]) )
+                .enter().append("td").text(function(dd){ console.log(dd); return dd.value;})
+                .on("click",function(dd){
+                  var pp = this.parentNode;
+                  if (dd.key == "U NO C") {
+                    d3.select(pp).remove();
+                  }
+                });
+
+                return;
+              }
+
+              FRAMETABLE.selectAll(".UC").classed("UC",false);
+              d3.select(p).classed("UC",true);              
+              
+              OKIMOVE = pd;
+              if (OKIMOVE != null) {
+                if (!isNaN(OKIMOVE["Active"]) && OKIMOVE["Active"] != "") { HASHACTIVE = +OKIMOVE["Active"]; }  else { HASHACTIVE = 0; }
+                if (!isNaN(OKIMOVE["Startup"]) && OKIMOVE["Startup"] != "") { HASHSTARTUP = +OKIMOVE["Startup"]; } else { HASHSTARTUP = 1; }
+                if (!isNaN(OKIMOVE["Recovery"]) && OKIMOVE["Recovery"] != "") { HASHRECOVERY = +OKIMOVE["Recovery"]; } else { HASHRECOVERY = 0; }
+
+                if (!isNaN(OKIMOVE["Active"]) && OKIMOVE["Active"] != "") { OKILIST[MEOKI].ACTIVE = +OKIMOVE["Active"]; }  else { OKILIST[MEOKI].ACTIVE = 0; }
+                if (!isNaN(OKIMOVE["Startup"]) && OKIMOVE["Startup"] != "") { OKILIST[MEOKI].STARTUP = +OKIMOVE["Startup"]; } else { OKILIST[MEOKI].STARTUP = 1; }
+                if (!isNaN(OKIMOVE["Recovery"]) && OKIMOVE["Recovery"] != "") { OKILIST[MEOKI].RECOVERY = +OKIMOVE["Recovery"]; } else { OKILIST[MEOKI].RECOVERY = 0; }
+
+                OKILIST[MEOKI].MOVE = OKIMOVE["Move"];
+
+              }
+              UCOKI(0);
+            });
+
+
+  TOTALROWS = totalrows
+                  .sort(function(a,b){
+                    var ta=+(a["Total "]||a["Total"]);
+                    var tb=+(b["Total "]||b["Total"]);
+                    if (ta > tb) return -1;
+                    if (ta < tb) return  1;
+                    return 0;
+                  });
+
+  TOTALSDIV.select("*").remove();
+
+  for (var total=1;total<60;total++) {
+    TOTALSDIV.append("div").text("\nFRAME KILL " + total).classed("FRAMEKILL",true);
+    UCTOTALROW("FRAME KILL " + total + " ",0,0,total);
+  }
+
+}
+
+var TOTALSDIV = d3.select("#FRAMEKILLS");
+var TOTALROWS = [];
+
+function UCTOTALROW(pre,start,run,total) {
+  TOTALROWS.forEach(function(row,i){
+    if (i<start) return;
+    var rowtotal = +(row["Total "]||row["Total"]);
+    if (rowtotal+run>total) return;
+    var loops = Math.floor((total-run)/rowtotal);
+    for (var loop=loops;loop>=1;loop--) {
+      if (rowtotal*loop+run==total) {
+        TOTALSDIV.append("div").text(pre + (", " + rowtotal + "F " + row["Move"]).repeat(loop));
+      } else if (rowtotal*loop+run<total) {
+        UCTOTALROW(pre + (", " + rowtotal + "F " + row["Move"]).repeat(loop),i+1,rowtotal*loop+run,total);
+      }
+    }
+  });
+}
+
+MECHASH();
+
+UCTOP1();
+UCKD(HASHKD, false);
+UCKDBR(HASHKDBR, false);
+UCKDR(HASHKDR, false);
+UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+MECOKI(2);
+UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+MECOKI(3);
+UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+MECOKI(4);
+UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+MECOKI(5);
+UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+MECOKI(6);
+UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+MECOKI(7);
+UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+UCFK();
+UCHASH();
+
+
+d3.tsv("../"+HASHCHAR+".txt", UCGILLEY);
+d3.selectAll(".CHAR"+HASHCHAR).classed("SEL",true);
+
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72771119-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
