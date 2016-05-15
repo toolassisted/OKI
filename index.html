@@ -331,6 +331,22 @@
 <pre>
 <div id="FRAMEKILLS"></div>
 </pre>
+<pre>
+U KEY U SHORTCUT LOL
+
+1 = SELECT OKI1
+2 = SELECT OKI2
+3 = SELECT OKI3
+4 = SELECT OKI4
+5 = SELECT OKI5
+6 = SELECT OKI6
+7 = SELECT OKI7
+
++ = OKI FRAME + 1
+- = OKI FRAME - 1
+
+DELETE = OKI DELETE
+</pre>
 <script src="d3.min.js"></script>
 <script>
 var CHARPLUS = "&middot;";
@@ -789,6 +805,36 @@ UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
 UCFK();
 UCHASH();
 
+d3.select("body").on("keydown", function() {
+  switch(d3.event.keyCode) {
+    case 0x61: case 0x31: MECOKI(1); break;
+    case 0x62: case 0x32: MECOKI(2); break;
+    case 0x63: case 0x33: MECOKI(3); break;
+    case 0x64: case 0x34: MECOKI(4); break;
+    case 0x65: case 0x35: MECOKI(5); break;
+    case 0x66: case 0x36: MECOKI(6); break;
+    case 0x67: case 0x37: MECOKI(7); break;
+    case 46: 
+      OKILIST[MEOKI].FRAMEKILL = 1;
+      OKILIST[MEOKI].STARTUP = 0;
+      OKILIST[MEOKI].ACTIVE = 0;
+      OKILIST[MEOKI].RECOVERY = 0;
+      OKILIST[MEOKI].MOVE = "";
+      UCOKI(0);
+      break;
+
+    case 109: case 189:
+      OKILIST[MEOKI].FRAMEKILL -= 1;
+      UCOKI(0);
+      break;
+
+    case 107: case 187:
+      OKILIST[MEOKI].FRAMEKILL += 1;
+      UCOKI(0);
+      break;
+  } 
+  console.log(d3.event);
+});
 
 d3.tsv(HASHCHAR+".txt", UCGILLEY);
 d3.selectAll(".CHAR"+HASHCHAR).classed("SEL",true);
