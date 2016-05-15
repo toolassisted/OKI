@@ -331,21 +331,32 @@
 <pre>
 <div id="FRAMEKILLS"></div>
 </pre>
-<pre>
+<pre id="YUNOC">
+SFV OKI LOL
+
+  KNOCKDOWN
+  
+  KD   = NO RECOVERY
+  KDR  = NORMAL RECOVERY
+  KDBR = BACK RECOVERY
+
+  <a href="https://twitter.com/TOOLASSlSTED/status/731544334781300736" target="_blank">https://twitter.com/TOOLASSlSTED/status/731544334781300736</a>
+
 U KEY U SHORTCUT LOL
 
-1 = SELECT OKI1
-2 = SELECT OKI2
-3 = SELECT OKI3
-4 = SELECT OKI4
-5 = SELECT OKI5
-6 = SELECT OKI6
-7 = SELECT OKI7
+  1 = SELECT OKI1
+  2 = SELECT OKI2
+  3 = SELECT OKI3
+  4 = SELECT OKI4
+  5 = SELECT OKI5
+  6 = SELECT OKI6
+  7 = SELECT OKI7
+  
+  + = OKI FRAME + 1
+  - = OKI FRAME - 1
 
-+ = OKI FRAME + 1
-- = OKI FRAME - 1
+  DELETE = OKI DELETE
 
-DELETE = OKI DELETE
 </pre>
 <script src="d3.min.js"></script>
 <script>
@@ -433,8 +444,9 @@ var CHARS = [
       .selectAll("button").data(function(d){return d;}).enter().append("button").attr("class", function(d){ return "CHAR CHAR"+d;})
       .on("click",function(d,i){
         if (d == "???") {
-          var win = window.open("https://twitter.com/TOOLASSlSTED/status/731544334781300736", '_blank');
+          //var win = window.open("https://twitter.com/TOOLASSlSTED/status/731544334781300736", '_blank');
           //win.focus();
+          d3.select("#YUNOC").node().scrollIntoView();
           return;
         } else if (d == "RESET OKI") {
           OKILIST = [{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
