@@ -22,7 +22,7 @@ road of the sun	d+HK during jump	14	12	-	-	-	80	100		12	13	H	-	-	96	120
 sacrificial altar	MK > HK > MK+MP	5	-	-	KD	-9	60*54*32	100*90*40		12*15*15	7	H*H*H	CA,V	KD	72*54*32	120*90*40	94	35	40	
 soul sealer	LP+LK	5	2	18	KD	-	50*70	20*150	24	-		T	-	KD	50*70	20*150	74	25	25	
 soul discriminator	b+LP+LK	5	2	18	KD	-	55*65	0*170	24	-		T	-	KD	55*65	0*170	81	32	32	
-torrent of power	HP+HK					-			56	-		-	-	-	-	-				
+torrent of power	HP+HK			5		-			5	-		-	-	-	-	-				
 culminated power	n or b or f+MP+MK	25	3	29	KD	-2	50	100		15	8	H	-	KD	60	120	78	29	34	
 the calling	f+PPP	16	2	24	KD	-2	60	0				H								
 The Disc's Guidance LP	b,f+LP	18	3	25	KD	-6	90	150		12	23	H	-	KD	108	180	88	29	34	

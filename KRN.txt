@@ -20,7 +20,7 @@ jump HK		9	4	-	-	-	90	150		15	15	M	-	-	108	180
 tsumujigari	f+MK	22	2	21	0	-4	60	100	44	12	10	M	-	2	72	120					20160514
 hajotsui	LP+LK	5	2	18	KD	-	120	170	24	-	-	T	-	KD	120	170	63	4	4		
 arakuma inashi	b+LP+LK	5	2	18	KD	-	140	200	24	-	-	T	-	KD	140	200	59	0	0		
-kanzuki-ryu guren no kata	HP+HK								56	-	-	-	-	-	-	-					
+kanzuki-ryu guren no kata	HP+HK			5					5	-	-	-	-	-	-	-					
 guren ken	qcf+P	12	13	19	-3	-6	40*40	40*40	43	4*8	10*10	H	CA	-2	48*40	48*40					20160514
 guren hosho	qcf+P > P	11			KD	-9	81	90		15	23	H	CA	KD	81	90	78	19	24		
 guren senha	qcf+P > u+P	17			4	-6	30*70	50*100		8*12	8*18	H*M	-	4	36*70	60*100					
