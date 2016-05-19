@@ -25,7 +25,7 @@ chin buster 2nd	b+MP > HP	6	3	27	KD	-13	50*54	80*72		10*12	8*10	H*H	SP,V	KD	60*5
 lion breaker	MK > HK	8	4	23	KD	-6	60*54	100*90		10*12	10*10	H*H	SP,V	KD	72*54	120*90	87	28	34	
 knee bash	LP+LK	5	2	18	KD	-	30*30*60	0*0*170		-	-	T	-	KD	30*30*60	0*0*170	78	19	19	
 hell wheel	b+LP+LK	5	2	18	KD	-	130	200		-	-	T	-	KD	130	200	69	10	10	
-heat rush	HP+HK	-	-	-		-			51	-	-	-	-	-	-	-				
+heat rush	HP+HK	-	-	22		-			22	-	-	-	-	-	-	-				ANIM 51F
 quick step	MP+MK (hold to attack)	24	2		KD	-6	70	150	22		12	H	V	KD	84	180	89	30	35	
 senpu nataotoshi	f+KKK	10	4	22	2	0	40	0				H								
 hadouken LP	qcf+LP	14	-	34	-4	-10	50	100		8	8	H	CA,V	-2	60	120				
@@ -45,7 +45,6 @@ air tatsumaki senpukyaku MK	qcb+MK(air)	9	2(5)2(5)2	-	-	-	80	100		10	20	H	-	-	96
 air tatsumaki senpukyaku HK	qcb+HK(air)	9	2(4)2(4)2	-	-	-	80	100		10	20	H	-	-	96	120	-			
 air tatsumaki senpukyaku EX	qcb+KK(air)	9	2(6)2(7)2	-	-	-	90	100		12	23	H	-	-	108	120	-			
 guren enjikyaku	qcf,qcf+K	5	2	44	KD	-26	340	0		-	60	H	-	KD	346	0	31	31	31	
-																				
 health	1000																			
 stun	1000																			
 taunt	61			61					61											
@@ -54,8 +53,6 @@ jump forward	45 (3+38+4)	43	1	4					45
 jump backward	46 (4+38+4)	44	1	4					46											
 dash forward	15		15						15											
 dash backward	24		24						24											
-																				
-																				
 V-TRIGGER																				
 VT hadouken	qcf+P	13	-	34	KD	-6	70	100				H	CA							
 VT hadouken EX	qcf+PP	12	-	33	KD	2	60*60	100*100				H	-							

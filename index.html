@@ -359,6 +359,7 @@ U KEY U SHORTCUT LOL
 
 </pre>
 <script src="d3.min.js"></script>
+<script src="tabletop.js"></script>
 <script>
 var CHARPLUS = "&middot;";
 var CHARMINUS = "&middot;";
@@ -783,7 +784,6 @@ function UCTOTALROW(pre,start,run,total) {
     var rowtotal = +(row["Total "]||row["Total"]);
     if (rowtotal+run>total) return;
     var loops = Math.floor((total-run)/rowtotal);
-    if (rowtotal<10)loops = 1;
     for (var loop=loops;loop>=1;loop--) {
       if (rowtotal*loop+run==total) {
         TOTALSDIV.append("div").text(pre + (", " + rowtotal + "F " + row["Move"]).repeat(loop));
@@ -846,13 +846,64 @@ d3.select("body").on("keydown", function() {
       UCOKI(0);
       break;
   } 
-  console.log(d3.event);
+  // console.log(d3.event);
 });
+
+
 
 d3.tsv(HASHCHAR+".txt", UCGILLEY);
 d3.selectAll(".CHAR"+HASHCHAR).classed("SEL",true);
 
+
+
+
+// var CHARSHEET = [];
+// CHARSHEET["ALX"] = "Alex";
+// CHARSHEET["BRD"] = "Birdie";
+// CHARSHEET["CMY"] = "Cammy";
+// CHARSHEET["CNL"] = "Chunli";
+// CHARSHEET["DSM"] = "Dhalsim";
+// CHARSHEET["FAN"] = "Fang";
+// CHARSHEET["GUL"] = "Guile";
+// CHARSHEET["KRN"] = "Karin";
+// CHARSHEET["KEN"] = "Ken";
+// CHARSHEET["LAR"] = "Laura";
+// CHARSHEET["VEG"] = "Mbison";
+// CHARSHEET["NSH"] = "Nash";
+// CHARSHEET["NCL"] = "Necalli";
+// CHARSHEET["RSD"] = "Rashid";
+// CHARSHEET["RMK"] = "Rmika";
+// CHARSHEET["RYU"] = "Ryu";
+// CHARSHEET["BLR"] = "Vega";
+// CHARSHEET["ZGF"] = "Zangief";
+
+// function MECSHEET(data, tabletop) {  
+    
+//   CHARS[0].forEach(function(k){
+//     if (CHARSHEET[k]) {
+//       console.log(k,data[CHARSHEET[k]]);
+//       var dlAnchorElem = document.createElement("a");
+//       dlAnchorElem.href = URL.createObjectURL(
+//                             new Blob(
+//                                 [d3.tsv.format(data[CHARSHEET[k]].elements)],
+//                                 {type:'text/tsv'}
+//                             )
+//                         );
+//       dlAnchorElem.setAttribute("download", k+".txt");
+//       dlAnchorElem.click();
+//     }
+//   });
+// }
+
+// Tabletop.init( { key: "https://docs.google.com/spreadsheets/d/1oS6k1bXdcT9A56_b1QQFXkzn4SyPP-P9q7HiqyuEncI/pubhtml",
+//                  callback: MECSHEET,
+//                  simpleSheet: false } );
+
+
+
+
 </script>
+
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

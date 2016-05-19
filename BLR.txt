@@ -53,8 +53,6 @@ aurora spin edge HP	qcb+HP	12	7	15	KD	-	100		16	200	-	H	CA	KD	120	240	-	-	-
 aurora spin edge EX	qcb+PP	12	7(12)4	21	KD	-3	50*100		16*16	100*100	13*25	H*H	-	KD	120*100	120*100	86	27	32	
 switch claw	qcf+P							23	-			-	-	-	-	-				
 bloody rain	qcf,qcf+P or qcb,qcb+P	9	8	29	KD	-22	330		-	0	5	H	-	KD	334	0	80	40	40	
-																				
-																				
 health	1000																			
 stun	950																			
 taunt	61			61																
@@ -63,7 +61,6 @@ jump forward	46(3+39+4)	42	1	4				46												9LK EARLY WHIFF 44F
 jump backward	47(4+39+4)	43	1	4				47												
 dash forward	17		17					17												
 dash backward	21		21					21												
-																				
 no claw normals...																				
 NC stand LP		3	2	6	5	3	30	10	8	70	0	H	SP,V	7	36	84	-	-	-	
 NC stand MP		6	3	13	3	1	60	21	12	100	10	H	V	5	72	120	-	-	-	

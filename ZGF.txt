@@ -48,7 +48,6 @@ borscht dynamite MP	360+MP(air)	3	4	37	KD	-	50*150	100*150		-	-	T	-	KD	50*150	10
 borscht dynamite HP	360+HP(air)	3	4	37	KD	-	50*170	100*150		-	-	T	-	KD	50*170	100*150	72	23	23	
 borscht dynamite EX	360+PP(air)	3	4	37	KD	-	50*150	100*150		-	-	T	-	KD	50*150	100*150	76	27	27	
 bolshoi russian suplex	720+P	1	2	65	KD	-	50*50*300	0		-	-	T	-	KD	50*50*300	0	60	11	11	
-																				
 health	1050																			
 stun	1050																			
 taunt	61			61					61											

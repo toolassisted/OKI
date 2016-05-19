@@ -21,7 +21,7 @@ Nirenko	df+HP	12	2(5)2	21	-2	-5	60*40	100*100	41	10*10		H*H	V	0	72*48	120*120	-
 Senpukuga	d+PPP > K	10	2(3)2	14	5	2	30*40	50*50	30	8*8		H*H	V	7	36*48	60*60	-			
 Simonshu	LP+LK	5	2	18	KD		60*70	0*200	24	-		T	-	KD	60*70	0*200	73	14	14	
 Kyoshitsugeki	b+LP+LK	5	2	18	KD		10*120	0*170	24	-		T	-	KD	10*120	0*170	72	13	13	
-Dokunomu	HP+HK	-							49	-		-	-				-			
+Dokunomu	HP+HK	-		3					3	-		-	-				-			POISON 902F ANIM 49F
 Nishodoku	MP+MK	22	19		-		??	??	40	-		-	-				-			
 Nikaiho	f+PPP	-							35								-			
 Nishikyu LP	d,u+LP	13	48		-7	-11	20*20	50*50	60	8*8		H*H	CA	-7	24*20	60*50	-			
@@ -41,7 +41,6 @@ Nikankyaku MK	f,d,df+MK	-	-	30	-	-	-	-	30	-		-	-	-	-	-	-
 Nikankyaku HK	f,d,df+HK	-	-	31	-	-	-	-	31	-		-	-	-	-	-	-			
 Nikankyaku EX	f,d,df,+KK	-	-	33	-	-	-	-	33	-		-	-	-	-	-	-			
 Shishiruirui	qcf,qcf+P	12	7		KD	??	292	0		8x7		H	-	KD	300	0	96	27	32	
-																				
 health	950																			
 stun	950																			
 taunt	61			61					61											
