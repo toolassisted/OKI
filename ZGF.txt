@@ -21,6 +21,8 @@ jump LK		6	5	-	-	-	50	70		8	0	M	-	-	60	84		-	-
 jump MK		7	3	-	-	-	70	100		12	12	M	-	-	84	120		-	-	
 jump HK		9	5	-	-	-	100	150		15	17	M	-	-	120	180		-	-	
 head butt	f+HP	12	4	14	7	2	100	200	29	15	17	H	CA	9	120	240		-	-	
+head butt KD HIGH	f+HP	12	4	14	7	2	100	200		15	17	H	CA	9	120	240	87	26	31	HIT R. MIKA HIGH
+head butt KD LOW	f+HP	12	4	14	7	2	100	200		15	17	H	CA	9	120	240	75	15	19	HIT R. MIKA LOW
 knee hammer	f+MK	12	4	12	3	-3	70	100	27	12	12	H	-	5	84	120		-	-	
 flying body press	d+HP during jump	7	7	-	-		100	150		15	17	M	-	-	120	180		-	-	
 atomic drop	LP+LK	5	2	18	KD	-	130	170	24	-	-	T	-	KD	130	170	64	15	15	
