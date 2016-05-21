@@ -300,10 +300,16 @@
   button.CHARRESET {
     margin-left: 50px;
   }
-
+ 
 </style>
 </head>
 <body>
+<script src="comment-embed.js"></script>
+<div id="REDDIT">
+<!-- <iframe height="302px" width="100%" scrolling="no" frameborder="0" src="//www.redditmedia.com/r/SFV_GUILE/comments/4kceto/sfv_guile_oki_lol/d3dvqky?embed=true&amp;context=0&amp;depth=2&amp;showedits=true&amp;123" style="height: 302px; width: 100%; display: block; max-width: 800px; min-width: 220px; margin: 10px 0px; box-shadow: rgba(0, 0, 0, 0.0470588) 0px 0px 5px 0.5px; box-sizing: border-box;"></iframe>
+ -->
+</div>
+
 <div id="CHARS"></div>
 <div id="KD"></div>
 <div>
@@ -415,16 +421,36 @@ function MECHASH() {
 
 function UCHASH() {
 
-  var h = "#" + (HASHCHAR) + "/" + (+HASHKD-1) + "/" + (+HASHKDBR-1) + "/" + (+HASHKDR-1)
+  var h = "#" + (HASHCHAR) + "/" + (+HASHKD-1) + "/" + (+HASHKDBR-1) + "/" + (+HASHKDR-1) + "/"
         //+ "/" + (FRAMEKILL-1) + "/" + HASHSTARTUP + "/" + HASHACTIVE + "/" + HASHRECOVERY
         ;
 
   for (var i=1;i<=7;i++) {
-    h += "/" + OKILIST[i].FRAMEKILL + "," + OKILIST[i].STARTUP + "," + OKILIST[i].ACTIVE + "," + OKILIST[i].RECOVERY + "," + OKILIST[i].MOVE.trim().replace(/\s+/g,"+");
+    h += OKILIST[i].FRAMEKILL + "," + OKILIST[i].STARTUP + "," + OKILIST[i].ACTIVE + "," + OKILIST[i].RECOVERY + "," + OKILIST[i].MOVE.trim().replace(/\s+/g,"+") + "/";
   }
 
   if (h != window.location.hash) { window.location.hash = h; }
 }
+
+
+
+var REDDITEMBED1 = '<div class="reddit-embed" data-embed-media="www.redditmedia.com" data-embed-parent="false" data-embed-live="true" data-embed-created=""><a href="';
+var REDDITEMBED2 = '">U CLICK CHAR U C REDDIT</a></div>';
+
+var REDDITEMBEDCHAR = [];
+REDDITEMBEDCHAR["ALX"] = REDDITEMBED1 + 'https://www.reddit.com/r/SFV_ALEX/comments/4kcmav/sfv_alex_oki_lol/d3dx5xx' + REDDITEMBED2;
+REDDITEMBEDCHAR["BLR"] = REDDITEMBED1 + 'https://www.reddit.com/r/StreetFighterTech/comments/4ggj50/sfv_vega/d3dxbfc' + REDDITEMBED2;
+REDDITEMBEDCHAR["CMY"] = REDDITEMBED1 + 'https://www.reddit.com/r/StreetFighterTech/comments/4ggis5/sfv_cammy/d3dxc3b' + REDDITEMBED2;
+REDDITEMBEDCHAR["FAN"] = REDDITEMBED1 + 'https://www.reddit.com/r/StreetFighterTech/comments/4ggiul/sfv_fang/d3dxc8q' + REDDITEMBED2;
+REDDITEMBEDCHAR["GUL"] = REDDITEMBED1 + 'https://www.reddit.com/r/SFV_GUILE/comments/4kceto/sfv_guile_oki_lol/d3dvqky' + REDDITEMBED2;
+REDDITEMBEDCHAR["KEN"] = REDDITEMBED1 + 'https://www.reddit.com/r/StreetFighterTech/comments/4ggivy/sfv_ken/d3dxcfr' + REDDITEMBED2;
+REDDITEMBEDCHAR["KRN"] = REDDITEMBED1 + 'https://www.reddit.com/r/SFV_KARIN/comments/4kcmou/sfv_karin_oki_lol/d3dx8n1' + REDDITEMBED2;
+REDDITEMBEDCHAR["LAR"] = REDDITEMBED1 + 'https://www.reddit.com/r/StreetFighterTech/comments/4ggiwo/sfv_laura/d3dxckx' + REDDITEMBED2;
+REDDITEMBEDCHAR["NCL"] = REDDITEMBED1 + 'https://www.reddit.com/r/StreetFighterTech/comments/4ggj2w/sfv_necalli/d3dxcp3' + REDDITEMBED2;
+REDDITEMBEDCHAR["RSD"] = REDDITEMBED1 + 'https://www.reddit.com/r/StreetFighterTech/comments/4ggj49/sfv_rashid/d3dxcw4' + REDDITEMBED2;
+REDDITEMBEDCHAR["RYU"] = REDDITEMBED1 + 'https://www.reddit.com/r/StreetFighterTech/comments/4ggj4n/sfv_ryu/d3ba8uo' + REDDITEMBED2;
+REDDITEMBEDCHAR["VEG"] = REDDITEMBED1 + 'https://www.reddit.com/r/StreetFighterTech/comments/4ggj1k/sfv_m_bison/d3dxd5l' + REDDITEMBED2;
+REDDITEMBEDCHAR["ZGF"] = REDDITEMBED1 + 'https://www.reddit.com/r/StreetFighterTech/comments/4ggj5j/sfv_zangief/d3dxe7v' + REDDITEMBED2;
 
 var CHARS = [
 ["ALX", "BLR", //"BLR2", "BRD", "BRD2", 
@@ -613,6 +639,11 @@ function MECOKI(oki) {
 }
 
 function UCGILLEY(rows){
+
+  var REDDIT = d3.select("#REDDIT");
+  REDDIT.selectAll("*").remove();
+  REDDIT.html(REDDITEMBEDCHAR[HASHCHAR]);
+  UCREDDIT();
 
   var KD = d3.select("#KD");
   var FRAMES = d3.select("#FRAMES");
