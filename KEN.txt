@@ -22,7 +22,7 @@ thunder kick (feint)	f+HK				-	-	-	-	31	-	-	-	-	-	-	-
 inazuma kick	b+MK	21	3	19	0	-4	60	100	42	10	10	M	-	2	72	120				
 chin buster	b+MP	4	2	15	0	-2	50	80	20	10	8	H	SP,V	2	60	96				
 chin buster 2nd	b+MP > HP	6	3	27	KD	-13	50*54	80*72		10*12	8*10	H*H	SP,V	KD	60*54	96*72	88	29	34	
-lion breaker	MK > HK	8	4	23	KD	-6	60*54	100*90		10*12	10*10	H*H	SP,V	KD	72*54	120*90	87	28	34	
+lion breaker	MK > HK	8	3(17)4	20	KD	-6	60*54	100*90	51	10*12	10*10	H*H	SP,V	KD	72*54	120*90	87	28	34	
 knee bash	LP+LK	5	2	18	KD	-	30*30*60	0*0*170		-	-	T	-	KD	30*30*60	0*0*170	78	19	19	
 hell wheel	b+LP+LK	5	2	18	KD	-	130	200		-	-	T	-	KD	130	200	69	10	10	
 heat rush	HP+HK	-	-	22		-			22	-	-	-	-	-	-	-				ANIM 51F
