@@ -27,7 +27,7 @@ linear movement avante	f+MP+MK		21		-	-	-	-	21	-	-	-	-	-	-	-
 linear movement equiva	b+MP+MK		26		-	-	-	-	26	-	-	-	-	-	-	-				
 linear movement finta	b+MP+MK > MP+MK		13	16	-	-	-	-	29	-	-	-	-	-	-	-				
 spark show	HP+HK			5	-	-	-	-	5	-	-	-	-	-	-	-				ANIM 57F
-double slap	f+PPP	15	2	24	KD	-2	60	0				H					85	25	31	
+double slap	f+PPP	15	2	24	KD	-2	60	0				H					85	26	31	
 bolt charge LP	qcf+LP	13	3	18	2	-2	60	100	33	15	15	H	-	4	72	120				
 bolt charge MP	qcf+MP	15	3	20	2	-7	60	50	37	15	15	H	-	4	72	60				
 bolt charge HP	qcf+HP	7	8	30	KD	-	60*90	50*150	44	15	-	H	-	KD	72*90	60*150	66	17	17	
