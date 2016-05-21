@@ -783,6 +783,7 @@ function UCTOTALROW(pre,start,run,total) {
     var rowtotal = +(row["Total "]||row["Total"]);
     if (rowtotal+run>total) return;
     var loops = Math.floor((total-run)/rowtotal);
+    if ((row["Command"]||"")=="HP+HK")loops = 1;
     for (var loop=loops;loop>=1;loop--) {
       if (rowtotal*loop+run==total) {
         TOTALSDIV.append("div").text(pre + (", " + rowtotal + "F " + row["Move"]).repeat(loop));
