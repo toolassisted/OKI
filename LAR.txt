@@ -1,0 +1,79 @@
+Move	Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	 Damage	Stun	Total 	Hitstop	Chip	Attack Level	Cancel Ability	CH hit adv.	CH Damage	CH Stun	KD Adv.	KDR Adv.	KDRB Adv.	Note
+stand LP		3	2	9	3	2	30	70	13	8	0	H	SP,V	5	36	84				
+stand MP		6	5	11	4	3	60	100	21	12	10	H	SP,V	6	72	120				
+stand HP		8	3	18	3	-2	80	150	28	15	13	H	SP,V	16	96	180				
+stand LK		4	3	9	4	3	30	70	15	8	0	H	SP,V	6	36	84				
+stand MK		6	4	14	2	-1	60	100	23	12	10	H	V	4	72	120				
+stand HK		12	3	19	1	-4	90	150	33	15	15	H	CA,V	17	108	180				
+crouch LP		4	2	7	4	2	30	70	12	8	0	H	CH,SP,V	6	36	84				
+crouch MP		5	2	15	3	2	60	100	21	12	10	H	SP,V	5	72	120				
+crouch HP		7	4	17	2	-2	90	150	27	15	15	H	SP,V	4	108	180				
+crouch LK		4	2	8	2	-2	20	70	13	8	0	L	CH,SP,V	4	24	84				
+crouch MK		7	3	13	0	-2	50	100	22	12	8	L	SP,V	2	60	120				
+crouch HK		9	3	20	KD	-12	100	150	31	15	17	L	V	KD	120	180	74	25	30	
+jump LP		3	5	-	-	-	40	70		8	0	M	-	-	48	84				
+jump MP		4	3	-	-	-	60	100		12	10	M	-	-	72	120				
+jump HP		7	5	-	-	-	90	150		15	15	M	-	-	108	180				
+jump LK		4	10	-	-	-	40	70		8	0	M	-	-	48	84				
+jump MK		5	7	-	-	-	60	100		12	10	M	-	-	72	120				
+jump HK		5	6	-	-	-	90	150		15	15	M	-	-	108	180				
+step elbow	f+HP	18	2	17	4	-2	80	120	36	15	13	H	V	6	96	144				
+twist barrage	f+HP > HP	9	3	19	KD	-8	54	90		15	13*10	H*H	SP,V	KD	54	90	93	32	37	
+dual crash	MP > MK	7	3	16	1	-2	60*54	100*90		12*12	10*10	H*H	V	1	72*54	120*90				
+seoi throw	LP+LK	5	2	18	KD	-	130	200	24	-	-	T	-	KD	130	200	66	17	17	
+pullback hold	b+LP+LK	5	2	18	KD	-	120	170	24	-	-	T	-	KD	120	170	68	19	19	
+volty line	MP+MK	20	6	22	0	-7	90	150	47	15	15	M	-	KD 103	108	180				
+linear movement avante	f+MP+MK		21		-	-	-	-	21	-	-	-	-	-	-	-				
+linear movement equiva	b+MP+MK		26		-	-	-	-	26	-	-	-	-	-	-	-				
+linear movement finta	b+MP+MK > MP+MK		13	16	-	-	-	-	29	-	-	-	-	-	-	-				
+spark show	HP+HK			5	-	-	-	-	5	-	-	-	-	-	-	-				ANIM 57F
+double slap	f+PPP	15	2	24	KD	-2	60	0				H					85	25	31	
+bolt charge LP	qcf+LP	13	3	18	2	-2	60	100	33	15	15	H	-	4	72	120				
+bolt charge MP	qcf+MP	15	3	20	2	-7	60	50	37	15	15	H	-	4	72	60				
+bolt charge HP	qcf+HP	7	8	30	KD	-	60*90	50*150	44	15	-	H	-	KD	72*90	60*150	66	17	17	
+bolt charge EX	qcf+PP	14	3	22	0	-11	70	50	38	15	18	H	-	2	84	60				
+split river	qcf+MP > P	-	-	-	KD	-	81	135		-	-	H	-	KD	81	135	58	9	9	
+rodeo break	qcf+MP > K	-	-	-	KD	-	81	135		-	-	H	-	KD	81	135	66	17	17	
+thunder clap LP	qcb+LP	19	1	28	0	-5	60	60		8	10	H	CA	2	72	72				PROJ 40F
+thunder clap LP	qcb+LP (hold)	70	1	13	31	18	60*30*30	60*30*30		8*8*8	10*5*5	H	CA	31	72*30*30	72*30*30				PROJ 100F
+thunder clap MP	qcb+MP	19	1	28	0	-5	60	60		8	10	H	CA	2	72	72				PROJ 40F
+thunder clap MP	qcb+MP (hold)	70	1	13	31	18	60*30*30	60*30*30		8*8*8	10*5*5	H	CA	31	72*30*30	72*30*30				PROJ 100F
+thunder clap HP	qcb+HP	19	1	28	0	-5	60	60	47	8	10	H	CA	2	72	72				PROJ 40F
+thunder clap HP	qcb+HP (hold)	70	1	13	31	18	60*30*30	60*30*30	83	8*8*8	10*5*5	H	CA	31	72*30*30	72*30*30				PROJ 100F
+thunder clap EX	qcb+PP	17	1	24	KD	3	60*30	60*30		8*8	10*5	H	-	KD	72*30	72*30	105	46	51	PROJ 170F
+sunset wheel LK	hcb+LK	6	2	52	KD	-	60*90	100*100		-	-	T	-	KD	60*90	100*100	62	13	13	
+sunset wheel MK	hcb+MK	6	2	52	KD	-	60*100	100*100		-	-	T	-	KD	60*100	100*100	62	13	13	
+sunset wheel HK	hcb+HK	6	2	52	KD	-	60*110	100*100	59	-	-	T	-	KD	60*100	100*100	62	13	13	
+sunset wheel EX	hcb+KK	19	2	52	KD	-	80*100	100*100	72	-	-	T	-	KD	80*100	100*100	62	13	13	
+inazuma spin hold	qcf,qcf+K	4	2	52	KD	-	350	0		-	-	T	-	KD	350	0	50	1	1	
+health/stun	1000																			
+stun	1000																			
+taunt	61																			
+jump	46 (4+38+4)	42	1	4					46											EARLY WHIFF 47F
+jump forward	45 (3+38+4)	41	1	4					45											EARLY WHIFF 48F
+jump backwards	46 (4+38+4)	42	1	4					46											EARLY WHIFF 49F
+dash forward	17		17						17											
+dash backwards	21		21						21											
+V-TRIGGER																				
+step elbow	f+HP																			
+twist barrage	f+HP > HP																			
+dual crash	MP > MK																			
+volty line	MP+MK																			
+bolt charge LP	qcf+LP																			
+bolt charge MP	qcf+MP																			
+bolt charge HP	qcf+HP																			
+bolt charge EX	qcf+PP																			
+split river	qcf+MP > P																			
+rodeo break	qcf+MP > K																			
+thunder clap LP	qcb+LP																			
+thunder clap LP	qcb+LP (hold)																			
+thunder clap MP	qcb+MP																			
+thunder clap MP	qcb+MP (hold)																			
+thunder clap HP	qcb+HP																			
+thunder clap HP	qcb+HP (hold)																			
+thunder clap EX	qcb+PP																			
+sunset wheel LK	hcb+LK																			
+sunset wheel MK	hcb+MK																			
+sunset wheel HK	hcb+HK																			
+sunset wheel EX	hcb+KK																			
+inazuma spin hold	qcf,qcf+K																			

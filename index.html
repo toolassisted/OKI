@@ -429,7 +429,7 @@ function UCHASH() {
 var CHARS = [
 ["ALX", "BLR", //"BLR2", "BRD", "BRD2", 
 "CMY", //"CNL", "CNL2", "DSM", 
-"FAN", "GUL", "KEN", "KRN", //"LAR", 
+"FAN", "GUL", "KEN", "KRN", "LAR", 
 "NCL", //"NCL2", "NSH", "RMK", 
 "RSD", "RYU", //"RYU2", 
 "VEG", //"VEG2",
@@ -783,7 +783,6 @@ function UCTOTALROW(pre,start,run,total) {
     var rowtotal = +(row["Total "]||row["Total"]);
     if (rowtotal+run>total) return;
     var loops = Math.floor((total-run)/rowtotal);
-    if (rowtotal<10) loops=1;
     for (var loop=loops;loop>=1;loop--) {
       if (rowtotal*loop+run==total) {
         TOTALSDIV.append("div").text(pre + (", " + rowtotal + "F " + row["Move"]).repeat(loop));
@@ -857,8 +856,8 @@ d3.selectAll(".CHAR"+HASHCHAR).classed("SEL",true);
 
 </script>
 
-
-<!-- <script src="tabletop.js"></script> -->
+<!-- 
+<script src="tabletop.js"></script>
 <script>
 
 var CHARSHEET = [];
@@ -871,7 +870,7 @@ var CHARSHEET = [];
 // CHARSHEET["GUL"] = "Guile";
 // CHARSHEET["KRN"] = "Karin";
 // CHARSHEET["KEN"] = "Ken";
-// CHARSHEET["LAR"] = "Laura";
+CHARSHEET["LAR"] = "Laura";
 // CHARSHEET["VEG"] = "Mbison";
 // CHARSHEET["NSH"] = "Nash";
 // CHARSHEET["NCL"] = "Necalli";
@@ -881,30 +880,30 @@ var CHARSHEET = [];
 // CHARSHEET["BLR"] = "Vega";
 // CHARSHEET["ZGF"] = "Zangief";
 
-// function MECSHEET(data, tabletop) {  
+function MECSHEET(data, tabletop) {  
     
-//   CHARS[0].forEach(function(k){
-//     if (CHARSHEET[k]) {
-//       console.log(k,data[CHARSHEET[k]]);
-//       var dlAnchorElem = document.createElement("a");
-//       dlAnchorElem.href = URL.createObjectURL(
-//                             new Blob(
-//                                 [d3.tsv.format(data[CHARSHEET[k]].elements)],
-//                                 {type:'text/tsv'}
-//                             )
-//                         );
-//       dlAnchorElem.setAttribute("download", k+".txt");
-//       dlAnchorElem.click();
-//     }
-//   });
-// }
+  CHARS[0].forEach(function(k){
+    if (CHARSHEET[k]) {
+      console.log(k,data[CHARSHEET[k]]);
+      var dlAnchorElem = document.createElement("a");
+      dlAnchorElem.href = URL.createObjectURL(
+                            new Blob(
+                                [d3.tsv.format(data[CHARSHEET[k]].elements)],
+                                {type:'text/tsv'}
+                            )
+                        );
+      dlAnchorElem.setAttribute("download", k+".txt");
+      dlAnchorElem.click();
+    }
+  });
+}
 
-// Tabletop.init( { key: "https://docs.google.com/spreadsheets/d/1oS6k1bXdcT9A56_b1QQFXkzn4SyPP-P9q7HiqyuEncI/pubhtml",
-//                  callback: MECSHEET,
-//                  simpleSheet: false } );
+Tabletop.init( { key: "https://docs.google.com/spreadsheets/d/1oS6k1bXdcT9A56_b1QQFXkzn4SyPP-P9q7HiqyuEncI/pubhtml",
+                 callback: MECSHEET,
+                 simpleSheet: false } );
 
 
-</script>
+</script> -->
 
 
 <script>
