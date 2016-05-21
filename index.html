@@ -440,6 +440,7 @@ var REDDITEMBED2 = '">U CLICK CHAR U C REDDIT</a></div>';
 var REDDITEMBEDCHAR = [];
 REDDITEMBEDCHAR["ALX"] = REDDITEMBED1 + 'https://www.reddit.com/r/SFV_ALEX/comments/4kcmav/sfv_alex_oki_lol/d3dx5xx' + REDDITEMBED2;
 REDDITEMBEDCHAR["BLR"] = REDDITEMBED1 + 'https://www.reddit.com/r/StreetFighterTech/comments/4ggj50/sfv_vega/d3dxbfc' + REDDITEMBED2;
+REDDITEMBEDCHAR["BRD"] = REDDITEMBED1 + 'https://www.reddit.com/r/StreetFighterTech/comments/4ggirj/sfv_birdie/d3efskm' + REDDITEMBED2;
 REDDITEMBEDCHAR["CMY"] = REDDITEMBED1 + 'https://www.reddit.com/r/StreetFighterTech/comments/4ggis5/sfv_cammy/d3dxc3b' + REDDITEMBED2;
 REDDITEMBEDCHAR["FAN"] = REDDITEMBED1 + 'https://www.reddit.com/r/StreetFighterTech/comments/4ggiul/sfv_fang/d3dxc8q' + REDDITEMBED2;
 REDDITEMBEDCHAR["GUL"] = REDDITEMBED1 + 'https://www.reddit.com/r/SFV_GUILE/comments/4kceto/sfv_guile_oki_lol/d3dvqky' + REDDITEMBED2;
@@ -453,9 +454,13 @@ REDDITEMBEDCHAR["VEG"] = REDDITEMBED1 + 'https://www.reddit.com/r/StreetFighterT
 REDDITEMBEDCHAR["ZGF"] = REDDITEMBED1 + 'https://www.reddit.com/r/StreetFighterTech/comments/4ggj5j/sfv_zangief/d3dxe7v' + REDDITEMBED2;
 
 var CHARS = [
-["ALX", "BLR", //"BLR2", "BRD", "BRD2", 
+["ALX", "BLR", //"BLR2",
+"BRD", //"BRD2", 
 "CMY", //"CNL", "CNL2", "DSM", 
-"FAN", "GUL", "KEN", "KRN", "LAR", 
+"FAN", "GUL", "KEN", 
+// ],
+// [
+"KRN", "LAR", 
 "NCL", //"NCL2", "NSH", "RMK", 
 "RSD", "RYU", //"RYU2", 
 "VEG", //"VEG2",
@@ -546,7 +551,7 @@ function UCKDBR(kd, hash) {
     var text = i<kd ? CHARPLUS : i>=kd+10 ? CHARMINUS : ((i-kd+1)%10);
     adv += "<span class='UCLICK" + (i<kd||i>=kd+10?"":" WAKEUP") + "' onclick='UCKDBR("+i+",false);UCKDR("+(i-5)+")'>" + text + "</span>";
   }
-  adv += "<span class='ADVPLUS'> " + "+" + ((kd-1) + "     ").slice(0,3) + " U HIT " + (kd + "     ").slice(0,3) + "</span>";
+  adv += "<span class='ADVPLUS'> " + "+" + ((kd-1) + "     ").slice(0,3) + " U HIT " + (kd + "     ").slice(0,3) + " &middot; MOVE <span id='KDMOVE'></span></span>";
   ADV.html(adv);
   HASHKDBR = kd;
   if (hash == undefined) UCHASH();
@@ -558,7 +563,7 @@ function UCKDR(kd, hash) {
     var text = i<kd ? CHARPLUS : i>=kd+10 ? CHARMINUS : ((i-kd+1)%10);
     adv += "<span class='UCLICK" + (i<kd||i>=kd+10?"":" WAKEUP") + "' onclick='UCKDR("+i+",false);UCKDBR("+(i+5)+");'>" + text + "</span>";
   }
-  adv += "<span class='ADVPLUS'> " + "+" + ((kd-1) + "     ").slice(0,3) + " U HIT " + (kd + "     ").slice(0,3) + "</span>";
+  adv += "<span class='ADVPLUS'> " + "+" + ((kd-1) + "     ").slice(0,3) + " U HIT " + (kd + "     ").slice(0,3) + " &middot;  CMD <span id='KDCMD'></span></span>";
   ADV.html(adv);  
   HASHKDR = kd;
   if (hash == undefined) UCHASH();
@@ -685,8 +690,11 @@ function UCGILLEY(rows){
                 UCKDBR(+pd["KD Adv."]+1);
               }
               UCHASH();
+              d3.select("#KDMOVE").text(pd["Move"]);
+              d3.select("#KDCMD").text(pd["Command"]);
+
             });
-  
+
   FRAMETABLE.append("thead").append("tr").selectAll("th").data(["TOTAL"].concat(keys).concat([""])).enter().append("th").text(function(d){return d;});
   FRAMETABLE.append("tbody").selectAll("tr").data(rows).enter().append("tr")
             .classed("UC",function(d){return +d["Startup"]==HASHSTARTUP && +d["Active"]==HASHACTIVE && +d["Recovery"]==HASHRECOVERY; })
