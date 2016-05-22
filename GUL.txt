@@ -36,7 +36,7 @@ flying mare	LP+LK (air)	5	2	-	KD	-	130	170	-	-	-	77/78?	130	170	T	-	77/78?	28/30
 flying buster drop	b+LP+LK (air)	5	2	-	KD	-	140	200	-	-	-	51	140	200	T	-	51	2	2	-	-	
 solid puncher	HP+HK			9		-			-	9		-	-	-	-	-	-	-	-	-	-	
 sonic blade	MP+MK	18	-	31	-5	-10	40	50	8	50	7	-3	48	60	H	-	-	-	-	-	-	
-reverse back knuckle	f+PPP														H	-				-	-	
+reverse back knuckle	f+PPP	1	1	1											H	-	86	27	32	-	-	
 sonic boom LP	b,f+LP	10	1	28	8	1	50	50	8	38	8	10	60	60	H	CA,V	-	-	-	29	22	in VT, 36f total and +10 on hit
 sonic boom MP	b,f+MP	10	1	28	8	1	50	50	8	38	8	10	60	60	H	CA,V	-	-	-	29	22	in VT, 36f total and +10 on hit
 sonic boom HP	b,f+HP	10	1	28	8	1	50	50	8	38	8	10	60	60	H	CA,V	-	-	-	29	22	in VT, 36f total and +10 on hit
