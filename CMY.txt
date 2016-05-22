@@ -25,7 +25,7 @@ gyro clipper	LP+LK	5	2	18	KD	-	65*65	100*100	24	-	-	T	-	KD	65*65	100*100	58	9	9
 delta through	b+LP+LK	5	2	18	KD	-	140	200	24	-	-	T	-	KD	140	200	64	15	15	
 delta drive	HP+HK			9		-			9		-	-	-		-	-				
 axel spin knuckle	MP+MK	36	2	16	6	2	60	100		12	10	H	-	8	72	120				
-strike back	f+KKK	17	2	29	KD	-8	60	0				H								
+strike back	f+KKK	17	2	29	KD	-8	60	0				H					80	21	26	
 spiral arrow LK	qcf+LK	7	11	21	KD	-12	80	150		12	20	H	CA	KD	96	180	85	26	31	
 spiral arrow MK	qcf+MK	7	13	23	KD	-15	90	150		12	23	H	CA	KD	108	180	78	19	24	
 spiral arrow HK	qcf+HK	7	2(1)11	26	KD	-11	50*50	50*100		12*12	13*13	H*H	CA	KD	60*50	60*100	80	21	26	

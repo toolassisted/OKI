@@ -35,7 +35,7 @@ guren kusabi	qcf+P > d+P > d+K	13			KD	-10	54	90		12	15	L	-	KD	54	90	68	19	24
 guren kyoho	qcf+P > K	-			-4	-8	-	-	19	-	-	-	-	-4	-	-	-				
 meioken	MP+MK (hold)	14	5	17	KD	-5(-1)	60(80)	100(150)	35	16	10(13)	H	-	KD	72(96)	120(180)	92	33	38		20160514
 meioken HOLD	MP+MK (hold)	21	5	18	KD	-5(-1)	60(80)	100(150)	43	16	10(13)	H	-	KD	72(96)	120(180)	94	35	40		20160514
-yashagaeshi	f+PPP	15	2	24	KD	-2	60	0				H									
+yashagaeshi	f+PPP	15	2	24	KD	-2	60	0				H					94	35	40		
 kanzuki-ryu hokojutsu sappo LK	qcf+LK			24					24	-	-	-	-	-	-						
 kanzuki-ryu hokojutsu sappo MK	qcf+MK			25					25	-	-	-	-	-	-						
 kanzuki-ryu hokojutsu sappo HK	qcf+HK			26					26	-	-	-	-	-	-						
