@@ -24,7 +24,7 @@ psycho impact	LP+LK	5	2	18	KD	-	130	170	24	-	-	T	-	KD	130	170	87	28	28
 psycho fall	b+LP+LK	5	2	18	KD	-	110*40	150*50	24	-	-	T	-	KD	110*40	150*50	64	15	15	
 psycho power	HP+HK			11		-			11	-		-	-	-	-	-				ANIM 56F
 psycho reflect	MP+MK	6	7	30		-			42			-	-	-	-	-				
-psycho burst	f+PPP	15	2	20	KD	-2	60	0				H								
+psycho burst	f+PPP	15	2	20	KD	-2	60	0				H					92	33	38	
 psycho blast LP	b,f+LP	10	10	21	KD	-4	70	100		12	18	H	CA,V	KD	84	120	84	24	29	
 psycho blast MP	b,f+MP	15	10	18	KD	-1	70	100		12	18	H	CA,V	KD	84	120	90	27	32	
 psycho blast HP	b,f+HP	19	10	14	KD	2	70	100		12	18	H	CA,V	KD	84	120	90	31	36	
@@ -53,22 +53,22 @@ jump backward	47 (4+39+4)	43	1	4					47
 dash forward	22		22						22											
 dash backward	22		22						22											
 V-TRIGGER																				
-psycho blast LP	b,f+LP	11	14	13	KD	1	100	100				H	CA							
-psycho blast MP	b,f+MP	11	14	13	KD	1	100	100				H	CA							
-psycho blast HP	b,f+HP	11	14	13	KD	1	100	100				H	CA							
-psycho blast EX	b,f+PP	14	-	29	KD	0	130	150				H	-							
-double knee press LK	b,f+LK	16	2(1)3	19	3	-4		50*50				H*H	CA							
-double knee press MK	b,f+MK	19	2(1)3	20	3	-3		50*50				H*H	CA							
-double knee press HK	b,f+HK	22	2(1)3	22	3	-2		50*50				H*H	CA							
-double knee press EX	b,f+KK	13	2(1)4	15	KD	3						H*H	-							
-head press LK	d,u+LK	38	-	-	KD	-	120	200				M	CA							
-head press MK	d,u+MK	38	-	-	KD	-	120	200				M	CA							
-head press HK	d,u+HK	38	-	-	KD	-	120	200				M	CA							
-head press EX	d,u+KK	35	-	-	KD	-						M	-							
-somersault skull diver	P after head press			-								M	CA							
-devil reverse	P before head press		22	-	KD	5	100					M	CA							
-psycho inferno LP	qcb+LP	14	16	22	KD	-5						H	CA							
-psycho inferno MP	qcb+MP	14	16	22	KD	-5						H	CA							
-psycho inferno HP	qcb+HP	14	16	22	KD	-5						H	CA							
-psycho inferno EX	qcb+PP	18	28	19	KD	4						H	-							
-ultimate psycho crusher	qcf,qcf+P																			
+VT psycho blast LP	b,f+LP	11	14	13	KD	1	100	100				H	CA							
+VT psycho blast MP	b,f+MP	11	14	13	KD	1	100	100				H	CA							
+VT psycho blast HP	b,f+HP	11	14	13	KD	1	100	100				H	CA							
+VT psycho blast EX	b,f+PP	14	-	29	KD	0	130	150				H	-							
+VT double knee press LK	b,f+LK	16	2(1)3	19	3	-4		50*50				H*H	CA							
+VT double knee press MK	b,f+MK	19	2(1)3	20	3	-3		50*50				H*H	CA							
+VT double knee press HK	b,f+HK	22	2(1)3	22	3	-2		50*50				H*H	CA							
+VT double knee press EX	b,f+KK	13	2(1)4	15	KD	3						H*H	-							
+VT head press LK	d,u+LK	38	-	-	KD	-	120	200				M	CA							
+VT head press MK	d,u+MK	38	-	-	KD	-	120	200				M	CA							
+VT head press HK	d,u+HK	38	-	-	KD	-	120	200				M	CA							
+VT head press EX	d,u+KK	35	-	-	KD	-						M	-							
+VT somersault skull diver	P after head press			-								M	CA							
+VT devil reverse	P before head press		22	-	KD	5	100					M	CA							
+VT psycho inferno LP	qcb+LP	14	16	22	KD	-5						H	CA							
+VT psycho inferno MP	qcb+MP	14	16	22	KD	-5						H	CA							
+VT psycho inferno HP	qcb+HP	14	16	22	KD	-5						H	CA							
+VT psycho inferno EX	qcb+PP	18	28	19	KD	4						H	-							
+VT ultimate psycho crusher	qcf,qcf+P																			
