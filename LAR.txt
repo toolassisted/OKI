@@ -34,15 +34,15 @@ bolt charge HP	qcf+HP	7	8	30	KD	-	60*90	50*150	44	15	-	H	-	KD	72*90	60*150	66	17
 bolt charge EX	qcf+PP	14	3	22	0	-11	70	50	38	15	18	H	-	2	84	60				
 split river	qcf+MP > P	-	-	-	KD	-	81	135		-	-	H	-	KD	81	135	58	9	9	
 rodeo break	qcf+MP > K	-	-	-	KD	-	81	135		-	-	H	-	KD	81	135	66	17	17	
-thunder clap LP	qcb+LP	19	1	28	0	-5	60	60		8	10	H	CA	2	72	72				PROJ 40F
-thunder clap LP	qcb+LP (hold)	70	1	13	31	18	60*30*30	60*30*30		8*8*8	10*5*5	H	CA	31	72*30*30	72*30*30				PROJ 100F
-thunder clap MP	qcb+MP	19	1	28	0	-5	60	60		8	10	H	CA	2	72	72				PROJ 40F
-thunder clap MP	qcb+MP (hold)	70	1	13	31	18	60*30*30	60*30*30		8*8*8	10*5*5	H	CA	31	72*30*30	72*30*30				PROJ 100F
+thunder clap LP	qcb+LP	19	1	28	0	-5	60	60	47	8	10	H	CA	2	72	72				PROJ 40F
+thunder clap LP HOLD	qcb+LP (hold)	70	1	13	31	18	60*30*30	60*30*30	83	8*8*8	10*5*5	H	CA	31	72*30*30	72*30*30				PROJ 100F
+thunder clap MP	qcb+MP	19	1	28	0	-5	60	60	47	8	10	H	CA	2	72	72				PROJ 40F
+thunder clap MP HOLD	qcb+MP (hold)	70	1	13	31	18	60*30*30	60*30*30	83	8*8*8	10*5*5	H	CA	31	72*30*30	72*30*30				PROJ 100F
 thunder clap HP	qcb+HP	19	1	28	0	-5	60	60	47	8	10	H	CA	2	72	72				PROJ 40F
-thunder clap HP	qcb+HP (hold)	70	1	13	31	18	60*30*30	60*30*30	83	8*8*8	10*5*5	H	CA	31	72*30*30	72*30*30				PROJ 100F
-thunder clap EX	qcb+PP	17	1	24	KD	3	60*30	60*30		8*8	10*5	H	-	KD	72*30	72*30	105	46	51	PROJ 170F
-sunset wheel LK	hcb+LK	6	2	52	KD	-	60*90	100*100		-	-	T	-	KD	60*90	100*100	62	13	13	
-sunset wheel MK	hcb+MK	6	2	52	KD	-	60*100	100*100		-	-	T	-	KD	60*100	100*100	62	13	13	
+thunder clap HP HOLD	qcb+HP (hold)	70	1	13	31	18	60*30*30	60*30*30	83	8*8*8	10*5*5	H	CA	31	72*30*30	72*30*30				PROJ 100F
+thunder clap EX	qcb+PP	17	1	24	KD	3	60*30	60*30	41	8*8	10*5	H	-	KD	72*30	72*30	105	46	51	PROJ 170F
+sunset wheel LK	hcb+LK	6	2	52	KD	-	60*90	100*100	59	-	-	T	-	KD	60*90	100*100	62	13	13	
+sunset wheel MK	hcb+MK	6	2	52	KD	-	60*100	100*100	59	-	-	T	-	KD	60*100	100*100	62	13	13	
 sunset wheel HK	hcb+HK	6	2	52	KD	-	60*110	100*100	59	-	-	T	-	KD	60*100	100*100	62	13	13	
 sunset wheel EX	hcb+KK	19	2	52	KD	-	80*100	100*100	72	-	-	T	-	KD	80*100	100*100	62	13	13	
 inazuma spin hold	qcf,qcf+K	4	2	52	KD	-	350	0		-	-	T	-	KD	350	0	50	1	1	
