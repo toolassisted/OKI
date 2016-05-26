@@ -58,8 +58,8 @@ judegement saber	qcb,qcb+P	10	3	40	KD	-31	340	0	52	-	60	H	-	KD	340	0	24	24	24
 health	950																			
 stun	950																			
 taunt	60																			
-jump	46 (4+38+4)	42	1	4					46											
-jump forward	45 (3+38+4)	41	1	4					45											
-jump backward	46 (4+38+4)	42	1	4					46											
+jump	46 (4+38+4)	42	1	4					46											EARLY WHIFF 47
+jump forward	45 (3+38+4)	41	1	4					45											EARLY WHIFF 46
+jump backward	46 (4+38+4)	42	1	4					46											EARLY WHIFF 47
 dash forward	17		17						17											
 dash backward	24		24						24											
