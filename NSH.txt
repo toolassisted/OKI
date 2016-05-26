@@ -50,9 +50,9 @@ moonsault slash LK	qcf+LK	37	3	11	4	1	70	100	50	12	18	H	-	6	84	120
 moonsault slash MK	qcf+MK	37	3	12	4	2	70	100	51	12	18	H	-	6	84	120				
 moonsault slash HK	qcf+HK	37	3	14	4	3	70	100	53	12	18	H	-	6	84	120				
 moonsault slash EX	qcf+KK	39	3(6)3(22)3	10	5	1	40*40*50	50*50*50	85	8*8*12	10*10*13	H*H*H	-	5	48*40*50	60*50*50				
-tragedy assault LP	f,d,df+LP	18	2	23	KD	-5	70*30	0*100	42	-	0	H	-	KD	70*30	0*100	57	7	7	LAND 1F NO MOVE
-tragedy assault MP	f,d,df+MP	22	2	26	KD	-6	90*30	0*100	49	-	0	H	-	KD	90*30	0*100	57	7	7	LAND 1F NO MOVE
-tragedy assault HP	f,d,df+HP	34	2	28	KD	-8	120*30	0*100	63	-	0	H	-	KD	120*30	0*100	57	7	7	LAND 1F NO MOVE
+tragedy assault LP	f,d,df+LP	18	2	23	KD	-5	70*30	0*100	42	-	0	H	-	KD	70*30	0*100	57	8	8	LAND 1F NO MOVE
+tragedy assault MP	f,d,df+MP	22	2	26	KD	-6	90*30	0*100	49	-	0	H	-	KD	90*30	0*100	57	8	8	LAND 1F NO MOVE
+tragedy assault HP	f,d,df+HP	34	2	28	KD	-8	120*30	0*100	63	-	0	H	-	KD	120*30	0*100	57	8	8	LAND 1F NO MOVE
 tragedy assault EX	f,d,df+PP	8	3(17)2	48	KD	-23	40*50*30	0*0*100	77	-	10*0	H*H*H	V	KD	40*50*30	0*0*100	96	37	37	
 judegement saber	qcb,qcb+P	10	3	40	KD	-31	340	0	52	-	60	H	-	KD	340	0	24	24	24	
 health	950																			
