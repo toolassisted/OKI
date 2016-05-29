@@ -20,7 +20,7 @@ jump MK		7	5	-	-	-	60	100	12	-	10	-	72	120	M	-	-	-	-	-	-
 jump HK		10	5	-	-	-	90	150	15	-	15	-	108	180	M	-	-	-	-	-	-	
 guile high kick	df+HK	12	2	25	KD	-3	80	150	15	38	13	100	96	180	H	-	100	41	46	-	-	
 knee bazooka	b or f+LK	8	5	16	-2	-6	50	100	12	28	0	0	60	120	H	-	-	-	-	-	-	
-rolling sobat	b or f+MK	11	2	18	2	-2	60	100	12	30	10	4	72	120	H	-	-	-	-	-	-	
+rolling sobat	b or f+MK	11	2	17	2	-2	60	100	12	29	10	4	72	120	H	-	-	-	-	-	-	
 spinning back knuckle	f+HP	10	3	16	4	-1	90	150	15	28	15	26	108	180	H	V	-	-	-	15	10	
 reverse spin kick	f+HK	16	3	18	3	-1	90	150	15	36	15	5	108	180	H	-	-	-	-	-	-	
 burn straight	b+HP	8	3	20	2	-1	80	150	15	30	13	KD 97	96	180	H	V	-	-	-	17	14	
@@ -50,8 +50,8 @@ sonic cross MP	MP+MK > b,f+MP	??			KD	16?	40*40	50*50	8*8	33	7*7	110?	48*40	60*5
 sonic cross HP	MP+MK > b,f+HP	??			KD	15?	40*40	50*50	8*8	33	7*7	112?	48*40	60*50	H*H	-	112?	50?	57?	-	-	
 sonic cross EX	MP+MK > b,f,PP	??			KD	21	40*50*50	50*25*75	8*8*8	31	7*7*8	118?	48*50*50	60*25*75	H*H*H	-	118?	62?	66?	-	-	
 sonic break	N or b or f+HP+HK/P	10			5	1	40	40	8	37	7	7	48	48	H	-				-	-	
-sonic hurricane	b,f,b,f+p	6			KD	-41	320	0		??	5x5*25	63	328	0	H	-	63	4	9	-	-	
-sonic tempest	b,f,b,f+p during VT	6			KD	5	360	0		??	4x16	107?	364	0	H	-	107?	48	53	-	-	
+sonic hurricane	b,f,b,f+p	7	1		KD	-41	320	0		??	5x5*25	63	328	0	H	-	63	4	9	-	-	
+sonic tempest	b,f,b,f+p during VT	7	1		KD	5	360	0		??	4x16	107?	364	0	H	-	107	48	53	-	-	
 health																						
 stun																						
 taunt	61																					
