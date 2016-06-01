@@ -255,6 +255,9 @@
     cursor: pointer;
   }
 
+  .CMD {
+    color: #999;
+  }
 
   .UCY1 {    
     background-color: #033;
@@ -831,9 +834,9 @@ function UCTOTALROW(pre,start,run,total) {
     if ((row["Command"]||"")=="HP+HK")loops = 1;
     for (var loop=loops;loop>=1;loop--) {
       if (rowtotal*loop+run==total) {
-        TOTALSDIV.append("div").text(pre + (", " + rowtotal + "F " + row["Move"]).repeat(loop));
+        TOTALSDIV.append("div").html(pre + (", " + rowtotal + "F " + row["Move"] +  " <span class='CMD'>" + row["Command"] + "</span>").repeat(loop));
       } else if (rowtotal*loop+run<total) {
-        UCTOTALROW(pre + (", " + rowtotal + "F " + row["Move"]).repeat(loop),i+1,rowtotal*loop+run,total);
+        UCTOTALROW(pre + (", " + rowtotal + "F " + row["Move"] +  " <span class='CMD'>" + row["Command"] + "</span>").repeat(loop),i+1,rowtotal*loop+run,total);
       }
     }
   });
