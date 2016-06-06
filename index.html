@@ -305,6 +305,17 @@
   }
  
 </style>
+<style id="STYLEOKI1"></style>
+<style id="STYLEOKI2"></style>
+<style id="STYLEOKI3"></style>
+<style id="STYLEOKI4"></style>
+<style id="STYLEOKI5"></style>
+<style id="STYLEOKI6"></style>
+<style id="STYLEOKI7"></style>
+<style id="STYLEKD"></style>
+<style id="STYLEKDR"></style>
+<style id="STYLEKDBR"></style>
+
 </head>
 <body>
 <script src="comment-embed.js"></script>
@@ -549,7 +560,8 @@ function UCKD(kd, hash) {
   adv += "<span class='ADVPLUS'> " + "+" + ((kd-1) + "     ").slice(0,3) + " U HIT " + (kd + "     ").slice(0,3) + " &middot; <span id='OKI12GAP'>0</span>F OKI1-OKI2</span>";
   ADV.html(adv);
   HASHKD = kd;
-  if (hash == undefined) UCHASH();  
+  if (hash == undefined) UCHASH();
+  d3.select("#STYLEKD").text(".GRID span:nth-child("+kd+") { text-decoration:underline; }");
   var OKI12GAP = OKILIST[2].FRAMEKILL - (OKILIST[1].FRAMEKILL + OKILIST[1].STARTUP + OKILIST[1].ACTIVE + OKILIST[1].RECOVERY-1);
   d3.select("#OKI12GAP").text(("     " + OKI12GAP).slice(-3));
 }
@@ -564,6 +576,7 @@ function UCKDBR(kd, hash) {
   ADV.html(adv);
   HASHKDBR = kd;
   if (hash == undefined) UCHASH();
+  d3.select("#STYLEKDBR").text(".GRID span:nth-child("+kd+") { text-decoration:underline; }");
 }
 function UCKDR(kd, hash) {
   var ADV = d3.select("#ADVKDR");
@@ -576,6 +589,7 @@ function UCKDR(kd, hash) {
   ADV.html(adv);  
   HASHKDR = kd;
   if (hash == undefined) UCHASH();
+  d3.select("#STYLEKDR").text(".GRID span:nth-child("+kd+") { text-decoration:underline; }");
 }
 function UCFK() {
   var ADV = d3.select("#FK");
