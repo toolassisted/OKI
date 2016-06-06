@@ -670,6 +670,7 @@ function MECOKI(oki) {
   MEOKI = oki;
   d3.selectAll(".UCOKI").classed("UCOKI",false);
   d3.select("#ADVOKI"+oki).classed("UCOKI",true);
+  d3.select(d3.select("#ADVOKI"+oki).node().previousElementSibling).classed("UCOKI",true);
 }
 
 function UCGILLEY(rows){
