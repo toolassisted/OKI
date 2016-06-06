@@ -611,10 +611,12 @@ function UCOKI(kd, hash) {
   if (kd>0) {
     FRAMEKILL = kd;
     var end = FRAMEKILL+startup+active+recovery-1;
-    d3.selectAll(".UCY"+MEOKI).classed("UCY"+MEOKI, false);
-    for (var i=FRAMEKILL;i<=(end>119?119:end);i++) {
-      d3.selectAll(".GRID > span:nth-child("+i+")").classed("UCY"+MEOKI, true);
-    }
+    end = end > 119 ? 119 : end;
+    //d3.selectAll(".UCY"+MEOKI).classed("UCY"+MEOKI, false);
+    //for (var i=FRAMEKILL;i<=(end>119?119:end);i++) {
+    //  d3.selectAll(".GRID > span:nth-child("+i+")").classed("UCY"+MEOKI, true);
+    //}
+    d3.select("#STYLEOKI"+MEOKI).text(".GRID span:nth-child(n+"+FRAMEKILL+"):nth-child(-n+"+end+") { background-color:"+(MEOKI<3?"#022":"#330")+"; }");
   } else {
     FRAMEKILL = OKILIST[MEOKI].FRAMEKILL;
   }
