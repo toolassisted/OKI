@@ -610,6 +610,11 @@ function UCOKI(kd, hash) {
 
   if (kd>0) {
     FRAMEKILL = kd;
+  } else {
+    FRAMEKILL = OKILIST[MEOKI].FRAMEKILL;
+  }
+
+
     var end = FRAMEKILL+startup+active+recovery-1;
     end = end > 119 ? 119 : end;
     //d3.selectAll(".UCY"+MEOKI).classed("UCY"+MEOKI, false);
@@ -617,9 +622,8 @@ function UCOKI(kd, hash) {
     //  d3.selectAll(".GRID > span:nth-child("+i+")").classed("UCY"+MEOKI, true);
     //}
     d3.select("#STYLEOKI"+MEOKI).text(".GRID span:nth-child(n+"+FRAMEKILL+"):nth-child(-n+"+end+") { background-color:"+(MEOKI<3?"#022":"#330")+"; }");
-  } else {
-    FRAMEKILL = OKILIST[MEOKI].FRAMEKILL;
-  }
+
+
   var fk = FRAMEKILL;
   OKILIST[MEOKI].FRAMEKILL = FRAMEKILL;
 
