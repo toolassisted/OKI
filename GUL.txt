@@ -60,3 +60,5 @@ jump forward	45 (3+38+4)	41	1	4						45												EARLY WHIFF 48
 jump backwards	46( 4+38+4)	42	1	4						46												EARLY WHIFF 49
 dash forward	18		18							18												
 dash backwards	25		25							25												
+stand LP CHAIN		4	2	3	4	3	30	70	8	8	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	5	
+crouch LP/LK CHAIN		4	2	4	4	2	30	70	8	9	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	4	
