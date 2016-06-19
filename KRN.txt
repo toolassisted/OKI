@@ -33,6 +33,7 @@ guren hochu	qcf+P > d+P > d+P	24			KD	-11	60	50		12	15	H	CA	KD	54	45	90	26	31		2
 guren resshu	qcf+P > d+P > u+K	26			KD	-	120	150		-	-	H	-	KD	120	150	28	28	28		20160523
 guren kusabi	qcf+P > d+P > d+K	13			KD	-10	54	90		12	15	L	-	KD	54	90	68	19	24		20160523
 guren kyoho	qcf+P > K	-			-4	-8	-	-	19	-	-	-	-	-4	-	-	-				
+REKKA 8K	qcf+P 8K	48	6	19	KD				47												
 meioken	MP+MK (hold)	14	5	17	KD	-5(-1)	60(80)	100(150)	35	16	10(13)	H	-	KD	72(96)	120(180)	92	33	38		20160514
 meioken HOLD	MP+MK (hold)	21	5	18	KD	-5(-1)	60(80)	100(150)	43	16	10(13)	H	-	KD	72(96)	120(180)	94	35	40		20160514
 yashagaeshi	f+PPP	15	2	24	KD	-2	60	0				H					94	35	40		
@@ -51,10 +52,13 @@ mujinkyaku HK	qcb+HK	13	?	31	KD	-15	30*40*25*25	50*40*30*60		4*9*8*9	80*10*6*6	H
 mujinkyaku EX	qcb+KK	8	?	?	KD	-2	15*15*30*30*60	0*0*0*0*200		4x3*14*16	4*4*8*8	H	-	KD	18*15*30*30*60	0*0*0*0*200	79	15	20		20160523
 ressenha LP	qcb+LP	16	2(8)3	19	2	-6	30*60	50*50		8*12	8*15	H*M	CA	2	36*60	60*50					
 ressenha LP	qcb+LP	16	13	19	2	-6	30*60	50*50	47	8*12	8*15	H*M	CA	2	36*60	60*50					
+ressenha LP 8K	qcb+LP 8K	54	2	22	KD				47												
 ressenha MP	qcb+MP	21	2(7)4	18	2	-5	30*70	50*100		8*12	8*18	H*M	CA	2	36*70	60*100					
 ressenha MP	qcb+MP	21	13	18	2	-5	30*70	50*100	51	8*12	8*18	H*M	CA	2	36*70	60*100					
+ressenha MP 8K	qcb+MP 8K	59	2	22	KD				47												
 ressenha HP	qcb+HP	26	2(8)3	17	1	-4	30*80	50*100		8*12	8*20	H*M	CA	1	36*80	60*100					
 ressenha HP	qcb+HP	26	13	17	1	-4	30*80	50*100	55	8*12	8*20	H*M	CA	1	36*80	60*100					
+ressenha HP 8K	qcb+HP 8K	64	2	22	KD				47												
 ressenha EX	qcb+PP	5	2(6)2(5)2	35	KD	-41	30*40*70	50*50*100		3*3*14	8	H	-	KD	36*40*70	60*50*100	71	12	17	LAND 1F NO MOVE	20160523
 senha kusabi	qcb+P > d+K	15	8	22	KD	-12	90	100		12	15	H*M*L	-	KD	108	120	67	18	23	LAND 1F NO MOVE	20160523
 senha resshu	qcb+P > u+K	23	2	22	KD	-	120	150		-	-	H*M*H	-	KD	120	150	28	28	28		20160523
