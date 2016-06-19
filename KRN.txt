@@ -76,3 +76,4 @@ TENKO KICK																	101	42	47		20160514
 TENKO TENKO																	103	44	49		20160514
 TENKO KICK TENKO EX																	107	48	53		20160514
 TENKO KICK TENKO EX OROCHI EX																	83	24	29		
+2HK VT CANCEL																	74	25	30		
