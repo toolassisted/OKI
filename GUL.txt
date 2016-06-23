@@ -1,14 +1,23 @@
 Move	Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	Damage	Stun	Hitstop	Total	Chip	CH hit adv.	CH Damage	CH Stun	Attack Level	Cancel Ability	KD Adv.	KDR Adv.	KDRB Adv.	VTC Hit Adv	VTC Blk Adv	Note
-stand LP		4	2	8	4	3	30	70	8	13	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	5	
+stand LP		4	2	8	4	3	30	70	8	13	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	5	5LP 123(45)(678) CHAIN 123(45)(67)/(8-13)
+stand LP CHAIN 5LP 1	5LP 5LP	4	2(6)2	8	4	3	30	70	8	21	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	5	
+stand LP CHAIN 5LP 2	5LP 5LP 5LP	4	2(5)2(6)2	8	4	3	30	70	8	28	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	5	
+stand LP CHAIN 5LP 3	5LP 5LP 5LP 5LP	4	2(5)2(5)2(6)2	8	4	3	30	70	8	35	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	5	
 stand MP		5	3	13	4	3	60	100	12	20	10	6	72	120	H	V	-	-	-	12	11	
 stand HP		7	3	18	6	-4	80	150	15	27	13	KD 118	96	180	H	V	-	-	-	19	9	
 stand LK		5	3	9	4	2	30	70	8	16	0	6	36	84	H	V	-	-	-	8	6	
 stand MK		7	3	15	3	-1	60	100	12	24	10	5	72	120	H	V	-	-	-	13	9	
 stand HK		14	3	18	1	-3	80	150	15	34	13	3	96	180	H	V	-	-	-	14	10	
-crouch LP		4	2	8	4	2	30	70	8	13	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	4	
+crouch LP		4	2	8	4	2	30	70	8	13	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	4	2LP 123(45)(6789) CHAIN 123(45)(6789)/(10-13)
+crouch LP CHAIN 2LP 1	2LP 2LP	4	2(7)2	8	4	2	30	70	8	22	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	4	
+crouch LP CHAIN 2LP 2	2LP 2LP 2LP	4	2(7)2(7)2	8	4	2	30	70	8	31	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	4	
+crouch LP CHAIN 2LP 3	2LP 2LP 2LP 2LP	4	2(7)2(7)2(7)2	8	4	2	30	70	8	40	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	4	
 crouch MP		6	2	13	3	1	60	100	12	20	10	5	72	120	H	SP,CA,V	-	-	-	10	8	
 crouch HP		8	5	16	2	-3	90	150	15	28	15	4	108	180	H	V	-	-	-	15	10	
-crouch LK		4	2	9	2	0	20	70	8	14	0	4	24	84	L	V	-	-	-	5	3	
+crouch LK		4	2	9	2	0	20	70	8	14	0	4	24	84	L	V	-	-	-	5	3	2LK 123(45)(6789) CHAIN 123(456)(789)/(10-14)
+crouch LK CHAIN 2LK 1		4	2(7)2	9	2	0	20	70	8	23	0	4	24	84	L	V	-	-	-	5	3	
+crouch LK CHAIN 2LK 2		4	2(7)2(7)2	9	2	0	20	70	8	32	0	4	24	84	L	V	-	-	-	5	3	
+crouch LK CHAIN 2LK 3		4	2(7)2(7)2(7)2	9	2	0	20	70	8	41	0	4	24	84	L	V	-	-	-	5	3	
 crouch MK		7	2	15	1	-4	60	100	12	23	10	3	72	120	L	V	-	-	-	10	5	
 crouch HK		8	2		KD	-13	90*70	150*100	15*15	48	15*12	52	108*84	180*120	L*L	V	52	3	8	KD 85	12	
 crouch HK		8	2		KD	-13	90*70	150*100	15*15	48	15*12	52	108*84	180*120	L*L	V	70	21	26	KD 85	12	
@@ -23,7 +32,7 @@ knee bazooka	b or f+LK	8	5	16	-2	-6	50	100	12	28	0	0	60	120	H	-	-	-	-	-	-
 rolling sobat	b or f+MK	11	2	17	2	-2	60	100	12	29	10	4	72	120	H	-	-	-	-	-	-	
 spinning back knuckle	f+HP	10	3	16	4	-1	90	150	15	28	15	26	108	180	H	V	-	-	-	15	10	
 reverse spin kick	f+HK	16	3	18	3	-1	90	150	15	36	15	5	108	180	H	-	-	-	-	-	-	
-burn straight	b+HP	8	3	20	2	-1	80	150	15	30	13	KD 97	96	180	H	V	-	-	-	17	14	
+burn straight	b+HP	8	3	20	2	-1	80	150	15	30	13	KD 97	96	180	H	V	97	38	43	17	14	
 full bullet magnum	f+MP	21	2	19	0	-4	60	100	12	41	10	2	72	120	M	-	-	-	-	-	-	
 tall edge	c.LK > s.MP	4	2		-1	-6	20*54	70*90	8*12	-	0*10	-1	24*54	84*90	L*H	V	-	-	-	11	6	
 bullet revolver	c.LK > s.MP > f+HP	4	2		KD	-8	20*54*72	70*90*120	8*12*15	-	0*10*15	91	24*54*72	84*90*120	L*H*H	V	91	32	37	KD 108	9	
@@ -35,7 +44,7 @@ judo throw	b+LP+LK	5	2	18	KD	-	120	170	-	24	-	63	120	170	T	-	63	14	14	-	-
 flying mare	LP+LK (air)	5	2	-	KD	-	130	170	-	-	-	77/78?	130	170	T	-	77/78?	28/30?	28/30?	-	-	
 flying buster drop	b+LP+LK (air)	5	2	-	KD	-	140	200	-	-	-	51	140	200	T	-	51	2	2	-	-	
 solid puncher	HP+HK			9		-			-	9		-	-	-	-	-	-	-	-	-	-	
-sonic blade	MP+MK	18	-	31	-5	-10	40	50	8	50	7	-3	48	60	H	-	-	-	-	-	-	
+sonic blade	MP+MK	18	1	31	-5	-10	40	50	8	49	7	-3	48	60	H	-	-	-	-	-	-	
 reverse back knuckle	f+PPP	1	1	1											H	-	86	27	32	-	-	
 sonic boom LP	b,f+LP	10	1	28	8	1	50	50	8	38	8	10	60	60	H	CA,V	-	-	-	29	22	in VT, 36f total and +10 on hit
 sonic boom MP	b,f+MP	10	1	28	8	1	50	50	8	38	8	10	60	60	H	CA,V	-	-	-	29	22	in VT, 36f total and +10 on hit
@@ -60,7 +69,3 @@ jump forward	45 (3+38+4)	41	1	4						45												EARLY WHIFF 48
 jump backwards	46( 4+38+4)	42	1	4						46												EARLY WHIFF 49
 dash forward	18		18							18												
 dash backwards	25		25							25												
-stand LP CHAIN 5LP 5LP		4	2	23	4	3	30	70	8	28	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	5	
-stand LP CHAIN 5LP		4	2	16	4	3	30	70	8	21	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	5	
-crouch LP CHAIN 2LP		4	2	17	4	2	30	70	8	22	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	4	
-crouch LK CHAIN 2LK		4	2	18	4	2	30	70	8	23	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	4	
