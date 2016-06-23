@@ -44,7 +44,7 @@ judo throw	b+LP+LK	5	2	18	KD	-	120	170	-	24	-	63	120	170	T	-	63	14	14	-	-
 flying mare	LP+LK (air)	5	2	-	KD	-	130	170	-	-	-	77/78?	130	170	T	-	77/78?	28/30?	28/30?	-	-	
 flying buster drop	b+LP+LK (air)	5	2	-	KD	-	140	200	-	-	-	51	140	200	T	-	51	2	2	-	-	
 solid puncher	HP+HK			9		-			-	9		-	-	-	-	-	-	-	-	-	-	
-sonic blade	MP+MK	18	1	31	-5	-10	40	50	8	49	7	-3	48	60	H	-	-	-	-	-	-	
+sonic blade	MP+MK	18	1	31	-5	-10	40	50	8	49	7	-3	48	60	H	-	-	-	-	-	-	PROJ 42F
 reverse back knuckle	f+PPP	1	1	1											H	-	86	27	32	-	-	
 sonic boom LP	b,f+LP	10	1	28	8	1	50	50	8	38	8	10	60	60	H	CA,V	-	-	-	29	22	in VT, 36f total and +10 on hit
 sonic boom MP	b,f+MP	10	1	28	8	1	50	50	8	38	8	10	60	60	H	CA,V	-	-	-	29	22	in VT, 36f total and +10 on hit
@@ -54,10 +54,10 @@ somersault kick LK	d,u+LK	4	12	37	KD	-28	120	200	14	52	30	83	144	240	H	CA	83	24	
 somersault kick MK	d,u+MK	5	12	37	KD	-28	120	200	14	53	30	83	144	240	H	CA	83	24	29	-	-	
 somersault kick HK	d,u+HK	6	12	38	KD	-30	120	200	14	55	30	83	144	240	H	CA	83	24	29	-	-	
 somersault kick EX	d,u+KK	4	12	44	KD	-37	90*60	100*100	14*14	59	23	83	108*60	120*100	H*H	-	85	26	31	-	-	
-sonic cross LP	MP+MK > b,f+LP	??			KD	13?	40*40	50*50	8*8	33	7*7	107?	48*40	60*50	H*H	-	107?	55?	56?	-	-	
-sonic cross MP	MP+MK > b,f+MP	??			KD	16?	40*40	50*50	8*8	33	7*7	110?	48*40	60*50	H*H	-	110?	53?	58?	-	-	
-sonic cross HP	MP+MK > b,f+HP	??			KD	15?	40*40	50*50	8*8	33	7*7	112?	48*40	60*50	H*H	-	112?	50?	57?	-	-	
-sonic cross EX	MP+MK > b,f,PP	??			KD	21	40*50*50	50*25*75	8*8*8	31	7*7*8	118?	48*50*50	60*25*75	H*H*H	-	118?	62?	66?	-	-	
+sonic cross LP	MP+MK > b,f+LP	18	27(1)1	23	KD	13?	40*40	50*50	8*8	69	7*7	107?	48*40	60*50	H*H	-	107?	55?	56?	-	-	PROJ 27F CANCEL 36F
+sonic cross MP	MP+MK > b,f+MP	18	27(1)1	23	KD	16?	40*40	50*50	8*8	69	7*7	110?	48*40	60*50	H*H	-	110?	53?	58?	-	-	PROJ 27F CANCEL 36F
+sonic cross HP	MP+MK > b,f+HP	18	27(1)1	23	KD	15?	40*40	50*50	8*8	69	7*7	112?	48*40	60*50	H*H	-	112?	50?	57?	-	-	PROJ 27F CANCEL 36F
+sonic cross EX	MP+MK > b,f,PP	46	27(1)1	21	KD	21	40*50*50	50*25*75	8*8*8	31	7*7*8	118?	48*50*50	60*25*75	H*H*H	-	118?	62?	66?	-	-	PROJ 27F CANCEL 36F
 sonic break	N or b or f+HP+HK/P	10			5	1	40	40	8	37	7	7	48	48	H	-				-	-	
 sonic hurricane	b,f,b,f+p	7	1		KD	-41	320	0		??	5x5*25	63	328	0	H	-	63	4	9	-	-	
 sonic tempest	b,f,b,f+p during VT	7	1		KD	5	360	0		??	4x16	107?	364	0	H	-	107	48	53	-	-	
