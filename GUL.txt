@@ -57,7 +57,7 @@ somersault kick EX	d,u+KK	4	12	44	KD	-37	90*60	100*100	14*14	59	23	83	108*60	120
 sonic cross LP	MP+MK > b,f+LP	18	27(1)1	23	KD	13?	40*40	50*50	8*8	69	7*7	107?	48*40	60*50	H*H	-	107?	55?	56?	-	-	PROJ 27F CANCEL 36F
 sonic cross MP	MP+MK > b,f+MP	18	27(1)1	23	KD	16?	40*40	50*50	8*8	69	7*7	110?	48*40	60*50	H*H	-	110?	53?	58?	-	-	PROJ 27F CANCEL 36F
 sonic cross HP	MP+MK > b,f+HP	18	27(1)1	23	KD	15?	40*40	50*50	8*8	69	7*7	112?	48*40	60*50	H*H	-	112?	50?	57?	-	-	PROJ 27F CANCEL 36F
-sonic cross EX	MP+MK > b,f,PP	46	27(1)1	21	KD	21	40*50*50	50*25*75	8*8*8	31	7*7*8	118?	48*50*50	60*25*75	H*H*H	-	118?	62?	66?	-	-	PROJ 27F CANCEL 36F
+sonic cross EX	MP+MK > b,f,PP	46	27(1)1	21	KD	21	40*50*50	50*25*75	8*8*8	67	7*7*8	118?	48*50*50	60*25*75	H*H*H	-	118?	62?	66?	-	-	PROJ 27F CANCEL 36F
 sonic break	N or b or f+HP+HK/P	10			5	1	40	40	8	37	7	7	48	48	H	-				-	-	
 sonic hurricane	b,f,b,f+p	7	1		KD	-41	320	0		??	5x5*25	63	328	0	H	-	63	4	9	-	-	
 sonic tempest	b,f,b,f+p during VT	7	1		KD	5	360	0		??	4x16	107?	364	0	H	-	107	48	53	-	-	
