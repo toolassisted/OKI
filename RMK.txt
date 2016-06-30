@@ -1,16 +1,18 @@
 Move	Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	 Damage	Stun	Total 	Hitstop	Chip	Attack Level	Cancel Ability	CH hit adv.	CH Damage	CH Stun	KD Adv.	KDR Adv.	KDRB Adv.	Note
-stand LP		3	2	7	3	2	30	70		8	0	H	SP,V	5	36	84				
-stand MP		5	3	10	7	-2	60	100		12	10	H	SP,V	9	72	120				
-stand HP		7	3	18	2	-6	80	150		15	13	H	SP,V	4	96	180				
-stand LK		4	3	8	2	1	30	70		8	0	H	V	4	36	84				
-stand MK		8	4	15	2	-3	60	100		12	10	H	V	4	72	120				
-stand HK (hold)		17(35)	2	20	2(4)	-4 (2)	90(100)	150		15	15 (17)	H	V	KD 105	108	180				
-crouch LP		3	2	6	3	1	20	70		8	0	H	SP,V	5	24	84				
-crouch MP		7	4	16	1	-1	60	100		12	10	H	V	3	72	120				
-crouch HP		11	6	17	-3	-5	80	150		15	13	H	CA,V	-1	96	180				
-crouch LK		4	2	8	3	1	20	70		8	0	L	V	5	24	84				
-crouch MK		7	3	15	2	-2	60	100		12	10	L	V	4	72	120				
-crouch HK		12	8	21	KD	-12	90	150		15	15	L	V	KD	108	180	68	19	24	
+stand LP		3	2	7	3	2	30	70	11	8	0	H	SP,V	5	36	84				
+stand MP		5	3	10	7	-2	60	100	19	12	10	H	SP,V	9	72	120				
+stand HP		7	3	18	2	-6	80	150	27	15	13	H	SP,V	4	96	180				
+stand LK		4	3	8	2	1	30	70	14	8	0	H	V	4	36	84				
+stand MK		8	4	15	2	-3	60	100	26	12	10	H	V	4	72	120				
+stand HK (hold)	HOLD 1	13	2	20	2(4)	-4 (2)	90(100)	150	34	15	15 (17)	H	V	KD 105	108	180				
+stand HK	HOLD 20	32	2	20	2(4)	-4 (2)	90(100)	150	34	15	15 (17)	H	V	KD 105	108	180				
+stand HK HOLD	HOLD 21	35	1	23	2(4)	-4 (2)	90(100)	150	34	15	15 (17)	H	V	KD 105	108	180				
+crouch LP		3	2	6	3	1	20	70	10	8	0	H	SP,V	5	24	84				
+crouch MP		7	4	16	1	-1	60	100	26	12	10	H	V	3	72	120				
+crouch HP		11	6	17	-3	-5	80	150	34	15	13	H	CA,V	-1	96	180				
+crouch LK		4	2	8	3	1	20	70	13	8	0	L	V	5	24	84				
+crouch MK		7	3	15	2	-2	60	100	24	12	10	L	V	4	72	120				
+crouch HK		12	8	21	KD	-12	90	150	40	15	15	L	V	KD	108	180	68	19	24	
 jump LP		3	5	-	-	-	40	70		8	0	M	-	-	48	84				
 jump MP		6	5	-	-	-	70	100		12	12	M	-	-	84	120				
 jump HP		8	5	-	-	-	90	150		15	15	M	-	-	108	180				
@@ -19,13 +21,13 @@ jump MK		6	5	-	-	-	70	100		12	12	M	-	-	84	120
 jump HK		7	7	-	-	-	90	150		15	15	M	-	-	108	180				
 stomp chop	LK > MP	4	2	14	1	-5	30*45	70*90		8*12	0*8	H*H	SP,V	1	36*45	84*90				
 divebomb	d+MP during f jump	16	-	-	KD	-	70	100		10	12	M	-	KD	84	120				
-lady mika	f+HP	10	3	12	KD	3	90	150		15	15	H	V	KD 125	108	180	115	56	61	
-passion press	f or b+MP	6	4	13	2	-2	50	100		11	8	H	-	60	60	120				
-passion rope throw forward	f+MP > MP	6	2	38	KD	-27	50*27	100*0		-	8	H	-	KD	60*27	120	??			
-passion rope throw backward	f+MP > b+MP	6	2	38	KD	-	50*27	100*0		-	8	H	-	KD	60*27	120	??			
-daydream headlock	LP+LK	5	2	18	KD	-	130	200		-	-	T	-	KD	130	200	42	3	3	
-dream driver	LP+LK (opponent crouched)	5	2	18	KD	-	140	200		-	-	T	-	KD	140	200	71	30	30	
-sell down	b+LP+LK	5	2	18	KD	-	130	200		-	-	T	-	KD	130	200	79	12	12	
+lady mika	f+HP	10	3	12	KD	3	90	150	24	15	15	H	V	KD 125	108	180	115	56	61	
+passion press	f or b+MP	6	4	13	2	-2	50	100	22	11	8	H	-	60	60	120				
+passion rope throw forward	f+MP > MP	6	2	38	KD	-27	50*27	100*0		-	8	H	-	KD	60*27	120				
+passion rope throw backward	f+MP > b+MP	6	2	38	KD	-	50*27	100*0		-	8	H	-	KD	60*27	120				
+daydream headlock	LP+LK	5	2	18	KD	-	130	200	24	-	-	T	-	KD	130	200	42	3	3	
+dream driver	LP+LK (opponent crouched)	5	2	18	KD	-	140	200		-	-	T	-	KD	140	200	79	30	30	
+sell down	b+LP+LK	5	2	18	KD	-	130	200		-	-	T	-	KD	130	200	71	12	12	
 nadeshiko (above)	HP+HK (can hold)	-	-	7	-	-	100	100	7	14	25	H	-	-	120	120	-			
 nadeshiko (above) HOLD	HP+HK (can hold)	-	-	11	-	-	100	100	11	14	25	H	-	-	120	120	-			
 nadeshiko (front)	b+HP+HK (can hold)	-	-	-	KD	-	100	100		14	25	H	-	KD	120	120	-			
@@ -51,9 +53,9 @@ brimstone EX	hcb+KK	5	2	52	KD	-	80*100	0*200		-	-	T	-	KD	80*100	0*200	21	21	21
 peach assault	qcb, qcb+P	3	2	51	KD	-	80*100*180	0		-	-	T	-	KD	80*100*180	0	75	26	26	
 health	950		950																	
 stun	1000		1000																	
-taunt	61		61																	
-jump	45 (3+38+4)		45 (3+38+4)																	
-jump forward	45 (3+38+4)		45 (3+38+4)																	
-jump backward	45 (3+38+4)		45 (3+38+4)																	
-dash forward	18		18																	
-dash backward	25		25																	
+taunt	61		61						61											
+jump	46 (4+38+4)	42	1	4					46											
+jump forward	45 (3+38+4)	41	1	4					45											
+jump backward	46 (4+38+4)	42	1	4					46											
+dash forward	18		18						18											
+dash backward	25		25						25											
