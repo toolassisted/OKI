@@ -1,69 +1,69 @@
-Move	Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	Damage	Stun	Hitstop	Total	Chip	CH hit adv.	CH Damage	CH Stun	Attack Level	Cancel Ability	KD Adv.	KDR Adv.	KDRB Adv.	VTC Hit Adv	VTC Blk Adv	Note
-stand LP		4	2	7	5	2	30	70		12						SP				4	1	
-stand MP		5	4	13	2	0	60	100		21						SP				11	9	
-stand HP		11	2	19	0	-3	80	150		21										7	4	
-stand LK		3	2	8	2	1	30	70		12										4	3	
-stand MK		6	3	12	5	2	60	100		20						SP				12	9	
-stand HK		9	2	19	7	4	80	150		29										15	11	
-crouch LP		4	2	8	4	2	30	70		13						SP				5	3	2LP 123(45)(67890) CHAIN 123(45)(67890)/(11-13)
-crouch LP CHAIN 2LP 1	2LP 2LP	4	2(8)2	8	4	2	57	133		23						SP						
-crouch LP CHAIN 2LP 2	2LP 2LP 2LP	4	2(8)2(8)2	8	4	2				33						SP						
-crouch LP CHAIN 2LP 3	2LP 2LP 2LP 2LP	4	2(8)2(8)2(8)2	8	4	2				43						SP						
-crouch MP		6	3	14	1	0	60	100		22						SP				10	9	
-crouch HP 1		8	5	22	-1	-5	90	150		34		KD				SP	117	58	63	11	7	
-crouch HP 2		9	4	22	0	-6	70	150		34		2				SP				12	6	
-crouch LK		4	2	9	4	1	20	70		14										7	4	
-crouch MK		7	2	17	2	-2	60	100		25										13	9	
-crouch HK		8	2	26	KD	-14	100	150		35							71	22	27	KD +20	6	
-crouch HK VT		8	2	26	KD	6	100	150									91	42	47			
+Move	Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	Damage	Stun	VTC Hit Adv	VTC Blk Adv	Hitstop	Total	Chip	CH hit adv.	CH Damage	CH Stun	Attack Level	Cancel Ability	KD Adv.	KDR Adv.	KDRB Adv.	Note
+stand LP		4	2	7	5	2	30	70	4	1		12						SP				
+stand MP		5	4	13	2	0	60	100	11	9		21						SP				
+stand HP		11	2	19	0	-3	80	150	7	4		21										
+stand LK		3	2	8	2	1	30	70	4	3		12										
+stand MK		6	3	12	5	2	60	100	12	9		20						SP				
+stand HK		9	2	19	7	4	80	150	15	11		29										
+crouch LP		4	2	8	4	2	30	70	5	3		13						SP				2LP 123(45)(67890) CHAIN 123(45)(67890)/(11-13)
+crouch LP CHAIN 2LP 1	2LP 2LP	4	2(8)2	8	4	2	57	133				23						SP				
+crouch LP CHAIN 2LP 2	2LP 2LP 2LP	4	2(8)2(8)2	8	4	2						33						SP				
+crouch LP CHAIN 2LP 3	2LP 2LP 2LP 2LP	4	2(8)2(8)2(8)2	8	4	2						43						SP				
+crouch MP		6	3	14	1	0	60	100	10	9		22						SP				
+crouch HP 1		8	5	22	-1	-5	90	150	11	7		34		KD				SP	117	58	63	
+crouch HP 2		9	4	22	0	-6	70	150	12	6		34		2				SP				
+crouch LK		4	2	9	4	1	20	70	7	4		14										
+crouch MK		7	2	17	2	-2	60	100	13	9		25										
+crouch HK		8	2	26	KD	-14	100	150	KD +20	6		35							71	22	27	
+crouch HK VT		8	2	26	KD	6	100	150											91	42	47	
 jump LP		4	6	-	6	3	40	70														
 jump MP		5	3	-	11	8	70	100														
 jump HP		7	4	-	13	10	90	150														
 jump LK		3	8	-	4	1	40	70														
 jump MK		6	5	-	8	5	70	100														AIR MOVE BACK
 jump HK		8	4	-	9	6	90	150														
-MK MP TC	5MK 5MP	6	3		KD	-8	96	172									96	37	42		7	
-MK MP TC VS	5MK 5MP MPMK	6	3		KD	-17	96	172									87	28	33			
-Hard Smasher	5MK 5MP MPMK P	6	3		KD	-8	144	268									94	35	40		9	BLK 7F GAP
-Hard Pressure	5MK 5MP MPMK K	6	3		KD	-8	144	268									70	11	16		8	BLK 12F GAP
-Under Impact 1	5LK 5MK	3	2		1	-7	66	133												12	4	
-Under Impact 2	5LK 5MK 5HK	3	2		KD	-8	122	213									89	30	35		7	
-Stomping Combo	2MK 2MK	10	3		2	-6	96	172												13	5	
-THROW	LP+LK	5	2	18	KD		120	170		24							72	23	23			
-THROW BACK	b+LP+LK	5	2	18	KD		130	200									61	12	12			
-VT	HP+HK			7						7												NO INV
-KKB	MP+MK	4	19	7						29												CANCEL 12F FRAME 4-22 PROJ INV
-KKB P	MP+MK 12F P	19	2	21	2	-4	60	100		41										17	11	CANCEL 12F FRAME 4-17 PROJ INV
-KKB K	MP+MK 12F K	29	2	20	5	-8	50	100		50										19	6	CANCEL 12F FRAME 4-26 PROJ INV
+MK MP TC	5MK 5MP	6	3		KD	-8	96	172		7									96	37	42	
+MK MP TC VS	5MK 5MP MPMK	6	3		KD	-17	96	172											87	28	33	
+Hard Smasher	5MK 5MP MPMK P	6	3		KD	-8	144	268		9									94	35	40	BLK 7F GAP
+Hard Pressure	5MK 5MP MPMK K	6	3		KD	-8	144	268		8									70	11	16	BLK 12F GAP
+Under Impact 1	5LK 5MK	3	2		1	-7	66	133	12	4												
+Under Impact 2	5LK 5MK 5HK	3	2		KD	-8	122	213		7									89	30	35	
+Stomping Combo	2MK 2MK	10	3		2	-6	96	172	13	5												
+THROW	LP+LK	5	2	18	KD		120	170				24							72	23	23	
+THROW BACK	b+LP+LK	5	2	18	KD		130	200											61	12	12	
+VT	HP+HK			7								7										NO INV
+KKB	MP+MK	4	19	7								29										CANCEL 12F FRAME 4-22 PROJ INV
+KKB P	MP+MK 12F P	19	2	21	2	-4	60	100	17	11		41										CANCEL 12F FRAME 4-17 PROJ INV
+KKB K	MP+MK 12F K	29	2	20	5	-8	50	100	19	6		50										CANCEL 12F FRAME 4-26 PROJ INV
 VR	f+PPP	15	3	23	KD	-2	60	0														
-Dash Straight LP	b,f+LP	10	4	22	1	-4	80	150		35							96	37	42	3	-2	
-Dash Straight MP	b,f+MP	12	4	22	2	-6	90	150		37										3	-5	
-Dash Straight HP	b,f+HP	19	4	22	3	-7	100	150		44										5	-5	
-Dash Straight EX	b,f+PP	9	6	29	KD	-13	150	200		43							92	33	38	7	4	TRACK
-Dash Grand Blow LK	b,f+LK	17	2	26	KD	-7	70	150		44							69	20	25		2	
-Dash Grand Blow MK	b,f+MK	18	2	26	KD	-7	80	150		45							69	20	25		2	
-Dash Grand Blow HK	b,f+HK	19	2	26	KD	-7	90	150		46							69	20	25		2	
-Dash Grand Blow EX	b,f+KK	11	2	23	KD	-2	140	200		35							71	22	27		4	
-Screw Smash LK	d,u+LK	13	5	25	KD	-10	100	150		42							87	28	33		-2	
-Screw Smash MK	d,u+MK	16	5	26	KD	-10	110	150		46							89	30	35		-3	
-Screw Smash HK	d,u+HK	24	5	23	KD	-10	90	150		51							97	38	43		0	
-Screw Smash EX	d,u+KK	12	5	29	KD	-14	150	200		45							90	31	36		-7	FRAME 3-16 ARMOR ACTIVE FRAME
-TAP 1	PK HOLD 32 FRAME 0.5 SEC	30	2	22	1	-2	80	150		53										5	2	FRAME 3-18 PROJ INV LOW HURT BOX
-TAP 2	PK HOLD 121 FRAME 2 SEC	30	2	22	1	-2	100	150		53										5	2	FRAME 3-18 PROJ INV LOW HURT BOX
-TAP 3	PK HOLD 241 FRAME 4 SEC	30	2	22	1	-2	120	150		53										5	2	FRAME 3-18 PROJ INV LOW HURT BOX
-TAP 4	PK HOLD 481 FRAME 8 SEC	30	2	22	KD	-2	160	200		53							90	31	36		2	FRAME 3-18 PROJ HIT INV
-TAP 5	PK HOLD 961 FRAME 16 SEC	30	2	22	KD	-2	200	200		53							90	31	36		2	FRAME 3-18 PROJ HIT INV
-TAP 6	PK HOLD 1441 FRAME 24 SEC	30	2	22	KD	-2	240	200		53							90	31	36		2	FRAME 3-18 PROJ HIT INV
-TAP 7	PK HOLD 1921 FRAME 32 SEC	30	2	22	KD	-2	300	300		53							94	35	40		2	FRAME 1-18 PROJ HIT INV
-TAP 8	PK HOLD 2401 FRAME 40 SEC	30	2	22	KD	-2	360	300		53							94	35	40		2	FRAME 1-18 PROJ HIT INV
-TAP 9	PK HOLD 2881 FRAME 48 SEC	30	2	22	KD	-2	420	300		53							94	35	40		2	FRAME 1-18 PROJ HIT INV
-TAP 10	PK HOLD 3360 FRAME 56 SEC	30	2	22	KD	-2	500	400		53							98	39	39		2	FRAME 1-18 ALL INV
-CA	2626P	8	10	60	KD	-45	330			77							72	13	18			FRAME 1-10 ALL INV FRAME 11-17 PROJ INV
+Dash Straight LP	b,f+LP	10	4	22	1	-4	80	150	3	-2		35							96	37	42	
+Dash Straight MP	b,f+MP	12	4	22	2	-6	90	150	3	-5		37										
+Dash Straight HP	b,f+HP	19	4	22	3	-7	100	150	5	-5		44										
+Dash Straight EX	b,f+PP	9	6	29	KD	-13	150	200	7	4		43							92	33	38	TRACK
+Dash Grand Blow LK	b,f+LK	17	2	26	KD	-7	70	150		2		44							69	20	25	
+Dash Grand Blow MK	b,f+MK	18	2	26	KD	-7	80	150		2		45							69	20	25	
+Dash Grand Blow HK	b,f+HK	19	2	26	KD	-7	90	150		2		46							69	20	25	
+Dash Grand Blow EX	b,f+KK	11	2	23	KD	-2	140	200		4		35							71	22	27	
+Screw Smash LK	d,u+LK	13	5	25	KD	-10	100	150		-2		42							87	28	33	
+Screw Smash MK	d,u+MK	16	5	26	KD	-10	110	150		-3		46							89	30	35	
+Screw Smash HK	d,u+HK	24	5	23	KD	-10	90	150		0		51							97	38	43	
+Screw Smash EX	d,u+KK	12	5	29	KD	-14	150	200		-7		45							90	31	36	FRAME 3-16 ARMOR ACTIVE FRAME
+TAP 1	PK HOLD 32 FRAME 0.5 SEC	30	2	22	1	-2	80	150	5	2		53										FRAME 3-18 PROJ INV LOW HURT BOX
+TAP 2	PK HOLD 121 FRAME 2 SEC	30	2	22	1	-2	100	150	5	2		53										FRAME 3-18 PROJ INV LOW HURT BOX
+TAP 3	PK HOLD 241 FRAME 4 SEC	30	2	22	1	-2	120	150	5	2		53										FRAME 3-18 PROJ INV LOW HURT BOX
+TAP 4	PK HOLD 481 FRAME 8 SEC	30	2	22	KD	-2	160	200		2		53							90	31	36	FRAME 3-18 PROJ HIT INV
+TAP 5	PK HOLD 961 FRAME 16 SEC	30	2	22	KD	-2	200	200		2		53							90	31	36	FRAME 3-18 PROJ HIT INV
+TAP 6	PK HOLD 1441 FRAME 24 SEC	30	2	22	KD	-2	240	200		2		53							90	31	36	FRAME 3-18 PROJ HIT INV
+TAP 7	PK HOLD 1921 FRAME 32 SEC	30	2	22	KD	-2	300	300		2		53							94	35	40	FRAME 1-18 PROJ HIT INV
+TAP 8	PK HOLD 2401 FRAME 40 SEC	30	2	22	KD	-2	360	300		2		53							94	35	40	FRAME 1-18 PROJ HIT INV
+TAP 9	PK HOLD 2881 FRAME 48 SEC	30	2	22	KD	-2	420	300		2		53							94	35	40	FRAME 1-18 PROJ HIT INV
+TAP 10	PK HOLD 3360 FRAME 56 SEC	30	2	22	KD	-2	500	400		2		53							98	39	39	FRAME 1-18 ALL INV
+CA	2626P	8	10	60	KD	-45	330					77							72	13	18	FRAME 1-10 ALL INV FRAME 11-17 PROJ INV
 health	1000																					
 stun	1000																					
 taunt	61																					
-jump	47(4+39+4)	43	1	4						47												EARLY WHIFF 50
-jump forward	46(3+39+4)	42	1	4						46												EARLY WHIFF 49
-jump backwards	47(4+39+4)	43	1	4						47												EARLY WHIFF 50
-dash forward	17		17							17												
-dash backwards	24		24							24												
+jump	47(4+39+4)	43	1	4								47										EARLY WHIFF 50
+jump forward	46(3+39+4)	42	1	4								46										EARLY WHIFF 49
+jump backwards	47(4+39+4)	43	1	4								47										EARLY WHIFF 50
+dash forward	17		17									17										
+dash backwards	24		24									24										
