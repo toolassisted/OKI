@@ -14,7 +14,7 @@ crouch HP 1		8	5	22	-1	-5	90	150		34		KD				SP	117	58	63
 crouch HP 2		8	5	22	0	-6	70	150		34		2				SP						
 crouch LK		4	2	9	4	1	20	70		14												
 crouch MK		7	2	17	2	-2	60	100		25												
-crouch HK		8	2	26	KD	-14	100	150		35							91	22	27			
+crouch HK		8	2	26	KD	-14	100	150		35							71	22	27			
 jump LP		4	6	-	6	3	40	70														
 jump MP		5	3	-	11	8	70	100														
 jump HP		7	4	-	13	10	90	150														
