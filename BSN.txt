@@ -1,21 +1,21 @@
 Move	Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	Damage	Stun	VTC Hit Adv	VTC Blk Adv	Hitstop	Total	Chip	CH hit adv.	CH Damage	CH Stun	Attack Level	Cancel Ability	KD Adv.	KDR Adv.	KDRB Adv.	Note
-stand LP		4	2	7	5	2	30	70	4	1		12						SP				
-stand MP		5	4	13	2	0	60	100	11	9		21						SP				
-stand HP		11	2	19	0	-3	80	150	7	4		21										
-stand LK		3	2	8	2	1	30	70	4	3		12										
-stand MK		6	3	12	5	2	60	100	12	9		20						SP				
-stand HK		9	2	19	7	4	80	150	15	11		29										
-crouch LP		4	2	8	4	2	30	70	5	3		13						SP				2LP 123(45)(67890) CHAIN 123(45)(67890)/(11-13)
-crouch LP CHAIN 2LP 1	2LP 2LP	4	2(8)2	8	4	2	57	133				23						SP				
-crouch LP CHAIN 2LP 2	2LP 2LP 2LP	4	2(8)2(8)2	8	4	2						33						SP				
-crouch LP CHAIN 2LP 3	2LP 2LP 2LP 2LP	4	2(8)2(8)2(8)2	8	4	2						43						SP				
-crouch MP		6	3	14	1	0	60	100	10	9		22						SP				
+stand LP		4	2	7	5	2	30	70	4	1		12		7				SP				
+stand MP		5	4	13	2	0	60	100	11	9		21		4				SP				
+stand HP		11	2	19	0	-3	80	150	7	4		21		2								
+stand LK		3	2	8	2	1	30	70	4	3		12		4								
+stand MK		6	3	12	5	2	60	100	12	9		20		7				SP				
+stand HK		9	2	19	7	4	80	150	15	11		29		23								
+crouch LP		4	2	8	4	2	30	70	5	3		13		6				SP				2LP 123(45)(67890) CHAIN 123(45)(67890)/(11-13)
+crouch LP CHAIN 2LP 1	2LP 2LP	4	2(8)2	8	4	2	57	133				23		6				SP				
+crouch LP CHAIN 2LP 2	2LP 2LP 2LP	4	2(8)2(8)2	8	4	2						33		6				SP				
+crouch LP CHAIN 2LP 3	2LP 2LP 2LP 2LP	4	2(8)2(8)2(8)2	8	4	2						43		6				SP				
+crouch MP		6	3	14	1	0	60	100	10	9		22		3				SP				
 crouch HP 1		8	5	22	-1	-5	90	150	11	7		34		KD				SP	117	58	63	
 crouch HP 2		9	4	22	0	-6	70	150	12	6		34		2				SP				
-crouch LK		4	2	9	4	1	20	70	7	4		14										
-crouch MK		7	2	17	2	-2	60	100	13	9		25										
-crouch HK		8	2	26	KD	-14	100	150	KD +20	6		35							71	22	27	
-crouch HK VT		8	2	26	KD	6	100	150											91	42	47	
+crouch LK		4	2	9	4	1	20	70	7	4		14		6								
+crouch MK		7	2	17	2	-2	60	100	13	9		25		4								
+crouch HK		8	2	26	KD	-14	100	150	KD +20	6		35		KD					71	22	27	
+crouch HK VT		8	2	26	KD	6	100	150						KD					91	42	47	
 jump LP		4	6	-	6	3	40	70														
 jump MP		5	3	-	11	8	70	100														
 jump HP		7	4	-	13	10	90	150														
