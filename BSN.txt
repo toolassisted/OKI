@@ -39,7 +39,7 @@ VR	f+PPP	15	3	23	KD	-2	60	0
 Dash Straight LP	b,f+LP	10	4	22	1	-4	80	150	3	-2		35							96	37	42	
 Dash Straight MP	b,f+MP	12	4	22	2	-6	90	150	3	-5		37										
 Dash Straight HP	b,f+HP	19	4	22	3	-7	100	150	5	-5		44										
-Dash Straight EX	b,f+PP	9	6	29	KD	-13	150	200	7	4		43							92	33	38	TRACK
+Dash Straight EX	b,f+PP	9	6	29	KD	1	150	200	7	4		43							92	33	38	TRACK
 Dash Grand Blow LK	b,f+LK	17	2	26	KD	-7	70	150		2		44							69	20	25	
 Dash Grand Blow MK	b,f+MK	18	2	26	KD	-7	80	150		2		45							69	20	25	
 Dash Grand Blow HK	b,f+HK	19	2	26	KD	-7	90	150		2		46							69	20	25	
