@@ -48,12 +48,12 @@ Screw Smash LK	d,u+LK	13	5	25	KD	-10	100	150		-2		42							87	28	33
 Screw Smash MK	d,u+MK	16	5	26	KD	-10	110	150		-3		46							89	30	35	
 Screw Smash HK	d,u+HK	24	5	23	KD	-10	90	150		0		51							97	38	43	
 Screw Smash EX	d,u+KK	12	5	29	KD	-14	150	200		-7		45							90	31	36	FRAME 3-16 ARMOR ACTIVE FRAME
-VT DASH STRAIGHT	VT 6P				2	-2																46P 6P
-VT DASH STRAIGHT END	VT 6P				KD	-13													81	22	27	46P 6P 6P 6P 6P
-VT SCREW SMASH	VT 6K				KD	-2													93	34	39	46P 6K
-VT SCREW SMASH END	VT 6K				KD	-21													89	30	35	46P 6P 6P 6P 6K
-VT DASH STRAIGHT EX	VT 46EX 6P				KD	-2																46EX 6P
-VT SCREW SMASH EX	VT 46EX 6K				KD	-2																46EX 6K
+Charging Buffalo	VT 6P				2	-2																46P 6P
+Charging Buffalo END	VT 6P				KD	-13													81	22	27	46P 6P 6P 6P 6P
+Charging Buffalo EX	VT 46EX 6P				KD	-2																46EX 6P
+Bursting Buffalo	VT 6K				KD	-2													93	34	39	46P 6K
+Bursting Buffalo END	VT 6K				KD	-21													89	30	35	46P 6P 6P 6P 6K
+Bursting Buffalo EX	VT 46EX 6K				KD	-2																46EX 6K
 TAP 1	PK HOLD 32 FRAME 0.5 SEC	30	2	22	1	-2	80	150	5	2		53										FRAME 3-18 PROJ INV LOW HURT BOX
 TAP 2	PK HOLD 121 FRAME 2 SEC	30	2	22	1	-2	100	150	5	2		53										FRAME 3-18 PROJ INV LOW HURT BOX
 TAP 3	PK HOLD 241 FRAME 4 SEC	30	2	22	1	-2	120	150	5	2		53										FRAME 3-18 PROJ INV LOW HURT BOX
