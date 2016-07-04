@@ -44,9 +44,9 @@ Dash Grand Blow LK	40b,f+LK	17	2	26	KD	-7	70	150		2		44							69	20	25
 Dash Grand Blow MK	40b,f+MK	18	2	26	KD	-7	80	150		2		45							69	20	25	
 Dash Grand Blow HK	40b,f+HK	19	2	26	KD	-7	90	150		2		46							69	20	25	
 Dash Grand Blow EX	40b,f+KK	11	2	23	KD	-2	140	200		4		35							71	22	27	
-Screw Smash LK	45d,u+LK	13	5	25	KD	-10	100	150		-2		42							87	28	33	
-Screw Smash MK	45d,u+MK	16	5	26	KD	-10	110	150		-3		46							89	30	35	
-Screw Smash HK	45d,u+HK	24	5	23	KD	-10	90	150		0		51							97	38	43	
+Screw Smash LK	45d,u+LK	13	5	25	KD	-10	100	150		-2		42							87	28	33	NO HIT CROUCH
+Screw Smash MK	45d,u+MK	16	5	26	KD	-10	110	150		-3		46							89	30	35	NO HIT CROUCH
+Screw Smash HK	45d,u+HK	24	5	23	KD	-10	90	150		0		51							97	38	43	NO HIT CROUCH
 Screw Smash EX	45d,u+KK	12	5	29	KD	-14	150	200		-7		45							90	31	36	FRAME 3-16 ARMOR ACTIVE FRAME
 Charging Buffalo	VT 6P				2	-2																46P 6P
 Charging Buffalo END	VT 6P				KD	-13													81	22	27	46P 6P 6P 6P 6P
