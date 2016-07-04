@@ -36,18 +36,18 @@ KKB	MP+MK	4	19	7								29										CANCEL 12F FRAME 4-22 PROJ INV
 KKB P	MP+MK 12F P	19	2	21	2	-4	60	100	17	11		41										CANCEL 12F FRAME 4-17 PROJ INV
 KKB K	MP+MK 12F K	29	2	20	5	-8	50	100	19	6		50										CANCEL 12F FRAME 4-26 PROJ INV
 VR	f+PPP	15	3	23	KD	-2	60	0														
-Dash Straight LP	b,f+LP	10	4	22	1	-4	80	150	3	-2		35							96	37	42	
-Dash Straight MP	b,f+MP	12	4	22	2	-6	90	150	3	-5		37										
-Dash Straight HP	b,f+HP	19	4	22	3	-7	100	150	5	-5		44										
-Dash Straight EX	b,f+PP	9	6	29	KD	1	150	200	7	4		43							92	33	38	TRACK
-Dash Grand Blow LK	b,f+LK	17	2	26	KD	-7	70	150		2		44							69	20	25	
-Dash Grand Blow MK	b,f+MK	18	2	26	KD	-7	80	150		2		45							69	20	25	
-Dash Grand Blow HK	b,f+HK	19	2	26	KD	-7	90	150		2		46							69	20	25	
-Dash Grand Blow EX	b,f+KK	11	2	23	KD	-2	140	200		4		35							71	22	27	
-Screw Smash LK	d,u+LK	13	5	25	KD	-10	100	150		-2		42							87	28	33	
-Screw Smash MK	d,u+MK	16	5	26	KD	-10	110	150		-3		46							89	30	35	
-Screw Smash HK	d,u+HK	24	5	23	KD	-10	90	150		0		51							97	38	43	
-Screw Smash EX	d,u+KK	12	5	29	KD	-14	150	200		-7		45							90	31	36	FRAME 3-16 ARMOR ACTIVE FRAME
+Dash Straight LP	40b,f+LP	10	4	22	1	-4	80	150	3	-2		35							96	37	42	
+Dash Straight MP	40b,f+MP	12	4	22	2	-6	90	150	3	-5		37										
+Dash Straight HP	40b,f+HP	19	4	22	3	-7	100	150	5	-5		44										
+Dash Straight EX	40b,f+PP	9	6	29	KD	1	150	200	7	4		43							92	33	38	TRACK
+Dash Grand Blow LK	40b,f+LK	17	2	26	KD	-7	70	150		2		44							69	20	25	
+Dash Grand Blow MK	40b,f+MK	18	2	26	KD	-7	80	150		2		45							69	20	25	
+Dash Grand Blow HK	40b,f+HK	19	2	26	KD	-7	90	150		2		46							69	20	25	
+Dash Grand Blow EX	40b,f+KK	11	2	23	KD	-2	140	200		4		35							71	22	27	
+Screw Smash LK	45d,u+LK	13	5	25	KD	-10	100	150		-2		42							87	28	33	
+Screw Smash MK	45d,u+MK	16	5	26	KD	-10	110	150		-3		46							89	30	35	
+Screw Smash HK	45d,u+HK	24	5	23	KD	-10	90	150		0		51							97	38	43	
+Screw Smash EX	45d,u+KK	12	5	29	KD	-14	150	200		-7		45							90	31	36	FRAME 3-16 ARMOR ACTIVE FRAME
 Charging Buffalo	VT 6P				2	-2																46P 6P
 Charging Buffalo END	VT 6P				KD	-13													81	22	27	46P 6P 6P 6P 6P
 Charging Buffalo EX	VT 46EX 6P				KD	-2																46EX 6P
