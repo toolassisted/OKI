@@ -1,11 +1,17 @@
 Move	Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	Damage	Stun	VTC Hit Adv	VTC Blk Adv	Hitstop	Total	Chip	CH hit adv.	CH Damage	CH Stun	Attack Level	Cancel Ability	KD Adv.	KDR Adv.	KDRB Adv.	Note
-stand LP		3	2	8	3	2	30	70				12		5								
+stand LP		3	2	8	3	2	30	70				12		5								5LP 12(34)(56789) CHAIN 12(34)(56789)/(10-12)
+stand LP CHAIN LP 1	5LP 5LP	3	2(7)2	8	3	2						21										
+stand LP CHAIN LP 2	5LP 5LP 5LP	3	2(7)2(7)2	8	3	2						30										
+stand LP CHAIN LP 3	5LP 5LP 5LP 5LP	3	2(7)2(7)2(7)2	8	3	2						39										
 stand MP		5	3	10	4	2	60	100				17		6								
 stand HP		12	2	19	0	-5	80	150				32		2								
 stand LK		4	3	9	0	-2	30	70				15		2								
 stand MK		5	2	15	0	-1	60	100				21		2								
 stand HK		10	3	16	1	-2	90	150				28		15								
-crouch LP		4	2	8	3	1	30	70				13		5								
+crouch LP		4	2	8	3	1	30	70				13		5								2LP 123(45)(6789) CHAIN 123(45)(678)/(9-13)
+crouch LP CHAIN LP 1	2LP 2LP	4	2(7)2	8	3	1						22										
+crouch LP CHAIN LP 2	2LP 2LP 2LP	4	2(7)2(6)2	8	3	1						30										
+crouch LP CHAIN LP 3	2LP 2LP 2LP 2LP	4	2(7)2(6)2(6)2	8	3	1						38										
 crouch MP		6	3	12	3	-1	60	100				20		5								
 crouch HP		9	4	16	2	-3	90	150				28		4								
 crouch LK		4	2	8	3	1	20	70				13		5								
