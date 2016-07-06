@@ -23,7 +23,7 @@ bull drop	f+HK	7	3(12)4	18	2	-4	40*80	50*100	43		7*13	H*M	-	2	48*80	60*100
 bad hammer	d+HP > HP	7	5	31	KD	-	90*54	150*135		15*10	-	H*H	-	KD	54	135	62	1	6	
 bad skull	N or f+LP+LK	5	2	18	KD	-	150	200		-	-	T	-	KD	150	200	71	12	12	
 bad chain	b+LP+LK	5	2	18	KD	-	75*75	100*100		-	-	T	-	-	75*75	100*100	74	15	15	
-break time	MP+MK		-	-		-			52		-	-	-	-	-	-				
+break time	MP+MK		-	52		-			52		-	-	-	-	-	-				
 banana time	b+MP+MK	50	-	9	29	2	10	0		4	2	H	-		12	0	29	29	29	
 drink time	d+MP+MK	50	-	11	28	10	10	0		4	2	H	-		12	0	28	28	28	
 enjoy time	HP+HK	12	16	7	KD	-			34	-	-	-	-	-	-	-	102	43	48	
