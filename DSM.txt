@@ -1,5 +1,5 @@
 Move	Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	 Damage	Stun	Total 	Hitstop	Chip	Attack Level	Cancel Ability	CH hit adv.	CH Damage	CH Stun	KD Adv.	KDR Adv.	KDRB Adv.	Note
-stand LP		3	4	8	5	3	30	70	13	8	0	H	SP,V	7	36	84				
+stand LP		3	3	8	5	3	30	70	13	8	0	H	SP,V	7	36	84				
 stand MP		12	2	17	0	-4	60	100	30	12	10	H	V	2	72	120				
 stand HP		20	3	22	-3	-6	60	150	44	15	15	L	V	-1	108	180				
 stand LK		5	3	7	3	2	40	70	14	8	0	H	SP,V	5	48	84				
