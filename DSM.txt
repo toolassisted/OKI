@@ -1,16 +1,16 @@
 Move	Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	 Damage	Stun	Total 	Hitstop	Chip	Attack Level	Cancel Ability	CH hit adv.	CH Damage	CH Stun	KD Adv.	KDR Adv.	KDRB Adv.	Note
-stand LP		3	4	8	5	3	30	70		8	0	H	SP,V	7	36	84				
-stand MP		12	2	17	0	-4	60	100		12	10	H	V	2	72	120				
-stand HP		20	3	22	-3	-6	60	150		15	15	L	V	-1	108	180				
-stand LK		5	3	7	3	2	40	70		8	0	H	SP,V	5	48	84				
-stand MK		10	2	15	0	-4	50	100		12	8	H	V	2	60	120				
-stand HK		16	2	23	-3	-5	90	150		15	15	H	V	24	108	180				
-crouch LP		4	2	8	4	1	30	70		8	0	H	SP,V	6	36	84				
-crouch MP		8	4	19	-1	-3	60	100		12	10	H	SP,V	1	72	120				
-crouch HP		8	3	13	7	3	90	150		15	15	H	SP,V	9	108	180				
-crouch LK		4	6	14	-4	-7	20	70		8	0	L	V	-2	24	84				
-crouch MK		7	11	12	-3	-8	50	100		12	8	L	V	-1	60	120				
-crouch HK		12	16	19	KD	-21	90	150		15	15	L	V	KD	108	180	57	8	13	
+stand LP		3	4	8	5	3	30	70	13	8	0	H	SP,V	7	36	84				
+stand MP		12	2	17	0	-4	60	100	30	12	10	H	V	2	72	120				
+stand HP		20	3	22	-3	-6	60	150	44	15	15	L	V	-1	108	180				
+stand LK		5	3	7	3	2	40	70	14	8	0	H	SP,V	5	48	84				
+stand MK		10	2	15	0	-4	50	100	26	12	8	H	V	2	60	120				
+stand HK		16	2	21	-3	-5	90	150	38	15	15	H	V	24	108	180				
+crouch LP		4	2	8	4	1	30	70	13	8	0	H	SP,V	6	36	84				
+crouch MP		8	4	19	-1	-3	60	100	30	12	10	H	SP,V	1	72	120				
+crouch HP		8	3	13	7	3	90	150	23	15	15	H	SP,V	9	108	180				
+crouch LK		4	6	14	-4	-7	20	70	23	8	0	L	V	-2	24	84				
+crouch MK		7	11	12	-3	-8	50	100	29	12	8	L	V	-1	60	120				
+crouch HK		12	16	19	KD	-21	90	150	47	15	15	L	V	KD	108	180	58	9	14	BUG 1F NO MOVE
 jump LP		5	5	-	-	-	40	70		8	0	M	-	-	48	84				
 jump MP		6	4	-	-	-	70	100		10	-	M	-	-	84	120				
 jump HP		7	4	-	-	-	90	150		15	15	M	-	-	108	180				
@@ -18,34 +18,36 @@ jump LK		4	5	-	-	-	40	70		8	0	M	-	-	48	84
 jump MK		6	6	-	-	-	70	100		12	12	M	-	-	84	120				
 jump HK		12	6	-	-	-	90	150		15	15	M	-	-	108	180				
 drill kick	d+K (air)	12	-	-	-	-	60	70		12	10	H	-	-	72	84				
-yoga anvil	b+HP	12	6	24	-3	-8	90	150		15	15	H	SP,V	KD 95	108	180				
-yoga upper	b+MP	8	4	11	3	0	60	100		15	10	H	SP,V	5	72	120				
-divine kick	b+MK	6	3	15	3	1	60	100		12	10	H	SP,V	5	72	120				
-yoga rocket	LP+LK	5	2	18	KD	-	120	170		-	-	T	-	KD	120	170	77	28	28	
-yoga hoop	b+LP+LK	5	2	18	KD	-	130	200		-	-	T	-	KD	130	200	76	17	17	
-yoga burner	HP+HK	13	3	25	KD	4	100	150	39	8	25	-	-	KD	120	180	100	41	46	
-yoga float	MP+MK or f+MP+MK	29?							107	-	-	-	-	-	-	-				
-yoga float(airborne)	MP+MK (air)	16?								-	-	-	-	-	-	-				
-yoga mala	f+PPP	15	2	37	KD	-2	100	0				H					86	27	32	
-yoga fire LP	qcf+LP	15	-	38	-6	-8	50	100		15	9	H	CA	-4	60	120				
-yoga fire MP	qcf+MP	15	-	38	-6	-8	50	100		15	9	H	CA	-4	60	120				
-yoga fire HP	qcf+HP	15	-	38	-6	-8	50	100		15	9	H	CA	-4	60	120				
-yoga fire EX	qcf+PP	14	-	32	4	5	40*60	40*60		6*8	7*10	H*H	-	4	48*60	48*60				
-yoga flame LP	hcb+LP	13	23	22	KD	-3	70	100		14	18	H	CA	KD	84	120	99	40	45	
-yoga flame MP	hcb+MP	18	27	15	KD	-2	80	150		14	20	H	CA	KD	96	180	102	43	48	
-yoga flame HP	hcb+HP	25	32	19	KD	3	90	200		14	23	H	CA	KD	108	240	106	47	52	
-yoga flame EX	hcb+PP	12	32	24	KD	-3	30*30*20*40	50*50*50*50		2*0*0*8	8x3*10	H	-	KD	36*30*20*40	60*50*50*50	118	57	62	
+yoga anvil	b+HP	12	6	24	-3	-8	90	150	41	15	15	H	SP,V	KD 95	108	180	95	36	41	
+yoga upper	b+MP	8	4	16	3	0	60	100	27	15	10	H	SP,V	5	72	120				
+divine kick	b+MK	6	3	15	3	1	60	100	23	12	10	H	SP,V	5	72	120				
+yoga rocket	LP+LK	5	2	18	KD	-	120	170	24	-	-	T	-	KD	120	170	77	29	29	BUG 1F NO MOVE
+yoga hoop	b+LP+LK	5	2	18	KD	-	130	200		-	-	T	-	KD	130	200	77	18	18	BUG 1F NO MOVE
+yoga burner	HP+HK	13	3	24	KD	4	100	150	39	8	25	-	-	KD	120	180	100	41	46	
+yoga float	MP+MK or f+MP+MK	30	1	77					107	-	-	-	-	-	-	-				
+yoga float CANCEL	MP+MK or f+MP+MK	30	1	25					55	-	-	-	-	-	-	-				
+yoga float(airborne)	MP+MK (air)			22						-	-	-	-	-	-	-				
+yoga mala	f+PPP	15	2	23	KD	-2	100	0				H					86	27	32	
+yoga fire LP	qcf+LP	15	1	36	-6	-8	50	100	51	15	9	H	CA	-4	60	120				
+yoga fire MP	qcf+MP	15	1	36	-6	-8	50	100	-	15	9	H	CA	-4	60	120				
+yoga fire HP	qcf+HP	15	1	36	-6	-8	50	100	-	15	9	H	CA	-4	60	120				
+yoga fire EX	qcf+PP	14	1	30	4	5	40*60	40*60	44	6*8	7*10	H*H	-	4	48*60	48*60				
+yoga flame LP	hcb+LP	13	23	21	KD	-3	70	100	56	14	18	H	CA	KD	84	120	99	40	45	
+yoga flame MP	hcb+MP	18	27	14	KD	-2	80	150	58	14	20	H	CA	KD	96	180	102	43	48	
+yoga flame HP	hcb+HP	25	32	18	KD	3	90	200	74	14	23	H	CA	KD	108	240	106	47	52	
+yoga flame EX	hcb+PP	12	32	23	KD	-3	30*30*20*40	50*50*50*50	66	2*0*0*8	8x3*10	H	-	KD	36*30*20*40	60*50*50*50	116	57	62	
 yoga gale LP	hcb+LP (air)	13	14	-	KD	-	80	200		14	20	H	CA	KD	96	240				
 yoga gale MP	hcb+MP (air)	15	16	-	KD	-	90	200		14	23	H	CA	KD	108	240				
 yoga gale HP	hcb+HP (air)	17	18	-	KD	-	100	200		14	25	H	CA	KD	120	240				
-yoga gale EX	hcb+PP (air)	10	20	-	KD	-	45*45*36	80*80*80		4*4*4	13*10*10	H	-	KD	54*45*36	96*80*80				
-yoga teleport	f,d,df or b,d,db+PPP or KKK	8?				-			53	-	-	-	-	-	-	-				
-yoga sunburst	qcf,qcf+P (can hold) (air)	10			KD	9	320	0		6x5?	8x4*20	H		KD	330	0	108	49	54	
+yoga gale EX	hcb+PP (air)	10	18	-	KD	-	45*45*36	80*80*80		4*4*4	13*10*10	H	-	KD	54*45*36	96*80*80				
+yoga teleport	b,d,db+PPP or f,d,df+PPP or KKK			53		-			53	-	-	-	-	-	-	-				
+yoga teleport BKKK	b,d,db+KKK			58		-			58	-	-	-	-	-	-	-				
+yoga sunburst	qcf,qcf+P (can hold) (air)	10	1	40	KD	9	320	0	50	6x5?	8x4*20	H		KD	330	0	108	49	54	
 health	900																			
 stun	900																			
-taunt	61																			
-jump	71(3+64+4)		1						72											
-jump forward	71(3+64+4)		1						71											
-jump backwards	71(3+64+4)		1						72											
+taunt	61								61											
+jump	72(4+64+4)	68	1	4					72											
+jump forward	71(3+64+4)	67	1	4					71											
+jump backwards	72(4+64+4)	68	1	4					72											
 dash forward	21		21						21											
 dash backwards	25		25						25											
