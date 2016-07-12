@@ -82,3 +82,4 @@ VT bull revenger HK	hcb+HK	43	2	28	KD	-	84*70*60	100*100*30				T	-	KD
 VT bull revenger EX	hcb+KK	25	11	47	KD	-	60*60*120	50*50*130				T	-	KD						
 VT skip to my chain	qcf,qcf+P	6	5	60	KD	-30	60x3*240	0*0*0*0				H	-	KD						
 2HP BULLHORN																	91	32	37	
+2HP VT BULLHORN																	97	38	43	
