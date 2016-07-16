@@ -1,14 +1,23 @@
 Move	Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	 Damage	Stun	Total 	Hitstop	Chip	Attack Level	Cancel Ability	CH hit adv.	CH Damage	CH Stun	KD Adv.	KDR Adv.	KDRB Adv.	Note
-stand LP		4	2	6	4	2	30	70	11	8	0	H	CH,SP,V	6	36	84				
+stand LP		4	2	6	4	2	30	70	11	8	0	H	CH,SP,V	6	36	84				5LP 123(45)(6789) CHAIN 123(45)(6789)/(10-11)
+stand LP CHAIN LP 1	5LP 5LP	4	2(7)2	6	4	2	30	70	20	8	0	H	CH,SP,V	6	36	84				
+stand LP CHAIN LP 2	5LP 5LP 5LP	4	2(7)2(7)2	6	4	2	30	70	29	8	0	H	CH,SP,V	6	36	84				
+stand LP CHAIN LP 3	5LP 5LP 5LP 5LP	4	2(7)2(7)2(7)2	6	4	2	30	70	38	8	0	H	CH,SP,V	6	36	84				
 stand MP		6	3	9	7	2	60	100	17	12	10	H	SP,V	9	72	120				
 stand HP		6	2	20	1	-3	80	150	27	15	13	H	SP,V	3	96	180				
 stand LK		4	2	7	2	1	40	70	12	8	0	H	V	4	48	84				
 stand MK		9	3	13	2	-2	60	100	24	12	10	H	V	4	72	120				
 stand HK		9	4	17	2	-2	90	150	29	15	15	H	V	20	108	180				
-crouch LP		3	2	7	4	2	20	70	11	8	0	H	CH,SP,V	6	24	84				
+crouch LP		3	2	7	4	2	20	70	11	8	0	H	CH,SP,V	6	24	84				2LP 12(34)(567) CHAIN 12(34)(567)/(8-11)
+crouch LP CHAIN LP 1	2LP 2LP	3	2(5)2	7	4	2	20	70	18	8	0	H	CH,SP,V	6	24	84				
+crouch LP CHAIN LP 2	2LP 2LP 2LP	3	2(5)2(5)2	7	4	2	20	70	25	8	0	H	CH,SP,V	6	24	84				
+crouch LP CHAIN LP 3	2LP 2LP 2LP 2LP	3	2(5)2(5)2(5)2	7	4	2	20	70	32	8	0	H	CH,SP,V	6	24	84				
 crouch MP		5	3	10	5	1	60	100	17	12	10	H	SP,V	7	72	120				
 crouch HP		9	3	20	0	-2	90	150	31	15	15	H	CA,V	2	108	180				
-crouch LK		4	2	9	1	-1	20	70	4	8	0	L	CH,V	3	24	84				
+crouch LK		4	2	9	1	-1	20	70	14	8	0	L	CH,V	3	24	84				2LK 123(45)(67890) CHAIN 12(34)(56789)/(10-13)
+crouch LK CHAIN LK 1	2LK 2LK	4	2(7)2	9	1	-1	20	70	23	8	0	L	CH,V	3	24	84				
+crouch LK CHAIN LK 2	2LK 2LK 2LK	4	2(7)2(7)2	9	1	-1	20	70	32	8	0	L	CH,V	3	24	84				
+crouch LK CHAIN LK 3	2LK 2LK 2LK 2LK	4	2(7)2(7)2(7)2	9	1	-1	20	70	41	8	0	L	CH,V	3	24	84				
 crouch MK		7	2	14	0	-3	50	100	22	12	8	L	SP,V	2	60	120				
 crouch HK		7	2	20	KD	-12	100	150	30	15	17	L	V	KD	120	180	69	20	25	
 jump LP		3	5	-	-	-	40	70		8	0	M	-	-	48	84				
@@ -48,7 +57,7 @@ fatal leg twister	hcf+P > LP+LK near ground									-			-
 cross scissors pressure	hcf+P > LP+LK in air	4			KD		150	200		-	-	T	-	KD	150	200	55	6	6	
 cannon strike	hcf+P > K	15	11	-	-		60	100		14	15	H	-	-	72	120				
 cannon strike EX	hcf+PP > K	13	11	-	-		60	100		14	15	H	-	-	72	120				
-cross stinger assault	qcf,qcf+K	4			KD	-22?	330	0		-	50	H	-	KD	340	0	93	44		
+cross stinger assault	qcf,qcf+K	4			KD	-22?	330	0		-	50	H	-	KD	340	0	93	44	44	
 health	900																			
 stun	900																			
 taunt	61																			
