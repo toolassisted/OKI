@@ -352,9 +352,8 @@
 </pre>
 </div>
 <div id="KILLS"></div>
-<div id="FRAMES"></div>
-<br />
-<div id="TOTALS"></div>
+<div id="FRAMES" class="TABLES"></div>
+<div id="TOTALS" class="TABLES"></div>
 <pre>
 <div id="FRAMEKILLS"></div>
 </pre>
@@ -498,7 +497,7 @@ var CHARS = [
 "RSD", "RYU", //"RYU2", 
 "VEG", //"VEG2",
 "ZGF",
-"RESET OKI","FRAME KILL","HELP"
+"RESET OKI","FRAME KILL","HELP","TABLE"
 ]
 ];
 
@@ -511,6 +510,12 @@ var CHARS = [
           //var win = window.open("https://twitter.com/TOOLASSlSTED/status/731544334781300736", '_blank');
           //win.focus();
           d3.select("#YUNOC").node().scrollIntoView();
+          return;
+        } else if (d == "TABLE") {
+          var t1 = d3.selectAll(".TABLES")[0][0];
+          var t2 = d3.selectAll(".TABLES")[0][1];
+          var t0 = t1.parentNode;
+          t0.insertBefore(t2,t1);
           return;
         } else if (d == "RESET OKI") {
           OKILIST = [{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
@@ -704,7 +709,8 @@ function UCGILLEY(rows){
   var FRAMETABLE = FRAMES.append("div").append("table").classed("FRAMES",true);
   var KDTABLE = KD.append("div").append("table").classed("FRAMES",true);
   var TOTALSTABLE = TOTALS.append("div").append("table").classed("FRAMES",true);
-
+  FRAMES.append("br");
+  TOTALS.append("br");
 
   var keys = d3.keys(rows[0]);
   
