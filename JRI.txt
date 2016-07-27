@@ -1,0 +1,68 @@
+Move	Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	Damage	Stun	VTC Hit Adv	VTC Blk Adv	Hitstop	Total	Chip	CH hit adv.	VTC CH hit adv.	CH Damage	CH Stun	Attack Level	Cancel Ability	KD Adv.	KDR Adv.	KDRB Adv.	Note
+stand LP		3	2	7	4	2	30	70	1	-1		11											
+stand LP CHAIN LP 1	5LP 5LP	3	2	7	4	2	30	70	1	-1													
+stand LP CHAIN LP 2	5LP 5LP 5LP	3	2	7	4	2	30	70	1	-1													
+stand LP CHAIN LP 3	5LP 5LP 5LP 5LP	3	2	7	4	2	30	70	1	-1													
+stand MP		5	3	11	4	2	60	100	6	4		18											
+stand HP		8	3	17	2	-3	80	150	10	5		27											
+stand LK		4	2	10	4	1	30	70	4	1		15											
+stand MK		6	1(1)3	15	1	-4	70	100	9	2		25											
+stand HK		14	3	17	1	-4	80	150	0	-5		33		20	19								
+crouch LP		4	2	7	4	2	30	70	1	-1		12											
+crouch LP CHAIN LP 1	2LP 2LP	4	2	7	4	2	30	70	1	-1													
+crouch LP CHAIN LP 2	2LP 2LP 2LP	4	2	7	4	2	30	70	1	-1													
+crouch LP CHAIN LP 3	2LP 2LP 2LP 2LP	4	2	7	4	2	30	70	1	-1													
+crouch MP		5	2	17	2	0	60	100	9	4		23											
+crouch HP		10	2	21	3	-5	90	150	14	6		32		21	32								VT 2HP HIT BOX NO SAME
+crouch LK		3	2	10	2	0	20	70	1	-1		14											
+crouch LK CHAIN LK 1	2LK 2LK	3	2	10	2	0	20	70	1	-1													
+crouch LK CHAIN LK 2	2LK 2LK 2LK	3	2	10	2	0	20	70	1	-1													
+crouch LK CHAIN LK 3	2LK 2LK 2LK 2LK	3	2	10	2	0	20	70	1	-1													
+crouch MK		6	2	14	1	-3	50	100	5	1		21											
+crouch HK		8	2	23	KD	-12	100	150	KD	1		32								68	19	24	
+crouch HK VT		8	2	23	KD	1	100	150												81	32	37	
+6MK		22	2	19	0	-4	60	100				42											
+4HK		7	2(7)3	15	-5	-2	80	150	8	2		33											
+TC 5MP 4/6HP		5	3		KD	-6	114	190	KD	10										102	43	48	
+TC 5MP 4/6HP VT		5	3		KD	10	114	190												118	59	64	
+jump LP		4																					
+jump MP		6																					
+jump HP		8																					
+jump LK		4																					
+jump MK		7																					
+jump HK		8																					
+TC 8MP 8HK		6																					
+THROW	LP+LK	5	2	18								24								57	8	8	
+THROW BACK	b+LP+LK	5	2	18																66	7	7	
+THROW AIR 8JUMP	LP+LK	5	2									51											EARLY AIR THROW WHIFF 54
+THROW AIR 9JUMP	LP+LK	5	2									49											EARLY AIR THROW WHIFF 52
+THROW AIR 7JUMP	LP+LK	5	2									50											EARLY AIR THROW WHIFF 53
+VT	HP+HK	1	1	5								6											FRAME 1 ALL INV
+VS	MP+MK																						
+VS HOLD	MP+MK HOLD																						
+VS VS	MP+MK HOLD																						
+VR	f+KKK	15	1	28	KD	-2														72	13	15	
+Fuharenkyaku LK	qcf+LK					-2																	
+Fuharenkyaku MK	qcf+MK					-2																	
+Fuharenkyaku HK	qcf+HK					-2																	
+Fuharenkyaku EX	qcf+KK					-2																	
+Fuharenkyaku LK RELEASE	qcf+LK					-2																	
+Fuharenkyaku MK RELEASE	qcf+MK					-6																	
+Fuharenkyaku HK RELEASE	qcf+HK					-11																	
+Tensenrin LK	f,d,df+LK					-3																	
+Tensenrin MK	f,d,df+MK					-29																	
+Tensenrin HK	f,d,df+HK					-32																	
+Tensenrin EX	f,d,df+KK					-31																	
+Ryodansatsu LK	qcb+LK					-6																	
+Ryodansatsu MK	qcb+MK					-6																	
+Ryodansatsu HK	qcb+HK					-6																	
+Ryodansatsu EX	qcb+KK					-2																	
+CA	qcb,qcb+K	9	1	58	KD	-15						67											
+health	950																						
+stun	950																						
+taunt	61											61											
+jump	47(4+39+4)	43	1	4								47											EARLY WHIFF 50
+jump forward	45(3+39+4)	41	1	4								46											EARLY WHIFF 48
+jump backwards	46(4+39+4)	42	1	4								47											EARLY WHIFF 49
+dash forward	16		16									17											
+dash backwards	24		24									21											
