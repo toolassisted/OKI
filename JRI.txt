@@ -1,87 +1,87 @@
-Move	Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	Damage	Stun	VTC Hit Adv	VTC Blk Adv	Hitstop	Total	Chip	CH hit adv.	VTC CH hit adv.	CH Damage	CH Stun	Attack Level	Cancel Ability	KD Adv.	KDR Adv.	KDRB Adv.	Note
-stand LP		3	2	7	4	2	30	70	1	-1		11											5LP 12(34)(5678) CHAIN 12(34)(5678)/(10-11)
-stand LP CHAIN LP 1	5LP 5LP	3	2(6)2	7	4	2	30	70	1	-1		19											
-stand LP CHAIN LP 2	5LP 5LP 5LP	3	2(6)2(6)2	7	4	2	30	70	1	-1		27											
-stand LP CHAIN LP 3	5LP 5LP 5LP 5LP	3	2(6)2(6)2(6)2	7	4	2	30	70	1	-1		35											
-stand MP		5	3	11	4	2	60	100	6	4		18											
-stand HP		8	3	17	2	-3	80	150	10	5		27											
-stand LK		4	2	10	4	1	30	70	4	1		15											
-stand MK		6	1(1)3	15	1	-4	70	100	9	2		25											
-stand HK		14	3	17	1	-4	80	150	0	-5		33		20	19								
-crouch LP		4	2	7	4	2	30	70	1	-1		12											2LP 123(45)(6789) CHAIN 123(45)(6789)/(10-12)
-crouch LP CHAIN LP 1	2LP 2LP	4	2(7)2	7	4	2	30	70	1	-1		21											
-crouch LP CHAIN LP 2	2LP 2LP 2LP	4	2(7)2(7)2	7	4	2	30	70	1	-1		30											
-crouch LP CHAIN LP 3	2LP 2LP 2LP 2LP	4	2(7)2(7)2(7)2	7	4	2	30	70	1	-1		39											
-crouch MP		5	2	17	2	0	60	100	9	4		23											
-crouch HP		10	2	21	3	-5	90	150	14	6		32		21	32								VT 2HP HIT BOX NO SAME
-crouch LK		3	2	10	2	0	20	70	1	-1		14											2LP 12(34)(5678901) CHAIN 12(34)(5678901)/(12-14)
-crouch LK CHAIN LK 1	2LK 2LK	3	2(9)2	10	2	0	20	70	1	-1		25											
-crouch LK CHAIN LK 2	2LK 2LK 2LK	3	2(9)2(9)2	10	2	0	20	70	1	-1		36											
-crouch LK CHAIN LK 3	2LK 2LK 2LK 2LK	3	2(9)2(9)2(9)2	10	2	0	20	70	1	-1		47											
-crouch MK		6	2	14	1	-3	50	100	5	1		21											
-crouch HK		8	2	23	KD	-12	100	150	KD	1		32								68	19	24	
-crouch HK VTC		8	2	23	KD	1	100	150												81	32	37	
-6MK		22	2	19	0	-4	60	100				42											
-4HK		7	2(7)3	15	4	-2	80	150	8	2		33											[ACTIVE FRAME 16] HIT AIR
-TC 5MP 4/6HP		5	3		KD	-6	114	190	KD	10		-								102	43	48	
-TC 5MP 4/6HP VTC		5	3		KD	10	114	190				-								118	59	64	
-jump LP		4	5																				
-jump MP		6	4																				
-jump HP		8	5																				
-jump LK		4	7																				
-jump MK		7	5																				
-jump HK		8	5																				
-TC 8MP 8HK		6																					
-THROW	LP+LK	5	2	18	KD							24								57	8	8	
-THROW BACK	b+LP+LK	5	2	18	KD							-								66	7	7	
-THROW AIR 8JUMP	LP+LK	5	2		KD							51											EARLY AIR THROW WHIFF 54
-THROW AIR 9JUMP	LP+LK	5	2		KD							49											EARLY AIR THROW WHIFF 52
-THROW AIR 7JUMP	LP+LK	5	2		KD							50											EARLY AIR THROW WHIFF 53
-VT	HP+HK	1	1	5								6											[FRAME 1] ALL INV
-VS	MP+MK HOLD 1-12 FRAME	46	2	25	KD	-10						72								83	24	29	
-VS HOLD 13F	MP+MK HOLD 13 FRAME	47	2	25	KD	-10						73								83	24	29	
-VS HOLD 40F	MP+MK HOLD 40 FRAME	74	2	25	KD	-10						100								83	24	29	
-VS HOLD 41F	MP+MK HOLD 41 FRAME	47	13(16)2	33	KD	-18						110								75	16	21	[ACTIVE FRAME] THROW INV PROJ INV [ACTIVE FRAME] TRACK
-VS HOLD 74F	MP+MK HOLD 74 FRAME	80	15(16)2	33	KD	-18						145								75	16	21	[ACTIVE FRAME] THROW INV PROJ INV [ACTIVE FRAME] TRACK
-VS CANCEL	MP+MK HOLD 12F MP+MK	13	1	25								39											MP+MK HOLD 1-11F = NO CANCEL
-VS 74F CANCEL	MP+MK HOLD 74F MP+MK	75	1	25								100											
-VS DASH	MP+MK HOLD 21F DASH	21	1	16								37											MP+MK HOLD 1-20F = NO DASH CANCEL
-VS BACK DASH	MP+MK HOLD 21F BACK DASH	21	1	24								45											MP+MK HOLD 1-20F = NO DASH CANCEL
-VS 74F DASH	MP+MK HOLD 74F DASH	74	1	16								90											MP+MK HOLD 75F = NO DASH CANCEL
-VS 74F BACK DASH	MP+MK HOLD 74F BACK DASH	74	1	24								98											MP+MK HOLD 75F = NO DASH CANCEL
-VR	f+KKK	15	1	28	KD	-2														72	13	15	
-Fuharenkyaku LK	qcf+LK	10	3	18	KD	-2			KD	7		30								99	40	45	[ACTIVE FRAME] HIT PROJ BOX
-Fuharenkyaku MK	qcf+MK	10	3	18	KD	-2			KD	7		-								99	40	45	[ACTIVE FRAME] HIT PROJ BOX
-Fuharenkyaku HK	qcf+HK	10	3	18	KD	-2			KD	7		-								99	40	45	[ACTIVE FRAME] HIT PROJ BOX
-Fuharenkyaku EX	qcf+KK	7	2(17)2(12)2(20)2	15	KD	-2			KD	0		78								80	21	26	[ACTIVE FRAME] HIT PROJ BOX
-Fuharenkyaku LK RELEASE	qcf+LK	14	1	23	2	-2			13	10		37											[FRAME 14-73] PROJ ACTIVE 60F
-Fuharenkyaku MK RELEASE	qcf+MK	21	2	19	6	-6			13	1		41											[ACTIVE FRAME] HIT PROJ BOX [FRAME 8-22] AIR
-Fuharenkyaku HK RELEASE	qcf+HK	10	2(14)2	31	KD	-11			13(KD)	6(8)		58								86	27	32	[ACTIVE FRAME] HIT PROJ BOX
-Fuharenkyaku LK VTC	qcf+LK	10	3	18	KD	7						-								108	49	54	[ACTIVE FRAME] HIT PROJ BOX
-Fuharenkyaku MK VTC	qcf+MK	10	3	18	KD	7						-								108	49	54	[ACTIVE FRAME] HIT PROJ BOX
-Fuharenkyaku HK VTC	qcf+HK	10	3	18	KD	7						-								108	49	54	[ACTIVE FRAME] HIT PROJ BOX
-Fuharenkyaku EX VTC	qcf+KK	7	2(17)2(12)2(20)2	15	KD	0						-								82	83	28	[ACTIVE FRAME] HIT PROJ BOX
-Fuharenkyaku LK RELEASE VTC	qcf+LK	14	1	23	13	10						-											[FRAME 14-73] PROJ ACTIVE 60F
-Fuharenkyaku MK RELEASE VTC	qcf+MK	21	2	19	13	1						-											[ACTIVE FRAME] HIT PROJ BOX [FRAME 8-22] AIR
-Fuharenkyaku HK RELEASE VTC	qcf+HK	10	2(14)2	31	13(KD)	6(8)						-								105	46	51	[ACTIVE FRAME] HIT PROJ BOX
-Tensenrin LK	f,d,df+LK	7	3(2)2	22	1	-3						35											[ACTIVE FRAME 12-13] NO HIT CROUCH [CROUCH BLK] -8 ADV
-Tensenrin MK	f,d,df+MK	6	2(3)2(3)	38	KD	-29						55								87	28	33	[FRAME 1-5] THROW INV [FRAME 6-7] ALL INV [FRAME 8-39] AIR [ACTIVE FRAME 16-17] HIT AIR
-Tensenrin HK	f,d,df+HK	7	2(2)2(2)2(2)2	38	KD	-32						58								87	28	33	[FRAME 9-42] AIR [ACTIVE FRAME 11-12] NO HIT CROUCH [ACTIVE FRAME 15-16] HIT AIR [ACTIVE FRAME 19-20] HIT AIR
-Tensenrin EX	f,d,df+KK	7	2(2)2(2)2(2)2	38	KD	-31						58								63	4	9	[FRAME1-8] ALL INV [FRAME 8-40] AIR [ACTIVE FRAME 15-16] HIT AIR [ACTIVE FRAME 19-20] HIT AIR
-Ryodansatsu LK	qcb+LK	20	3	24	KD	-6			KD	9		46								83	24	29	[FRAME 5-18] AIR
-Ryodansatsu MK	qcb+MK	21	3	24	KD	-6			KD	9		47								83	24	29	[FRAME 5-19] AIR
-Ryodansatsu HK	qcb+HK	25	3	24	KD	-6			KD	9		51								83	24	29	[FRAME 5-23] AIR
-Ryodansatsu EX	qcb+KK	25	3	20	KD	-2			KD	7		47								101	42	47	[FRAME 5-23] AIR [FRAME 5-27] PROJ INV
-Ryodansatsu LK VTC	qcb+LK	20	3	24	KD	9						-								98	39	44	[FRAME 5-18] AIR
-Ryodansatsu MK VTC	qcb+MK	21	3	24	KD	9						-								98	39	44	[FRAME 5-19] AIR
-Ryodansatsu HK VTC	qcb+HK	25	3	24	KD	9						-								98	39	44	[FRAME 5-23] AIR
-Ryodansatsu EX VTC	qcb+KK	25	3	20	KD	7														110	51	56	[FRAME 5-23] AIR [FRAME 5-27] PROJ INV
-CA	qcb,qcb+K	9	1	58	KD	-15						67								82	23	28	[FRAME 1-8] ALL INV [FRAME 9-28] PROJ ACTIVE 20F
-health	950																						
-stun	950																						
-taunt	61											61											
-jump	47(4+39+4)	43	1	4								47											EARLY WHIFF 50
-jump forward	45(3+39+4)	41	1	4								45											EARLY WHIFF 48
-jump backwards	46(4+39+4)	42	1	4								46											EARLY WHIFF 49
-dash forward	16		16									16											
-dash backwards	24		24									24											
+Move	Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	Damage	Stun	VTC Hit Adv	VTC Blk Adv	Hitstop	Total	Chip	CH hit adv.	VTC CH hit adv.	KD Adv.	KDR Adv.	KDRB Adv.	Note
+stand LP		3	2	7	4	2	30	70	1	-1		11							5LP 12(34)(5678) CHAIN 12(34)(5678)/(10-11)
+stand LP CHAIN LP 1	5LP 5LP	3	2(6)2	7	4	2	30	70	1	-1		19							
+stand LP CHAIN LP 2	5LP 5LP 5LP	3	2(6)2(6)2	7	4	2	30	70	1	-1		27							
+stand LP CHAIN LP 3	5LP 5LP 5LP 5LP	3	2(6)2(6)2(6)2	7	4	2	30	70	1	-1		35							
+stand MP		5	3	11	4	2	60	100	6	4		18							
+stand HP		8	3	17	2	-3	80	150	10	5		27							
+stand LK		4	2	10	4	1	30	70	4	1		15							
+stand MK		6	1(1)3	15	1	-4	70	100	9	2		25							
+stand HK		14	3	17	1	-4	80	150	0	-5		33		20	19				
+crouch LP		4	2	7	4	2	30	70	1	-1		12							2LP 123(45)(6789) CHAIN 123(45)(6789)/(10-12)
+crouch LP CHAIN LP 1	2LP 2LP	4	2(7)2	7	4	2	30	70	1	-1		21							
+crouch LP CHAIN LP 2	2LP 2LP 2LP	4	2(7)2(7)2	7	4	2	30	70	1	-1		30							
+crouch LP CHAIN LP 3	2LP 2LP 2LP 2LP	4	2(7)2(7)2(7)2	7	4	2	30	70	1	-1		39							
+crouch MP		5	2	17	2	0	60	100	9	4		23							
+crouch HP		10	2	21	3	-5	90	150	14	6		32		21	32				VT 2HP HIT BOX NO SAME
+crouch LK		3	2	10	2	0	20	70	1	-1		14							2LP 12(34)(5678901) CHAIN 12(34)(5678901)/(12-14)
+crouch LK CHAIN LK 1	2LK 2LK	3	2(9)2	10	2	0	20	70	1	-1		25							
+crouch LK CHAIN LK 2	2LK 2LK 2LK	3	2(9)2(9)2	10	2	0	20	70	1	-1		36							
+crouch LK CHAIN LK 3	2LK 2LK 2LK 2LK	3	2(9)2(9)2(9)2	10	2	0	20	70	1	-1		47							
+crouch MK		6	2	14	1	-3	50	100	5	1		21							
+crouch HK		8	2	23	KD	-12	100	150	KD	1		32				68	19	24	
+crouch HK VTC		8	2	23	KD	1	100	150								81	32	37	
+6MK		22	2	19	0	-4	60	100				42							
+4HK		7	2(7)3	15	4	-2	80	150	8	2		33							[ACTIVE FRAME 16] HIT AIR
+TC 5MP 4/6HP		5	3		KD	-6	114	190	KD	10		-				102	43	48	
+TC 5MP 4/6HP VTC		5	3		KD	10	114	190				-				118	59	64	
+jump LP		4	5																
+jump MP		6	4																
+jump HP		8	5																
+jump LK		4	7																
+jump MK		7	5																
+jump HK		8	5																
+TC 8MP 8HK		6																	
+THROW	LP+LK	5	2	18	KD							24				57	8	8	
+THROW BACK	b+LP+LK	5	2	18	KD							-				66	7	7	
+THROW AIR 8JUMP	LP+LK	5	2		KD							51							EARLY AIR THROW WHIFF 54
+THROW AIR 9JUMP	LP+LK	5	2		KD							49							EARLY AIR THROW WHIFF 52
+THROW AIR 7JUMP	LP+LK	5	2		KD							50							EARLY AIR THROW WHIFF 53
+VT	HP+HK	1	1	5								6							[FRAME 1] ALL INV
+VS	MP+MK HOLD 1-12 FRAME	46	2	25	KD	-10						72				83	24	29	
+VS HOLD 13F	MP+MK HOLD 13 FRAME	47	2	25	KD	-10						73				83	24	29	
+VS HOLD 40F	MP+MK HOLD 40 FRAME	74	2	25	KD	-10						100				83	24	29	
+VS HOLD 41F	MP+MK HOLD 41 FRAME	47	13(16)2	33	KD	-18						110				75	16	21	[ACTIVE FRAME] THROW INV PROJ INV [ACTIVE FRAME] TRACK
+VS HOLD 74F	MP+MK HOLD 74 FRAME	80	15(16)2	33	KD	-18						145				75	16	21	[ACTIVE FRAME] THROW INV PROJ INV [ACTIVE FRAME] TRACK
+VS CANCEL	MP+MK HOLD 12F MP+MK	13	1	25								39							MP+MK HOLD 1-11F = NO CANCEL
+VS 74F CANCEL	MP+MK HOLD 74F MP+MK	75	1	25								100							
+VS DASH	MP+MK HOLD 21F DASH	21	1	16								37							MP+MK HOLD 1-20F = NO DASH CANCEL
+VS BACK DASH	MP+MK HOLD 21F BACK DASH	21	1	24								45							MP+MK HOLD 1-20F = NO DASH CANCEL
+VS 74F DASH	MP+MK HOLD 74F DASH	74	1	16								90							MP+MK HOLD 75F = NO DASH CANCEL
+VS 74F BACK DASH	MP+MK HOLD 74F BACK DASH	74	1	24								98							MP+MK HOLD 75F = NO DASH CANCEL
+VR	f+KKK	15	1	28	KD	-2										72	13	15	
+Fuharenkyaku LK	qcf+LK	10	3	18	KD	-2			KD	7		30				99	40	45	[ACTIVE FRAME] HIT PROJ BOX
+Fuharenkyaku MK	qcf+MK	10	3	18	KD	-2			KD	7		-				99	40	45	[ACTIVE FRAME] HIT PROJ BOX
+Fuharenkyaku HK	qcf+HK	10	3	18	KD	-2			KD	7		-				99	40	45	[ACTIVE FRAME] HIT PROJ BOX
+Fuharenkyaku EX	qcf+KK	7	2(17)2(12)2(20)2	15	KD	-2			KD	0		78				80	21	26	[ACTIVE FRAME] HIT PROJ BOX
+Fuharenkyaku LK RELEASE	qcf+LK	14	1	23	2	-2			13	10		37							[FRAME 14-73] PROJ ACTIVE 60F
+Fuharenkyaku MK RELEASE	qcf+MK	21	2	19	6	-6			13	1		41							[ACTIVE FRAME] HIT PROJ BOX [FRAME 8-22] AIR
+Fuharenkyaku HK RELEASE	qcf+HK	10	2(14)2	31	KD	-11			13(KD)	6(8)		58				86	27	32	[ACTIVE FRAME] HIT PROJ BOX
+Fuharenkyaku LK VTC	qcf+LK	10	3	18	KD	7						-				108	49	54	[ACTIVE FRAME] HIT PROJ BOX
+Fuharenkyaku MK VTC	qcf+MK	10	3	18	KD	7						-				108	49	54	[ACTIVE FRAME] HIT PROJ BOX
+Fuharenkyaku HK VTC	qcf+HK	10	3	18	KD	7						-				108	49	54	[ACTIVE FRAME] HIT PROJ BOX
+Fuharenkyaku EX VTC	qcf+KK	7	2(17)2(12)2(20)2	15	KD	0						-				82	83	28	[ACTIVE FRAME] HIT PROJ BOX
+Fuharenkyaku LK RELEASE VTC	qcf+LK	14	1	23	13	10						-							[FRAME 14-73] PROJ ACTIVE 60F
+Fuharenkyaku MK RELEASE VTC	qcf+MK	21	2	19	13	1						-							[ACTIVE FRAME] HIT PROJ BOX [FRAME 8-22] AIR
+Fuharenkyaku HK RELEASE VTC	qcf+HK	10	2(14)2	31	13(KD)	6(8)						-				105	46	51	[ACTIVE FRAME] HIT PROJ BOX
+Tensenrin LK	f,d,df+LK	7	3(2)2	22	1	-3						35							[ACTIVE FRAME 12-13] NO HIT CROUCH [CROUCH BLK] -8 ADV
+Tensenrin MK	f,d,df+MK	6	2(3)2(3)	38	KD	-29						55				87	28	33	[FRAME 1-5] THROW INV [FRAME 6-7] ALL INV [FRAME 8-39] AIR [ACTIVE FRAME 16-17] HIT AIR
+Tensenrin HK	f,d,df+HK	7	2(2)2(2)2(2)2	38	KD	-32						58				87	28	33	[FRAME 9-42] AIR [ACTIVE FRAME 11-12] NO HIT CROUCH [ACTIVE FRAME 15-16] HIT AIR [ACTIVE FRAME 19-20] HIT AIR
+Tensenrin EX	f,d,df+KK	7	2(2)2(2)2(2)2	38	KD	-31						58				63	4	9	[FRAME1-8] ALL INV [FRAME 8-40] AIR [ACTIVE FRAME 15-16] HIT AIR [ACTIVE FRAME 19-20] HIT AIR
+Ryodansatsu LK	qcb+LK	20	3	24	KD	-6			KD	9		46				83	24	29	[FRAME 5-18] AIR
+Ryodansatsu MK	qcb+MK	21	3	24	KD	-6			KD	9		47				83	24	29	[FRAME 5-19] AIR
+Ryodansatsu HK	qcb+HK	25	3	24	KD	-6			KD	9		51				83	24	29	[FRAME 5-23] AIR
+Ryodansatsu EX	qcb+KK	25	3	20	KD	-2			KD	7		47				101	42	47	[FRAME 5-23] AIR [FRAME 5-27] PROJ INV
+Ryodansatsu LK VTC	qcb+LK	20	3	24	KD	9						-				98	39	44	[FRAME 5-18] AIR
+Ryodansatsu MK VTC	qcb+MK	21	3	24	KD	9						-				98	39	44	[FRAME 5-19] AIR
+Ryodansatsu HK VTC	qcb+HK	25	3	24	KD	9						-				98	39	44	[FRAME 5-23] AIR
+Ryodansatsu EX VTC	qcb+KK	25	3	20	KD	7										110	51	56	[FRAME 5-23] AIR [FRAME 5-27] PROJ INV
+CA	qcb,qcb+K	9	1	58	KD	-15						67				82	23	28	[FRAME 1-8] ALL INV [FRAME 9-28] PROJ ACTIVE 20F
+health	950																		
+stun	950																		
+taunt	61											61							
+jump	47(4+39+4)	43	1	4								47							EARLY WHIFF 50
+jump forward	45(3+39+4)	41	1	4								45							EARLY WHIFF 48
+jump backwards	46(4+39+4)	42	1	4								46							EARLY WHIFF 49
+dash forward	16		16									16							
+dash backwards	24		24									24							
