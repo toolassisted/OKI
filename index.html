@@ -519,10 +519,12 @@ var CHARS = [
           var t2 = d3.selectAll("#TOTALS")[0][0];
           var t3 = d3.selectAll("#OKIOKI")[0][0];
           var t4 = d3.selectAll("#FRAMES")[0][0];
+          var t5 = d3.selectAll("#KD")[0][0];
           var t0 = t1.parentNode;
           t0.insertBefore(t2,t1);
           t0.insertBefore(t3,t1);
-          t0.insertBefore(t4,t1);          
+          t0.insertBefore(t4,t1);
+          t0.insertBefore(t5,t1);
           return;
         } else if (d == "TOTAL2") {
           var t1 = d3.selectAll("#KILLS")[0][0];
