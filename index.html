@@ -500,7 +500,7 @@ var CHARS = [
 "RSD", "RYU", //"RYU2", 
 "VEG", //"VEG2",
 "ZGF",
-"RESET OKI","FRAME KILL","HELP","TABLE"
+"RESET OKI","FRAME KILL","HELP","TOTAL1","TOTAL2","TOTAL3"
 ]
 ];
 
@@ -513,6 +513,24 @@ var CHARS = [
           //var win = window.open("https://twitter.com/TOOLASSlSTED/status/731544334781300736", '_blank');
           //win.focus();
           d3.select("#YUNOC").node().scrollIntoView();
+          return;
+        } else if (d == "TOTAL1") {
+          var t1 = d3.selectAll("#KD")[0][0];
+          var t2 = d3.selectAll("#TOTALS")[0][0];
+          var t0 = t1.parentNode;
+          t0.insertBefore(t2,t1.nextSibling);
+          return;
+        } else if (d == "TOTAL2") {
+          var t1 = d3.selectAll("#KILLS")[0][0];
+          var t2 = d3.selectAll("#TOTALS")[0][0];
+          var t0 = t1.parentNode;
+          t0.insertBefore(t2,t1.nextSibling);
+          return;
+        } else if (d == "TOTAL3") {
+          var t1 = d3.selectAll("#FRAMES")[0][0];
+          var t2 = d3.selectAll("#TOTALS")[0][0];
+          var t0 = t1.parentNode;
+          t0.insertBefore(t2,t1.nextSibling);
           return;
         } else if (d == "TABLE") {
           var t1 = d3.selectAll(".TABLES")[0][0];
