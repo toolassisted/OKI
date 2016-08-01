@@ -19,6 +19,7 @@ jump MK		5	7	-	-	-	60	100		12	10	M	-	-	72	120
 jump HK		5	6	-	-	-	90	150		15	15	M	-	-	108	180				
 step elbow	f+HP	18	2	17	4	-2	80	120	36	15	13	H	V	6	96	144				
 twist barrage	f+HP > HP	9	3	19	KD	-8	54	90		15	13*10	H*H	SP,V	KD	54	90	93	32	37	
+twist barrage ELBOW LP	f+HP > HP 236LP	9	3	19	KD												99	40	45	
 dual crash	MP > MK	7	3	16	1	-2	60*54	100*90		12*12	10*10	H*H	V	1	72*54	120*90				
 seoi throw	LP+LK	5	2	18	KD	-	130	200	24	-	-	T	-	KD	130	200	66	17	17	
 pullback hold	b+LP+LK	5	2	18	KD	-	120	170	24	-	-	T	-	KD	120	170	68	19	19	
@@ -54,26 +55,3 @@ jump forward	45 (3+38+4)	41	1	4					45											EARLY WHIFF 48F
 jump backwards	46 (4+38+4)	42	1	4					46											EARLY WHIFF 49F
 dash forward	17		17						17											
 dash backwards	21		21						21											
-V-TRIGGER																				
-step elbow	f+HP																			
-twist barrage	f+HP > HP																			
-dual crash	MP > MK																			
-volty line	MP+MK																			
-bolt charge LP	qcf+LP																			
-bolt charge MP	qcf+MP																			
-bolt charge HP	qcf+HP																			
-bolt charge EX	qcf+PP																			
-split river	qcf+MP > P																			
-rodeo break	qcf+MP > K																			
-thunder clap LP	qcb+LP																			
-thunder clap LP	qcb+LP (hold)																			
-thunder clap MP	qcb+MP																			
-thunder clap MP	qcb+MP (hold)																			
-thunder clap HP	qcb+HP																			
-thunder clap HP	qcb+HP (hold)																			
-thunder clap EX	qcb+PP																			
-sunset wheel LK	hcb+LK																			
-sunset wheel MK	hcb+MK																			
-sunset wheel HK	hcb+HK																			
-sunset wheel EX	hcb+KK																			
-inazuma spin hold	qcf,qcf+K																			
