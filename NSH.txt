@@ -31,9 +31,9 @@ raptor combination	MK > HK > MK	8	-	-	KD	-6	60*63*56	100*72*80		10*12*10	10*12	H
 dragon suplex	LP+LK	5	2	18	KD	-	120	170	24	-	-	T	-	KD	120	170	57	8	8	
 target down	b+LP+LK	5	2	18	KD	-	60*80	0*200	24	-	-	T	-	KD	60*80	0*200	69	10	10	
 air jack	LP+LK(air)	5	2	-	KD	-	130	200		-	-	T	-	KD	130	200	-	-		
-sonic move hide	HP+HK					-			33	-	-	-	-	-	-	-				
-sonic move bliz air	b+HP+HK					-			54	-	-	-	-	-	-	-				
-sonic move steel air	f+HP+HK					-			54	-	-	-	-	-	-	-				
+sonic move hide	HP+HK	2	1	9		-			17	-	-	-	-	-	-	-				[FRAME 2] ALL INV
+sonic move bliz air	b+HP+HK					-				-	-	-	-	-	-	-				
+sonic move steel air	f+HP+HK					-				-	-	-	-	-	-	-				
 bullet clear	MP+MK	8	8	19	2	-5	60	100		20	10	H	V	4	72	120				
 sonic move avoid	f+PPP								27	-										
 sonic boom LP	qcf+LP	15	1	32	-3	-7	50	100	47	8	8	H	CA,V	-2	60	120				
