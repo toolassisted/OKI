@@ -36,10 +36,16 @@ yoga flame LP	hcb+LP	13	23	21	KD	-3	70	100	56	14	18	H	CA	KD	84	120	99	40	45
 yoga flame MP	hcb+MP	18	27	14	KD	-2	80	150	58	14	20	H	CA	KD	96	180	102	43	48	
 yoga flame HP	hcb+HP	25	32	18	KD	3	90	200	74	14	23	H	CA	KD	108	240	106	47	52	
 yoga flame EX	hcb+PP	12	32	23	KD	-3	30*30*20*40	50*50*50*50	66	2*0*0*8	8x3*10	H	-	KD	36*30*20*40	60*50*50*50	116	57	62	
-yoga gale LP	hcb+LP (air)	13	14	-	KD	-	80	200		14	20	H	CA	KD	96	240				
-yoga gale MP	hcb+MP (air)	15	16	-	KD	-	90	200		14	23	H	CA	KD	108	240				
-yoga gale HP	hcb+HP (air)	17	18	-	KD	-	100	200		14	25	H	CA	KD	120	240				
-yoga gale EX	hcb+PP (air)	10	18	-	KD	-	45*45*36	80*80*80		4*4*4	13*10*10	H	-	KD	54*45*36	96*80*80				
+yoga gale LP	hcb+LP (air)	18	14	23	KD	2	80	200	54	14	20	H	CA	KD	96	240	100	41	46	KD ADV = 8J
+yoga gale MP	hcb+MP (air)	20	16	25	KD	0 (-2L)	90	200	60	14	23	H	CA	KD	108	240	96	37	42	KD ADV = 8J
+yoga gale HP	hcb+HP (air)	22	18	25	KD	-2 (-4L)	100	200	64	14	25	H	CA	KD	120	240	94	35	40	KD ADV = 8J
+yoga gale EX	hcb+PP (air)	21	18	33	KD	-12 (-14L)	45*45*36	80*80*80	71	4*4*4	13*10*10	H	-	KD	54*45*36	96*80*80	80	21	26	KD ADV = 8J [FRAME 1-11] JUMP [FRAME 12] GALE EX START
+yoga gale EX KARA	hcb+PP (air)	21	18	32	KD	-11 (-13L)	45*45*36	80*80*80	70	4*4*4	13*10*10	H	-	KD	54*45*36	96*80*80	81	22	27	KD ADV = 8J [FRAME 1-10] JUMP [FRAME 11] GALE HP [FRAME 12] GALE EX START
+yoga gale LP 9J	hcb+LP (air)	17	14	23	KD	2	80	200	53	14	20	H	CA	KD	96	240	100	41	46	KD ADV = 8J
+yoga gale MP 9J	hcb+MP (air)	19	16	25	KD	0 (-2L)	90	200	59	14	23	H	CA	KD	108	240	96	37	42	KD ADV = 8J
+yoga gale HP 9J	hcb+HP (air)	21	18	25	KD	-2 (-4L)	100	200	63	14	25	H	CA	KD	120	240	94	35	40	KD ADV = 8J
+yoga gale EX 9J	hcb+PP (air)	20	18	33	KD	-12 (-14L)	45*45*36	80*80*80	70	4*4*4	13*10*10	H	-	KD	54*45*36	96*80*80	80	21	26	KD ADV = 8J [FRAME 1-10] JUMP [FRAME 11] GALE EX START
+yoga gale EX 9J KARA	hcb+PP (air)	20	18	32	KD	-11 (-13L)	45*45*36	80*80*80	69	4*4*4	13*10*10	H	-	KD	54*45*36	96*80*80	81	22	27	KD ADV = 8J [FRAME 1-9] JUMP [FRAME 10] GALE HP [FRAME 11] GALE EX START
 yoga teleport	b,d,db+PPP or f,d,df+PPP or KKK			53		-			53	-	-	-	-	-	-	-				
 yoga teleport BKKK	b,d,db+KKK			58		-			58	-	-	-	-	-	-	-				
 yoga sunburst	qcf,qcf+P (can hold) (air)	10	1	40	KD	9	320	0	50	6x5?	8x4*20	H		KD	330	0	108	49	54	
