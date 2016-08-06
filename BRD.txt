@@ -1,4 +1,4 @@
-Move	Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	Damage	Stun	Total 	Hitstop	Chip	Attack Level	Cancel Ability	CH hit adv.	CH Damage	CH Stun	KD Adv.	KDR Adv.	KDRB Adv.	Note
+Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	Damage	Stun	Total 	Hitstop	Chip	Attack Level	Cancel Ability	CH hit adv.	CH Damage	CH Stun	KD Adv.	KDR Adv.	KDRB Adv.	Note	stand LP
 stand LP	-	5	2	10	4	3	40	90	16	8	0	H	SP,V	6	48	108				
 stand MP	-	7	2	16	4	-1	60	120	24	12	10	H	SP,V	6	72	144				
 stand HP	-	14	2	22	-2	-6	90	150	37	15	15	H	V	0	108	180				
@@ -17,7 +17,7 @@ jump HP	-	7	5	-	-	-	100	150		15	17	M	-	-	120	180
 jump LK	-	5	5	-	-	-	50	90		8	0	M	-	-	60	108				
 jump MK	-	7	4	-	-	-	70	120		12	12	M	-	-	84	144				
 jump HK	-	9	5	-	-	-	100	150		15	17	M	-	-	120	180				
-bull charge	f+HP	25	4	18	3	-7	100	150	46	15	17	H	-	KD	120	180	115	54	59	
+bull charge	f+HP	25	4	18	3	-7	100	150	46	15	17	H	-	KD	120	180	115	54	59	CH AIR 23F
 bull slider	df+HP	19	5	22	-1	-5	100	150	45	12	17	L	-	1	120	180				
 bull drop	f+HK	7	3(12)4	18	2	-4	40*80	50*100	43		7*13	H*M	-	2	48*80	60*100				
 bad hammer	d+HP > HP	7	5	31	KD	-	90*54	150*135		15*10	-	H*H	-	KD	54	135	62	1	6	
