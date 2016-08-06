@@ -240,7 +240,7 @@
 
   .UCLICK:hover {
     color: #fff;
-    background-color: #990;
+    background-color: #990 !important;
     cursor: pointer;
   }
 
@@ -301,6 +301,10 @@
   }
 
   .FRAMEKILL {
+    color: #999;
+  }
+
+  .MOVEDATA {
     color: #999;
   }
 
@@ -400,14 +404,14 @@ var HASHSTARTUP = 5;
 var HASHACTIVE = 4;
 var HASHRECOVERY = 10;
 var HASHLIST = [];
-var OKILIST = [{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
-              ,{FRAMEKILL:30,STARTUP:7,ACTIVE:3,RECOVERY:18,MOVE:"stand HP"}
-              ,{FRAMEKILL:84,STARTUP:7,ACTIVE:3,RECOVERY:18,MOVE:"stand HP"}
-              ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
-              ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
-              ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
-              ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
-              ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}];
+var OKILIST = [{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+              ,{FRAMEKILL:30,STARTUP:7,UCACTIVE:"",ACTIVE:3,RECOVERY:18,MOVE:"stand HP",DATA:""}
+              ,{FRAMEKILL:84,STARTUP:7,UCACTIVE:"",ACTIVE:3,RECOVERY:18,MOVE:"stand HP",DATA:""}
+              ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+              ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+              ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+              ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+              ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}];
 
 function MECHASH() {
   var h = window.location.hash.substr(1).split("/");
@@ -546,13 +550,13 @@ var CHARS = [
           return;
         } else if (d == "RESET OKI") {
           OKILIST = [{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
-                        ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
-                        ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
-                        ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
-                        ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
-                        ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
-                        ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
-                        ,{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}];
+                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}];
 
           MECOKI(7); UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
           MECOKI(6); UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
@@ -606,7 +610,7 @@ function UCKD(kd, hash) {
   ADV.html(adv);
   HASHKD = kd;
   if (hash == undefined) UCHASH();
-  d3.select("#STYLEKD").text(".GRID span:nth-child("+kd+") { text-decoration:underline; }");
+  d3.select("#STYLEKD").text(".GRID > span:nth-child("+kd+") { text-decoration:underline; }");
   var OKI12GAP = OKILIST[2].FRAMEKILL - (OKILIST[1].FRAMEKILL + OKILIST[1].STARTUP + OKILIST[1].ACTIVE + OKILIST[1].RECOVERY-1);
   d3.select("#OKI12GAP").text(("     " + OKI12GAP).slice(-3));
 }
@@ -621,7 +625,7 @@ function UCKDBR(kd, hash) {
   ADV.html(adv);
   HASHKDBR = kd;
   if (hash == undefined) UCHASH();
-  d3.select("#STYLEKDBR").text(".GRID span:nth-child("+kd+") { text-decoration:underline; }");
+  d3.select("#STYLEKDBR").text(".GRID > span:nth-child("+kd+") { text-decoration:underline; }");
 }
 function UCKDR(kd, hash) {
   var ADV = d3.select("#ADVKDR");
@@ -634,7 +638,7 @@ function UCKDR(kd, hash) {
   ADV.html(adv);  
   HASHKDR = kd;
   if (hash == undefined) UCHASH();
-  d3.select("#STYLEKDR").text(".GRID span:nth-child("+kd+") { text-decoration:underline; }");
+  d3.select("#STYLEKDR").text(".GRID > span:nth-child("+kd+") { text-decoration:underline; }");
 }
 function UCFK() {
   var ADV = d3.select("#FK");
@@ -650,6 +654,8 @@ function UCOKI(kd, hash) {
   var startup = OKILIST[MEOKI].STARTUP-1;
   var recovery = OKILIST[MEOKI].RECOVERY;
   var move = OKILIST[MEOKI].MOVE;
+  var data = OKILIST[MEOKI].DATA;
+  var UCACTIVE = OKILIST[MEOKI].UCACTIVE; // console.log(UCACTIVE);
   var total = startup+active+recovery;
   if (total < 0) total = 0;
 
@@ -666,7 +672,7 @@ function UCOKI(kd, hash) {
     //for (var i=FRAMEKILL;i<=(end>119?119:end);i++) {
     //  d3.selectAll(".GRID > span:nth-child("+i+")").classed("UCY"+MEOKI, true);
     //}
-    d3.select("#STYLEOKI"+MEOKI).text(".GRID span:nth-child(n+"+FRAMEKILL+"):nth-child(-n+"+end+") { background-color:"+(MEOKI<3?"#022":"#330")+"; }");
+    d3.select("#STYLEOKI"+MEOKI).text(".GRID > span:nth-child(n+"+FRAMEKILL+"):nth-child(-n+"+end+") { background-color:"+(MEOKI<3?"#022":"#330")+"; }");
 
 
   var fk = FRAMEKILL;
@@ -689,6 +695,13 @@ function UCOKI(kd, hash) {
       else if (i <= FRAMEKILL+startup+active-1) {
         text = "A";
         spanclass = "ACTIVE";
+
+        if (UCACTIVE != "") {
+          // console.log(UCACTIVE,i,i-(FRAMEKILL+startup));
+          text = UCACTIVE[i-(FRAMEKILL+startup)];
+          if (text == "A") spanclass = "ACTIVE";
+          else if (text == "r") spanclass = "RECOVERY";
+        }
       }
       else if (i <= FRAMEKILL+startup+active+recovery-1) {
         text = "r";
@@ -701,7 +714,7 @@ function UCOKI(kd, hash) {
 
     adv += "<span class='UCLICK " + spanclass + "' onclick='MECOKI("+MEOKI+");UCOKI("+i+")'>" + text + "</span>";
   }
-  adv += "<span class='ADVPLUS' onclick='MECOKI("+MEOKI+")'> " + "+" + ((FRAMEKILL-1) + "     ").slice(0,3) + " U HIT " + ((FRAMEKILL + startup) + "     ").slice(0,3) + " &middot; " + ("     " + (total)).slice(-3) + "F " + move + "</span>";
+  adv += "<span class='ADVPLUS' onclick='MECOKI("+MEOKI+")'> " + "+" + ((FRAMEKILL-1) + "     ").slice(0,3) + " U HIT " + ((FRAMEKILL + startup) + "     ").slice(0,3) + " &middot; " + ("     " + (total)).slice(-3) + "F " + move + "  <span class='MOVEDATA'>" + data + "</span></span>";
   ADV.html(adv);
   if (hash == undefined) UCHASH();
 
@@ -737,7 +750,8 @@ function UCGILLEY(rows){
   var KDTABLE = KD.append("div").append("table").classed("FRAMES",true);
   var TOTALSTABLE = TOTALS.append("div").append("table").classed("FRAMES",true);
   FRAMES.append("br");
-  TOTALS.append("br");
+  FRAMES.append("br");
+  // TOTALS.append("br");
 
   var keys = d3.keys(rows[0]);
   
@@ -811,15 +825,21 @@ function UCGILLEY(rows){
 
                 if (!isNaN(OKIMOVE["Active"]) && OKIMOVE["Active"] != "") {
                   OKILIST[MEOKI].ACTIVE = +OKIMOVE["Active"];
+                  OKILIST[MEOKI].UCACTIVE = "";
                 } else { 
                   OKILIST[MEOKI].ACTIVE = OKIMOVE["Active"].split(/[()]/)
                   .map(function(x){return parseInt(x)||0;})
-                  .reduce(function(a,b){return a+b});  
+                  .reduce(function(a,b){return a+b});
+
+                  OKILIST[MEOKI].UCACTIVE = OKIMOVE["Active"].split(/[()]/)
+                  .map(function(x,i){return parseInt(x)||0;})
+                  .reduce(function(a,b,i){return (i==1?Array(1+a).join("A"):a)+Array(1+b).join((i%2)==0?"A":"r")});  
                 }
                 if (!isNaN(OKIMOVE["Startup"]) && OKIMOVE["Startup"] != "") { OKILIST[MEOKI].STARTUP = +OKIMOVE["Startup"]; } else { OKILIST[MEOKI].STARTUP = 1; }
                 if (!isNaN(OKIMOVE["Recovery"]) && OKIMOVE["Recovery"] != "") { OKILIST[MEOKI].RECOVERY = +OKIMOVE["Recovery"]; } else { OKILIST[MEOKI].RECOVERY = 0; }
 
                 OKILIST[MEOKI].MOVE = OKIMOVE["Move"];
+                OKILIST[MEOKI].DATA = "" + OKIMOVE["Hit Advantage"] + "/" + OKIMOVE["Block Advantage"];
 
               }
               UCOKI(0);
@@ -871,15 +891,21 @@ function UCGILLEY(rows){
 
                 if (!isNaN(OKIMOVE["Active"]) && OKIMOVE["Active"] != "") {
                   OKILIST[MEOKI].ACTIVE = +OKIMOVE["Active"];
+                  OKILIST[MEOKI].UCACTIVE = "";
                 } else { 
                   OKILIST[MEOKI].ACTIVE = OKIMOVE["Active"].split(/[()]/)
                   .map(function(x){return parseInt(x)||0;})
-                  .reduce(function(a,b){return a+b});  
+                  .reduce(function(a,b){return a+b});
+
+                  OKILIST[MEOKI].UCACTIVE = OKIMOVE["Active"].split(/[()]/)
+                  .map(function(x,i){return parseInt(x)||0;})
+                  .reduce(function(a,b,i){return (i==1?Array(1+a).join("A"):a)+Array(1+b).join((i%2)==0?"A":"r")});  
                 }
                 if (!isNaN(OKIMOVE["Startup"]) && OKIMOVE["Startup"] != "") { OKILIST[MEOKI].STARTUP = +OKIMOVE["Startup"]; } else { OKILIST[MEOKI].STARTUP = 1; }
                 if (!isNaN(OKIMOVE["Recovery"]) && OKIMOVE["Recovery"] != "") { OKILIST[MEOKI].RECOVERY = +OKIMOVE["Recovery"]; } else { OKILIST[MEOKI].RECOVERY = 0; }
 
                 OKILIST[MEOKI].MOVE = OKIMOVE["Move"];
+                OKILIST[MEOKI].DATA = "" + OKIMOVE["Hit Advantage"] + "/" + OKIMOVE["Block Advantage"];
 
               }
               UCOKI(0);
