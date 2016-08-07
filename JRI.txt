@@ -3,23 +3,23 @@ stand LP		3	2	7	4	2	30	70	1	-1	-24	11							5LP 12(34)(5678) CHAIN 12(34)(5678)/
 stand LP CHAIN LP 1	5LP 5LP	3	2(6)2	7	4	2	30	70	1	-1		19							
 stand LP CHAIN LP 2	5LP 5LP 5LP	3	2(6)2(6)2	7	4	2	30	70	1	-1		27							
 stand LP CHAIN LP 3	5LP 5LP 5LP 5LP	3	2(6)2(6)2(6)2	7	4	2	30	70	1	-1		35							
-stand MP		5	3	11	4	2	60	100	6	4	-17	18							
-stand HP		8	3	17	2	-3	80	150	10	5	-13	27				99	40	45	[VTC 5HP] KD
+stand MP		5	3	11	4	2 (-1)	60	100	6	4	-17	18							
+stand HP		8	3	17	2	-3 (-6)	80	150	10	5	-13	27				99	40	45	[VTC 5HP] KD
 stand LK		4	2	10	4	1	30	70	4	1	-24	15							
-stand MK		6	1(1)3	15	1	-4	70	100	9	2	-15	25							
-stand HK		14	3	17	1	-4	80	150	0	-5		33		20	19	13	13	13	[5HP VTC 5HK] RESET [2HP VTC 5HK] RESET
+stand MK		6	1(1)3	15	1	-4 (-7)	70	100	9	2	-15	25							
+stand HK		14	3	17	1	-4 (-7)	80	150	0	-5		33		20	19	13	13	13	[5HP VTC 5HK] RESET [2HP VTC 5HK] RESET
 crouch LP		4	2	7	4	2	30	70	1	-1	-23	12							2LP 123(45)(6789) CHAIN 123(45)(6789)/(10-12)
 crouch LP CHAIN LP 1	2LP 2LP	4	2(7)2	7	4	2	30	70	1	-1		21							
 crouch LP CHAIN LP 2	2LP 2LP 2LP	4	2(7)2(7)2	7	4	2	30	70	1	-1		30							
 crouch LP CHAIN LP 3	2LP 2LP 2LP 2LP	4	2(7)2(7)2(7)2	7	4	2	30	70	1	-1		39							
-crouch MP		5	2	17	2	0	60	100	9	4	-14	23							
-crouch HP		10	2	21	3	-5	90	150	14	6	-9	32		21	32	96	37	42	[2HP HIT BOX] NO SAME VT 2HP [VTC 2HP] KD
+crouch MP		5	2	17	2	0 (-3)	60	100	9	4	-14	23							
+crouch HP		10	2	21	3	-5 (-8)	90	150	14	6	-9	32		21	32	96	37	42	[2HP HIT BOX] NO SAME VT 2HP [VTC 2HP] KD
 crouch LK		3	2	10	2	0	20	70	1	-1		14							2LP 12(34)(5678901) CHAIN 12(34)(5678901)/(12-14)
 crouch LK CHAIN LK 1	2LK 2LK	3	2(9)2	10	2	0	20	70	1	-1		25							
 crouch LK CHAIN LK 2	2LK 2LK 2LK	3	2(9)2(9)2	10	2	0	20	70	1	-1		36							
 crouch LK CHAIN LK 3	2LK 2LK 2LK 2LK	3	2(9)2(9)2(9)2	10	2	0	20	70	1	-1		47							
-crouch MK		6	2	14	1	-3	50	100	5	1	-19	21							
-crouch HK		8	2	23	KD	-12	100	150	KD	1		32				68	19	24	
+crouch MK		6	2	14	1	-3 (-6)	50	100	5	1	-19	21							
+crouch HK		8	2	23	KD	-12 (-15)	100	150	KD	1		32				68	19	24	
 crouch HK VTC		8	2	23	KD	1	100	150								81	32	37	
 6MK		22	2	19	0	-4	60	100				42							
 4HK		7	2(7)3	15	-5(4)	-7(-2)	80	150	8	2	-13(-15)	33							[ACTIVE FRAME 16] HIT AIR
