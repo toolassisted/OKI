@@ -52,6 +52,8 @@ aurora spin edge MP	qcb+MP	15	6	18	KD	-6	100		16	200	25	H	CA	KD	120	240	92	33	38
 aurora spin edge HP	qcb+HP	12	7	15	KD	-	100		16	200	-	H	CA	KD	120	240	-	-	-	
 aurora spin edge EX	qcb+PP	12	7(12)4	21	KD	-3	50*100		16*16	100*100	13*25	H*H	-	KD	120*100	120*100	86	27	32	
 switch claw	qcf+P							23	-			-	-	-	-	-				
+CLAW OFF CANCEL	qcf+P							22	-			-	-	-	-	-				
+CLAW ON CANCEL	qcf+P							20	-			-	-	-	-	-				
 bloody rain	qcf,qcf+P or qcb,qcb+P	9	8	29	KD	-22	330		-	0	5	H	-	KD	334	0	80	40	40	
 health	1000																			
 stun	950																			
