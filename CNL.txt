@@ -31,7 +31,7 @@ tenshin shushu 4T	b+LP+LK	5	2	18	KD		140	200		-	-	T	-	KD	140	200	72	23	23
 ryuseiraku	LP+LK(air)	5	2	-	KD		130	200		-		T	-	KD	130	200	70	21	21	
 renkiko VT	HP+HK			5					5	-	-	-	-	-	-	-				FRAME 1 ALL INV
 rankyaku VS	MP+MK	11	4	44	KD	-24	40	50	58	12	7	H	-	KD	48	60	71	12	17	HIT ACTIVE 2 KD ADV +72
-sohakkei VR	f+PPP	10	2	20	1	0	40	0				H								
+sohakkei VR	f+PPP	10	2	20	1	-2	40	0				H								
 kikoken LP	b,f+LP	13	1	32	0	-6	60	100	45	8	10	H	CA	2	72	120				
 kikoken MP	b,f+MP	11	1	32	-1	-5	60	100	43	8	10	H	CA	1	72	120				
 kikoken HP	b,f+HP	9	1	32	-2	-4	60	100	41	8	10	H	CA	0	72	120				

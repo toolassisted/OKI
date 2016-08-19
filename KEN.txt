@@ -28,7 +28,7 @@ hell wheel	b+LP+LK	5	2	18	KD	-	130	200		-	-	T	-	KD	130	200	70	11	11	BUG NO MOVE 
 heat rush	HP+HK			22		-			22	-	-	-	-	-	-	-				[FRAME 1] ALL INV [ANIM 51F]
 quick step	MP+MK (hold to attack)	24	2	25	KD	-6	70	150	50		12	H	V	KD	84	180	89	30	35	
 quick step CANCEL	MP+MK			22	KD	-6	70	150	22		12	H	V	KD	84	180	89	30	35	
-senpu nataotoshi	f+KKK	10	4	22	2	0	40	0				H								
+senpu nataotoshi	f+KKK	10	4	22	2	-2	40	0				H								
 hadouken LP	qcf+LP	14	-	34	-4	-10	50	100		8	8	H	CA,V	-2	60	120				
 hadouken MP	qcf+MP	14	-	34	-4	-10	50	100		8	8	H	CA,V	-2	60	120				
 hadouken HP	qcf+HP	14	-	34	-4	-10	50	100		8	8	H	CA,V	-2	60	120				
