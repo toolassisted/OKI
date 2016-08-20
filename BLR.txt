@@ -32,7 +32,7 @@ bloody kiss rojo	d+HP+HK	10			KD	-22	30*70*70	37	5*3*10	0*0*0	8*18	H	-	KD	36*70*
 bloody kiss azul	HP+HK during forward jump	10			KD	-2	30*85*85	-	6*3*10	0*0*0	8*21*21	H	-	KD	36*85*85	0*0*0	89	27	35	
 matador turn DODGE	MP+MK 2F	6	27	4				36												[FRAME 6-32] UPPER BODY INV [FRAME 6-36] PROJ INV
 matador turn DODGE 1F	MP+MK 1F	7	26	4																[FRAME 7-32] UPPER BODY INV [FRAME 7-36] PROJ INV
-matador turn ATTACK	MP+MK	22	2	31	KD	-13	90	54		100	15	H	-	KD	108	120	77	18	23	[FRAME 6-19] UPPER BODY INV [FRAME 6-19] PROJ INV
+matador turn ATTACK	MP+MK HOLD	22	2	31	KD	-13	90	54		100	15	H	-	KD	108	120	77	18	23	[FRAME 6-19] UPPER BODY INV [FRAME 6-19] PROJ INV
 backslash	f+PPP							41	-											
 short backslash	f+KKK							31	-											
 flying barcelona attack LK	f,d,df+LK or b,d,db+LK								-			-	-	-	-	-				
