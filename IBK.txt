@@ -54,8 +54,8 @@ VT VT	HP+HK	25	1	17								42							215	154	159
 VT 5VT	HP+HK	114	9																			
 VT 4VT	b+HP+HK	234	9																			
 VT 6VT	f+HP+HK	354	9																			
-VS	MP+MK	15	5	20								39										
-VS HOLD	MP+MK HOLD	25	7	18								49										
+VS	MP+MK	15	5	20								39							85	26	31	
+VS HOLD	MP+MK HOLD	25	7	18								49							87	28	33	
 VR	f+PPP	15	13	25	KD	-2													88	29	34	FRAME 1-13 HIT PROJ INV FRAME 14-37 ALL INV FRAME 38-41 HIT INV LOW HURT BOX
 VR CH	f+PPP	15	13	25	KD	-2													91	32	37	FRAME 1-13 HIT PROJ INV FRAME 14-37 ALL INV FRAME 38-41 HIT INV LOW HURT BOX
 Kasumigake LK	qcf+LK	3	17	4								23										
