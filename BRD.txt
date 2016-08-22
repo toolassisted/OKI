@@ -43,7 +43,7 @@ killing head EX	hcb+PP	5	2	52	KD	-	10x6*160	30x6*90		0x6*18	-	T	-	KD	10x6*160	30
 hanging chain LK CORNER	qcf+LK	25	16	24	KD	-23	140	200		-	0	H	-	KD	140	200	79	20	20	
 hanging chain LK	qcf+LK	25	16	24	KD	-23	140	200	64	-	0	H	-	KD	140	200	80	21	21	
 hanging chain LK FAR CORNER	qcf+LK	25	16	24	KD	-23	140	200		-	0	H	-	KD	140	200	82	23	23	
-hanging chain LK FAR	qcf+LK	25	16	24	KD	-23	140	200		-	0	H	-	KD	140	200	84	25	25	
+hanging chain LK FAR	qcf+LK	25	16	24	KD	-23	140	200		-	0	H	-	KD	140	200	84	25	25	U C https://youtu.be/xz56LWUBDIg
 hanging chain MK	qcf+MK	25	16	24	KD	-23	150	200	64	-	0	H	-	KD	150	200	68	19	19	
 hanging chain MK FAR	qcf+MK	25	16	24	KD	-23	150	200		-	0	H	-	KD	150	200	71	22	22	
 hanging chain HK	qcf+HK	25	10	31	KD	-	160	200	65	-	-	H	-	KD	160	200	81	22	22	
@@ -63,10 +63,10 @@ jump backward	50(5*41*4)	46	1	4					50
 dash forward	23			23					23											
 dash backward	26			26					26											
 V-TRIGGER																				
-VT bull head LP	hcf+LP	10	2(1)4	29	KD	-9	24*120	10*190				H	CA	KD			84	25	30	
-VT bull head MP	hcf+MP	15	2(2)2(2)4	29	KD	-9	24*24*108	10*10*180				H	CA	KD			84	25	30	
-VT bull head HP	hcf+HP	22	2(1)2(1)2(3)4	23	KD	-9	24x3*96	10x3*170				H	CA	KD			90	31	36	
-VT bull head EX	hcf+PP	8	1(3)2(2)2(2)4(20)2(3)4	23	KD	-7	192	250				H	-	KD			91	32	37	
+VT bull head LP	qcf+LP	10	2(1)4	29	KD	-9	24*120	10*190				H	CA	KD			84	25	30	
+VT bull head MP	qcf+MP	15	2(2)2(2)4	29	KD	-9	24*24*108	10*10*180				H	CA	KD			84	25	30	
+VT bull head HP	qcf+HP	22	2(1)2(1)2(3)4	23	KD	-9	24x3*96	10x3*170				H	CA	KD			90	31	36	
+VT bull head EX	qcf+PP	8	1(3)2(2)2(2)4(20)2(3)4	23	KD	-7	192	250				H	-	KD			91	32	37	
 VT bull horn	hold any button, release	15	2(0)10	31	KD	-12	78*78	100*100				H	CA	KD			94	35	40	
 VT bull horn EX	hold any 2 button, release	15	2(1)2(3)2(11)4	31	KD	-17	24*24*66*66	10*10*80*150				H	-	KD			89	30	35	
 VT killing head LP	hcb+LP	5	2	52	KD	-	24*192	40*160				T	-	KD						
@@ -83,5 +83,8 @@ VT bull revenger MK	hcb+MK	40	2	28	KD	-	84*84*48	100*100*30				T	-	KD
 VT bull revenger HK	hcb+HK	43	2	28	KD	-	84*70*60	100*100*30				T	-	KD						
 VT bull revenger EX	hcb+KK	25	11	47	KD	-	60*60*120	50*50*130				T	-	KD						
 VT skip to my chain	qcf,qcf+P	6	5	60	KD	-30	60x3*240	0*0*0*0				H	-	KD						
-2HP BULLHORN																	91	32	37	
-2HP VT BULLHORN																	97	38	43	
+2HP BULLHORN					KD												91	32	37	
+2HP VT BULLHORN					KD												97	38	43	
+BULLHORN EX VTC BULLHEAD LP					KD												85	26	31	
+BULLHORN EX VTC BULLHEAD LP CORNER					KD												87	28	33	
+BULLHORN EX VTC BULLHEAD EX					KD												95	36	41	
