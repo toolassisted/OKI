@@ -85,6 +85,6 @@ VT bull revenger EX	hcb+KK	25	11	47	KD	-	60*60*120	50*50*130				T	-	KD
 VT skip to my chain	qcf,qcf+P	6	5	60	KD	-30	60x3*240	0*0*0*0				H	-	KD						
 2HP BULLHORN					KD												91	32	37	
 2HP VT BULLHORN					KD												97	38	43	
-BULLHORN EX VTC BULLHEAD LP					KD												85	26	31	
-BULLHORN EX VTC BULLHEAD LP CORNER					KD												87	28	33	
-BULLHORN EX VTC BULLHEAD EX					KD												95	36	41	
+BULLHORN EX VTC BULLHEAD LP					KD												85	26	31	https://youtu.be/gHAZw8DIrRM
+BULLHORN EX VTC BULLHEAD LP CORNER					KD												87	28	33	https://youtu.be/gHAZw8DIrRM
+BULLHORN EX VTC BULLHEAD EX					KD												95	36	41	https://youtu.be/gHAZw8DIrRM
