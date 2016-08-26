@@ -3,7 +3,7 @@ stand LP		4	2	8	4	3	30	70	8	13	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	5	5LP 123(45)(678)
 stand LP CHAIN 5LP 1	5LP 5LP	4	2(6)2	8	4	3	30	70	8	21	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	5	
 stand LP CHAIN 5LP 2	5LP 5LP 5LP	4	2(5)2(6)2	8	4	3	30	70	8	28	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	5	
 stand LP CHAIN 5LP 3	5LP 5LP 5LP 5LP	4	2(5)2(5)2(6)2	8	4	3	30	70	8	35	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	5	
-stand MP		5	3	13	4	3	60	100	12	20	10	6	72	120	H	V	-	-	-	12	11	
+stand MP		5	3	13	4	3	60	100	12	20	10	6	72	120	H	V	-	-	-	12	11	CH FORCE STAND
 stand HP		7	3	18	6	-4	80	150	15	27	13	KD 118	96	180	H	V	-	-	-	19	9	
 stand LK		5	3	9	4	2	30	70	8	16	0	6	36	84	H	V	-	-	-	8	6	
 stand MK		7	3	15	3	-1	60	100	12	24	10	5	72	120	H	V	-	-	-	13	9	
@@ -59,7 +59,7 @@ sonic cross MP	MP+MK > b,f+MP	18	27(1)1	23	KD	16?	40*40	50*50	8*8	69	7*7	110?	48
 sonic cross HP	MP+MK > b,f+HP	18	27(1)1	23	KD	15?	40*40	50*50	8*8	69	7*7	112?	48*40	60*50	H*H	-	112?	50?	57?	-	-	PROJ 27F CANCEL 36F
 sonic cross EX	MP+MK > b,f,PP	46	27(1)1	21	KD	21	40*50*50	50*25*75	8*8*8	67	7*7*8	118?	48*50*50	60*25*75	H*H*H	-	118?	62?	66?	-	-	PROJ 27F CANCEL 36F
 sonic break	N or b or f+HP+HK/P	10			5	1	40	40	8	37	7	7	48	48	H	-				-	-	
-sonic hurricane	b,f,b,f+p	7	1		KD	-41	320	0		??	5x5*25	63	328	0	H	-	63	4	9	-	-	
+sonic hurricane	b,f,b,f+p	7	1		KD	-41	320	0		??	5x5*25	63	328	0	H	-	81	22	27	-	-	
 sonic tempest	b,f,b,f+p during VT	7	1		KD	5	360	0		??	4x16	107?	364	0	H	-	107	48	53	-	-	
 health																						
 stun																						
