@@ -52,7 +52,7 @@ yoga teleport	b,d,db+PPP or f,d,df+PPP or KKK			53		-			53	-	-	-	-	-	-	-
 yoga teleport BKKK	b,d,db+KKK			58		-			58	-	-	-	-	-	-	-				
 yoga sunburst	qcf,qcf+P (can hold) (air)	10	1	40	KD	9	320	0	50	6x5?	8x4*20	H		KD	330	0	108	49	54	
 health	900																			
-stun	900																			
+stun	950																			
 taunt	61								61											
 jump	72(4+64+4)	68	1	4					72											
 jump forward	71(3+64+4)	67	1	4					71											
