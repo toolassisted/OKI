@@ -17,7 +17,13 @@ jump HP		7	4	-	-	-	90	150		15	15	M	-	-	108	180
 jump LK		4	5	-	-	-	40	70		8	0	M	-	-	48	84				
 jump MK		6	6	-	-	-	70	100		12	12	M	-	-	84	120				
 jump HK		12	6	-	-	-	90	150		15	15	M	-	-	108	180				
-drill kick	d+K (air)	12	-	-	-	-	60	70		12	10	H	-	-	72	84				
+drill kick	d+MK (air)	12	-	-	-	-	60	70		12	10	H	-	-	72	84				
+drill kick LK 8J	8J d+LK (air)	21	11	7	9	6	60	70	38	12	10	H	-	-	72	84				[FRAME 1-9] JUMP
+drill kick MK 8J	8J d+MK (air)	21	8	7	10	7	60	70	35	12	10	H	-	-	72	84				[FRAME 1-9] JUMP
+drill kick HK 8J	8J d+HK (air)	21	9	7	11	8	60	70	36	12	10	H	-	-	72	84				[FRAME 1-9] JUMP
+drill kick LK 9J	9J d+LK (air)	20	11	7	9	6	60	70	37	12	10	H	-	-	72	84				[FRAME 1-8] JUMP
+drill kick MK 9J	9J d+MK (air)	20	8	7	10	7	60	70	34	12	10	H	-	-	72	84				[FRAME 1-8] JUMP
+drill kick HK 9J	9J d+HK (air)	20	9	7	11	8	60	70	35	12	10	H	-	-	72	84				[FRAME 1-8] JUMP
 yoga anvil	b+HP	12	6	24	-3	-8	90	150	41	15	15	H	SP,V	KD 95	108	180	95	36	41	
 yoga upper	b+MP	8	4	16	3	0	60	100	27	15	10	H	SP,V	5	72	120				
 divine kick	b+MK	6	3	15	3	1	60	100	23	12	10	H	SP,V	5	72	120				
@@ -26,7 +32,7 @@ yoga hoop	b+LP+LK	5	2	18	KD	-	130	200		-	-	T	-	KD	130	200	77	18	18	BUG 1F NO MOV
 yoga burner	HP+HK	13	3	24	KD	4	100	150	39	8	25	-	-	KD	120	180	100	41	46	
 yoga float	MP+MK or f+MP+MK	30	1	77					107	-	-	-	-	-	-	-				
 yoga float CANCEL	MP+MK or f+MP+MK	30	1	25					55	-	-	-	-	-	-	-				
-yoga float(airborne)	MP+MK (air)			22						-	-	-	-	-	-	-				
+yoga float(airborne)	MP+MK (air)	16	1	22						-	-	-	-	-	-	-				
 yoga mala	f+PPP	15	2	23	KD	-2	100	0				H					86	27	32	
 yoga fire LP	qcf+LP	15	1	36	-6	-8	50	100	51	15	9	H	CA	-4	60	120				
 yoga fire MP	qcf+MP	15	1	36	-6	-8	50	100	-	15	9	H	CA	-4	60	120				
