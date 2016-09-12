@@ -36,7 +36,15 @@ bolt charge EX	qcf+PP	14	3	22	0	-11	70	50	38	15	18	H	-	2	84	60
 split river	qcf+MP > P	-	-	-	KD	-	81	135		-	-	H	-	KD	81	135	58	9	9	
 rodeo break	qcf+MP > K	-	-	-	KD	-	81	135		-	-	H	-	KD	81	135	66	17	17	
 thunder clap LP	qcb+LP	19	1	28	0	-5	60	60	47	8	10	H	CA	2	72	72				PROJ 40F [VT PROJ 80F]
-thunder clap LP HOLD	qcb+LP (hold)	70	1	13	31	18	60*30*30	60*30*30	83	8*8*8	10*5*5	H	CA	31	72*30*30	72*30*30				PROJ 100F
+thunder clap LP L1	qcb+LP (hold 30F)	40	1	28	0	-5	60	60	68	-	-	H	CA	2	72	72				PROJ 40F
+thunder clap LP L2	qcb+LP (hold 31F)	41	1	27	9	0	60*30	60*30	68	-	-	H	CA	31	72*30	72*30				PROJ 80F
+thunder clap LP L2 LAST	qcb+LP (hold 60F)	70	1	27	9	0	60*30	60*30	97	-	-	H	CA	31	72*30	72*30				PROJ 80F
+thunder clap LP L3	qcb+LP (hold 61F)	70	1	13	31	18	60*30*30	60*30*30	83	8*8*8	10*5*5	H	CA	31	72*30*30	72*30*30				PROJ 100F
+VT thunder clap LP	qcb+LP	19	1	28	0	-5	60	60	47	8	10	H	CA	2	72	72				PROJ 80F
+VT thunder clap LP L1	qcb+LP (hold 15F)	25	1	28	0	-5	60	60	53	-	-	H	CA	2	72	72				PROJ 80F
+VT thunder clap LP L2	qcb+LP (hold 16F)	26	1	27	9	0	60*30	60*30	53	-	-	H	CA	31	72*30	72*30				PROJ 80F
+VT thunder clap LP L2 LAST	qcb+LP (hold 30F)	40	1	27	9	0	60*30	60*30	67	-	-	H	CA	31	72*30	72*30				PROJ 80F
+VT thunder clap LP L3	qcb+LP (hold 31F)	40	1	13	28	18	60*30*30	60*30*30	53	8*8*8	10*5*5	H	CA	31	72*30*30	72*30*30				PROJ 100F
 thunder clap MP	qcb+MP	19	1	28	0	-5	60	60	47	8	10	H	CA	2	72	72				PROJ 40F [VT PROJ 80F]
 thunder clap MP HOLD	qcb+MP (hold)	70	1	13	31	18	60*30*30	60*30*30	83	8*8*8	10*5*5	H	CA	31	72*30*30	72*30*30				PROJ 100F
 thunder clap HP	qcb+HP	19	1	28	0	-5	60	60	47	8	10	H	CA	2	72	72				PROJ 40F [VT PROJ 80F]
