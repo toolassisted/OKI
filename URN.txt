@@ -26,8 +26,8 @@ jump HP		8	5					90	150	-
 jump LK		4	7					40	70	-								
 jump MK		7	5					60	100	-								
 jump HK		8	5					90	150	-								
-THROW	LP+LK	5	2	18	KD	-	-	130	200	24					57	8	8	
-THROW BACK	b+LP+LK	5	2	18	KD	-	-	130	200	24					66	7	7	
+THROW	LP+LK	5	2	18	KD	-	-	130	200	24					60	11	11	
+THROW BACK	b+LP+LK	5	2	18	KD	-	-	130	200	24					60	11	11	
 VR	f+PPP	15	2	24	KD	-2	KD	60	0	-					90	31	36	[FRAME 1-20] HIT INV
 VS	MP+MK	16	1	39						55								[FRAME 16] CHARGE
 VT	HP+HK	5	1	8	14(24)	9	16(24)	10	0	13								[FRAME 1] ALL INV [PROJ] 230F
