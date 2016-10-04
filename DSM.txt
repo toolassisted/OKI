@@ -54,8 +54,9 @@ yoga gale EX 9J	hcb+PP (air)	20	18	33	KD	-12 (-14L)	45*45*36	80*80*80	70	4*4*4	1
 yoga gale EX 9J KARA	hcb+PP (air)	20	18	32	KD	-11 (-13L)	45*45*36	80*80*80	69	4*4*4	13*10*10	H	-	KD	54*45*36	96*80*80	81	22	27	[FRAME 1-9] JUMP [FRAME 10] GALE HP [FRAME 11] GALE EX START
 yoga gale LP IAT	hcb+LP (air)	47	14	8	KD	17	80	200	68	14	20	H	CA	KD	96	240	115	56	61	
 yoga gale LP 9J IAT	hcb+LP (air)	46	14	8	KD	17	80	200	67	14	20	H	CA	KD	96	240	115	56	61	
-yoga teleport	b,d,db+PPP or f,d,df+PPP or KKK			53		-			53	-	-	-	-	-	-	-				
-yoga teleport BKKK	b,d,db+KKK			58		-			58	-	-	-	-	-	-	-				
+yoga teleport	b,d,db+PPP or f,d,df+PPP or KKK			53		-			53	-	-	-	-	-	-	-				[FRAME 1-3] HIT INV [FRAME 4-28] ALL INV
+yoga teleport BKKK	b,d,db+KKK			58		-			58	-	-	-	-	-	-	-				[FRAME 1-3] HIT INV [FRAME 4-28] ALL INV
+yoga teleport AIR	b,d,db or f,d,df+PPP or KKK	6	17	7		-			29	-	-	-	-	-	-	-				[FRAME 6-22] ALL INV
 yoga sunburst	qcf,qcf+P (can hold) (air)	10	1	40	KD	9	320	0	50	6x5?	8x4*20	H		KD	330	0	108	49	54	
 health	900																			
 stun	950																			
