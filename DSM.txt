@@ -56,7 +56,9 @@ yoga gale LP IAT	hcb+LP (air)	47	14	8	KD	17	80	200	68	14	20	H	CA	KD	96	240	115	5
 yoga gale LP 9J IAT	hcb+LP (air)	46	14	8	KD	17	80	200	67	14	20	H	CA	KD	96	240	115	56	61	
 yoga teleport	b,d,db+PPP or f,d,df+PPP or KKK			53		-			53	-	-	-	-	-	-	-				[FRAME 1-3] HIT INV [FRAME 4-28] ALL INV
 yoga teleport BKKK	b,d,db+KKK			58		-			58	-	-	-	-	-	-	-				[FRAME 1-3] HIT INV [FRAME 4-28] ALL INV
-yoga teleport AIR	b,d,db or f,d,df+PPP or KKK	6	17	7		-			29	-	-	-	-	-	-	-				[FRAME 6-22] ALL INV
+yoga teleport AIR	b,d,db or f,d,df+PPP or KKK	6	17	7		-			29	-	-	-	-	-	-	-				[FRAME 6-22] ALL INV [FRAME 30] ATTACK FRAME 1
+yoga teleport 8J	b,d,db or f,d,df+PPP or KKK	11	17	19		-			46	-	-	-	-	-	-	-				[FRAME 1-5] JUMP [FRAME 11-27] ALL INV [FRAME 35] ATTACK FRAME 1 [FRAME 43-46] LAND
+yoga teleport 9J	b,d,db or f,d,df+PPP or KKK	10	17	19		-			45	-	-	-	-	-	-	-				[FRAME 1-4] JUMP [FRAME 10-26] ALL INV [FRAME 34] ATTACK FRAME 1 [FRAME 42-45] LAND
 yoga sunburst	qcf,qcf+P (can hold) (air)	10	1	40	KD	9	320	0	50	6x5?	8x4*20	H		KD	330	0	108	49	54	
 health	900																			
 stun	950																			
