@@ -51,7 +51,7 @@ crimson terror HK	qcf+HK	19	4(12)2(10)3(22)5	14	KD	-8	20x3*60		3x3*15	20x3*100	5
 crimson terror EX	qcf+KK	16	5(14)3(8)3(8)3(18)5	10	KD	-2	20x4*60		3x4*15	20x4*100	5x4*15	H	-	KD	24*20x3*60	24*20x3*100	97	38	43	
 aurora spin edge LP	qcb+LP	12	6	20	KD	-7	100		16	200	25	H	CA	KD	120	240	90	31	36	
 aurora spin edge MP	qcb+MP	15	6	18	KD	-6	100		16	200	25	H	CA	KD	120	240	92	33	38	
-aurora spin edge HP	qcb+HP	12	7	15	KD	-	100		16	200	-	H	CA	KD	120	240	-	-	-	
+aurora spin edge HP	qcb+HP	12	7	15	KD	-4	100		16	200	25	H	CA	KD	120	240	101	42	47	
 aurora spin edge EX	qcb+PP	12	7(12)4	21	KD	-3	50*100		16*16	100*100	13*25	H*H	-	KD	120*100	120*100	86	27	32	
 switch claw	qcf+P			23				23	-			-	-	-	-	-				
 CLAW OFF CANCEL	qcf+P			22				22	-			-	-	-	-	-				
