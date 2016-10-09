@@ -9,7 +9,7 @@ crouch LP		4	2	7	4	2	30	70	12	8	0	H	CH,SP,V	6	36	84
 crouch MP		6	3	13	6	2	60	100	21	12	10	H	SP,V	8	72	120				
 crouch HP		9	2	17	6	3	80	150	27	15	13	H	CA,V	8	96	180				
 crouch LK		4	3	6	4	1	20	70	12	8	0	L	V	6	24	84				
-crouch MK		8	2	16	0	-4	50	100	24	12	8	L	V	2	60	120				
+crouch MK		8	2	15	0	-4	50	100	24	12	8	L	V	2	60	120				
 crouch HK		8	2	24	KD	-12	100	150	33	15	17	L	V	KD	120	180	71	22	27	
 jump LP		3	6	-	-	-	40	70		8	0	M	-	-	48	84				
 jump MP		5	5	-	-	-	70	100		10	12	M	-	-	84	120				
