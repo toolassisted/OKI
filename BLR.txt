@@ -18,7 +18,7 @@ jump LK		4	6	-	-	-	40		8	70	0	M	-	-	48	84
 jump MK		5	7	-	-	-	70		12	100	12	M	-	-	84	120				
 jump HK		9	5	-	-	-	90		15	150	15	M	-	-	108	180				
 mercury shard	f+MK	22	3	13	0	-4	60	37	12	100	10	M	-	2	72	120				
-buster claw	f+HP	13	4	20	-3	-14	80	38	15	150	13	H	-	12	96	180				
+buster claw	f+HP	13	2	24	-3	-14	80	38	15	150	13	H	-	12	96	180				
 matador flash MASH	HP > HP > MP+MK (claw only)	8			KD	-10	80*54		15*15	150*72	13*10	H*H	-	KD	96*54	180*72	77	18	23	MASH MP+MK
 matador flash	HP > HP > MP+MK (claw only)	8			KD	-10	80*54		15*15	150*72	13*10	H*H	-	KD	96*54	180*72	78	19	24	NO MASH MP+MK
 matador blitz MASH	MP > HK > MP+MK (claw off)	6			KD	-16	60		12*15	100	10*13	H	SP	KD	72	120	77	18	23	MASH MP+MK
