@@ -19,7 +19,7 @@ jump LK		4	7	-	-	-	40	70		8	0	M	-	-	48	84
 jump MK		6	5	-	-	-	60	100		10	10	M	-	-	72	120				
 jump HK		5	6	-	-	-	90	150		14	15	M	-	-	108	180				
 tsuitotsuken 46MP	b or f+MP	7	2	12	3	0	60	100	20	12	10	H	V	5	72	120				
-hakkei 4HP	b+HP	7	5	13	3	2	90	150	25	15	15	H	SP,V	KD 97	108	180	97	38	43	
+hakkei 4HP	b+HP	7	5	13	3	2	90	150	24	15	15	H	SP,V	KD 97	108	180	97	38	43	
 senenshu 3MK	df+MK	26	2	16	0	-2	70	100	43	12	12	M	-	2	84	120				
 tenkukyaku 4HK	b+HK	8	5	13	2	0	70	150	25	15	12	H	V	4	84	180				
 yokusenkyaku 6HK	f+HK	18	5	13	2	-2	70	150	35	15	13	H	-	4	84	180				
