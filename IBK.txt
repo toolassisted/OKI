@@ -3,7 +3,7 @@ stand LP		3	2	8	3	2	30	70	4	3		12		5								5LP 12(34)(56789) CHAIN 12(34)(56789
 stand LP CHAIN LP 1	5LP 5LP	3	2(7)2	8	3	2						21										
 stand LP CHAIN LP 2	5LP 5LP 5LP	3	2(7)2(7)2	8	3	2						30										
 stand LP CHAIN LP 3	5LP 5LP 5LP 5LP	3	2(7)2(7)2(7)2	8	3	2						39										
-stand MP		5	3	10	4	2	60	100	8	6		17		6								
+stand MP		5	3	10	4	2	60	100	8	6		17		6								CANCEL FRAME 5
 stand HP		12	2	19	0	-5	80	150	9	4		32		2								
 stand LK		4	3	9	0	-2	30	70	3	1		15		2								
 stand MK		5	2	15	0	-1	60	100	8	7		21		2								
@@ -21,7 +21,7 @@ crouch HK VT		8	2	24	KD	-12	100	150	KD	5		33		KD					84	35	40
 6MK		28	2	16	3	-2	70	100				45		5								
 6HK		14	4	16	2	-3	90	150				33		KD					98	39	44	
 3MK		7	11	14	-6	-10	50	100				31		-4								
-4MP		7	3	11	4	-1	40	70	9	4		20		6								
+4MP		7	3	11	4	-1	40	70	9	4		20		6								CANCEL FRAME 7
 4MP 2		9	1	11	4	0	30	50	7	3				6								
 TC 5LP 5MP		3	2		-5	-8			4	1												
 TC 5LP 5MP 5HP		3	2		0	-5			10	5												
@@ -40,6 +40,7 @@ jump MK		6	6		8	5	60	100
 jump HK		8	4		11	8	90	150														
 TC 8LP 8MK		3	5																			
 TC 8HP 8HK		9	5																			
+2MP 236LPMP 236HK TC 8HP 8HK		9	5																73	14	19	
 Nobusuma LOW	KK	14	32	31								76										LAND 9F
 Nobusuma	KK	21	32	36								88										LAND 9F
 Nobusuma LAST	KK	36	32	31								98										LAND 9F
@@ -72,7 +73,7 @@ Raida HP	hcb+HP	7	2	30	KD	-12						-							79	20	20
 Raida EX	hcb+PP	7	3	27	KD	-11						36							79	20	20	FRAME 3-9 PROJ INV
 Airborne Kunai LP	qcf+LP	7	1						17	13												
 Airborne Kunai MP	qcf+MP	7	1						17	13												
-Airborne Kunai HP	qcf+HP	7	1						17	13												
+Airborne Kunai HP	qcf+HP	7	1						17	13												VTC HIT ADV https://youtu.be/etuMPwgBl78
 Airborne Kunai EX	qcf+PP	7	1						22	24												
 Kunai Ikkinage LP	HOLD 50 FRAME LP	11	1	26								37							110	51	56	
 Kunai Ikkinage MP	HOLD 50 FRAME MP	11	1	26								-							110	51	56	
