@@ -34,8 +34,8 @@ hadouken MP	qcf+MP	14	-	34	-4	-10	50	100		8	8	H	CA,V	-2	60	120
 hadouken HP	qcf+HP	14	-	34	-4	-10	50	100		8	8	H	CA,V	-2	60	120				
 hadouken EX	qcf+PP	12	-	33	3	1	40*50	0*150		4*8	7*7	H*H	V	3	48*50	0*150				
 shoryuken LP	f,d,df+LP	3	11	30	KD	-23	100	150		12	25	H	CA,V	KD	120	180	89	30	35	
-shoryuken MP	f,d,df+MP	4	12	35	KD	-26	80*50	75*75		12*10	20*13	H	CA,V	KD	96*50	90*75	88	29	34	
-shoryuken HP	f,d,df+HP	4	13	43	KD	-34	60*50*30	50*50*50		12*8*8	15*13*8	H	CA,V	KD	72*50*30	60*50*50	85	26	31	
+shoryuken MP	f,d,df+MP	4	12	35	KD	-26	80*50	75*75		12*10	20*13	H	CA,V	KD	96*50	90*75	88	29	34	[FRAME 1-6] ALL INV [FRAME 8-39] AIR
+shoryuken HP	f,d,df+HP	4	13	43	KD	-34	60*50*30	50*50*50		12*8*8	15*13*8	H	CA,V	KD	72*50*30	60*50*50	85	26	31	[FRAME 1-3] ALL INV [FRAME 8-46] AIR
 shoryuken EX	f,d,df+PP	4	8(18)7	60	KD	-45	20x6*30	20x5*50*50		6*4*6*4*4*4	5x6*8	H	V	KD	24*20x6*30	24*20x5*50*50	83	24	29	
 tatsumaki senpukyaku LK	qcb+LK	3	2(5)2(4)2	19	KD	-8	40*30	50*50		10	10*8	H	CA,V	KD	48*30	60*50	96	37	42	
 tatsumaki senpukyaku MK	qcb+MK	6	2(5)2(6)2(6)2(4)2	18	KD	-9	40*30*30	50*50*50		10*10*10	10*8*8	H	CA,V	KD	48*30*30	60*50*50	95	36	41	
@@ -58,8 +58,8 @@ V-TRIGGER
 VT hadouken	qcf+P	13	-	34	KD	-6	70	100				H	CA							
 VT hadouken EX	qcf+PP	12	-	33	KD	2	60*60	100*100				H	-							
 VT shoryuken LP	f,d,df+LP	3	12	26	KD	-18	120*80	150*100				H	CA				91	32	37	
-VT shoryuken MP	f,d,df+MP	4	13	41	KD	-31	100*50	75*75				H	CA				91	32	37	
-VT shoryuken HP	f,d,df+HP	4	14	49	KD	-39	40*30x4	30x5				H	CA				93	34	39	
+VT shoryuken MP	f,d,df+MP	4	13	41	KD	-31	100*50	75*75				H	CA				91	32	37	[FRAME 1-5] ALL INV [FRAME 8-39] AIR
+VT shoryuken HP	f,d,df+HP	4	14	49	KD	-39	40*30x4	30x5				H	CA				93	34	39	[FRAME 1-3] ALL INV [FRAME 8-48] AIR
 VT shoryuken EX	f,d,df+PP	4	8(18)11	56	KD	-42	20x8*10	20x8*10				H	-				83	24	29	
 VT tatsumaki senpukyaku LK	qcb+LK	3	2(5)4(2)2	15	KD	-8	50*40	75*75				H	CA				98	39	44	
 VT tatsumaki senpukyaku MK	qcb+MK	6	2(5)5(1)3(3)3(3)3	25	KD	-9	40*40*40	50*50*100				H	CA				95	36	41	
