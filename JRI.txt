@@ -58,7 +58,7 @@ VS RELEASE TRACK CLOSE	MP+MK	26	2	33	KD	-18													CHARGE 41F
 VS RELEASE FAR	MP+MK	15	16(16)2	33	KD	-18													CHARGE 41F
 VS RELEASE CANCEL	MP+MK FRAME 9 MP+MK	10	1	25								35							FIRST CANCEL 1F INPUT
 VS RELEASE CANCEL ON HIT	MP+MK FRAME 8 MP+MK	9	1	25								34							FIRST CANCEL 1F INPUT
-VR	f+KKK	15	1	28	KD	-2										72	13	15	
+VR	f+KKK	15	1	28	KD	-2										72	13	18	
 Fuharenkyaku LK	qcf+LK	10	3	18	KD	-2			KD	7		30				99	40	45	[ACTIVE FRAME] HIT PROJ BOX
 Fuharenkyaku MK	qcf+MK	10	3	18	KD	-2			KD	7		-				99	40	45	[ACTIVE FRAME] HIT PROJ BOX
 Fuharenkyaku HK	qcf+HK	10	3	18	KD	-2			KD	7		-				99	40	45	[ACTIVE FRAME] HIT PROJ BOX
@@ -87,6 +87,8 @@ Ryodansatsu MK VTC	qcb+MK	21	3	24	KD	9						-				98	39	44	[FRAME 5-19] AIR
 Ryodansatsu HK VTC	qcb+HK	25	3	24	KD	9						-				98	39	44	[FRAME 5-23] AIR
 Ryodansatsu EX VTC	qcb+KK	25	3	20	KD	7										110	51	56	[FRAME 5-23] AIR [FRAME 5-27] PROJ INV
 CA	qcb,qcb+K	9	1	58	KD	-15						67				82	23	28	[FRAME 1-8] ALL INV [FRAME 9-28] PROJ ACTIVE 20F
+214KK DP LK																92	33	38	
+214KK DP MK/HK CORNER																90	31	36	
 health	950																		
 stun	950																		
 taunt	61											61							
