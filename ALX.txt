@@ -23,10 +23,10 @@ flying cross chop	d+HP (air)	14	23	-	-	-	90	150	-	15	15	M	-	-	108	180	-	-	-
 face-crush chop	LP+LK	5	2	17	KD	-	120	170	24	-	-	T	-	KD	120	170	66	17	17	
 leg tomahawk	b+LP+LK	5	2	17	KD	-	140	200	24	-	-	T	-	KD	140	200	57	8	8	
 rage shift	HP+HK	-	-	6		-	-	-	6	-	-	-	-	-	-	-	-	-	-	
-sledge hammer	HP+HK (during VT)	20	??	??	5	-12	80	150	51	15	20	H	-	7	96	180	-	-	-	
-sledge hammer (full charge)	HP+HK (hold, during VT)	68	??	??	11	guard break +4	130	200	95	18	33	H	-	13	156	240	-	-	-	
-overhaul	MP+MK	-	-	-	-	-	-	-	55	-	-	-	-	-	-	-	-	-	-	
-big boot	f+KKK	23			KD	-2	60	0			0	H	-				86	27	32	
+sledge hammer	HP+HK (during VT)	20	2	29	5	-12	80	150	51	15	20	H	-	7	96	180	-	-	-	[FRAME 2-12] ARMOR
+sledge hammer (full charge)	HP+HK (hold, during VT)	68	2	25	11	guard break +4	130	200	95	18	33	H	-	13	156	240	-	-	-	[FRAME 2-57] ARMOR
+overhaul	MP+MK	-	-	55	-	-	-	-	55	-	-	-	-	-	-	-	-	-	-	
+big boot	f+KKK	15	2	23	KD	-2	60	0			0	H	-				86	27	32	FREEZE START UP 23F
 flash chop LP	qcf+LP	13	3	19	2	-4	70	150	35	15	18	H	CA	4	84	180	-	-	-	
 flash chop MP	qcf+MP	19	3	18	3	-4	80	150	40	15	20	H	CA	5	96	180	-	-	-	
 flash chop HP	qcf+HP	25	3	20	2	-4	90	150	48	15	23	H	CA	4	108	180	-	-	-	
@@ -54,8 +54,8 @@ head crush MP	35d,u+MP	40	2	49	3	-	160	250	91	-	-	T	-	3	160	250	-	-	-
 head crush HP	35d,u+HP	44	2	55	3	-	160	250	101	-	-	T	-	3	160	250	-	-	-	
 head crush EX	35d,u+PP	30	2	49	3	-	180	300	82	-	-	T	-	3	180	300	-	-	-	
 heavy hammer	qcf,qcf+P	5			KD	-25	100*50*200	0*0*0		-	20*20*20	H*H*H	-	KD	120*50*200	0*0*0	64	15	15	
-health																				
-stun																				
+health	1000																			
+stun	1050																			
 taunt	61																			
 jump	47(4+39+4)	43	1	4					47											
 jump forward	46(3+39+4)	42	1	4					46											
