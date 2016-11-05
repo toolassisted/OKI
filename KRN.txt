@@ -46,10 +46,12 @@ tenko LATE	qcf+K > P	13	3	21	KD	-10	60	100	36	15	20	H	-	KD	96	120	106	47	52		201
 orochi	qcf+K > d+P	11	4	20	2	-2	90	150		15	23	H	-	4	108	180				-7 on block for EX, 25 chip	
 SAPPO orochi	qcf+K > d+P	15	4	20	2	-2	90	150	38	15	23	H	-	4	108	180				-7 on block for EX, 25 chip	20160514
 SAPPO LK orochi	qcf+K > d+P	25	4	20	2	-2	90	150	48	15	23	H	-	4	108	180				-7 on block for EX, 25 chip	20160514
-mujinkyaku LK	qcb+LK	11	3(6)3	19	2	-5	30*40	50*50		4*12	8*10	H*H	CA	2	36*40	60*50					
-mujinkyaku MK	qcb+MK	11	3(6)3(18?)2	23	2	-6	30*40*90	50*40*150		4*12*14	8*10*23	H*H*M	CA	2	36*40*90	60*40*150					
-mujinkyaku HK	qcb+HK	13	?	31	KD	-15	30*40*25*25	50*40*30*60		4*9*8*9	80*10*6*6	H*H*H*H	CA	KD	36*40*25*25	60*40*30*60	83	24	29		20160523
-mujinkyaku EX	qcb+KK	8	?	?	KD	-2	15*15*30*30*60	0*0*0*0*200		4x3*14*16	4*4*8*8	H	-	KD	18*15*30*30*60	0*0*0*0*200	79	15	20		20160523
+SAPPO EX orochi	qcf+KK > d+P	14	4	27	KD	-7	100	200	44					KD	120	200	80	48	48	HIT ADV +24	20161104
+SAPPO EX orochi CH	qcf+KK > d+P	14	4	27	KD	-7	120	240	44					KD	120	240	83	51	51	CH ADV +27	20161104
+mujinkyaku LK	qcb+LK	11	3(6)3	19	2	-5	30*40	50*50	41	4*12	8*10	H*H	CA	2	36*40	60*50					20161104
+mujinkyaku MK	qcb+MK	11	3(6)3(26)2	23	2	-6	30*40*90	50*40*150	73	4*12*14	8*10*23	H*H*M	CA	2	36*40*90	60*40*150					20161104
+mujinkyaku HK	qcb+HK	13	3(7)3(18)3(9)3	31	KD	-15	30*40*25*25	50*40*30*60	89	4*9*8*9	80*10*6*6	H*H*H*H	CA	KD	36*40*25*25	60*40*30*60	83	24	29		20160523
+mujinkyaku EX	qcb+KK	8	2(5)2(7)3(6)5	17	KD	-2	15*15*30*30*60	0*0*0*0*200	54	4x3*14*16	4*4*8*8	H	-	KD	18*15*30*30*60	0*0*0*0*200	79	15	20		20160523
 ressenha LP	qcb+LP	16	2(8)3	19	2	-6	30*60	50*50		8*12	8*15	H*M	CA	2	36*60	60*50					
 ressenha LP	qcb+LP	16	13	19	2	-6	30*60	50*50	47	8*12	8*15	H*M	CA	2	36*60	60*50					
 ressenha LP 8K	qcb+LP 8K	54	2	22	KD				77												
