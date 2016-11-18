@@ -44,6 +44,14 @@ air hyakuretsukyaku LK	qcf+LK(air)	7	2x4	-	-		20x4	20x4		2x4	5x4	H	-	-	24*20x3	2
 air hyakuretsukyaku MK	qcf+MK(air)	8	2x5	-	-		20x5	20x5		2x5	5x5	H	-	-	24*20x4	24*20x4				
 air hyakuretsukyaku HK	qcf+HK(air)	8	2x6	-	-		20x6	20x6		2x6	5x6	H	-	-	24*20x5	24*20x5				
 air hyakuretsukyaku EX	qcf+KK(air)	6	2x7	-	-		25x7	30x7		2x7	6x7	H	-	-	30*25x6	36*30x6				
+AIR LEG LK LOW 9J	UF qcf+LK(air)	18	2(5)2(3)2(5)2	14	3	-1			52			H	-	-						
+AIR LEG MK LOW 9J	UF qcf+MK(air)	17	2(2)2(4)2(4)2(2)2	13	4	1			51			H	-	-						
+AIR LEG HK LOW 9J	UF qcf+HK(air)	15	2(4)2(3)2(4)2(2)2(2)2	20	-3	-6			61			H	-	-						
+AIR LEG EX LOW 9J	UF qcf+KK(air)	13	2(1)2(2)2(3)2(1)2(2)2(3)2	24	-7	-10			62			H	-	-						
+VT AIR LEG LK LOW 9J	UF qcf+LK(air)	18	2(5)2(3)2(5)2	14	3	-1			52			H	-	-						
+VT AIR LEG MK LOW 9J	UF qcf+MK(air)	17	2(2)2(4)2(4)2(1)2	14	3	0			51			H	-	-						
+VT AIR LEG HK LOW 9J	UF qcf+HK(air)	15	2(4)2(3)2(4)2(2)2(2)2	20	-3	-6			61			H	-	-						
+VT AIR LEG EX LOW 9J	UF qcf+KK(air)	13	2(2)2(1)2(3)2(1)2(2)2(3)2	24	-7	-10			62			H	-	-						
 spinning bird kick LK	d,u+LK	9	2(1)2(4)2(5)2(3)2	24	KD	-6	20x4*40	20*25x3*105	55	4x4*10	5x4*10	H	-	KD	24*20x3*40	24*20x3*40	91	32	37	
 spinning bird kick MK	d,u+MK	15	2(1)2(4)2(4)2(3)2(6)2(5)2	24	KD	-8	25*15x5*40	30*20x5*70	75	4x6*10	6*4x7*10	H	-	KD	30*15x5*40	36*20x5*70	91	32	37	
 spinning bird kick HK	d,u+HK	22	2(1)2(4)2(4)2(4)2(5)2(4)2(5)2(5)2	26	KD	-10	10*15x7*45	20x8*40	97	4x8*10	3*4x7*11	H	-	KD	12*15x7*45	24*20x7*40	89	30	35	
