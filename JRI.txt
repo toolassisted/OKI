@@ -1,5 +1,5 @@
 Move	Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	Damage	Stun	VTC Hit Adv	VTC Blk Adv	VSRC HIT ADV	Total	Chip	CH hit adv.	VTC CH hit adv.	KD Adv.	KDR Adv.	KDRB Adv.	Note
-stand LP		3	2	7	4	2	30	70	1	-1	-24	11							5LP 12(34)(5678) CHAIN 12(34)(5678)/(10-11)
+stand LP		3	2	7	4	2	30	70	1	-1	-24	11							5LP 12(34)(5678) CHAIN 12(34)(5678)/(9-11)
 stand LP CHAIN LP 1	5LP 5LP	3	2(6)2	7	4	2	30	70	1	-1		19							
 stand LP CHAIN LP 2	5LP 5LP 5LP	3	2(6)2(6)2	7	4	2	30	70	1	-1		27							
 stand LP CHAIN LP 3	5LP 5LP 5LP 5LP	3	2(6)2(6)2(6)2	7	4	2	30	70	1	-1		35							
