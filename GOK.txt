@@ -10,7 +10,7 @@ crouch MP		6	3	12	20	5	7	3	60	100
 crouch HP		10	4	16	29	8	KD	3	80	150								
 crouch LK		4	2	7	12	2	4	1	20	70								
 crouch MK		6	2	14	21	3	5	-1	50	100								
-crouch HK		7	2	24	32	KD	KD	-5	90	150								
+crouch HK		7	2	24	32	KD	KD	-5	90	150					67	18	23	
 crouch HK VTC																		
 6MP		23	3	21	46	0	2	-6	70	100								
 6HP		33	7	16	55	4	6	1	60	100								
@@ -23,8 +23,8 @@ jump HP		8	5
 jump LK		4	6															
 jump MK		7	4															
 jump HK		8	4															
-THROW	LP+LK	5	2	18	24	KD	KD	KD	110	120								
-THROW BACK	b+LP+LK	5	2	18	24	KD	KD	KD	120	170								
+THROW	LP+LK	5	2	18	24	KD	KD	KD	110	120					81	22	22	
+THROW BACK	b+LP+LK	5	2	18	24	KD	KD	KD	120	170					77	18	18	
 VR	f+KKK																	
 VS	MP+MK																	
 VT	HP+HK	1	6	0	6													
