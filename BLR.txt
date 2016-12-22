@@ -1,62 +1,62 @@
-Move	Command	Startup	Active	Recovery	Hit Advantage	CH hit adv.	Block Advantage	Total 	Hitstop	 Damage	Stun	Chip	CH Damage	CH Stun	Attack Level	Cancel Ability	KD Adv.	KDR Adv.	KDRB Adv.	Note
-stand LP		5	2	9	5	7	1	15	8	30	70	0	36	84	H	SP,V				
-stand MP		8	2	14	6	8	2	23	12	60	100	10	72	120	H	V				
-stand HP		8	2	21	6	8	-2	30	15	80	150	13	96	180	H	SP,V				
-stand LK		3	2	9	4	6	2	13	8	30	70	0	36	84	H	V				
-stand MK		7	3	12	4	6	2	21	12	60	100	10	72	120	H	V				
-stand HK		11	3	16	4	18	-1	29	15	80	150	15	96	180	H	V				BLK AUTO CANCEL
-crouch LP		4	3	6	5	7	2	12	8	30	70	0	36	84	H	SP,V				
-crouch MP		6	2	15	3	5	1	22	12	60	100	10	72	120	H	V				
-crouch HP		9	2	19	-2	0	-5	29	15	80	150	13	96	180	H	V				
-crouch LK		4	2	9	4	6	0	14	8	20	70	0	24	84	L	V				
-crouch MK		8	2	16	7	9	2	25	12	50	100	8	60	120	L	V				
-crouch HK		9	9	18	KD	KD	-13	35	15	80	150	15	96	180	L	V	68	19	24	
-jump LP		4	5	-	-	-	-		8	40	70	0	48	84	M	-				
-jump MP		5	5	-	-	-	-		12	70	100	12	84	120	M	-				
-jump HP		7	4	-	-	-	-		15	90	150	15	108	180	M	-				
-jump LK		4	6	-	-	-	-		8	40	70	0	48	84	M	-				
-jump MK		5	7	-	-	-	-		12	70	100	12	84	120	M	-				
-jump HK		9	5	-	-	-	-		15	90	150	15	108	180	M	-				
-mercury shard	f+MK	22	3	15	0	2	-6	39	12	60	100	10	72	120	M	-				
-buster claw	f+HP	13	2	24	-3	KD	-14	38	15	80	150	13	96	180	H	-	104	45	50	
-matador flash MASH	HP > HP > MP+MK (claw only)	8			KD	KD	-10		15*15	80*54	150*72	13*10	96*54	180*72	H*H	-	77	18	23	MASH MP+MK
-matador flash	HP > HP > MP+MK (claw only)	8			KD	KD	-10		15*15	80*54	150*72	13*10	96*54	180*72	H*H	-	78	19	24	NO MASH MP+MK
-matador blitz MASH	MP > HK > MP+MK (claw off)	6			KD	KD	-16		12*15	60	100	10*13	72	120	H	SP	77	18	23	MASH MP+MK
-matador blitz	MP > HK > MP+MK (claw off)	6			KD	KD	-16		12*15	60	100	10*13	72	120	H	SP	78	19	24	NO MASH MP+MK
-wall jump	uf during jump near wall						-		-							-				
-rainbow suplex	LP+LK	5	2	18	KD	KD	-	24	-	12	170		140	200	T	-	62	13	13	
-crescent line	b+LP+LK	5	2	18	KD	KD	-	24	-	140	200		140	200	T	-	57	8	8	
-stardust shot	LP+LK(air)	5	2	-	KD	KD	-		-	130	200		130	200	T	-	-			
-bloody kiss torero	HP+HK	10			KD	KD	-2	44	7*3*10	30*70*70	0*0*0	8*18*18	36*70*70	0*0*0	H	-	111	52	57	
-bloody kiss rojo	d+HP+HK	10			KD	KD	-22	37	5*3*10	30*70*70	0*0*0	8*18	36*70*70	0*0*0	H	-	81	23	28	
-bloody kiss azul	HP+HK during forward jump	10			KD	KD	-2	-	6*3*10	30*85*85	0*0*0	8*21*21	36*85*85	0*0*0	H	-	89	27	35	
+Move	Command	Startup	Active	Recovery	Hit Advantage	CH hit adv.	Block Advantage	Total 	 Damage	Stun	Chip	CH Damage	CH Stun	Hitstop	Attack Level	Cancel Ability	KD Adv.	KDR Adv.	KDRB Adv.	Note
+stand LP		5	2	9	5	7	1	15	30	70	0	36	84	8	H	SP,V				
+stand MP		8	2	14	6	8	2	23	60	100	10	72	120	12	H	V				
+stand HP		8	2	21	6	8	-2	30	80	150	13	96	180	15	H	SP,V				
+stand LK		3	2	9	4	6	2	13	30	70	0	36	84	8	H	V				
+stand MK		7	3	12	4	6	2	21	60	100	10	72	120	12	H	V				
+stand HK		11	3	16	4	18	-1	29	80	150	15	96	180	15	H	V				BLK AUTO CANCEL
+crouch LP		4	3	6	5	7	2	12	30	70	0	36	84	8	H	SP,V				
+crouch MP		6	2	15	3	5	1	22	60	100	10	72	120	12	H	V				
+crouch HP		9	2	19	-2	0	-5	29	80	150	13	96	180	15	H	V				
+crouch LK		4	2	9	4	6	0	14	20	70	0	24	84	8	L	V				
+crouch MK		8	2	16	7	9	2	25	50	100	8	60	120	12	L	V				
+crouch HK		9	9	18	KD	KD	-13	35	80	150	15	96	180	15	L	V	68	19	24	
+jump LP		4	5	-	-	-	-		40	70	0	48	84	8	M	-				
+jump MP		5	5	-	-	-	-		70	100	12	84	120	12	M	-				
+jump HP		7	4	-	-	-	-		90	150	15	108	180	15	M	-				
+jump LK		4	6	-	-	-	-		40	70	0	48	84	8	M	-				
+jump MK		7	7	-	-	-	-		70	100	12	84	120	12	M	-				
+jump HK		9	5	-	-	-	-		90	150	15	108	180	15	M	-				
+mercury shard	f+MK	22	3	15	0	2	-6	39	60	100	10	72	120	12	M	-				
+buster claw	f+HP	13	2	24	-3	KD	-14	38	80	150	13	96	180	15	H	-	104	45	50	
+matador flash MASH	HP > HP > MP+MK (claw only)	8	2		KD	KD	-10		80*54	150*72	13*10	96*54	180*72	15*15	H*H	-	77	18	23	MASH MP+MK
+matador flash	HP > HP > MP+MK (claw only)	8	2		KD	KD	-10		80*54	150*72	13*10	96*54	180*72	15*15	H*H	-	78	19	24	NO MASH MP+MK
+matador blitz MASH	MP > HK > MP+MK (claw off)	7	3		KD	KD	-16		60	100	10*13	72	120	12*15	H	SP	77	18	23	MASH MP+MK
+matador blitz	MP > HK > MP+MK (claw off)	7	3		KD	KD	-16		60	100	10*13	72	120	12*15	H	SP	78	19	24	NO MASH MP+MK
+wall jump	uf during jump near wall						-							-		-				
+rainbow suplex	LP+LK	5	2	18	KD	KD	-	24	12	170		140	200	-	T	-	62	13	13	
+crescent line	b+LP+LK	5	2	18	KD	KD	-	24	140	200		140	200	-	T	-	57	8	8	
+stardust shot	LP+LK(air)	5	2	-	KD	KD	-		130	200		130	200	-	T	-	-			
+bloody kiss torero	HP+HK	10			KD	KD	-2	44	30*70*70	0*0*0	8*18*18	36*70*70	0*0*0	7*3*10	H	-	111	52	57	
+bloody kiss rojo	d+HP+HK	10			KD	KD	-22	37	30*70*70	0*0*0	8*18	36*70*70	0*0*0	5*3*10	H	-	81	22	27	
+bloody kiss azul	HP+HK during forward jump	10			KD	KD	-2	-	30*85*85	0*0*0	8*21*21	36*85*85	0*0*0	6*3*10	H	-	89	30	35	
 matador turn DODGE	MP+MK 2F	6	27	4				36												[FRAME 6-32] UPPER BODY INV [FRAME 6-36] PROJ INV
 matador turn DODGE 1F	MP+MK 1F	7	26	4																[FRAME 7-32] UPPER BODY INV [FRAME 7-36] PROJ INV
-matador turn ATTACK	MP+MK HOLD	22	2	31	KD	KD	-13	54		90	100	15	108	120	H	-	77	18	23	[FRAME 6-19] UPPER BODY INV [FRAME 6-19] PROJ INV
-backslash	f+PPP							41	-											
-short backslash	f+KKK							31	-											
-flying barcelona attack LK	f,d,df+LK or b,d,db+LK					-			-				-	-	-	-				
-flying barcelona attack MK	f,d,df+MK or b,d,db+MK					-			-				-	-	-	-				
-flying barcelona attack HK	f,d,df+LK or b,d,db+HK					-			-				-	-	-	-				
-flying barcelona attack EX	f,d,df+KK or b,d,db+KK	9			KD	KD			15	40	0	10	48	0	H	-	-			
-flying barcelona attack(claw)	f,d,df+K, then P(must have claw)	3	6		KD	KD	-		15	90	150	23	108	180	M	-				
-izuna drop	f,d,df+K, then LP+LK	4	5		KD	KD	-		-	150	150	-	180	180	T	-		12	12	
-grand izuna drop LP	hcb+LP (claw off)	6	2	44	KD	KD	-		-	50*80	100*100	-	50*80	100*100	T	-	63	14	14	
-grand izuna drop MP	hcb+MP (claw off)	6	2	44	KD	KD	-		-	50*90	100*100	-	50*90	100*100	T	-	63	14	14	
-grand izuna drop HP	hcb+HP (claw off)	6	2	44	KD	KD	-		-	50*100	100*100	-	50*100	100*100	T	-	63	14	14	
-grand izuna drop EX	hcb+PP (claw off)	6	2	44	KD	KD	-		-	80*100	100*150	-	80*100	100*150	T	-	68	19	19	
-crimson terror LK	qcf+LK	8	2(17)5	12	0	0	-6	43	3*15	20*60	20*100	5*15	24*60	24*100	H*H	CA				
-crimson terror MK	qcf+MK	17	2(10)2(20)5	14	2	-2	-7	69	3*3*15	20*20*60	20*20*100	5*5*15	24*20*60	24-20*100	H*H*H	CA				
-crimson terror HK	qcf+HK	19	4(12)3(10)3(22)5	16	KD	KD	-8	93	3x3*15	20x3*60	20x3*100	5x3*15	24*20*20*60	24*20*20*100	H	CA	89	30	35	
-crimson terror EX	qcf+KK	16	5(14)3(8)3(8)3(18)5	10	KD	KD	-2	92	3x4*15	20x4*60	20x4*100	5x4*15	24*20x3*60	24*20x3*100	H	-	97	38	43	
-aurora spin edge LP	qcb+LP	12	6	20	KD	KD	-7	37	16	100	200	25	120	240	H	CA	90	31	36	
-aurora spin edge MP	qcb+MP	15	6	18	KD	KD	-6	38	16	100	200	25	120	240	H	CA	92	33	38	
-aurora spin edge HP	qcb+HP	12	4	18	KD	KD	-4	33	16	100	200	25	120	240	H	CA	101	42	47	
-aurora spin edge EX	qcb+PP	12	7(12)4	21	KD	KD	-3	55	16*16	50*100	100*100	13*25	120*100	120*100	H*H	-	86	27	32	
-switch claw	qcf+P			23		-		23	-				-	-	-	-				
-CLAW OFF CANCEL	qcf+P			22		-		22	-				-	-	-	-				
-CLAW ON CANCEL	qcf+P			20		-		20	-				-	-	-	-				
-bloody rain	qcf,qcf+P or qcb,qcb+P	9	8	29	KD	KD	-22		-	330	0	5	334	0	H	-	80	40	40	
+matador turn ATTACK	MP+MK HOLD	22	2	31	KD	KD	-13	54	90	100	15	108	120		H	-	77	18	23	[FRAME 6-19] UPPER BODY INV [FRAME 6-19] PROJ INV
+backslash	f+PPP							41						-						
+short backslash	f+KKK							31						-						
+flying barcelona attack LK	f,d,df+LK or b,d,db+LK					-						-	-	-	-	-				
+flying barcelona attack MK	f,d,df+MK or b,d,db+MK					-						-	-	-	-	-				
+flying barcelona attack HK	f,d,df+LK or b,d,db+HK					-						-	-	-	-	-				
+flying barcelona attack EX	f,d,df+KK or b,d,db+KK	9			KD	KD			40	0	10	48	0	15	H	-	-			
+flying barcelona attack(claw)	f,d,df+K, then P(must have claw)	3	6		KD	KD	-		90	150	23	108	180	15	M	-				
+izuna drop	f,d,df+K, then LP+LK	4	5		KD	KD	-		150	150	-	180	180	-	T	-		12	12	
+grand izuna drop LP	hcb+LP (claw off)	6	2	50	KD	KD	-	57	50*80	100*100	-	50*80	100*100	-	T	-	63	14	14	
+grand izuna drop MP	hcb+MP (claw off)	6	2	50	KD	KD	-	57	50*90	100*100	-	50*90	100*100	-	T	-	63	14	14	
+grand izuna drop HP	hcb+HP (claw off)	6	2	50	KD	KD	-	57	50*100	100*100	-	50*100	100*100	-	T	-	63	14	14	
+grand izuna drop EX	hcb+PP (claw off)	6	2	50	KD	KD	-	57	80*100	100*150	-	80*100	100*150	-	T	-	68	19	19	
+crimson terror LK	qcf+LK	8	2(17)5	12	1	1	-6	43	20*60	20*100	5*15	24*60	24*100	3*15	H*H	CA				
+crimson terror MK	qcf+MK	17	2(10)2(20)5	14	2	2	-7	69	20*20*60	20*20*100	5*5*15	24*20*60	24-20*100	3*3*15	H*H*H	CA				
+crimson terror HK	qcf+HK	19	4(12)3(10)3(22)5	16	KD	KD	-8	93	20x3*60	20x3*100	5x3*15	24*20*20*60	24*20*20*100	3x3*15	H	CA	89	30	35	
+crimson terror EX	qcf+KK	16	5(14)3(8)3(8)3(18)5	10	KD	KD	-2	92	20x4*60	20x4*100	5x4*15	24*20x3*60	24*20x3*100	3x4*15	H	-	97	38	43	
+aurora spin edge LP	qcb+LP	12	6	20	KD	KD	-7	37	100	200	25	120	240	16	H	CA	90	31	36	
+aurora spin edge MP	qcb+MP	15	6	18	KD	KD	-6	38	100	200	25	120	240	16	H	CA	92	33	38	
+aurora spin edge HP	qcb+HP	12	4	18	KD	KD	-4	33	100	200	25	120	240	16	H	CA	101	42	47	
+aurora spin edge EX	qcb+PP	12	7(12)4	21	KD	KD	-3	55	50*100	100*100	13*25	120*100	120*100	16*16	H*H	-	86	27	32	
+switch claw	qcf+P			23		-		23				-	-	-	-	-				
+CLAW OFF CANCEL	qcf+P			22		-		22				-	-	-	-	-				
+CLAW ON CANCEL	qcf+P			20		-		20				-	-	-	-	-				
+bloody rain	qcf,qcf+P or qcb,qcb+P	9	8	29	KD	KD	-22		330	0	5	334	0	-	H	-	80	40	40	BLK ADV -14 LOL
 health	1000																			
 stun	950																			
 taunt	61			61																
@@ -71,12 +71,12 @@ EMPTY jump backward	47(4+39+0)	5	39					43
 dash forward	17		17					17												
 dash backward	21	3	8	11				21												[FRAME 3-10] AIR CH
 no claw normals...																				
-NC stand LP		3	2	6	6	8	3	10	8	30	70	0	36	84	H	SP,V	-	-	-	
-NC stand MP		7	3	15	4	6	1	24	12	60	100	10	72	120	H	V	-	-	-	
-NC stand HP		9	2	21	4	6	-1	31	15	90	150	15	108	180	H	SP,V	-	-	-	
-NC crouch LP		4	3	6	4	6	2	12	8	30	70	0	36	84	H	CH,SP,V	-	-	-	
-NC crouch MP		6	3	14	4	6	2	22	12	60	100	10	72	120	H	SP,V	-	-	-	
-NC crouch HP		9	4	15	1	KD	-2	27	15	80	150	13	96	180	H	SP,V	102	43	48	
-NC jump LP		3	5	-	-	-	-	-	8	40	70	0	48	84	M	-	-	-	-	
-NC jump MP		4	5	-	-	-	-	-	12	70	100	10	84	120	M	-	-	-	-	
-NC jump HP		7	4	-	-	-	-	-	15	90	150	15	108	180	M	-	-	-	-	
+NC stand LP		3	2	6	6	8	3	10	30	70	0	36	84	8	H	SP,V	-	-	-	
+NC stand MP		7	3	15	4	6	1	24	60	100	10	72	120	12	H	V	-	-	-	
+NC stand HP		9	2	21	4	6	-1	31	90	150	15	108	180	15	H	SP,V	-	-	-	
+NC crouch LP		4	3	6	4	6	2	12	30	70	0	36	84	8	H	CH,SP,V	-	-	-	
+NC crouch MP		6	3	14	4	6	2	22	60	100	10	72	120	12	H	SP,V	-	-	-	
+NC crouch HP		9	4	15	1	KD	-2	27	80	150	13	96	180	15	H	SP,V	102	43	48	
+NC jump LP		3	5	-	-	-	-	-	40	70	0	48	84	8	M	-	-	-	-	
+NC jump MP		4	5	-	-	-	-	-	70	100	10	84	120	12	M	-	-	-	-	
+NC jump HP		7	4	-	-	-	-	-	90	150	15	108	180	15	M	-	-	-	-	
