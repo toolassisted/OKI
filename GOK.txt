@@ -71,3 +71,15 @@ Hyakkishu LK THROW	hcf+LK LP+LK	30	5	26	60	KD	KD	KD	150	200					70	11	11	THROW S
 Hyakkishu MK THROW	hcf+MK LP+LK	30	5	27	61	KD	KD	KD	150	200					70	11	11	THROW STAND
 Hyakkishu HK THROW	hcf+HK LP+LK	30	5	29	63	KD	KD	KD	150	200					70	11	11	THROW STAND
 Hyakkishu EX THROW	hcf+KK LP+LK	6	10(11)3	29	58	KD	KD	KD	180	250					70	11	11	THROW STAND
+Ashura Senku	f,d,df+KKK	1	50	11	61													[FRAME 1-50] HIT PROJ INV
+Ashura Senku BACK	b,d,db+KKK	1	50	11	61													[FRAME 1-50] HIT PROJ INV
+CA	qcf,qcf+P	8	21	46	74	KD	KD	-30	320	0					98	31	36	[FRAME 1-11] ALL INV
+VT CA	LP,LP,f,LK,HP	1	29	39	68	KD	KD	KD	400	0					16	16	16	[WHIFF] 1F NO MOVE BUG
+health	875																	
+stun	900																	
+taunt	61				61													
+jump	46(4+38+4)	42	1	4	46													EARLY WHIFF 47
+jump forward	45(3+38+4)	41	1	4	45													EARLY WHIFF 48
+jump backwards	46(4+38+4)	42	1	4	46													EARLY WHIFF 49
+dash forward	16		16		16													
+dash backwards	21		21		21													
