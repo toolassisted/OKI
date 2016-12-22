@@ -1,7 +1,7 @@
 Move	Command	Startup	Active	Recovery	Total	Hit Advantage	CH hit adv.	Block Advantage	Damage	Stun	SPC	SPC HIT ADV	VTC	VTC Hit Adv	KD Adv.	KDR Adv.	KDRB Adv.	Note
 stand LP		3	2	7	11	4	6	2	30	70								
 stand MP		7	3	14	23	3	5	1	60	100								
-stand HP		8	3	19	29	2	KD		80	150								
+stand HP		8	3	19	29	2	KD	-5	80	150								
 stand LK		4	3	10	16	2	4	1	30	70								
 stand MK		5	2	16	22	4	6	-2	60	100								
 stand HK		12	2	22	35	3	11	-2	80	120								
@@ -10,7 +10,7 @@ crouch MP		6	3	12	20	5	7	3	60	100
 crouch HP		10	4	16	29	8	KD	3	80	150								
 crouch LK		4	2	7	12	2	4	1	20	70								
 crouch MK		6	2	14	21	3	5	-1	50	100								
-crouch HK		7	2	24	32	KD	KD		90	150					67	18	23	
+crouch HK		7	2	24	32	KD	KD	-15	90	150					67	18	23	
 crouch HK VTC																		
 6MP		23	3	21	46	0	2	-6	70	100								
 6HP		33	7	16	55	4	6	1	60	100								
