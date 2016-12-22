@@ -1,7 +1,7 @@
 Move	Command	Startup	Active	Recovery	Total	Hit Advantage	CH hit adv.	Block Advantage	Damage	Stun	SPC	SPC HIT ADV	VTC	VTC Hit Adv	KD Adv.	KDR Adv.	KDRB Adv.	Note
 stand LP		3	2	7	11	4	6	2	30	70								
 stand MP		7	3	14	23	3	5	1	60	100								
-stand HP		8	3	19	29	2	KD	-5	80	150								
+stand HP		8	3	19	29	2	KD	-5	80	150					106	42	47	
 stand LK		4	3	10	16	2	4	1	30	70								
 stand MK		5	2	16	22	4	6	-2	60	100								
 stand HK		12	2	22	35	3	11	-2	80	120								
@@ -15,51 +15,62 @@ crouch HK VTC
 6MP		23	3	21	46	0	2	-6	70	100								
 6HP		33	7	16	55	4	6	1	60	100								
 4HP		6	7	21	33	KD	KD	-10	90	200								
-TC 5HK 5HK		12	2															
-TC 5HP 5HP		8	3															
-jump LP		3	6															
-jump MP		5	5															
-jump HP		8	5															
-jump LK		4	6															
-jump MK		7	4															
-jump HK		8	4															
+TC 5HK 5HK		12	2			7	7	0	125	183								
+TC 5HP 5HP		8	3			KD	KD	-12	134	222					92	33	38	[CH] KD ADV +2
+jump LP		3	6						40	70								
+jump MP		5	5						60	100								
+jump HP		8	5						90	150								
+jump LK		4	6						40	70								
+jump MK		7	4						60	100								
+jump HK		8	4						90	150								
+jump 2MK	92MK	16	16						60	100								
 THROW	LP+LK	5	2	18	24	KD	KD	KD	110	120					81	22	22	
 THROW BACK	b+LP+LK	5	2	18	24	KD	KD	KD	120	170					77	18	18	
-VR	f+KKK																	
-VS	MP+MK																	
+VR	f+KKK	16	2	24	41	KD	KD		60	0					85	26	31	
+VS	MP+MK	3	12	29	43													[FRAME 3-14] ARMOR
+VS P	MP+MK,P	15	4	26	44	KD	KD	-10	70	100					84	25	30	[FRAME 3-10] ARMOR
+VS K	MP+MK,K	21	4	26	50	KD	KD	-13	60	100					109	50	55	[FRAME 3-10] ARMOR [CH] KD ADV +114/+50/+55
 VT	HP+HK	1	6	0	6													
-hadouken LP	qcf+LP																	
-hadouken MP	qcf+MP																	
-hadouken HP	qcf+HP																	
-hadouken EX	qcf+PP																	
-Sekia Goshoha LP	hcb+LP																	
-Sekia Goshoha MP	hcb+MP																	
-Sekia Goshoha HP	hcb+HP																	
-Sekia Goshoha EX	hcb+PP																	
+hadouken LP	qcf+LP	14	1	34	48	KD	KD	-6	60	120					88	29	34	CH KD ADV +3
+hadouken MP	qcf+MP	14	1	34	48	KD	KD	-6	60	120					88	29	34	CH KD ADV +3
+hadouken HP	qcf+HP	14	1	34	48	KD	KD	-6	60	120					88	29	34	CH KD ADV +3
+hadouken EX	qcf+PP	11	1	35	46	KD	KD	1	100	170					94	36	41	
+VT hadouken LP	qcf+LP	11	1	35	46	KD	KD	1	120	150					104	45	50	
+VT hadouken MP	qcf+MP	11	1	35	46	KD	KD	1	120	150					104	45	50	
+VT hadouken HP	qcf+HP	11	1	35	46	KD	KD	1	120	150					104	45	50	
+Sekia Goshoha LP	hcb+LP	21	1	34	55	KD	KD	-6	70	120					97	38	43	
+Sekia Goshoha MP	hcb+MP	23	1	38	61	KD	KD	-7	80	120					93	34	39	
+Sekia Goshoha HP	hcb+HP	25	1	42	67	KD	KD	-8	100	150					95	36	41	
+Sekia Goshoha EX	hcb+PP	2	19	49	69	KD	KD	8	120	200					110	51	56	
+Sekia Goshoha EX PROJ	hcb+PP	21	1	48	69	KD	KD	8	120	200					110	51	56	
 hadouken LP AIR	qcf+LP																	
 hadouken MP AIR	qcf+MP																	
 hadouken HP AIR	qcf+HP																	
 hadouken EX AIR	qcf+PP																	
-shoryuken LP	f,d,df+LP	3	12	34	48													
-shoryuken MP	f,d,df+MP	4	11	41	55													
-shoryuken HP	f,d,df+HP	4	11	44	58													
-shoryuken EX	f,d,df+PP	3	12(26)20	47	107													
-Tatsumaki LK	qcb+LK																	
-Tatsumaki MK	qcb+MK																	
-Tatsumaki HK	qcb+HK																	
-Tatsumaki EX	qcb+KK																	
+shoryuken LP	f,d,df+LP	3	12	34	48	KD	KD	-28	100	150					85	26	31	
+shoryuken MP	f,d,df+MP	4	11	41	55	KD	KD	-30	110	150					86	27	32	
+shoryuken HP	f,d,df+HP	4	11	44	58	KD	KD	-17	120	150					83	24	29	
+shoryuken EX	f,d,df+PP	3	12(26)20	47	107	KD	KD	-44	160	200					52	12	17	
+VT shoryuken LP	f,d,df+LP	3	11	46	59	KD	KD	-19	200	230					35	35	35	
+VT shoryuken MP	f,d,df+MP	4	11	46	60	KD	KD	-19	200	230					35	35	35	
+VT shoryuken HP	f,d,df+HP	5	11	46	61	KD	KD	-19	200	230					35	35	35	
+Tatsumaki LK	qcb+LK	11	2	24	36	KD	KD	-11	50	80					101	42	47	
+Tatsumaki MK	qcb+MK	4	2(3)2(12)2	23	47	KD	KD	-8	70	120					98	39	44	
+Tatsumaki HK	qcb+HK	4	2(3)2(12)2(10)3	30	67	KD	KD	-39	100	200					79	20	25	
+Tatsumaki EX	qcb+KK	10	2(4)2(5)2(3)3(3)2	26	61	KD	KD	-19	120	150					91	32	37	
 Tatsumaki LK AIR	qcb+LK																	
 Tatsumaki MK AIR	qcb+MK																	
 Tatsumaki HK AIR	qcb+HK																	
 Tatsumaki EX AIR	qcb+KK																	
-Hyakkishu LK	hcf+LK																	
-Hyakkishu MK	hcf+MK																	
-Hyakkishu HK	hcf+HK																	
-Hyakkishu EX	hcf+KK																	
-Ashura Senku	f,d,df+KKK																	
-Ashura Senku BACK	b,d,db+KKK																	
-CA	qcf,qcf+P	8	21	46	74													[FRAME 1-11] ALL INV
-VT CA	LP,LP,f,LK,HP	1	29	39	68													1F NO MOVE BUG
+Hyakkishu LK	hcf+LK	47	8	14	68	KD	KD	-2	100	150					71	22	27	
+Hyakkishu MK	hcf+MK	48	8	14	69	KD	KD	-2	100	150					71	22	27	
+Hyakkishu HK	hcf+HK	49	8	14	70	KD	KD	-2	100	150					71	22	27	
+Hyakkishu EX	hcf+KK	6	10(28)8	12	63	KD	KD	2	120	150					73	24	29	
+Hyakkishu EX CLOSE	hcf+KK	6	10(28)8	12	63	KD	KD	2	135	210					75	26	31	
+Ashura Senku	f,d,df+KKK	1	50	11	61													[FRAME 1-50] HIT PROJ INV
+Ashura Senku BACK	b,d,db+KKK	1	50	11	61													[FRAME 1-50] HIT PROJ INV
+CA	qcf,qcf+P	8	21	46	74	KD	KD	-30	320	0					98	31	36	[FRAME 1-11] ALL INV
+VT CA	LP,LP,f,LK,HP	1	29	39	68	KD	KD	KD	400	0					16	16	16	[WHIFF] 1F NO MOVE BUG
 health	875																	
 stun	900																	
 taunt	61				61													
