@@ -4,33 +4,33 @@ stand MP		7	3	14	23	3	5	1	60	100
 stand HP		8	3	19	29	2	KD	-5	80	150					106	42	47	
 stand LK		4	3	10	16	2	4	1	30	70								
 stand MK		5	2	16	22	4	6	-2	60	100								
-stand HK		12	2	22	35	3	11	-2	80	120								
+stand HK		12	2	22	35	3	11	-2	80	120								NO HIT CROUCH
 crouch LP		4	2	6	11	4	6	2	30	70								
 crouch MP		6	3	12	20	5	7	3	60	100								
-crouch HP		10	4	16	29	8	KD	3	80	150								
-crouch LK		4	2	7	12	2	4	1	20	70								
-crouch MK		6	2	14	21	3	5	-1	50	100								
-crouch HK		7	2	24	32	KD	KD	-15	90	150					67	18	23	
+crouch HP		10	4	16	29	8	KD	3	80	150								NO CROSS UP
+crouch LK		4	2	7	12	2	4	1	20	70								HIT LOW
+crouch MK		6	2	14	21	3	5	-1	50	100								HIT LOW
+crouch HK		7	2	24	32	KD	KD	-15	90	150					67	18	23	HIT LOW
 crouch HK VTC																		
-6MP		23	3	21	46	0	2	-6	70	100								
-6HP		33	7	16	55	4	6	1	60	100								
+6MP		23	3	21	46	0	2	-6	70	100								OVER HEAD
+6HP		33	7	16	55	4	6	1	60	100								HIT OTG
 4HP		6	7	21	33	KD	KD	-10	90	200								
 TC 5HK 5HK		12	2			7	7	0	125	183								
 TC 5HP 5HP		8	3			KD	KD	-12	134	222					92	33	38	[CH] KD ADV +2
 jump LP		3	6						40	70								
 jump MP		5	5						60	100								
 jump HP		8	5						90	150								
-jump LK		4	6						40	70								
-jump MK		7	4						60	100								
+jump LK		4	6						40	70								CROSS UP
+jump MK		7	4						60	100								CROSS UP
 jump HK		8	4						90	150								
-jump 2MK	92MK	16	16						60	100								
+jump 2MK	92MK	16	16						60	100								CROSS UP
 THROW	LP+LK	5	2	18	24	KD	KD	KD	110	120					81	22	22	
 THROW BACK	b+LP+LK	5	2	18	24	KD	KD	KD	120	170					77	18	18	
 VR	f+KKK	16	2	24	41	KD	KD		60	0					85	26	31	
 VS	MP+MK	3	12	29	43													[FRAME 3-14] ARMOR
 VS P	MP+MK,P	15	4	26	44	KD	KD	-10	70	100					84	25	30	[FRAME 3-10] ARMOR
 VS K	MP+MK,K	21	4	26	50	KD	KD	-13	60	100					109	50	55	[FRAME 3-10] ARMOR [CH] KD ADV +114/+50/+55
-VT	HP+HK	1	6	0	6													
+VT	HP+HK	1	6	0	6													NO INV LOL
 hadouken LP	qcf+LP	14	1	34	48	KD	KD	-6	60	120					88	29	34	CH KD ADV +3
 hadouken MP	qcf+MP	14	1	34	48	KD	KD	-6	60	120					88	29	34	CH KD ADV +3
 hadouken HP	qcf+HP	14	1	34	48	KD	KD	-6	60	120					88	29	34	CH KD ADV +3
@@ -54,28 +54,20 @@ shoryuken EX	f,d,df+PP	3	12(26)20	47	107	KD	KD	-44	160	200					52	12	17
 VT shoryuken LP	f,d,df+LP	3	11	46	59	KD	KD	-19	200	230					35	35	35	
 VT shoryuken MP	f,d,df+MP	4	11	46	60	KD	KD	-19	200	230					35	35	35	
 VT shoryuken HP	f,d,df+HP	5	11	46	61	KD	KD	-19	200	230					35	35	35	
-Tatsumaki LK	qcb+LK	11	2	24	36	KD	KD	-11	50	80					101	42	47	
+Tatsumaki LK	qcb+LK	11	2	24	36	KD	KD	-11	50	80					101	42	47	NO HIT CROUCH
 Tatsumaki MK	qcb+MK	4	2(3)2(12)2	23	47	KD	KD	-8	70	120					98	39	44	
-Tatsumaki HK	qcb+HK	4	2(3)2(12)2(10)3	30	67	KD	KD	-39	100	200					79	20	25	
+Tatsumaki HK	qcb+HK	4	2(3)2(12)2(10)3	30	67	KD	KD	-39	100	200					79	20	25	[HIT 2 3 4] NO HIT CROUCH
 Tatsumaki EX	qcb+KK	10	2(4)2(5)2(3)3(3)2	26	61	KD	KD	-19	120	150					91	32	37	
-Tatsumaki LK AIR	qcb+LK																	
-Tatsumaki MK AIR	qcb+MK																	
-Tatsumaki HK AIR	qcb+HK																	
+Tatsumaki LK AIR	qcb+LK																	[HIT 1 2 3] NO HIT CROUCH [HIT 2] CROSS UP
+Tatsumaki MK AIR	qcb+MK																	[HIT 1 2 3] NO HIT CROUCH [HIT 2] CROSS UP
+Tatsumaki HK AIR	qcb+HK																	[HIT 1 2 3] NO HIT CROUCH [HIT 2] CROSS UP
 Tatsumaki EX AIR	qcb+KK																	
 Hyakkishu LK	hcf+LK	47	8	14	68	KD	KD	-2	100	150					71	22	27	
 Hyakkishu MK	hcf+MK	48	8	14	69	KD	KD	-2	100	150					71	22	27	
 Hyakkishu HK	hcf+HK	49	8	14	70	KD	KD	-2	100	150					71	22	27	
 Hyakkishu EX	hcf+KK	6	10(28)8	12	63	KD	KD	2	120	150					73	24	29	
 Hyakkishu EX CLOSE	hcf+KK	6	10(28)8	12	63	KD	KD	2	135	210					75	26	31	
-Ashura Senku	f,d,df+KKK	1	50	11	61													[FRAME 1-50] HIT PROJ INV
-Ashura Senku BACK	b,d,db+KKK	1	50	11	61													[FRAME 1-50] HIT PROJ INV
-CA	qcf,qcf+P	8	21	46	74	KD	KD	-30	320	0					98	31	36	[FRAME 1-11] ALL INV
-VT CA	LP,LP,f,LK,HP	1	29	39	68	KD	KD	KD	400	0					16	16	16	[WHIFF] 1F NO MOVE BUG
-health	875																	
-stun	900																	
-taunt	61				61													
-jump	46(4+38+4)	42	1	4	46													EARLY WHIFF 47
-jump forward	45(3+38+4)	41	1	4	45													EARLY WHIFF 48
-jump backwards	46(4+38+4)	42	1	4	46													EARLY WHIFF 49
-dash forward	16		16		16													
-dash backwards	21		21		21													
+Hyakkishu LK THROW	hcf+LK LP+LK	30	5	26	60	KD	KD	KD	150	200					70	11	11	THROW STAND
+Hyakkishu MK THROW	hcf+MK LP+LK	30	5	27	61	KD	KD	KD	150	200					70	11	11	THROW STAND
+Hyakkishu HK THROW	hcf+HK LP+LK	30	5	29	63	KD	KD	KD	150	200					70	11	11	THROW STAND
+Hyakkishu EX THROW	hcf+KK LP+LK	6	10(11)3	29	58	KD	KD	KD	180	250					70	11	11	THROW STAND
