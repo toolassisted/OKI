@@ -1,64 +1,65 @@
-Move	Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	Damage	Stun	Total 	Hitstop	Chip	Attack Level	Cancel Ability	CH hit adv.	CH Damage	CH Stun	KD Adv.	KDR Adv.	KDRB Adv.	Note
-stand LP		4	3	7	4	2	30	70	13	8	0	H	SP,CA,V	6	36	84	-	-	-	
-stand MP		6	2	12	5	2	60	100	19	12	10	H	SP,CA,V	7	72	120	-	-	-	
-stand HP		10	3	22	-1	-3	90	150	34	15	15	H	SP,CA,V	1	108	180	-	-	-	
-stand LK		5	3	8	2	-1	40	70	15	8	0	H	SP,CA,V	4	48	84	-	-	-	
-stand MK		8	3	15	2	-2	70	100	25	12	12	H	V	4	84	120	-	-	-	
-stand HK		17	3	25	-1	-4	90	150	44	15	15	H	V	KD 62	108	180	-	-	-	
-crouch LP		4	2	7	4	2	30	70	12	8	0	H	SP,CA,V	6	36	84	-	-	-	
-crouch MP		7	3	15	2	1	60	100	24	12	10	H	V	4	72	120	-	-	-	
-crouch HP		12	6	23	KD	-8	50*40	75*75	40	12*12	8*7	H*H	V	KD	60*40	90*75	104	45	50	
-crouch LK		4	3	6	4	0	20	70	12	8	0	L	V	6	24	84	-	-	-	
-crouch MK		8	2	18	0	-3	80	100	27	12	10	L	V	2	72	120	-	-	-	
-crouch HK		11	2	24	KD	-12	100	150	36	15	17	L	V	KD	120	180	67	18	23	
-jump LP		4	5	-	-	-	40	70	-	8	0	M	-	-	48	84	-	-	-	
-jump MP		6	7	-	-	-	70	100	-	12	12	M	-	-	84	120	-	-	-	
-jump HP		8	3	-	-	-	90	150	-	15	15	M	-	-	108	180	-	-	-	
-jump LK		4	5	-	-	-	40	70	-	8	0	M	-	-	48	84	-	-	-	
-jump MK		6	6	-	-	-	70	100	-	12	12	M	-	-	84	120	-	-	-	
-jump HK		9	5	-	-	-	90	150	-	15	15	M	-	-	108	180	-	-	-	
-chop	f+MP	22	2	18	1	-4	60	100	41	12	10	M	-	3	72	120	-	-	-	
-lariat	f+HP	10	3	17	5	3	80	150	29	15	13	H	V	15	96	180	-	-	-	
-flying cross chop	d+HP (air)	14	23	-	-	-	90	150	-	15	15	M	-	-	108	180	-	-	-	
-face-crush chop	LP+LK	5	2	17	KD	-	120	170	24	-	-	T	-	KD	120	170	66	17	17	
-leg tomahawk	b+LP+LK	5	2	17	KD	-	140	200	24	-	-	T	-	KD	140	200	57	8	8	
-rage shift	HP+HK	-	-	6		-	-	-	6	-	-	-	-	-	-	-	-	-	-	
-sledge hammer	HP+HK (during VT)	20	2	29	5	-12	80	150	51	15	20	H	-	7	96	180	-	-	-	[FRAME 2-12] ARMOR
-sledge hammer (full charge)	HP+HK (hold, during VT)	68	2	25	11	guard break +4	130	200	95	18	33	H	-	13	156	240	-	-	-	[FRAME 2-57] ARMOR
-overhaul	MP+MK	-	-	55	-	-	-	-	55	-	-	-	-	-	-	-	-	-	-	
-big boot	f+KKK	15	2	23	KD	-2	60	0			0	H	-				86	27	32	FREEZE START UP 23F
-flash chop LP	qcf+LP	13	3	19	2	-4	70	150	35	15	18	H	CA	4	84	180	-	-	-	
-flash chop MP	qcf+MP	19	3	18	3	-4	80	150	40	15	20	H	CA	5	96	180	-	-	-	
-flash chop HP	qcf+HP	25	3	20	2	-4	90	150	48	15	23	H	CA	4	108	180	-	-	-	
-flash chop EX	qcf+PP	11	5	18	KD	-2	75*75	100*100	34	10*15	19*19	H*H	-	KD	90*75	120*100	91	32	37	
-slash elbow LK	45b,f+LK	14	5	17	3	-4	80	200	36	12	20	H	CA	5	96	240	-	-	-	
-slash elbow MK	45b,f+MK	19	5	18	KD	-6	90	200	42	12	23	H	CA	KD	108	240	93	34	39	
-slash elbow HK	45b,f+HK	24	5	18	KD	-7	100	150	47	12	25	H	CA	KD	120	180	104	45	50	
-slash elbow EX	45b,f+KK	14	3	28	KD	-10	75*75	100*100	53	15*15	19*19	H*H	-	KD	90*75	120*100	86	27	32	
-air knee smash LK	f,d,df+LK	6	8	37	KD	-	10*120	0*200	51	-	-	H	-	KD	12*120	0*200	72	23	23	
-air knee smash MK	f,d,df+MK	9	8	38	KD	-	10*120	0*200	55	-	-	H	-	KD	12*120	0*200	72	23	23	
-air knee smash HK	f,d,df+HK	11	8	40	KD	-	10*120	0*200	59	-	-	H	-	KD	12*120	0*200	72	23	23	
-air knee smash EX	f,d,df+KK	6	8	??	KD	-	10*150	0*200	62	-	-	H	-	KD	12*150	0*200	72	23	23	
-power bomb LP	hcb+LP	6	2	51	KD	-	160	220	59	-	-	T	-	KD	160	220	64	15	15	
-power bomb MP	hcb+MP	6	2	51	KD	-	170	220	60	-	-	T	-	KD	170	220	64	15	15	
-power bomb HP	hcb+HP	6	2	51	KD	-	180	220	60	-	-	T	-	KD	180	220	64	15	15	
-power bomb EX	hcb+PP	6	2	51	KD	-	220	250	60	-	-	T	-	KD	220	250	64	15	15	
-power drop	hcb+P (opponent turned)	5	2	51	KD	-	126	225	-	-	-	T	-	KD	126	225	55	6	6	
-power drop EX	hcb+PP (opponent turned)	5	2	51	KD	-	72*90	0*270	-	-	-	T	-	KD	72*90	0*270	64	15	15	
-air stampede LK	35d,u+LK	27	2	17	KD	-5	120	200	46	15	30	M	-	KD	144	240	44	44	44	
-air stampede MK	35d,u+MK	30	2	21	KD	-5	120	200	53	15	30	M	-	KD	144	240	40	40	40	
-air stampede HK	35d,u+HK	33	2	22	KD	-5	120	200	57	15	30	M	-	KD	144	240	39	39	39	
-air stampede EX	35d,u+KK	29	2	18	KD	2	140	200	49	15	35	M	-	KD	168	240	43	43	43	
-head crush LP	35d,u+LP	36	2	43	3	-	160	250	81	-	-	T	-	3	160	250	-	-	-	
-head crush MP	35d,u+MP	40	2	49	3	-	160	250	91	-	-	T	-	3	160	250	-	-	-	
-head crush HP	35d,u+HP	44	2	55	3	-	160	250	101	-	-	T	-	3	160	250	-	-	-	
-head crush EX	35d,u+PP	30	2	49	3	-	180	300	82	-	-	T	-	3	180	300	-	-	-	
-heavy hammer	qcf,qcf+P	5			KD	-25	100*50*200	0*0*0		-	20*20*20	H*H*H	-	KD	120*50*200	0*0*0	64	15	15	
+Move	Command	Startup	Active	Recovery	Hit Advantage	CH hit adv.	Block Advantage	Total 	Damage	Stun	CH Damage	CH Stun	Chip	Hitstop	Attack Level	Cancel Ability	KD Adv.	KDR Adv.	KDRB Adv.	Note
+stand LP		4	2	8	4	6	2	13	30	70	36	84	0	8	H	SP,CA,V	-	-	-	U C S2 FRAME DATA
+stand MP		6	2	14	5	7	2	21	60	100	72	120	10	12	H	SP,CA,V	-	-	-	
+stand HP		10	3	22	-1	1	-3	34	90	150	108	180	15	15	H	SP,CA,V	-	-	-	
+stand LK		5	3	8	2	4	-1	15	40	70	48	84	0	8	H	SP,CA,V	-	-	-	
+stand MK		9	3	15	2	4	-2	26	70	100	84	120	12	12	H	V	-	-	-	
+stand HK		17	3	25	1	KD	-4	44	100	150	120	180	15	15	H	V	94	62	62	
+crouch LP		4	2	7	4	6	2	12	30	70	36	84	0	8	H	SP,CA,V	-	-	-	
+crouch MP		8	2	17	2	4	1	26	60	100	72	120	10	12	H	V	-	-	-	
+crouch HP		10	6	23	KD	KD	-8	38	50*40	75*75	60*40	90*75	8*7	12*12	H*H	V	104	45	50	
+crouch LK		4	3	6	4	6	0	12	20	70	24	84	0	8	L	V	-	-	-	
+crouch MK		10	2	18	0	2	-3	29	60	100	72	120	10	12	L	V	-	-	-	
+crouch HK		11	2	24	KD	KD	-12	36	100	150	120	180	17	15	L	V	67	18	23	
+jump LP		4	5	-	-	-	-	-	40	70	48	84	0	8	M	-	-	-	-	
+jump MP		5	7	-	-	-	-	-	70	100	84	120	12	12	M	-	-	-	-	
+jump HP		8	3	-	-	-	-	-	90	150	108	180	15	15	M	-	-	-	-	
+jump LK		4	5	-	-	-	-	-	40	70	48	84	0	8	M	-	-	-	-	
+jump MK		6	6	-	-	-	-	-	70	100	84	120	12	12	M	-	-	-	-	
+jump HK		9	5	-	-	-	-	-	90	150	108	180	15	15	M	-	-	-	-	
+chop	f+MP	22	2	18	1	3	-4	41	60	100	72	120	10	12	M	-	-	-	-	
+lariat	f+HP	11	3	17	6	15	3	30	80	150	96	180	13	15	H	V	-	-	-	
+flying cross chop	d+HP (air)	-	-	-	-	-	-	-	90	150	108	180	15	15	M	-	-	-	-	
+face-crush chop	LP+LK	5	2	17	KD	KD	-	24	120	120	120	170	-	-	T	-	66	17	17	
+leg tomahawk	b+LP+LK	5	2	17	KD	KD	-	24	140	200	140	200	-	-	T	-	57	8	8	
+rage shift	HP+HK	-	-	6		-	-	6	-	-	-	-	-	-	-	-	-	-	-	
+sledge hammer	HP+HK (during VT)	20	2	29	5	7	-12	51	80	150	96	180	20	15	H	-	-	-	-	[FRAME 2-12] ARMOR
+sledge hammer (full charge)	HP+HK (hold, during VT)	68	2	25	11	13	guard break +4	95	130	200	156	240	33	18	H	-	-	-	-	[FRAME 2-57] ARMOR
+overhaul	MP+MK	-	-	55	-	-	-	55	-	-	-	-	-	-	-	-	-	-	-	
+big boot	f+KKK	16	2	23	KD		-2		60	0			0		H	-	77	18	23	FREEZE START UP 23F
+flash chop LP	qcf+LP	12	3	20	2	4	-4	34	70	150	84	180	18	15	H	CA	-	-	-	
+flash chop MP	qcf+MP	19	3	19	3	5	-4	40	80	150	96	180	20	15	H	CA	-	-	-	
+flash chop HP	qcf+HP	25	3	21	2	4	-4	48	90	150	108	180	23	15	H	CA	-	-	-	
+flash chop EX	qcf+PP	11	5	19	KD	KD	-2	34	75*75	100*100	90*75	120*100	19*19	10*15	H*H	-	91	32	37	
+slash elbow LK	45b,f+LK	16	5	22	3	5	-4	42	80	200	96	240	20	12	H	CA	-	-	-	
+slash elbow MK	45b,f+MK	19	5	22	KD	KD	-6	45	90	200	108	240	23	12	H	CA	93	34	39	
+slash elbow HK	45b,f+HK	24	5	19	KD	KD	-7	47	100	150	120	180	25	12	H	CA	104	45	50	
+slash elbow EX	45b,f+KK	14	3	29	KD	KD	-10	45	75*75	100*100	90*75	120*100	19*19	15*15	H*H	-	86	27	32	
+slash elbow EX WHIFF	45b,f+KK	22	3	29	KD	KD	-10	53	75*75	100*100	90*75	120*100	19*19	15*15	H*H	-	86	27	32	
+air knee smash LK	f,d,df+LK	6	8	38	KD	KD	-	51	10*120	0*200	12*120	0*200	-	-	H	-	72	23	23	
+air knee smash MK	f,d,df+MK	9	8	39	KD	KD	-	55	10*120	0*200	12*120	0*200	-	-	H	-	72	23	23	
+air knee smash HK	f,d,df+HK	11	8	41	KD	KD	-	59	10*120	0*200	12*120	0*200	-	-	H	-	72	23	23	
+air knee smash EX	f,d,df+KK	6	8	48	KD	KD	-	61	10*150	0*200	12*150	0*200	-	-	H	-	72	23	23	
+power bomb LP	hcb+LP	6	2	51	KD	KD	-	58	160	220	160	220	-	-	T	-	64	15	15	
+power bomb MP	hcb+MP	6	2	51	KD	KD	-	58	170	220	170	220	-	-	T	-	64	15	15	
+power bomb HP	hcb+HP	6	2	51	KD	KD	-	58	180	220	180	220	-	-	T	-	64	15	15	
+power bomb EX	hcb+PP	6	2	51	KD	KD	-	58	220	250	220	250	-	-	T	-	64	15	15	
+power drop	hcb+P (opponent turned)	6	2	51	KD	KD	-	-	126	225	126	225	-	-	T	-	55	6	6	
+power drop EX	hcb+PP (opponent turned)	6	2	51	KD	KD	-	-	72*90	0*270	72*90	0*270	-	-	T	-	64	15	15	
+air stampede LK	35d,u+LK	27	3	17	KD	KD	-5	46	120	200	144	240	30	15	M	-	44	44	44	
+air stampede MK	35d,u+MK	30	3	21	KD	KD	-5	53	120	200	144	240	30	15	M	-	40	40	40	
+air stampede HK	35d,u+HK	33	3	22	KD	KD	-5	57	120	200	144	240	30	15	M	-	39	39	39	
+air stampede EX	35d,u+KK	29	3	18	KD	KD	2	49	140	200	168	240	35	15	M	-	43	43	43	
+head crush LP	35d,u+LP	36	2	30	4	4	-	67	160	250	160	250	-	-	T	-	-	-	-	
+head crush MP	35d,u+MP	40	2	30	4	4	-	71	160	250	160	250	-	-	T	-	-	-	-	
+head crush HP	35d,u+HP	44	2	30	4	4	-	75	160	250	160	250	-	-	T	-	-	-	-	
+head crush EX	35d,u+PP	30	2	50	4	4	-	81	180	300	180	300	-	-	T	-	-	-	-	
+heavy hammer	qcf,qcf+P	5	2(20)2(20)3	46	KD	KD	-25	97	100*50*200	0*0*0	120*50*200	0*0*0	20*20*20	-	H*H*H	-	64	15	15	
 health	1000																			
 stun	1050																			
 taunt	61																			
-jump	47(4+39+4)	43	1	4					47											
-jump forward	46(3+39+4)	42	1	4					46											
-jump backward	47(4+39+4)	43	1	4					47											
-dash forward	19			19					19											
-dash backward	24			24					24											
+jump	47(4+39+4)	43	1	4				47												EARLY WHIFF 49F
+jump forward	46(3+39+4)	42	1	4				46												EARLY WHIFF 48F
+jump backward	47(4+39+4)	43	1	4				47												EARLY WHIFF 49F
+dash forward	19			19				19												
+dash backward	24			24				24												
