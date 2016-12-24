@@ -1,88 +1,88 @@
-Move	Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	Damage	Stun	Total 	Hitstop	Chip	Attack Level	Cancel Ability	CH hit adv.	CH Damage	CH Stun	KD Adv.	KDR Adv.	KDRB Adv.	Note
-stand LP	-	5	2	10	4	3	40	90	16	8	0	H	SP,V	6	48	108				
-stand MP	-	7	2	16	4	-1	60	120	24	12	10	H	SP,V	6	72	144				
-stand HP	-	14	2	22	-2	-6	90	150	37	15	15	H	V	0	108	180				
-stand LK	-	4	2	7	6	3	30	90	12	8	0	H	SP,V	8	36	108				
-stand MK	-	8	3	16	2	-2	70	120	26	12	12	H	V	4	84	144				
-stand HK	-	12	3	20	6	0	100	150	34	15	17	H	V	29	120	180				
-crouch LP	-	5	2	11	4	2	40	90	17	8	0	H	V	6	48	108				
-crouch MP	-	6	6	15	0	-5	70	120	26	12	12	H	SP,V	2	84	144				
-crouch HP	-	10	4	26	KD	-9	90	150	39	15	15	H	SP,V	0	108	180	93	32	37	
-crouch LK	-	4	2	11	4	2	30	90	16	8	0	L	V	6	36	108				
-crouch MK	-	10	2	18	-1	-4	60	120	29	12	10	L	V	1	72	144				
-crouch HK	-	12	3	25	KD	-11	100	150	39	15	17	L	V	KD	120	180	69	20	25	
-jump LP	-	4	5	-	-	-	50	90		8	0	M	-	-	60	108				
-jump MP	-	7	6	-	-	-	70	120		12	12	M	-	-	84	144				
-jump HP	-	7	5	-	-	-	100	150		15	17	M	-	-	120	180				
-jump LK	-	5	5	-	-	-	50	90		8	0	M	-	-	60	108				
-jump MK	-	7	4	-	-	-	70	120		12	12	M	-	-	84	144				
-jump HK	-	9	5	-	-	-	100	150		15	17	M	-	-	120	180				
-bull charge	f+HP	25	4	18	3	-7	100	150	46	15	17	H	-	KD	120	180	115	54	59	CH AIR 23F
-bull slider	df+HP	19	5	22	-1	-5	100	150	45	12	17	L	-	1	120	180				
-bull drop	f+HK	7	3(12)4	18	2	-4	40*80	50*100	43		7*13	H*M	-	2	48*80	60*100				
-bad hammer	d+HP > HP	7	5	31	KD	-	90*54	150*135		15*10	-	H*H	-	KD	54	135	62	1	6	
-bad skull	N or f+LP+LK	5	2	18	KD	-	150	200		-	-	T	-	KD	150	200	71	12	12	
-bad chain	b+LP+LK	5	2	18	KD	-	75*75	100*100		-	-	T	-	-	75*75	100*100	74	15	15	
-break time	MP+MK		-	52		-			52		-	-	-	-	-	-				
-banana time	b+MP+MK	50	-	9	29	2	10	0		4	2	H	-		12	0	29	29	29	
-drink time	d+MP+MK	50	-	11	28	10	10	0		4	2	H	-		12	0	28	28	28	
-enjoy time	HP+HK	12	16	7	KD	-			34	-	-	-	-	-	-	-	102	43	48	
-VT CANCEL	HP+HK	1	15	7	KD	-			22	-	-	-	-	-	-	-	102	43	48	
-pepper pot	f+PPP in block	16	2	19	KD	-2	60	0				H					93	34	39	ANIM START 24F
-bull head LP	qcf+LP	14	3	29	KD	-10	120	200		15	30	H	CA,V	KD	144	240	85	26	31	
-bull head MP	qcf+MP	18	3	30	KD	-10	130	200		15	33	H	CA,V	KD	156	240	84	25	30	
-bull head HP	qcf+HP	27	3	24	KD	-5	140	200		15	35	H	CA,V	KD	168	240	90	31	36	
-bull head EX	qcf+PP	14	4(26)4	28	KD	-10	80*80	100*150		-	20*20	H*H	V	KD	96*80	180*150	85	26	31	
-bull horn	hold any button, release	15	6	29	KD	-18	130	200		15	33	H	CA,V	KD	156	240	89	30	35	
-bull horn FAR	hold any button, release	16	5	29	KD	-18	130	200		15	33	H	CA,V	KD	156	240	90	31	36	
-bull horn EX	hold any 2 button, release	15	9(11)4	32	KD	-19	75*75	50*200		12*14	19*19	H*H	V	KD	90*75	60*200	88	29	34	
-killing head LP	hcb+LP	5	2	52	KD	-	20*160	40*160		3*15	-	T	-	KD	20*160	40*160	82	23	23	
-killing head MP	hcb+MP	5	2	52	KD	-	20*20*150	40*40*140		3*3*15	-	T	-	KD	20*20*150	40*40*140	82	23	23	
-killing head HP	hcb+HP	5	2	52	KD	-	20x3*140	40x3*120		3x3*15	-	T	-	KD	20x3*140	40x3*120	82	23	23	
-killing head EX	hcb+PP	5	2	52	KD	-	10x6*160	30x6*90		0x6*18	-	T	-	KD	10x6*160	30x6*90	82	23	23	
-hanging chain LK CORNER	qcf+LK	25	16	24	KD	-23	140	200		-	0	H	-	KD	140	200	79	20	20	
-hanging chain LK	qcf+LK	25	16	24	KD	-23	140	200	64	-	0	H	-	KD	140	200	80	21	21	
-hanging chain LK FAR CORNER	qcf+LK	25	16	24	KD	-23	140	200		-	0	H	-	KD	140	200	82	23	23	
-hanging chain LK FAR	qcf+LK	25	16	24	KD	-23	140	200		-	0	H	-	KD	140	200	84	25	25	U C https://youtu.be/xz56LWUBDIg
-hanging chain MK	qcf+MK	25	16	24	KD	-23	150	200	64	-	0	H	-	KD	150	200	68	19	19	
-hanging chain MK FAR	qcf+MK	25	16	24	KD	-23	150	200		-	0	H	-	KD	150	200	71	22	22	
-hanging chain HK	qcf+HK	25	10	31	KD	-	160	200	65	-	-	H	-	KD	160	200	81	22	22	
-hanging chain EX	qcf+KK	15	17	21	KD	-21	70*100	100*100	52	-	0	H	-	KD	70*100	100*100	78	29	29	
-hanging chain cancel	hold K, press P	-	25	17	-	-	-	-	42	-	-	-	-	-	-	-	-			
-bull revenger LK	hcb+LK	35	2	28	KD	-	70*70*30	100*100*30	64	-	-	T	-	KD	70*70*30	100*100*30	69	20	20	
-bull revenger MK	hcb+MK	40	2	28	KD	-	70*70*40	100*100*30	69	-	-	T	-	KD	70*70*40	100*100*30	69	20	20	
-bull revenger HK	hcb+HK	43	2	28	KD	-	70*70*50	100*100*30	72	-	-	T	-	KD	70*70*50	100*100*30	69	20	20	
-bull revenger EX	hcb+KK	23	11	47	KD	-	50*50*100	50*50*130	80	-	-	T	-	KD	50*50*100	50*50*130	69	20	20	
-skip to my chain	qcf,qcf+P	6	5	60	KD	-30	50x3*200	0*0*0*0	70	-	50	H	-	KD	60*50*50*200	0*0*0*0	36	36	36	ANIM 138F
-health	1050																			
+Move	Command	Startup	Active	Recovery	Hit Advantage	CH hit adv.	Block Advantage	Damage	Stun	CH Damage	CH Stun	Chip	Total 	Hitstop	Attack Level	Cancel Ability	KD Adv.	KDR Adv.	KDRB Adv.	Note
+stand LP	-	5	2	10	4	6	3	40	90	48	108	0	16	8	H	SP,V				U C S2 FRAME DATA
+stand MP	-	7	2	16	4	6	1	60	120	72	144	10	24	12	H	SP,V				
+stand HP	-	14	2	22	4	6	-6	90	150	108	180	15	37	15	H	V				
+stand LK	-	4	3	6	6	8	3	30	90	36	108	0	12	8	H	SP,V				
+stand MK	-	9	3	16	2	4	-2	60	120	72	144	10	27	12	H	V				
+stand HK	-	12	3	20	7	31	0	100	150	120	180	17	34	15	H	V				
+crouch LP	-	5	3	10	4	6	2	40	90	48	108	0	17	8	H	V				
+crouch MP	-	6	6	15	0	2	-5	70	120	84	144	12	26	12	H	SP,V				
+crouch HP	-	11	4	26	KD	KD	-9	80	150	96	180	13	40	15	H	SP,V	93	32	37	
+crouch LK	-	5	2	11	4	6	2	30	90	36	108	0	17	8	L	V				
+crouch MK	-	11	2	18	-1	1	-4	60	120	72	144	10	30	12	L	V				
+crouch HK	-	12	3	25	KD	KD	-11	100	150	120	180	17	39	15	L	V	69	20	25	
+jump LP	-	4	5	-	-	-	-	50	90	60	108	0		8	M	-				
+jump MP	-	7	6	-	-	-	-	70	120	84	144	12		12	M	-				
+jump HP	-	7	5	-	-	-	-	100	150	120	180	17		15	M	-				
+jump LK	-	5	5	-	-	-	-	50	90	60	108	0		8	M	-				
+jump MK	-	7	4	-	-	-	-	70	120	84	144	12		12	M	-				
+jump HK	-	9	5	-	-	-	-	100	150	120	180	17		15	M	-				
+bull charge	f+HP	25	4	18	3	KD	-8	80	150	96	180	13	46	15	H	-	115	54	59	CH AIR 23F
+bull slider	df+HP	19	5	22	-1	1	-8	90	150	108	180	15	45	12	L	-				
+bull drop	f+HK	7	3(12)4	18	2	4	-6	40*80	50*100	48*80	60*100	7*13	43		H*M	-				
+bad hammer	d+HP > HP	7	5	31	KD	KD	-	90*54	150*135	54	135	-		15*10	H*H	-	62	1	6	
+bad skull	N or f+LP+LK	5	2	18	KD	KD	-	150	200	150	200	-		-	T	-	71	12	12	
+bad chain	b+LP+LK	5	2	18	KD	-	-	75*75	100*100	75*75	100*100	-		-	T	-	74	15	15	
+break time	MP+MK		-	52		-	-			-	-	-	52		-	-				
+banana time	b+MP+MK	50	1	9	KD	KD	2	10	0	12	0	2	59	4	H	-	29	29	29	
+drink time	d+MP+MK	50	1	11	KD	KD	10	10	0	12	0	2	61	4	H	-	28	28	28	
+enjoy time	HP+HK	12	16	3	KD	-	-			-	-	-	30	-	-	-	106	47	52	
+VT CANCEL	HP+HK	1	15	3	KD	-	-			-	-	-	18	-	-	-	106	47	52	
+pepper pot	f+PPP in block	16	2	19	KD		-2	60	0						H		82	23	28	ANIM START 24F
+bull head LP	qcf+LP	14	3	29	KD	KD	-10	100	200			30	45	15	H	CA,V	85	26	31	
+bull head MP	qcf+MP	18	3	30	KD	KD	-10	110	200			33	50	15	H	CA,V	84	25	30	
+bull head HP	qcf+HP	27	3	24	KD	KD	-5	120	200			35	53	15	H	CA,V	90	31	36	
+bull head EX	qcf+PP	14	4(26)4	23	KD	KD	2	75*75	100*150			20*20	70	-	H*H	V	85	26	31	
+bull horn	hold any button, release	15	6	29	KD	KD	-18	120	200			30	49	15	H	CA,V	89	30	35	
+bull horn FAR	hold any button, release	16	5	29	KD	KD	-17	120	200			30		15	H	CA,V	90	31	36	
+bull horn EX	hold any 2 button, release	15	9(11)4	32	KD	KD	-19	75*75	50*200			19*19	70	12*14	H*H	V	88	29	34	
+killing head LP	hcb+LP	5	2	52	KD	KD	-	20*160	40*160			-	58	3*15	T	-	82	23	23	
+killing head MP	hcb+MP	5	2	52	KD	KD	-	20*20*150	40*40*140			-	58	3*3*15	T	-	82	23	23	
+killing head HP	hcb+HP	5	2	52	KD	KD	-	20x3*140	40x3*120			-	58	3x3*15	T	-	82	23	23	
+killing head EX	hcb+PP	5	2	52	KD	KD	-	10x6*160	30x6*90			-	58	0x6*18	T	-	82	23	23	
+hanging chain LK CORNER	qcf+LK	25	16	24	KD	KD	-23	140	200			0		-	H	-	79	20	20	
+hanging chain LK	qcf+LK	25	16	24	KD	KD	-23	140	200			0	64	-	H	-	80	21	21	
+hanging chain LK FAR CORNER	qcf+LK	25	16	24	KD	KD	-23	140	200			0		-	H	-	82	23	23	
+hanging chain LK FAR	qcf+LK	25	16	24	KD	KD	-23	140	200			0		-	H	-	84	25	25	U C https://youtu.be/xz56LWUBDIg
+hanging chain MK	qcf+MK	25	16	24	KD	KD	-23	150	200			0	64	-	H	-	68	19	19	
+hanging chain MK FAR	qcf+MK	25	16	24	KD	KD	-23	150	200			0		-	H	-	71	22	22	
+hanging chain HK	qcf+HK	25	10	31	KD	KD	-	160	200			-	65	-	H	-	81	22	22	
+hanging chain EX	qcf+KK	15	17	21	KD	KD	-21	70*100	100*100			0	52	-	H	-	78	29	29	
+hanging chain cancel	hold K, press P	19	1	17	-	-	-	-	-			-	36	-	-	-	-			
+bull revenger LK	hcb+LK	35	2	28	KD	KD	-	70*70*30	100*100*30			-	64	-	T	-	75	26	26	
+bull revenger MK	hcb+MK	40	2	28	KD	KD	-	70*70*40	100*100*30			-	69	-	T	-	75	26	26	
+bull revenger HK	hcb+HK	43	2	28	KD	KD	-	70*70*50	100*100*30			-	72	-	T	-	75	26	26	
+bull revenger EX	hcb+KK	23	11	47	KD	KD	-	50*50*100	50*50*130			-	80	-	T	-	69	20	20	
+skip to my chain	qcf,qcf+P	6	5	60	KD	KD	-30	50x3*190	0*0*0*0			50	70	-	H	-	36	36	36	ANIM 138F
+health	1025																			
 stun	1000																			
-taunt	61								61											
-jump	50(5*41*4)	46	1	4					50											
-jump forward	49(4*41*4)	45	1	4					49											
-jump backward	50(5*41*4)	46	1	4					50											
-dash forward	23			23					23											
-dash backward	26			26					26											
+taunt	61												61							
+jump	50(5*41*4)	46	1	4									50							EARLY WHIFF 50
+jump forward	49(4*41*4)	45	1	4									49							EARLY WHIFF 49
+jump backward	50(5*41*4)	46	1	4									50							EARLY WHIFF 50
+dash forward	23			23									23							
+dash backward	26			26									26							
 V-TRIGGER																				
-VT bull head LP	qcf+LP	10	2(1)4	29	KD	-9	24*120	10*190				H	CA	KD			84	25	30	
-VT bull head MP	qcf+MP	15	2(2)2(2)4	29	KD	-9	24*24*108	10*10*180				H	CA	KD			84	25	30	
-VT bull head HP	qcf+HP	22	2(1)2(1)2(3)4	23	KD	-9	24x3*96	10x3*170				H	CA	KD			90	31	36	
-VT bull head EX	qcf+PP	8	1(3)2(2)2(2)4(20)2(3)4	23	KD	-7	192	250				H	-	KD			91	32	37	
-VT bull horn	hold any button, release	15	2(0)10	31	KD	-12	78*78	100*100				H	CA	KD			94	35	40	
-VT bull horn EX	hold any 2 button, release	15	2(1)2(3)2(11)4	31	KD	-17	24*24*66*66	10*10*80*150				H	-	KD			89	30	35	
-VT killing head LP	hcb+LP	5	2	52	KD	-	24*192	40*160				T	-	KD						
-VT killing head MP	hcb+MP	5	2	52	KD	-	24*24*180	40*40*140				T	-	KD						
-VT killing head HP	hcb+HP	5	2	52	KD	-	24x3*168	40x3*120				T	-	KD						
-VT killing head EX	hcb+PP	5	2	52	KD	-	12x6*192	60x3*90				T	-	KD						
-VT hanging chain LK	qcf+LK	25	16	24	KD	-23	168	200				H	-	KD						
-VT hanging chain MK	qcf+MK	25	16	24	KD	-23	180	200				H	-	KD						
-VT hanging chain HK	qcf+HK	25	16	31	KD	-	192	200				T	-	KD						
-VT hanging chain EX	qcf+KK	15	17	21	KD	-21	84*120	100*120				H	-	KD						
-VT hanging chain cancel	hold K, press P	-	-	17	-	-	-	-				-	-	-						
-VT bull revenger LK	hcb+LK	35	2	28	KD	-	84*84*36	100*100*30				T	-	KD						
-VT bull revenger MK	hcb+MK	40	2	28	KD	-	84*84*48	100*100*30				T	-	KD						
-VT bull revenger HK	hcb+HK	43	2	28	KD	-	84*70*60	100*100*30				T	-	KD						
-VT bull revenger EX	hcb+KK	25	11	47	KD	-	60*60*120	50*50*130				T	-	KD						
-VT skip to my chain	qcf,qcf+P	6	5	60	KD	-30	60x3*240	0*0*0*0				H	-	KD						
+VT bull head LP	qcf+LP	10	2(1)4	29	KD	KD	-9	24*120	10*190				45		H	CA	84	25	30	
+VT bull head MP	qcf+MP	15	2(2)2(2)4	29	KD	KD	-9	24*24*108	10*10*180				55		H	CA	84	25	30	
+VT bull head HP	qcf+HP	22	2(1)2(1)2(3)4	23	KD	KD	-9	24x3*96	10x3*170				59		H	CA	90	31	36	
+VT bull head EX	qcf+PP	8	1(2)3(1)3(2)4(20)2(3)4	23	KD	KD	-2	192	250				75		H	-	91	32	37	[FRAME 1-17] ARMOR
+VT bull horn	hold any button, release	15	2(0)10	31	KD	KD	-12	78*78	100*100				57		H	CA	94	35	40	
+VT bull horn EX	hold any 2 button, release	15	2(1)2(3)2(11)4	31	KD	KD	-17	24*24*66*66	10*10*80*150				70		H	-	89	30	35	[FRAME 1-39] ARMOR
+VT killing head LP	hcb+LP	5	2	52	KD	KD	-	24*192	40*160				58		T	-				
+VT killing head MP	hcb+MP	5	2	52	KD	KD	-	24*24*180	40*40*140						T	-				
+VT killing head HP	hcb+HP	5	2	52	KD	KD	-	24x3*168	40x3*120						T	-				
+VT killing head EX	hcb+PP	5	2	52	KD	KD	-	12x6*192	60x3*90						T	-				
+VT hanging chain LK	qcf+LK	25	16	24	KD	KD	-23	168	200						H	-				
+VT hanging chain MK	qcf+MK	25	16	24	KD	KD	-23	180	200						H	-				
+VT hanging chain HK	qcf+HK	25	16	31	KD	KD	-	192	200						T	-				
+VT hanging chain EX	qcf+KK	15	17	21	KD	KD	-21	84*120	100*120						H	-				
+VT hanging chain cancel	hold K, press P	-	-	17	-	-	-	-	-						-	-				
+VT bull revenger LK	hcb+LK	35	2	28	KD	KD	-	84*84*36	100*100*30						T	-				
+VT bull revenger MK	hcb+MK	40	2	28	KD	KD	-	84*84*48	100*100*30						T	-				
+VT bull revenger HK	hcb+HK	43	2	28	KD	KD	-	84*70*60	100*100*30						T	-				
+VT bull revenger EX	hcb+KK	25	11	47	KD	KD	-	60*60*120	50*50*130						T	-				
+VT skip to my chain	qcf,qcf+P	6	5	60	KD	KD	-30	60x3*228	0*0*0*0						H	-				
 2HP BULLHORN					KD												91	32	37	
 2HP VT BULLHORN					KD												97	38	43	
 BULLHORN EX VTC BULLHEAD LP					KD												85	26	31	https://youtu.be/gHAZw8DIrRM
