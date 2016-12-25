@@ -32,7 +32,7 @@ pepper pot	f+PPP in block	16	2	19	KD		-2	60	0						H		82	23	28	ANIM START 24F
 bull head LP	qcf+LP	14	3	29	KD	KD	-10	100	200			30	45	15	H	CA,V	85	26	31	
 bull head MP	qcf+MP	18	3	30	KD	KD	-10	110	200			33	50	15	H	CA,V	84	25	30	
 bull head HP	qcf+HP	27	3	24	KD	KD	-5	120	200			35	53	15	H	CA,V	90	31	36	
-bull head EX	qcf+PP	14	4(26)4	23	KD	KD	2	75*75	100*150			20*20	70	-	H*H	V	85	26	31	
+bull head EX	qcf+PP	14	4(26)4	23	KD	KD	-2	75*75	100*150			20*20	70	-	H*H	V	90	31	36	
 bull horn	hold any button, release	15	6	29	KD	KD	-18	120	200			30	49	15	H	CA,V	89	30	35	
 bull horn FAR	hold any button, release	16	5	29	KD	KD	-17	120	200			30		15	H	CA,V	90	31	36	
 bull horn EX	hold any 2 button, release	15	9(11)4	32	KD	KD	-19	75*75	50*200			19*19	70	12*14	H*H	V	88	29	34	
