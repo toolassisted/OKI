@@ -1,64 +1,64 @@
-Move	Command	Startup	Active	Recovery	Hit Advantage	CH hit adv.	Block Advantage	Damage	Stun	VTC Hit Adv	VTC Blk Adv	Total	KD Adv.	KDR Adv.	KDRB Adv.	Note
-stand LP		3	2	8	3	5	2	30	70	4	3	12				5LP 12(34)(56789) CHAIN 12(34)(56789)/(10-12)
+Move	Command	Startup	Active	Recovery	Hit Advantage	CH hit adv.	Block Advantage	VTC Hit Adv	VTC Blk Adv	Damage	Stun	Total	KD Adv.	KDR Adv.	KDRB Adv.	Note
+stand LP		3	2	8	3	5	2	4	3	30	70	12				5LP 12(34)(56789) CHAIN 12(34)(56789)/(10-12)
 stand LP CHAIN LP 1	5LP 5LP	3	2(7)2	8	3		2					21				
 stand LP CHAIN LP 2	5LP 5LP 5LP	3	2(7)2(7)2	8	3		2					30				
 stand LP CHAIN LP 3	5LP 5LP 5LP 5LP	3	2(7)2(7)2(7)2	8	3		2					39				
-stand MP		5	3	10	4	6	2	60	100	8	6	17				CANCEL FRAME 5
-stand HP		12	2	19	0	2	-5	80	150	9	4	32				
-stand LK		4	3	9	0	2	-2	30	70	3	1	15				
-stand MK		6	2	14	5	7	2	60	100	11	8	21				
-stand HK		10	3	16	1	22	-2	90	150	11	8	28				
-crouch LP		4	3	7	3	5	2	30	70	3	2	13				2LP 123(456)(789) CHAIN 123(456)(78)/(9-13)
+stand MP		5	3	10	4	6	2	8	6	60	100	17				CANCEL FRAME 5
+stand HP		12	2	19	0	2	-5	9	4	80	150	32				
+stand LK		4	3	9	0	2	-2	3	1	30	70	15				
+stand MK		6	2	14	5	7	2	11	8	60	100	21				
+stand HK		10	3	16	1	22	-2	11	8	90	150	28				
+crouch LP		4	3	7	3	5	2	3	2	30	70	13				2LP 123(456)(789) CHAIN 123(456)(78)/(9-13)
 crouch LP CHAIN LP 1	2LP 2LP	4	3(6)3	7	3		2					22				
 crouch LP CHAIN LP 2	2LP 2LP 2LP	4	3(6)3(5)3	7	3		2					30				
 crouch LP CHAIN LP 3	2LP 2LP 2LP 2LP	4	3(6)3(5)3(5)3	7	3		2					38				
-crouch MP		6	3	12	3	5	-1	60	100	9	5	20				
-crouch HP		9	4	16	2	4	-3	90	150	13	8	28				
-crouch LK		4	2	8	3	5	1	20	70	4	2	13				
-crouch MK		6	3	16	0	2	-3	60	100	6	3	24				
-crouch HK		8	2	24	KD	KD	-12	100	150	KD	5	33	67	18	23	
-crouch HK VT		8	2	24	KD	KD	-12	100	150	KD	5	33	84	35	40	
-6MK		28	2	16	3	5	-2	70	100			45				
-6HK		14	4	19	2	KD	-3	90	150			36	101	42	47	
-3MK		7	11	14	-6	-4	-10	50	100			31				
-4MP		7	3	11	4	6	-1	40	70	9	4	20				CANCEL FRAME 7
-4MP 2		9	1	11	4	6	0	30	50	7	3					
-TC 5LP 5MP		3	2		-5		-8			4	1					
-TC 5LP 5MP 5HP		3	2		0		-5			10	5					
-TC 5LP 5MP 5LK		3	2		1		-2			9	6					
-TC 5MK 2HK		6	2		KD		-12			KD	0		68	19	24	
-TC 5MK 2HK VT		6	2		KD		-12			KD	0		80	31	36	
-TC 5MK 2HK 5HK		6	2		RESET		WHIFF			KD			17	17	17	5HK NO HIT CROUCH
-TC 5MK 2HK 5HK VT		6	2		RESET		WHIFF			KD			28	28	28	5HK NO HIT CROUCH
+crouch MP		6	3	12	3	5	-1	9	5	60	100	20				
+crouch HP		9	4	16	2	4	-3	13	8	90	150	28				
+crouch LK		4	2	8	3	5	1	4	2	20	70	13				
+crouch MK		6	3	16	0	2	-3	6	3	60	100	24				
+crouch HK		8	2	24	KD	KD	-12	KD	5	100	150	33	67	18	23	
+crouch HK VT		8	2	24	KD	KD	-12	KD	5	100	150	33	84	35	40	
+6MK		28	2	16	3	5	-2			70	100	45				
+6HK		14	4	19	2	KD	-3			90	150	36	101	42	47	
+3MK		7	11	14	-6	-4	-10			50	100	31				
+4MP		7	3	11	4	6	-1	9	4	40	70	20				CANCEL FRAME 7
+4MP 2		9	1	11	4	6	0	7	3	30	50					
+TC 5LP 5MP		3	2		-5		-8	4	1							
+TC 5LP 5MP 5HP		3	2		0		-5	10	5							
+TC 5LP 5MP 5LK		3	2		1		-2	9	6							
+TC 5MK 2HK		6	2		KD		-12	KD	0				68	19	24	
+TC 5MK 2HK VT		6	2		KD		-12	KD	0				80	31	36	
+TC 5MK 2HK 5HK		6	2		RESET		WHIFF	KD					17	17	17	5HK NO HIT CROUCH
+TC 5MK 2HK 5HK VT		6	2		RESET		WHIFF	KD					28	28	28	5HK NO HIT CROUCH
 TC 2MP 6HK		6	3		0		-5									
 TC 5MP 6MK		5	3		6		-2									
-jump LP		3	5		6		3	40	70							
-jump MP		5	6		10		7	60	100							
-jump HP		9	5		12		9	90	150							
-jump LK		3	6		5		2	40	70							
-jump MK		6	6		8		5	60	100							
-jump HK		8	4		11		8	90	150							
+jump LP		3	5		6		3			40	70					
+jump MP		5	6		10		7			60	100					
+jump HP		9	5		12		9			90	150					
+jump LK		3	6		5		2			40	70					
+jump MK		6	6		8		5			60	100					
+jump HK		8	4		11		8			90	150					
 TC 8LP 8MK		3	5													
 TC 8HP 8HK		9	5													
-2MP 236LPMP 236HK TC 8HP 8HK		9	5										73	14	19	
+2MP 236LPMP 236HK TC 8HP 8HK		6	3										73	14	19	
 Nobusuma LOW	KK	14	32	31								76				LAND 9F
 Nobusuma	KK	21	32	36								88				LAND 9F
 Nobusuma LAST	KK	36	32	31								98				LAND 9F
-THROW	LP+LK	5	2	18	KD		KD	120	120			24	64	5	5	
-THROW BACK	b+LP+LK	5	2	18	KD		KD	140	200				78	19	19	
+THROW	LP+LK	5	2	18	KD		KD			120	120	24	64	5	5	
+THROW BACK	b+LP+LK	5	2	18	KD		KD			140	200		78	19	19	
 THROW AIR	LP+LK	5	2		KD		KD									
-VT	HP+HK	1	1	5								6	215	154	159	FRAME 1 ALL INV
+VT	HP+HK	1	1	5								6	141	82	87	[FRAME 1] ALL INV
 5VT	HP+HK	80	9													
 4VT	b+HP+HK	200	9													
 6VT	f+HP+HK	320	9													
-VT VT	HP+HK	25	1	17								42	215	154	159	
+VT VT	HP+HK	25	1	17								42	141	82	87	
 VT 5VT	HP+HK	114	9													
 VT 4VT	b+HP+HK	234	9													
 VT 6VT	f+HP+HK	354	9													
 VS	MP+MK	15	5	20								39	85	26	31	
 VS HOLD	MP+MK HOLD	25	7	18								49	87	28	33	
-VR	f+PPP	15	13	25	KD		-2						88	29	34	FRAME 1-13 HIT PROJ INV FRAME 14-37 ALL INV FRAME 38-41 HIT INV LOW HURT BOX
-VR CH	f+PPP	15	13	25	KD		-2						91	32	37	FRAME 1-13 HIT PROJ INV FRAME 14-37 ALL INV FRAME 38-41 HIT INV LOW HURT BOX
+VR	f+PPP	15	13	25	KD		-2						74	15	20	[FRAME 1-13] HIT PROJ INV [FRAME 14-37] ALL INV [FRAME 38-41] HIT INV LOW HURT BOX
+VR CH	f+PPP	15	13	25	KD		-2						77	18	23	[FRAME 1-13] HIT PROJ INV [FRAME 14-37] ALL INV [FRAME 38-41] HIT INV LOW HURT BOX
 Kasumigake LK	qcf+LK	3	17	4								23				
 Kasumigake MK	qcf+MK	3	23	1								26				
 Kasumigake HK	qcf+HK	7	47	4								57				
@@ -66,15 +66,15 @@ Kasumigake EX	qcf+KK
 Kazekiri LK	f,d,df+LK	3	13	34	KD		-27					49	81	22	27	
 Kazekiri MK	f,d,df+MK	4	13	34	KD		-27					50	81	22	27	
 Kazekiri HK	f,d,df+HK	5	13	34	KD		-27					51	81	22	27	
-Kazekiri EX	f,d,df+KK	4	13	37	KD		-31					53	85	26	31	FRAME 1-8 ALL INV
+Kazekiri EX	f,d,df+KK	4	13	37	KD		-31					53	85	26	31	[FRAME 1-8] ALL INV
 Raida LP	hcb+LP	7	2	30	KD		-12					38	79	20	20	
 Raida MP	hcb+MP	7	2	30	KD		-12					-	77	18	18	
 Raida HP	hcb+HP	7	2	30	KD		-12					-	79	20	20	
-Raida EX	hcb+PP	7	3	27	KD		-11					36	79	20	20	FRAME 3-9 PROJ INV
-Airborne Kunai LP	qcf+LP	7	1							17	13					
-Airborne Kunai MP	qcf+MP	7	1							17	13					
-Airborne Kunai HP	qcf+HP	7	1							17	13					VTC HIT ADV https://youtu.be/etuMPwgBl78
-Airborne Kunai EX	qcf+PP	7	1							22	24					
+Raida EX	hcb+PP	7	3	27	KD		-11					36	79	20	20	[FRAME 1-9] PROJ INV
+Airborne Kunai LP	qcf+LP	7	1					17	13							
+Airborne Kunai MP	qcf+MP	7	1					17	13							
+Airborne Kunai HP	qcf+HP	7	1					17	13							VTC HIT ADV https://youtu.be/etuMPwgBl78
+Airborne Kunai EX	qcf+PP	7	1					22	24							
 Kunai Ikkinage LP	HOLD 50 FRAME LP	11	1	26								37	110	51	56	
 Kunai Ikkinage MP	HOLD 50 FRAME MP	11	1	26								-	110	51	56	
 Kunai Ikkinage HP	HOLD 50 FRAME HP	11	1	26								-	110	51	56	
@@ -83,12 +83,16 @@ Airborne Kunai Ikkinage LK	HOLD 50 FRAME LK	16	1
 Airborne Kunai Ikkinage MK	HOLD 50 FRAME MK	16	1													
 Airborne Kunai Ikkinage HK	HOLD 50 FRAME HK	16	1													
 Airborne Kunai Ikkinage 0	HOLD 50 FRAME KK															
-Kunai Hoju K 1	hcb+K	11	1	43								54				
-Kunai Hoju K 2	hcb+K HOLD 24 FRAME	24	1	43								67				
-Kunai Hoju K 3	hcb+K HOLD 36 FRAME	36	1	43								79				
-Kunai Hoju K 4	hcb+K HOLD 48 FRAME	48	1	43								91				
-Kunai Hoju K 5	hcb+K HOLD 60 FRAME	60	1	43								103				
-Kunai Hoju K 6	hcb+K HOLD 72 FRAME	72	1	43								115				
+Kunai Hoju K 1	hcb+K	25	1	26								51				
+Kunai Hoju K 2	hcb+K HOLD 24 FRAME	38	1	26								64				
+Kunai Hoju K 3	hcb+K HOLD 36 FRAME	50	1	26								76				
+Kunai Hoju K 4	hcb+K HOLD 48 FRAME	62	1	26								88				
+Kunai Hoju K 5	hcb+K HOLD 60 FRAME	74	1	26								100				
+Kunai Hoju K 6	hcb+K HOLD 72 FRAME	83	1	26								109				
+Kunai Hoju EX 3	hcb+KK	25	1	26								51				
+Kunai Hoju EX 4	hcb+KK HOLD 24 FRAME	38	1	26								64				
+Kunai Hoju EX 5	hcb+KK HOLD 36 FRAME	50	1	26								76				
+Kunai Hoju EX 6	hcb+KK HOLD 48 FRAME	61	1	26								87				
 CA	qcf,qcf+K	5	17	17								38				
 health	950															
 stun	950															
