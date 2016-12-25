@@ -1,71 +1,71 @@
-Move	Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	Damage	Stun	Hitstop	Total	Chip	CH hit adv.	CH Damage	CH Stun	Attack Level	Cancel Ability	KD Adv.	KDR Adv.	KDRB Adv.	VTC Hit Adv	VTC Blk Adv	Note
-stand LP		4	2	8	4	3	30	70	8	13	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	5	5LP 123(45)(678) CHAIN 123(45)(67)/(8-13)
-stand LP CHAIN 5LP 1	5LP 5LP	4	2(6)2	8	4	3	30	70	8	21	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	5	
-stand LP CHAIN 5LP 2	5LP 5LP 5LP	4	2(5)2(6)2	8	4	3	30	70	8	28	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	5	
-stand LP CHAIN 5LP 3	5LP 5LP 5LP 5LP	4	2(5)2(5)2(6)2	8	4	3	30	70	8	35	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	5	
-stand MP		5	3	13	4	3	60	100	12	20	10	6	72	120	H	V	-	-	-	12	11	CH FORCE STAND
-stand HP		7	3	18	6	-4	80	150	15	27	13	KD 118	96	180	H	V	-	-	-	19	9	
-stand LK		5	3	9	4	2	30	70	8	16	0	6	36	84	H	V	-	-	-	8	6	
-stand MK		7	3	15	3	-1	60	100	12	24	10	5	72	120	H	V	-	-	-	13	9	
-stand HK		14	3	18	1	-3	80	150	15	34	13	3	96	180	H	V	-	-	-	14	10	
-crouch LP		4	2	8	4	2	30	70	8	13	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	4	2LP 123(45)(6789) CHAIN 123(45)(6789)/(10-13)
-crouch LP CHAIN 2LP 1	2LP 2LP	4	2(7)2	8	4	2	30	70	8	22	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	4	
-crouch LP CHAIN 2LP 2	2LP 2LP 2LP	4	2(7)2(7)2	8	4	2	30	70	8	31	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	4	
-crouch LP CHAIN 2LP 3	2LP 2LP 2LP 2LP	4	2(7)2(7)2(7)2	8	4	2	30	70	8	40	0	6	36	84	H	CH,SP,CA,V	-	-	-	6	4	
-crouch MP		6	2	13	3	1	60	100	12	20	10	5	72	120	H	SP,CA,V	-	-	-	10	8	
-crouch HP		8	5	16	2	-3	90	150	15	28	15	4	108	180	H	V	-	-	-	15	10	
-crouch LK		4	2	9	2	0	20	70	8	14	0	4	24	84	L	V	-	-	-	5	3	2LK 123(45)(6789) CHAIN 123(456)(789)/(10-14)
-crouch LK CHAIN 2LK 1	2LK 2LK	4	2(7)2	9	2	0	20	70	8	23	0	4	24	84	L	V	-	-	-	5	3	
-crouch LK CHAIN 2LK 2	2LK 2LK 2LK	4	2(7)2(7)2	9	2	0	20	70	8	32	0	4	24	84	L	V	-	-	-	5	3	
-crouch LK CHAIN 2LK 3	2LK 2LK 2LK 2LK	4	2(7)2(7)2(7)2	9	2	0	20	70	8	41	0	4	24	84	L	V	-	-	-	5	3	
-crouch MK		7	2	15	1	-4	60	100	12	23	10	3	72	120	L	V	-	-	-	10	5	
-crouch HK		8	2		KD	-13	90*70	150*100	15*15	48	15*12	52	108*84	180*120	L*L	V	52	3	8	KD 85	12	
-crouch HK		8	2		KD	-13	90*70	150*100	15*15	48	15*12	52	108*84	180*120	L*L	V	70	21	26	KD 85	12	
-jump LP		4	5	-	-	-	40	70	8	-	0	-	48	84	M	-	-	-	-	-	-	
-jump MP		5	5	-	-	-	70	100	12	-	12	-	84	120	M	-	-	-	-	-	-	
-jump HP		8	5	-	-	-	90	150	15	-	15	-	108	180	M	-	-	-	-	-	-	
-jump LK		4	5	-	-	-	40	70	8	-	0	-	48	84	M	-	-	-	-	-	-	
-jump MK		7	5	-	-	-	60	100	12	-	10	-	72	120	M	-	-	-	-	-	-	
-jump HK		10	5	-	-	-	90	150	15	-	15	-	108	180	M	-	-	-	-	-	-	
-guile high kick	df+HK	12	2	25	KD	-3	80	150	15	38	13	100	96	180	H	-	100	41	46	-	-	
-knee bazooka	b or f+LK	8	5	16	-2	-6	50	100	12	28	0	0	60	120	H	-	-	-	-	-	-	
-rolling sobat	b or f+MK	11	2	17	2	-2	60	100	12	29	10	4	72	120	H	-	-	-	-	-	-	
-spinning back knuckle	f+HP	10	3	16	4	-1	90	150	15	28	15	26	108	180	H	V	-	-	-	15	10	
-reverse spin kick	f+HK	16	3	18	3	-1	90	150	15	36	15	5	108	180	H	-	-	-	-	-	-	
-burn straight	b+HP	8	3	20	2	-1	80	150	15	30	13	KD 97	96	180	H	V	97	38	43	17	14	
-full bullet magnum	f+MP	21	2	19	0	-4	60	100	12	41	10	2	72	120	M	-	-	-	-	-	-	
-tall edge	c.LK > s.MP	4	2		-1	-6	20*54	70*90	8*12	-	0*10	-1	24*54	84*90	L*H	V	-	-	-	11	6	
-bullet revolver	c.LK > s.MP > f+HP	4	2		KD	-8	20*54*72	70*90*120	8*12*15	-	0*10*15	91	24*54*72	84*90*120	L*H*H	V	91	32	37	KD 108	9	
-swing out	s.MP > f+HP	5	3		KD	-8	60*81	100*135	12*15	-	10*15	91	72*81	120*135	H*H	V	91	32	37	KD 108	9	
-taurus combination	s.LK > s.MK	5	3		4	-2	30*45	70*72	8*12	-	0*8	4	36*45	84*72	H*H	V	-	-	-	14	8	
-faultless move	df								-	-	-	-	-	-	-	-	-	-	-	-	-	
-dragon suplex	LP+LK	5	2	18	KD	-	130	200	-	24	-	60	130	200	T	-	60	11	11	-	-	
-judo throw	b+LP+LK	5	2	18	KD	-	120	170	-	24	-	63	120	170	T	-	63	14	14	-	-	
-flying mare	LP+LK (air)	5	2	-	KD	-	130	170	-	-	-	77/78?	130	170	T	-	77/78?	28/30?	28/30?	-	-	
-flying buster drop	b+LP+LK (air)	5	2	-	KD	-	140	200	-	-	-	51	140	200	T	-	51	2	2	-	-	
-solid puncher	HP+HK	1	1	8		-			-	9		-	-	-	-	-	-	-	-	-	-	[FRAME 1] ALL INV
-sonic blade	MP+MK	18	1	31	-5	-10	40	50	8	49	7	-3	48	60	H	-	-	-	-	-	-	PROJ 42F
-reverse back knuckle	f+PPP	15	2	23	KD	-2									H	-	86	27	32	-	-	
-sonic boom LP	b,f+LP	10	1	28	8	1	50	50	8	38	8	10	60	60	H	CA,V	-	-	-	29	22	in VT, 36f total and +10 on hit
-sonic boom MP	b,f+MP	10	1	28	8	1	50	50	8	38	8	10	60	60	H	CA,V	-	-	-	29	22	in VT, 36f total and +10 on hit
-sonic boom HP	b,f+HP	10	1	28	8	1	50	50	8	38	8	10	60	60	H	CA,V	-	-	-	29	22	in VT, 36f total and +10 on hit
-sonic boom EX	b,f+PP	10	1	26	KD	1	50*50	50*50	8*8	36	8*8	107	60*50	60*50	H*H	V	107	48	53	KD 125	22	
-somersault kick LK	d,u+LK	4	12	37	KD	-28	120	200	14	52	30	83	144	240	H	CA	83	24	29	-	-	
-somersault kick MK	d,u+MK	5	12	37	KD	-28	120	200	14	53	30	83	144	240	H	CA	83	24	29	-	-	
-somersault kick HK	d,u+HK	6	12	38	KD	-30	120	200	14	55	30	83	144	240	H	CA	83	24	29	-	-	
-somersault kick EX	d,u+KK	4	12	44	KD	-37	90*60	100*100	14*14	59	23	83	108*60	120*100	H*H	-	85	26	31	-	-	
-sonic cross LP	MP+MK > b,f+LP	18	27(1)1	23	KD	13?	40*40	50*50	8*8	69	7*7	107?	48*40	60*50	H*H	-	107?	55?	56?	-	-	PROJ 27F CANCEL 36F
-sonic cross MP	MP+MK > b,f+MP	18	27(1)1	23	KD	16?	40*40	50*50	8*8	69	7*7	110?	48*40	60*50	H*H	-	110?	53?	58?	-	-	PROJ 27F CANCEL 36F
-sonic cross HP	MP+MK > b,f+HP	18	27(1)1	23	KD	15?	40*40	50*50	8*8	69	7*7	112?	48*40	60*50	H*H	-	112?	50?	57?	-	-	PROJ 27F CANCEL 36F
-sonic cross EX	MP+MK > b,f,PP	46	27(1)1	21	KD	21	40*50*50	50*25*75	8*8*8	67	7*7*8	118?	48*50*50	60*25*75	H*H*H	-	118?	62?	66?	-	-	PROJ 27F CANCEL 36F
-sonic break	N or b or f+HP+HK/P	10			5	1	40	40	8	37	7	7	48	48	H	-				-	-	
-sonic hurricane	b,f,b,f+p	7	1		KD	-41	320	0		??	5x5*25	63	328	0	H	-	81	22	27	-	-	
-sonic tempest	b,f,b,f+p during VT	7	1		KD	5	360	0		??	4x16	107?	364	0	H	-	107	48	53	-	-	
-health																						
-stun																						
+Move	Command	Startup	Active	Recovery	Hit Advantage	CH hit adv.	Block Advantage	VTC Hit Adv	VTC Blk Adv	Damage	Stun	Chip	CH Damage	CH Stun	Total	Hitstop	Attack Level	Cancel Ability	KD Adv.	KDR Adv.	KDRB Adv.	Note
+stand LP		4	2	8	4	6	3	6	5	30	70	0	36	84	13	8	H	CH,SP,CA,V	-	-	-	5LP 123(45)(678) CHAIN 123(45)(67)/(8-13)
+stand LP CHAIN 5LP 1	5LP 5LP	4	2(6)2	8	4	6	3	6	5	30	70	0	36	84	21	8	H	CH,SP,CA,V	-	-	-	
+stand LP CHAIN 5LP 2	5LP 5LP 5LP	4	2(5)2(6)2	8	4	6	3	6	5	30	70	0	36	84	28	8	H	CH,SP,CA,V	-	-	-	
+stand LP CHAIN 5LP 3	5LP 5LP 5LP 5LP	4	2(5)2(5)2(6)2	8	4	6	3	6	5	30	70	0	36	84	35	8	H	CH,SP,CA,V	-	-	-	
+stand MP		6	3	13	6	8	2	14	10	60	100	10	72	120	21	12	H	V	-	-	-	CH FORCE STAND
+stand HP		8	3	18	7	9	-4	20	9	80	150	13	96	180	28	15	H	V	-	-	-	
+stand LK		4	3	9	4	6	2	8	6	30	70	0	36	84	15	8	H	V	-	-	-	
+stand MK		7	3	15	3	5	-1	13	9	60	100	10	72	120	24	12	H	V	-	-	-	
+stand HK		14	3	18	2	4	-3	15	10	80	150	13	96	180	34	15	H	V	-	-	-	
+crouch LP		4	3	7	4	6	2	6	4	30	70	0	36	84	13	8	H	CH,SP,CA,V	-	-	-	2LP 123(456)(7890) CHAIN 123(456)(7890)/(11-13)
+crouch LP CHAIN 2LP 1	2LP 2LP	4	3(7)3	7	4	6	2	6	4	30	70	0	36	84	23	8	H	CH,SP,CA,V	-	-	-	
+crouch LP CHAIN 2LP 2	2LP 2LP 2LP	4	3(7)3(7)3	7	4	6	2	6	4	30	70	0	36	84	33	8	H	CH,SP,CA,V	-	-	-	
+crouch LP CHAIN 2LP 3	2LP 2LP 2LP 2LP	4	3(7)3(7)3(7)3	7	4	6	2	6	4	30	70	0	36	84	43	8	H	CH,SP,CA,V	-	-	-	
+crouch MP		6	2	13	3	5	1	10	8	60	100	10	72	120	20	12	H	SP,CA,V	-	-	-	
+crouch HP		8	5	16	2	KD	-4	15	9	90	150	15	108	180	28	15	H	V	118	59	64	
+crouch LK		4	3	8	2	4	0	5	3	20	70	0	24	84	14	8	L	V	-	-	-	2LK 123(456)(78901) CHAIN 123(456)(7890)/(11-14)
+crouch LK CHAIN 2LK 1	2LK 2LK	4	3(8)3	8	2	4	0	5	3	20	70	0	24	84	25	8	L	V	-	-	-	
+crouch LK CHAIN 2LK 2	2LK 2LK 2LK	4	3(8)3(7)3	8	2	4	0	5	3	20	70	0	24	84	35	8	L	V	-	-	-	
+crouch LK CHAIN 2LK 3	2LK 2LK 2LK 2LK	4	3(8)3(7)3(7)3	8	2	4	0	5	3	20	70	0	24	84	45	8	L	V	-	-	-	
+crouch MK		7	2	15	1	3	-4	10	5	60	100	10	72	120	23	12	L	V	-	-	-	
+crouch HK		7	2(16)3	20	KD	KD	-13	KD	12	90*70	150*100	15*12	108*84	180*120	47	15*15	L*L	V	52	3	8	VTC KD ADV +85/+36/+41
+crouch HK		7	2(16)3	20	KD	KD	-13	-	-	90*70	150*100	15*12	108*84	180*120	47	15*15	L*L	V	70	21	26	
+jump LP		4	5	-	-	-	-	-	-	40	70	0	48	84	-	8	M	-	-	-	-	
+jump MP		5	5	-	-	-	-	-	-	70	100	12	84	120	-	12	M	-	-	-	-	
+jump HP		8	5	-	-	-	-	-	-	90	150	15	108	180	-	15	M	-	-	-	-	
+jump LK		4	5	-	-	-	-	-	-	40	70	0	48	84	-	8	M	-	-	-	-	
+jump MK		7	5	-	-	-	-	-	-	60	100	10	72	120	-	12	M	-	-	-	-	
+jump HK		10	5	-	-	-	-	-	-	90	150	15	108	180	-	15	M	-	-	-	-	
+guile high kick	df+HK	12	2	25	KD	KD	-3	-	-	80	150	13	96	180	38	15	H	-	100	41	46	
+knee bazooka	b or f+LK	8	5	16	-1	1	-3	-	-	50	100	0	60	120	28	12	H	-	-	-	-	
+rolling sobat	b or f+MK	11	2	17	2	4	-2	-	-	60	100	10	72	120	29	12	H	-	-	-	-	
+spinning back knuckle	f+HP	10	3	16	4	26	-1	15	10	90	150	15	108	180	28	15	H	V	-	-	-	
+reverse spin kick	f+HK	16	3	18	6	8	-2	-	-	90	150	15	108	180	36	15	H	-	-	-	-	
+burn straight	b+HP	8	3	20	2	KD	-1	17	14	80	150	13	96	180	30	15	H	V	97	38	43	
+full bullet magnum	f+MP	21	2	19	1	3	-6	-	-	60	100	10	72	120	41	12	M	-	-	-	-	
+tall edge	c.LK > s.MP	4	3		1	1	-6	13	6	20*54	70*90	0*10	24*54	84*90	-	8*12	L*H	V	-	-	-	
+bullet revolver	c.LK > s.MP > f+HP	4	3		KD	KD	-8	KD	9	20*54*72	70*90*120	0*10*15	24*54*72	84*90*120	-	8*12*15	L*H*H	V	91	32	37	VTC KD ADV +108/+49/+54
+swing out	s.MP > f+HP	6	3		KD	KD	-8	KD	9	60*81	100*135	10*15	72*81	120*135	-	12*15	H*H	V	91	32	37	VTC KD ADV +108/+49/+54
+taurus combination	s.LK > s.MK	4	3		4	4	-2	14	8	30*45	70*72	0*8	36*45	84*72	-	8*12	H*H	V	-	-	-	
+faultless move	df					-		-	-			-	-	-	-	-	-	-	-	-	-	
+dragon suplex	LP+LK	5	2	18	KD	60	-	-	-	130	200	-	130	200	24	-	T	-	54	5	5	
+judo throw	b+LP+LK	5	2	18	KD	63	-	-	-	120	170	-	120	170	24	-	T	-	63	14	14	
+flying mare	LP+LK (air)	5	2	-	KD	77/78?	-	-	-	130	170	-	130	170	-	-	T	-	78	29	29	
+flying buster drop	b+LP+LK (air)	5	2	-	KD	51	-	-	-	140	200	-	140	200	-	-	T	-	51	2	2	
+solid puncher	HP+HK	1	1	8		-	-	-	-				-	-	9	-	-	-	-	-	-	[FRAME 1] ALL INV
+sonic blade	MP+MK	18	1	31	-5	-3	-10	-	-	40	50	7	48	60	49	8	H	-	-	-	-	PROJ 42F
+reverse back knuckle	f+PPP	16	2	23	KD		-2	-	-	60	0	-	72	0		12	H	-	77	18	23	CH KD ADV +80/+21/+26
+sonic boom LP	b,f+LP	10	1	28	7	9	2	28	23	50	50	8	60	60	38	8	H	CA,V	-	-	-	in VT, 36f total and +10 on hit
+sonic boom MP	b,f+MP	10	1	28	7	9	2	28	23	50	50	8	60	60	38	8	H	CA,V	-	-	-	in VT, 36f total and +10 on hit
+sonic boom HP	b,f+HP	10	1	28	7	9	2	28	23	50	50	8	60	60	38	8	H	CA,V	-	-	-	in VT, 36f total and +10 on hit
+sonic boom EX	b,f+PP	10	1	26	KD	KD	4	KD	23	50*50	50*50	8*8	60*50	60*50	36	8*8	H*H	V	107	48	53	VTC KD ADV +126/+67/+72
+somersault kick LK	d,u+LK	4	12	36	KD	KD	-28	-	-	120	200	30	144	240	51	14	H	CA	83	24	29	[FRAME 3-8] HIT PROJ INV
+somersault kick MK	d,u+MK	5	12	36	KD	KD	-28	-	-	120	200	30	144	240	52	14	H	CA	83	24	29	[FRAME 3-8] HIT PROJ INV
+somersault kick HK	d,u+HK	6	12	38	KD	KD	-30	-	-	120	200	30	144	240	55	14	H	CA	83	24	29	[FRAME 1-9] THROW PROJ INV
+somersault kick EX	d,u+KK	4	12	44	KD	KD	-37	-	-	90*60	100*100	23	108*60	120*100	59	14*14	H*H	-	85	26	31	[FRAME 1-9] ALL INV
+sonic cross LP	MP+MK > b,f+LP	18	27(1)1	23	KD	107?	13?	-	-	40*40	50*50	7*7	48*40	60*50	69	8*8	H*H	-	106	47	52	PROJ 27F CANCEL 36F
+sonic cross MP	MP+MK > b,f+MP	18	27(1)1	23	KD	110?	16?	-	-	40*40	50*50	7*7	48*40	60*50	69	8*8	H*H	-	106	47	52	PROJ 27F CANCEL 36F
+sonic cross HP	MP+MK > b,f+HP	18	27(1)1	23	KD	112?	15?	-	-	40*40	50*50	7*7	48*40	60*50	69	8*8	H*H	-	106	47	52	PROJ 27F CANCEL 36F
+sonic cross EX	MP+MK > b,f,PP	46	27(1)1	21	KD	118?	21	-	-	40*50*50	50*25*75	7*7*8	48*50*50	60*25*75	67	8*8*8	H*H*H	-	117	58	63	PROJ 27F CANCEL 36F
+sonic break	N or b or f+HP+HK/P	10			5	7	1	-	-	40	40	7	48	48	37	8	H	-				
+sonic hurricane	b,f,b,f+p	7	1	98	KD	63	-41	-	-	320	0	5x5*25	328	0	105		H	-	81	22	27	
+sonic tempest	b,f,b,f+p during VT	7	1	98	KD	107?	5	-	-	350	0	4x16	364	0	105		H	-	107	48	53	
+health	950																					
+stun	950																					
 taunt	61																					
-jump	46 (4+38+4)	42	1	4						46												EARLY WHIFF 47
-jump forward	45 (3+38+4)	41	1	4						45												EARLY WHIFF 48
-jump backwards	46( 4+38+4)	42	1	4						46												EARLY WHIFF 49
-dash forward	18		18							18												
-dash backwards	25		25							25												
+jump	46 (4+38+4)	42	1	4											46							EARLY WHIFF 47
+jump forward	45 (3+38+4)	41	1	4											45							EARLY WHIFF 48
+jump backwards	46( 4+38+4)	42	1	4											46							EARLY WHIFF 49
+dash forward	18		18												18							
+dash backwards	25		25												25							
