@@ -47,13 +47,13 @@ hadouken LP AIR	qcf+LP
 hadouken MP AIR	qcf+MP																	
 hadouken HP AIR	qcf+HP																	
 hadouken EX AIR	qcf+PP																	
-shoryuken LP	f,d,df+LP	3	12	34	48	KD	KD	-28	100	150					85	26	31	
-shoryuken MP	f,d,df+MP	4	11	41	55	KD	KD	-30	110	150					86	27	32	
+shoryuken LP	f,d,df+LP	3	12	34	48	KD	KD	-28	100	150					85	26	31	[FRAME 1-3] THROW INV
+shoryuken MP	f,d,df+MP	4	11	41	55	KD	KD	-30	110	150					86	27	32	[FRAME 2-6] HIT PROJ INV
 shoryuken HP	f,d,df+HP	4	11	44	58	KD	KD	-17	120	150					83	24	29	
-shoryuken EX	f,d,df+PP	3	12(26)20	47	107	KD	KD	-44	160	200					52	12	17	
-VT shoryuken LP	f,d,df+LP	3	11	46	59	KD	KD	-19	200	230					35	35	35	
-VT shoryuken MP	f,d,df+MP	4	11	46	60	KD	KD	-19	200	230					35	35	35	
-VT shoryuken HP	f,d,df+HP	5	11	46	61	KD	KD	-19	200	230					35	35	35	
+shoryuken EX	f,d,df+PP	3	12(26)20	47	107	KD	KD	-44	160	200					52	12	17	[FRAME 1-15] ALL INV
+VT shoryuken LP	f,d,df+LP	3	11	46	59	KD	KD	-19	200	230					35	35	35	[FRAME 1-8] ALL INV
+VT shoryuken MP	f,d,df+MP	4	11	46	60	KD	KD	-19	200	230					35	35	35	[FRAME 1-9] ALL INV
+VT shoryuken HP	f,d,df+HP	5	11	46	61	KD	KD	-19	200	230					35	35	35	[FRAME 1-10] ALL INV
 Tatsumaki LK	qcb+LK	11	2	24	36	KD	KD	-11	50	80					101	42	47	NO HIT CROUCH
 Tatsumaki MK	qcb+MK	4	2(3)2(12)2	23	47	KD	KD	-8	70	120					98	39	44	
 Tatsumaki HK	qcb+HK	4	2(3)2(12)2(10)3	30	67	KD	KD	-39	100	200					79	20	25	[HIT 2 3 4] NO HIT CROUCH
