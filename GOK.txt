@@ -48,7 +48,7 @@ hadouken MP AIR	qcf+MP
 hadouken HP AIR	qcf+HP																	
 hadouken EX AIR	qcf+PP																	
 shoryuken LP	f,d,df+LP	3	12	34	48	KD	KD	-28	100	150					85	26	31	[FRAME 1-3] THROW INV
-shoryuken MP	f,d,df+MP	4	11	41	55	KD	KD	-30	110	150					86	27	32	[FRAME 2-6] HIT PROJ INV
+shoryuken MP	f,d,df+MP	4	11	41	55	KD	KD	-30	110	150					86	27	32	[FRAME 3-6] HIT PROJ INV
 shoryuken HP	f,d,df+HP	4	11	44	58	KD	KD	-17	120	150					83	24	29	
 shoryuken EX	f,d,df+PP	3	12(26)20	47	107	KD	KD	-44	160	200					52	12	17	[FRAME 1-15] ALL INV
 VT shoryuken LP	f,d,df+LP	3	11	46	59	KD	KD	-19	200	230					35	35	35	[FRAME 1-8] ALL INV
