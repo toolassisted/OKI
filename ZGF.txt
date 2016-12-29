@@ -1,60 +1,61 @@
-Move	Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	 Damage	Stun	Total 	Hitstop	Chip	Attack Level	Cancel Ability	CH hit adv.	CH Damage	CH Stun	KD Adv.	KDR Adv.	KDRB Adv.	Note
-stand LP		5	4	7	5	3	40	70	15	8	0	H	SP,V	7	48	84				
-stand MP		6	2	13	3	1	70	100	20	12	12	H	V	5	84	120				
-stand HP (hold)		13(37)	4	23	1 (KD)	-3 (1)	100(130)	150		15(18)	17 (22)	H	V	27	120(156)	180				
-stand HP		13	4	23	1 (KD)	-3 (1)	100(130)	150	38	15(18)	17 (22)	H	V	27	120(156)	180				
-stand HP HOLD		37	4	23	1 (KD)	-3 (1)	100(130)	150	63	15(18)	17 (22)	H	V	27	120(156)	180	94	33	38	KD HIT ACTIVE 1
-stand HP HOLD		37	4	23	1 (KD)	-3 (1)	100(130)	150	63	15(18)	17 (22)	H	V	27	120(156)	180	95	34	39	KD HIT ACTIVE 2
-stand LK		5	2	12	2	0	30	70	18	8	0	H	SP,V	4	36	84				
-stand MK		9	3	17	0	-3	70	100	28	12	12	H	V	2	84	120				
-stand HK		11	4	22	1	-2	90	150	36	15	15	H	V	KD 109	108	180				
-crouch LP		4	3	6	5	3	30	70	12	8	0	H	SP,V	7	36	84				
-crouch MP		7	3	12	5	3	60	100	21	12	10	H	SP,V	7	72	120				
-crouch HP		9	6	20	1	-4	100	150	34	15	17	H	CA,V	3	120	180				
-crouch LK		4	2	8	4	1	30	70	13	8	0	L	SP,V	6	36	84				
-crouch MK		8	2	16	0	-4	60	100	25	12	10	L	SP,V	2	72	120				
-crouch HK		10	3	26	KD	-10	100	150	38	15	17	L	V	KD	120	180	68	19	24	
-jump LP		5	5	-	-	-	50	70		8	0	M	-	-	60	84		-	-	
-jump MP		6	4	-	-	-	80	100		12	13	M	-	-	96	120		-	-	
-jump HP		7	6	-	-	-	100	150		15	17	M	-	-	120	180		-	-	
-jump LK		6	5	-	-	-	50	70		8	0	M	-	-	60	84		-	-	
-jump MK		7	3	-	-	-	70	100		12	12	M	-	-	84	120		-	-	
-jump HK		9	5	-	-	-	100	150		15	17	M	-	-	120	180		-	-	
-head butt	f+HP	12	4	14	7	2	100	200	29	15	17	H	CA	9	120	240		-	-	
-head butt KD HIGH	f+HP	12	4	14	7	2	100	200		15	17	H	CA	9	120	240	87	26	31	HIT R. MIKA HIGH
-head butt KD LOW	f+HP	12	4	14	7	2	100	200		15	17	H	CA	9	120	240	75	15	19	HIT R. MIKA LOW
-knee hammer	f+MK	12	4	12	3	-3	70	100	27	12	12	H	-	5	84	120		-	-	
-flying body press	d+HP during jump	7	7	-	-		100	150		15	17	M	-	-	120	180		-	-	
-atomic drop	LP+LK	5	2	18	KD	-	130	170	24	-	-	T	-	KD	130	170	64	15	15	
-captured	b+LP+LK	5	2	18	KD	-	130	170	24	-	-	T	-	KD	130	170	74	25	25	
-cyclone lariat	HP+HK	27			KD		20x9	20x8*90		3x8*17		H	-	KD	24*20x8	24*20x7*90				
-cyclone lariat	HP+HK	19	19	16	KD		20x9	20x8*90	53	3x8*17		H	-	KD	24*20x8	24*20x7*90	103	44	49	
-VT cyclone lariat	HP+HK	9	19	16	KD		20x9	20x8*90	43	3x8*17		H	-	KD	24*20x8	24*20x7*90				
-cyclone lariat HOLD	HP+HK				KD		20x9	20x8*90		3x8*17		H	-	KD	24*20x8	24*20x7*90	130	71	76	
-iron muscle	MP+MK (hold)			25	2	-2	50	100	25	12	8	H	-	4	60	120		-	-	
-iron muscle HOLD	MP+MK (hold)	58	5	15	2	-2	50	100	77	12	8	H	-	4	60	120		-	-	
-muscle explosion	f+KKK	10	2	17	3	-2	60	0				H								
-screw pile driver LP	360+LP	5	2	52	KD	-	180	250	58	-	-	T	-	KD	180	250	71	22	22	
-screw pile driver MP	360+MP	5	2	52	KD	-	200	250	58	-	-	T	-	KD	200	250	76	27	27	
-screw pile driver HP	360+HP	5	2	52	KD	-	240	250	58	-	-	T	-	KD	240	250	76	27	27	
-screw pile driver EX	360+PP	5	2	52	KD	-	240	300	58	-	-	T	-	KD	240	300	76	27	27	
-double lariat	PPP	9	6(5)4(8)3	31	KD	-35	100	200		17	25	H	-	KD	120	200				
-double lariat	PPP	9	26	31	KD	-35	100	200	65	17	25	H	-	KD	120	200	76	17	22	KD HIT ACTIVE 1
-double lariat	PPP	9	26	31	KD	-35	100	200		17	25	H	-	KD	120	200	79	20	25	KD HIT ACTIVE 4
-siberian express LK	hcb+LK	17	2	52	KD	-	170	200		-	-	T	-	KD	170	200	73	24	24	
-siberian express MK	hcb+MK	23	2	52	KD	-	200	200		-	-	T	-	KD	200	200	73	24	24	
-siberian express HK	hcb+HK	30	2	52	KD	-	220	200		-	-	T	-	KD	220	200	73	24	24	
-siberian express EX	hcb+KK	15	2	52	KD	-	200	200		-	-	T	-	KD	200	200	68	19	19	
-borscht dynamite LP	360+LP(air)	3	4	37	KD	-	50*130	100*150		-	-	T	-	KD	50*130	100*150	72	23	23	
-borscht dynamite MP	360+MP(air)	3	4	37	KD	-	50*150	100*150		-	-	T	-	KD	50*150	100*150	72	23	23	
-borscht dynamite HP	360+HP(air)	3	4	37	KD	-	50*170	100*150		-	-	T	-	KD	50*170	100*150	72	23	23	
-borscht dynamite EX	360+PP(air)	3	4	37	KD	-	50*150	100*150		-	-	T	-	KD	50*150	100*150	76	27	27	
-bolshoi russian suplex	720+P	1	2	65	KD	-	50*50*300	0		-	-	T	-	KD	50*50*300	0	60	11	11	
+Move	Command	Startup	Active	Recovery	Hit Advantage	CH hit adv.	Block Advantage	 Damage	Stun	CH Damage	CH Stun	Chip	Total 	Hitstop	Attack Level	Cancel Ability	KD Adv.	KDR Adv.	KDRB Adv.	Note
+stand LP		5	4	7	5	7	3	40	70	48	84	0	15	8	H	SP,V				
+stand MP		6	2	13	4	6	2	70	100	84	120	12	20	12	H	V				
+stand HP		13	4	23	2	27	-3	100	150	120	180	17	39		H	V				
+stand HP FAR		14	3	23	3	27	-4	100	150	120	180	17	39		H	V				
+stand HP HOLD		37	4	23	KD	31	1	130	200	156	240	22	63		H	V	94	33	38	KD HIT ACTIVE 1
+stand HP HOLD FAR		38	3	23	KD	33	2	130	200	156	240	22	63		H	V	95	34	39	KD HIT ACTIVE 2
+stand LK		5	2	12	2	4	0	30	70	36	84	0	18	8	H	SP,V				
+stand MK		9	3	17	0	2	-3	70	100	84	120	12	28	12	H	V				
+stand HK		11	4	22	2	KD	-2	90	150	108	180	15	36	15	H	V	109	48	53	
+crouch LP		4	3	6	4	6	3	30	70	36	84	0	12	8	H	SP,V				
+crouch MP		6	3	12	5	7	3	60	100	72	120	10	20	12	H	SP,V				
+crouch HP		9	6	20	2	4	-4	100	150	120	180	17	34	15	H	CA,V				
+crouch LK		4	2	8	4	6	2	30	70	36	84	0	13	8	L	SP,V				
+crouch MK		8	2	16	0	2	-4	60	100	72	120	10	25	12	L	SP,V				
+crouch HK		10	3	26	KD	KD	-10	100	150	120	180	17	38	15	L	V	68	19	24	
+jump LP		5	5	-	-	-	-	50	70	60	84	0		8	M	-		-	-	
+jump MP		6	4	-	-	-	-	80	100	96	120	13		12	M	-		-	-	
+jump HP		7	6	-	-	-	-	100	150	120	180	17		15	M	-		-	-	
+jump LK		6	5	-	-	-	-	50	70	60	84	0		8	M	-		-	-	
+jump MK		7	3	-	-	-	-	70	100	84	120	12		12	M	-		-	-	
+jump HK		9	5	-	-	-	-	100	150	120	180	17		15	M	-		-	-	
+head butt	f+HP	12	4	14	7	9	2	100	200	120	240	17	29	15	H	CA		-	-	
+head butt KD HIGH	f+HP	12	4	14	7	9	2	100	200	120	240	17		15	H	CA	87	26	31	HIT R. MIKA HIGH
+head butt KD LOW	f+HP	12	4	14	7	9	2	100	200	120	240	17		15	H	CA	75	15	19	HIT R. MIKA LOW
+knee hammer	f+MK	12	4	12	3	5	-3	70	100	84	120	12	27	12	H	-		-	-	
+flying body press	d+HP during jump	7	7	-	-	-		100	150	120	180	17		15	M	-		-	-	
+atomic drop	LP+LK	5	2	18	KD	KD	-	130	170	130	170	-	24	-	T	-	64	15	15	
+captured	b+LP+LK	5	2	18	KD	KD	-	130	170	130	170	-	24	-	T	-	74	25	25	
+cyclone lariat	HP+HK	27			KD	KD		20x9	20x8*90	24*20x8	24*20x7*90			3x8*17	H	-				
+cyclone lariat	HP+HK	19	19	16	KD	KD		20x9	20x8*90	24*20x8	24*20x7*90		53	3x8*17	H	-				
+VT cyclone lariat	HP+HK	9	19	16	KD	KD		20x9	20x8*90	24*20x8	24*20x7*90		43	3x8*17	H	-				
+VT cyclone lariat HOLD HIT	HP+HK	28	3(5)3(9)3(6)3(7)2(4)3(5)2(4)3(5)2	26	KD	KD		20x9	20x8*90	24*20x8	24*20x7*90		122	3x8*17	H	-	130	71	76	
+cyclone lariat HOLD	HP+HK	19	60	27	KD	KD		20x9	20x8*90	24*20x8	24*20x7*90		105	3x8*17	H	-				
+cyclone lariat HOLD HIT	HP+HK	37	3(5)3(9)3(6)3(7)3	27	KD	KD		20x9	20x8*90	24*20x8	24*20x7*90		105	3x8*17	H	-	103	44	49	
+iron muscle	MP+MK (hold)	37		25	2	4	-2	50	100	60	120	8	25	12	H	-		-	-	
+iron muscle HOLD	MP+MK (hold)	58	5	15	2	4	-2	50	100	60	120	8	77	12	H	-		-	-	
+muscle explosion	f+KKK	12	2	24	3	3	-2	60	0	72	0	0		0	H					
+screw pile driver LP	360+LP	5	2	52	KD	KD	-	180	250	180	250	-	58	-	T	-	71	22	22	
+screw pile driver MP	360+MP	5	2	52	KD	KD	-	200	250	200	250	-	58	-	T	-	76	27	27	
+screw pile driver HP	360+HP	5	2	52	KD	KD	-	240	250	240	250	-	58	-	T	-	76	27	27	
+screw pile driver EX	360+PP	5	2	52	KD	KD	-	240	300	240	300	-	58	-	T	-	76	27	27	
+double lariat	PPP	9	6(5)4(8)3	31	KD	KD	-33	100	200	120	240	25	65	17	H	-	76	17	22	KD HIT ACTIVE 1
+double lariat	PPP	11	4(5)4(8)3	31	KD	KD	-30	100	200	120	240	25	65	17	H	-	79	20	25	KD HIT ACTIVE 3
+siberian express LK	hcb+LK	17	2	52	KD	KD	-	170	250	170	200	-		-	T	-	73	24	24	
+siberian express MK	hcb+MK	23	2	52	KD	KD	-	200	250	200	200	-		-	T	-	73	24	24	
+siberian express HK	hcb+HK	30	2	52	KD	KD	-	220	250	220	200	-		-	T	-	73	24	24	
+siberian express EX	hcb+KK	15	2	52	KD	KD	-	230	250	200	200	-		-	T	-	68	19	19	
+borscht dynamite LP	360+LP(air)	3	4		KD	KD	-	50*130	100*150	50*130	100*150	-		-	T	-	72	23	23	
+borscht dynamite MP	360+MP(air)	3	4		KD	KD	-	50*150	100*150	50*150	100*150	-		-	T	-	72	23	23	
+borscht dynamite HP	360+HP(air)	3	4		KD	KD	-	50*170	100*150	50*170	100*150	-		-	T	-	72	23	23	
+borscht dynamite EX	360+PP(air)	3	4		KD	KD	-	50*150	100*150	50*150	100*150	-		-	T	-	76	27	27	
+bolshoi russian suplex	720+P	1	2	65	KD	KD	-	50*50*300	0	50*50*300	0	-		-	T	-	60	11	11	
 health	1050																			
 stun	1050																			
-taunt	61			61					61											
-jump	49(5+39+5)	44	1	5					49											
-jump forward	49(5+39+5)	44	1	5					49											
-jump backward	49(5+39+5)	44	1	5					49											
-dash forward	25		25						25											
-dash backward	25		25						25											
+taunt	61			61									61							
+jump	49(5+39+5)	44	1	5									49							
+jump forward	49(5+39+5)	44	1	5									49							
+jump backward	49(5+39+5)	44	1	5									49							
+dash forward	25		25										25							
+dash backward	25		25										25							
