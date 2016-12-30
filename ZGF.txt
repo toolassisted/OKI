@@ -30,7 +30,7 @@ captured	b+LP+LK	5	2	18	KD	KD	-	130	170	130	170	-	24	-	T	-	74	25	25
 cyclone lariat	HP+HK	27			KD	KD		20x9	20x8*90	24*20x8	24*20x7*90			3x8*17	H	-				
 cyclone lariat	HP+HK	19	19	16	KD	KD		20x9	20x8*90	24*20x8	24*20x7*90		53	3x8*17	H	-				
 VT cyclone lariat	HP+HK	9	19	16	KD	KD		20x9	20x8*90	24*20x8	24*20x7*90		43	3x8*17	H	-				
-VT cyclone lariat HOLD HIT	HP+HK	28	3(5)3(9)3(6)3(7)2(4)3(5)2(4)3(5)2	26	KD	KD		20x9	20x8*90	24*20x8	24*20x7*90		122	3x8*17	H	-	130	71	76	
+VT cyclone lariat HOLD HIT	HP+HK	27	3(5)3(9)3(6)3(7)2(4)3(5)2(4)3(5)2	26	KD	KD		20x9	20x8*90	24*20x8	24*20x7*90		121	3x8*17	H	-	130	71	76	
 cyclone lariat HOLD	HP+HK	19	60	27	KD	KD		20x9	20x8*90	24*20x8	24*20x7*90		105	3x8*17	H	-				
 cyclone lariat HOLD HIT	HP+HK	37	3(5)3(9)3(6)3(7)3	27	KD	KD		20x9	20x8*90	24*20x8	24*20x7*90		105	3x8*17	H	-	103	44	49	
 iron muscle	MP+MK (hold)	37		25	2	4	-2	50	100	60	120	8	25	12	H	-		-	-	
