@@ -1,69 +1,71 @@
-Move	Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	 Damage	Stun	Total 	Hitstop	Chip	Attack Level	Cancel Ability	CH hit adv.	CH Damage	CH Stun	KD Adv.	KDR Adv.	KDRB Adv.	Note
-stand LP		4	2	7	4	3	30	70	12	8	0	H	CH,SP,V	6	36	84	-	-	-	5LP 123(45)(67890) CHAIN 123(45)(67890)/(11-12)
-stand LP CHAIN LP 1	5LP 5LP	4	2(8)2	7	4	3	30	70	22	8	0	H	CH,SP,V	6	36	84	-	-	-	
-stand LP CHAIN LP 2	5LP 5LP 5LP	4	2(8)2(8)2	7					32											
-stand LP CHAIN LP 3	5LP 5LP 5LP 5LP	4	2(8)2(8)2(8)2	7					42											
-stand MP		5	2	14	6	3	60	100	20	10	10	H	SP,V	8	72	120	-	-	-	
-stand HP		8	2	19	2	0	80	150	28	15	13	H	SP,V	16	96	180	-	-	-	
-stand LK		3	3	9	4	2	30	70	14	8	0	H	V	6	36	84	-	-	-	
-stand MK		8	3	15	2	-2	60	100	25	12	10	H	V	4	72	120	-	-	-	
-stand HK		16	2	22	2	-2	90	150	39	15	15	H	V	KD 108	108	180	-	-	-	
-crouch LP		4	2	6	4	2	30	70	11	8	0	H	CH,SP,V	6	36	84	-	-	-	2LP 123(45)(67890) CHAIN 123(45)(67890)/(11)
-crouch LP CHAIN LP 1	2LP 2LP	4	2(8)2	6					21											
-crouch LP CHAIN LP 2	2LP 2LP 2LP	4	2(8)2(8)2	6					31											
-crouch LP CHAIN LP 3	2LP 2LP 2LP 2LP	4	2(8)2(8)2(8)2	6					41											
-crouch MP		7	3	15	3	1	60	100	24	12	10	H	SP,V	5	72	120	-	-	-	
-crouch HP		9	2(1)2	18	6	-2	40*40	50*100	31	10*10	7*7	H	SP,V	8	48*40	60*100	-	-	-	
-crouch LK		4	2	8	2	0	20	70	13	8	0	L	CH,V	4	24	84	-	-	-	
-crouch MK		6	2	15	0	-3	50	100	22	12	8	L	SP,V	2	60	120	-	-	-	
-crouch HK		7	2	25	KD	-12	100	150	33	15	17	L	V	KD	120	180	67	18	23	
-jump LP		4	4	-	-	-	40	70		8	0	M	SP	-	48	84	-	-	-	
-jump MP		5	6	-	-	-	70	100		10	12	M	SP	-	84	120	-	-	-	
-jump HP		7	3	-	-	-	90	150		15	15	M	-	-	108	180	-	-	-	
-jump LK		4	4	-	-	-	40	70		8	0	M	-	-	48	84	-	-	-	
-jump MK		5	5	-	-	-	60	100		10	10	M	-	-	72	120	-	-	-	
-jump HK		8	3	-	-	-	90	150		15	15	M	-	-	108	180	-	-	-	
-flap spin	f+MP	8	2(15)3	14	2	-2	40*30	50*50		8*8	7*5	H*H	SP,V	2	48*30	60*50	-	-	-	
-flap spin	f+MP	8	20	14	2	-2	40*30	50*50	41	8*8	7*5	H*H	SP,V	2	48*30	60*50	-	-	-	
-beak assault	f+HP	23	2	18	0	-4	80	150	42	10	13	M	-	2	96	180	-	-	-	
-spinning mixer	f+P during run	8			1	-2	20x4*9	20x5		4x4*3	5x4*2	H	CA	1	24*20x3*9	24*20x4	-	-	-	
-spinning mixer	f+P during run (mash)	8			KD	-11	140	204		4x4*3x6*10	5x4*2x6*4	H	-	KD	144	208	79	20	25	
-eagle spike	f+K during run	13	8	23	KD	-21	140	200		12	35	H	-	KD	168	240	71	12	17	
-wall jump	uf or df during jump near wall					-				-	-		-				-	-	-	
-riding glider	LP+LK	5	2	18	KD	-	50*80	0*170	24	-	-	T	-	KD	50*80	0*170	75	16	16	
-rising sun	b+LP+LK	5	2	18	KD	-	50*80	0*200		-	-	T	-	KD	50*80	0*200	69	21	21	
-ysaar	HP+HK			26	KD	34?	40x3	50x3	26	8x3	-	H*H*H	-	KD	48*40*40	60*50*50	150	91	96	
-front flip	MP+MK					-			55	-	-	-	-	-	-	-	-	-	-	
-airborne eagle spike	MP+MK > K	20	-	-	KD	-24?	130	200		20	22	H	-	KD	156	240	-	-	-	
-rolling assault	d+MP+MK					-			32	-	-	-	-	-	-	-	-	-	-	
-nail assault	d+MP+MK > K	6	4	21	KD	-5	80	100		15	13	H	-	KD	96	120	101	42	47	
-sliding roll	f+PPP								30								-	-	-	
-spinning mixer LP	qcf+LP	8	1		0	-2	20x3	20x3		4x3	5*5*5	H	CA	0	24*20*20	24*20*20	-	-	-	
-spinning mixer LP	qcf+LP (mash)	8	1		KD	-10	80	128		4x3*3x3*10	5x3*1x3*2	H	-	KD	84	132	80	21	26	
-spinning mixer MP	qcf+MP	8	1		KD	-31	15*15*12*12*8	20x5		4*4*3x3	4*4*3	H	CA	KD	18*15*12*12*8	24*20x4	99	40	45	
-spinning mixer MP	qcf+MP (mash)	8	1		KD	??	100	168		4*4*3x7	4*4*3	H	-	KD	103	172	94	35	40	
-spinning mixer HP	qcf+HP	5	1		KD	-36	20*20*17*17	20x4		4*4*3*3	5*5*4	H	-	KD	24*20*17*17	24*20x3	83	24	29	
-spinning mixer HP	qcf+HP (mash)	5	1		KD	??	130	148		4*4*3x6	5*5*4	H	-	KD	134	152	81	22	27	
-spinning mixer EX	qcf+PP	8	1		KD	-39	25*20*13*13*12	30*25*19*19*15		4*4*3x3	6*5*3	H	-	KD	30*20*13*13*12	36*25*19*19*15	87	28	33	
-spinning mixer EX	qcf+PP (mash)	8	1		KD	??	150	200		4*4*3x9	6*5*3	H	-	KD	155	206	87	28	33	
-eagle spike LK	qcb+LK	15	8	15	KD	-20	100	200		12	25	H	-	KD	120	240	69	10	15	
-eagle spike MK	qcb+MK	21	9	18	KD	-20	120	200		12	30	H	-	KD	144	240	69	10	15	
-eagle spike HK	qcb+HK	22	16	25	KD	-20	140	200		12	35	H	-	KD	168	240	69	10	15	
-eagle spike EX	qcb+KK	19	6	22	KD	-9	100	150		12	25	H	-	KD	120	180	105	46	51	
-airborne eagle spike LK	qcb+LK(air)	18	-	-	KD	-	130	200		10	33	H	-	KD	156	240	-	-	-	
-airborne eagle spike MK	qcb+MK(air)	20	-	-	KD	-	130	200		10	33	H	-	KD	156	240	-	-	-	
-airborne eagle spike HK	qcb+HK(air)	22	-	-	KD	-	130	200		10	33	H	-	KD	156	240	-	-	-	
-airborne eagle spike EX	qcb+KK(air)	16	-	-	KD	-	80*80	100*100		10*10	20	H	-	KD	96*80	120*100	-	-	-	
-whirlwind shot LK	qcf+LK	17	-	38	-4	-7	60	100		10	10	H	CA	-2	72	120	-	-	-	
-whirlwind shot MK	qcf+MK	23	-	42	0	-4	35*35	70*70		10*10	6*6	H	CA	0	42*35	84*70	-	-	-	
-whirlwind shot HK	qcf+HK	34	-	37	4	1	35*35	70*70		10*10	6*6	H	CA	4	42*35	84*70	-	-	-	
-whirlwind shot EX	qcf+KK	23	-	38	9	6	30*30*30	60*60*60		10*10*10	5*5*5	H	-	9	36*30*30	72*60*60	-	-	-	
-altair	qcf,qcf+P	8	30	43	KD	-51	330	0		-	60	H	-	KD	340	0	71	12	12	
-health	950																			
-stun	1000																			
-taunt	61								61											
-jump	46 (4+38+4)	42	1	4					46											
-jump forward	45 (3+38+4)	41	1	4					45											
-jump backward	46 (4+38+4)	42	1	4					46											
-dash forward	15		15						15											
-dash backward	24		24						24											
+Move	Command	Startup	Active	Recovery	Hit Advantage	CH hit adv.	Block Advantage	 Damage	Stun	Total 	Attack Level	Cancel Ability	KD Adv.	KDR Adv.	KDRB Adv.	Note
+stand LP		4	2	7	4	6	3	30	70	12	H	CH,SP,V	-	-	-	5LP 123(45)(67890) CHAIN 123(45)(67890)/(11-12)
+stand LP CHAIN LP 1	5LP 5LP	4	2(8)2	7						22						
+stand LP CHAIN LP 2	5LP 5LP 5LP	4	2(8)2(8)2	7						32						
+stand LP CHAIN LP 3	5LP 5LP 5LP 5LP	4	2(8)2(8)2(8)2	7						42						
+stand MP		5	2	14	6	8	3	60	100	20	H	SP,V	-	-	-	
+stand HP		8	2	19	2	17	0	80	150	28	H	SP,V	-	-	-	
+stand LK		3	3	9	4	6	2	30	70	14	H	V	-	-	-	
+stand MK		8	3	15	2	4	-2	60	100	25	H	V	-	-	-	
+stand HK		16	2	22	2	KD	-4	90	150	39	H	V	107	48	53	
+crouch LP		4	3	5	4	6	2	30	70	11	H	CH,SP,V	-	-	-	2LP 123(456)(7890) CHAIN 123(456)(7890)/(11)
+crouch LP CHAIN LP 1	2LP 2LP	4	3(7)3	5						21						
+crouch LP CHAIN LP 2	2LP 2LP 2LP	4	3(7)3(7)3	5						31						
+crouch LP CHAIN LP 3	2LP 2LP 2LP 2LP	4	3(7)3(7)3(7)3	5						41						
+crouch MP		7	3	15	3	5	1	60	100	24	H	SP,V	-	-	-	
+crouch HP		9	2(1)2	22	7	20	-2	40*40	50*100	35	H	SP,V	-	-	-	HIT 2 CC
+crouch LK		4	2	8	2	4	0	20	70	13	L	CH,V	-	-	-	2LK 123(45)(6789) CHAIN 1(23)(456789)/(10-11)
+crouch LK CHAIN LK 1	2LK	4	2(5)2	8						20						
+crouch LK CHAIN LK 2	2LK 2LK	4	2(5)2(7)2	8						29						
+crouch LK CHAIN LK 3	2LK 2LK 2LK	4	2(5)2(7)2(7)2	8						38						
+crouch MK		6	2	15	1	3	-3	50	100	22	L	SP,V	-	-	-	
+crouch HK		7	2	25	KD	KD	-12	90	150	33	L	V	67	18	23	
+jump LP		4	4	-	-	-	-	40	70		M	SP	-	-	-	
+jump MP		7	6	-	-	-	-	50	100		M	SP	-	-	-	
+jump HP		7	3	-	-	-	-	90	150		M	-	-	-	-	
+jump LK		4	4	-	-	-	-	40	70		M	-	-	-	-	
+jump MK		5	5	-	-	-	-	60	100		M	-	-	-	-	
+jump HK		8	3	-	-	-	-	90	150		M	-	-	-	-	
+flap spin	f+MP	8	2(15)3	14	2	4	-2	50*20	70*30	41	H*H	SP,V	-	-	-	
+beak assault	f+HP	23	2	18	0	2	-6	80	150	42	M	-	-	-	-	
+spinning mixer	f+P during run	8			1	1	-2	20x4*9	20x5		H	CA	-	-	-	
+spinning mixer	f+P during run (mash)	8			KD	KD	-11	140	204		H	-	79	20	25	
+eagle spike	f+K during run	13	8	23	KD	KD	-21	140	200		H	-	71	12	17	
+wall jump	uf or df during jump near wall						-					-	-	-	-	
+riding glider	LP+LK	5	2	18	KD	KD	-	50*80	0*170	24	T	-	75	16	16	
+rising sun	b+LP+LK	5	2	18	KD	KD	-	50*80	0*200		T	-	69	20	20	
+ysaar	HP+HK	16	1	10	KD	KD	32	40x3	50x3	26	H*H*H	-	150	91	96	[FRAME 1] ALL INV
+front flip	MP+MK	1	55			-	-			55	-	-	-	-	-	
+airborne eagle spike	MP+MK > K	34	3	20	KD	KD	-24	130	200	56	H	-	70	11	16	
+rolling assault	d+MP+MK	1	32			-	-			32	-	-	-	-	-	
+nail assault	d+MP+MK > K	22	5	21	KD	KD	-6	80	100	47	H	-	101	42	47	
+sliding roll	f+PPP	1	25	8						33			-	-	-	[FRAME 1-25] HIT PROJ INV
+spinning mixer LP	qcf+LP	8	2(2)2	21	0	0	-2	20x3	20x3	34	H	CA	-	-	-	
+spinning mixer LP	qcf+LP (mash)	8	2(2)2(3)1(4)1(3)1(4)1	29	KD	KD	-10	80	128	60	H	-	80	21	26	
+spinning mixer MP	qcf+MP	8	2(2)1(3)1(4)1	33	KD	KD	-31	15*15*12*12*8	20x5	54	H	CA	99	40	45	
+spinning mixer MP	qcf+MP (mash)	8	2(2)1(3)1(4)1	33	KD	KD	-31	100	168	54	H	-	94	35	40	
+spinning mixer HP	qcf+HP	5	3(3)2(2)2	42	KD	KD	-36	20*20*17*17	20x4	58	H	-	81	22	27	
+spinning mixer HP	qcf+HP (mash)	5	3(3)2(2)2(2)3(2)2(2)3(2)3	51	KD	KD	-64	130	148	86	H	-	80	21	26	
+spinning mixer EX	qcf+PP	8	2(2)1(3)1(4)1	41	KD	KD	-39	25*20*13*13*12	30*25*19*19*15	62	H	-	87	28	33	
+spinning mixer EX	qcf+PP (mash)	8	2(2)1(3)1(4)1	41	KD	KD	-39	150	200	62	H	-	87	28	33	
+eagle spike LK	qcb+LK	15	8	17	KD	KD	-20	100	200	39	H	-	69	10	15	
+eagle spike MK	qcb+MK	21	9	20	KD	KD	-20	120	200	49	H	-	69	10	15	
+eagle spike HK	qcb+HK	22	16	26	KD	KD	-20	140	200	63	H	-	69	10	15	
+eagle spike EX	qcb+KK	19	6	24	KD	KD	-9	100	150	48	H	-	105	46	51	
+airborne eagle spike LK	qcb+LK(air)	18	-	-	KD	KD	-	130	200		H	-	-	-	-	
+airborne eagle spike MK	qcb+MK(air)	20	-	-	KD	KD	-	130	200		H	-	-	-	-	
+airborne eagle spike HK	qcb+HK(air)	22	-	-	KD	KD	-	130	200		H	-	-	-	-	
+airborne eagle spike EX	qcb+KK(air)	16	-	-	KD	KD	-	80*80	100*100		H	-	-	-	-	
+whirlwind shot LK	qcf+LK	17	1	35	-2	0	-5	60	100	52	H	CA	-	-	-	
+whirlwind shot MK	qcf+MK	23	1	37	1	1	-2	35*35	70*70	60	H	CA	-	-	-	
+whirlwind shot HK	qcf+HK	34	1	36	4	4	1	35*35	70*70	70	H	CA	-	-	-	
+whirlwind shot EX	qcf+KK	23	1	38	9	9	6	30*30*30	60*60*60	61	H	-	-	-	-	
+altair	qcf,qcf+P	8	30	43	KD	KD	-51	330	0	80	H	-	71	12	12	
+health	950															
+stun	1000															
+taunt	61									61						
+jump	46 (4+38+4)	42	1	4						46						EARLY WHIFF 47
+jump forward	45 (3+38+4)	41	1	4						45						EARLY WHIFF 46
+jump backward	46 (4+38+4)	42	1	4						46						EARLY WHIFF 47
+dash forward	15		15							15						
+dash backward	24		24							24						
