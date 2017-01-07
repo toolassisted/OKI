@@ -730,8 +730,9 @@ function UCOKI(kd, hash) {
         spanclass = "";
         // if (active+recovery>0) {
         if (FRAMEKILL > 1 && active+recovery==0) {
-          text = (i-(FRAMEKILL+startup+active+recovery))%10;          
-          spanclass = "UCCOUNT";
+          text = (i-(FRAMEKILL+startup+active+recovery))%10;
+          if (text != "0") spanclass = "UCCOUNT";
+          if (text == "0") text = CHARMINUS;
         }
       }
     }
