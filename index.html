@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.30, minimum-scale=0.10, maximum-scale=10.0, user-scalable=1">
 <title>SFV OKI LOL</title>
 <style>
 
@@ -256,6 +257,12 @@
 
   button.SEL {
     background-color: #ffc;
+  }
+
+  #OKIOKI.STICK {
+    background-color: #000;
+    position: fixed;
+    bottom: 0;    
   }
 
   #OKI {    
@@ -520,7 +527,7 @@ var CHARS = [
 "RSD", "RYU", //"RYU2", 
 "URN", "VEG", //"VEG2",
 "ZGF",
-"RESET OKI","FRAME KILL","HELP","VIEW TOTAL TOP"
+"RESET OKI","FRAME KILL","HELP","VIEW TOTAL TOP","STICK OKI"
 ]
 ];
 
@@ -545,6 +552,9 @@ var CHARS = [
           t0.insertBefore(t3,t1);
           t0.insertBefore(t4,t1);
           t0.insertBefore(t5,t1);
+          return;
+        } else if (d == "STICK OKI") {
+          var t1 = d3.select("#OKIOKI").classed("STICK",!d3.select("#OKIOKI").classed("STICK"));
           return;
         } else if (d == "TOTAL2") {
           var t1 = d3.selectAll("#KILLS")[0][0];
