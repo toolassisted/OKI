@@ -237,6 +237,9 @@
     color: #ccc;
   }
 
+  .GRID > span.UCCOUNT {
+    color: #777;
+  }
 
   .UCLICK:hover {
     color: #fff;
@@ -492,17 +495,12 @@ REDDITEMBEDCHAR["RSD"] = REDDITEMBED1 + 'https://www.reddit.com/r/StreetFighterT
 REDDITEMBEDCHAR["RYU"] = REDDITEMBED1 + 'https://www.reddit.com/r/StreetFighterTech/comments/4ggj4n/sfv_ryu/d3ba8uo' + REDDITEMBED2;
 REDDITEMBEDCHAR["VEG"] = REDDITEMBED1 + 'https://www.reddit.com/r/StreetFighterTech/comments/4ggj1k/sfv_m_bison/d3dxd5l' + REDDITEMBED2;
 REDDITEMBEDCHAR["ZGF"] = REDDITEMBED1 + 'https://www.reddit.com/r/StreetFighterTech/comments/4ggj5j/sfv_zangief/d3dxe7v' + REDDITEMBED2;
-
 REDDITEMBEDCHAR["CNL"] = REDDITEMBED1 + 'https://www.reddit.com/r/StreetFighterTech/comments/4ggitb/sfv_chunli/d3ha6vc' + REDDITEMBED2;
 REDDITEMBEDCHAR["DSM"] = REDDITEMBED1 + 'https://www.reddit.com/r/StreetFighterTech/comments/4ggitz/sfv_dhalsim/d3ha7hb' + REDDITEMBED2;
 REDDITEMBEDCHAR["NSH"] = REDDITEMBED1 + 'https://www.reddit.com/r/StreetFighterTech/comments/4ggj2e/sfv_nash/d3ha7xy' + REDDITEMBED2;
 REDDITEMBEDCHAR["RMK"] = REDDITEMBED1 + 'https://www.reddit.com/r/StreetFighterTech/comments/4ggj3d/sfv_r_mika/d3ha7pv' + REDDITEMBED2;
-
 REDDITEMBEDCHAR["BSN"] = REDDITEMBED1 + 'https://www.reddit.com/r/SFV_BALROG/comments/4qz8zu/sfv_balrog_oki_lol/d4x0z25' + REDDITEMBED2;
-
 REDDITEMBEDCHAR["IBK"] = REDDITEMBED1 + 'https://www.reddit.com/r/SFV_IBUKI/comments/4rhbdf/sfv_ibuki_oki_lol/d513ztk' + REDDITEMBED2;
-
-
 REDDITEMBEDCHAR["JRI"] = REDDITEMBED1 + 'https://www.reddit.com/r/SFV_JURI/comments/4utand/sfv_juri_oki_lol/d5snzco' + REDDITEMBED2;
 REDDITEMBEDCHAR["URN"] = REDDITEMBED1 + 'https://www.reddit.com/r/SFV_URIEN/comments/54dgec/sfv_urien_oki_lol/d80wput' + REDDITEMBED2;
 REDDITEMBEDCHAR["GOK"] = REDDITEMBED1 + 'https://www.reddit.com/r/SFV_AKUMA/comments/5jj12t/sfv_akuma_oki_lol/dbgiuxt' + REDDITEMBED2;
@@ -700,10 +698,13 @@ function UCOKI(kd, hash) {
   var adv = ""
   var text = "";
   var spanclass = "";
+  var title = "";
   for (var i=1;i<=119;i++) {
 
     if (i<FRAMEKILL) {
       text = CHARPLUS;
+      // text = (FRAMEKILL-i)%10;
+      title = (FRAMEKILL-i)%10;
       spanclass = "";
     } else {
       if (i <= FRAMEKILL+startup-1) {
@@ -725,8 +726,13 @@ function UCOKI(kd, hash) {
         text = "r";
         spanclass = "RECOVERY";
       } else {
-        text = CHARMINUS;
+        text = CHARMINUS;        
         spanclass = "";
+        // if (active+recovery>0) {
+        if (FRAMEKILL > 1 && active+recovery==0) {
+          text = (i-(FRAMEKILL+startup+active+recovery))%10;          
+          spanclass = "UCCOUNT";
+        }
       }
     }
 
