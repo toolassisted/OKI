@@ -554,7 +554,9 @@ var CHARS = [
           t0.insertBefore(t5,t1);
           return;
         } else if (d == "STICK OKI") {
-          var t1 = d3.select("#OKIOKI").classed("STICK",!d3.select("#OKIOKI").classed("STICK"));
+          var stick = !d3.select("#OKIOKI").classed("STICK");
+          d3.select("#OKIOKI").classed("STICK",stick);
+          d3.select(this).classed("SEL",stick);
           return;
         } else if (d == "TOTAL2") {
           var t1 = d3.selectAll("#KILLS")[0][0];
