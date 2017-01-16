@@ -326,7 +326,7 @@
     white-space: nowrap;
   }
 
-  button.CHARBSN, button.CHARCMY, button.CHARCNL, button.CHARFAN, button.CHARKEN, button.CHARKRN, button.CHARLAR, button.CHARNCL, button.CHARNSH, button.CHARRMK, button.CHARRYU, button.CHARURN, button.CHARVEG {
+  button.CHARBSN, button.CHARCMY, button.CHARCNL, button.CHARFAN, button.CHARKEN, button.CHARLAR, button.CHARNCL, button.CHARNSH, button.CHARRMK, button.CHARRYU, button.CHARURN, button.CHARVEG {
     background-color: #777;
   }
 </style>
@@ -615,6 +615,25 @@ var CHARS = [
         
         HASHCHAR = d;
         d3.tsv(HASHCHAR+".txt", UCGILLEY);
+
+          OKILIST = [{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
+                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}];
+
+          MECOKI(7); UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+          MECOKI(6); UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+          MECOKI(5); UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+          MECOKI(4); UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+          MECOKI(3); UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+          MECOKI(2); UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+          MECOKI(1); UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
+          UCHASH();
+
       })
       .text(function(d,i){return d;});
 
@@ -679,7 +698,7 @@ function UCFK() {
 function UCOKI(kd, hash) {
 
   var active = OKILIST[MEOKI].ACTIVE;
-  var startup = OKILIST[MEOKI].STARTUP-1;
+  var startup = OKILIST[MEOKI].STARTUP-(OKILIST[MEOKI].STARTUP>0&&active>0?1:0);
   var recovery = OKILIST[MEOKI].RECOVERY;
   var move = OKILIST[MEOKI].MOVE;
   var data = OKILIST[MEOKI].DATA;
@@ -791,11 +810,20 @@ function UCGILLEY(rows){
   // TOTALS.append("br");
 
   var keys = d3.keys(rows[0]);
-  
+  function DATA_KDBR(d) { return d["KDRB Adv."] || d["HIT KDBR"] || d["CH KDBR"]; }
+  function DATA_KDR(d) { return d["KDR Adv."] || d["HIT KDR"] || d["CH KDR"]; }
+  function DATA_KD(d) { return d["KD Adv."] || d["HIT KD"] || d["CH KD"]; }
+  function DATA_ADV_HIT(d) { return d["Hit Advantage"] || d["HIT ADV"]; }
+  function DATA_ADV_BLK(d) { return d["Block Advantage"] || d["BLK ADV"]; }
+  function DATA_STARTUP(d) { return d["Startup"] || d["START UP"] || ""; }
+  function DATA_ACTIVE(d) { return d[" Active"] || d["ACTIVE"]; }
+  function DATA_RECOVERY(d) { return d["Recovery"] || d["RECOVERY"]; }
+  function DATA_TOTAL(d) { return d["Total"] || d["Total "]; }
+
   KDTABLE.append("thead").append("tr").selectAll("th").data(["KD ADV","KDR ADV","KDBR ADV"].concat(keys)).enter().append("th").text(function(d){return d;});
-  KDTABLE.append("tbody").selectAll("tr").data(rows.filter(function(d){return !isNaN(d["KD Adv."]) && d["KD Adv."] != "";})).enter().append("tr")
-            .classed("UC",function(d){return +d["KDRB Adv."]==HASHKDBR-1 && +d["KDR Adv."]==HASHKDR-1 && +d["KD Adv."]==HASHKD-1; })
-            .selectAll("td").data(function(d){ return [{key:"KD",value:"+"+d["KD Adv."]},{key:"KDR",value:"+"+d["KDR Adv."]},{key:"KDBR",value:"+"+d["KDRB Adv."]}].concat(d3.entries(d));})
+  KDTABLE.append("tbody").selectAll("tr").data(rows.filter(function(d){return !isNaN(DATA_KD(d)) && DATA_KD(d) != "";})).enter().append("tr")
+            .classed("UC",function(d){return +DATA_KDBR(d)==HASHKDBR-1 && +DATA_KDR(d)==HASHKDR-1 && +DATA_KD(d)==HASHKD-1; })
+            .selectAll("td").data(function(d){ return [{key:"KD",value:"+"+DATA_KD(d)},{key:"KDR",value:"+"+DATA_KDR(d)},{key:"KDBR",value:"+"+DATA_KDBR(d)}].concat(d3.entries(d));})
             .enter().append("td").text(function(d){return d.value;})
             .on("click",function(d){
               var p = this.parentNode;
@@ -804,17 +832,17 @@ function UCGILLEY(rows){
               KDTABLE.selectAll(".UC").classed("UC",false);
               d3.select(p).classed("UC",true);
               //UCOKI(0);
-              UCKD(+pd["KD Adv."]+1);
-              if (!isNaN(pd["KDR Adv."]) && pd["KDR Adv."] != "") {
-                UCKDR(+pd["KDR Adv."]+1);
-                if (!isNaN(pd["KDRB Adv."]) && pd["KDRB Adv."] != "") {
-                  UCKDBR(+pd["KDRB Adv."]+1);
+              UCKD(+DATA_KD(pd)+1);
+              if (!isNaN(DATA_KDR(pd)) && DATA_KDR(pd) != "") {
+                UCKDR(+DATA_KDR(pd)+1);
+                if (!isNaN(DATA_KDBR(pd)) && DATA_KDBR(pd) != "") {
+                  UCKDBR(+DATA_KDBR(pd)+1);
                 } else {
-                  UCKDBR(+pd["KDR Adv."]+1);
+                  UCKDBR(+DATA_KDR(pd)+1);
                 }
               } else {
-                UCKDR(+pd["KD Adv."]+1);
-                UCKDBR(+pd["KD Adv."]+1);
+                UCKDR(+DATA_KD(pd)+1);
+                UCKDBR(+DATA_KD(pd)+1);
               }
               UCHASH();
               d3.select("#KDMOVE").text(pd["Move"]);
@@ -824,7 +852,7 @@ function UCGILLEY(rows){
 
   FRAMETABLE.append("thead").append("tr").selectAll("th").data(["TOTAL"].concat(keys).concat([""])).enter().append("th").text(function(d){return d;});
   FRAMETABLE.append("tbody").selectAll("tr").data(rows).enter().append("tr")
-            .classed("UC",function(d){return +d["Startup"]==HASHSTARTUP && +d["Active"]==HASHACTIVE && +d["Recovery"]==HASHRECOVERY; })
+            // .classed("UC",function(d){return +DATA_STARTUP(d)==HASHSTARTUP && +d["Active"]==HASHACTIVE && +d["Recovery"]==HASHRECOVERY; })
             .selectAll("td").data(function(d){return [{key:"TOTAL",value:d["Total "] || d["Total"]}].concat(d3.entries(d)).concat([{key:"U C",value:"U C"}]);})
             .enter().append("td").text(function(d){return d.value;})
             .classed("UC",function(d){return d.key=="TOTAL" && FRAMEKILL>1 && +d.value==FRAMEKILL-1; })
@@ -856,7 +884,7 @@ function UCGILLEY(rows){
               OKIMOVE = pd;
               if (OKIMOVE != null) {
                 if (!isNaN(OKIMOVE["Active"]) && OKIMOVE["Active"] != "") { HASHACTIVE = +OKIMOVE["Active"]; }  else { HASHACTIVE = 0; }
-                if (!isNaN(OKIMOVE["Startup"]) && OKIMOVE["Startup"] != "") { HASHSTARTUP = +OKIMOVE["Startup"]; } else { HASHSTARTUP = 1; }
+                if (!isNaN(DATA_STARTUP(OKIMOVE)) && DATA_STARTUP(OKIMOVE) != "") { HASHSTARTUP = +DATA_STARTUP(OKIMOVE); } else { HASHSTARTUP = 1; }
                 if (!isNaN(OKIMOVE["Recovery"]) && OKIMOVE["Recovery"] != "") { HASHRECOVERY = +OKIMOVE["Recovery"]; } else { HASHRECOVERY = 0; }
 
 
@@ -872,11 +900,11 @@ function UCGILLEY(rows){
                   .map(function(x,i){return parseInt(x)||0;})
                   .reduce(function(a,b,i){return (i==1?Array(1+a).join("A"):a)+Array(1+b).join((i%2)==0?"A":"r")});  
                 }
-                if (!isNaN(OKIMOVE["Startup"]) && OKIMOVE["Startup"] != "") { OKILIST[MEOKI].STARTUP = +OKIMOVE["Startup"]; } else { OKILIST[MEOKI].STARTUP = 1; }
+                if (!isNaN(DATA_STARTUP(OKIMOVE)) && DATA_STARTUP(OKIMOVE) != "") { OKILIST[MEOKI].STARTUP = +DATA_STARTUP(OKIMOVE); } else { OKILIST[MEOKI].STARTUP = 1; }
                 if (!isNaN(OKIMOVE["Recovery"]) && OKIMOVE["Recovery"] != "") { OKILIST[MEOKI].RECOVERY = +OKIMOVE["Recovery"]; } else { OKILIST[MEOKI].RECOVERY = 0; }
 
                 OKILIST[MEOKI].MOVE = OKIMOVE["Move"];
-                OKILIST[MEOKI].DATA = "" + OKIMOVE["Hit Advantage"] + "/" + OKIMOVE["Block Advantage"];
+                OKILIST[MEOKI].DATA = "" + DATA_ADV_HIT(OKIMOVE) + "/" + DATA_ADV_BLK(OKIMOVE);
 
               }
               UCOKI(0);
@@ -936,13 +964,13 @@ function UCGILLEY(rows){
 
                   OKILIST[MEOKI].UCACTIVE = OKIMOVE["Active"].split(/[()]/)
                   .map(function(x,i){return parseInt(x)||0;})
-                  .reduce(function(a,b,i){return (i==1?Array(1+a).join("A"):a)+Array(1+b).join((i%2)==0?"A":"r")});  
+                  .reduce(function(a,b,i){return (i==1?Array(1+a).join("A"):a)+Array(1+b).join((i%2)==0?"A":"r")});
                 }
-                if (!isNaN(OKIMOVE["Startup"]) && OKIMOVE["Startup"] != "") { OKILIST[MEOKI].STARTUP = +OKIMOVE["Startup"]; } else { OKILIST[MEOKI].STARTUP = 1; }
+                if (!isNaN(DATA_STARTUP(OKIMOVE)) && DATA_STARTUP(OKIMOVE) != "") { OKILIST[MEOKI].STARTUP = +DATA_STARTUP(OKIMOVE); } else { OKILIST[MEOKI].STARTUP = 1; }
                 if (!isNaN(OKIMOVE["Recovery"]) && OKIMOVE["Recovery"] != "") { OKILIST[MEOKI].RECOVERY = +OKIMOVE["Recovery"]; } else { OKILIST[MEOKI].RECOVERY = 0; }
 
                 OKILIST[MEOKI].MOVE = OKIMOVE["Move"];
-                OKILIST[MEOKI].DATA = "" + OKIMOVE["Hit Advantage"] + "/" + OKIMOVE["Block Advantage"];
+                OKILIST[MEOKI].DATA = "" + DATA_ADV_HIT(OKIMOVE) + "/" + DATA_ADV_BLK(OKIMOVE);
 
               }
               UCOKI(0);
@@ -962,6 +990,7 @@ function UCTOTALROW(pre,start,run,total) {
     if (rowtotal+run>total) return;
     var loops = Math.floor((total-run)/rowtotal);
     if ((row["Command"]||"")=="HP+HK")loops = 1;
+    if ((row["Command"]||"")=="5VT")loops = 1;
     for (var loop=loops;loop>=1;loop--) {
       if (rowtotal*loop+run==total) {
         TOTALSDIV.append("div").html(pre + (", " + rowtotal + "F " + row["Move"] +  " <span class='CMD'>" + row["Command"] + "</span>").repeat(loop));
@@ -1015,11 +1044,13 @@ d3.select("body").on("keydown", function() {
       break;
 
     case 109: case 189:
+      if (d3.event.ctrlKey) break;
       OKILIST[MEOKI].FRAMEKILL -= 1;
       UCOKI(0);
       break;
 
     case 107: case 187:
+      if (d3.event.ctrlKey) break;
       OKILIST[MEOKI].FRAMEKILL += 1;
       UCOKI(0);
       break;
