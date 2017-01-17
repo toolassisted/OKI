@@ -696,10 +696,9 @@ function UCFK() {
   ADV.html(adv);
 }
 function UCOKI(kd, hash) {
-
   var active = OKILIST[MEOKI].ACTIVE;
-  var startup = OKILIST[MEOKI].STARTUP-(OKILIST[MEOKI].STARTUP>0&&active>0?1:0);
   var recovery = OKILIST[MEOKI].RECOVERY;
+  var startup = OKILIST[MEOKI].STARTUP-((active>0||(recovery>0&&active==0))?1:0);
   var move = OKILIST[MEOKI].MOVE;
   var data = OKILIST[MEOKI].DATA;
   var UCACTIVE = OKILIST[MEOKI].UCACTIVE; // console.log(UCACTIVE);
@@ -760,8 +759,8 @@ function UCOKI(kd, hash) {
         text = CHARMINUS;        
         spanclass = "";
         // if (active+recovery>0) {
-        if (FRAMEKILL > 1 && active+recovery==0) {
-          text = (i-(FRAMEKILL+startup+active+recovery))%10;
+        if (FRAMEKILL > 1 && startup+active+recovery==0) {
+          text = (i-(FRAMEKILL+startup+active+recovery)+1)%10;
           if (text != "0") spanclass = "UCCOUNT";
           if (text == "0") text = CHARMINUS;
         }
