@@ -33,8 +33,8 @@ VT cyclone lariat	HP+HK	9	19	16	KD	KD		20x9	20x8*90	24*20x8	24*20x7*90		43	3x8*1
 VT cyclone lariat HOLD HIT	HP+HK	27	3(5)3(9)3(6)3(7)2(4)3(5)2(4)3(5)2	26	KD	KD		20x9	20x8*90	24*20x8	24*20x7*90		121	3x8*17	H	-	130	71	76	
 cyclone lariat HOLD	HP+HK	19	60	27	KD	KD		20x9	20x8*90	24*20x8	24*20x7*90		105	3x8*17	H	-				
 cyclone lariat HOLD HIT	HP+HK	37	3(5)3(9)3(6)3(7)3	27	KD	KD		20x9	20x8*90	24*20x8	24*20x7*90		105	3x8*17	H	-	103	44	49	
-iron muscle	MP+MK (hold)	37		25	2	4	-2	50	100	60	120	8	25	12	H	-		-	-	
-iron muscle HOLD	MP+MK (hold)	58	5	15	2	4	-2	50	100	60	120	8	77	12	H	-		-	-	
+iron muscle	MP+MK			25	2	4	-2						25		H	-		-	-	[FRAME 1-15] ARMOR
+iron muscle HOLD	MP+MK (hold)	58	5	15	2	4	-2	50	100	60	120	8	77	12	H	-		-	-	[FRAME 1-49] ARMOR
 muscle explosion	f+KKK	12	2	24	3	3	-2	60	0	72	0	0		0	H					
 screw pile driver LP	360+LP	5	2	52	KD	KD	-	180	250	180	250	-	58	-	T	-	71	22	22	
 screw pile driver MP	360+MP	5	2	52	KD	KD	-	200	250	200	250	-	58	-	T	-	76	27	27	
