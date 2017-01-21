@@ -326,7 +326,7 @@
     white-space: nowrap;
   }
 
-  button.CHARBSN, button.CHARCMY, button.CHARCNL, button.CHARFAN, button.CHARKEN, button.CHARLAR, button.CHARNCL, button.CHARNSH, button.CHARRMK, button.CHARRYU, button.CHARURN, button.CHARVEG {
+  button.CHARBSN, button.CHARCMY, button.CHARCNL, button.CHARFAN, button.CHARKEN, button.CHARLAR, button.CHARNCL, button.CHARNSH, button.CHARRYU, button.CHARURN, button.CHARVEG {
     background-color: #777;
   }
 </style>
@@ -887,15 +887,15 @@ function UCGILLEY(rows){
                 if (!isNaN(OKIMOVE["Recovery"]) && OKIMOVE["Recovery"] != "") { HASHRECOVERY = +OKIMOVE["Recovery"]; } else { HASHRECOVERY = 0; }
 
 
-                if (!isNaN(OKIMOVE["Active"]) && OKIMOVE["Active"] != "") {
-                  OKILIST[MEOKI].ACTIVE = +OKIMOVE["Active"];
+                if (!isNaN(OKIMOVE["Active"].replace(/\<\d+\>/g,"")) && OKIMOVE["Active"].replace(/\<\d+\>/g,"") != "") {
+                  OKILIST[MEOKI].ACTIVE = +(OKIMOVE["Active"].replace(/\<\d+\>/g,""));
                   OKILIST[MEOKI].UCACTIVE = "";
                 } else { 
-                  OKILIST[MEOKI].ACTIVE = OKIMOVE["Active"].split(/[()]/)
+                  OKILIST[MEOKI].ACTIVE = OKIMOVE["Active"].replace(/\<\d+\>/g,"").split(/[()]/)
                   .map(function(x){return parseInt(x)||0;})
                   .reduce(function(a,b){return a+b});
 
-                  OKILIST[MEOKI].UCACTIVE = OKIMOVE["Active"].split(/[()]/)
+                  OKILIST[MEOKI].UCACTIVE = OKIMOVE["Active"].replace(/\<\d+\>/g,"").split(/[()]/)
                   .map(function(x,i){return parseInt(x)||0;})
                   .reduce(function(a,b,i){return (i==1?Array(1+a).join("A"):a)+Array(1+b).join((i%2)==0?"A":"r")});  
                 }
@@ -953,15 +953,15 @@ function UCGILLEY(rows){
               OKIMOVE = pd;
               if (OKIMOVE != null) {
 
-                if (!isNaN(OKIMOVE["Active"]) && OKIMOVE["Active"] != "") {
-                  OKILIST[MEOKI].ACTIVE = +OKIMOVE["Active"];
+                if (!isNaN(OKIMOVE["Active"].replace(/\<\d+\>/g,"")) && OKIMOVE["Active"].replace(/\<\d+\>/g,"") != "") {
+                  OKILIST[MEOKI].ACTIVE = +OKIMOVE["Active"].replace(/\<\d+\>/g,"");
                   OKILIST[MEOKI].UCACTIVE = "";
                 } else { 
-                  OKILIST[MEOKI].ACTIVE = OKIMOVE["Active"].split(/[()]/)
+                  OKILIST[MEOKI].ACTIVE = OKIMOVE["Active"].replace(/\<\d+\>/g,"").split(/[()]/)
                   .map(function(x){return parseInt(x)||0;})
                   .reduce(function(a,b){return a+b});
 
-                  OKILIST[MEOKI].UCACTIVE = OKIMOVE["Active"].split(/[()]/)
+                  OKILIST[MEOKI].UCACTIVE = OKIMOVE["Active"].replace(/\<\d+\>/g,"").split(/[()]/)
                   .map(function(x,i){return parseInt(x)||0;})
                   .reduce(function(a,b,i){return (i==1?Array(1+a).join("A"):a)+Array(1+b).join((i%2)==0?"A":"r")});
                 }
