@@ -1,67 +1,113 @@
-Move	Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	 Damage	Stun	Total 	Hitstop	Chip	Attack Level	Cancel Ability	CH hit adv.	CH Damage	CH Stun	KD Adv.	KDR Adv.	KDRB Adv.	Note
-stand LP		3	2	9	3	2	30	70	13	8	0	H	SP,V	5	36	84				
-stand MP		6	5	11	4	3	60	100	21	12	10	H	SP,V	6	72	120				
-stand HP		8	3	18	3	-2	80	150	28	15	13	H	SP,V	16	96	180				
-stand LK		4	3	9	4	3	30	70	15	8	0	H	SP,V	6	36	84				
-stand MK		6	4	14	2	-1	60	100	23	12	10	H	V	4	72	120				
-stand HK		12	3	19	1	-4	90	150	33	15	15	H	CA,V	17	108	180				
-crouch LP		4	2	7	4	2	30	70	12	8	0	H	CH,SP,V	6	36	84				
-crouch MP		5	2	15	3	2	60	100	21	12	10	H	SP,V	5	72	120				
-crouch HP		7	4	17	2	-2	90	150	27	15	15	H	SP,V	4	108	180				
-crouch LK		4	2	8	2	-2	20	70	13	8	0	L	CH,SP,V	4	24	84				
-crouch MK		7	3	13	0	-2	50	100	22	12	8	L	SP,V	2	60	120				
-crouch HK		9	3	20	KD	-12	100	150	31	15	17	L	V	KD	120	180	74	25	30	
-jump LP		3	5	-	-	-	40	70		8	0	M	-	-	48	84				
-jump MP		4	3	-	-	-	60	100		12	10	M	-	-	72	120				
-jump HP		7	5	-	-	-	90	150		15	15	M	-	-	108	180				
-jump LK		4	10	-	-	-	40	70		8	0	M	-	-	48	84				
-jump MK		5	7	-	-	-	60	100		12	10	M	-	-	72	120				
-jump HK		5	6	-	-	-	90	150		15	15	M	-	-	108	180				
-step elbow	f+HP	18	2	17	4	-2	80	120	36	15	13	H	V	6	96	144				
-twist barrage	f+HP > HP	9	3	19	KD	-8	54	90		15	13*10	H*H	SP,V	KD	54	90	93	32	37	
-twist barrage ELBOW LP	f+HP > HP 236LP	9	3	19	KD												99	40	45	
-dual crash	MP > MK	7	3	16	1	-2	60*54	100*90		12*12	10*10	H*H	V	1	72*54	120*90				
-seoi throw	LP+LK	5	2	18	KD	-	130	200	24	-	-	T	-	KD	130	200	66	17	17	
-pullback hold	b+LP+LK	5	2	18	KD	-	120	170	24	-	-	T	-	KD	120	170	68	19	19	
-volty line	MP+MK	20	6	22	0	-7	90	150	47	15	15	M	-	KD 103	108	180				[ACTIVE FRAME 1-2] NO HIT STAND CROUCH
-linear movement avante	f+MP+MK		21		-	-	-	-	21	-	-	-	-	-	-	-				
-linear movement equiva	b+MP+MK		26		-	-	-	-	26	-	-	-	-	-	-	-				
-linear movement finta	b+MP+MK > MP+MK		13	16	-	-	-	-	29	-	-	-	-	-	-	-				
-spark show	HP+HK			5	-	-	-	-	5	-	-	-	-	-	-	-				ANIM 57F
-double slap	f+PPP	15	2	24	KD	-2	60	0				H					85	26	31	
-bolt charge LP	qcf+LP	13	3	18	2	-2	60	100	33	15	15	H	-	4	72	120				
-bolt charge MP	qcf+MP	15	3	20	2	-7	60	50	37	15	15	H	-	4	72	60				
-bolt charge HP	qcf+HP	7	8	30	KD	-	60*90	50*150	44	15	-	H	-	KD	72*90	60*150	66	17	17	
-bolt charge EX	qcf+PP	14	3	22	0	-11	70	50	38	15	18	H	-	2	84	60				
-split river	qcf+MP > P	-	-	-	KD	-	81	135		-	-	H	-	KD	81	135	58	9	9	
-rodeo break	qcf+MP > K	-	-	-	KD	-	81	135		-	-	H	-	KD	81	135	66	17	17	
-thunder clap LP	qcb+LP	19	1	28	0	-5	60	60	47	8	10	H	CA	2	72	72				PROJ 40F [VT PROJ 80F]
-thunder clap LP L1	qcb+LP (hold 30F)	40	1	28	0	-5	60	60	68	-	-	H	CA	2	72	72				PROJ 40F
-thunder clap LP L2	qcb+LP (hold 31F)	41	1	27	9	0	60*30	60*30	68	-	-	H	CA	31	72*30	72*30				PROJ 80F
-thunder clap LP L2 LAST	qcb+LP (hold 60F)	70	1	27	9	0	60*30	60*30	97	-	-	H	CA	31	72*30	72*30				PROJ 80F
-thunder clap LP L3	qcb+LP (hold 61F)	70	1	13	31	18	60*30*30	60*30*30	83	8*8*8	10*5*5	H	CA	31	72*30*30	72*30*30				PROJ 100F
-VT thunder clap LP	qcb+LP	19	1	28	0	-5	60	60	47	8	10	H	CA	2	72	72				PROJ 80F
-VT thunder clap LP L1	qcb+LP (hold 15F)	25	1	28	0	-5	60	60	53	-	-	H	CA	2	72	72				PROJ 80F
-VT thunder clap LP L2	qcb+LP (hold 16F)	26	1	27	9	0	60*30	60*30	53	-	-	H	CA	31	72*30	72*30				PROJ 80F
-VT thunder clap LP L2 LAST	qcb+LP (hold 30F)	40	1	27	9	0	60*30	60*30	67	-	-	H	CA	31	72*30	72*30				PROJ 80F
-VT thunder clap LP L3	qcb+LP (hold 31F)	40	1	13	28	18	60*30*30	60*30*30	53	8*8*8	10*5*5	H	CA	31	72*30*30	72*30*30				PROJ 100F
-thunder clap MP	qcb+MP	19	1	28	0	-5	60	60	47	8	10	H	CA	2	72	72				PROJ 40F [VT PROJ 80F]
-thunder clap MP HOLD	qcb+MP (hold)	70	1	13	31	18	60*30*30	60*30*30	83	8*8*8	10*5*5	H	CA	31	72*30*30	72*30*30				PROJ 100F
-thunder clap HP	qcb+HP	19	1	28	0	-5	60	60	47	8	10	H	CA	2	72	72				PROJ 40F [VT PROJ 80F]
-thunder clap HP HOLD	qcb+HP (hold)	70	1	13	31	18	60*30*30	60*30*30	83	8*8*8	10*5*5	H	CA	31	72*30*30	72*30*30				PROJ 100F
-thunder clap EX	qcb+PP	17	1	24	KD	3	60*30	60*30	41	8*8	10*5	H	-	KD	72*30	72*30	105	46	51	PROJ 170F
-VT thunder clap EX	qcb+PP	17	1	24	KD	7											113	54	59	PROJ 170F
-sunset wheel LK	hcb+LK	6	2	52	KD	-	60*90	100*100	59	-	-	T	-	KD	60*90	100*100	62	13	13	
-sunset wheel MK	hcb+MK	6	2	52	KD	-	60*100	100*100	59	-	-	T	-	KD	60*100	100*100	62	13	13	
-sunset wheel HK	hcb+HK	6	2	52	KD	-	60*110	100*100	59	-	-	T	-	KD	60*100	100*100	62	13	13	
-sunset wheel EX	hcb+KK	19	2	52	KD	-	80*100	100*100	72	-	-	T	-	KD	80*100	100*100	62	13	13	
-inazuma spin hold	qcf,qcf+K	4	2	52	KD	-	350	0		-	-	T	-	KD	350	0	50	1	1	
-CLAP EX BOLT LP	214PP 236LP	17	1	24	KD	3	60*30	60*30		8*8	10*5	H	-	KD	72*30	72*30	96	37	42	https://youtu.be/fs6t9kqAJM4
-health/stun	1000																			
-stun	1000																			
-taunt	61																			
-jump	46 (4+38+4)	42	1	4					46											EARLY WHIFF 47F
-jump forward	45 (3+38+4)	41	1	4					45											EARLY WHIFF 48F
-jump backwards	46 (4+38+4)	42	1	4					46											EARLY WHIFF 49F
-dash forward	17		17						17											
-dash backwards	21		21						21											
+Move	Command	Startup	Active	Recovery	Total	Total	HIT ADV	CH ADV	BLK ADV	HIT DMG	HIT STUN	CH DMG	CH STUN	BLK DMG	NOTE	HIT TYPE	HIT KDR	HIT KDBR	HIT KD	CH TYPE	CH ADV	CH KDR	CH KDBR	CH KD	EX-	EX+	VR-	VT-	HIT EX1	HIT VR1	HIT EX2	HIT VR2	CH EX1	CH VR1	CH EX2	CH VR2	BLK EX1	BLK VR1	BLK EX2	BLK VR2
+Dash	6 5 6	1	17		17	17																																		
+Dash Back	4 5 4	1	21		21	21																																		
+Jump	8 (4+38)	42	1	4	46	46																																		
+Jump Forward	9 (3+38)	41	1	4	45	45																																		
+Jump Back	7 (4+38)	42	1	4	46	46																																		
+stand LP	5LP	3	2	9	13	13	3	5	2	30	70	36	84	0						CH	5								20		12	40	24		15	48	10		6	
+stand LK	5LK	4	3	9	15	15	4	6	3	30	70	36	84	0						CH	6								20		12	40	24		15	48	10		6	
+stand MP	5MP	6	5	11	21	21	4	6	3	60	100	72	120	10						CH	6								30		18	80	36		22	97	15		9	13
+stand MK	5MK	5	4	14	22	22	3	5	-2	60	100	72	120	10						CH	5								30		18	80	36		22	97	15		9	13
+stand HP	5HP	8	3	18	28	28	4	16	-2	80	150	96	180	13						CH	16								50		30	107	60	150	36	129	25		15	17
+stand HK	5HK	12	3	19	33	33	1	16	-4	90	150	108	180	15						CH	16								50		30	121	60	150	36	145	25		15	20
+crouch LP	2LP	4	2	8	13	13	4	6	2	30	70	36	84	0						CH	6								20		12	40	24		15	48	10		6	
+crouch LK	2LK	4	2	8	13	13	2	4	1	20	70	24	84	0						CH	4								20		12	26	24		15	32	10		6	
+crouch MP	2MP	5	2	15	21	21	3	5	2	60	100	72	120	10						CH	5								30		18	80	36		22	97	15		9	13
+crouch MK	2MK	7	3	13	22	22	0	2	-1	50	100	60	120	8						CH	2								30		18	67	36		22	80	15		9	10
+crouch HP	2HP	7	4	17	27	27	2	4	-2	90	150	108	180	15						CH	4								50		30	121	60		36	145	25		15	20
+crouch HK	2HK	9	3	20	31	31	KD	KD	-12	90	150	108	180	15			25	30	74	CH	KD	74	74	74					50		30	121	60	100	36	145	25		15	20
+f+HP	6HP	17	2	17	35	35	4	6	-2	80	120	96	144	13						CH	6								50		30	107	60		36	129	25		15	17
+f+HP HP	6HP 5F 5HP	17	1<15>(12)1<15>	21	51		KD	KD	-8	134	210	150	234	23		HIT	32	37	93	CH	KD	32	37	93					95		60	180	105		66	202	50		30	31
+stand MP MK	5MP 5 5MK	6	1<12>(9)1<12>	18	34		2	2	-2	114	190	126	210	20		HIT				CH	2								57		36	153	63		40	170	30		18	26
+crouch LP Chain 2	2LP 5F 2LP	4	2(8)2	8	23	23	4	6	-2	80	120	96	144	13						CH	6								50		30	107	60		36	129	25		15	17
+crouch LP Chain 3	2LP 5F 2LP 9F 2LP	4	2(8)2(8)2	8	33	33	4	6	-2	80	120	96	144	13						CH	6								50		30	107	60		36	129	25		15	17
+crouch LP Chain 4	2LP 5F 2LP 9F 2LP 9F 2LP	4	2(8)2(8)2(8)2	8	43	43	4	6	-2	80	120	96	144	13						CH	6								50		30	107	60		36	129	25		15	17
+crouch LK Chain 2	2LK 5F 2LK	4	2(8)2	8	23	23	4	6	-2	80	120	96	144	13						CH	6								50		30	107	60		36	129	25		15	17
+crouch LK Chain 3	2LK 5F 2LK 9F 2LK	4	2(8)2(8)2	8	33	33	4	6	-2	80	120	96	144	13						CH	6								50		30	107	60		36	129	25		15	17
+crouch LK Chain 4	2LK 5F 2LK 9F 2LK 9F 2LK	4	2(8)2(8)2(8)2	8	43	43	4	6	-2	80	120	96	144	13						CH	6								50		30	107	60		36	129	25		15	17
+jump LP	8LP (4+1+3)	8	5(31)	4	47	47	8	10	5	40	70	48	84	0						CH	10								20		12	53	24		15	64	10		6	
+jump LP	9LP (3+1+3)	7	5(33)	4	48	48	8	10	5	40	70	48	84	0						CH	10								20		12	53	24		15	64	10		6	
+jump LP	7LP (4+1+3)	8	5(33)	4	49	49	8	10	5	40	70	48	84	0						CH	10								20		12	53	24		15	64	10		6	
+jump LP	8 33F 5LP (4+30+3)	37	5<8>(1)	4	46	46	8	10	5	40	70	48	84	0		HIT				CH	10								20		12	53	24		15	64	10		6	
+jump LP	8 38F 5LP (4+35+3)	42	1<8>	4	46		9	11	6	40	70	48	84	0		HIT				CH	11								20		12	53	24		15	64	10		6	
+jump LK	8 24F 5LK (4+21+4)	29	10<8>(4)	4	46		5	7	2	40	70	48	84	0		HIT				CH	7								20		12	53	24		15	64	10		6	
+jump LK	8 37F 5LK (4+34+4)	42	1<8>	4	46		9	11	6	40	70	48	84	0		HIT				CH	11								20		12	53	24		15	64	10		6	
+jump MP	8 35F 5MP (4+32+4)	40	3<12>	4	46		12	14	9	60	100	72	120	10		HIT				CH	14								30		18	80	36		22	97	15		9	13
+jump MP	8 37F 5MP (4+34+4)	42	1<12>	4	46		12	14	9	60	100	72	120	10		HIT				CH	14								30		18	80	36		22	97	15		9	13
+jump MK	8 26F 5MK (4+23+5)	32	7<12>(4)	4	46		8	10	5	60	100	72	120	10		HIT				CH	10								30		18	80	36		22	97	15		9	13
+jump MK	8 36F 5MK (4+33+5)	42	1<12>	4	46		12	14	9	60	100	72	120	10		HIT				CH	14								30		18	80	36		22	97	15		9	13
+jump HP	8 26F 5HP (4+23+7)	34	5<15>(4)	4	46		11	13	8	90	150	108	180	15		HIT				CH	13								50		30	121	60		36	145	25		15	20
+jump HP	8 34F 5HP (4+31+7)	42	1<15>	4	46		15	17	12	90	150	108	180	15		HIT				CH	17								50		30	121	60		36	145	25		15	20
+jump HK	8 27F 5HK (4+24+5)	33	6<15>(4)	4	46		11	13	8	90	150	108	180	15		HIT				CH	13								50		30	121	60		36	145	25		15	20
+jump HK	8 36F 5HK (4+33+5)	42	1<15>	4	46		15	17	12	90	150	108	180	15		HIT				CH	17								50		30	121	60		36	145	25		15	20
+Throw	5TT	5	2	18	24	24	KD	KD	KD	120	150	120	150	120	RANGE 0.8500		17	17	66	CH	KD	17	17	66					70		42	161	70		42	161	70		42	161
+Throw Back	4TT	5	2	18	24		KD	KD	KD	120	150	120	150	120	RANGE 0.8500		16	16	65	CH	KD	16	16	65					70		42	161	70		42	161	70		42	161
+V-Reversal	6PPP	16	2	24	41	41	KD	KD	-2	60	0	72	0	0			16	21	75	CH	KD	16	21	75			300					80				97				
+V-Skill	5VS	20	6	22	47	47	2	KD	-7	80	150	96	180	13						CH	KD	44	49	103						60	20	107		150	24	129		30	10	17
+V-Skill Dash Reversal	6VS	20			20	20									FRAME 1 AUTO CANCEL																									
+V-Skill Dash	6VS	21			21	21									FRAME 1 AUTO CANCEL																									
+V-Skill Kick	6VS 17F	30	6	22	57	57	2	KD	-7	80	150	96	180	13						CH	KD	44	49	103						60	20	107		150	24	129		30	10	17
+V-Skill Dash Back	4VS	26			26	26									[FRAME 1-15] 4VS [FRAME 16] SPECIAL																									
+V-Skill Dash Back Kick	4VS 16F	32	6	22	59	59	2	KD	-7	80	150	96	180	13	[FRAME 1-15] 4VS [FRAME 16-59] KICK					CH	KD	44	49	103						60	20	107		150	24	129		30	10	17
+V-Skill Dash Back Dash	4VS 5 5VS	29			29	29									[FRAME 1-13] 4VS [FRAME 14-29] DASH																									
+VT V-Skill	5VS	20	6	22	47	47	3	KD	-7	100	180	120	216	17						CH	KD	44	49	103				1000			20	134			24	161			10	22
+VT V-Skill Dash	6VS	21			21	21									FRAME 1 AUTO CANCEL													1000												
+VT V-Skill Kick	6VS 17F	30	6	22	57	57	3	KD	-7	100	180	120	216	17						CH	KD	44	49	103				1000			20	134			24	161			10	22
+VT V-Skill Dash Back	4VS	26			26	26									[FRAME 1-15] 4VS [FRAME 16] SPECIAL													1000												
+VT V-Skill Dash Back Kick	4VS 16F	34	6	22	61	61	3	KD	-7	100	180	120	216	17	[FRAME 1-15] 4VS [FRAME 16-61] KICK					CH	KD	44	49	103				1000			20	134			24	161			10	22
+VT V-Skill Dash Back Dash	4VS 5 5VS	29			29	29									[FRAME 1-13] 4VS [FRAME 14-29] DASH													1000												
+V-Trigger	5VT	5			5	5									[FRAME 1] ALL INV												600													
+stand LP VTC	5LP 5 5VT	3	1<8>	10	13		3	5	2	30	70	36	84	0		HIT				CH	5						600		20		12	40	24		15	48	10		6	
+stand LK VTC	5LK 5 5VT	4	1<8>	11	15		4	6	3	30	70	36	84	0		HIT				CH	6						600		20		12	40	24		15	48	10		6	
+stand MP VTC	5MP 5 5VT	6	1<12>	10	16		9	11	8	60	100	72	120	10		HIT				CH	11						600		30		18	80	36		22	97	15		9	13
+stand MK VTC	5MK 5 5VT	5	1<12>	11	16		9	11	4	60	100	72	120	10		HIT				CH	11						600		30		18	80	36		22	97	15		9	13
+stand HP VTC	5HP 5 5VT	8	1<15>	11	19		13	25	7	80	150	96	180	13		HIT				CH	25						600		50		30	107	60		36	129	25		15	17
+stand HK VTC	5HK 5 5VT	12	1<15>	10	22		12	27	7	90	150	108	180	15		HIT				CH	27						600		50		30	121	60		36	145	25		15	20
+crouch LP VTC	2LP 5 5VT	4	1<8>	10	14		3	5	1	30	70	36	84	0		HIT				CH	5						600		20		12	40	24		15	48	10		6	
+crouch LK VTC	2LK 5 5VT	4	1<8>	10	14		1	3	0	20	70	24	84	0		HIT				CH	3						600		20		12	26	24		15	32	10		6	
+crouch MP VTC	2MP 5 5VT	5	1<12>	10	15		9	11	8	60	100	72	120	10		HIT				CH	11						600		30		18	80	36		22	97	15		9	13
+crouch MK VTC	2MK 5 5VT	7	1<12>	10	17		5	7	4	50	100	60	120	8		HIT				CH	7						600		30		18	67	36		22	80	15		9	10
+crouch HP VTC	2HP 5 5VT	7	1<15>	10	17		12	14	8	90	150	108	180	15		HIT				CH	14						600		50		30	121	60		36	145	25		15	20
+crouch HK VTC	2HK 5 5VT	9	1<15>	10	19		KD	KD	0	90	150	108	180	15		HIT	37	42	86	CH	KD	86	86	86			600		50		30	121	60		36	145	25		15	20
+f+HP VTC	6HP 5 5VT	17	1<15>	18	35		4	6	-2	80	120	96	144	13		HIT				CH	6						600		50	600	30	107	60	600	36	129	25	600	15	17
+f+HP HP VTC	6HP 5F 5HP 30F 5VT	17	1<15>(12)1<15>	10	40		KD	KD	3	134	210	150	234	23		HIT	43	48	104	CH	KD	43	48	104			600		95		60	180	105		66	202	50		30	31
+stand MP MK VTC	5MP 5 5MK 19F 5VT	6	1<12>(9)1<12>	10	26		10	10	6	114	190	126	210	20		HIT				CH	10						600		57		36	153	63		40	170	30		18	26
+Bolt Charge LP	qcf+LP	13	4	17	33	33	2	4	-2	60	100	72	120	15						CH	4					20			40		12	80	44		15	97	30		6	20
+Bolt Charge MP	qcf+MP	15	3	20	37	37	2	4	-7	60	50	72	60	15						CH	4					20			40		12	80	44		15	97	30		6	20
+Bolt Charge MP LP	qcf+MP 5 5LP	15	1<15>2(35)1	65	118		KD	KD	-7	123	185	135	195	15		HIT	18	18	67	CH	KD	18	18	67					58		24	166	62		27	182	30		6	20
+Bolt Charge MP LK	qcf+MP 5 5LK	15	1<15>2(59)1	69	146		KD	KD	-7	123	185	135	195	15		HIT	18	18	67	CH	KD	18	18	67					58		24	166	62		27	182	30		6	20
+Bolt Charge HP	qcf+HP	7	8	30	44	44	KD	KD	KD	150	200	162	210	150			17	17	66	CH	KD	17	17	66		20			60		24	202	64		27	218	60		24	202
+Bolt Charge PP	qcf+PPP	14	3	22	38	38	0	2	-11	70	50	84	60	18						CH	2				300						12	94			15	113			6	24
+VT Bolt Charge LP	qcf+LP	13	4	17	33	33	2	4	-2	70	150	84	180	18						CH	4					20		1000	40		12	94	44		15	113	30		6	24
+VT Bolt Charge MP	qcf+MP	15	3	20	37	37	2	4	-7	70	100	84	120	18						CH	4					20		1000	40		12	94	44		15	113	30		6	24
+VT Bolt Charge MP LP	qcf+MP 5 5LP	15	1<15>2(35)1	65	118		KD	KD	-7	151	235	165	255	18		HIT	18	18	67	CH	KD	18	18	67				1000	58		24	203	62		27	222	30		6	24
+VT Bolt Charge MP LK	qcf+MP 5 5LK	15	1<15>2(59)1	69	146		KD	KD	-7	151	235	165	255	18		HIT	18	18	67	CH	KD	18	18	67				1000	58		24	203	62		27	222	30		6	24
+VT Bolt Charge HP	qcf+HP	7	8	30	44	44	KD	KD	KD	180	250	194	270	180			17	17	66	CH	KD	17	17	66		20		1000	60		24	242	64		27	261	60		24	242
+VT Bolt Charge PP	qcf+PPP	14	3	22	38	38	0	2	-11	80	100	96	120	20						CH	2				300			1000			12	107			15	129			6	26
+Thunder Clap LP	qcb+LP	19	1	28	47	47	0	2	-5	60	60	72	72	10						CH	2					5			35		18	80	41		22	97	20		9	13
+Thunder Clap LP 30F	qcb+LP 30F	40	1	28	68	68	0	2	-5	60	60	72	72	10						CH	2					5			35		18	80	41		22	97	20		9	13
+Thunder Clap LP 31F	qcb+LP 31F	41	1	27	68	68	9	9	0	90	90	102	102	15						CH	9					5			45		24	121	51		28	137	25		12	20
+Thunder Clap LP 60F	qcb+LP 60F	70	1	27	97	97	9	9	0	90	90	102	102	15						CH	9					5			45		24	121	51		28	137	25		12	20
+Thunder Clap LP 61F	qcb+LP 61F	70	1	13	83	83	31	31	18	120	120	132	132	20						CH	31					5			55		30	161	61		34	178	30		15	26
+Thunder Clap MP	qcb+MP	19	1	28	47	47	0	2	-5	60	60	72	72	10						CH	2					5			35		18	80	41		22	97	20		9	13
+Thunder Clap HP	qcb+HP	19	1	28	47	47	0	2	-5	60	60	72	72	10						CH	2					5			35		18	80	41		22	97	20		9	13
+Thunder Clap PP	qcb+PPP	17	1	24	41	41	KD	KD	3	90	90	102	102	15			46	51	105	CH	KD	46	51	105	300						18	121			21	137			9	20
+VT Thunder Clap LP	qcb+LP	19	1	28	47	47	0	2	-5	60	60	72	72	10						CH	2					5		1000	35		18	80	41		22	97	20		9	13
+VT Thunder Clap LP 15F	qcb+LP 15F	25	1	28	53	53	0	2	-5	60	60	72	72	10						CH	2					5		1000	35		18	80	41		22	97	20		9	13
+VT Thunder Clap LP 16F	qcb+LP 16F	26	1	27	53	53	9	9	0	90	90	102	102	15						CH	9					5		1000	45		24	121	51		28	137	25		12	20
+VT Thunder Clap LP 30F	qcb+LP 30F	40	1	27	67	67	9	9	0	90	90	102	102	15						CH	9					5		1000	45		24	121	51		28	137	25		12	20
+VT Thunder Clap LP 31F	qcb+LP 31F	40	1	13	53	53	31	31	18	120	120	132	132	20						CH	31					5		1000	55		30	161	61		34	178	30		15	26
+VT Thunder Clap MP	qcb+MP	19	1	28	47	47	0	2	-5	60	60	72	72	10						CH	2					5		1000	35		18	80	41		22	97	20		9	13
+VT Thunder Clap HP	qcb+HP	19	1	28	47	47	0	2	-5	60	60	72	72	10						CH	2					5		1000	35		18	80	41		22	97	20		9	13
+VT Thunder Clap PP	qcb+PPP	17	1	24	41	41	KD	KD	7	120	120	132	132	20			54	59	113	CH	KD	54	59	113	300			1000			24	161			27	178			12	26
+Sunset Wheel LK	hcb+LK	5	2	52	58	58	KD	KD	KD	160	200	160	200	160	RANGE 1.1117-1.1137		13	13	62	CH	KD	13	13	62		20			120		60	215	120		60	215	120		60	215
+Sunset Wheel MK	hcb+MK	5	2	52	58	58	KD	KD	KD	170	200	170	200	170	RANGE 1.0117-1.0137		13	13	62	CH	KD	13	13	62		20			120		60	229	120		60	229	120		60	229
+Sunset Wheel HK	hcb+HK	5	2	52	58	58	KD	KD	KD	180	200	180	200	180	RANGE 0.9117-0.9137		13	13	62	CH	KD	13	13	62		20			120		60	242	120		60	242	120		60	242
+Sunset Wheel KK	hcb+KKK	18	2	52	71	71	KD	KD	KD	180	250	180	250	180	RANGE 0.9736-0.9699		15	15	64	CH	KD	15	15	64	300						30	242			30	242			30	242
+VT Sunset Wheel LK	hcb+LK	5	2	52	58	58	KD	KD	KD	180	230	180	230	180	RANGE 1.2617-1.2637		15	15	64	CH	KD	15	15	64		20		1000	120		60	242	120		60	242	120		60	242
+VT Sunset Wheel MK	hcb+MK	5	2	52	58	58	KD	KD	KD	190	230	190	230	190	RANGE 1.1617-1.1637		15	15	64	CH	KD	15	15	64		20		1000	120		60	256	120		60	256	120		60	256
+VT Sunset Wheel HK	hcb+HK	5	2	52	58	58	KD	KD	KD	200	230	200	230	200	RANGE 1.0617-1.0637		15	15	64	CH	KD	15	15	64		20		1000	120		60	269	120		60	269	120		60	269
+VT Sunset Wheel KK	hcb+KKK	18	2	52	71	71	KD	KD	KD	210	280	210	280	210	RANGE 0.9736-0.9749		15	15	64	CH	KD	15	15	64	300			1000			30	283			30	283			30	283
+Critical Art	d f d f+LK	4	2	52	57	57	KD	KD	KD	350	0	350	0	350	RANGE 2.2101-2.3067		1	1	50	CH	KD	1	1	50	900						100	472			100	472			100	472
+VT Critical Art	d f d f+LK	4	2	52	57		KD	KD	KD	370	0	370	0	370	RANGE 2.2101-2.3067		1	1	50	CH	KD	1	1	50	900			1000			100	499			100	499			100	499
+Taunt	5PPPKKK	61			61	61																																		
