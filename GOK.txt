@@ -24,6 +24,9 @@ stand LP CHAIN 4		3	2(6)2(6)2(6)2	7	35	4	6	2	30	70	6	4
 crouch LP CHAIN 2		4	2(7)2	6	20	4	6	2	30	70	5	3				
 crouch LP CHAIN 3		4	2(7)2(7)2	6	29	4	6	2	30	70	5	3				
 crouch LP CHAIN 4		4	2(7)2(7)2(7)2	6	38	4	6	2	30	70	5	3				
+crouch LK CHAIN 2		4	2(8)2	7	22	2	4	1	20	70	4	3				HIT LOW
+crouch LK CHAIN 3		4	2(8)2(8)2	7	32	2	4	1	20	70	4	3				HIT LOW
+crouch LK CHAIN 4		4	2(8)2(8)2(8)2	7	42	2	4	1	20	70	4	3				HIT LOW
 jump LP		3	6						40	70						
 jump MP		5	5						60	100						
 jump HP		8	5						90	150						
