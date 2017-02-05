@@ -23,6 +23,7 @@ matador flash MASH	HP > HP > MP+MK (claw only)	8	2		KD	KD	-10		80*54	150*72	13*1
 matador flash	HP > HP > MP+MK (claw only)	8	2		KD	KD	-10		80*54	150*72	13*10	96*54	180*72	15*15	H*H	-	78	19	24	NO MASH MP+MK
 matador blitz MASH	MP > HK > MP+MK (claw off)	7	3		KD	KD	-16		60	100	10*13	72	120	12*15	H	SP	77	18	23	MASH MP+MK
 matador blitz	MP > HK > MP+MK (claw off)	7	3		KD	KD	-16		60	100	10*13	72	120	12*15	H	SP	78	19	24	NO MASH MP+MK
+matador	MP > HK	7	3		KD	KD	-3		114	172	20	126	192	12*15	H		93	34	39	
 wall jump	uf during jump near wall						-							-		-				
 rainbow suplex	LP+LK	5	2	18	KD	KD	-	24	12	170		140	200	-	T	-	62	13	13	
 crescent line	b+LP+LK	5	2	18	KD	KD	-	24	140	200		140	200	-	T	-	57	8	8	
