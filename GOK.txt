@@ -18,6 +18,12 @@ crouch HK VTC		7	2	24	32	KD	KD	14	90	150			86	37	42
 TC 5HK 5HK		12	2			7	7	0	125	183	14	7				
 TC 5HP 5HP		8	3			KD	KD	-12	134	222	KD	11	92	33	38	[CH] KD ADV +2
 TC 5HP 5HP VTC		8	3			KD	KD	11	134	222			115	56	61	
+stand LP CHAIN 2		3	2(6)2	7	19	4	6	2	30	70	6	4				
+stand LP CHAIN 3		3	2(6)2(6)2	7	27	4	6	2	30	70	6	4				
+stand LP CHAIN 4		3	2(6)2(6)2(6)2	7	35	4	6	2	30	70	6	4				
+crouch LP CHAIN 2		4	2(7)2	6	20	4	6	2	30	70	5	3				
+crouch LP CHAIN 3		4	2(7)2(7)2	6	29	4	6	2	30	70	5	3				
+crouch LP CHAIN 4		4	2(7)2(7)2(7)2	6	38	4	6	2	30	70	5	3				
 jump LP		3	6						40	70						
 jump MP		5	5						60	100						
 jump HP		8	5						90	150						
