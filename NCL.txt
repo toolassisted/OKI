@@ -1,93 +1,96 @@
-Move	Command	Startup	Active	Recovery	Total 	Hit Advantage	CH hit adv.	Block Advantage	 Damage	Stun	Attack Level	Cancel Ability	KD Adv.	KDR Adv.	KDRB Adv.	Note
-stand LP		3	2	9	13	3	5	1	30	70	H	SP,V				
-stand MP		6	2	14	21	5	7	0	60	100	H	SP,V				
-stand HP		9	4	19	31	1	KD	-2	80	150	H	SP,V	94	35	40	
-stand LK		4	4	8	15	4	6	2	40	70	H	V				
-stand MK		5	3	12	19	6	8	2	60	100	H	SP,V				
-stand HK		12	4	21	36	3	19	-4	90	150	H	V				
-crouch LP		3	3	7	12	3	5	1	20	70	H	CH,SP,V				
-crouch MP		5	2	13	19	4	6	2	60	100	H	SP,V				
-crouch HP		9	3	21	32	1	KD	-4	80	150	H	SP,V	96	37	42	
-crouch LK		4	2	9	14	3	5	1	20	70	L	V				
-crouch MK		8	3	15	25	0	2	-4	50	100	L	SP,V				
-crouch HK		7	4	21	31	KD	KD	-10	90	150	L	V	72	23	28	
-jump LP		3	6	-		-	-	-	40	70	M	-				
-jump MP		7	4	-		-	-	-	60	100	M	-				
-jump HP		7	5	-		-	-	-	90	150	M	-				
-jump LK		4	6	-		-	-	-	40	70	M	-				
-jump MK		6	5	-		-	-	-	60	100	M	-				
-jump HK		7	6	-		-	-	-	90	150	M	-				
-opening dagger	df+HP	23	3	23	48	1	20	-6	80	100	M	-				
-road of the sun	d+HK during jump	14	12	-		-	-	-	80	100	H	-				
-sacrificial altar	MK > HK > MK+MP	5	-	-		KD	KD	-9	60*54*32	100*90*40	H*H*H	CA,V	94	35	40	
-soul sealer	LP+LK	5	2	18	24	KD	KD	-	100	120	T	-	68	19	19	
-soul discriminator	b+LP+LK	5	2	18	24	KD	KD	-	100	120	T	-	81	32	32	
-torrent of power	HP+HK			5	5		-	-			-	-				ANIM 56F
-culminated power	n or b or f+MP+MK	25	3	29		KD	KD	-1	50	100	H	-	78	29	34	
-the calling	f+PPP	17	2	24		KD		-2	60	0	H		77	18	23	
-The Disc's Guidance LP	b,f+LP	18	3	25		KD	KD	-6	80	150	H	-	88	29	34	
-The Disc's Guidance MP	b,f+MP	21	3	26		KD	KD	-6	100	150	H	-	87	28	33	
-The Disc's Guidance HP	b,f+HP	24	3	26		KD	KD	-6	120	150	H	-	87	28	33	
-The Disc's Guidance EX	b,f+PP	17				KD	KD	-13	35*35*80	25*25*150	H*H*H	-	82	23	28	
-Raging Light LP	f,d,df+LP	3	2(3)2	35		KD	KD	-24	100	150	H	-	82	23	28	
-Raging Light MP	f,d,df+MP	5	3(3)3	37		KD	KD	-28	30*80	30*120	H*H	-	87	28	33	
-Raging Light HP	f,d,df+HP	7	4(2)2	45		KD	KD	-33	30*30*60	30*30*90	H*H*H	-	77	18	23	
-Raging Light EX	f,d,df+PP	3	10(1)3	42		KD	KD	-36	20x4*70	20x4*120	H	-	83	24	29	
-Mask of Tlalli LP	hcb+LK	8	2	52		KD	KD	-	130	200	T	-	50	1	1	
-Mask of Tlalli MP	hcb+MK	8	2	52		KD	KD	-	140	200	T	-	52	3	3	
-Mask of Tlalli HP	hcb+HK	8	2	52		KD	KD	-	150	200	T	-	57	8	8	
-Mask of Tlalli EX	hcb+KK	8	2	52		KD	KD	-	60	50	T	-	97	38	38	CORNER +93/+34/+34
-Valiant Rebellion LK	qcf+LK	14	3	20		2	4	-4	50	100	H	CA				
-Valiant Rebellion MK	qcf+MK	19	3	30		5	7	-2	60	100	H	CA				
-Valiant Rebellion HK	qcf+HK	23	3	16		KD	KD	0	80	150	H	-	95	46	51	
-Valiant Rebellion EX	qcf+KK	10				2	2	-2	50*70	100*100	H*H	-				
-Ceremony of Honor	qcf,qcf+P	7	2	45		KD	KD	-25	330	0	H	-	62	13	13	1F NO MOVE
-health	1000															
-stun	1000															
-taunt	61				61											
-jump	47 (4+39+4)	43	1	4	47											EARLY WHIFF 47
-jump forward	46 (3+39+4)	42	1	4	46											EARLY WHIFF 46
-jump backward	47 (4+39+4)	43	1	4	47											EARLY WHIFF 47
-dash forward	17		17		17											
-dash backward	22		22		22											
-VT jump	46 (4+38+4)	42	1	4	46											EARLY WHIFF 47
-VT jump forward	45 (3+38+4)	41	1	4	45											EARLY WHIFF 48
-VT jump backward	46 (4+38+4)	42	1	4	46											EARLY WHIFF 49
-VTRIGGER																
-VT stand LP		3	2	9	13	3	5	1	40	70	H	SP				
-VT stand MP		6	3	13	21	6	8	0	70	100	H	SP				
-VT stand HP		9	5	18	31	2	KD	-2	90	150	H	SP	94	35	40	
-VT stand LK		4	4	8	15	4	6	2	40	70	H	-				
-VT stand MK		5	3	12	19	6	8	2	60	100	H	SP				
-VT stand HK		12	4	21	36	3	19	-4	90	150	H	-				
-VT crouch LP		3	3	7	12	3	5	1	30	70	H	CH,SP				
-VT crouch MP		5	2	13	19	5	7	2	70	100	H	SP				
-VT crouch HP		7	3	21	30	1	KD	-4	90	150	H	SP	96	37	42	
-VT crouch LK		4	2	9	14	3	5	1	20	70	L	-				
-VT crouch MK		8	3	15	25	0	2	-4	50	100	L	SP				
-VT crouch HK		7	4	21	31	KD	KD	-10	90	150	L	-	72	23	28	
-VT jump LP		3	6	-		-		-	50	70	M	-				
-VT jump MP		7	4	-		-		-	70	100	M	-				
-VT jump HP		7	5	-		-		-	100	150	M	-				
-VT jump LK		4	6	-		-		-	40	70	M	-				
-VT jump MK		6	5	-		-		-	60	100	M	-				
-VT jump HK		7	6	-		-		-	90	150	M	-				
-VT opening dagger	df+HP	23	3	24	49	1	20	-6	90	150	M	-				
-VT opening dagger HOLD	df+HP HOLD	38	3	18	58	7	26	2	100	150	M	-				
-VT The Disc's Guidance LP	b,f+LP	15	2(1)3	25	45	KD		-4	100	150	H	-				
-VT The Disc's Guidance MP	b,f+MP	17	2(2)3	26	49	KD		-4	120	150	H	-				
-VT The Disc's Guidance HP	b,f+HP	21	2(1)3	26	52	KD		-4	140	150	H	-				
-VT The Disc's Guidance EX	b,f+PP	17	2(12)2(9)2(1)3	31	78	KD		-13	170	200	H	-				
-VT Raging Light LP	f,d,df+LP	3	2(3)2	35	44	KD		-24	120	150	H	-				
-VT Raging Light MP	f,d,df+MP	5	5(1)3	41	54	KD		-29	130	150	H	-				
-VT Raging Light HP	f,d,df+HP	7	8	46	60	KD		-34	140	150	H	-				
-VT Raging Light EX	f,d,df+PP	3	10(1)3	42	58	KD		-38	170	200	H	-				
-VT Mask of Tlalli LP	hcb+LK	8	2	52	61	KD		-	150	200	T	-				
-VT Mask of Tlalli MP	hcb+MK	8	2	52	61	KD		-	160	200	T	-				
-VT Mask of Tlalli HP	hcb+HK	8	2	52	61	KD		-	170	200	T	-				
-VT Mask of Tlalli EX	hcb+KK	8	2	52	61	KD		-	80	50	T	-				
-VT Valiant Rebellion LK	qcf+LK	14	4	19	36	2		-3	70	100	H	CA				
-VT Valiant Rebellion MK	qcf+MK	19	5	18	41	5		-1	80	100	H	CA				
-VT Valiant Rebellion HK	qcf+HK	23	6	13	41	KD		2	100	150	H	-				
-VT Valiant Rebellion EX	qcf+KK	10	3(23)3	23	61	2		-2	60*80	100*100	H	-				
-VT soul offering	qcf,qcf+P	7	2	45	53	KD		-25	370	0	H*H	-				
+Move	Command	Startup	Active	Recovery	Total 	Hit Advantage	CH hit adv.	Block Advantage	VTC HIT	VTC BLK	 Damage	Stun	Attack Level	Cancel Ability	KD Adv.	KDR Adv.	KDRB Adv.	Note
+stand LP		3	2	9	13	3	5	1	5	3	30	70	H	SP,V				
+stand MP		6	2	14	21	5	7	0	12	7	60	100	H	SP,V				
+stand HP		9	4	19	31	1	KD	-2	11	8	80	150	H	SP,V	94	35	40	
+stand LK		4	4	8	15	4	6	2	5	3	40	70	H	V				
+stand MK		5	3	12	19	6	8	2	9	5	60	100	H	SP,V				
+stand HK		12	4	21	36	3	19	-4	15	8	90	150	H	V				
+crouch LP		3	3	7	12	3	5	1	4	2	20	70	H	CH,SP,V				
+crouch MP		5	2	13	19	4	6	2	10	8	60	100	H	SP,V				
+crouch HP		9	3	21	32	1	KD	-4	13	8	80	150	H	SP,V	96	37	42	
+crouch LK		4	2	9	14	3	5	1	4	2	20	70	L	V				
+crouch MK		8	3	15	25	0	2	-4	9	5	50	100	L	SP,V				
+crouch HK		7	4	21	31	KD	KD	-10	KD	5	90	150	L	V	72	23	28	
+crouch HK VTC		7	4	21	31	KD	KD	5	KD	5	90	150	L	V	87	38	43	
+jump LP		3	6	-		-	-	-			40	70	M	-				
+jump MP		7	4	-		-	-	-			60	100	M	-				
+jump HP		9	5	-		-	-	-			90	150	M	-				
+jump LK		4	6	-		-	-	-			40	70	M	-				
+jump MK		6	5	-		-	-	-			60	100	M	-				
+jump HK		7	6	-		-	-	-			90	150	M	-				
+opening dagger	df+HP	23	3	23	48	1	20	-6			80	100	M	-				
+road of the sun	d+HK during jump	14	12	-		-	-	-			80	100	H	-				
+sacrificial altar	MK > HK > MK+MP	5	-	-		KD	KD	-9	KD	11	60*54*32	100*90*40	H*H*H	CA,V	94	35	40	
+sacrificial altar VTC	MK > HK > MK+MP	5	-	-		KD	KD	11	KD	11	60*54*32	100*90*40	H*H*H	CA,V	114	55	60	
+soul sealer	LP+LK	5	2	18	24	KD	KD	-			100	120	T	-	68	19	19	
+soul discriminator	b+LP+LK	5	2	18	24	KD	KD	-			100	120	T	-	81	32	32	
+torrent of power	HP+HK			5	5		-	-					-	-				ANIM 56F
+culminated power	n or b or f+MP+MK	25	3	29	56	KD	KD	-1			50	100	H	-	78	29	34	
+VT culminated power	n or b or f+MP+MK	20	3	34	56	KD	KD	-1			70	150	H	-	75	26	31	
+the calling	f+PPP	17	2	24		KD		-2			60	0	H		77	18	23	
+The Disc's Guidance LP	b,f+LP	18	3	25	45	KD	KD	-6			80	150	H	-	88	29	34	
+The Disc's Guidance MP	b,f+MP	21	3	26	49	KD	KD	-6			100	150	H	-	87	28	33	
+The Disc's Guidance HP	b,f+HP	24	3	26	52	KD	KD	-6			120	150	H	-	87	28	33	
+The Disc's Guidance EX	b,f+PP	17	2(12)2(12)3	31	78	KD	KD	-13			35*35*80	25*25*150	H*H*H	-	82	23	28	
+Raging Light LP	f,d,df+LP	3	2(3)2	35	44	KD	KD	-24			100	150	H	-	82	23	28	
+Raging Light MP	f,d,df+MP	5	3(3)3	37	50	KD	KD	-28			30*80	30*120	H*H	-	87	28	33	
+Raging Light HP	f,d,df+HP	7	4(2)2	45	59	KD	KD	-33			30*30*60	30*30*90	H*H*H	-	77	18	23	
+Raging Light EX	f,d,df+PP	3	10(1)3	42	58	KD	KD	-36			20x4*70	20x4*120	H	-	83	24	29	
+Mask of Tlalli LP	hcb+LK	8	2	52	61	KD	KD	-			130	200	T	-	50	1	1	
+Mask of Tlalli MP	hcb+MK	8	2	52	61	KD	KD	-			140	200	T	-	52	3	3	
+Mask of Tlalli HP	hcb+HK	8	2	52	61	KD	KD	-			150	200	T	-	57	8	8	
+Mask of Tlalli EX	hcb+KK	8	2	52	61	KD	KD	-			60	50	T	-	97	38	38	CORNER +93/+34/+34
+Valiant Rebellion LK	qcf+LK	14	3	20	36	2	4	-4			50	100	H	CA				
+Valiant Rebellion MK	qcf+MK	19	3	20	41	5	7	-2			60	100	H	CA				
+Valiant Rebellion HK	qcf+HK	23	3	16	41	KD	KD	0			80	150	H	-	95	46	51	
+Valiant Rebellion EX	qcf+KK	10	2(24)2	24	61	2	2	-2			50*70	100*100	H*H	-				
+Ceremony of Honor	qcf,qcf+P	7	2	45	53	KD	KD	-25			330	0	H	-	62	13	13	1F NO MOVE
+health	1000																	
+stun	1000																	
+taunt	61				61													
+jump	47 (4+39+4)	43	1	4	47													EARLY WHIFF 47
+jump forward	46 (3+39+4)	42	1	4	46													EARLY WHIFF 46
+jump backward	47 (4+39+4)	43	1	4	47													EARLY WHIFF 47
+dash forward	17		17		17													
+dash backward	22		22		22													
+VT jump	46 (4+38+4)	42	1	4	46													EARLY WHIFF 47
+VT jump forward	45 (3+38+4)	41	1	4	45													EARLY WHIFF 48
+VT jump backward	46 (4+38+4)	42	1	4	46													EARLY WHIFF 49
+VTRIGGER																		
+VT stand LP		3	2	9	13	3	5	1			40	70	H	SP				
+VT stand MP		6	3	13	21	6	8	0			70	100	H	SP				
+VT stand HP		9	5	18	31	2	KD	-2			90	150	H	SP	94	35	40	
+VT stand LK		4	4	8	15	4	6	2			40	70	H	-				
+VT stand MK		5	3	12	19	6	8	2			60	100	H	SP				
+VT stand HK		12	4	21	36	3	19	-4			90	150	H	-				
+VT crouch LP		3	3	7	12	3	5	1			30	70	H	CH,SP				
+VT crouch MP		5	2	13	19	5	7	2			70	100	H	SP				
+VT crouch HP		7	3	21	30	1	KD	-4			90	150	H	SP	96	37	42	
+VT crouch LK		4	2	9	14	3	5	1			20	70	L	-				
+VT crouch MK		8	3	15	25	0	2	-4			50	100	L	SP				
+VT crouch HK		7	4	21	31	KD	KD	-10			90	150	L	-	72	23	28	
+VT jump LP		3	6	-		-		-			50	70	M	-				
+VT jump MP		7	4	-		-		-			70	100	M	-				
+VT jump HP		7	5	-		-		-			100	150	M	-				
+VT jump LK		4	6	-		-		-			40	70	M	-				
+VT jump MK		6	5	-		-		-			60	100	M	-				
+VT jump HK		7	6	-		-		-			90	150	M	-				
+VT opening dagger	df+HP	23	3	24	49	1	20	-6			90	150	M	-				
+VT opening dagger HOLD	df+HP HOLD	38	3	18	58	7	26	2			100	150	M	-				
+VT The Disc's Guidance LP	b,f+LP	15	2(1)3	25	45	KD	KD	-4			100	150	H	-	88	29	34	
+VT The Disc's Guidance MP	b,f+MP	17	2(2)3	26	49	KD	KD	-4			120	150	H	-	87	28	33	
+VT The Disc's Guidance HP	b,f+HP	21	2(1)3	26	52	KD	KD	-4			140	150	H	-	87	28	33	
+VT The Disc's Guidance EX	b,f+PP	17	2(12)2(9)2(1)3	31	78	KD	KD	-13			170	200	H	-	82	23	28	
+VT Raging Light LP	f,d,df+LP	3	2(3)2	35	44	KD	KD	-24			120	150	H	-	90	31	36	
+VT Raging Light MP	f,d,df+MP	5	5(1)3	41	54	KD	KD	-29			130	150	H	-	83	24	29	
+VT Raging Light HP	f,d,df+HP	7	8	46	60	KD	KD	-34			140	150	H	-	77	18	23	
+VT Raging Light EX	f,d,df+PP	3	10(1)3	42	58	KD	KD	-38			170	200	H	-	83	24	29	
+VT Mask of Tlalli LP	hcb+LK	8	2	52	61	KD	KD	-			150	200	T	-	50	1	1	
+VT Mask of Tlalli MP	hcb+MK	8	2	52	61	KD	KD	-			160	200	T	-	52	3	3	
+VT Mask of Tlalli HP	hcb+HK	8	2	52	61	KD	KD	-			170	200	T	-	57	8	8	
+VT Mask of Tlalli EX	hcb+KK	8	2	52	61	KD	KD	-			80	50	T	-	97	38	38	CORNER +93/+34/+34
+VT Valiant Rebellion LK	qcf+LK	14	4	19	36	2	4	-3			70	100	H	CA				
+VT Valiant Rebellion MK	qcf+MK	19	5	18	41	5	7	-1			80	100	H	CA				
+VT Valiant Rebellion HK	qcf+HK	23	6	13	41	KD	KD	2			100	150	H	-	95	46	51	
+VT Valiant Rebellion EX	qcf+KK	10	3(23)3	23	61	2	2	-2			60*80	100*100	H	-				
+VT soul offering	qcf,qcf+P	7	2	45	53	KD	KD	-25			370	0	H*H	-	70	21	21	
