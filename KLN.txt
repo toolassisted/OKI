@@ -1,0 +1,135 @@
+Move	Command	Startup	Active	Recovery	Total	Total	HIT ADV	CH ADV	BLK ADV	HIT GAP	CH GAP	BLK GAP	HIT DMG	HIT STUN	CH DMG	CH STUN	BLK DMG	NOTE	HIT TYPE	HIT KDR	HIT KDBR	HIT KD	CH TYPE	CH ADV	CH KDR	CH KDBR	CH KD	EX-	EX+	VR-	VT-	HIT EX1	HIT VR1	HIT EX2	HIT VR2	CH EX1	CH VR1	CH EX2	CH VR2	BLK EX1	BLK VR1	BLK EX2	BLK VR2
+Dash	6 5 6	1	17		17	17																																					
+Dash Back	4 5 4	1	21		21	21																																					
+Jump	8 (4+39+0)	43	1	4	47	47																																					
+Jump Forward	9 (3+39+0)	42	1	4	46	46																																					
+Jump Back	7 (4+39+0)	43	1	4	47	47																																					
+stand LP	5LP	4	3	6	12	12	4	6	2				30	70	36	84	0						CH	6								20		12	40	24		15	48	10		6	
+stand LK	5LK	5	3	9	16	16	0	2	-2				40	70	48	84	0						CH	2								20		12	53	24		15	64	10		6	
+stand MP	5MP	6	3	13	21	21	4	6	2				60	100	72	120	10						CH	6								30		18	80	36		22	97	15		9	13
+stand MK	5MK	5	3	14	21	21	3	5	-2				50	100	60	120	8						CH	5								30		18	67	36		22	80	15		9	10
+stand HP	5HP	8	3	19	29	29	5	8	-2				90	150	108	180	15						CH	8								50		30	121	60	150	36	145	25		15	20
+stand HK	5HK	11	3	20	33	33	6	23	-2				80	150	96	180	13						CH	23								50		30	107	60	150	36	129	25		15	17
+crouch LP	2LP	3	2	8	12	12	4	6	1				20	70	24	84	0						CH	6								20		12	26	24		15	32	10		6	
+crouch LK	2LK	4	2	8	13	13	3	5	1				20	70	24	84	0						CH	5								20		12	26	24		15	32	10		6	
+crouch MP	2MP	6	3	13	21	21	5	7	2				60	100	72	120	10						CH	7								30		18	80	36		22	97	15		9	13
+crouch MK	2MK	8	3	15	25	25	3	5	1				50	100	60	120	8						CH	5								30		18	67	36		22	80	15		9	10
+crouch HP	2HP	7	3	23	32	32	0	2	-3				80	150	96	180	13						CH	2								50		30	107	60		36	129	25		15	17
+crouch HK	2HK	10	2(22)2	24	59	59	KD	KD	-12				100	150	120	180	17			25	30	84	CH	KD	84	84	84					50		30	134	60	100	36	161	26		16	22
+f+MK	6MK	23	5	18	45	45	1	3	-6				60	100	72	120	10						CH	3								30		18	80	36		22	97	16		10	13
+b+HK	4HK	15	3	21	38	38	3	KD	-2				90	150	108	180	15						CH	KD	34	39	93					50		30	121	60	150	36	145	25		15	20
+stand LP MP	5LP	4	3	6	12		0	0	-6				66	124	72	138	7						CH	0								47		30	89	51		33	97	25		15	9
+stand LP MP HP	5LP	4	3	6	12		1	1	-9				114	188	120	202	17						CH	1								87		60	153	91		63	161	50		30	22
+stand MK HP	5MK	5	3	14	21		-1	-1	-9				95	163	105	183	16						CH	-1								57		36	128	63		40	141	30		18	21
+stand MK HP VS	5MK	5	3	14	21		KD	KD	-12				143	243	153	263	26			19	24	78	CH	KD	19	24	78					57	60	66	193	63	60	70	206	30	38	33	35
+stand LP Chain 2	5LP 5.5 5LP	4	3(7)3	6	22	22																																					
+stand LP Chain 3	5LP 5.5 5LP 5.9 5LP	4	3(7)3(7)3	6	32	32																																					
+stand LP Chain 4	5LP 5.5 5LP 5.9 5LP 5.9 5LP	4	3(7)3(7)3(7)3	6	42	42																																					
+crouch LP Chain 2	2LP 2.4 2LP	3	2(8)2	8	22	22																																					
+crouch LP Chain 3	2LP 2.4 2LP 2.9 2LP	3	2(8)2(8)2	8	32	32																																					
+crouch LP Chain 4	2LP 2.4 2LP 2.9 2LP 2.9 2LP	3	2(8)2(8)2(8)2	8	42	42																																					
+crouch LK Chain 2	2LK 2.5 2LK	4	2(8)2	8	23	23																																					
+crouch LK Chain 3	2LK 2.5 2LK 2.9 2LK	4	2(8)2(8)2	8	33	33																																					
+crouch LK Chain 4	2LK 2.5 2LK 2.9 2LK 2.9 2LK	4	2(8)2(8)2(8)2	8	43	43																																					
+jump LP	8LP (4+1+3)	8	5(31)	4	47	47	7	9	4				40	70	48	84	0						CH	9								20		12	53	24		15	64	10		6	
+jump LP	9LP (3+1+3)	7	5(31)	4	46	46	7	9	4				40	70	48	84	0						CH	9								20		12	53	24		15	64	10		6	
+jump LP	7LP (4+1+3)	8	5(31)	4	47	47	7	9	4				40	70	48	84	0						CH	9								20		12	53	24		15	64	10		6	
+jump LP	8 5.33 5LP (4+30+3)	37	5<8>(2)	4	47		7	9	4				40	70	48	84	0		HIT				CH	9								20		12	53	24		15	64	10		6	
+jump LP	8 5.39 5LP (4+36+3)	43	1<8>	4	47		9	11	6				40	70	48	84	0		HIT				CH	11								20		12	53	24		15	64	10		6	
+jump LK	8 5.30 5LK (4+27+4)	35	5<8>(4)	4	47		5	7	2				40	70	48	84	0		HIT				CH	7								20		12	53	24		15	64	10		6	
+jump LK	8 5.38 5LK (4+35+4)	43	1<8>	4	47		9	11	6				40	70	48	84	0		HIT				CH	11								20		12	53	24		15	64	10		6	
+jump MP	8 5.30 5MP (4+27+5)	36	6<12>(2)	4	47		10	12	7				70	100	84	120	12		HIT				CH	12								30		18	94	36		22	113	15		9	16
+jump MP	8 5.37 5MP (4+34+5)	43	1<12>	4	47		12	14	9				70	100	84	120	12		HIT				CH	14								30		18	94	36		22	113	15		9	16
+jump MK	8 5.29 5MK (4+26+6)	36	5<12>(3)	4	47		9	11	6				70	100	84	120	12		HIT				CH	11								30		18	94	36		22	113	15		9	16
+jump MK	8 5.36 5MK (4+33+6)	43	1<12>	4	47		12	14	9				70	100	84	120	12		HIT				CH	14								30		18	94	36		22	113	15		9	16
+jump HP	8 5.29 5HP (4+26+7)	37	4<15>(3)	4	47		12	14	9				90	150	108	180	15		HIT				CH	14								50		30	121	60		36	145	25		15	20
+jump HP	8 5.35 5HP (4+32+7)	43	1<15>	4	47		15	17	12				90	150	108	180	15		HIT				CH	17								50		30	121	60		36	145	25		15	20
+jump HK	8 5.21 5HK (4+18+9)	31	5<15>(8)	4	47		7	9	4				90	150	108	180	15		HIT				CH	9								50		30	121	60		36	145	25		15	20
+jump HK	8 5.33 5HK (4+30+9)	43	1<15>	4	47		15	17	12				90	150	108	180	15		HIT				CH	17								50		30	121	60		36	145	25		15	20
+jump d+MK Low	8 5.17 2MK (4+14+13)	31	1	43	74	74																																					
+jump d+MK Late	8 5.28 2MK (4+25+13)	42	1	43	85	85																																					
+jump forward d+MK Low	9 5.16 2MK (3+14+13)	30	1	43	73	73	-7	-5	-10				30	70	36	84	5						CH	-5								20		12	40	24		15	48	10		6	6
+jump forward d+MK Late	9 5.27 2MK (3+25+13)	41	1	43	84	84	-9	-7	-12				30	70	36	84	5						CH	-7								20		12	40	24		15	48	10		6	6
+Throw	5LPLK	5	2	18	24	24	KD	KD	KD				120	120	120	120	120			8	8	57	CH	KD	8	8	57					70		42	161	70		42	161	70		42	161
+Throw Back	4LPLK	5	2	18	24	24	KD	KD	KD				120	150	120	150	120			12	12	71	CH	KD	12	12	71					80		48	161	80		48	161	80		48	161
+Throw Air	8LPLK (4+1+5)	10	2	37	48	48	KD	KD	KD				120	200	120	200	120			14	14	63	CH	KD	14	14	63					80		48	161	80		48	161	80		48	161
+V-Reversal	6KKK	33			33	33																								300													
+V-Skill	5MPMK	15	2	20	36	36	3	5	-7				50	100	60	120	8						CH	5									60	30	67		72	36	80		30	15	10
+V-Skill Counter	5MPMK	8	9	20	36	36	KD	KD	KD				150	200	150	200	150			20	25	79	CH	KD	20	25	79						120	60	202		120	60	202		120	60	202
+V-Trigger	5HPHK	17	1	13	30	30	KD	KD	32				90	360	96	384	24			79	84	138	CH	KD	79	84	138			600				36	121			39	129			18	32
+VT V-Trigger	5HPHK	21	1	19	40	40	KD	KD	26				90	360	96	384	24			73	78	132	CH	KD	73	78	132				2000			36	121			39	129			18	32
+stand LP VTC	5LP 5 5VT	4	1<8>	30	34		KD	KD	32	5	3	7	120	430	132	468	24		HIT	79	84	138	CH	KD	79	84	138			600		20		48	161	24		54	178	10		24	32
+stand LK VTC	5LK 5 5VT	5	1<8>	30	35		KD	KD	32	6	4	8	130	430	144	468	24		HIT	79	84	138	CH	KD	79	84	138			600		20		48	175	24		54	194	10		24	32
+stand MP VTC	5MP 5 5VT	6	1<12>	30	36		KD	KD	32				132	388	144	408	34		HIT	79	84	138	CH	KD	79	84	138			600		30		54	178	36		58	194	15		27	45
+stand MK VTC	5MK 5 5VT	5	1<12>	32	37		KD	KD	32			5	122	388	132	408	32		HIT	79	84	138	CH	KD	79	84	138			600		30		54	164	36		58	178	15		27	43
+stand HP VTC	5HP 5 5VT	8	1<15>	30	38		KD	KD	32				162	438	180	468	39		HIT	79	84	138	CH	KD	79	84	138			600		50		66	218	60		72	242	25		33	52
+stand HK VTC	5HK 5 5VT	11	1<15>	30	41		KD	KD	32				152	438	168	468	37		HIT	79	84	138	CH	KD	79	84	138			600		50		66	205	60		72	226	25		33	49
+crouch LP VTC	2LP 5 5VT	3	1<8>	30	33		KD	KD	32	4	2	7	110	430	120	468	24		HIT	79	84	138	CH	KD	79	84	138			600		20		48	148	24		54	161	10		24	32
+crouch LK VTC	2LK 5 5VT	4	1<8>	30	34		KD	KD	32	5	3	7	110	430	120	468	24		HIT	79	84	138	CH	KD	79	84	138			600		20		48	148	24		54	161	10		24	32
+crouch MP VTC	2MP 5 5VT	6	1<12>	30	36		KD	KD	32				132	388	144	408	34		HIT	79	84	138	CH	KD	79	84	138			600		30		54	178	36		58	194	15		27	45
+crouch MK VTC	2MK 5 5VT	8	1<12>	33	41		KD	KD	32			2	122	388	132	408	32		HIT	79	84	138	CH	KD	79	84	138			600		30		54	164	36		58	178	15		27	43
+crouch HP VTC	2HP 5 5VT	7	1<15>	31	38		KD	KD	32				152	438	168	468	37		HIT	79	84	138	CH	KD	79	84	138			600		50		66	205	60		72	226	25		33	49
+crouch HK VTC	2HK 5 5VT	10	1<15>	30	40		KD	KD	-12				132	388	144	408	17		HIT	79	84	138	CH	KD	79	84	138			600		25		51	178	30		54	194	26	600	16	22
+b+HK VTC	4HK 5.3 5VT	15	1<15>	30	45	45	KD	KD	32				162	438	180	468	39		HIT	79	84	138	CH	KD	84	89	143			600		50		66	218	60		72	242	25		33	52
+stand LP MP VTC	5LP 5 5MP 5.13 5VT	4	1<8>(7)1<12>	30	42		KD	KD	32			4	129	376	135	390	31		HIT	79	84	138	CH	KD	79	84	138			600		47		66	174	51		69	182	25		33	41
+stand LP MP HP VTC	5LP 5 5MP 5.13 5HP 5.21 5VT	4	1<8>(7)1<12>(11)1<15>	30	54		KD	KD	-9				168	404	174	418	17		HIT	79	84	138	CH	KD	79	84	138			600		87		96	226	91		99	234	50	600	30	22
+stand MK HP VTC	5MK 5 5HP 5.22 5VT	5	1<12>(11)1<15>	30	47		KD	KD	32			1	158	415	168	435	40		HIT	79	84	138	CH	KD	79	84	138			600		57		72	213	63		76	226	30		36	53
+stand MK HP VS VTC	5MK 5 5HP 5.20 5MPMK 5.25 5VT	5	1<12>(11)1<15>(12)1<15>	30	60		KD	KD	32				197	459	207	479	50		HIT	81	86	140	CH	KD	81	86	140			600		57		102	265	63		106	279	30		51	67
+Slide stand LP	qcb+MK 5.21 5LP	42	3	6	50	50	4	6	2				30	70	36	84	0						CH	6								20		12	40	24		15	48	10		6	
+Slide stand LK	qcb+MK 5.21 5LK	43	3	9	54	54	0	2	-2				40	70	48	84	0						CH	2								20		12	53	24		15	64	10		6	
+Slide stand MP	qcb+MK 5.21 5MP	44	3	13	59	59	4	6	2				60	100	72	120	10						CH	6								30		18	80	36		22	97	15		9	13
+Slide stand MK	qcb+MK 5.21 5MK	43	3	14	59	59	3	5	-2				50	100	60	120	8						CH	5								30		18	67	36		22	80	15		9	10
+Slide stand HP	qcb+MK 5.21 5HP	46	3	19	67	67	5	8	-2				90	150	108	180	15						CH	8								50		30	121	60	150	36	145	25		15	20
+Slide stand HK	qcb+MK 5.21 5HK	49	3	20	71	71	6	23	-2				80	150	96	180	13						CH	23								50		30	107	60	150	36	129	25		15	17
+Slide crouch LP	qcb+MK 5.21 2LP	41	2	8	50	50	4	6	1				20	70	24	84	0						CH	6								20		12	26	24		15	32	10		6	
+Slide crouch LK	qcb+MK 5.21 2LK	42	2	8	51	51	3	5	1				20	70	24	84	0						CH	5								20		12	26	24		15	32	10		6	
+Slide crouch MP	qcb+MK 5.21 2MP	44	3	13	59	59	5	7	2				60	100	72	120	10						CH	7								30		18	80	36		22	97	15		9	13
+Slide crouch MK	qcb+MK 5.21 2MK	46	3	15	63	63	3	5	1				50	100	60	120	8						CH	5								30		18	67	36		22	80	15		9	10
+Slide crouch HP	qcb+MK 5.21 2HP	45	3	23	70	70	0	2	-3				80	150	96	180	13						CH	2								50		30	107	60		36	129	25		15	17
+Slide crouch HK	qcb+MK 5.21 2HK	48	2(22)2	24	97	97	KD	KD	-12				100	150	120	180	17			25	30	84	CH	KD	84	84	84					50		30	134	60	100	36	161	26		16	22
+Slide f+MK	qcb+MK 5.21 6MK	61	5	18	83	83	1	3	-6				60	100	72	120	10						CH	3								30		18	80	36		22	97	16		10	13
+Slide b+HK	qcb+MK 5.21 4HK	53	3	21	76	76	3	KD	-2				90	150	108	180	15						CH	KD	34	39	93					50		30	121	60	150	36	145	25		15	20
+Slide crouch MP HP	qcb+MK 5.21 2MP	44	3	13	59	59	5	5	-2				141	235	153	255	25						CH	5								75		48	190	81		52	206	40		24	33
+Slide crouch LK HP	qcb+MK 5.21 2LK	42	2	8	51	51	2	2	-8				101	205	105	219	15						CH	2								65		42	136	69		45	141	35		21	20
+Slide crouch LK HK	qcb+MK 5.21 2LK	42	2	8	51	51	KD	KD	-12			2	110	205	114	219	17			25	30	84	CH	KD	25	30	84					65		42	148	69		45	153	36		22	22
+Launch LP	qcb+HK 5.33 5LP	49	5(14)	4	71	71																																					
+Launch LK	qcb+HK 5.33 5LK	50	5(13)	4	71																																						
+Launch LK MK	qcb+HK 5.33 5LK 5 5MK	50	5(13)	4	71		12	12	9				103	160	111	174	12						CH	12								47		30	139	51		33	149	25		15	16
+Launch MP	qcb+HK 5.33 5MP	51	6(11)	4	71																																						
+Launch MK	qcb+HK 5.33 5MK	52	5(11)	4	71																																						
+Launch HP	qcb+HK 5.33 5HP	53	4(11)	4	71																																						
+Launch HK	qcb+HK 5.33 5HK	55	5(8)	4	71																																						
+Launch d+MK Low	qcb+HK 5.39 2MK	59	1	41	100	100																																					
+Launch d+MK Late	qcb+HK 5.61 2MK	75	1	37	112	112																																					
+Launch EX d+MK Low	qcb+MKHK 5.35 2MK	49	1	37	86	86																						300															
+Launch EX d+MK Late	qcb+MKHK 5.46 2MK	60	1	37	97	97																						300															
+Counter LP	qcb+LP	2	11	34	46	46	KD	KD	KD				180	250	180	250	180			49	49	49	CH	KD	49	49	49		20			126		70	242	126		70	242	126		70	242
+Counter MP	qcb+MP	2	11	34	46	46	KD	KD	KD				180	250	180	250	180			49	49	49	CH	KD	49	49	49		20			126		70	242	126		70	242	126		70	242
+Counter HP	qcb+HP	2	11	34	46	46	KD	KD	KD				180	250	180	250	180			46	46	46	CH	KD	46	46	46		20			132	31	100	242	132	31	100	242	132	31	100	242
+Counter LPMP	qcb+LPMP	1	12	29	41	41	KD	KD	KD				240	300	240	300	240			49	49	49	CH	KD	49	49	49	300				6		70	323	6		70	323	6		70	323
+Counter LPHP	qcb+LPHP	1	12	29	41	41	KD	KD	KD				240	300	240	300	240			49	49	49	CH	KD	49	49	49	300				6		70	323	6		70	323	6		70	323
+Counter MPHP	qcb+MPHP	1	12	29	41	41	KD	KD	KD				240	300	240	300	240			46	46	46	CH	KD	46	46	46	300				12	31	100	323	12	31	100	323	12	31	100	323
+Parabellum LP	qcf+LP	9	2(5)2(5)2(5)2	17	48	48	2	2	-4				70	150	73	155	18						CH	2					20			60		24	94	62		26	98	40		12	24
+Parabellum MP	qcf+MP	14	2(5)2(5)2(5)2(5)2	21	64	64	4	4	-6				80	150	83	155	21						CH	4					20			70		30	107	72		32	112	45		15	28
+Parabellum HP	qcf+HP	18	2(5)2(5)2(5)2(5)2(30)2	31	110	110	KD	KD	-9				100	150	102	155	28			20	25	79	CH	KD	20	25	79		20			80		36	134	82		38	137	50		18	37
+Parabellum PP	qcf+PPP	9	2(5)2(5)2(5)2(5)2	22	60	60	KD	KD	-4				100	150	102	150	16			53	58	112	CH	KD	53	58	112	300						42	134			44	137			15	21
+Slide Back	qcb+LK	34			34	34																																					
+Slide Punch	qcb+LK 5.12 5LPMPHP	31	9	23	62	62	KD	KD	-12				100	150	120	180	25			23	28	82	CH	KD	23	28	82		10			40		18	134	46		22	161	25		9	33
+Slide	qcb+MK	46			46	46																																					
+Slide Launch	qcb+HK	71			71	71																																					
+Slide Back EX	qcb+LKMK	32			32	32																						300															
+Slide Punch EX	qcb+LKMK 5.8 5LPMPHP	26	9	18	52	52	KD	KD	-9				160	200	192	240	40			33	38	92	CH	KD	28	33	87	300						18	215			22	259			9	53
+Slide EX	qcb+LKHK	38			38	38																						300															
+Slide Launch EX	qcb+MKHK	59			59	59																						300															
+Parabellum Launch	qcf+PPP qcb+HK	9	2(5)2(5)2(5)2(5)2	22	60		KD	KD	-4				100	150	102	150	16			20	25	79	CH	KD	20	25	79	300						42	134			44	137			15	21
+Parabellum Launch EX	qcf+PPP qcb+MKHK	9	2(5)2(5)2(5)2(5)2	22	60		KD	KD	-4				100	150	102	150	16			21	26	80	CH	KD	21	26	80	300						42	134			44	137			15	21
+Parabellum Launch Throw	qcf+PPP qcb+HK LPLK	9	2(5)2(5)2(5)2(5)2	22	60		KD	KD	-4				208	330	210	330	16			14	14	63	CH	KD	14	14	63	300				72		90	280	72		92	283			15	21
+Parabellum Launch EX Throw	qcf+PPP qcb+MKHK LPLK	9	2(5)2(5)2(5)2(5)2	22	60		KD	KD	-4				208	330	210	330	16			14	14	63	CH	KD	14	14	63	300				72		90	280	72		92	283			15	21
+Hailstorm LP	f d f+LP	12	5	25	41	41	KD	KD	-8	31	31		100	200	120	240	13			28	33	87	CH	KD	28	33	87		5			45		24	134	53		30	161	15		6	17
+Hailstorm MP	f d f+MP	12	5	28	44	44	KD	KD	-11				50	100	60	120	13			25	30	84	CH	KD	25	30	84		5			25		12	67	29		15	80	15		6	17
+Hailstorm HP	f d f+HP	12	5	28	44	44	KD	KD	-11				50	100	60	120	13			25	30	84	CH	KD	25	30	84		5			25		12	67	29		15	80	15		6	17
+Hailstorm LPMP	f d f+LPMP	12	5	25	41	41	KD	KD	-8	31	31	17	100	200	120	240	26			25	30	84	CH	KD	25	30	84	300						24	134			30	161			12	35
+Hailstorm LPHP	f d f+LPHP	12	5	25	41	41	KD	KD	-8				50	100	60	120	13			25	30	84	CH	KD	25	30	84	300						12	67			15	80			6	17
+Hailstorm MPHP	f d f+MPHP	12	5	25	41	41	KD	KD	-8				50	100	60	120	13			25	30	84	CH	KD	25	30	84	300						12	67			15	80			6	17
+Critical Art	d f d f+LP	7	3	52	61	61	KD	KD					330	0	340	0				26	26	75	CH	KD	26	26	75	900						20	445			21	458				
+Taunt	PPP+KKK	61			61	61																																					
