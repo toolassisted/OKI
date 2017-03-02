@@ -131,12 +131,12 @@ Hailstorm HP	f d f+HP	12	5	28	44	44	KD	KD	-11				50	100	60	120	13			25	30	84	CH	
 Hailstorm LPMP	f d f+LPMP	12	5	25	41	41	KD	KD	-8	31	31	17	100	200	120	240	26			25	30	84	CH	KD	25	30	84	300						24	134			30	161			12	35
 Hailstorm LPHP	f d f+LPHP	12	5	25	41	41	KD	KD	-8				50	100	60	120	13			25	30	84	CH	KD	25	30	84	300						12	67			15	80			6	17
 Hailstorm MPHP	f d f+MPHP	12	5	25	41	41	KD	KD	-8				50	100	60	120	13			25	30	84	CH	KD	25	30	84	300						12	67			15	80			6	17
-Hailstorm LP Projectile	f d f+LP	12	5(33)33		82																								5														
-Hailstorm MP Projectile	f d f+MP	12	5(36)33		85																								5														
-Hailstorm HP Projectile	f d f+HP	12	5(25)43		84																								5														
-Hailstorm LPMP Projectile	f d f+LPMP	12	5(18)47		81																							300															
-Hailstorm LPHP Projectile	f d f+LPHP	12	5(18)47		81																							300															
-Hailstorm MPHP Projectile	f d f+MPHP	12	5(18)48		82																							300															
+Hailstorm LP Projectile	f d f+LP	12	5(33)33		82		34	36	31															36					5														
+Hailstorm MP Projectile	f d f+MP	12	5(36)33		85		34	36	31															36					5														
+Hailstorm HP Projectile	f d f+HP	12	5(25)43		84		34	36	31															36					5														
+Hailstorm LPMP Projectile	f d f+LPMP	12	5(18)47		81		29	31	26															31				300															
+Hailstorm LPHP Projectile	f d f+LPHP	12	5(18)47		81		29	31	26															31				300															
+Hailstorm MPHP Projectile	f d f+MPHP	12	5(18)48		82		29	31	26															31				300															
 Critical Art	d f d f+LP	7	3	52	61	61	KD	KD					330	0	340	0				26	26	75	CH	KD	26	26	75	900						20	445			21	458				
 Parabellum PP Combo	Hailstorm LP			25	130		KD	KD	-8			36 30	100	150	102	150	42		HIT	38	43	97	CH	KD	38	43	97	300				5		42	134	5		44	137	25		27	56
 Parabellum PP Combo	Hailstorm MP			28	133		KD	KD	-11			36	100	150	102	150	29		HIT	35	40	94	CH	KD	35	40	94	300				5		42	134	5		44	137	15		21	39
