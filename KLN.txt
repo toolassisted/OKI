@@ -140,6 +140,7 @@ Hailstorm MPHP Projectile	f d f+MPHP	12	5(18)48		82		29	31	26									ADV = HIT 
 Critical Art	d f d f+LP	7	3	52	61	61	KD	KD	-37				330	0	340	0	50		HIT	26	26	75	CH	KD	26	26	75	900						20	445			21	458				67
 Parabellum PP Combo	Hailstorm LP			25	130		KD	KD	-8			36 30	100	150	102	150	42		HIT	38	43	97	CH	KD	38	43	97	300				5		42	134	5		44	137	25		27	56
 Parabellum PP Combo	Hailstorm MP			28	133		KD	KD	-11			36	100	150	102	150	29		HIT	35	40	94	CH	KD	35	40	94	300				5		42	134	5		44	137	15		21	39
+Parabellum PP Combo	Slide Back			34	123		KD						100	150					HIT	45	50	104						300				900	600	900	600								
 Parabellum PP Combo	Slide stand MP			15	148		KD						154	240				RESET	HIT	12	12	12						300				27		60	207								
 Parabellum PP Combo	Slide stand MK			16	148		KD						145	240				RESET	HIT	12	12	12						300				27		60	195								
 Parabellum PP Combo	Slide stand HP			21	156		KD						181	285				RESET	HIT	3	3	3						300				45		72	244								
