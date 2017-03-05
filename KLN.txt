@@ -140,7 +140,7 @@ Hailstorm MPHP Projectile	f d f+MPHP	12	5(18)48		82		29	31	26									ADV = HIT 
 Critical Art	d f d f+LP	7	3	52	61	61	KD	KD	-37				330	0	340	0	50		HIT	26	26	75	CH	KD	26	26	75	900						20	445			21	458				67
 Parabellum PP Combo	Hailstorm LP			25	130		KD	KD	-8			36 30	100	150	102	150	42		HIT	38	43	97	CH	KD	38	43	97	300				5		42	134	5		44	137	25		27	56
 Parabellum PP Combo	Hailstorm MP			28	133		KD	KD	-11			36	100	150	102	150	29		HIT	35	40	94	CH	KD	35	40	94	300				5		42	134	5		44	137	15		21	39
-Parabellum PP Combo	Slide Back			34	123		KD						100	150					HIT	45	50	104						300				900	600	900	600								
+Parabellum PP Combo	Slide Back			34	123		KD						100	150					HIT	45	50	104						300						42	134								
 Parabellum PP Combo	Slide stand MP			15	148		KD						154	240				RESET	HIT	12	12	12						300				27		60	207								
 Parabellum PP Combo	Slide stand MK			16	148		KD						145	240				RESET	HIT	12	12	12						300				27		60	195								
 Parabellum PP Combo	Slide stand HP			21	156		KD						181	285				RESET	HIT	3	3	3						300				45		72	244								
@@ -150,5 +150,5 @@ Parabellum PP Combo	Slide crouch HP			25	159		KD						172	285				RESET	HIT	-1	-1
 Parabellum PP Combo	Slide crouch HK			25	186		KD						190	285					HIT	25	30	84						300				45		72	256								
 Parabellum PP Combo	Slide crouch HK Punch EX			26	189		KD						282	400					HIT	35	40	94						600				22		75	380								
 Parabellum PP Combo	Slide crouch HK Hailstorm LP			25	178		KD	KD	-12			89	154	240	156	240	33		HIT	18	23	77	CH	KD	18	23	77	300				27		57	207	27		59	210	26		31	44
-Parabellum PP Combo	Slide crouch HK Hailstorm MP			34	123		KD	KD	-12			89	100	150	156	240	33		HIT	45	50	104	CH	KD	15	20	74	300						42	134	27		59	210	26		31	44
+Parabellum PP Combo	Slide crouch HK Hailstorm MP			28	181		KD	KD	-12			89	154	240	156	240	33		HIT	15	20	74	CH	KD	15	20	74	300				27		57	207	27		59	210	26		31	44
 Taunt	PPP+KKK	61			61	61																																					
