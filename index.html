@@ -434,14 +434,14 @@ var HASHSTARTUP = 5;
 var HASHACTIVE = 4;
 var HASHRECOVERY = 10;
 var HASHLIST = [];
-var OKILIST = [{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
-              ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
-              ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
-              ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
-              ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
-              ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
-              ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
-              ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}];
+var OKILIST = [{FRAMEKILL:1,STARTUP:0,MECACTIVE:"",UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+              ,{FRAMEKILL:1,STARTUP:0,MECACTIVE:"",UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+              ,{FRAMEKILL:1,STARTUP:0,MECACTIVE:"",UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+              ,{FRAMEKILL:1,STARTUP:0,MECACTIVE:"",UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+              ,{FRAMEKILL:1,STARTUP:0,MECACTIVE:"",UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+              ,{FRAMEKILL:1,STARTUP:0,MECACTIVE:"",UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+              ,{FRAMEKILL:1,STARTUP:0,MECACTIVE:"",UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+              ,{FRAMEKILL:1,STARTUP:0,MECACTIVE:"",UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}];
 
 function MECHASH() {
   var h = window.location.hash.substr(1).split("/");
@@ -464,7 +464,22 @@ function MECHASH() {
         var hh = h[i+3].split(",");
         if (hh.length >= 1 && !isNaN(hh[0]) && hh[0] != "") OKILIST[i].FRAMEKILL = +(hh[0].trim());
         if (hh.length >= 2 && !isNaN(hh[1]) && hh[1] != "") OKILIST[i].STARTUP = +(hh[1].trim());
-        if (hh.length >= 3 && !isNaN(hh[2]) && hh[2] != "") OKILIST[i].ACTIVE = +(hh[2].trim());
+        // if (hh.length >= 3 && !isNaN(hh[2]) && hh[2] != "") OKILIST[i].ACTIVE = +(hh[2].trim());
+        if (hh.length >= 3 && hh[2] != "") {
+          OKILIST[i].MECACTIVE = hh[2].trim();
+          if (!isNaN(OKILIST[i].MECACTIVE) && OKILIST[i].MECACTIVE != "") {
+            OKILIST[i].ACTIVE = +OKILIST[i].MECACTIVE;
+            OKILIST[i].UCACTIVE = "";
+          } else { 
+            OKILIST[i].ACTIVE = OKILIST[i].MECACTIVE.split(/[()]/)
+            .map(function(x){return parseInt(x)||0;})
+            .reduce(function(a,b){return a+b});
+
+            OKILIST[i].UCACTIVE = OKILIST[i].MECACTIVE.split(/[()]/)
+            .map(function(x,i){return parseInt(x)||0;})
+            .reduce(function(a,b,i){return (i==1?Array(1+a).join("A"):a)+Array(1+b).join((i%2)==0?"A":"r")});
+          }
+        }
         if (hh.length >= 4 && !isNaN(hh[3]) && hh[3] != "") OKILIST[i].RECOVERY = +(hh[3].trim());
         if (hh.length >= 5 && hh[4] != "") OKILIST[i].MOVE = (hh[4].trim().replace(/\+/g," ").replace(/[^A-Za-z0-9 -]/g,"").trim()); else OKILIST[i].MOVE = "";
       }
@@ -480,7 +495,8 @@ function UCHASH() {
         ;
 
   for (var i=1;i<=7;i++) {
-    h += OKILIST[i].FRAMEKILL + "," + OKILIST[i].STARTUP + "," + OKILIST[i].ACTIVE + "," + OKILIST[i].RECOVERY + "," + OKILIST[i].MOVE.trim().replace(/\s+/g,"+") + "/";
+    // h += OKILIST[i].FRAMEKILL + "," + OKILIST[i].STARTUP + "," + OKILIST[i].ACTIVE + "," + OKILIST[i].RECOVERY + "," + OKILIST[i].MOVE.trim().replace(/\s+/g,"+") + "/";
+    h += OKILIST[i].FRAMEKILL + "," + OKILIST[i].STARTUP + "," + OKILIST[i].MECACTIVE + "," + OKILIST[i].RECOVERY + "," + OKILIST[i].MOVE.trim().replace(/\s+/g,"+") + "/";
   }
 
   if (h != window.location.hash) { window.location.hash = h; }
@@ -583,13 +599,13 @@ var CHARS = [
           return;
         } else if (d == "RESET OKI") {
           OKILIST = [{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
-                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
-                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
-                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
-                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
-                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
-                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
-                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}];
+                        ,{FRAMEKILL:1,STARTUP:0,MECACTIVE:"",UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+                        ,{FRAMEKILL:1,STARTUP:0,MECACTIVE:"",UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+                        ,{FRAMEKILL:1,STARTUP:0,MECACTIVE:"",UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+                        ,{FRAMEKILL:1,STARTUP:0,MECACTIVE:"",UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+                        ,{FRAMEKILL:1,STARTUP:0,MECACTIVE:"",UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+                        ,{FRAMEKILL:1,STARTUP:0,MECACTIVE:"",UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+                        ,{FRAMEKILL:1,STARTUP:0,MECACTIVE:"",UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}];
 
           MECOKI(7); UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
           MECOKI(6); UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
@@ -622,13 +638,13 @@ var CHARS = [
         d3.tsv(HASHCHAR+".txt", UCGILLEY);
 
           OKILIST = [{FRAMEKILL:1,STARTUP:0,ACTIVE:0,RECOVERY:0,MOVE:""}
-                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
-                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
-                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
-                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
-                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
-                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
-                        ,{FRAMEKILL:1,STARTUP:0,UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}];
+                        ,{FRAMEKILL:1,STARTUP:0,MECACTIVE:"",UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+                        ,{FRAMEKILL:1,STARTUP:0,MECACTIVE:"",UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+                        ,{FRAMEKILL:1,STARTUP:0,MECACTIVE:"",UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+                        ,{FRAMEKILL:1,STARTUP:0,MECACTIVE:"",UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+                        ,{FRAMEKILL:1,STARTUP:0,MECACTIVE:"",UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+                        ,{FRAMEKILL:1,STARTUP:0,MECACTIVE:"",UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
+                        ,{FRAMEKILL:1,STARTUP:0,MECACTIVE:"",UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}];
 
           MECOKI(7); UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
           MECOKI(6); UCOKI(OKILIST[MEOKI].FRAMEKILL, false);
@@ -921,16 +937,16 @@ function UCGILLEY(rows){
                 if (!isNaN(DATA_STARTUP(OKIMOVE)) && DATA_STARTUP(OKIMOVE) != "") { HASHSTARTUP = +DATA_STARTUP(OKIMOVE); } else { HASHSTARTUP = 1; }
                 if (!isNaN(OKIMOVE["Recovery"]) && OKIMOVE["Recovery"] != "") { HASHRECOVERY = +OKIMOVE["Recovery"]; } else { HASHRECOVERY = 0; }
 
-
-                if (!isNaN(OKIMOVE["Active"].replace(/\<\d+\>/g,"")) && OKIMOVE["Active"].replace(/\<\d+\>/g,"") != "") {
-                  OKILIST[MEOKI].ACTIVE = +(OKIMOVE["Active"].replace(/\<\d+\>/g,""));
+                OKILIST[MEOKI].MECACTIVE = OKIMOVE["Active"].replace(/\<\d+\>/g,"");
+                if (!isNaN(OKILIST[MEOKI].MECACTIVE) && OKILIST[MEOKI].MECACTIVE != "") {
+                  OKILIST[MEOKI].ACTIVE = +(OKILIST[MEOKI].MECACTIVE);
                   OKILIST[MEOKI].UCACTIVE = "";
                 } else { 
-                  OKILIST[MEOKI].ACTIVE = OKIMOVE["Active"].replace(/\<\d+\>/g,"").split(/[()]/)
+                  OKILIST[MEOKI].ACTIVE = OKILIST[MEOKI].MECACTIVE.split(/[()]/)
                   .map(function(x){return parseInt(x)||0;})
                   .reduce(function(a,b){return a+b});
 
-                  OKILIST[MEOKI].UCACTIVE = OKIMOVE["Active"].replace(/\<\d+\>/g,"").split(/[()]/)
+                  OKILIST[MEOKI].UCACTIVE = OKILIST[MEOKI].MECACTIVE.split(/[()]/)
                   .map(function(x,i){return parseInt(x)||0;})
                   .reduce(function(a,b,i){return (i==1?Array(1+a).join("A"):a)+Array(1+b).join((i%2)==0?"A":"r")});  
                 }
@@ -1003,15 +1019,16 @@ function UCGILLEY(rows){
               OKIMOVE = pd;
               if (OKIMOVE != null) {
 
-                if (!isNaN(OKIMOVE["Active"].replace(/\<\d+\>/g,"")) && OKIMOVE["Active"].replace(/\<\d+\>/g,"") != "") {
-                  OKILIST[MEOKI].ACTIVE = +OKIMOVE["Active"].replace(/\<\d+\>/g,"");
+                OKILIST[MEOKI].MECACTIVE = OKIMOVE["Active"].replace(/\<\d+\>/g,"");
+                if (!isNaN(OKILIST[MEOKI].MECACTIVE) && OKILIST[MEOKI].MECACTIVE != "") {
+                  OKILIST[MEOKI].ACTIVE = +OKILIST[MEOKI].MECACTIVE;
                   OKILIST[MEOKI].UCACTIVE = "";
                 } else { 
-                  OKILIST[MEOKI].ACTIVE = OKIMOVE["Active"].replace(/\<\d+\>/g,"").split(/[()]/)
+                  OKILIST[MEOKI].ACTIVE = OKILIST[MEOKI].MECACTIVE.split(/[()]/)
                   .map(function(x){return parseInt(x)||0;})
                   .reduce(function(a,b){return a+b});
 
-                  OKILIST[MEOKI].UCACTIVE = OKIMOVE["Active"].replace(/\<\d+\>/g,"").split(/[()]/)
+                  OKILIST[MEOKI].UCACTIVE = OKILIST[MEOKI].MECACTIVE.split(/[()]/)
                   .map(function(x,i){return parseInt(x)||0;})
                   .reduce(function(a,b,i){return (i==1?Array(1+a).join("A"):a)+Array(1+b).join((i%2)==0?"A":"r")});
                 }
