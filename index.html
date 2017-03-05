@@ -783,7 +783,8 @@ function UCOKI(kd, hash) {
         if (FRAMEKILL > 1 && startup+active+recovery==0) {
           text = (i-(FRAMEKILL+startup+active+recovery)+1)%10;
           if (text != "0") spanclass = "UCCOUNT";
-          if (text == "0") text = CHARMINUS;
+          // if (text == "0") text = CHARMINUS;
+          if (text == "0") text = (i-(FRAMEKILL+startup+active+recovery)+1)/10;
         }
       }
     }
