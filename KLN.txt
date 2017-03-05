@@ -150,5 +150,5 @@ Parabellum PP Combo	Slide crouch HP			25	159		KD						172	285				RESET	HIT	-1	-1
 Parabellum PP Combo	Slide crouch HK			25	186		KD						190	285					HIT	25	30	84						300				45		72	256								
 Parabellum PP Combo	Slide crouch HK Punch EX			26	189		KD						282	400					HIT	35	40	94						600				22		75	380								
 Parabellum PP Combo	Slide crouch HK Hailstorm LP			25	178		KD	KD	-12			89	154	240	156	240	33		HIT	18	23	77	CH	KD	18	23	77	300				27		57	207	27		59	210	26		31	44
-Parabellum PP Combo	Slide crouch HK Hailstorm MP			28	181		KD	KD	-12			89	154	240	156	240	33		HIT	15	20	74	CH	KD	15	20	74	300				27		57	207	27		59	210	26		31	44
+Parabellum PP Combo	Slide crouch HK Hailstorm MP			34	123		KD	KD	-12			89	100	150	156	240	33		HIT	45	50	104	CH	KD	15	20	74	300						42	134	27		59	210	26		31	44
 Taunt	PPP+KKK	61			61	61																																					
