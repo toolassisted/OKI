@@ -1,51 +1,68 @@
-Move	Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	Damage	Stun	Total 	Hitstop	Chip	Attack Level	Cancel Ability	CH hit adv.	CH Damage	CH Stun	KD Adv.	KDR Adv.	KDRB Adv.	Note
-stand LP	-	4	3	6	5	2	30	70	12	8		H	SP,V	7	36	84	-			
-stand MP	-	7	2(5)2	15	2	-3	40*20	50*50	30	8*8		H*H	SP,V	4	48*24	60*60	-			
-stand HP	-	8	3	19	1	-2	90	150	29	15		H	SP,V	16	108	180	-			
-stand LK	-	5	3	7	4	2	40	70	14	8		H	SP,V	6	48	84	-			
-stand MK	-	5	2(0)2	14	3	1	30*30	50*50	22	7*7		H*H	SP,V	5	36*36	60*60	-			
-stand HK	-	12	2(9)2	16	6	1	40*40	75*75	40	8*8		H*H	SP,V	8	48*48	90*90	-			
-crouch LP	-	4	3	8	3	1	30	70	14	8		H	SP,V	5	36	84	-			
-crouch MP	-	6	2	16	1	-2	50	100	23	12		H	SP,V	3	72	120	-			
-crouch HP	-	9	2(6)3	19	8	-6	50*40	75*75	38	8*8		H*H	SP,V	??	60*48	90*90	-			
-crouch LK	-	5	3	7	4	1	20	70	14	8		L	V	6	24	84	-			
-crouch MK	-	7	3(0)2	14	4	2	20*40	50*50	25	7*7		H*H	SP,V	6	24*48	60*60	-			
-crouch HK	-	9	2(8)2	24	KD	-12	40*60	75*75	44	8*8		L*L	V	KD	48*72	90*90	69	20	25	
-jump LP	-	4	6	-	-	-	40	50	-	8		M	-	-	48	72	-			
-jump MP	-	5	4	-	-	-	70	100	-	12		M	-	-	84	120	-			
-jump HP	-	8	5	-	-	-	90	150	-	15		M	-	-	108	180	-			
-jump LK	-	4	6	-	-	-	40	50	-	8		M	-	-	48	60	-			
-jump MK	-	5	2(0)2	-	-	-	35*35	50*50	-	7*7		M*M	-	-	42*42	60*60	-			
-jump HK	-	9	2(0)2	-	-	-	48*48	90*90	-	8*8		M*M	-	-	46*46	90*90	-			
-Nirenko	df+HP	12	2(5)2	21	-2	-5	60*40	100*100	41	10*10		H*H	V	0	72*48	120*120	-			
-Senpukuga	d+PPP > K	10	2(3)2	14	5	2	30*40	50*50	30	8*8		H*H	V	7	36*48	60*60	-			
-Simonshu	LP+LK	5	2	18	KD		60*70	0*200	24	-		T	-	KD	60*70	0*200	73	14	14	
-Kyoshitsugeki	b+LP+LK	5	2	18	KD		10*120	0*170	24	-		T	-	KD	10*120	0*170	72	13	13	
-Dokunomu	HP+HK	-		3					3	-		-	-				-			POISON 902F ANIM 49F
-Nishodoku	MP+MK	22	19		-		??	??	40	-		-	-				-			
-Nikaiho	f+PPP	-							35								-			
-Nishikyu LP	d,u+LP	13	48		-7	-11	20*20	50*50	60	8*8		H*H	CA	-7	24*20	60*50	-			
-Nishikyu MP	d,u+MP	13	48		-7	-11	20*20	50*50	60	8*8		H*H	CA	-7	24*20	60*50	-			
-Nishikyu HP	d,u+HP	13	48		-7	-11	20*20	50*50	60	8*8		H*H	CA	-7	24*20	60*50	-			
-Nishikyu EX	d,u+PP	13	40		2	-2	40*40	50*50	52	8*8		H*H	-	2	48*40	60*50	-			
-Sotoja LP	b,f+LP	16	8	25	KD	-11	30*30	100*100	48	8*6		H*H	CA	KD	36*30	120*100	91	32	37	
-Sotoja MP	b,f+MP	20	8	23	KD	-9	30*40	100*100	50	8*6		H*H	CA	KD	36*40	120*100	91	32	37	
-Sotoja HP	b,f+HP	21	8	24	KD	-10	40*40	100*100	52	8*6		H*H	CA	KD	48*40	120*100	90	31	36	
-Sotoja EX	b,f+PP	14	8	19	KD	-3	50*50	100*100	40	8*8		H*H	-	KD	60*40	120*100	94	35	40	
-Ryobenda LK	b,f+LK	14	3	30	KD	-9	30*30	100*100	45	6*6		H*H	CA	KD	36*30	120*100	91	32	37	
-Ryobenda MK	b,f+MK	19	28		1	-8	40	100	46	8		H	CA	3	48	120	-			POISON 60F
-Ryobenda HK	b,f+HK	23	30		-1	-10	40	100	52	8		H	CA	1	48	120	-			POISON 100F
-Ryobenda EX	b,f+KK	15	2	32	KD	2	30*30*20*20	100*100*22*22	48	8		H*H*H*H	-	KD	36*30*20*20	120*100*22*22	84	24	79	START 17F POISON 220F
-Nikankyaku LK	f,d,df+LK	-	-	29	-	-	-	-	29	-		-	-	-	-	-	-			
-Nikankyaku MK	f,d,df+MK	-	-	30	-	-	-	-	30	-		-	-	-	-	-	-			
-Nikankyaku HK	f,d,df+HK	-	-	31	-	-	-	-	31	-		-	-	-	-	-	-			
-Nikankyaku EX	f,d,df,+KK	-	-	33	-	-	-	-	33	-		-	-	-	-	-	-			
-Shishiruirui	qcf,qcf+P	12	7		KD	??	292	0		8x7		H	-	KD	300	0	96	27	32	
-health	950																			
-stun	950																			
-taunt	61			61					61											
-jump	51(4+43+4)	47	1	4					51											
-jump forward	51(3+44+4)	47	1	4					51											
-jump backwards	52(4+44+4)	48	1	4					52											
-dash forward	20		20						20											
-dash backwards	24		24						24											
+Move	Command	Startup	Active	Recovery	Total 	Hit Advantage	CH hit adv.	Block Advantage	Damage	Stun	KD Adv.	KDR Adv.	KDRB Adv.	Note
+stand LP	-	4	3	6	12	6	8	3			-			
+stand MP	-	7	2(5)2	15	30	2	4	-3			-			
+stand HP	-	8	3	19	29	1	16	-2			-			
+stand LK	-	6	3	7	15	5	7	3			-			
+stand MK	-	6	4	14	23	3	5	1			-			
+stand HK	-	14	2(9)2	16	42	7	9	1			-			
+crouch LP	-	4	3	8	14	3	5	1			-			
+crouch MP	-	7	2	16	24	1	3	-2			-			
+crouch HP	-	9	2(6)3	19	38	8	8	-6			-			
+crouch LK	-	5	3	7	14	4	6	1			-			
+crouch MK	-	8	5	14	26	5	7	3			-			
+crouch HK	-	9	2(8)2	24	44	KD	KD	-12			69	20	25	
+Nirenko	df+HP	12	2(5)2	21	41	0	2	-5			-			
+2PPP		54			54									
+2PPP HOLD		86			86									
+2PPP KICK		21	2(3)2	14	41									
+Senpukuga CANCEL	d+PPP > K	10	2(3)2	14		6	8	2			-			
+jump LP	-	4	5	-	-	-	-	-			-			
+jump MP	-	5	4	-	-	-	-	-			-			
+jump HP	-	8	5	-	-	-	-	-			-			
+jump LK	-	4	6	-	-	-	-	-			-			
+jump MK	-	5	2(0)2	-	-	-	-	-			-			
+jump HK	-	9	2(0)2	-	-	-	-	-			-			
+Simonshu	LP+LK	5	2	18	24	KD	KD				67	8	8	
+Kyoshitsugeki	b+LP+LK	5	2	18	24	KD	KD				72	13	13	
+Nikaiho	f+PPP	-			30						-			
+Nishodoku	MP+MK	22	1	18	40	-					-			
+Dokunomu	HP+HK	1	1	2	3						-			POISON 902F ANIM 49F
+stand LP VTC	-	4	3	6		3	5	0			-			
+stand MP VTC	-	7	2(5)2	15		9	11	5			-			
+stand HP VTC	-	8	3	19		12	27	9			-			
+stand LK VTC	-	6	3	7		3	5	1			-			
+stand MK VTC	-	6	4	14		10	12	5			-			[HIT 2 ADV] +8/+10/+6
+stand HK VTC	-	14	2(9)2	16		11	13	8			-			[HIT 2 ADV] +14/+16/+8
+crouch LP VTC	-	4	3	8		3	5	1			-			
+crouch MP VTC	-	7	2	16		8	10	5			-			
+crouch HP VTC	-	9	2(6)3	19		KD	KD	7			103	44	49	[HIT 2 ADV] +19/+19/+5
+crouch LK VTC	-	5	3	7		3	5	0			-			
+crouch MK VTC	-	8	5	14		9	11	5			-			[HIT 2 ADV] +10/+12/+8
+crouch HK VTC	-	9	2(8)2	24		7	9	4			69	20	25	
+Nirenko VTC	df+HP	12	2(5)2	21		13	15	7			-			
+2PPP KICK VTC		21	2(3)2	14		11	13	7						
+Nishikyu LP	d,u+LP	13	1	47	60	-7	-7	-11			-			
+Nishikyu MP	d,u+MP	13	1	47	60	-7	-7	-11			-			
+Nishikyu HP	d,u+HP	13	1	47	60	-7	-7	-11			-			
+Nishikyu EX	d,u+PP	13	1	36	49	3	3	-1			-			
+Sotoja LP	b,f+LP	16	8	25	48	KD	KD	-11			91	32	37	
+Sotoja MP	b,f+MP	20	8	23	50	KD	KD	-9			91	32	37	
+Sotoja HP	b,f+HP	21	8	24	52	KD	KD	-10			90	31	36	
+Sotoja EX	b,f+PP	14	8	19	40	KD	KD	-3			94	35	40	
+Ryobenda LK	b,f+LK	14	3	30	45	KD	KD	-9			91	32	37	
+Ryobenda MK	b,f+MK	19	1	27	46	1	3	-8						POISON 60F
+Ryobenda HK	b,f+HK	23	1	32	55	-4	-2	-13						POISON 100F
+Ryobenda EX	b,f+KK	15	2	32	48	KD	KD	2			133	74	79	START 17F POISON 220F
+Nikankyaku LK	f,d,df+LK	-	-	29	29	-	-	-			-			
+Nikankyaku MK	f,d,df+MK	-	-	29	29	-	-	-			-			
+Nikankyaku HK	f,d,df+HK	-	-	31	31	-	-	-			-			
+Nikankyaku EX	f,d,df,+KK	-	-	33	33	-	-	-			-			
+Shishiruirui	qcf,qcf+P	10	9	148	166	KD	KD	-116			95	26	31	
+health	950													
+stun	950													
+taunt	61			61	61									
+jump	51(4+43+4)	47	1	4	51									
+jump forward	51(3+44+4)	47	1	4	51									
+jump backwards	52(4+44+4)	48	1	4	52									
+dash forward	20		20		20									
+dash backwards	24		24		24									
