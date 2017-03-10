@@ -1,74 +1,96 @@
-Move	Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	 Damage	Stun	Total 	Hitstop	Chip	Attack Level	Cancel Ability	CH hit adv.	CH Damage	CH Stun	KD Adv.	KDR Adv.	KDRB Adv.	Note
-stand LP		4	3	6	4	3	30	70	12	8	0	H	SP	6	36	84				
-stand MP		7	3	12	6	2	60	100	21	12	10	H	V	8	72	120				
-stand HP		11	3	20	-1	-6	80	150	33	15	13	H	SP,V	1	96	180				
-stand LK		4	2	8	4	2	30	70	13	8	0	H	SP,V	6	36	84				
-stand MK		7	3	13	2	-2	60	100	22	12	10	H	V	4	72	120				
-stand HK		9	3	13	6	3	80	150	24	15	13	H	V	KD 100	96	180				
-crouch LP		4	2	6	4	3	30	70	11	8	0	H	CH,SP,V	6	36	84				
-crouch MP		6	2	13	3	0	60	100	20	12	10	H	SP,V	5	72	120				
-crouch HP		10	5	23	-5	-11	100	150	37	15	17	H	V	-3	84	180				
-crouch LK		4	2	7	3	2	20	70	12	8	0	L	CH,V	5	24	84				
-crouch MK		7	2	15	-1	-2	50	100	23	12	8	L	SP,V	1	60	120				
-crouch HK		15	10	18	KD	-12	90	150	42	15	15	L	V	KD	108	180	69	20	25	
-jump LP		4	6	-	-	-	40	70		8	0	M	-	-	48	84				
-jump MP		7	3	-	-	-	50	100		12	8	M	-	-	60	120				
-jump HP		8	6	-	-	-	90	150		15	15	M	-	-	108	180				
-jump LK		3	6	-	-	-	40	70		8	0	M	-	-	48	84				
-jump MK		6	8	-	-	-	60	100		12	10	M	-	-	72	120				
-jump HK		8	6	-	-	-	90	150		15	15	M	-	-	108	180				
-hell attack	MP > MP(air)	5	4	-	-	-	50*63	100*45			8	M	-	-	60*53	120*45				
-psycho axe	df+HP	16	3	20	6	1	80	100	38	15	13	H	V	15	96	120				
-shadow axe	MP > df+HP	16	3	20	6	-5	60	60		12*15	10	H	V	6	54	54				
-psycho impact	LP+LK	5	2	18	KD	-	130	170	24	-	-	T	-	KD	130	170	87	28	28	
-psycho fall	b+LP+LK	5	2	18	KD	-	110*40	150*50	24	-	-	T	-	KD	110*40	150*50	64	15	15	
-psycho power	HP+HK			11		-			11	-		-	-	-	-	-				ANIM 56F
-psycho reflect	MP+MK	6	7	30		-			42			-	-	-	-	-				
-psycho burst	f+PPP	15	2	20	KD	-2	60	0				H					92	33	38	
-psycho blast LP	b,f+LP	10	10	21	KD	-4	70	100		12	18	H	CA,V	KD	84	120	84	24	29	
-psycho blast MP	b,f+MP	15	10	18	KD	-1	70	100		12	18	H	CA,V	KD	84	120	90	27	32	
-psycho blast HP	b,f+HP	19	10	14	KD	2	70	100		12	18	H	CA,V	KD	84	120	90	31	36	
-psycho blast EX	b,f+PP	15	-	27	KD	2	100	150		8	25	H	V	KD	120	180	110	51	56	
-double knee press LK	b,f+LK	13	2(1)3	19	3	-4	30*40	50*50		14*14	8*10	H	CA,V	3	36*40	60*50				
-double knee press MK	b,f+MK	15	2(1)3	20	2	-3	40*40	50*50		14*14	10*10	H	CA,V	2	48*40	60*50				
-double knee press HK	b,f+HK	19	2(2)3	21	1	-2	50*40	50*50		14*14	13*10	H	CA,V	1	60*40	60*50				
-double knee press EX	b,f+KK	12	6	17	KD	1	70*25*25*30	0*0*0*200		14*4*4*14	18*18	H	V	KD	84*25*25*30	0*0*0*200	19	19	19	
-head press LK	d,u+LK	45	-	-	-	-	100	200		15	25	M	CA	-	120	240				
-head press MK	d,u+MK	45	-	-	-	-	100	200		15	25	M	CA	-	120	240				
-head press HK	d,u+HK	45	-	-	-	-	100	200		15	25	M	CA	-	120	240				
-head press EX	d,u+KK	35	-	-	KD	-	60*100	0*200		14*14	15	M	-	KD	72*100	0*200	16	16	16	
-somersault skull diver	P after head press	5	10	-	-	-	80	100		14	20	M	CA	-	96	120				
-devil reverse	P before head press	15	22	-	KD	-	70	100		14	18	M	CA	KD	84	120				
-psycho inferno LP	qcb+LP	14	12	31	KD	-12	30*30*30	20*20*60		4*4*4	8*8*8	H	CA,V	KD	36*30*30	24*20*60	96	37	42	
-psycho inferno MP	qcb+MP	16	14	29	KD	-11	25x4	20x3*40		4x4	6x4	H	CA,V	KD	30*25x3	24*20*20*40	99	40	45	
-psycho inferno HP	qcb+HP	18	16	30	KD	-10	20x4*30	20x5		4x5	5x4*8	H	CA,V	KD	24*20x3*30	24*20x4	101	42	47	
-psycho inferno EX	qcb+PP	15	18	22	KD	-1	20x4*60	20x4*70		3x4*4	5x4*15	H	V	KD	24*20x3*60	24*20x3*70	110	51	56	
-ultimate psycho crusher	qcf,qcf+P	6	30	48	KD	-40	340	0		-	20x3	H	-	KD	346	0	27	27	27	
-health	1000																			
-stun	950																			
-taunt	61																			
-jump	47 (4+39+4)	43	1	4					47											
-jump forward	46 (3+39+4)	42	1	4					46											
-jump backward	47 (4+39+4)	43	1	4					47											
-dash forward	22		22						22											
-dash backward	22		22						22											
-V-TRIGGER																				
-VT psycho blast LP	b,f+LP	11	14	13	KD	1	100	100				H	CA							
-VT psycho blast MP	b,f+MP	11	14	13	KD	1	100	100				H	CA							
-VT psycho blast HP	b,f+HP	11	14	13	KD	1	100	100				H	CA							
-VT psycho blast EX	b,f+PP	14	-	29	KD	0	130	150				H	-							
-VT double knee press LK	b,f+LK	16	2(1)3	19	3	-4		50*50				H*H	CA							
-VT double knee press MK	b,f+MK	19	2(1)3	20	3	-3		50*50				H*H	CA							
-VT double knee press HK	b,f+HK	22	2(1)3	22	3	-2		50*50				H*H	CA							
-VT double knee press EX	b,f+KK	13	2(1)4	15	KD	3						H*H	-							
-VT head press LK	d,u+LK	38	-	-	KD	-	120	200				M	CA							
-VT head press MK	d,u+MK	38	-	-	KD	-	120	200				M	CA							
-VT head press HK	d,u+HK	38	-	-	KD	-	120	200				M	CA							
-VT head press EX	d,u+KK	35	-	-	KD	-						M	-							
-VT somersault skull diver	P after head press			-								M	CA							
-VT devil reverse	P before head press		22	-	KD	5	100					M	CA							
-VT psycho inferno LP	qcb+LP	14	16	22	KD	-5						H	CA							
-VT psycho inferno MP	qcb+MP	14	16	22	KD	-5						H	CA							
-VT psycho inferno HP	qcb+HP	14	16	22	KD	-5						H	CA							
-VT psycho inferno EX	qcb+PP	18	28	19	KD	4						H	-							
-VT ultimate psycho crusher	qcf,qcf+P																			
+Move	Command	Startup	Active	Recovery	Total 	Hit Advantage	CH hit adv.	Block Advantage	 Damage	Stun	KD Adv.	KDR Adv.	KDRB Adv.	Note
+dash forward	22		22		22									
+dash backward	22		22		22									
+jump	47 (4+39+4)	43	1	4	47									
+jump forward	46 (3+39+4)	42	1	4	46									
+jump backward	47 (4+39+4)	43	1	4	47									
+stand LP		4	3	7	13	4	6	3						
+stand MP		7	3	14	23	6	8	2						
+stand HP		11	3	20	33	-1	1	-6						
+stand LK		3	2	10	14	2	4	2						
+stand MK		7	3	13	22	2	4	-2						
+stand HK		9	3	13	24	6	KD	3			100	68	73	
+crouch LP		4	3	5	11	4	6	3						
+crouch MP		6	3	12	20	3	5	1						
+crouch HP		10	5	23	37	-5	-3	-11						
+crouch LK		4	2	7	12	3	5	2						
+crouch MK		7	2	15	23	-1	1	-2						
+crouch HK		15	10	18	42	KD	KD	-12			69	20	25	
+psycho axe	df+HP	18	3	20	40	6	15	1						
+shadow axe	MP > df+HP	16	3	20		2	2	-8						
+jump LP		4	6	-		-	-	-						
+jump MP		7	3	-		-	-	-						
+jump HP		8	6	-		-	-	-						
+jump LK		3	6	-		-	-	-						
+jump MK		6	6	-		-	-	-						
+jump HK		8	6	-		-	-	-						
+hell attack	MP > MP(air)	5	4	-		-	-	-						
+psycho impact	LP+LK	5	2	18	24	KD	KD	-			83	24	24	
+psycho fall	b+LP+LK	5	2	18	24	KD	KD	-			67	18	18	
+psycho burst	f+PPP	17	2	20		KD		-2			80	21	26	
+psycho reflect	MP+MK	6	7	30	42		-	-						
+psycho power	HP+HK			11	11		-	-						[FRAME 1] ALL INV
+stand LP VTC		4	3	7		2	4	1						
+stand MP VTC		7	3	14		11	13	7						
+stand HP VTC		11	3	20		9	11	4						
+stand LK VTC		3	2	10		2	4	2						
+stand MK VTC		7	3	13		6	8	2						
+stand HK VTC		9	3	13		10	KD	7			104	72	77	
+crouch LP VTC		4	3	5		0	2	-1						
+crouch MP VTC		6	3	12		6	8	4						
+crouch HP VTC		10	5	23		11	13	5						
+crouch LK VTC		4	2	7		0	2	-1						
+crouch MK VTC		7	2	15		3	5	2						
+crouch HK VTC		15	10	18		KD	KD	4			85	36	41	
+psycho axe VTC	df+HP	18	3	20		15	24	10						
+shadow axe VTC	MP > df+HP	16	3	20		11	11	1						
+psycho blast LP	b,f+LP	10	10	21	40	KD	KD	-4			83	24	29	
+psycho blast MP	b,f+MP	15	10	18	42	KD	KD	-1			86	27	32	
+psycho blast HP	b,f+HP	19	10	14	42	KD	KD	2			90	31	36	
+psycho blast EX	b,f+PP	15	1	25	40	KD	KD	4			112	53	58	
+psycho blast LP VTC	b,f+LP	10	10	21		KD	KD	15			102	43	48	
+psycho blast MP VTC	b,f+MP	15	10	18		KD	KD	15			102	43	48	
+psycho blast HP VTC	b,f+HP	19	10	14		KD	KD	14			102	43	48	
+psycho blast EX VTC	b,f+PP	15	1	25		KD	KD	17			125	66	71	
+double knee press LK	b,f+LK	13	2(1)3	19	37	2	2	-4						
+double knee press MK	b,f+MK	15	2(1)3	20	40	2	2	-3						
+double knee press HK	b,f+HK	19	2(2)3	21	46	2	2	-2						
+double knee press EX	b,f+KK	12	6	17	34	KD	KD	1			25	25	25	
+double knee press LK VTC	b,f+LK	13	2(1)3	19		4	4	-2						
+double knee press MK VTC	b,f+MK	15	2(1)3	20		5	5	0						
+double knee press HK VTC	b,f+HK	19	2(2)3	21		7	7	3						
+double knee press EX VTC	b,f+KK	12	6	17		KD	KD	7			25	25	25	
+head press LK	d,u+LK	23	27	7	56	-	-	-						
+head press MK	d,u+MK	23	27	7	56	-	-	-						
+head press HK	d,u+HK	23	27	7	56	-	-	-						
+head press EX	d,u+KK	17	24	16	56	KD	KD	-			16	16	16	
+somersault skull diver	P after head press	5	10	-		-	-	-						
+devil reverse	P before head press	15	22	-		KD	KD	-						
+psycho inferno LP	qcb+LP	14	12	31	56	KD	KD	-12			96	37	42	[CH KD ADV] -1
+psycho inferno MP	qcb+MP	16	14	29	58	KD	KD	-11			99	40	45	[CH KD ADV] -1
+psycho inferno HP	qcb+HP	18	16	30	63	KD	KD	-10			101	42	47	[CH KD ADV] -1
+psycho inferno EX	qcb+PP	15	18	22	54	KD	KD	-1			110	51	56	
+psycho inferno LP VTC	qcb+LP	14	12	31		KD	KD	19			127	68	73	[CH KD ADV] -1
+psycho inferno MP VTC	qcb+MP	16	14	29		KD	KD	20			130	71	76	[CH KD ADV] -1
+psycho inferno HP VTC	qcb+HP	18	16	30		KD	KD	24			135	76	81	[CH KD ADV] -1
+psycho inferno EX VTC	qcb+PP	15	18	22		KD	KD	27			138	79	84	
+ultimate psycho crusher	qcf,qcf+P	6	15	63	83	KD	KD	-40			27	27	27	
+taunt	61			61	61									
+health	1000													
+stun	950													
+VT psycho blast LP	b,f+LP	11	14	13	37	KD	KD	1			87	28	33	
+VT psycho blast MP	b,f+MP	11	14	13	37	KD	KD	1			87	28	33	
+VT psycho blast HP	b,f+HP	11	14	13	37	KD	KD	1			87	28	33	
+VT psycho blast EX	b,f+PP	14	1	24	38	KD	KD	5			110	51	56	
+VT double knee press LK	b,f+LK	13	2(1)3	19	37	2	2	-4						
+VT double knee press MK	b,f+MK	15	2(1)3	20	40	2	2	-3						
+VT double knee press HK	b,f+HK	19	2(1)3	22	46	2	2	-2						
+VT double knee press EX	b,f+KK	13	2(1)4	15	34	KD	KD	3			25	25	25	
+VT head press LK	d,u+LK	24	23	25	71	KD	KD	3			32	32	34	[RYU CLOSE] BLK +1 KD +32 [RYU FAR] +34
+VT head press MK	d,u+MK	24	23	25	71	KD	KD	3			32	32	34	[RYU CLOSE] BLK +1 KD +32 [RYU FAR] +34
+VT head press HK	d,u+HK	24	23	25	71	KD	KD	3			32	32	34	[RYU CLOSE] BLK +1 KD +32 [RYU FAR] +34
+VT head press EX	d,u+KK	35	12	21	67	KD	KD	2			16	16	16	
+VT devil reverse	P before head press		22	-		KD		8			101	42	47	[KD ADV] NO SAME [BLK ADV] NO SAME
+VT psycho inferno	qcb+P	14	16	22	51	KD	KD	-5			108	49	54	[CH KD ADV] +107/+48/+53
+VT psycho inferno EX	qcb+PP	15	28	19	61	KD	KD	4			120	61	66	
+VT ultimate psycho crusher	qcf,qcf+P	6	15	63	83						27	27	27	
