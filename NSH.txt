@@ -1,65 +1,102 @@
-Move	Command	Startup	Active	Recovery	Hit Advantage	Block Advantage	 Damage	Stun	Total 	Hitstop	Chip	Attack Level	Cancel Ability	CH hit adv.	CH Damage	CH Stun	KD Adv.	KDR Adv.	KDRB Adv.	Note
-stand LP		4	2	6	4	3	30	70	11	8	0	H	CH,SP,V	6	36	84				
-stand MP		6	3	13	2	0	60	100	21	10	10	H	SP,V	4	72	120				
-stand HP		7	3	22	0	-5	90	150	31	15	15	H	SP,V	14	108	180				
-stand LK		4	3	7	4	3	30	70	13	8	0	H	SP,V	6	36	84				
-stand MK		8	3	16	2	0	60	100	26	10	10	H	V	4	72	120				
-stand HK		9	4	15	1	-3	80	150	27	15	13	H	V	3	96	180				
-crouch LP		4	2	7	4	2	30	70	12	8	0	H	CH,SP,V	6	36	84				
-crouch MP		6	3	13	6	2	60	100	21	12	10	H	SP,V	8	72	120				
-crouch HP		9	2	17	6	3	80	150	27	15	13	H	CA,V	8	96	180				
-crouch LK		4	3	6	4	1	20	70	12	8	0	L	V	6	24	84				
-crouch MK		8	2	15	0	-4	50	100	24	12	8	L	V	2	60	120				
-crouch HK		8	2	24	KD	-12	100	150	33	15	17	L	V	KD	120	180	71	22	27	
-jump LP		3	6	-	-	-	40	70		8	0	M	-	-	48	84				
-jump MP		5	5	-	-	-	70	100		10	12	M	-	-	84	120				
-jump HP		6	4	-	-	-	90	150		14	15	M	-	-	108	180				
-jump LK		4	5	-	-	-	40	70		8	0	M	-	-	48	84				
-jump MK		6	7	-	-	-	60	100		10	10	M	-	-	72	120				
-jump HK		8	5	-	-	-	90	150		12	15	M	-	-	108	180				
-knee bazooka	f+LK	7	6	18	-1	-5	60	70	30	12	0	H	-	1	72	84				
-jumping sobat	f+MK	13	2	18	2	-3	60	100	32	10	10	H	-	4	72	120				
-chopping assault	f+MP	22	3	16	1	-6	60	100	40	10	10	M	-	3	72	120				
-step kick	f+HK	13	4	15	2	-2	90	150	31	12	15	H	V	4	108	180				
-spinning back knuckle	f+HP	15	3	30	-3	-13	90	150	47	15	15	H	V	KD 93	108	180				
-side knee attack	b+MK	5	4	15	2	0	60	100	23	10	10	H	SP,V	4	72	120				
-rapid punch	LP > MP	6	3	14	1	-6	30*45	70*72		8*10	0*8	H*H	SP,V	1	36*45	84*72				
-rapid kick	LK > MK	5	4	11	4	-2	30*54	70*72		8*10	0*10	H*H	-	4	36*45	84*72				
-wind shear	MP > LK > HP	6	-	-	KD	-7	60*36*48	100*45*64		10*12*10	10*0	H*H*H	-	KD	72*36*48	120*45*64	86	25	30	
-down burst	d+MP > f+MP	19	3	14	1	-6	60*54	100*90		10*10	10*10	H*M	-	2	72*54	120*90				
-raptor combination	MK > HK > MK	8	-	-	KD	-6	60*63*56	100*72*80		10*12*10	10*12	H*H*H	-	KD	72*63*56	120*72*80	91	32	37	
-dragon suplex	LP+LK	5	2	18	KD	-	120	170	24	-	-	T	-	KD	120	170	57	8	8	
-target down	b+LP+LK	5	2	18	KD	-	60*80	0*200	24	-	-	T	-	KD	60*80	0*200	69	10	10	
-air jack	LP+LK(air)	5	2	-	KD	-	130	200		-	-	T	-	KD	130	200	-	-		
-sonic move hide	HP+HK	2	1	9		-			17	-	-	-	-	-	-	-				[FRAME 2] ALL INV
-sonic move bliz air	b+HP+HK					-				-	-	-	-	-	-	-				
-sonic move steel air	f+HP+HK					-				-	-	-	-	-	-	-				
-bullet clear	MP+MK	8	8	19	2	-5	60	100		20	10	H	V	4	72	120				
-sonic move avoid	f+PPP								27	-										
-sonic boom LP	qcf+LP	15	1	32	-3	-7	50	100	47	8	8	H	CA,V	-2	60	120				
-sonic boom MP	qcf+MP	17	1	30	-1	-5	50	100	47	8	8	H	CA,V	1	60	120				
-sonic boom HP	qcf+HP	22	1	23	3	-2	50	100	45	8	8	H	CA,V	5	60					
-sonic boom EX	qcf+PP	11	1	26	4	2	60*54	100*90	37	8*8	10*10	H*H	V	6	72*54	120*90				hitAdv 3/blkAdv 1 on 2nd boom
-sonic boom EX EX	qcf+PP, P	11	1(10)1	35					57											
-sonic boom EX EX LATE	qcf+PP, P	11	1(16)1	35					63											
-sonic scythe LK	qcb+LK	10	3	24	KD	-7	80	100	36	12	20	H	CA,V	KD	96	120	85	26	31	
-sonic scythe MK	qcb+MK	15	3	22	KD	-8	100	100	39	12	25	H	CA,V	KD	120	120	89	30	35	
-sonic scythe HK	qcb+HK	17	2(3)3	21	KD	-15	80*40	100*100	45	12*10	20	H*H	V	KD	96*40	120*100	98	39	44	
-sonic scythe EX	qcb+KK	6	3(3)3(26)7	34	KD	-19	30x5	30x4*80	81	10x5	8*8*8	H	V	KD	36*30x4	36*30x3*80	86	27	32	
-moonsault slash LK	qcf+LK	37	3	11	4	1	70	100	50	12	18	H	-	6	84	120				
-moonsault slash MK	qcf+MK	37	3	12	4	2	70	100	51	12	18	H	-	6	84	120				
-moonsault slash HK	qcf+HK	37	3	14	4	3	70	100	53	12	18	H	-	6	84	120				
-moonsault slash EX	qcf+KK	39	3(6)3(22)3	10	5	1	40*40*50	50*50*50	85	8*8*12	10*10*13	H*H*H	-	5	48*40*50	60*50*50				
-tragedy assault LP	f,d,df+LP	18	2	23	KD	-5	70*30	0*100	42	-	0	H	-	KD	70*30	0*100	57	8	8	LAND 1F NO MOVE
-tragedy assault MP	f,d,df+MP	22	2	26	KD	-6	90*30	0*100	49	-	0	H	-	KD	90*30	0*100	57	8	8	LAND 1F NO MOVE
-tragedy assault HP	f,d,df+HP	34	2	28	KD	-8	120*30	0*100	63	-	0	H	-	KD	120*30	0*100	57	8	8	LAND 1F NO MOVE
-tragedy assault EX	f,d,df+PP	8	3(17)2	48	KD	-23	40*50*30	0*0*100	77	-	10*0	H*H*H	V	KD	40*50*30	0*0*100	96	37	37	
-judegement saber	qcb,qcb+P	10	3	40	KD	-31	340	0	52	-	60	H	-	KD	340	0	24	24	24	
-health	950																			
-stun	950																			
-taunt	60																			
-jump	46 (4+38+4)	42	1	4					46											EARLY WHIFF 47
-jump forward	45 (3+38+4)	41	1	4					45											EARLY WHIFF 46
-jump backward	46 (4+38+4)	42	1	4					46											EARLY WHIFF 47
-dash forward	17		17						17											
-dash backward	24		24						24											
+Move	Command	Startup	Active	Recovery	Total 	Hit Advantage	CH hit adv.	Block Advantage	 Damage	Stun	KD Adv.	KDR Adv.	KDRB Adv.	Note
+dash forward	19		19		19									
+dash backward	24		24		24									
+jump	46 (4+38+4)	42	1	4	46									EARLY WHIFF 47
+jump forward	45 (3+38+4)	41	1	4	45									EARLY WHIFF 46
+jump backward	46 (4+38+4)	42	1	4	46									EARLY WHIFF 47
+stand LP		4	2	6	11	4	6	3						
+stand MP		6	3	15	23	2	4	0						
+stand HP		8	3	22	32	0	14	-5						
+stand LK		4	3	7	13	4	6	3						
+stand MK		7	3	16	25	2	4	0						
+stand HK		9	4	15	27	1	3	-3						
+crouch LP		4	2	7	12	4	6	2						
+crouch MP		6	3	13	21	6	8	2						
+crouch HP		9	2	17	27	7	9	3						
+crouch LK		4	3	6	12	4	6	1						
+crouch MK		8	2	15	24	0	2	-4						
+crouch HK		8	2	24	33	KD	KD	-12			73	24	29	
+chopping assault	f+MP	22	3	16	40	1	3	-6						
+spinning back knuckle	f+HP	15	3	30	47	-3	KD	-13			93	59	59	
+knee bazooka	f+LK	7	6	18	30	-1	1	-5						
+jumping sobat	f+MK	13	2	18	32	2	4	-3						
+step kick	f+HK	14	4	15	32	3	5	-3						
+side knee attack	b+MK	5	4	14	22	4	6	2						
+stand LP CHAIN 2		4	2(7)2	6	20	4	6	3						
+stand LP CHAIN 3		4	2(7)2(7)2	6	29									
+stand LP CHAIN 4		4	2(7)2(7)2(7)2	6	38									
+crouch LP CHAIN 2		4	2(7)2	7	21									
+crouch LP CHAIN 3		4	2(7)2(7)2	7	30									
+crouch LP CHAIN 4		4	2(7)2(7)2(7)2	7	39									
+jump LP		3	6	-		-	-	-						
+jump MP		5	5	-		-	-	-						
+jump HP		7	5	-		-	-	-						
+jump LK		4	5	-		-	-	-						
+jump MK		6	7	-		-	-	-						
+jump HK		8	6	-		-	-	-						
+jump f+HK		9	5	-		-	-	-						
+rapid punch	LP > MP	4	2	6		1	1	-6						
+rapid kick	LK > MK	4	3	7		4	4	-2						
+wind shear LK	MP > LK	6	3	15		3	3	-7						
+wind shear HP	MP > LK > HP	6	3	15		KD	KD	-7			86	25	30	
+down burst	d+MP > f+MP	6	3	13		1	1	-6						
+raptor combination HK	MK > HK	7	3	16		KD	KD	-10			85	26	31	
+raptor combination MK	MK > HK > MK	7	3	16		KD	KD	-10			88	29	34	
+dragon suplex	LP+LK	5	2	18	24	KD	KD	-			54	5	5	
+target down	b+LP+LK	5	2	18	24	KD	KD	-			69	10	10	
+air jack	LP+LK(air)	5	2	-		KD	KD	-			84	25	25	
+sonic move avoid	f+PPP	16	26	3	44									[FRAME 1-15] HIT PROJ INV [FRAME 16-41] ALL INV [FRAME 42-45] HIT INV
+bullet clear	MP+MK	6	8	19	32	2	4	-5						
+sonic move hide	HP+HK	4	1	7	11		-	-						
+sonic move bliz air	b+HP+HK	4	25	4	32		-	-						[FRAME 12] 8LK FRAME 1
+sonic move steel air	f+HP+HK	4	25	4	32		-	-						[FRAME 12] 8LK FRAME 1
+stand LP VTC		4	2	6		0	2	-1						
+stand MP VTC		6	3	15		8	10	2						
+stand HP VTC		8	3	22		13	27	8						
+stand LK VTC		4	3	7		0	2	-1						
+stand MK VTC		7	3	16		9	11	6						
+stand HK VTC		9	4	15		8	10	4						
+crouch LP VTC		4	2	7		0	2	-2						
+crouch MP VTC		6	3	13		10	12	6						
+crouch HP VTC		9	2	17		14	16	10						
+crouch LK VTC		4	3	6		1	3	-2						
+crouch MK VTC		8	2	15		4	6	0						
+crouch HK VTC		8	2	24		KD	KD	2			87	38	43	
+f+HP VTC	f+HP	15	3	30		18	KD	8			114	80	80	
+step kick VTC	f+HK	14	4	15		10	12	4						
+side knee attack VTC	b+MK	5	4	14		10	12	8						
+rapid punch VTC	LP > MP	4	2	6		6	6	0						
+sonic boom LP	qcf+LP	15	1	32	47	-2	0	-6						
+sonic boom MP	qcf+MP	17	1	30	47	0	2	-4						
+sonic boom HP	qcf+HP	22	1	23	45	4	6	-2						
+sonic boom EX	qcf+PP	11	1	26	37	4	6	2						
+sonic boom EX EX	qcf+PP, P	11	1(10)1	35	57	3	3	2						
+sonic boom EX EX LATE	qcf+PP, P	11	1(16)1	35	63	3	3	2						
+sonic boom LP VTC	qcf+LP	15	1	32		17	19	13						
+sonic boom MP VTC	qcf+MP	17	1	30		17	19	13						
+sonic boom HP VTC	qcf+HP	22	1	23		15	17	9						
+sonic boom EX VTC	qcf+PP	11	1	26		18	20	16						
+sonic boom EX EX VTC	qcf+PP, P	11	1(10)1	35		15	17	16						
+sonic scythe LK	qcb+LK	10	3	24	36	KD	KD	-7			85	26	31	
+sonic scythe MK	qcb+MK	15	3	22	39	KD	KD	-8			89	30	35	
+sonic scythe HK	qcb+HK	17	2(3)3	21	45	KD	KD	-15			98	39	44	
+sonic scythe EX	qcb+KK	6	3(3)3(26)7	34	81	KD	KD	-19			86	27	32	
+sonic scythe LK VTC	qcb+LK	10	3	24		KD	KD	8			100	41	46	
+sonic scythe MK VTC	qcb+MK	15	3	22		KD	KD	3			102	43	48	
+sonic scythe HK VTC	qcb+HK	17	2(3)3	21		KD	KD	2			107	48	53	
+sonic scythe EX 1 VTC	qcb+KK	6	3(3)3(26)7	34		KD	KD	9			125	66	71	
+sonic scythe EX 23 VTC	qcb+KK	6	3(3)3(26)7	34		KD	KD	8			110	51	56	
+sonic scythe EX 4 VTC	qcb+KK	6	3(3)3(26)7	34		KD	KD	8			111	52	57	
+moonsault slash LK	qcf+LK	37	3	11	50	4	6	1						
+moonsault slash MK	qcf+MK	37	3	12	51	4	6	2						
+moonsault slash HK	qcf+HK	37	3	14	53	4	6	3						
+moonsault slash EX	qcf+KK	39	3(6)3(22)3	10	85	5	5	1						
+tragedy assault LP	f,d,df+LP	18	2	23	42	KD	KD	-5			57	8	8	LAND 1F NO MOVE
+tragedy assault MP	f,d,df+MP	22	2	26	49	KD	KD	-6			57	8	8	LAND 1F NO MOVE
+tragedy assault HP	f,d,df+HP	34	2	28	63	KD	KD	-8			57	8	8	LAND 1F NO MOVE
+tragedy assault EX	f,d,df+PP	8	3(17)2	48	77	KD	KD	-23			96	37	37	
+tragedy assault EX VTC	f,d,df+PP	8	3(17)2	48		KD	KD	-23			114	55	55	
+judegement saber	qcb,qcb+P	10	3	40	52	KD	KD	-31			24	24	24	
+health	950													
+stun	950													
+taunt	61													
