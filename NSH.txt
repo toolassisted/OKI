@@ -28,13 +28,6 @@ stand LP CHAIN 4		4	2(7)2(7)2(7)2	6	38
 crouch LP CHAIN 2		4	2(7)2	7	21									
 crouch LP CHAIN 3		4	2(7)2(7)2	7	30									
 crouch LP CHAIN 4		4	2(7)2(7)2(7)2	7	39									
-jump LP		3	6	-		-	-	-						
-jump MP		5	5	-		-	-	-						
-jump HP		7	5	-		-	-	-						
-jump LK		4	5	-		-	-	-						
-jump MK		6	7	-		-	-	-						
-jump HK		8	6	-		-	-	-						
-jump f+HK		9	5	-		-	-	-						
 rapid punch	LP > MP	4	2	6		1	1	-6						
 rapid kick	LK > MK	4	3	7		4	4	-2						
 wind shear LK	MP > LK	6	3	15		3	3	-7						
@@ -42,6 +35,13 @@ wind shear HP	MP > LK > HP	6	3	15		KD	KD	-7			86	25	30
 down burst	d+MP > f+MP	6	3	13		1	1	-6						
 raptor combination HK	MK > HK	7	3	16		KD	KD	-10			85	26	31	
 raptor combination MK	MK > HK > MK	7	3	16		KD	KD	-10			88	29	34	
+jump LP		3	6	-		-	-	-						
+jump MP		5	5	-		-	-	-						
+jump HP		7	5	-		-	-	-						
+jump LK		4	5	-		-	-	-						
+jump MK		6	7	-		-	-	-						
+jump HK		8	6	-		-	-	-						
+jump f+HK		9	5	-		-	-	-						
 dragon suplex	LP+LK	5	2	18	24	KD	KD	-			54	5	5	
 target down	b+LP+LK	5	2	18	24	KD	KD	-			69	10	10	
 air jack	LP+LK(air)	5	2	-		KD	KD	-			84	25	25	
