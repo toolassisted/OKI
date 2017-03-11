@@ -67,3 +67,17 @@ air tatsumaki senpukyaku MK	qcb+MK(air)	9	2(6)2(6)2			KD	KD	-			-
 air tatsumaki senpukyaku HK	qcb+HK(air)	9	2(6)2(6)2			KD	KD	-			-			
 air tatsumaki senpukyaku EX	qcb+KK(air)	8	2(4)2(2)2(3)2(2)2			KD	KD	-			-			
 shinkuu hadouken	qcf,qcf+P	4	1	61	65	KD	KD	-17			80	21	26	1F NO MOVE BUG
+health	1000													
+stun	1000													
+taunt	61			61	61									
+VT hadouken LP	qcf+LP	14	1	31	45	KD	KD	-6			92	33	38	
+VT hadouken MP	qcf+MP	14	1	32	46	KD	KD	-6			91	32	37	
+VT hadouken HP	qcf+HP	14	1	33	47	KD	KD	-6			90	31	36	
+VT hadouken EX	qcf+PP	11	1	32	43	KD	KD	-1			102	43	48	[CH] KD ADV -2
+VT hadouken (full charge)	qcf+P(hold)	65	1	31	96	KD	KD				103	44	49	[CH] KD ADV -2
+VT hadouken EX (full charge)	qcf+PP(hold)	45	1	32	77	KD	KD				102	43	48	[CH] KD ADV -2
+VT shoryuken LP	f,d,df+LP	3	12	30	44	KD	KD	-24			89	30	35	
+VT shoryuken MP	f,d,df+MP	4	11	39	53	KD	KD	-32			81	22	27	
+VT shoryuken HP	f,d,df+HP	5	10	44	58	KD	KD	-36			79	20	25	
+VT shoryuken EX	f,d,df+PP	3	12	44	58	KD	KD	-37			72	13	18	
+VT shinkuu hadouken	qcf,qcf+P	4	-	61		KD	KD	9			84	25	30	1F NO MOVE BUG
