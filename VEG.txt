@@ -17,7 +17,7 @@ crouch LK		4	2	7	12	3	5	2
 crouch MK		7	2	15	23	-1	1	-2						
 crouch HK		15	10	18	42	KD	KD	-12			69	20	25	
 psycho axe	df+HP	18	3	20	40	6	15	1						
-shadow axe	MP > df+HP	16	3	20		2	2	-8						
+shadow axe	MP > df+HP	14	3	20		2	2	-8						
 jump LP		4	6	-		-	-	-						
 jump MP		7	3	-		-	-	-						
 jump HP		8	6	-		-	-	-						
@@ -43,7 +43,7 @@ crouch LK VTC		4	2	7		0	2	-1
 crouch MK VTC		7	2	15		3	5	2						
 crouch HK VTC		15	10	18		KD	KD	4			85	36	41	
 psycho axe VTC	df+HP	18	3	20		15	24	10						
-shadow axe VTC	MP > df+HP	16	3	20		11	11	1						
+shadow axe VTC	MP > df+HP	14	3	20		11	11	1						
 psycho blast LP	b,f+LP	10	10	21	40	KD	KD	-4			83	24	29	
 psycho blast MP	b,f+MP	15	10	18	42	KD	KD	-1			86	27	32	
 psycho blast HP	b,f+HP	19	10	14	42	KD	KD	2			90	31	36	
