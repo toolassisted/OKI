@@ -80,10 +80,6 @@ AIR LEG LK LOW 9J	UF qcf+LK(air) (3+8+8)	19	2(5)2(3)2(5)2	14	53	3	3	-2
 AIR LEG MK LOW 9J	UF qcf+MK(air) (3+6+10)	19	2(2)2(4)2(4)2(2)2	13	53	3	3	-2						
 AIR LEG HK LOW 9J	UF qcf+HK(air) (3+5+12)	20	2(4)2(3)2(4)2(2)2(2)2	17	63	0	0	-3						
 AIR LEG EX LOW 9J	UF qcf+KK(air) (3+4+6)	13	2(1)2(2)2(3)2(1)2(2)2(3)2	24	62	-7	-7	-10						
-VT air hyakuretsukyaku LK	qcf+LK(air) (4+8+8)	20	2(5)2(3)2(5)2	14	54	3	3	-2						
-VT air hyakuretsukyaku MK	qcf+MK(air) (4+6+10)	20	2(2)2(4)2(4)2(2)2	13	54	3	3	-2						
-VT air hyakuretsukyaku HK	qcf+HK(air) (4+5+12)	21	2(4)2(3)2(4)2(2)2(2)2	17	64	0	0	-3						
-VT air hyakuretsukyaku EX	qcf+KK(air) (4+4+6)	14	2(2)2(1)2(3)2(1)2(2)2(3)2	24	63	-7	-7	-10						
 spinning bird kick LK	40d,u+LK	9	2(1)2(4)2(5)2(3)2	24	55	KD	KD	-6			91	32	37	
 spinning bird kick MK	40d,u+MK	15	2(1)2(4)2(4)2(3)2(6)2(5)2	24	75	KD	KD	-8			91	32	37	
 spinning bird kick HK	40d,u+HK	22	2(1)2(4)2(4)2(4)2(5)2(4)2(5)2(5)2	26	97	KD	KD	-8			91	32	37	
@@ -128,14 +124,14 @@ VT hyakuretsukyaku LK	qcf+LK	5	2(5)2(6)2(6)2	20	49	4	4	-8
 VT hyakuretsukyaku MK	qcf+MK	11	2(4)2(4)2(4)2(4)2	20	56	3	3	-9						
 VT hyakuretsukyaku HK	qcf+HK	14	2(3)2(3)2(3)2(3)2(3)2	20	60	2	2	-10						
 VT hyakuretsukyaku EX	qcf+KK	5	2(3)2(3)2(3)2(3)2(3)2(11)2(3)2(3)2(3)2	19	78	KD	KD	-2			91	32	37	
+VT air hyakuretsukyaku LK	qcf+LK(air) (4+8+8)	20	2(5)2(3)2(5)2	14	54	3	3	-2						
+VT air hyakuretsukyaku MK	qcf+MK(air) (4+6+10)	20	2(2)2(4)2(4)2(2)2	13	54	3	3	-2						
+VT air hyakuretsukyaku HK	qcf+HK(air) (4+5+12)	21	2(4)2(3)2(4)2(2)2(2)2	17	64	0	0	-3						
+VT air hyakuretsukyaku EX	qcf+KK(air) (4+4+6)	14	2(2)2(1)2(3)2(1)2(2)2(3)2	24	63	-7	-7	-10						
 VT AIR LEG LK LOW 9J	UF qcf+LK(air) (3+8+8)	19	2(5)2(3)2(5)2	14	53	3	3	-2						
 VT AIR LEG MK LOW 9J	UF qcf+MK(air) (3+6+10)	19	2(2)2(4)2(4)2(2)2	13	53	3	3	-2						
 VT AIR LEG HK LOW 9J	UF qcf+HK(air) (3+5+12)	20	2(4)2(3)2(4)2(2)2(2)2	17	63	0	0	-3						
 VT AIR LEG EX LOW 9J	UF qcf+KK(air) (3+4+6)	13	2(2)2(1)2(3)2(1)2(2)2(3)2	24	62	-7	-7	-10						
-VT AIR LEG LK LOW 9J	UF qcf+LK(air)	18	2(5)2(3)2(5)2	14	52	3	-	-1						
-VT AIR LEG MK LOW 9J	UF qcf+MK(air)	17	2(2)2(4)2(4)2(1)2	14	51	3	-	0						
-VT AIR LEG HK LOW 9J	UF qcf+HK(air)	15	2(4)2(3)2(4)2(2)2(2)2	20	61	-3	-	-6						
-VT AIR LEG EX LOW 9J	UF qcf+KK(air)	13	2(2)2(1)2(3)2(1)2(2)2(3)2	24	62	-7	-	-10						
 VT spinning bird kick LK	40d,u+LK	9	2(1)2(3)2(6)2(3)2	24	55	KD	KD	-6			91	32	37	
 VT spinning bird kick MK	40d,u+MK	15	2(1)2(4)2(4)2(3)2(6)2(5)2	24	75	KD	KD	-8			91	32	37	
 VT spinning bird kick HK	40d,u+HK	19	2(1)2(4)2(4)2(4)2(5)2(3)2(6)2(5)2	24	92	KD	KD	-8			91	32	37	
