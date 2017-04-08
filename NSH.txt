@@ -82,7 +82,7 @@ sonic boom EX VTC	qcf+PP	11	1	26		18	20	16
 sonic boom EX EX VTC	qcf+PP, P	11	1(10)1	35		15	17	16						
 sonic scythe LK	qcb+LK	10	3	24	36	KD	KD	-7			85	26	31	
 sonic scythe MK	qcb+MK	15	3	22	39	KD	KD	-8			89	30	35	
-sonic scythe HK	qcb+HK	17	2(3)3	21	45	KD	KD	-15			98	39	44	
+sonic scythe HK	qcb+HK	17	2(3)3	21	45	KD	KD	-15			101	42	47	
 sonic scythe EX	qcb+KK	6	3(3)3(26)7	34	81	KD	KD	-19			86	27	32	
 sonic scythe LK VTC	qcb+LK	10	3	24		KD	KD	8			100	41	46	
 sonic scythe MK VTC	qcb+MK	15	3	22		KD	KD	3			102	43	48	
