@@ -16,3 +16,43 @@ crouch HP	-	8	6	21	34	1	KD	-5			123	64	69
 crouch LK	-	4	2	8	13	2	4	0						
 crouch MK	-	8	2	17	26	1	3	-3						
 crouch HK	-	10	9	20	38	KD	KD	-10			68	19	24	
+jump LP	(4+1+4)	9	5											
+jump MP	(4+1+7)	12	4											
+jump HP	(4+1+9)	14	4											
+jump LK	(4+1+3)	8	6											
+jump MK	(4+1+8)	13	5											
+jump HK	(4+1+9)	14	5											
+THROW	LP+LK	5	2	18	24	KD	KD	KD			67	18	18	
+THROW BACK	b+LP+LK	5	2	18	24	KD	KD	KD			57	8	8	
+VR	f+KKK	1	1	29	29									[FRAME 1-29] HIT INV
+VSKILL	MP+MK	21	6	40	66	KD	KD	-2			56	7	12	
+VSKILL HOLD	MP+MK HOLD	35	6	57	97	KD	KD	3			119	60	65	
+VSKILL AIR	d+MP+MK	9	4	47	59	KD	KD	KD			14	14	14	
+VSKILL AIR HOLD	d+MP+MK HOLD	26	6	50	81	KD	KD	KD			84	84	84	
+VT	HP+HK	16	1	9	25	KD	KD	48			161	102	107	
+stand LP VTC	-	4	2	8				48						GAP 4
+stand MP VTC	-	6	3	16				48						
+stand HP VTC	-	11	3	21				48						
+stand LK VTC	-	3	3	8				48						GAP 5
+stand MK VTC	-	7	3	15				48						
+stand HK VTC	-	15	4	22				-4						
+crouch LP VTC	-	4	2	8				48						GAP 5
+crouch MP VTC	-	6	3	12				48						
+crouch HP VTC	-	8	6	21				48						
+crouch LK VTC	-	4	2	8				48						GAP 7
+crouch MK VTC	-	8	2	17				48						GAP 3
+crouch HK VTC	-	10	9	20		KD	KD	48			71	22	27	
+6MP		11	8	16	34	1	3	-3						
+6MP P		11	4(12)1	26	53	4	4	-4						
+6MP PP		11	4(12)1	23	50	KD	KD	8			108	50	55	
+5HP HOLD		30	12	27	68	KD	KD	-20			85	53	53	
+PP		16	5	33	53	KD	KD	-16			86	27	32	
+PPP		16	11	32	58	KD	KD	-20			93	34	39	[FRAME 1-18] ALL INV
+PPPPP		6	2(7)2(9)2	22	49	3	3	-3						
+KK		12	18	48	77	KD	KD	-38			70	11	16	[FRAME 2-9] PROJ INV [FRAME 10-14] ALL INV
+KK P		12	18	48		KD	KD	-38			85	26	31	
+KK PP		12	18	48		KD	KD	-38			113	54	59	
+CA	qcf,qcf+P	13	2(6)2(15)2(9)2(24)2(20)2(19)2	49	168	KD	KD	-21			69	10	10	
+health	1000													
+stun	1000													
+taunt	61			61	61									
