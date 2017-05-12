@@ -1,0 +1,18 @@
+Move	Command	Startup	Active	Recovery	Total 	Hit Advantage	CH hit adv.	Block Advantage	Damage	Stun	KD Adv.	KDR Adv.	KDRB Adv.	Note
+jump	46(4+38+4)	42	1	4	46									
+jump forward	45(3+38+4)	41	1	4	45									
+jump backwards	46(4+38+4)	42	1	4	46									
+dash forward	16		16		16									
+dash backwards	21		21		21									
+stand LP	-	4	2	8	13	5	7	3						
+stand MP	-	6	3	16	24	9	11	3						
+stand HP	-	11	3	21	34	2	KD	-2			93	34	39	
+stand LK	-	3	3	8	13	2	4	1						
+stand MK	-	7	3	15	24	4	6	2						
+stand HK	-	15	4	22	40	2	20	-4						
+crouch LP	-	4	2	8	13	5	7	3						
+crouch MP	-	6	3	12	20	4	6	2						
+crouch HP	-	8	6	21	34	1	KD	-5			123	64	69	
+crouch LK	-	4	2	8	13	2	4	0						
+crouch MK	-	8	2	17	26	1	3	-3						
+crouch HK	-	10	9	20	38	KD	KD	-10			68	19	24	
