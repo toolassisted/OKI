@@ -5,6 +5,9 @@ jump backwards	46(4+38+4)	42	1	4	46
 dash forward	16		16		16									
 dash backwards	21		21		21									
 stand LP	-	4	2	8	13	5	7	3	30	70				
+stand LP CHAIN 2	-	4	2(6)2	8	21	5	7	3						
+stand LP CHAIN 3	-	4	2(5)2(5)2	8	27	5	7	3						
+stand LP CHAIN 4	-	4	2(5)2(5)2(5)2	8	34	5	7	3						
 stand MP	-	6	3	16	24	9	11	3	60	100				
 stand HP	-	11	3	21	34	2	KD	-2	90	150	93	34	39	
 stand LK	-	3	3	8	13	2	4	1	30	70				
