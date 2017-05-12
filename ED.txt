@@ -35,7 +35,7 @@ stand MP VTC	-	6	3	16				48
 stand HP VTC	-	11	3	21				48						
 stand LK VTC	-	3	3	8				48						GAP 5
 stand MK VTC	-	7	3	15				48						
-stand HK VTC	-	15	4	22				-4						
+stand HK VTC	-	15	4	22				48						GAP 4
 crouch LP VTC	-	4	2	8				48						GAP 5
 crouch MP VTC	-	6	3	12				48						
 crouch HP VTC	-	8	6	21				48						
