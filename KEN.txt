@@ -16,6 +16,15 @@ crouch HP		6	5	22	32	-4	KD	-9			105	46	51
 crouch LK		4	2	7	12	4	6	1						
 crouch MK		6	2	14	21	0	2	-4						
 crouch HK		8	3	23	33	KD	KD	-12			73	24	29	
+stand LP CHAIN 2		4	2(6)2	7	20	5	7	2						
+stand LP CHAIN 3		4	2(6)2(7)2	7	29	5	7	2						
+stand LP CHAIN 4		4	2(6)2(7)2(7)2	7	38	5	7	2						
+crouch LP CHAIN 2		4	3(5)3	7	21	4	6	2						
+crouch LP CHAIN 3		4	3(5)3(5)3	7	29	4	6	2						
+crouch LP CHAIN 4		4	3(5)3(5)3	7	29	4	6	2						
+crouch LK CHAIN 2		4	2(7)2	7	21	4	6	1						
+crouch LK CHAIN 3		4	2(7)2(7)2	7	30	4	6	1						
+crouch LK CHAIN 4		4	2(7)2(7)2(7)2	7	39	4	6	1						
 jump LP		3	6	-		-	-	-						
 jump MP		5	6	-		-	-	-						
 jump HP		8	4	-		-	-	-						
