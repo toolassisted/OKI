@@ -446,6 +446,7 @@ var OKILIST = [{FRAMEKILL:1,STARTUP:0,MECACTIVE:"",UCACTIVE:"",ACTIVE:0,RECOVERY
               ,{FRAMEKILL:1,STARTUP:0,MECACTIVE:"",UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
               ,{FRAMEKILL:1,STARTUP:0,MECACTIVE:"",UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}
               ,{FRAMEKILL:1,STARTUP:0,MECACTIVE:"",UCACTIVE:"",ACTIVE:0,RECOVERY:0,MOVE:"",DATA:""}];
+var UCROW = {};
 
 function MECHASH() {
   var h = window.location.hash.substr(1).split("/");
@@ -910,7 +911,7 @@ function UCGILLEY(rows){
   FRAMETABLE.append("tbody").selectAll("tr").data(rows).enter().append("tr")
             // .classed("UC",function(d){return +DATA_STARTUP(d)==HASHSTARTUP && +d["Active"]==HASHACTIVE && +d["Recovery"]==HASHRECOVERY; })
             .selectAll("td").data(function(d){return [{key:"TOTAL",value:d["Total "] || d["Total"]}].concat(d3.entries(d)).concat([{key:"U C",value:"U C"}]);})
-            .enter().append("td").text(function(d){return d.value;})
+            .enter().append("td").text(function(d){ if (d.value == "dash forward") UCROW.DASH = this; return d.value;})
             .classed("UC",function(d){return d.key=="TOTAL" && FRAMEKILL>1 && +d.value==FRAMEKILL-1; })
             .on("click",function(d){
               var p = this.parentNode;
@@ -1127,6 +1128,11 @@ d3.select("body").on("keydown", function() {
       if (d3.event.ctrlKey) break;
       OKILIST[MEOKI].FRAMEKILL += 1;
       UCOKI(0);
+      break;
+
+
+    case 68:
+      if (UCROW.DASH) UCROW.DASH.click();
       break;
   } 
   // console.log(d3.event);
