@@ -1,0 +1,97 @@
+Move	Command	Startup	Active	Recovery	Total 	Hit Advantage	CH hit adv.	Block Advantage	Damage	Stun	KD Adv.	KDR Adv.	KDRB Adv.	Note
+dash forward	25		25		25									
+dash backwards	25		25		25									
+jump	50(8+36+6)	44 (8+36)	1	6	50									
+jump forward	50(8+36+6)	44 (8+36)	1	6	50									
+jump backwards	50(8+36+6)	44 (8+36)	1	6	50									
+stand LP	LP	5	3	10	17	4	6	3	40	70				
+stand MP	MP	9	3	18	29	7	9	5	70	100				
+stand HP	HP	20	4	25	48	0	KD	-3	100	150	102	70	70	
+VT stand HP	HP	20	4	25	48	0	KD	-3	115	150	102	70	70	
+VT stand HP (LV2)	HP (hold 24F-39F)	30	4	25	58	KD	KD	-3	115	200	97	65	65	
+VT stand HP (LV3)	HP (max hold)	45	4	25	73	KD	KD	18	115	200	97	65	65	
+stand LK	LK	6	3	12	20	4	6	3	50	70				
+stand MK	MK	11	3	18	31	2	4	0	80	100				
+stand HK	HK	18	4	29	50	KD	KD	-8	90	150	84	25	30	[CH KD ADV] +85/+26/+31
+crouch LP	d+LP	6	2	10	17	4	6	3	40	70				
+crouch MP	d+MP	13	4	18	34	2	4	-3	70	100				
+crouch HP	d+HP	12	5	35	51	-13	KD	-18	90	150	87	28	33	
+VT crouch HP	d+HP	12	5	35	51	-13	KD	-18	103	150	87	28	33	
+VT crouch HP (LV2)	d+HP (hold 16F-34F)	22	5	35	61	KD	KD	-18	103	150	89	30	35	
+VT crouch HP (LV3)	d+HP (max hold)	40	5	35	79	KD	KD	1	103	200	89	30	35	
+crouch LK	d+LK	4	2	12	17	3	5	2	40	70				
+crouch MK	d+MK	12	2	21	34	0	2	-3	60	100				
+crouch HK	d+HK	16	1(3)4	32	55	KD	KD	-14	120	150	61	12	17	
+Vroom Vroom	LP > LP	5	3(4)2	11	24	4	4	3	67	133				
+Bang Bang	d+LP > d+LP	6	2(6)3	9	25	4	4	3	67	133				
+Abi Hammer	f+MP	21	3	23	46	3	5	-8	70	100				
+Abi Lift	f+HP	10	5	18	32	4	6	1	90	150				
+VT Abi Lift	f+HP	10	5	18	32	4	6	1	103	150				
+VT Abi Lift (LV2)	f+HP (hold 17F-30F)	22	5	18	44	KD	KD	1	103	150	99	40	40	P2 CORNER KD ADV
+VT Abi Lift CORNER	f+HP (max hold)	35	5	18	57	KD	KD	14	103	200	99	40	40	P2 CORNER KD ADV
+VT Abi Lift FAR	f+HP (max hold)	35	5	18	57	KD	KD	14	103	200	112	53	53	U CORNER KD ADV
+Abi Blaster	b+HP	7	2	30	38	-3	-1	-6	90	150				
+VT Abi Blaster	b+HP	7	2	30	38	-3	-1	-6	103	150				
+VT Abi Blaster (LV1)	b+HP (hold 5F-13F)	8	2	30	39	-3	-1	-6	103	150				
+VT Abi Blaster (LV2)	b+HP (hold 14F-29F)	17	2	30	48	-3	-1	-6	103	200				
+VT Abi Blaster (LV3)	b+HP (max hold)	32	2	30	63	KD	KD	9	103	200	83	24	24	
+Abi Twist	b+HP > HP	7	1(16)1	29		KD	KD	-9	171	285	87	28	33	
+VT Abi Twist (LV1)	b+HP (hold) OR (max hold) > HP	7	1(16)1	29		KD	KD	-9	196	285	87	28	33	
+VT Abi Twist (LV2)	b+HP (hold) OR (max hold) > HP	17	1(16)1	29		KD	KD	-9	196	285	88	29	34	
+VT Abi Twist (LV3)	b+HP (hold) OR (max hold) > HP	32	1(16)1	29		KD	KD	-9	196	380	108	49	54	
+jump LP	jump LP	5	5						60	70				
+jump MP	jump MP	14	5						70	100				
+jump HP	jump HP	12	6						110	150				
+jump LK	jump LK	4	5						60	70				
+jump MK	jump MK	10	3						60	100				
+jump HK	jump HK	14	5						100	150				
+THROW Red Leaf	LP+LK	5	2	18	24	KD	KD	KD	140	170	67	18	18	
+THROW BACK Hit&Run	b+LP+LK	5	2	18	24	KD	KD	KD	130	170	52	3	3	
+VR Ontario Drop	(BLK) f+LK+MK+HK	16	2	26	43	KD	KD	-2	60	0	89	30	35	
+VS Hungabee High	MP+MK	3	10	36	48									
+VS Hungabee Low	d+MP+MK	3	10	36	48									
+VS Hungabee Hit		4	8	20		22			30	70				
+VT Max Power	HP+HK	1	1	5	6									
+L Abigail Punch	qcf+LP	14	2	31	46	KD	KD	-16	100	180	86	27	32	
+L Abigail Punch Mash	qcf+LP (MASH)	14	2	31		KD	KD		120	200	86	27	32	
+M Abigail Punch	qcf+MP	20	2	31	52	KD	KD	-19	110	180	86	27	32	
+M Abigail Punch Mash	qcf+MP (MASH)	20	2	31		KD	KD		130	200	85	26	31	
+H Abigail Punch	qcf+HP	16	2	31	48	KD	KD	-16	120	180	86	27	32	
+H Abigail Punch Mash	qcf+HP (MASH)	16	2	31		KD	KD		140	200	86	27	32	
+EX Abigail Punch	qcf+PP	14	2	38	53	KD	KD	-23	130	200	89	30	35	
+EX Abigail Punch Mash	qcf+PP (MASH)	14	2	38		KD	KD		170	230	90	31	36	
+L Giant Flip	hcb+LP	23	3(0)4	22	51	KD	KD	0	70	100	90	31	36	
+M Giant Flip	hcb+MP	33	2(0)4	22	60	KD	KD	1	80	100	90	31	36	
+H Giant Flip	hcb+HP	36	2(0)4	23	64	KD	KD	2	100	150	89	30	35	
+EX Giant Flip	hcb+PP	9	3(22)2(0)3	24	62	KD	KD	-2	120	200	110	51	56	GAP 9
+EX Giant Flip Mash	hcb+PP (MASH)	9	3(22)2(0)3(29)4(0)2	26	99	KD	KD	-8	183	290	90	31	36	GAP 9 9
+EX Giant Flip Mash	hcb+PP (MASH)	9	3(22)2(0)3(29)4(0)2(29)4(0)2	26	134	KD	KD	-8	199	314	88	-4	1	GAP 9 9 13
+L Abigail Smash	hcb+LK	6	2	52	59	KD	KD	KD	180	250	73	24	24	
+M Abigail Smash	hcb+MK	6	2	52	59	KD	KD	KD	200	250	73	24	24	
+H Abigail Smash	hcb+HK	6	2	52	59	KD	KD	KD	220	250	73	24	24	
+EX Abigail Smash	hcb+KK	6	2	52	59	KD	KD	KD	100	100	92	33	33	P2 CORNER KD ADV
+EX Abigail Smash FAR	hcb+KK	6	2	52	59	KD	KD	KD	100	100	103	44	44	U CORNER KD ADV
+Nitro Charge	KK	126	3	29	157	KD	KD	-9	100	200	85	26	31	
+VT Nitro Charge	KK	126	3	29		KD	KD	-9	115	200	85	26	31	
+Nitro Blitz	KK > (HOLD)	239	3	29	270	KD	KD	-9	100	200	85	26	31	
+VT Nitro Blitz	KK > (HOLD)	239	3	29		KD	KD	-9	115	200	85	26	31	
+Dynamite Punch	KK > P	36	3	29	67	KD	KD	-9	100	200	85	26	31	
+VT Dynamite Punch	KK > P	36	3	29		KD	KD	-9	115	200	85	26	31	
+Avalanche Press	KK > K	44	5(1)2	32	83	KD	KD	-12	150	200	79	20	25	
+VT Avalanche Press	KK > K	44	5(1)2	32		KD	KD	-12	172	200	79	20	25	
+Bay Area Sunrise	KK > LP+LK	29	2	52	82	KD	KD	KD	200	250	79	30	30	
+Hungabee High	KK > MP+MK	16	6(2)10	36	69									
+Hungabee Low	KK > d+MP+MK	16	6(2)10	36										
+Hungabee Hit		16	6(2)10	36		22			30	70				
+Drop Back	KK > b	16	1	36	52									
+EX Nitro Charge	LK+MK+HK	39	2(23)2(23)2(19)2(14)3	29	157	KD	KD	-9	170	259	88	51	56	[HIT GAP] 5 5 1 [BLK GAP] 6 6 2
+VT EX Nitro Charge	LK+MK+HK	39	2(23)2(23)2(19)2(14)3	29		KD	KD	-9	170	259	88	51	56	[HIT GAP] 5 5 1 [BLK GAP] 6 6 2
+EX Dynamite Punch	LK+MK+HK > P	32	3	29	63	KD	KD	-9	115	150	88	51	56	[HIT GAP] 5 5 1 [BLK GAP] 6 6 2
+EX Avalanche Press	LK+MK+HK > K	38	5(1)2	34	79	KD	KD	-11	170	200	80	21	26	
+EX Bay Area Sunrise	LK+MK+HK > LP+LK	25	2	52	78	KD	KD	KD	240	300	78	29	29	
+EX Hungabee	LK+MK+HK > MP+MK	3	15(1)10	36	64									
+EX Hungabee Hit		3	15(1)10	36		27			40	70				
+CA	qcf,qcf+P	4	4	118	125	KD	KD	-95	350	0	29	29	29	
+health	1100													
+stun	1050													
+taunt	61			61	61									
