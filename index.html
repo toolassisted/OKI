@@ -432,10 +432,10 @@ var MEOKI = 1;
 var KDMOVE = null;
 var OKIMOVE = null;
 var FRAMEKILL = 19;
-var HASHKD = 67+1;
-var HASHKDBR = 18+1;
-var HASHKDR = 18+1;
-var HASHCHAR = "ABG";
+var HASHKD = 78+1;
+var HASHKDBR = 19+1;
+var HASHKDR = 19+1;
+var HASHCHAR = "MNT";
 var HASHSTARTUP = 5;
 var HASHACTIVE = 4;
 var HASHRECOVERY = 10;
@@ -541,6 +541,7 @@ REDDITEMBEDCHAR["JRI"] = REDDITEMBED1 + 'https://www.reddit.com/r/SFV_JURI/comme
 REDDITEMBEDCHAR["URN"] = REDDITEMBED1 + 'https://www.reddit.com/r/SFV_URIEN/comments/54dgec/sfv_urien_oki_lol/d80wput' + REDDITEMBED2;
 REDDITEMBEDCHAR["GOK"] = REDDITEMBED1 + 'https://www.reddit.com/r/SFV_AKUMA/comments/5jj12t/sfv_akuma_oki_lol/dbgiuxt' + REDDITEMBED2;
 REDDITEMBEDCHAR["ABG"] = REDDITEMBED1 + 'https://www.reddit.com/r/SFV_ABIGAIL/comments/6qh016/sfv_abigail_oki_lol/dkx6iyp/' + REDDITEMBED2;
+REDDITEMBEDCHAR["MNT"] = REDDITEMBED1 + 'https://www.reddit.com/r/SFV_MENAT/comments/70ifib/sfv_menat_oki_lol/dn3cgkd/' + REDDITEMBED2;
 
 
 var CHARS = [
@@ -551,7 +552,7 @@ var CHARS = [
 "FAN", "GOK", "GUL", "IBK", "JRI", "KEN", "KLN",
 // ],
 // [
-"KRN", "LAR", 
+"KRN", "LAR", "MNT",
 "NCL", //"NCL2", 
 "NSH", "RMK", 
 "RSD", "RYU", //"RYU2", 
@@ -843,8 +844,8 @@ function UCGILLEY(rows){
   function DATA_KDBR(d) { return d["KDRB Adv."] || d["HIT KDBR"] || d["CH KDBR"]; }
   function DATA_KDR(d) { return d["KDR Adv."] || d["HIT KDR"] || d["CH KDR"]; }
   function DATA_KD(d) { return d["KD Adv."] || d["HIT KD"] || d["CH KD"]; }
-  function DATA_ADV_HIT(d) { return d["Hit Advantage"] || d["HIT ADV"]; }
-  function DATA_ADV_BLK(d) { return d["Block Advantage"] || d["BLK ADV"]; }
+  function DATA_ADV_HIT(d) { return d["Hit Advantage"] || d["HIT ADV"] || "-"; }
+  function DATA_ADV_BLK(d) { return d["Block Advantage"] || d["BLK ADV"] || "-"; }
   function DATA_STARTUP(d) { return d["Startup"] || d["START UP"] || ""; }
   function DATA_ACTIVE(d) { return d[" Active"] || d["ACTIVE"]; }
   function DATA_RECOVERY(d) { return d["Recovery"] || d["RECOVERY"]; }

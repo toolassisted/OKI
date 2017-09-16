@@ -1,0 +1,72 @@
+Move	Command	Startup	Active	Recovery	Total 	Hit Advantage	CH hit adv.	Block Advantage	Damage	Stun	KD Adv.	KDR Adv.	KDRB Adv.	Note
+dash forward	20		20		20									
+dash backwards	24		24		24									
+jump	49(4+41+4)	44	1	4	49									
+jump forward	48(3+41+4)	43	1	4	48									
+jump backwards	49(4+41+4)	44	1	4	49									
+stand LP	LP	4	2	8	13	4	6	3	20	70				
+stand MP	MP	5	3	13	20	4	6	2	50	100				
+stand HP	HP	8	3	19	29	2	KD	-2	80	150	95	36	41	
+stand LP ORB	LP	5	5	7	16	5	7	3	30	70				
+stand MP ORB	MP	6	6	20	31	-5	-3	-11	60	100				
+stand HP ORB	HP	12	9	16	36	-3	KD	-7	90	150	82	33	38	
+stand LK	LK	3	3	10	15	4	6	1	30	70				
+stand MK	MK	8	3	16	26	2	4	-2	60	100				
+stand HK	HK	9	3	17	28	7	27	2	80	150				
+stand HK ORB	HK	11	6	23	39	-4	KD	-8	90	150	91	59	59	
+crouch LP	d+LP	4	2	7	12	4	6	2	20	70				
+crouch MP	d+MP	6	2	14	21	4	6	2	50	100				
+crouch HP	d+HP	9	4	18	30	1	KD	-3	80	150	116	57	62	
+crouch LP ORB	d+LP	4	4	8	15	4	6	2	30	70				
+crouch MP ORB	d+MP	7	6	13	25	2	4	-3	60	100				
+crouch HP ORB	d+HP	9	5	19	32	-1	KD	-5	80	150	120	61	66	
+crouch LK	d+LK	4	2	9	14	4	6	1	20	70				
+crouch MK	d+MK	7	3	14	23	3	5	2	50	100				
+crouch HK	d+HK	9	3	25	36	KD	KD	-11	80	150	65	46	21	
+crouch HK ORB	d+HK	11	3	33	46	KD	KD	-16	90	150	57	8	13	
+f+MK	f+MK	27	1(6)1	23	57	2	1	-7	60	100				
+df+MK	df+MK	11	11	18	39	-6	-4	-10	50	100				
+jump LP	jump LP	4	5						30	70				
+jump MP	jump MP	6	4						60	100				
+jump HP	jump HP	9	4						80	150				
+jump LP ORB	jump LP	4	5						40	70				
+jump MP ORB	jump MP	8	4						70	100				
+jump HP ORB	jump HP	13	4						90	150				
+jump LK	jump LK	4	6						40	70				
+jump MK	jump MK	7	4						60	100				
+jump HK	jump HK	9	4						80	150				
+jump HK ORB	jump HK	9	4						90	150				
+L Dive Kick	u,d+LK (4+4+12)	20	12	9	40	-2	0	-6	60	70				
+M Dive Kick	u,d+MK (4+4+12)	20	9	9	37	1	3	-2	60	70				
+H Dive Kick	u,d+HK (4+4+12)	20	10	9	38	1	3	-2	60	70				
+L Dive Kick Forward	uf,d+LK (3+4+12)	19	12	9	39	-2	0	-6	60	70				
+M Dive Kick Forward	uf,d+MK (3+4+12)	19	9	9	36	1	3	-2	60	70				
+H Dive Kick Forward	uf,d+HK (3+4+12)	19	10	9	37	1	3	-2	60	70				
+THROW	LP+LK	5	2	18	24	KD	KD	KD	120	170	78	19	19	
+THROW BACK	b+LP+LK	5	2	18	24	KD	KD	KD	140	200	63	14	14	
+VR	(BLK) f+LP+MP+HP	24	17	4										
+stand VS	MP+MK	9	3	25	36	KD	KD	-18	80	150	88	29	34	
+crouch VS	d+MP+MK	14	3	22	38	KD	KD	-16	80	150	102	43	48	
+stand VS ORB	MP+MK	9	3	37	48	KD	KD	-6	80	150	76	17	22	
+crouch VS ORB	d+MP+MK	14	3	35	51	KD	KD	-3	80	150	89	30	35	
+stand VS Reflect	MP+MK	9	8	20										
+crouch VS Reflect	d+MP+MK	14	15	10										
+stand VS Reflect ORB	MP+MK	9	8	32										
+crouch VS Reflect ORB	d+MP+MK	14	15	23										
+VT	HP+HK	1	1	4	5									
+P Soul Sphere	qcf+P	5	1	16	21	16	18	3	40	70				
+L Soul Sphere	qcf+LP	14	1	24	38	2	4	-8	40	70				
+M Soul Sphere	qcf+MP	14	1	29	43	1	1	-11	40	70				
+H Soul Sphere	qcf+HP	14	1	22	36	4	6	-4	40	70				
+EX L Soul Sphere	qcf+LP+MP	19	1	28	47	7	7	3	30	0				
+EX M Soul Sphere	qcf+LP+HP	10	1	41	51	KD	KD	-10	150	200	87	28	28	
+EX H Soul Sphere	qcf+MP+HP	10	1	30	40	0	0	-9	40	70				
+L Soul Throw	dp+LP	6	15	51	71	KD	KD	KD	100	150	65	16	16	
+M Soul Throw	dp+MP	8	15	51	73	KD	KD	KD	120	150	65	16	16	
+H Soul Throw	dp+HP	10	15	51	75	KD	KD	KD	140	200	65	16	16	
+EX Soul Throw	dp+PP	6	15	51	71	KD	KD	KD	150	200	65	16	16	
+ORB	LP MP HP LK MK HK	10	1			27	29	24	20	20				
+CA	qcf,qcf+P	4	16	65	84	KD	KD	-46	330	0	8	8	8	
+health	950													
+stun	950													
+taunt	61			61	61									
