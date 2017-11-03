@@ -1,0 +1,279 @@
+Move	Command	Startup	Active	Recovery	Total 	Block Advantage	Hit Advantage	CH hit adv.	Damage	Stun	KD Adv.	KDR Adv.	KDRB Adv.	VTC HIT	VTC BLK	INV FRAME	Note
+dash forward		1	17	0	17												@AUTOMATTOCK @AKI7765 DONATE LOL
+dash backwards		1	22	0	22												
+jump	8 (4+39+4)	43	1	4	47												
+jump forward	9 (3+39+4)	42	1	4	46												
+jump backwards	7 (4+39+4)	43	1	4	47												
+																	
+STAND LP	5LP	4	2	9	14	2	4	6									LOL
+STAND MP	5MP	6	2	14	21	3	5	7									
+STAND HP	5HP	9	2	30	40	-5	-2	KD			85	26	31				
+STAND LK	5LK	5	4	6	14	2	4	6									
+STAND MK	5MK	7	3	12	21	2	7	9									
+STAND HK	5HK	13	2	24	38	-2	5	21									
+CROUCH LP	2LP	4	2	7	12	2	4	6									
+Cr.LP CHAIN	2LP>2LP	4	2(7)2	7	21	2	4	6									
+CROUCH MP	2MP	8	2	14	23	1	5	7									
+CROUCH HP	2HP	10	4	16	29	2	7	KD			103	44	49				
+CROUCH LK	2LK	5	2	8	14	2	4	6									
+CROUCH MK	2MK	8	3	17	27	-2	2	4									
+CROUCH HK	2HK	10	2	25	36	-8	KD	KD			74	21	26				
+JUMP LP	8LP	4	6														
+JUMP MP	8MP	7	4														
+JUMP HP	8HP	8	5														
+JUMP LK	8LK	4	6														
+JUMP MK	8MK	7	4														
+JUMP HK	8HK	10	4														
+																	
+Nouten Wari	6HP	22	4	20	45	-6	1	1									
+																	
+Tsurigane Otoshi	6LP+LK	5	2	18	24	KD	KD	KD			55	6	6				
+Mikoshi	4LP+LK	5	2	18	24	KD	KD	KD			62	13	13				
+																	
+V-Skill	MP+MK	14	4	29	46	7	KD	KD			73	14	19				
+V-Skill HOLD Forward	MP+MK > 6	14	4	29	46	7	KD	KD			71	12	17				
+V-reversal	6+PPP	17	2	24	42	-2	KD	KD			85	26	31				[FRAME 1-21] HIT INV
+V-Trigger	HP+HK	6		0	6											FRAME 0.5 ?	
+V-Trigger cancel version	HP+HK																
+Idaten	HP+HK	25		0	25											FRAME 6-15	[FRAME 16-17] PROJ INV
+Bushin Bakujasho	HP+HK > HP+HK	21	6	18	44	-2	KD	KD			89	30	35				[FRAME 1-7] DASH
+Idaten St.LP	HP+HK > 5LP	11	2	11	23	0	2	4									[FRAME 1-7] DASH
+Idaten St.MP	HP+HK > 5MP	13	2	19	33	-3	0	2									[FRAME 1-7] DASH
+Idaten St.HP	HP+HK > 5HP	15	2	34	50	-11	-8	-6									[FRAME 1-7] DASH
+Idaten St.LK	HP+HK > 5LK	12	4	9	24	-1	1	3									[FRAME 1-7] DASH
+Idaten St.MK	HP+HK > 5MK	13	2	18	32	-2	1	3									[FRAME 1-7] DASH
+Idaten St.HK	HP+HK > 5HK	20	2	30	51	-11	-4	-2									[FRAME 1-7] DASH
+Idaten Cr.LP	HP+HK > 2LP	11	2	9	21	0	2	4									[FRAME 1-7] DASH
+Idaten Cr.MP	HP+HK > 2MP	15	2	21	37	-4	0	2									[FRAME 1-7] DASH
+Idaten Cr. HP	HP+HK > 2HP	17	4	22	42	-4	1	3									[FRAME 1-7] DASH
+Idaten Cr. LK	HP+HK > 2LK	12	2	10	23	0	2	4									[FRAME 1-7] DASH
+Idaten Cr. MK	HP+HK > 2MK	15	3	22	39	-11	-7	-5									[FRAME 1-7] DASH
+Idaten Cr. HK	HP+HK > 2HK	19	2	31	51	-14	KD	KD			68	15	20				[FRAME 1-7] DASH
+																	
+L Bushin Gram - Koku	236+LK	14	9	23	45	-6	KD	KD			77	18	23				
+M Bushin Gram - Koku	236+MK	20	10	21	50	-6	KD	KD			78	19	24				
+H Bushin Gram - Koku	236+HK	25	11	20	55	-6	KD	KD			79	20	25				
+EX Bushin Gram - Koku	236+KK	17	21	20	57	1	KD	KD			95	36	41				
+																	
+L Bushin Gram - Koku (Strike)	236+LK	14	1	31	45												
+L Gram - Koku (Projectile)	236+LK	15	8	23	45												
+M Bushin Gram - Koku (Strike)	236+MK	20	1	30	50												
+M Bushin Gram - Koku (Projectile)	236+MK	21	9	21	50												
+H Bushin Gram - Koku (Strike)	236+HK	25	1	30	55												
+H Bushin Gram - Koku (Projectile)	236+HK	26	10	20	55												
+EX Bushin Gram - Koku (Strike)	236+KK	17	1	40	57												
+EX Bushin Gram - Koku (Projectile)	236+KK	18	20	20	57												
+																	
+L Bushin Gram - Ban	623+LK	5	12	30	46	-23	KD	KD			88	29	34				
+M Bushin Gram - Ban	623+MK	7	15	30	51	-29	KD	KD			82	23	28				
+H Bushin Gram - Ban	623+HK	7	16	37	59	-33	KD	KD			78	19	24				
+EX Bushin Gram - Ban	623+KK	5	1(1)14	48	68	-33	KD	KD			81	22	27			FRAME 1-7	
+																	
+L Bushin Gram - Ban (Strike)	623+LK	5	2	40	46												
+L Bushin Gram - Ban (Projectile)	623+LK	7	10	30	46												
+M Bushin Gram - Ban (Strike)	623+MK	7	2	43	51												
+M Bushin Gram - Ban (Projectile)	623+MK	9	13	30	51												
+H Bushin Gram - Ban (Strike)	623+HK	7	2	51	59												
+H Bushin Gram - Ban (Projectile)	623+HK	9	14	37	59												
+EX Bushin Gram - Ban (Strike)	623+KK	5	1	63	68											FRAME 1-7	
+EX Bushin Gram - Ban (Projectile)	623+KK	7	14	48	68											FRAME 1-7	
+																	
+																	
+L Bushin Gram - Teki	214+LK	15	14	23	51	-14	KD	KD			104	45	50				
+M Bushin Gram - Teki	214+MK	23	14	25	61	-14	KD	KD			111	52	57				
+H Bushin Gram - Teki	214+HK	30	14	23	66	-14	KD	KD			117	58	63				
+EX Bushin Gram - Teki	214+KK	18	2(1)18	16	54	-2	KD	KD			108	49	54				
+																	
+L Bushin Gram - Teki (Strike)	214+LK	15	2	35	51												
+L Bushin Gram - Teki (Projectile)	214+LK	17	12	23	51												
+M Bushin Gram - Teki (Strike)	214+MK	23	2	37	61												
+M Bushin Gram - Teki (Projectile)	214+MK	25	12	25	61												
+H Bushin Gram - Teki (Strike)	214+HK	30	2	35	66												
+H Bushin Gram - Teki (Projectile)	214+HK	32	12	23	66												
+EX Bushin Gram - Teki (Strike)	214+KK	18	2	35	54												
+EX Bushin Gram - Teki (Projectile)	214+KK	21	18	16	54												
+																	
+L Bushin Gram - Teki (Cancel)	214+LK	15	14	16	44												
+M Bushin Gram - Teki (Cancel)	214+MK	23	14	17	53												
+H Bushin Gram - Teki (Cancel)	214+HK	30	14	16	59												
+EX Bushin Gram - Teki (Cancel)	214+KK	18	2(1)18	9	47												
+																	
+GramTeki > L Gram Koku	214+LK > 236LK	14	9	23													
+GramTeki > M Gram Koku	214+LK > 236MK	20	10	21													
+GramTeki > H Gram Koku	214+LK > 236HK	25	11	20													
+GramTeki > EX Gram Koku	214+LK > 236KK	17	21	20													
+																	
+GramTeki > L Gram Koku (Strike)	214+LK > 236LK	14	1	31													
+GramTeki > M Gram Koku (Strike)	214+LK > 236MK	20	1	30													
+GramTeki > H Gram Koku (Strike)	214+LK > 236HK	25	1	30													
+GramTeki > EX Gram Koku (Strike)	214+LK > 236KK	17	1	40													
+																	
+GramTeki > L Gram Koku (Projectile)	214+LK > 236LK	14	8	23													
+GramTeki > M Gram Koku (Projectile)	214+LK > 236MK	20	9	21													
+GramTeki > H Gram Koku (Projectile)	214+LK > 236HK	25	10	20													
+GramTeki > EX Gram Koku (Projectile)	214+LK > 236KK	17	20	20													
+																	
+L GramTeki > L Gram Koku	214+LK > 236LK	15	14(29)9	23	89	-4											[FRAME 1-44] GRAMTEKI
+L GramTeki > M Gram Koku	214+LK > 236MK	15	14(35)10	21	94	-6											[FRAME 1-44] GRAMTEKI
+L GramTeki > H Gram Koku	214+LK > 236HK	15	14(40)11	20	99	-6											[FRAME 1-44] GRAMTEKI
+L GramTeki > EX Gram Koku	214+LK > 236KK	15	14(32)21	20	101	1											[FRAME 1-44] GRAMTEKI
+L GramTeki > L Gram Ban	214+LK > 623LK	15	14(20)12	30	90	-23											[FRAME 1-44] GRAMTEKI
+L GramTeki > M Gram Ban	214+LK > 623MK	15	14(22)15	30	95	-29											[FRAME 1-44] GRAMTEKI
+L GramTeki > H Gram Ban	214+LK > 623HK	15	14(22)16	37	103	-33											[FRAME 1-44] GRAMTEKI
+L GramTeki > EX Gram Ban	214+LK > 623KK	15	14(20)1(1)14	48	112	-26											[FRAME 1-44] GRAMTEKI
+M GramTeki > L Gram Koku	214+MK > 236LK	23	14(30)9	23	98	-4											[FRAME 1-53] GRAMTEKI
+M GramTeki > M Gram Koku	214+MK > 236MK	23	14(36)10	21	103	-6											[FRAME 1-53] GRAMTEKI
+M GramTeki > H Gram Koku	214+MK > 236HK	23	14(41)11	20	108	-6											[FRAME 1-53] GRAMTEKI
+M GramTeki > EX Gram Koku	214+MK > 236KK	23	14(33)21	20	110	1											[FRAME 1-53] GRAMTEKI
+M GramTeki > L Gram Ban	214+MK > 623LK	23	14(21)12	30	99	-23											[FRAME 1-53] GRAMTEKI
+M GramTeki > M Gram Ban	214+MK > 623MK	23	14(23)15	30	104	-29											[FRAME 1-53] GRAMTEKI
+M GramTeki > H Gram Ban	214+MK > 623HK	23	14(23)16	37	112	-33											[FRAME 1-53] GRAMTEKI
+M GramTeki > EX Gram Ban	214+MK > 623KK	23	14(21)1(1)14	48	121	-26											[FRAME 1-53] GRAMTEKI
+H GramTeki > L Gram Koku	214+HK > 236LK	30	14(29)9	23	104	-4											[FRAME 1-59] GRAMTEKI
+H GramTeki > M Gram Koku	214+HK > 236MK	30	14(35)10	21	109	-6											[FRAME 1-59] GRAMTEKI
+H GramTeki > H Gram Koku	214+HK > 236HK	30	14(40)11	20	114	-6											[FRAME 1-59] GRAMTEKI
+H GramTeki > EX Gram Koku	214+HK > 236KK	30	14(32)21	20	116	1											[FRAME 1-59] GRAMTEKI
+H GramTeki > L Gram Ban	214+HK > 623LK	30	14(20)12	30	105	-23											[FRAME 1-59] GRAMTEKI
+H GramTeki > M Gram Ban	214+HK > 623MK	30	14(22)15	30	110	-29											[FRAME 1-59] GRAMTEKI
+H GramTeki > H Gram Ban	214+HK > 623HK	30	14(22)16	37	118	-33											[FRAME 1-59] GRAMTEKI
+H GramTeki > EX Gram Ban	214+HK > 623KK	30	14(20)1(1)14	48	127	-26											[FRAME 1-59] GRAMTEKI
+EX GramTeki > L Gram Koku	214+KK > 236LK	18	2(1)18(22)9	23	92	-4											[FRAME 1-47] GRAMTEKI
+EX GramTeki > M Gram Koku	214+KK > 236MK	18	2(1)18(28)10	21	97	-6											[FRAME 1-47] GRAMTEKI
+EX GramTeki > H Gram Koku	214+KK > 236HK	18	2(1)18(33)11	20	102	-6											[FRAME 1-47] GRAMTEKI
+EX GramTeki > EX Gram Koku	214+KK > 236KK	18	2(1)18(25)21	20	104	1											[FRAME 1-47] GRAMTEKI
+EX GramTeki > L Gram Ban	214+KK > 623LK	18	2(1)18(13)12	30	93	-41											[FRAME 1-47] GRAMTEKI
+EX GramTeki > M Gram Ban	214+KK > 623MK	18	2(1)18(15)15	30	98	-46											[FRAME 1-47] GRAMTEKI
+EX GramTeki > H Gram Ban	214+KK > 623HK	18	2(1)18(15)16	37	106	-54											[FRAME 1-47] GRAMTEKI
+EX GramTeki > EX Gram Ban	214+KK > 623KK	18	2(1)18(13)1(1)14	48	115	-24											[FRAME 1-47] GRAMTEKI
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+L Bushin Jakura	236+LP	30	15	14	58												
+M Bushin Jakura	236+MP	30	15	12	56												
+H Bushin Jakura	236+HP	30	15	12	56												
+EX Bushin Jakura	236+PP	25	21	8	53												
+																	
+L Bushin Gekirinchu (Cancel)	236+LP > P	9	12	15													
+M Bushin Gekirinchu (Cancel)	236+MP > P	9	10	15													
+H Bushin Gekirinchu (Cancel)	236+HP > P	9	10	15													
+EX Bushin Gekirinchu (Cancel)	236+PP > P	9	14	9													
+																	
+L Bushin Gekirinchu	236+LP > P	38	12	15	64												
+M Bushin Gekirinchu	236+MP > P	38	10	15	62												
+H Bushin Gekirinchu	236+HP > P	38	10	15	62												
+EX Bushin Gekirinchu	236+PP > P	33	14	9	55												
+																	
+L Bushin Kirinkyaku	236+P > K	35	5	25	64												
+M Bushin Kirinkyaku	236+P > K	35	5	23	62												
+H Bushin Kirinkyaku	236+P > K	35	5	23	62												
+EX Bushin Kirinkyaku	236+P > K	30	5	21	55												
+																	
+L Bushin Tengen	236+P > LP+LK	34	2	31	66												
+M Bushin Tengen	236+P > LP+LK	34	2	29	64												
+H Bushin Tengen	236+P > LP+LK	34	2	29	64												
+EX Bushin Tengen	236+P > LP+LK	29	2	33	63												
+																	
+Shukumyo	22+PP	25		0	25												
+																	
+Batsuzan Gaisei	236+236+K	4	8	47	58											FRAME 1-11	
+																	
+																	
+																	
+YZ Dash		1	17	0	17												
+YZ Dash Back		1	22	0	22												
+YZ Jump Vertical	8 (4+38+4)	42	1	4	46												
+YZ Jump Forward	9 (3+38+4)	41	1	4	45												
+YZ Jump Back	7 (4+38+4)	42	1	4	46												
+YZ 																	
+YZ STAND LP	5LP	4	2	9	14												
+YZ STAND LP Chain	5LP > 5LP	4	2(6)2	9	22												
+YZ STAND LP Chain	5LP > 2LP	4	2(7)2	8	22												
+YZ STAND MP	5MP	5	2	16	22												
+YZ STAND HP	5HP	12	2	25	38												
+YZ STAND LK	5LK	4	4	7	14												
+YZ STAND MK	5MK	7	3	17	26												
+YZ STAND HK	5HK	12	4	24	39												
+YZ CROUCH LP	2LP	3	2	8	12												
+YZ CROUCH MP	2MP	6	3	14	22												
+YZ CROUCH HP	2HP	10	3	25	37												
+YZ CROUCH LK	2LK	5	2	8	14												
+YZ CROUCH MK	2MK	7	3	16	25												
+YZ CROUCH HK Hit 10-16	2HK	10	11	20	40												
+YZ CROUCH HK Hit 17-20	2HK																
+YZ JUMP LP	8LP	5	6														
+YZ JUMP MP	8MP	8	2														
+YZ JUMP HP	8HP	8	2														
+YZ JUMP LK	8LK	5	6														
+YZ JUMP MK	8MK	7	4														
+YZ JUMP HK	8HK	8	4														
+YZ 																	
+YZ Kubi Kudaki	6HP	22	2	22	45												
+YZ Kaeshi Saiha	5HP > 5HP																
+YZ Kagerou	5HP > 5HP > MP+MK																
+YZ Kaeshi Urasaiha	2HP > 2HP																
+YZ Urakagerou	2HP > 2HP > MP+MK																
+YZ Bushin Soukosou	5MP > 5HP																
+YZ Bushin Gokusanken - Ni	5LP > 5MP																
+YZ Bushin Gokusanken - San	5LP > 5MP > 5HP																
+YZ Bushin Gokusanken - Shu	5LP > 5MP > 5HP > 5HK																
+YZ Bushin Gokusanage	5LP > 5MP > 5HP > 2HK																
+YZ Sankaku Tobi	NEAR WALL 8 > 6																
+YZ Hassou Tobi	NEAR WALL 8 > 6 >P																
+YZ Bushin Shidenkyaku	NEAR WALL 8 > 6 >K																
+YZ 																	
+YZ Tesso	6LP+LK	5	2	18	24												
+YZ Raiju	4LP+LK	5	2	18	24												
+YZ 																	
+YZ V-Skill	MP+MK	14	2	31	46												
+YZ V-Skill HOLD Forward	MP+MK > 6	14	2	31	46												
+YZ V-reversal	6+PPP																
+YZ V-Trigger	HP+HK	6		0	6												
+YZ V-Trigger cancel version	HP+HK																
+YZ Idaten	HP+HK	25		0	25												
+YZ Bushin Seiryukyaku	HP+HK > HP+HK																
+YZ Idaten St.LP	HP+HK > 5LP																
+YZ Idaten St.MP	HP+HK > 5MP																
+YZ Idaten St.HP	HP+HK > 5HP																
+YZ Idaten St.LK	HP+HK > 5LK																
+YZ Idaten St.MK	HP+HK > 5MK																
+YZ Idaten St.HK	HP+HK > 5HK																
+YZ Idaten Cr.LP	HP+HK > 2LP																
+YZ Idaten Cr.MP	HP+HK > 2MP																
+YZ Idaten Cr. HP	HP+HK > 2HP																
+YZ Idaten Cr. LK	HP+HK > 2LK																
+YZ Idaten Cr. MK	HP+HK > 2MK																
+YZ Idaten Cr. HK	HP+HK > 2HK																
+YZ 																	
+YZ L Bushin Sho	236+LP	12	6	20	37												
+YZ M Bushin Sho	236+MP	18	6	16	39												
+YZ H Bushin Sho	236+HP	24	6	15	44												
+YZ EX Bushin Sho	236+PP	23	6	20	48												
+YZ 																	
+YZ L Hozanto	214+LP	12	6	22	39												
+YZ M Hozanto	214+MP	22	6	13	40												
+YZ H Hozanto	214+HP	27	5	14	45												
+YZ EX Hozanto	214+PP	16	4	14	33												
+YZ 																	
+YZ L Bushin Sangoku Otoshi	8 or 9 > 236+LP																
+YZ M Bushin Sangoku Otoshi	8 or 9 > 236+MP																
+YZ H Bushin Sangoku Otoshi	8 or 9 > 236+HP																
+YZ EX Bushin Sangoku Otoshi	8 or 9 > 236+PP																
+YZ 																	
+YZ Hayagake	236+K	69		0	69												
+YZ Tozetsu	236+K > LK	23		0	23												
+YZ Ashikari	236+K > MK	17	9	27	52												
+YZ Gekkou	236+K > HK	30	4	24	57												
+YZ EX Hayagake	236+KK	41		0	41												
+YZ EX Tozetsu	236+KK > LK	21		0	21												
+YZ EX Ashikari	236+KK > MK	18	9	27	53												
+YZ EX Gekkou	236+KK > HK	31	4	24	58												
+YZ 																	
+YZ Shukumyo	22+PP	25		0	25												
+YZ 																	
+YZ Batsuzan Gaisei	236,236+K	4	8	47	58											FRAME 1-11	
+																	
+																	
