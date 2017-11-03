@@ -25,13 +25,13 @@ JUMP LK	8LK	4	6
 JUMP MK	8MK	7	4														
 JUMP HK	8HK	10	4														
 																	
-Nouten Wari	6HP	22	4	20	45	-6	1	1									
+Nouten Wari	6HP	22	1(0)3	20	45	-6	1	1									
 																	
 Tsurigane Otoshi	6LP+LK	5	2	18	24	KD	KD	KD			55	6	6				
 Mikoshi	4LP+LK	5	2	18	24	KD	KD	KD			62	13	13				
 																	
-V-Skill	MP+MK	14	4	29	46	7	KD	KD			73	14	19				
-V-Skill HOLD Forward	MP+MK > 6	14	4	29	46	7	KD	KD			71	12	17				
+V-Skill	MP+MK	14	4	29	46	-7	KD	KD			73	14	19				
+V-Skill HOLD Forward	MP+MK > 6	14	4	29	46	-7	KD	KD			71	12	17				
 V-reversal	6+PPP	17	2	24	42	-2	KD	KD			85	26	31				[FRAME 1-21] HIT INV
 V-Trigger	HP+HK	6		0	6											FRAME 0.5 ?	
 V-Trigger cancel version	HP+HK																
@@ -55,28 +55,28 @@ M Bushin Gram - Koku	236+MK	20	10	21	50	-6	KD	KD			78	19	24
 H Bushin Gram - Koku	236+HK	25	11	20	55	-6	KD	KD			79	20	25				
 EX Bushin Gram - Koku	236+KK	17	21	20	57	1	KD	KD			95	36	41				
 																	
-L Bushin Gram - Koku (Strike)	236+LK	14	1	31	45												
-L Gram - Koku (Projectile)	236+LK	15	8	23	45												
-M Bushin Gram - Koku (Strike)	236+MK	20	1	30	50												
-M Bushin Gram - Koku (Projectile)	236+MK	21	9	21	50												
-H Bushin Gram - Koku (Strike)	236+HK	25	1	30	55												
-H Bushin Gram - Koku (Projectile)	236+HK	26	10	20	55												
-EX Bushin Gram - Koku (Strike)	236+KK	17	1	40	57												
-EX Bushin Gram - Koku (Projectile)	236+KK	18	20	20	57												
+L Bushin Gram - Koku (Strike)	236+LK	14	1	31	45	-6	KD	KD			77	18	23				
+L Gram - Koku (Projectile)	236+LK	15	8	23	45	-7	4	6									
+M Bushin Gram - Koku (Strike)	236+MK	20	1	30	50	-6	KD	KD			78	19	24				
+M Bushin Gram - Koku (Projectile)	236+MK	21	9	21	50	-8	2	4									
+H Bushin Gram - Koku (Strike)	236+HK	25	1	30	55	-6	KD	KD			79	20	25				
+H Bushin Gram - Koku (Projectile)	236+HK	26	10	20	55	-9	2	4									
+EX Bushin Gram - Koku (Strike)	236+KK	17	1	40	57	1	KD	KD			95	36	41				
+EX Bushin Gram - Koku (Projectile)	236+KK	18	20	20	57	-1	KD	KD			93	34	39				
 																	
 L Bushin Gram - Ban	623+LK	5	12	30	46	-23	KD	KD			88	29	34				
 M Bushin Gram - Ban	623+MK	7	15	30	51	-29	KD	KD			82	23	28				
 H Bushin Gram - Ban	623+HK	7	16	37	59	-33	KD	KD			78	19	24				
 EX Bushin Gram - Ban	623+KK	5	1(1)14	48	68	-33	KD	KD			81	22	27			FRAME 1-7	
 																	
-L Bushin Gram - Ban (Strike)	623+LK	5	2	40	46												
-L Bushin Gram - Ban (Projectile)	623+LK	7	10	30	46												
-M Bushin Gram - Ban (Strike)	623+MK	7	2	43	51												
-M Bushin Gram - Ban (Projectile)	623+MK	9	13	30	51												
-H Bushin Gram - Ban (Strike)	623+HK	7	2	51	59												
-H Bushin Gram - Ban (Projectile)	623+HK	9	14	37	59												
-EX Bushin Gram - Ban (Strike)	623+KK	5	1	63	68											FRAME 1-7	
-EX Bushin Gram - Ban (Projectile)	623+KK	7	14	48	68											FRAME 1-7	
+L Bushin Gram - Ban (Strike)	623+LK	5	2	40	46	-23	KD	KD			88	29	34				
+L Bushin Gram - Ban (Projectile)	623+LK	7	10	30	46	-7	KD	KD			?	?	?				
+M Bushin Gram - Ban (Strike)	623+MK	7	2	43	51	-29	KD	KD			82	23	28				
+M Bushin Gram - Ban (Projectile)	623+MK	9	13	30	51	-7	KD	KD			?	?	?				
+H Bushin Gram - Ban (Strike)	623+HK	7	2	51	59	-33	KD	KD			78	19	24				
+H Bushin Gram - Ban (Projectile)	623+HK	9	14	37	59	-11	KD	KD			?	?	?				
+EX Bushin Gram - Ban (Strike)	623+KK	5	1	63	68	-33	KD	KD			81	22	27			FRAME 1-7	
+EX Bushin Gram - Ban (Projectile)	623+KK	7	14	48	68	-27? PLS TEST LOL	KD	KD			?	?	?			FRAME 1-7	
 																	
 																	
 L Bushin Gram - Teki	214+LK	15	14	23	51	-14	KD	KD			104	45	50				
@@ -84,14 +84,14 @@ M Bushin Gram - Teki	214+MK	23	14	25	61	-14	KD	KD			111	52	57
 H Bushin Gram - Teki	214+HK	30	14	23	66	-14	KD	KD			117	58	63				
 EX Bushin Gram - Teki	214+KK	18	2(1)18	16	54	-2	KD	KD			108	49	54				
 																	
-L Bushin Gram - Teki (Strike)	214+LK	15	2	35	51												
-L Bushin Gram - Teki (Projectile)	214+LK	17	12	23	51												
-M Bushin Gram - Teki (Strike)	214+MK	23	2	37	61												
-M Bushin Gram - Teki (Projectile)	214+MK	25	12	25	61												
-H Bushin Gram - Teki (Strike)	214+HK	30	2	35	66												
-H Bushin Gram - Teki (Projectile)	214+HK	32	12	23	66												
-EX Bushin Gram - Teki (Strike)	214+KK	18	2	35	54												
-EX Bushin Gram - Teki (Projectile)	214+KK	21	18	16	54												
+L Bushin Gram - Teki (Strike)	214+LK	15	2	35	51	-14	KD	KD			104	45	50				
+L Bushin Gram - Teki (Projectile)	214+LK	17	12	23	51	-2	KD	KD			100	41	46				
+M Bushin Gram - Teki (Strike)	214+MK	23	2	37	61	-14	KD	KD			111	52	57				
+M Bushin Gram - Teki (Projectile)	214+MK	25	12	25	61	-4	KD	KD			102	43	48				
+H Bushin Gram - Teki (Strike)	214+HK	30	2	35	66	-14	KD	KD			117	58	63				
+H Bushin Gram - Teki (Projectile)	214+HK	32	12	23	66	-2	KD	KD			110	51	56				
+EX Bushin Gram - Teki (Strike)	214+KK	18	2	35	54	-2	KD	KD			108	49	54				
+EX Bushin Gram - Teki (Projectile)	214+KK	21	18	16	54	5	KD	KD			114	55	60				
 																	
 L Bushin Gram - Teki (Cancel)	214+LK	15	14	16	44												
 M Bushin Gram - Teki (Cancel)	214+MK	23	14	17	53												
@@ -172,14 +172,14 @@ M Bushin Kirinkyaku	236+P > K	35	5	23	62
 H Bushin Kirinkyaku	236+P > K	35	5	23	62												
 EX Bushin Kirinkyaku	236+P > K	30	5	21	55												
 																	
-L Bushin Tengen	236+P > LP+LK	34	2	31	66												
-M Bushin Tengen	236+P > LP+LK	34	2	29	64												
-H Bushin Tengen	236+P > LP+LK	34	2	29	64												
-EX Bushin Tengen	236+P > LP+LK	29	2	33	63												
+L Bushin Tengen	236+P > LP+LK	34	2	31	66		KD	KD			19	19	19				
+M Bushin Tengen	236+P > LP+LK	34	2	29	64		KD	KD			19	19	19				
+H Bushin Tengen	236+P > LP+LK	34	2	29	64		KD	KD			19	19	19				
+EX Bushin Tengen	236+P > LP+LK	29	2	33	63		KD	KD			19	19	19				
 																	
 Shukumyo	22+PP	25		0	25												
 																	
-Batsuzan Gaisei	236+236+K	4	8	47	58	-33					16	16	16			FRAME 1-11	
+Batsuzan Gaisei	236+236+K	4	8	47	58	-33	KD	KD			16	16	16			FRAME 1-11	
 																	
 																	
 																	
@@ -189,21 +189,25 @@ YZ jump	8 (4+38+4)	42	1	4	46
 YZ jump forward	9 (3+38+4)	41	1	4	45												
 YZ jump backwards	7 (4+38+4)	42	1	4	46												
 																	
-YZ STAND LP	5LP	4	2	9	14												
-YZ STAND LP Chain	5LP > 5LP	4	2(6)2	9	22												
-YZ STAND LP Chain	5LP > 2LP	4	2(7)2	8	22												
-YZ STAND MP	5MP	5	2	16	22												
-YZ STAND HP	5HP	12	2	25	38												
-YZ STAND LK	5LK	4	4	7	14												
-YZ STAND MK	5MK	7	3	17	26												
-YZ STAND HK	5HK	12	4	24	39												
-YZ CROUCH LP	2LP	3	2	8	12												
-YZ CROUCH MP	2MP	6	3	14	22												
-YZ CROUCH HP	2HP	10	3	25	37												
-YZ CROUCH LK	2LK	5	2	8	14												
-YZ CROUCH MK	2MK	7	3	16	25												
-YZ CROUCH HK Hit 10-16	2HK	10	11	20	40												
-YZ CROUCH HK Hit 17-20	2HK																
+YZ STAND LP	5LP	4	2	9	14	2	3	5									
+YZ STAND LP Chain	5LP > 5LP	4	2(6)2	9	22	2	3	5									
+YZ STAND LP Chain	5LP > 2LP	4	2(7)2	8	22	2	3	5									
+YZ STAND MP	5MP	5	2	16	22	2	8	10									
+YZ STAND HP Whiff	5HP	12	2	25	38	-2	2	4									5 FRAME EXTRA RECOVERY ON WHIFF
+YZ STAND HP Hit/Block	5HP	12	2	20	33	-2	2	4									
+YZ STAND LK	5LK	4	4	7	14	3	4	6									
+YZ STAND MK	5MK	7	3	17	26	-3	2	4									
+YZ STAND HK Whiff	5HK	12	4	24	39	-2	3	5									5 FRAME EXTRA RECOVERY ON WHIFF
+YZ STAND HK Hit/Block	5HK	12	4	19	34	-2	3	5									[FRAME 9-19] HOP OVER LOW ATTACKS
+YZ STAND HK Hit Crouching	5HK	14	2	19	34	0	5	7									VS STANDARD SIZE CROUCHING TARGET
+YZ CROUCH LP	2LP	3	2	8	12	2	4	6									
+YZ CROUCH MP	2MP	6	3	14	22	1	5	7									
+YZ CROUCH HP Whiff	2HP	10	3	25	37	-5	1	21									5 FRAME EXTRA RECOVERY ON WHIFF
+YZ CROUCH HP Hit/Block	2HP	10	3	20	32	-5	1	21									
+YZ CROUCH LK	2LK	5	2	8	14	2	3	5									
+YZ CROUCH MK	2MK	7	3	16	25	-3	2	4									
+YZ CROUCH HK Hit 10-16	2HK	10	7	20	40	-13	KD	KD			66	17	22				
+YZ CROUCH HK Hit 17-20	2HK	17	4	20	40	-10	3	14~15 PLS TEST LOL									
 YZ JUMP LP	8LP	5	6														
 YZ JUMP MP	8MP	8	2														
 YZ JUMP HP	8HP	8	2														
@@ -211,30 +215,30 @@ YZ JUMP LK	8LK	5	6
 YZ JUMP MK	8MK	7	4														
 YZ JUMP HK	8HK	8	4														
 																	
-YZ Kubi Kudaki	6HP	22	2	22	45												
-YZ Kaeshi Saiha	5HP > 5HP																
-YZ Kagerou	5HP > 5HP > MP+MK																
-YZ Kaeshi Urasaiha	2HP > 2HP																
-YZ Urakagerou	2HP > 2HP > MP+MK																
-YZ Bushin Soukosou	5MP > 5HP																
-YZ Bushin Gokusanken - Ni	5LP > 5MP																
-YZ Bushin Gokusanken - San	5LP > 5MP > 5HP																
-YZ Bushin Gokusanken - Shu	5LP > 5MP > 5HP > 5HK																
-YZ Bushin Gokusanage	5LP > 5MP > 5HP > 2HK																
+YZ Kubi Kudaki	6HP	22	1(0)1	22	45	-6	1	1									
+YZ Kaeshi Saiha	5HP > 5HP					-8	KD	KD			88	29	34				
+YZ Kagerou	5HP > 5HP > MP+MK					-7	KD	KD									
+YZ Kaeshi Urasaiha	2HP > 2HP					-8	KD	KD			86	27	32				
+YZ Urakagerou	2HP > 2HP > MP+MK					-7	KD	KD									
+YZ Bushin Soukosou	5MP > 5HP					-6	-2										
+YZ Bushin Gokusanken - Ni	5LP > 5MP					-7	-3										
+YZ Bushin Gokusanken - San	5LP > 5MP > 5HP					-11	KD				85	26	31				
+YZ Bushin Gokusanken - Shu	5LP > 5MP > 5HP > 5HK					-13	KD				82	23	28				
+YZ Bushin Gokusanage	5LP > 5MP > 5HP > 2HK						KD				64	15	15				
 YZ Sankaku Tobi	NEAR WALL 8 > 6																
 YZ Hassou Tobi	NEAR WALL 8 > 6 >P																
 YZ Bushin Shidenkyaku	NEAR WALL 8 > 6 >K																
 																	
-YZ Tesso	6LP+LK	5	2	18	24												
-YZ Raiju	4LP+LK	5	2	18	24												
+YZ Tesso	6LP+LK	5	2	18	24		KD	KD			61	12	12				
+YZ Raiju	4LP+LK	5	2	18	24		KD	KD			63	14	14				
 																	
-YZ V-Skill	MP+MK	14	2	31	46												
-YZ V-Skill HOLD Forward	MP+MK > 6	14	2	31	46												
-YZ V-reversal	6+PPP																
+YZ V-Skill	MP+MK	14	2	31	46		KD	KD									
+YZ V-Skill HOLD Forward	MP+MK > 6	14	2	31	46		KD	KD									
+YZ V-reversal	6+PPP	17	2	24	42	-2	KD	KD			85	26	31				
 YZ V-Trigger	HP+HK	6		0	6												
 YZ V-Trigger cancel version	HP+HK																
 YZ Idaten	HP+HK	25		0	25												
-YZ Bushin Seiryukyaku	HP+HK > HP+HK																
+YZ Bushin Seiryukyaku	HP+HK > HP+HK										80	21	26				
 YZ Idaten St.LP	HP+HK > 5LP																
 YZ Idaten St.MP	HP+HK > 5MP																
 YZ Idaten St.HP	HP+HK > 5HP																
@@ -248,31 +252,32 @@ YZ Idaten Cr. LK	HP+HK > 2LK
 YZ Idaten Cr. MK	HP+HK > 2MK																
 YZ Idaten Cr. HK	HP+HK > 2HK																
 																	
-YZ L Bushin Sho	236+LP	12	6	20	37												
-YZ M Bushin Sho	236+MP	18	6	16	39												
-YZ H Bushin Sho	236+HP	24	6	15	44												
-YZ EX Bushin Sho	236+PP	23	6	20	48												
+YZ L Bushin Sho	236+LP	12	6	20	37	-4	KD	KD			83	24	29				ALL PALMS NULLIFY 1 HIT OF PROJECTILE
+YZ M Bushin Sho	236+MP	18	6	16	39	-2	KD	KD			87	28	33				2 HITS BUT ALWAYS -2 ON BLOCK
+YZ H Bushin Sho	236+HP	24	6	15	44	2	KD	KD			88	29	34				3 HITS BUT ALWAYS +2 ON BLOCK
+YZ EX Bushin Sho	236+PP	23	6	20	48	2	KD	KD			83	51	51				CRUMPLE ON HIT
 																	
-YZ L Hozanto	214+LP	12	6	22	39												
-YZ M Hozanto	214+MP	22	6	13	40												
-YZ H Hozanto	214+HP	27	5	14	45												
-YZ EX Hozanto	214+PP	16	4	14	33												
+YZ L Hozanto Hit/Block	214+LP	12	6	12	29	-6	KD	KD			107	48	53				[FRAME 1-17] INVINC VS AIRBORNE STRIKES
+YZ L Hozanto Whiff	214+LP	12	6	22	39	-6	KD	KD			107	48	53				[FRAME 1-17] INVINC VS AIRBORNE STRIKES
+YZ M Hozanto	214+MP	22	6	13	40	-6	KD	KD			108	49	54				[FRAME 8-27] UPPER BODY PROJ INVINC
+YZ H Hozanto	214+HP	27	5	14	45	-6	KD	KD			108	49	54				[FRAME 7-31] UPPER BODY PROJ INVINC
+YZ EX Hozanto	214+PP	16	4	14	33	-6	KD	KD			109	50	55				[FRAME 7-19] UPPER BODY PROJ INVINC
 																	
-YZ L Bushin Sangoku Otoshi	8 or 9 > 236+LP																
-YZ M Bushin Sangoku Otoshi	8 or 9 > 236+MP																
-YZ H Bushin Sangoku Otoshi	8 or 9 > 236+HP																
-YZ EX Bushin Sangoku Otoshi	8 or 9 > 236+PP																
+YZ L Bushin Sangoku Otoshi	8 or 9 > 236+LP	4	2				KD	KD			16	16	16				
+YZ M Bushin Sangoku Otoshi	8 or 9 > 236+MP	4	2				KD	KD			16	16	16				
+YZ H Bushin Sangoku Otoshi	8 or 9 > 236+HP	4	2				KD	KD			16	16	16				
+YZ EX Bushin Sangoku Otoshi	8 or 9 > 236+PP	4	2				KD	KD			16	16	16				STRIKE HITBOX
 																	
-YZ Hayagake	236+K	69		0	69												
+YZ Hayagake	236+K	69		0	69												[FRAME 8-49] CANCEL INTO FOLLOW-UP
 YZ Tozetsu	236+K > LK	23		0	23												
-YZ Ashikari	236+K > MK	17	9	27	52												
-YZ Gekkou	236+K > HK	30	4	24	57												
-YZ EX Hayagake	236+KK	41		0	41												
-YZ EX Tozetsu	236+KK > LK	21		0	21												
-YZ EX Ashikari	236+KK > MK	18	9	27	53												
-YZ EX Gekkou	236+KK > HK	31	4	24	58												
+YZ Ashikari	236+K > MK	17	9	27	52		-21	KD			61	12	17				[FRAME 17-28] UPPER BODY PROJ INVINC
+YZ Gekkou	236+K > HK	30	2(0)2	24	57		-5	KD			71	22	27				
+YZ EX Hayagake	236+KK	41		0	41											FRAME 9-21	[FRAME 9-21] CANCEL INTO FOLLOW-UP
+YZ EX Tozetsu	236+KK > LK	21		0	21											FRAME 10-12	
+YZ EX Ashikari	236+KK > MK	18	9	27	53		-21	KD			61	12	17			FRAME 10-12	[FRAME 18-29] UPPER BODY PROJ INVINC
+YZ EX Gekkou	236+KK > HK	31	2(0)2	24	58		-2	KD			71	22	27			FRAME 10-12	
 																	
 YZ Shukumyo	22+PP	25		0	25												
 																	
-YZ Batsuzan Gaisei	236,236+K	4	8	47	58											FRAME 1-11	
+YZ Batsuzan Gaisei	236,236+K	4	8	47	58		KD	KD			16	16	16			FRAME 1-11	
 																	
