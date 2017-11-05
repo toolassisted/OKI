@@ -98,10 +98,10 @@ M Bushin Gram - Teki (Cancel)	214+MK	23	14	17	53
 H Bushin Gram - Teki (Cancel)	214+HK	30	14	16	59												
 EX Bushin Gram - Teki (Cancel)	214+KK	18	2(1)18	9	47												
 																	
-GramTeki > L Gram Koku	214+K > 236LK	14	9	23		-4											
-GramTeki > M Gram Koku	214+K > 236MK	20	10	21		-6											
-GramTeki > H Gram Koku	214+K > 236HK	25	11	20		-6											
-GramTeki > EX Gram Koku	214+K > 236KK	17	21	20		1											
+GramTeki > L Gram Koku	214+K > 236LK	14	9	23		-4	KD	KD			79	20	25				[KD ADV] BLK GRAMTEKI HIT KOKU
+GramTeki > M Gram Koku	214+K > 236MK	20	10	21		-6	KD	KD			78	19	24				[KD ADV] BLK GRAMTEKI HIT KOKU
+GramTeki > H Gram Koku	214+K > 236HK	25	11	20		-6	KD	KD			79	20	25				[KD ADV] BLK GRAMTEKI HIT KOKU
+GramTeki > EX Gram Koku	214+K > 236KK	17	21	20		1	KD	KD			95	36	41				[KD ADV] BLK GRAMTEKI HIT KOKU
 																	
 GramTeki > L Gram Koku (Strike)	214+K > 236LK	14	1	31													
 GramTeki > M Gram Koku (Strike)	214+K > 236MK	20	1	30													
@@ -114,37 +114,37 @@ GramTeki > H Gram Koku (Projectile)	214+K > 236HK	25	10	20
 GramTeki > EX Gram Koku (Projectile)	214+K > 236KK	17	20	20													
 																	
 L GramTeki > L Gram Koku	214+LK > 236LK	15	14(29)9	23	89	-4	KD	KD			80	21	26				[FRAME 1-44] GRAMTEKI
-L GramTeki > M Gram Koku	214+LK > 236MK	15	14(35)10	21	94	-6											[FRAME 1-44] GRAMTEKI
-L GramTeki > H Gram Koku	214+LK > 236HK	15	14(40)11	20	99	-6											[FRAME 1-44] GRAMTEKI
-L GramTeki > EX Gram Koku	214+LK > 236KK	15	14(32)21	20	101	1	KD	KD			89	30	35				[FRAME 1-44] GRAMTEKI
-L GramTeki > L Gram Ban	214+LK > 623LK	15	14(20)12	30	90	-23											[FRAME 1-44] GRAMTEKI
-L GramTeki > M Gram Ban	214+LK > 623MK	15	14(22)15	30	95	-29											[FRAME 1-44] GRAMTEKI
-L GramTeki > H Gram Ban	214+LK > 623HK	15	14(22)16	37	103	-33											[FRAME 1-44] GRAMTEKI
-L GramTeki > EX Gram Ban	214+LK > 623KK	15	14(20)1(1)14	48	112	-26	KD	KD									[FRAME 1-44] GRAMTEKI
+L GramTeki > M Gram Koku	214+LK > 236MK	15	14(35)10	21	94	-6					58	-1	4				[FRAME 1-44] GRAMTEKI
+L GramTeki > H Gram Koku	214+LK > 236HK	15	14(40)11	20	99	-6					53	-6	-1				[FRAME 1-44] GRAMTEKI
+L GramTeki > EX Gram Koku	214+LK > 236KK	15	14(32)21	20	101	1	KD	KD			95	36	41				[FRAME 1-44] GRAMTEKI [HATSON] 89/30/35
+L GramTeki > L Gram Ban	214+LK > 623LK	15	14(20)12	30	90	-23					62	3	8				[FRAME 1-44] GRAMTEKI
+L GramTeki > M Gram Ban	214+LK > 623MK	15	14(22)15	30	95	-29					57	-2	3				[FRAME 1-44] GRAMTEKI
+L GramTeki > H Gram Ban	214+LK > 623HK	15	14(22)16	37	103	-33					49	-10	-5				[FRAME 1-44] GRAMTEKI
+L GramTeki > EX Gram Ban	214+LK > 623KK	15	14(20)1(1)14	48	112	-26	KD	KD			40	-19	-14				[FRAME 1-44] GRAMTEKI [HATSON] 89/30/35
 M GramTeki > L Gram Koku	214+MK > 236LK	23	14(30)9	23	98	-4	KD	KD			83	24	29				[FRAME 1-53] GRAMTEKI
 M GramTeki > M Gram Koku	214+MK > 236MK	23	14(36)10	21	103	-6	KD	KD			78	19	24				[FRAME 1-53] GRAMTEKI
-M GramTeki > H Gram Koku	214+MK > 236HK	23	14(41)11	20	108	-6											[FRAME 1-53] GRAMTEKI
-M GramTeki > EX Gram Koku	214+MK > 236KK	23	14(33)21	20	110	1	KD	KD									[FRAME 1-53] GRAMTEKI
-M GramTeki > L Gram Ban	214+MK > 623LK	23	14(21)12	30	99	-23											[FRAME 1-53] GRAMTEKI
-M GramTeki > M Gram Ban	214+MK > 623MK	23	14(23)15	30	104	-29											[FRAME 1-53] GRAMTEKI
-M GramTeki > H Gram Ban	214+MK > 623HK	23	14(23)16	37	112	-33											[FRAME 1-53] GRAMTEKI
-M GramTeki > EX Gram Ban	214+MK > 623KK	23	14(21)1(1)14	48	121	-26	KD	KD									[FRAME 1-53] GRAMTEKI
-H GramTeki > L Gram Koku	214+HK > 236LK	30	14(29)9	23	104	-4	KD	KD									[FRAME 1-59] GRAMTEKI
-H GramTeki > M Gram Koku	214+HK > 236MK	30	14(35)10	21	109	-6	KD	KD									[FRAME 1-59] GRAMTEKI
+M GramTeki > H Gram Koku	214+MK > 236HK	23	14(41)11	20	108	-6					59	0	5				[FRAME 1-53] GRAMTEKI
+M GramTeki > EX Gram Koku	214+MK > 236KK	23	14(33)21	20	110	1	KD	KD			98	39	44				[FRAME 1-53] GRAMTEKI
+M GramTeki > L Gram Ban	214+MK > 623LK	23	14(21)12	30	99	-23					68	9	14				[FRAME 1-53] GRAMTEKI
+M GramTeki > M Gram Ban	214+MK > 623MK	23	14(23)15	30	104	-29					63	4	9				[FRAME 1-53] GRAMTEKI
+M GramTeki > H Gram Ban	214+MK > 623HK	23	14(23)16	37	112	-33					55	-4	1				[FRAME 1-53] GRAMTEKI
+M GramTeki > EX Gram Ban	214+MK > 623KK	23	14(21)1(1)14	48	121	-26	KD	KD			90	31	36				[FRAME 1-53] GRAMTEKI
+H GramTeki > L Gram Koku	214+HK > 236LK	30	14(29)9	23	104	-4	KD	KD			100	41	46				[FRAME 1-59] GRAMTEKI
+H GramTeki > M Gram Koku	214+HK > 236MK	30	14(35)10	21	109	-6	KD	KD			81	22	27				[FRAME 1-59] GRAMTEKI
 H GramTeki > H Gram Koku	214+HK > 236HK	30	14(40)11	20	114	-6	KD	KD			80	21	26				[FRAME 1-59] GRAMTEKI
-H GramTeki > EX Gram Koku	214+HK > 236KK	30	14(32)21	20	116	1	KD	KD									[FRAME 1-59] GRAMTEKI
-H GramTeki > L Gram Ban	214+HK > 623LK	30	14(20)12	30	105	-23											[FRAME 1-59] GRAMTEKI
-H GramTeki > M Gram Ban	214+HK > 623MK	30	14(22)15	30	110	-29											[FRAME 1-59] GRAMTEKI
-H GramTeki > H Gram Ban	214+HK > 623HK	30	14(22)16	37	118	-33											[FRAME 1-59] GRAMTEKI
-H GramTeki > EX Gram Ban	214+HK > 623KK	30	14(20)1(1)14	48	127	-26	KD	KD									[FRAME 1-59] GRAMTEKI
-EX GramTeki > L Gram Koku	214+KK > 236LK	18	2(1)18(22)9	23	92	-4	KD	KD									[FRAME 1-47] GRAMTEKI
-EX GramTeki > M Gram Koku	214+KK > 236MK	18	2(1)18(28)10	21	97	-6	KD	KD									[FRAME 1-47] GRAMTEKI
-EX GramTeki > H Gram Koku	214+KK > 236HK	18	2(1)18(33)11	20	102	-6	KD	KD									[FRAME 1-47] GRAMTEKI
-EX GramTeki > EX Gram Koku	214+KK > 236KK	18	2(1)18(25)21	20	104	1	KD	KD									[FRAME 1-47] GRAMTEKI
-EX GramTeki > L Gram Ban	214+KK > 623LK	18	2(1)18(13)12	30	93	-41											[FRAME 1-47] GRAMTEKI
-EX GramTeki > M Gram Ban	214+KK > 623MK	18	2(1)18(15)15	30	98	-46											[FRAME 1-47] GRAMTEKI
-EX GramTeki > H Gram Ban	214+KK > 623HK	18	2(1)18(15)16	37	106	-54											[FRAME 1-47] GRAMTEKI
-EX GramTeki > EX Gram Ban	214+KK > 623KK	18	2(1)18(13)1(1)14	48	115	-24	KD	KD									[FRAME 1-47] GRAMTEKI
+H GramTeki > EX Gram Koku	214+HK > 236KK	30	14(32)21	20	116	1	KD	KD			99	40	45				[FRAME 1-59] GRAMTEKI
+H GramTeki > L Gram Ban	214+HK > 623LK	30	14(20)12	30	105	-23					75	16	21				[FRAME 1-59] GRAMTEKI
+H GramTeki > M Gram Ban	214+HK > 623MK	30	14(22)15	30	110	-29					70	11	16				[FRAME 1-59] GRAMTEKI
+H GramTeki > H Gram Ban	214+HK > 623HK	30	14(22)16	37	118	-33					62	3	8				[FRAME 1-59] GRAMTEKI
+H GramTeki > EX Gram Ban	214+HK > 623KK	30	14(20)1(1)14	48	127	-26	KD	KD			90	31	36				[FRAME 1-59] GRAMTEKI
+EX GramTeki > L Gram Koku	214+KK > 236LK	18	2(1)18(22)9	23	92	-4	KD	KD			83	24	29				[FRAME 1-47] GRAMTEKI
+EX GramTeki > M Gram Koku	214+KK > 236MK	18	2(1)18(28)10	21	97	-6	KD	KD			79	20	25				[FRAME 1-47] GRAMTEKI
+EX GramTeki > H Gram Koku	214+KK > 236HK	18	2(1)18(33)11	20	102	-6	KD	KD			79	20	25				[FRAME 1-47] GRAMTEKI
+EX GramTeki > EX Gram Koku	214+KK > 236KK	18	2(1)18(25)21	20	104	1	KD	KD			98	39	44				[FRAME 1-47] GRAMTEKI
+EX GramTeki > L Gram Ban	214+KK > 623LK	18	2(1)18(13)12	30	93	-41					69	10	15				[FRAME 1-47] GRAMTEKI
+EX GramTeki > M Gram Ban	214+KK > 623MK	18	2(1)18(15)15	30	98	-46					64	5	10				[FRAME 1-47] GRAMTEKI
+EX GramTeki > H Gram Ban	214+KK > 623HK	18	2(1)18(15)16	37	106	-54					56	-3	2				[FRAME 1-47] GRAMTEKI
+EX GramTeki > EX Gram Ban	214+KK > 623KK	18	2(1)18(13)1(1)14	48	115	-24	KD	KD			89	30	35				[FRAME 1-47] GRAMTEKI
 																	
 																	
 																	
