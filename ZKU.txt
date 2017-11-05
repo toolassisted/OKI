@@ -17,7 +17,7 @@ CROUCH MP	2MP	8	2	14	23	1	5	7						9	5
 CROUCH HP	2HP	10	4	16	29	2	7	KD			103	44	49	15	10		TRANSFORM: -1/-4
 CROUCH LK	2LK	5	2	8	14	2	4	6						2	0		
 CROUCH MK	2MK	8	3	17	27	-2	2	4						8	4		
-CROUCH HK	2HK	10	2	25	36	-8	KD	KD			74	21	26	KD (+89/36/41)	7		[HATSON KD] +95/36/41
+CROUCH HK	2HK	10	2	25	36	-8	KD	KD			74	21	26	KD (+89/36/41)	7		[HATSON KD] +95/36/41 ?
 CROUCH HK VTC	2HK > HP+HK	10	2	25	36	7	KD	KD			86	36	41				
 JUMP LP	8LP	4	6														
 JUMP MP	8MP	7	4														
@@ -117,11 +117,11 @@ GramTeki > EX Gram Koku (Projectile)	214+K > 236KK	17	20	20
 L GramTeki > L Gram Koku	214+LK > 236LK	15	14(29)9	23	89	-4	KD	KD			80	21	26				[FRAME 1-44] GRAMTEKI
 L GramTeki > M Gram Koku	214+LK > 236MK	15	14(35)10	21	94	-6					58	-1	4				[FRAME 1-44] GRAMTEKI [KD ADV] KOKU WHIFF
 L GramTeki > H Gram Koku	214+LK > 236HK	15	14(40)11	20	99	-6					53	-6	-1				[FRAME 1-44] GRAMTEKI [KD ADV] KOKU WHIFF
-L GramTeki > EX Gram Koku	214+LK > 236KK	15	14(32)21	20	101	1	KD	KD			95	36	41				[FRAME 1-44] GRAMTEKI [HATSON] 89/30/35
+L GramTeki > EX Gram Koku	214+LK > 236KK	15	14(32)21	20	101	1	KD	KD			95	36	41				[FRAME 1-44] GRAMTEKI [HATSON KD] 89/30/35 ?
 L GramTeki > L Gram Ban	214+LK > 623LK	15	14(20)12	30	90	-23					62	3	8				[FRAME 1-44] GRAMTEKI [KD ADV] BAN WHIFF
 L GramTeki > M Gram Ban	214+LK > 623MK	15	14(22)15	30	95	-29					57	-2	3				[FRAME 1-44] GRAMTEKI [KD ADV] BAN WHIFF
 L GramTeki > H Gram Ban	214+LK > 623HK	15	14(22)16	37	103	-33					49	-10	-5				[FRAME 1-44] GRAMTEKI [KD ADV] BAN WHIFF
-L GramTeki > EX Gram Ban	214+LK > 623KK	15	14(20)1(1)14	48	112	-26	KD	KD			40	-19	-14				[FRAME 1-44] GRAMTEKI [HATSON] 89/30/35
+L GramTeki > EX Gram Ban	214+LK > 623KK	15	14(20)1(1)14	48	112	-26	KD	KD			40	-19	-14				[FRAME 1-44] GRAMTEKI [HATSON KD] 89/30/35 ?
 M GramTeki > L Gram Koku	214+MK > 236LK	23	14(30)9	23	98	-4	KD	KD			83	24	29				[FRAME 1-53] GRAMTEKI
 M GramTeki > M Gram Koku	214+MK > 236MK	23	14(36)10	21	103	-6	KD	KD			78	19	24				[FRAME 1-53] GRAMTEKI
 M GramTeki > H Gram Koku	214+MK > 236HK	23	14(41)11	20	108	-6					59	0	5				[FRAME 1-53] GRAMTEKI
@@ -163,20 +163,20 @@ M Bushin Gekirinchu (Cancel)	236+MP > P	9	10	15
 H Bushin Gekirinchu (Cancel)	236+HP > P	9	10	15													
 EX Bushin Gekirinchu (Cancel)	236+PP > P	9	14	9													
 																	
-L Bushin Gekirinchu	236+LP > P	38	12	15	64												
-M Bushin Gekirinchu	236+MP > P	38	10	15	62												
-H Bushin Gekirinchu	236+HP > P	38	10	15	62												
-EX Bushin Gekirinchu	236+PP > P	33	14	9	55												
+L Bushin Gekirinchu	236+LP > P	38	12	15	64	-1	5	7									[OZ STAND ADV] ACTIVE 6
+M Bushin Gekirinchu	236+MP > P	38	10	15	62	-1	5	7									[OZ STAND ADV] ACTIVE 4
+H Bushin Gekirinchu	236+HP > P	38	10	15	62	-1	5	7									[OZ STAND ADV] ACTIVE 4
+EX Bushin Gekirinchu	236+PP > P	33	14	9	55	1	9	11									[OZ STAND ADV] ACTIVE 8
 																	
 L Bushin Kirinkyaku	236+P > K	35	5	25	64												
 M Bushin Kirinkyaku	236+P > K	35	5	23	62												
 H Bushin Kirinkyaku	236+P > K	35	5	23	62												
 EX Bushin Kirinkyaku	236+P > K	30	5	21	55												
 																	
-L Bushin Tengen	236+P > LP+LK	34	2	31	66		KD	KD			19	19	19				HARD KNOCKDOWN
-M Bushin Tengen	236+P > LP+LK	34	2	29	64		KD	KD			19	19	19				HARD KNOCKDOWN
-H Bushin Tengen	236+P > LP+LK	34	2	29	64		KD	KD			19	19	19				HARD KNOCKDOWN
-EX Bushin Tengen	236+P > LP+LK	29	2	33	63		KD	KD			19	19	19				HARD KNOCKDOWN
+L Bushin Tengen	236+P > LP+LK	34	2	31	66		KD	KD			19	19	19				HARD KNOCKDOWN [THROW STAND]
+M Bushin Tengen	236+P > LP+LK	34	2	29	64		KD	KD			19	19	19				HARD KNOCKDOWN [THROW STAND]
+H Bushin Tengen	236+P > LP+LK	34	2	29	64		KD	KD			19	19	19				HARD KNOCKDOWN [THROW STAND]
+EX Bushin Tengen	236+P > LP+LK	29	2	33	63		KD	KD			19	19	19				HARD KNOCKDOWN [THROW STAND]
 																	
 Shukumyo	22+PP	25		0	25												
 																	
@@ -207,8 +207,9 @@ YZ CROUCH HP Whiff	2HP	10	3	25	37	-5	1	21						12	6		5 FRAME EXTRA RECOVERY ON W
 YZ CROUCH HP Hit/Block	2HP	10	3	20	32	-5	1	21						12	6		
 YZ CROUCH LK	2LK	5	2	8	14	2	3	5						1	0		
 YZ CROUCH MK	2MK	7	3	16	25	-3	2	4						9	4		
-YZ CROUCH HK Hit 10-16	2HK	10	7	20	40	-13	KD	KD			66	17	22	KD (+95/36/41)	6		
-YZ CROUCH HK Hit 17-20	2HK	17	4	20	40	-10	3	14~15 PLS TEST LOL						15	2		
+YZ CROUCH HK Hit 10-16	2HK	10	7	20	40	-13	KD	KD			66	17	22	KD (+89/36/41)	6		[HATSON KD] +95/36/41 ?
+YZ CROUCH HK Hit 10-16 VTC	2HK > HP+HK	10	7	20	40	6	KD	KD			89	36	41				
+YZ CROUCH HK Hit 17-20	2HK	17	4	20	40	-10	3	13						15	2		
 YZ JUMP LP	8LP	5	6														
 YZ JUMP MP	8MP	8	2														
 YZ JUMP HP	8HP	8	2														
@@ -224,7 +225,7 @@ YZ Urakagerou	2HP > 2HP > MP+MK	14	2	31		-7	KD	KD			81	22	27	KD (+103/44/49)	7
 YZ Bushin Soukosou	5MP > 5HP	13	2	24		-6	-2							12	8		RUN STOP: 0 |  EX RUN STOP: +2
 YZ Bushin Gokusanken - Ni	5LP > 5MP	5	3	22		-7	-3										
 YZ Bushin Gokusanken - San	5LP > 5MP > 5HP	11	4	30		-11	KD	KD			85	26	31				
-YZ Bushin Gokusanken - Shu	5LP > 5MP > 5HP > 5HK	16	7	27		-13	KD	KD			82	23	28				
+YZ Bushin Gokusanken - Shu	5LP > 5MP > 5HP > 5HK	16	7	27		-16	KD	KD			82	23	28				
 YZ Bushin Gokusanage	5LP > 5MP > 5HP > 2HK	7	2	29			KD	KD			64	15	15				
 YZ Sankaku Tobi	NEAR WALL 8 > 6																
 YZ Hassou Tobi	NEAR WALL 8 > 6 >P																
