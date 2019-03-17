@@ -1,4 +1,4 @@
-Move	Command	Startup	Active	Recovery	Hit Advantage	CH hit adv.	Block Advantage	Total 	 Damage	Stun	Chip	CH Damage	CH Stun	Hitstop	Attack Level	Cancel Ability	KD Adv.	KDR Adv.	KDRB Adv.	Note
+Move	Command	Startup	Active	Recovery	Hit Advantage	CH hit adv.	Block Advantage	Total	Damage	Stun	Chip	CH Damage	CH Stun	Hitstop	Attack Level	Cancel Ability	KD Adv.	KDR Adv.	KDRB Adv.	Note
 stand LP		5	2	9	5	7	1	15	30	70	0	36	84	8	H	SP,V				
 stand MP		8	2	14	6	8	2	23	60	100	10	72	120	12	H	V				
 stand HP		8	2	21	6	8	-2	30	80	150	13	96	180	15	H	SP,V				
@@ -28,9 +28,9 @@ wall jump	uf during jump near wall						-							-		-
 rainbow suplex	LP+LK	5	2	18	KD	KD	-	24	12	170		140	200	-	T	-	62	13	13	
 crescent line	b+LP+LK	5	2	18	KD	KD	-	24	140	200		140	200	-	T	-	57	8	8	
 stardust shot	LP+LK(air)	5	2	-	KD	KD	-		130	200		130	200	-	T	-	-			
-bloody kiss torero	HP+HK	10			KD	KD	-2	44	30*70*70	0*0*0	8*18*18	36*70*70	0*0*0	7*3*10	H	-	111	52	57	
+bloody kiss torero	HP+HK	10			KD	KD	-2	44	30*70*70	0*0*0	8*18*18	36*70*70	0*0*0	7*3*10	H	-	116	57	62	Free Juggle
 bloody kiss rojo	d+HP+HK	10			KD	KD	-22	37	30*70*70	0*0*0	8*18	36*70*70	0*0*0	5*3*10	H	-	81	22	27	
-bloody kiss azul	HP+HK during forward jump	10			KD	KD	-2	-	30*85*85	0*0*0	8*21*21	36*85*85	0*0*0	6*3*10	H	-	89	30	35	
+bloody kiss azul	HP+HK during forward jump	10			KD	KD	-2	-	30*85*85	0*0*0	8*21*21	36*85*85	0*0*0	6*3*10	H	-	106	47	52	Free Juggle
 matador turn DODGE	MP+MK 2F	6	27	4				36												[FRAME 6-32] UPPER BODY INV [FRAME 6-36] PROJ INV
 matador turn DODGE 1F	MP+MK 1F	7	26	4																[FRAME 7-32] UPPER BODY INV [FRAME 7-36] PROJ INV
 matador turn ATTACK	MP+MK HOLD	22	2	31	KD	KD	-13	54	90	100	15	108	120		H	-	77	18	23	[FRAME 6-19] UPPER BODY INV [FRAME 6-19] PROJ INV
@@ -49,7 +49,8 @@ grand izuna drop EX	hcb+PP (claw off)	6	2	50	KD	KD	-	57	80*100	100*150	-	80*100	
 crimson terror LK	qcf+LK	8	2(17)5	12	1	1	-6	43	20*60	20*100	5*15	24*60	24*100	3*15	H*H	CA				
 crimson terror MK	qcf+MK	17	2(10)2(20)5	14	2	2	-7	69	20*20*60	20*20*100	5*5*15	24*20*60	24-20*100	3*3*15	H*H*H	CA				
 crimson terror HK	qcf+HK	19	4(12)3(10)3(22)5	16	KD	KD	-8	93	20x3*60	20x3*100	5x3*15	24*20*20*60	24*20*20*100	3x3*15	H	CA	89	30	35	
-crimson terror EX	qcf+KK	16	5(14)3(8)3(8)3(18)5	10	KD	KD	-2	92	20x4*60	20x4*100	5x4*15	24*20x3*60	24*20x3*100	3x4*15	H	-	97	38	43	
+crimson terror EX	qcf+KK	16	5(14)3(8)3(8)3(18)5	10	KD	KD	-2	92	20x4*60	20x4*100	5x4*15	24*20x3*60	24*20x3*100	3x4*15	H	-	107	48	53	Limited Juggle, 57F Duration (was 92F)
+crimson terror EX -> 0F Sweep	qcf+KK	16	5(14)3(8)3(8)3(18)5	10	KD	KD	-2	92	20x4*60	20x4*100	5x4*15	24*20x3*60	24*20x3*100	3x4*15	H	-	75	26	31	Midscreen Only
 aurora spin edge LP	qcb+LP	12	6	20	KD	KD	-7	37	100	200	25	120	240	16	H	CA	90	31	36	
 aurora spin edge MP	qcb+MP	15	6	18	KD	KD	-6	38	100	200	25	120	240	16	H	CA	92	33	38	
 aurora spin edge HP	qcb+HP	12	4	18	KD	KD	-4	33	100	200	25	120	240	16	H	CA	101	42	47	
@@ -77,7 +78,12 @@ NC stand MP		7	3	15	4	6	1	24	60	100	10	72	120	12	H	V	-	-	-
 NC stand HP		9	2	21	4	6	-1	31	90	150	15	108	180	15	H	SP,V	-	-	-	
 NC crouch LP		4	3	6	4	6	2	12	30	70	0	36	84	8	H	CH,SP,V	-	-	-	
 NC crouch MP		6	3	14	4	6	2	22	60	100	10	72	120	12	H	SP,V	-	-	-	
-NC crouch HP		9	4	15	1	KD	-2	27	80	150	13	96	180	15	H	SP,V	102	43	48	
+NC crouch HP		9	4	15	1	KD	-2	27	80	150	13	96	180	15	H	SP,V	102	43	48	No longer Crush Counter
 NC jump LP		3	5	-	-	-	-	-	40	70	0	48	84	8	M	-	-	-	-	
 NC jump MP		4	5	-	-	-	-	-	70	100	10	84	120	12	M	-	-	-	-	
 NC jump HP		7	4	-	-	-	-	-	90	150	15	108	180	15	M	-	-	-	-	
+c.HK -> VT2 Activation																	82	33	38	c.HK +14F
+VT2 Activation		6						6												6F Activation Delay
+VT2 Counter Attempt		51						51												
+VT2 Counter Hit																	112	53	58	
+VT2 Launch																	111	52	57	
