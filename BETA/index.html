@@ -112,6 +112,9 @@
 			<input placeholder="MOVE SEARCH" v-model="moveSearch">
 			<button type="button" class="btn btn-sm btn-outline-secondary" v-on:click="okiGroupNew">NEW GROUP</button>
 			<button type="button" class="btn btn-sm btn-outline-secondary" v-on:click="okiGroupDelete">DELETE GROUP {{(selected.group+1)*100}}</button>
+			<button type="button" class="btn btn-sm btn-outline-secondary" v-on:click="okiGroupAlignLeft">ALIGN LEFT {{(selected.group+1)*100}}</button>
+			<button type="button" class="btn btn-sm btn-outline-secondary" v-on:click="okiGroupAlignActive">ALIGN ACTIVE {{(selected.group+1)*100}}</button>
+			<button type="button" class="btn btn-sm btn-outline-secondary" v-on:click="okiGroupSortStart">SORT START {{(selected.group+1)*100}}</button>
 			<button type="button" class="btn btn-sm btn-outline-secondary" v-on:click="okiSave">SAVE OKI</button>
 		</li>
 	</ul>
@@ -320,6 +323,7 @@
 				for (var i=0;i<startup-1;i++) {
 					frames.push({frame:i+1,color:'gray'});
 				}
+				oki.frame_startup = (parseInt(startup)||0);
 
 				var activerecoverys = move.active && move.active.split ? move.active.split(/[()]+/)||[0] : [move.active||0];
 				activerecoverys.forEach(function(activerecovery,index){
@@ -339,6 +343,7 @@
 					}
 				});
 
+
 				var recoverys = move.recovery && move.recovery.split ? move.recovery.split(/[^\d]+/)||[0] : [move.recovery||0];
 				var recovery = recoverys[0];
 				for (var i=0;i<recovery;i++) {
@@ -352,6 +357,29 @@
 			},
 			okiGroupMove: function (group, frame) {
 				this.OKI.group[group].frame = frame;
+			},
+			okiGroupAlignLeft: function () {
+				var oki = this.selected;
+				var group = this.OKI.group[oki.group];
+				group.list.forEach(function(move){move.frame=1;});
+			},
+			okiGroupAlignActive: function () {
+				var oki = this.selected;
+				var group = this.OKI.group[oki.group];
+				var max = 0;
+				group.list.forEach(function(move){
+					if (move.frame_startup > max) max = move.frame_startup;
+					return;
+				});
+				group.list.forEach(function(move){
+					move.frame = move.frame_startup > 0 ? max - move.frame_startup + 1 : 1;
+					return;
+				});
+			},
+			okiGroupSortStart: function () {
+				var oki = this.selected;
+				var group = this.OKI.group[oki.group];
+				group.list.sort(function(a,b){return (a.frame_startup)<(b.frame_startup)?-1:(a.frame_startup)>(b.frame_startup)?1:0;})
 			},
 			okiGroupNew: function () {
 				this.OKI.group.push({frame:1,index:0,list:[{frame:1, startup:5, active:3, recovery:17, name:'throw'}]});
