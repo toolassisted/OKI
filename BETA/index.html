@@ -528,6 +528,9 @@
 			okiGroupDelete: function () {
 				if (!confirm("DELETE GROUP ?")) return;
 				this.OKI.group.splice(this.selected.group,1);
+				if (this.OKI.group.length == 0) {
+					this.OKI.group.push({frame:1,index:0,list:[{frame:1, startup:5, active:3, recovery:17, name:'throw'}]});
+				}
 				this.selected.group = this.OKI.group.length - 1;
 				var group = this.OKI.group[this.selected.group];
 				this.selected.move = group.list[group.index] || {};
