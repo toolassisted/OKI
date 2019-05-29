@@ -112,9 +112,15 @@
 			<input placeholder="MOVE SEARCH" v-model="moveSearch">
 			<button type="button" class="btn btn-sm btn-outline-secondary" v-on:click="okiGroupNew">NEW GROUP</button>
 			<button type="button" class="btn btn-sm btn-outline-secondary" v-on:click="okiGroupDelete">DELETE GROUP {{(selected.group+1)*100}}</button>
-			<button type="button" class="btn btn-sm btn-outline-secondary" v-on:click="okiGroupAlignLeft">ALIGN LEFT {{(selected.group+1)*100}}</button>
-			<button type="button" class="btn btn-sm btn-outline-secondary" v-on:click="okiGroupAlignActive">ALIGN ACTIVE {{(selected.group+1)*100}}</button>
-			<button type="button" class="btn btn-sm btn-outline-secondary" v-on:click="okiGroupSortStart">SORT START {{(selected.group+1)*100}}</button>
+			<div class="btn-group">
+				<button type="button" class="btn btn-sm btn-outline-secondary" v-on:click="okiGroupAlignLeft">GROUP {{(selected.group+1)*100}}: ALIGN LEFT</button>
+				<button type="button" class="btn btn-sm btn-outline-secondary" v-on:click="okiGroupAlignActive">ACTIVE</button>
+				<button type="button" class="btn btn-sm btn-outline-secondary" v-on:click="okiGroupAlignMeaty">MEATY</button>
+			</div>
+			<div class="btn-group">
+				<button type="button" class="btn btn-sm btn-outline-secondary" v-on:click="okiGroupSortStart">SORT START</button>
+				<button type="button" class="btn btn-sm btn-outline-secondary" v-on:click="okiGroupSortMeaty">MEATY</button>
+			</div>
 			<button type="button" class="btn btn-sm btn-outline-secondary" v-on:click="okiSave">SAVE OKI</button>
 		</li>
 	</ul>
@@ -342,6 +348,7 @@
 						}
 					}
 				});
+				oki.frame_meaty = frames.length-1;
 
 
 				var recoverys = move.recovery && move.recovery.split ? move.recovery.split(/[^\d]+/)||[0] : [move.recovery||0];
@@ -376,10 +383,27 @@
 					return;
 				});
 			},
+			okiGroupAlignMeaty: function () {
+				var oki = this.selected;
+				var group = this.OKI.group[oki.group];
+				var max = 0;
+				group.list.forEach(function(move){
+					if (move.frame_meaty > max) max = move.frame_meaty;
+				});
+				group.list.forEach(function(move){
+					move.frame = move.frame_meaty > 0 ? max - move.frame_meaty + 1 : 1;
+					return;
+				});
+			},
 			okiGroupSortStart: function () {
 				var oki = this.selected;
 				var group = this.OKI.group[oki.group];
 				group.list.sort(function(a,b){return (a.frame_startup)<(b.frame_startup)?-1:(a.frame_startup)>(b.frame_startup)?1:0;})
+			},
+			okiGroupSortMeaty: function () {
+				var oki = this.selected;
+				var group = this.OKI.group[oki.group];
+				group.list.sort(function(a,b){return (a.frame_meaty)<(b.frame_meaty)?-1:(a.frame_meaty)>(b.frame_meaty)?1:0;})
 			},
 			okiGroupNew: function () {
 				this.OKI.group.push({frame:1,index:0,list:[{frame:1, startup:5, active:3, recovery:17, name:'throw'}]});
