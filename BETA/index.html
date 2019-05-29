@@ -30,12 +30,12 @@
 </head>
 <body>
 <div id="app">
-	<p>SFK OKI LOL {{OKI.char}} <small>{{ OKI.name }}</small> {{ message }}</p>
 	<ul>
 		<li>
 			<button type="button" class="btn btn-sm btn-outline-secondary mr-1" v-for="char in charSheet" v-on:click="selected.char=char; charLoad(char)" v-bind:class="{'active':char==selected.char}">{{char.name}}</button>
 		</li>
 	</ul>
+	<p>SFK OKI LOL {{OKI.char}} <small>{{ OKI.name }}</small> {{ message }}</p>
 	<ul>
 		<li style="background-color:lightgray;" class="border-bottom">
 			<div style="display:flex;">
@@ -241,36 +241,7 @@
 					normal:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=102027550&single=true&output=tsv',
 					stats:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=640853176&single=true&output=tsv',
 				},
-				{
-					name:'Vega',
-					normal:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=102027550&single=true&output=tsv',
-					stats:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=640853176&single=true&output=tsv',
-				},
-				{
-					name:'Vega',
-					normal:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=102027550&single=true&output=tsv',
-					stats:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=640853176&single=true&output=tsv',
-				},
-				{
-					name:'Vega',
-					normal:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=102027550&single=true&output=tsv',
-					stats:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=640853176&single=true&output=tsv',
-				},
-				{
-					name:'Vega',
-					normal:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=102027550&single=true&output=tsv',
-					stats:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=640853176&single=true&output=tsv',
-				},
-				{
-					name:'Vega',
-					normal:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=102027550&single=true&output=tsv',
-					stats:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=640853176&single=true&output=tsv',
-				},
-				{
-					name:'Vega',
-					normal:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=102027550&single=true&output=tsv',
-					stats:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=640853176&single=true&output=tsv',
-				},
+
 			],
 			frameData:[]
 		},
@@ -294,6 +265,147 @@
 			var oki = this.selected;
 			var group = this.OKI.group[oki.group];
 			this.selected.move = group.list[group.index] || {};
+			
+			this.charSheet = [];
+			var sheets = [
+				{char:"Abigail",gid:"641667882"},
+				{char:"AbigailNormal",gid:"1432824094"},
+				{char:"AbigailTrigger1",gid:"574894553"},
+				{char:"AbigailTrigger2",gid:"1463154632"},
+				{char:"Akuma",gid:"692721824"},
+				{char:"AkumaNormal",gid:"1003707925"},
+				{char:"AkumaTrigger1",gid:"1158173504"},
+				{char:"AkumaTrigger2",gid:"1883776788"},
+				{char:"Alex",gid:"1143770058"},
+				{char:"AlexNormal",gid:"1533774716"},
+				{char:"AlexTrigger1",gid:"2029966545"},
+				{char:"AlexTrigger2",gid:"1441868748"},
+				{char:"Balrog",gid:"358750451"},
+				{char:"BalrogNormal",gid:"1289134345"},
+				{char:"BalrogTrigger1",gid:"507623138"},
+				{char:"BalrogTrigger2",gid:"5500656"},
+				{char:"Birdie",gid:"119355731"},
+				{char:"BirdieNormal",gid:"199847308"},
+				{char:"BirdieTrigger1",gid:"840279490"},
+				{char:"BirdieTrigger2",gid:"594300764"},
+				{char:"Blanka",gid:"1208678798"},
+				{char:"BlankaNormal",gid:"1851675985"},
+				{char:"BlankaTrigger1",gid:"1111634090"},
+				{char:"BlankaTrigger2",gid:"1324856161"},
+				{char:"Cammy",gid:"178277877"},
+				{char:"CammyNormal",gid:"183375695"},
+				{char:"CammyTrigger1",gid:"1697230188"},
+				{char:"CammyTrigger2",gid:"370280883"},
+				{char:"Chun-Li",gid:"1387606535"},
+				{char:"Chun-LiNormal",gid:"1441907580"},
+				{char:"Chun-LiTrigger1",gid:"1626084841"},
+				{char:"Chun-LiTrigger2",gid:"599447203"},
+				{char:"Cody",gid:"1860657775"},
+				{char:"CodyNormal",gid:"998988997"},
+				{char:"CodyTrigger1",gid:"116744586"},
+				{char:"CodyTrigger2",gid:"1522002358"},
+				{char:"Dhalsim",gid:"179450177"},
+				{char:"DhalsimNormal",gid:"933728991"},
+				{char:"Ed",gid:"563585052"},
+				{char:"EdNormal",gid:"1033295849"},
+				{char:"EdTrigger2",gid:"2025393084"},
+				{char:"F.A.N.G",gid:"1937755502"},
+				{char:"F.A.N.GNormal",gid:"880198690"},
+				{char:"F.A.N.GTrigger1",gid:"1503645642"},
+				{char:"F.A.N.GTrigger2",gid:"84288499"},
+				{char:"Falke",gid:"266647997"},
+				{char:"FalkeNormal",gid:"1780103088"},
+				{char:"FalkeTrigger1",gid:"1839911608"},
+				{char:"FalkeTrigger2",gid:"1316524037"},
+				{char:"Guile",gid:"294039940"},
+				{char:"GuileNormal",gid:"2141156839"},
+				{char:"GuileTrigger1",gid:"471868756"},
+				{char:"GuileTrigger2",gid:"695752633"},
+				{char:"G",gid:"377953425"},
+				{char:"GNormal",gid:"1393215675"},
+				{char:"GTrigger1",gid:"1189044792"},
+				{char:"GTrigger2",gid:"1762121966"},
+				{char:"Ibuki",gid:"566969036"},
+				{char:"IbukiNormal",gid:"822872375"},
+				{char:"Juri",gid:"601530398"},
+				{char:"JuriNormal",gid:"14813419"},
+				{char:"JuriTrigger1",gid:"1149884528"},
+				{char:"Kage",gid:"351405168"},
+				{char:"KageNormal",gid:"2061577333"},
+				{char:"KageTrigger1",gid:"1498638698"},
+				{char:"KageTrigger2",gid:"1644411868"},
+				{char:"Karin",gid:"1530753098"},
+				{char:"KarinNormal",gid:"1291951156"},
+				{char:"KarinTrigger1",gid:"750121849"},
+				{char:"KarinTrigger2",gid:"1303357414"},
+				{char:"Ken",gid:"1697077899"},
+				{char:"KenNormal",gid:"462796580"},
+				{char:"KenTrigger1",gid:"1183636514"},
+				{char:"KenTrigger2",gid:"1148926477"},
+				{char:"Kolin",gid:"1372270464"},
+				{char:"KolinNormal",gid:"1523343508"},
+				{char:"KolinTrigger1",gid:"1934328809"},
+				{char:"KolinTrigger2",gid:"1799584239"},
+				{char:"Laura",gid:"970695363"},
+				{char:"LauraNormal",gid:"411047417"},
+				{char:"LauraTrigger1",gid:"294812465"},
+				{char:"LauraTrigger2",gid:"2136422041"},
+				{char:"M.Bison",gid:"2099590519"},
+				{char:"M.BisonNormal",gid:"239659603"},
+				{char:"M.BisonTrigger1",gid:"1679647613"},
+				{char:"M.BisonTrigger2",gid:"1260197852"},
+				{char:"Menat",gid:"1028100335"},
+				{char:"MenatNormal",gid:"1198539223"},
+				{char:"MenatTrigger2",gid:"1927034324"},
+				{char:"Nash",gid:"1943044563"},
+				{char:"NashNormal",gid:"1888717299"},
+				{char:"NashTrigger2",gid:"1071140127"},
+				{char:"Necalli",gid:"2060163241"},
+				{char:"NecalliNormal",gid:"847948015"},
+				{char:"NecalliTrigger1",gid:"752849256"},
+				{char:"NecalliTrigger2",gid:"665386711"},
+				{char:"R.Mika",gid:"1761928785"},
+				{char:"R.MikaNormal",gid:"661327381"},
+				{char:"R.MikaTrigger2",gid:"644050859"},
+				{char:"Rashid",gid:"89487217"},
+				{char:"RashidNormal",gid:"1485356009"},
+				{char:"RashidTrigger2",gid:"447920709"},
+				{char:"Ryu",gid:"709798827"},
+				{char:"RyuNormal",gid:"34440035"},
+				{char:"RyuTrigger1",gid:"1014503526"},
+				{char:"RyuTrigger2",gid:"1771542670"},
+				{char:"Sagat",gid:"1907916173"},
+				{char:"SagatNormal",gid:"894662395"},
+				{char:"SagatTrigger1",gid:"1428497806"},
+				{char:"SagatTrigger2",gid:"1970940517"},
+				{char:"Sakura",gid:"633759785"},
+				{char:"SakuraNormal",gid:"1792526447"},
+				{char:"SakuraTrigger1",gid:"1976523429"},
+				{char:"SakuraTrigger2",gid:"538424318"},
+				{char:"Urien",gid:"856327740"},
+				{char:"UrienNormal",gid:"1540344111"},
+				{char:"UrienTrigger2",gid:"1139671303"},
+				{char:"Vega",gid:"640853176"},
+				{char:"VegaNormal",gid:"102027550"},
+				{char:"Zangief",gid:"1146548302"},
+				{char:"ZangiefNormal",gid:"1735500354"},
+				{char:"ZangiefTrigger1",gid:"144532852"},
+				{char:"ZangiefTrigger2",gid:"592434172"},
+				{char:"Zeku (Old)",gid:"403330875"},
+				{char:"Zeku (Old)Normal",gid:"1398444334"},
+				{char:"Zeku (Old)Trigger1",gid:"1611788547"},
+				{char:"Zeku (Young)",gid:"466713667"},
+				{char:"Zeku (Young)Normal",gid:"739322326"},
+				{char:"Zeku (Young)Trigger1",gid:"585712227"},			
+			];
+			var sheet = sheets[0];
+			for (var i=1; i<sheets.length; i++) {
+				if (sheets[i].char.indexOf(sheet.char) == 0) {
+					this.charSheet.push({name:sheets[i].char,stats:sheet.gid,normal:sheets[i].gid})
+				} else {
+					sheet = sheets[i];
+				}
+			}
 		},
 		methods: {
 			okiSave: function () {
@@ -307,9 +419,10 @@
 			charLoad: function(sheet) {
 				this.message = "LOAD...";
 				this.OKI.char = sheet.name;
-				d3.tsv(sheet.normal).then(function(data){
+				var sheetURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?single=true&output=tsv&gid=';
+				d3.tsv(sheetURL+sheet.normal).then(function(data){
 					app.frameData = data;
-					d3.tsv(sheet.stats).then(function(stats){
+					d3.tsv(sheetURL+sheet.stats).then(function(stats){
 						app.message = "";
 						stats.forEach(function(stat){
 							if (["fDash","bDash"].includes(stat.name)) {
