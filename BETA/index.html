@@ -35,7 +35,7 @@
 			<button type="button" class="btn btn-sm btn-outline-secondary mr-1" v-for="char in charSheet" v-on:click="selected.char=char; charLoad(char)" v-bind:class="{'active':char==selected.char}">{{char.name}}</button>
 		</li>
 	</ul>
-	<p>SFK OKI LOL {{OKI.char}} <small>{{ OKI.name }}</small> {{ message }}</p>
+	<p>SFV OKI LOL {{OKI.char}} <small>{{ OKI.name }}</small> {{ message }}</p>
 	<ul>
 		<li style="background-color:lightgray;" class="border-bottom">
 			<div style="display:flex;">
@@ -56,7 +56,7 @@
 			<div class="frame" style="background-color:lightblue;">8</div>
 			<div class="frame" style="background-color:lightgreen;">9</div>
 			<div class="frame" style="background-color:lightblue;">0</div>
-			<div class="pl-1"><small class="text-muted">{{kd.name}} +{{kd.frame}}F</small></div>
+			<div class="pl-1"><small class="text-muted text-nowrap">{{kd.name}} +{{kd.frame}}F</small></div>
 			</div>
 		</li>
 	</ul>
@@ -64,7 +64,7 @@
 		<li style="background-color:lightgray;" class="border-bottom" v-bind:value="(groupIndex+1)*100">
 			<div style="display:flex;">
 			<div class="frame" style="background-color:gray;" v-for="f in 120" v-on:click="okiGroupMove(groupIndex,f)" v-bind:class="{'border-right':[OKI.kd[0].frame,OKI.kd[1].frame,OKI.kd[2].frame].includes(f)}"><span v-bind:style="{color:(f%10)==0?'lightgray':''}">{{(f%10) == 0 ? f/10%10 : f%10}}</span></div>
-			<div class="pl-1"><small class="text-muted">GROUP</small></div>
+			<div class="pl-1"><small class="text-muted text-nowrap">GROUP</small></div>
 			</div>
 		</li>
 		<li v-for="(oki,index) in group.list" style="background-color:lightgray;" class="border-bottom" v-bind:value="(groupIndex+1)*100+index+1" v-on:click="group.index=index;selected.move=oki;">
@@ -75,14 +75,14 @@
 			<!-- <div class="frame" style="background-color:pink;" v-for="f in (oki.active)" v-on:click="okiMove({group:groupIndex,index:index},f+oki.frame-1+oki.startup-1)"><span v-bind:style="{color:(f%10)==0?'lightgray':''}">{{(f%10) == 0 ? f/10%10 : f%10}}</span></div> -->
 			<!-- <div class="frame" style="background-color:gray;" v-for="f in (oki.recovery)" v-on:click="okiMove({group:groupIndex,index:index},f+oki.frame-1+oki.startup-1+oki.active)"><span v-bind:style="{color:(f%10)==0?'lightgray':''}">{{(f%10) == 0 ? f/10%10 : f%10}}</span></div> -->
 			<div class="frame" v-for="(move,f) in okiFrames(oki)" v-on:click="okiMove({group:groupIndex,index:index},oki.frame+f)" v-bind:style="{'background-color':move.color}" v-bind:class="{'border-right':[OKI.kd[0].frame,OKI.kd[1].frame,OKI.kd[2].frame].includes(group.frame-1+oki.frame+f)}"><span v-bind:style="{color:(move.frame%10)==0?'lightgray':''}">{{(move.frame%10) == 0 ? move.frame/10%10 : move.frame%10}}</span></div>
-			<div class="pl-1"><small class="text-muted">{{oki.name}} / {{oki.onHit}} / {{oki.onBlock}}</small></div>
+			<div class="pl-1"><small class="text-muted text-nowrap">{{oki.name}} / {{oki.onHit}} / {{oki.onBlock}}</small></div>
 			</div>
 		</li>
 		<li style="background-color:lightgray;" class="border-bottom" v-bind:value="(groupIndex+1)*100+group.index+1">
 			<div style="display:flex;">
 			<div class="frame" style="background-color:white;" v-for="f in (group.frame-1)" v-on:click="okiGroupMove(groupIndex,f)"><span v-bind:style="{color:(f%10)==0?'lightgray':''}">{{(f%10) == 0 ? f/10%10 : f%10}}</span></div>
 			<div class="frame" style="background-color:gray;" v-for="f in 120" v-on:click="okiMove({group:groupIndex,index:group.index},f)" v-bind:class="{'border-right':[OKI.kd[0].frame,OKI.kd[1].frame,OKI.kd[2].frame].includes(group.frame-1+f)}"><span v-bind:style="{color:(f%10)==0?'lightgray':''}">{{(f%10) == 0 ? f/10%10 : f%10}}</span></div>
-			<div class="pl-1"><small class="text-muted">MOVE</small></div>
+			<div class="pl-1"><small class="text-muted text-nowrap">MOVE</small></div>
 			</div>
 		</li>
 		<!-- <li v-if="selected.group==groupIndex" v-bind:value="(groupIndex)*100">
