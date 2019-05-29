@@ -35,6 +35,45 @@
 			<button type="button" class="btn btn-sm btn-outline-secondary mr-1" v-for="char in charSheet" v-on:click="selected.char=char; charLoad(char)" v-bind:class="{'active':char==selected.char}">{{char.name}}</button>
 		</li>
 	</ul>
+
+	<ul>
+		<li>
+		<table class="table table-sm table-light table-striped table-hover text-center align-middle" style="width:auto; font-size:small;">
+			<thead>
+				<th>KD</th>
+				<th>QR</th>
+				<th>BR</th>
+				<th>cmnCmd</th>
+				<th>moveName</th>
+				<th>startup</th>
+				<th>active</th>
+				<th>recovery</th>
+				<th>onBlock</th>
+				<th>onHit</th>
+				<th>total</th>
+				<th></th>
+			</thead>
+			<tbody>
+			<tr class="move" v-for="(move,index) in frameDataKD" v-bind:value="parseInt(move.total)||0" v-bind:class="{'bg-select':selected.kd==move}" v-on:click="selected.kd=move">
+				<td>{{move.kd}}</td>
+				<td>{{move.kdr}}</td>
+				<td>{{move.kdrb}}</td>
+				<td>{{move.cmnCmd}}</td>
+				<td>{{move.moveName}}</td>
+				<td>{{move.startup}}</td>
+				<td>{{move.active}}</td>
+				<td>{{move.recovery}}</td>
+				<td>{{move.onBlock}}</td>
+				<td>{{move.onHit}}</td>
+				<td>{{move.total}}</td>
+				<td>
+					<button type="button" class="btn btn-sm btn-outline-secondary border-0" style="padding:0;" v-on:click="kdReplace(move)" v-if="move.kd && move.kd != '~'">REPLACE KD</button>
+				</td>
+			</tr>
+			</tbody>
+		</table>
+		</li>
+	</ul>
 	<p>SFV OKI LOL {{OKI.char}} <small>{{ OKI.name }}</small> {{ message }}</p>
 	<ul>
 		<li style="background-color:lightgray;" class="border-bottom">
@@ -163,7 +202,7 @@
 					<button type="button" class="btn btn-sm btn-outline-secondary border-0" style="padding:0;" v-on:click="kdReplace(move)" v-if="move.kd && move.kd != '~'">REPLACE KD</button>
 				</td>
 			</tr>
-			</tbody>	
+			</tbody>
 		</table>
 		</li>
 		<!-- <li class="move" v-for="(move,index) in frameDataSearch" v-bind:value="parseInt(move.total)||0" v-bind:class="{'bg-select':selected.data==move}" v-on:click="selected.data=move">
@@ -233,7 +272,7 @@
 					}
 				],
 			},
-			selected:{group:0,index:0,move:{},data:{},char:{},store:{}},
+			selected:{group:0,index:0,move:{},data:{},char:{},store:{},kd:{}},
 			moveSearch:'',
 			charSheet:[
 				{
@@ -251,6 +290,9 @@
 				if (search == "") return this.frameData;
 				var fuse = new Fuse(this.frameData, {keys:['moveName','cmnCmd']});
 				return fuse.search(search);
+			},
+			frameDataKD: function () {
+				return this.frameData.filter(function(move){return move.kd && move.kd != "~";});
 			},
 			OKISTORE: function () {
 				return Object.keys(localStorage).sort().reverse().filter(function(key){return key.indexOf("OKI") == 0; }).map(function(key){
