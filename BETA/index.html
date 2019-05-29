@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SFV OKI LOL</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://unpkg.com/vue"></script>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.4.4/fuse.min.js"></script>
+	<style type="text/css">
+		.frame {
+			width: 1em;
+			flex-shrink: 0;
+			text-align: center;
+			font-family: monospace;
+			cursor: pointer;
+		}
+		.frame:hover {
+			background-color: yellow !important;
+		}
+		.bg-select {
+			background-color: palegreen !important;
+		}
+		.move:hover {
+			background-color: lightgreen !important;
+		}
+		.kd-start {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+<div id="app">
+	<p>SFK OKI LOL {{OKI.char}} <small>{{ OKI.name }}</small> {{ message }}</p>
+	<ul>
+		<li>
+			<button type="button" class="btn btn-sm btn-outline-secondary mr-1" v-for="char in charSheet" v-on:click="selected.char=char; charLoad(char)" v-bind:class="{'active':char==selected.char}">{{char.name}}</button>
+		</li>
+	</ul>
+	<ul>
+		<li style="background-color:lightgray;" class="border-bottom">
+			<div style="display:flex;">
+			<div class="frame" style="background-color:gray;" v-for="f in 120"><span v-bind:style="{color:(f%10)==0?'lightgray':''}">{{(f%10) == 0 ? f/10%10 : f%10}}</span></div>
+			<div class="pl-1"><small class="text-muted">FRAME</small></div>
+			</div>
+		</li>
+		<li v-for="kd in OKI.kd" style="background-color:lightgray;" class="border-bottom">
+			<div style="display:flex;">
+			<div class="frame" style="background-color:gray;" v-for="f in (kd.frame)"><span v-bind:style="{color:(f%10)==0?'lightgray':''}">{{(f%10) == 0 ? f/10%10 : f%10}}</span></div>
+			<div class="frame" style="background-color:orange;">1</div>
+			<div class="frame" style="background-color:yellow;">2</div>
+			<div class="frame" style="background-color:lightgreen;">3</div>
+			<div class="frame" style="background-color:lightblue;">4</div>
+			<div class="frame" style="background-color:lightgreen;">5</div>
+			<div class="frame" style="background-color:lightblue;">6</div>
+			<div class="frame" style="background-color:lightgreen;">7</div>
+			<div class="frame" style="background-color:lightblue;">8</div>
+			<div class="frame" style="background-color:lightgreen;">9</div>
+			<div class="frame" style="background-color:lightblue;">0</div>
+			<div class="pl-1"><small class="text-muted">{{kd.name}} +{{kd.frame}}F</small></div>
+			</div>
+		</li>
+	</ul>
+	<ol v-for="(group,groupIndex) in OKI.group" class="mt-0" v-bind:class="{'bg-select':selected.group==groupIndex}" v-on:click="selected.group=groupIndex">
+		<li style="background-color:lightgray;" class="border-bottom" v-bind:value="(groupIndex+1)*100">
+			<div style="display:flex;">
+			<div class="frame" style="background-color:gray;" v-for="f in 120" v-on:click="okiGroupMove(groupIndex,f)" v-bind:class="{'border-right':[OKI.kd[0].frame,OKI.kd[1].frame,OKI.kd[2].frame].includes(f)}"><span v-bind:style="{color:(f%10)==0?'lightgray':''}">{{(f%10) == 0 ? f/10%10 : f%10}}</span></div>
+			<div class="pl-1"><small class="text-muted">GROUP</small></div>
+			</div>
+		</li>
+		<li v-for="(oki,index) in group.list" style="background-color:lightgray;" class="border-bottom" v-bind:value="(groupIndex+1)*100+index+1" v-on:click="group.index=index;selected.move=oki;">
+			<div style="display:flex;" v-bind:class="{'bg-select':group.index==index}">
+			<div class="frame" style="background-color:white;" v-for="f in (group.frame-1)" v-on:click="okiGroupMove(groupIndex,f)"><span v-bind:style="{color:(f%10)==0?'lightgray':''}">{{(f%10) == 0 ? f/10%10 : f%10}}</span></div>
+			<div class="frame" style="background-color:inherit;" v-for="f in (1,((parseInt(oki.frame)||1)<=1?1:oki.frame)-1)" v-on:click="okiMove({group:groupIndex,index:index},f)"><span v-bind:style="{color:(f%10)==0?'lightgray':''}">{{(f%10) == 0 ? f/10%10 : f%10}}</span></div>
+			<!-- <div class="frame" style="background-color:gray;" v-for="f in (oki.startup-1)" v-on:click="okiMove({group:groupIndex,index:index},f+oki.frame-1)"><span v-bind:style="{color:(f%10)==0?'lightgray':''}">{{(f%10) == 0 ? f/10%10 : f%10}}</span></div> -->
+			<!-- <div class="frame" style="background-color:pink;" v-for="f in (oki.active)" v-on:click="okiMove({group:groupIndex,index:index},f+oki.frame-1+oki.startup-1)"><span v-bind:style="{color:(f%10)==0?'lightgray':''}">{{(f%10) == 0 ? f/10%10 : f%10}}</span></div> -->
+			<!-- <div class="frame" style="background-color:gray;" v-for="f in (oki.recovery)" v-on:click="okiMove({group:groupIndex,index:index},f+oki.frame-1+oki.startup-1+oki.active)"><span v-bind:style="{color:(f%10)==0?'lightgray':''}">{{(f%10) == 0 ? f/10%10 : f%10}}</span></div> -->
+			<div class="frame" v-for="(move,f) in okiFrames(oki)" v-on:click="okiMove({group:groupIndex,index:index},oki.frame+f)" v-bind:style="{'background-color':move.color}" v-bind:class="{'border-right':[OKI.kd[0].frame,OKI.kd[1].frame,OKI.kd[2].frame].includes(group.frame-1+oki.frame+f)}"><span v-bind:style="{color:(move.frame%10)==0?'lightgray':''}">{{(move.frame%10) == 0 ? move.frame/10%10 : move.frame%10}}</span></div>
+			<div class="pl-1"><small class="text-muted">{{oki.name}} / {{oki.onHit}} / {{oki.onBlock}}</small></div>
+			</div>
+		</li>
+		<li style="background-color:lightgray;" class="border-bottom" v-bind:value="(groupIndex+1)*100+group.index+1">
+			<div style="display:flex;">
+			<div class="frame" style="background-color:white;" v-for="f in (group.frame-1)" v-on:click="okiGroupMove(groupIndex,f)"><span v-bind:style="{color:(f%10)==0?'lightgray':''}">{{(f%10) == 0 ? f/10%10 : f%10}}</span></div>
+			<div class="frame" style="background-color:gray;" v-for="f in 120" v-on:click="okiMove({group:groupIndex,index:group.index},f)" v-bind:class="{'border-right':[OKI.kd[0].frame,OKI.kd[1].frame,OKI.kd[2].frame].includes(group.frame-1+f)}"><span v-bind:style="{color:(f%10)==0?'lightgray':''}">{{(f%10) == 0 ? f/10%10 : f%10}}</span></div>
+			<div class="pl-1"><small class="text-muted">MOVE</small></div>
+			</div>
+		</li>
+		<!-- <li v-if="selected.group==groupIndex" v-bind:value="(groupIndex)*100">
+			<input placeholder="U TYPE OKI" v-model="moveSearch">
+		</li> -->
+	</ol>
+	<!-- <ol class="m-0">
+		<li style="background-color:lightgray;" class="border-bottom" v-bind:value="selected.group+1">
+			<div style="display:flex;">
+			<div class="frame" style="background-color:gray;" v-for="f in 120" v-on:click="okiGroupMove(selected.group,f)"><span v-bind:style="{color:(f%10)==0?'lightgray':''}">{{(f%10) == 0 ? f/10%10 : f%10}}</span></div>
+			<div class="pl-1"><small class="text-muted">GROUP</small></div>
+			</div>
+		</li>
+	</ol> -->
+	<ul>
+		<li>
+			<input placeholder="NAME" v-model="selected.move.name">
+			<input placeholder="FRAME" v-model="selected.move.frame">
+			<input placeholder="START" v-model="selected.move.startup">
+			<input placeholder="ACTIVE" v-model="selected.move.active">
+			<input placeholder="RECOVERY" v-model="selected.move.recovery">
+			<button type="button" class="btn btn-sm btn-outline-secondary" v-on:click="okiDelete">DELETE MOVE {{(selected.group+1)*100+(OKI.group[selected.group].index+1)}}</button>
+		</li>
+	</ul>
+	<ul>
+		<li>
+			<input placeholder="MOVE SEARCH" v-model="moveSearch">
+			<button type="button" class="btn btn-sm btn-outline-secondary" v-on:click="okiGroupNew">NEW GROUP</button>
+			<button type="button" class="btn btn-sm btn-outline-secondary" v-on:click="okiGroupDelete">DELETE GROUP {{(selected.group+1)*100}}</button>
+			<button type="button" class="btn btn-sm btn-outline-secondary" v-on:click="okiSave">SAVE OKI</button>
+		</li>
+	</ul>
+	<ul>
+		<li>
+		<table class="table table-sm table-light table-striped table-hover text-center align-middle" style="width:auto; font-size:small;">
+			<thead>
+				<th></th>
+				<th>total</th>
+				<th>cmnCmd</th>
+				<th>moveName</th>
+				<th>startup</th>
+				<th>active</th>
+				<th>recovery</th>
+				<th>onBlock</th>
+				<th>onHit</th>
+				<th>KD</th>
+				<th>QR</th>
+				<th>BR</th>
+				<th></th>
+			</thead>
+			<tbody>
+			<tr class="move" v-for="(move,index) in frameDataSearch" v-bind:value="parseInt(move.total)||0" v-bind:class="{'bg-select':selected.data==move}" v-on:click="selected.data=move">
+				<td>
+					<button type="button" class="btn btn-sm btn-outline-secondary border-0" style="padding:0;" v-on:click="moveReplace(move)">REPLACE</button>
+					<button type="button" class="btn btn-sm btn-outline-secondary border-0" style="padding:0;" v-on:click="moveAdd(move)">ADD</button>
+				</td>
+				<td>{{move.total}}</td>
+				<td>{{move.cmnCmd}}</td>
+				<td>{{move.moveName}}</td>
+				<td>{{move.startup}}</td>
+				<td>{{move.active}}</td>
+				<td>{{move.recovery}}</td>
+				<td>{{move.onBlock}}</td>
+				<td>{{move.onHit}}</td>
+				<td>{{move.kd}}</td>
+				<td>{{move.kdr}}</td>
+				<td>{{move.kdrb}}</td>
+				<td>
+					<button type="button" class="btn btn-sm btn-outline-secondary border-0" style="padding:0;" v-on:click="kdReplace(move)" v-if="move.kd && move.kd != '~'">REPLACE KD</button>
+				</td>
+			</tr>
+			</tbody>	
+		</table>
+		</li>
+		<!-- <li class="move" v-for="(move,index) in frameDataSearch" v-bind:value="parseInt(move.total)||0" v-bind:class="{'bg-select':selected.data==move}" v-on:click="selected.data=move">
+			<button type="button" class="btn btn-sm btn-outline-secondary" v-on:click="moveReplace(move)">REPLACE</button>
+			<button type="button" class="btn btn-sm btn-outline-secondary" v-on:click="moveAdd(move)">ADD</button>
+			<span class="text-muted">{{move.cmnCmd}}</span>
+			<span>{{move.moveName}}</span>
+			<small>
+			<span class="text-muted">START</span>
+			<span>{{move.startup}}</span>
+			<span class="text-muted">ACTIVE</span>
+			<span>{{move.active}}</span>
+			<span class="text-muted">RECOVERY</span>
+			<span>{{move.recovery}}</span>
+			<span class="text-muted">BLK</span>
+			<span>{{move.onBlock}}</span>
+			<span class="text-muted">HIT</span>
+			<span>{{move.onHit}}</span>
+			</small>
+		</li> -->
+	</ul>
+	<ul>
+		<!-- <li>
+			<textarea style="width:30em; height:20em;" v-model="OKIJSON"></textarea>
+			<button v-on:click="okiUpdate">UPDATE</button>
+		</li> -->
+		<li v-for="oki in OKISTORE" v-bind:class="{'bg-select':selected.store==oki}" v-on:click="selected.store=oki">
+			<button type="button" class="btn btn-sm btn-outline-secondary" v-on:click="okiLoad(oki)">OKI LOAD</button>
+			<span>{{oki.char}}</span>
+			<span>{{oki.name}}</span>
+			<small class="text-muted">{{oki.date}}</small>
+		</li>
+	</ul>
+	<ul>
+		<li>
+			<div>U C https://github.com/D4RKONION/fatsfvframedatajson</div>
+		</li>
+	</ul>
+</div>
+
+<script type="text/javascript">
+	var app = new Vue({
+		el: '#app',
+		data: {
+			message: '',
+			OKI: {
+				date:Date(),
+				char:'',
+				name:'',
+				kd: [
+					{frame:25, name:'QR'},
+					{frame:30, name:'BR'},
+					{frame:60, name:'KD'},
+				],
+				group: [
+					{frame:1, index:0, list:[
+						{frame:1, startup:5, active:3, recovery:17, name:'throw'},
+						{frame:1, startup:5, active:3, recovery:17, name:'throw'},
+						{frame:1, startup:5, active:3, recovery:17, name:'throw'},
+						]
+					},
+					{frame:1, index:0, list:[
+						{frame:1, startup:5, active:3, recovery:17, name:'throw'},
+						{frame:1, startup:5, active:3, recovery:17, name:'throw'},
+						{frame:1, startup:5, active:3, recovery:17, name:'throw'},
+						]
+					}
+				],
+			},
+			selected:{group:0,index:0,move:{},data:{},char:{},store:{}},
+			moveSearch:'',
+			charSheet:[
+				{
+					name:'Vega',
+					normal:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=102027550&single=true&output=tsv',
+					stats:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=640853176&single=true&output=tsv',
+				},
+				{
+					name:'Vega',
+					normal:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=102027550&single=true&output=tsv',
+					stats:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=640853176&single=true&output=tsv',
+				},
+				{
+					name:'Vega',
+					normal:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=102027550&single=true&output=tsv',
+					stats:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=640853176&single=true&output=tsv',
+				},
+				{
+					name:'Vega',
+					normal:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=102027550&single=true&output=tsv',
+					stats:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=640853176&single=true&output=tsv',
+				},
+				{
+					name:'Vega',
+					normal:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=102027550&single=true&output=tsv',
+					stats:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=640853176&single=true&output=tsv',
+				},
+				{
+					name:'Vega',
+					normal:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=102027550&single=true&output=tsv',
+					stats:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=640853176&single=true&output=tsv',
+				},
+				{
+					name:'Vega',
+					normal:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=102027550&single=true&output=tsv',
+					stats:'https://docs.google.com/spreadsheets/d/e/2PACX-1vRJQLKJKOj1y8F5sp-mpml3HQyTX41hQKwgNQAj77aGw4STkQA0TYsR6KD0snP1oMxqPGJ3gzjJoILz/pub?gid=640853176&single=true&output=tsv',
+				},
+			],
+			frameData:[]
+		},
+		computed: {
+			frameDataSearch: function () {
+				var search = this.moveSearch.trim();
+				if (search == "") return this.frameData;
+				var fuse = new Fuse(this.frameData, {keys:['moveName','cmnCmd']});
+				return fuse.search(search);
+			},
+			OKISTORE: function () {
+				return Object.keys(localStorage).sort().reverse().filter(function(key){return key.indexOf("OKI") == 0; }).map(function(key){
+					return JSON.parse(localStorage.getItem(key)||{});
+				});
+			},
+		},
+		created: function () {
+			if (this.OKISTORE.length > 0) {
+				this.okiLoad(this.OKISTORE[0]);
+			}
+			var oki = this.selected;
+			var group = this.OKI.group[oki.group];
+			this.selected.move = group.list[group.index] || {};
+		},
+		methods: {
+			okiSave: function () {
+				this.OKI.date = Date();
+				localStorage.setItem("OKI"+Date.now(),JSON.stringify(this.OKI));
+				app.$forceUpdate();
+			},
+			okiLoad: function (oki) {
+				this.OKI = Vue.util.extend({},oki);
+			},
+			charLoad: function(sheet) {
+				this.message = "LOAD...";
+				this.OKI.char = sheet.name;
+				d3.tsv(sheet.normal).then(function(data){
+					app.frameData = data;
+					d3.tsv(sheet.stats).then(function(stats){
+						app.message = "";
+						stats.forEach(function(stat){
+							if (["fDash","bDash"].includes(stat.name)) {
+								app.frameData.unshift({moveName:stat.name,recovery:stat.stat,total:stat.stat});
+							}
+						});
+					});
+				});
+			},
+			okiFrames: function (oki) {
+				var frames = [];
+				var move = oki;
+				var startups = move.startup && move.startup.split ? move.startup.split(/[^\d]+/)||[0] : [move.startup||0];
+				var startup = startups.reduce(function(accumulator, currentValue, currentIndex, array) {
+					return (parseInt(accumulator)||0) + (parseInt(currentValue)||0);
+				});
+				for (var i=0;i<startup-1;i++) {
+					frames.push({frame:i+1,color:'gray'});
+				}
+
+				var activerecoverys = move.active && move.active.split ? move.active.split(/[()]+/)||[0] : [move.active||0];
+				activerecoverys.forEach(function(activerecovery,index){
+					if (index%2==1) {
+						var active = (parseInt(activerecovery)||0);
+						for (var i=0;i<active;i++) {
+							frames.push({frame:i+1,color:'darkgray'});
+						}
+					} else {
+						var actives = activerecovery.split ? activerecovery.split(/[^\d]+/)||[0] : [activerecovery||0];
+						var active = actives.reduce(function(accumulator, currentValue, currentIndex, array) {
+							return (parseInt(accumulator)||0) + (parseInt(currentValue)||0);
+						});
+						for (var i=0;i<active;i++) {
+							frames.push({frame:i+1,color:'pink'});
+						}
+					}
+				});
+
+				var recoverys = move.recovery && move.recovery.split ? move.recovery.split(/[^\d]+/)||[0] : [move.recovery||0];
+				var recovery = recoverys[0];
+				for (var i=0;i<recovery;i++) {
+					frames.push({frame:i+1,color:'gray'});
+				}
+				return frames;
+			},
+			okiMove: function (oki, frame) {
+				var group = this.OKI.group[oki.group];
+				this.OKI.group[oki.group].list[oki.index].frame = frame;
+			},
+			okiGroupMove: function (group, frame) {
+				this.OKI.group[group].frame = frame;
+			},
+			okiGroupNew: function () {
+				this.OKI.group.push({frame:1,index:0,list:[{frame:1, startup:5, active:3, recovery:17, name:'throw'}]});
+				this.selected.group = this.OKI.group.length - 1;
+				var oki = this.selected;
+				var group = this.OKI.group[oki.group];
+				this.selected.move = this.OKI.group[oki.group].list[group.index] || {};
+			},
+			okiGroupDelete: function () {
+				if (!confirm("DELETE GROUP ?")) return;
+				this.OKI.group.splice(this.selected.group,1);
+				this.selected.group = this.OKI.group.length - 1;
+				var group = this.OKI.group[this.selected.group];
+				this.selected.move = group.list[group.index] || {};
+			},
+			okiDelete: function () {
+				if (!confirm("DELETE MOVE ?")) return;
+				var oki = this.selected;
+				var group = this.OKI.group[oki.group];
+				group.list.splice(group.index,1);
+				if (group.index >= group.list.length) group.index = group.list.length - 1;
+				this.selected.move = group.list[group.index] || {};
+			},
+			moveReplace: function(move) {
+				var oki = this.selected;
+				var group = this.OKI.group[oki.group];
+				group.list[group.index] = Vue.util.extend({frame:group.list[group.index].frame,name:move.cmnCmd||move.moveName},move);
+				this.selected.move = group.list[group.index] || {};
+			},
+			moveAdd: function(move) {
+				var oki = this.selected;
+				var group = this.OKI.group[oki.group];
+				group.list.push(Vue.util.extend({frame:1,name:move.cmnCmd||move.moveName},move));
+				group.index = group.list.length - 1;
+				this.selected.move = group.list[group.index] || {};
+			},
+			kdReplace: function(move) {
+				var kd = [];
+				var kdrbs = move.kdrb && move.kdrb.split ? move.kdrb.split(/[^\d]+/)||[0] : [move.kdrb||0];
+				var kdrb = parseInt(kdrbs[0])||0;
+				var kdrs = move.kdr && move.kdr.split ? move.kdr.split(/[^\d]+/)||[0] : [move.kdr||0];
+				var kdr = parseInt(kdrs[0])||0;
+				var kds = move.kd && move.kd.split ? move.kd.split(/[^\d]+/)||[0] : [move.kd||0];
+				var kd = parseInt(kds[0])||0;
+				this.OKI.kd = [{frame:kdr,name:'QR'}, {frame:kdrb,name:'BR'}, {frame:kd,name:'KD'}];
+				this.OKI.name = move.moveName;
+			},
+		},
+	});
+</script>
+</body>
+</html>
