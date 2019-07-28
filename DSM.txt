@@ -31,6 +31,7 @@ drill kick HK 9J	9J d+HK (air)	20	9	7	11	-	8	60	70	72	84	10	35	12	H	-				[FRAME 
 yoga anvil	b+HP	12	6	24	-3	KD	-8	90	150	108	180	15	41	15	H	SP,V	95	36	41	
 yoga upper	b+MP	8	4	16	4	5	1	60	100	72	120	10	27	15	H	SP,V				
 divine kick	b+MK	6	3	15	3	5	1	60	100	72	120	10	23	12	H	SP,V				
+thrust kick	db+MK	7	3	15	2	4	-1	50	100	60	120	8	24	12	L 	SP,SU,VT
 yoga rocket	LP+LK	5	2	18	KD	KD	-	110	120	-	-	-	24	-	T	-	72	21	21	
 yoga hoop	b+LP+LK	5	2	18	KD	KD	-	130	200	130	200	-		-	T	-	77	18	18	BUG 1F NO MOVE 
 yoga burner	HP+HK	14	3	24	KD	KD	4	100	150	120	180	25	39	8	-	-	100	41	46	JUGGLE POINT ST.MP/MK EX FLAME
